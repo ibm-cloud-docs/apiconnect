@@ -14,7 +14,7 @@ API Connect
 			tutorials/tut_add_openapi_rest_bm.md
 			tutorials/tut_import_openapi_rest_tk.md
 			tutorials/tut_add_openapi_rest_tk.md
-		    tutorials/tut_manage_soap_api.md
+		tutorials/tut_manage_soap_api.md
 		tutorials/tut_discover_apis.md
 		
 	apic_overview.md
