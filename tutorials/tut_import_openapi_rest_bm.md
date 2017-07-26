@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-07-13"
+lastupdated: "2017-07-26"
 ---
 
 {:new_window: target="blank"}
@@ -64,26 +64,26 @@ _Note: You'll notice that the Host value is set to_ ```$(catalog.host)``` _. Thi
 
 ### Test with the _API Manager test tool_.
 1. In the **Assemble** tab, select **More Actions > Generate a default product**.  
-  ![](/bluemix/1a/images/generate-default-product-1.png)   
+  ![](images/generate-default-product-1.png)   
   
 2. Accept the default options in the **New Product** dialog box, and select **Create Product**. The **Weather Provider API product** is created and published to the Sandbox catalog. A message indicating successful product generation is displayed.  
-  ![](/bluemix/1a/images/generate-default-product-2.png)  
+  ![](images/generate-default-product-2.png)  
   
-  ![](/bluemix/1a/images/generate-default-product-3.png) 
+  ![](images/generate-default-product-3.png) 
 
   _In API Connect, **Products** provide a way to group APIs that are intended for a particular use. Products are published to a **Catalog**.  [{{site.data.keyword.apiconnect_short}} glossary](../apic_glossary.html)_
 
 3. On the Assemble tab, click ► to test your API proxy's target invocation.
-  a. Choose the **get /current** operation.  
-  b. Zipcode is a required parameter for this operation, so enter a valid U.S. zip (for example, 90210).  
-  c. Click **invoke**, and verify the response.  
-  _If you run into a CORS error, follow the instructions in the error message. Click the link in the error to add the exception to your browser, and then hit the "invoke" button again._
-  d. The expected response is:
-  ```
+    a. Choose the **get /current** operation.  
+    b. Zipcode is a required parameter for this operation, so enter a valid U.S. zip (for example, 90210).  
+    c. Click **invoke**, and verify the response.  
+    _If you run into a CORS error, follow the instructions in the error message. Click the link in the error to add the exception to your browser, and then hit the "invoke" button again._
+    d. The expected response is:
+    ```
     - 200 OK response
     - Current weather data for 90210  
-  ```
-    ![](/bluemix/1b/images/test-invoke-1.png)
+    ```
+    ![](images/test-invoke-1.png)
 
 
 ### Test with the _Explore tool_.
