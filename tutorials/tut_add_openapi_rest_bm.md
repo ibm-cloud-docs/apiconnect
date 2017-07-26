@@ -131,12 +131,12 @@ The **Operation Switch** provides a decision point. Based on the verb/path pair,
 
 ### Test your API proxy
 1. In the **Assemble** tab, select **More Actions > Generate a default product**.  
-   ![](/bluemix/1a/images/generate-default-product-1.png) 
+   ![](images/generate-default-product-1.png) 
 
 2. Accept the default options in the **New Product** dialog box, and select **Create Product**. The Weather Provider API product is created and published to the Sandbox catalog. A message indicating successful product generation is displayed.  
-  ![](/bluemix/1a/images/generate-default-product-2.png)  
+  ![](images/generate-default-product-2.png)  
   
-  ![](/bluemix/1a/images/generate-default-product-3.png) 
+  ![](images/generate-default-product-3.png) 
 
   - _In {{site.data.keyword.apiconnect_short}}, **Products** provide a way to group APIs that are intended for a particular use. Products are published to a **Catalog**. [{{site.data.keyword.apiconnect_short}} glossary](../apic_glossary.html)_
 
