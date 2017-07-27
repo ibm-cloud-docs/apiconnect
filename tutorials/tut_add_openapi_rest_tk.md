@@ -67,56 +67,57 @@ _(We'll visit security with API Keys in the next tutorial.)_
       - Save your API.
 
 10. In the **Definitions** panel, add a new definition.
-  - Name: Current  /  Type: Object
-  - Add new properties for the **Current** definition.
-    - Name: zip         /  Type: string
-    - Name: temperature /  Type: integer
-    - Name: humidity    /  Type: integer
-    - Name: city        /  Type: string
-    - Name: state       /  Type: string
-    ![](images/definition-current-1.png)
-  - Save your API.  
+    - Name: Current  /  Type: Object
+    - Add new properties for the **Current** definition.
+      - Name: zip         /  Type: string
+      - Name: temperature /  Type: integer
+      - Name: humidity    /  Type: integer
+      - Name: city        /  Type: string
+      - Name: state       /  Type: string
+      ![](images/definition-current-1.png)
 
+11. Save your API.  
 
-11. Scroll back up to the **Paths** panel.
-    - Open the **GET /current** operation, and scroll to the **Responses** section.
-    - Change the schema of the 200OK response from "object" to "**Current**".
-    - Save your API.
+12. Scroll back up to the **Paths** panel.
+    1. Open the **GET /current** operation, and scroll to the **Responses** section.
+    2. Change the schema of the 200OK response from "object" to "**Current**".
+    3. Save your API.
 The path and operation you created was to get the current weather data. Next, you'll need to create the same to get today's weather data.  
 
-12. Create a new path: **/today**.
-  - Add a new Parameter under the **GET /today** operation.
+13. Create a new path: **/today**.
+
+14. Add a new Parameter under the **GET /today** operation.
     - Parameter Name: zipcode
     - Located in: Query
     - Required: Yes (check mark)
     - Type: string  
 
-13. Create a new definition: **Today**.
-    - Add new properties for the **Today** definition.
-       - Name: zip / Type: string
-       - Name: hi / Type: integer
-       - Name: lo / Type: integer
-       - Name: nightHumidity / Type: integer
-       - Name: dayHumidity / Type: integer
-       - Name: city / Type: string
-       - Name: state / Type: string
-    - Update the response schema in the **GET /today** section to "Today".
-    - Save your API.
+15. Create a new definition: **Today**.
+    1. Add new properties for the **Today** definition.
+        - Name: zip / Type: string
+        - Name: hi / Type: integer
+        - Name: lo / Type: integer
+        - Name: nightHumidity / Type: integer
+        - Name: dayHumidity / Type: integer
+        - Name: city / Type: string
+        - Name: state / Type: string
+    2. Update the response schema in the **GET /today** section to "Today".
+    3. Save your API.
 
 14. Select the **Assemble** tab. You created two operations so far: **GET /current** and **GET /today**. To ensure the right target endpoint is invoked, you'll need to create some logic that will execute conditional on the operation that's being called. Let's use the **Operation Switch** logic construct to do this.  
     a. Delete the **invoke** policy that may already be added to the _canvas_.  
     b. From the _palette_, drag the **Operation Switch** and drop it on the canvas.  
-        - To **case 0**, assign the **get /current** operation.
-        - Add a new Case: **case 1**.
-        - Assign the **get /today** operation to **case 1**.
+        1. To **case 0**, assign the **get /current** operation.
+        2. Add a new Case: **case 1**.
+        3. Assign the **get /today** operation to **case 1**.
     ![](images/assemble-1.png)
-     The **Operation Switch** provides a decision point. Based on the verb/path pair, the appropriate operation must be invoked.  
+    The **Operation Switch** provides a decision point. Based on the verb/path pair, the appropriate operation must be invoked.  
     c. Drag the **invoke** policy from the palette and drop it on the canvas. Drop one in the **/get current** path and one in the **/get today** path.
-  - Select the **invoke** policy in the **/get current** path, and update its title to "**invoke-current**".  
-  - Update the URL field with: _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode=$(request.parameters.zipcode)**_.
-  - Select the **invoke** policy in the **/get today** path, and update its title to "**invoke-today**".  
-  - Update the URL field with: _**https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode=$(request.parameters.zipcode)**_.  
-  - Save your API.
+    d. Select the **invoke** policy in the **/get current** path, and update its title to "**invoke-current**".  
+    e. Update the URL field with: _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode=$(request.parameters.zipcode)**_.
+    f. Select the **invoke** policy in the **/get today** path, and update its title to "**invoke-today**".  
+    g. Update the URL field with: _**https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode=$(request.parameters.zipcode)**_.  
+    h. Save your API.
 
 ---
 

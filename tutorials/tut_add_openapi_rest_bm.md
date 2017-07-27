@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-07-13"
+lastupdated: "2017-07-27"
 ---
 
 {:new_window: target="blank"}
@@ -52,13 +52,12 @@ _The Name and Base Path are auto-populated_.
 6. After you create your API, the **Design** tab is selected. 
 - Scroll to the **Host** panel. Note the value that's filled in: ```$(catalog.host)```.  
 - In the **Base Path** panel, note the auto-populated value: ```/weather-provider-api```.  
-
 Your API's target URL will be created from these values.  
 
 7. Scroll to the **Security** tab, and delete the "clientIDHeader (API Key)" that has been been auto-generated.  
 _(We'll visit security with API Keys in the next tutorial.)_  
 
-8. In the side navigation panel, scroll down to the **Paths** panel.   
+8. In the navigation, scroll down to the **Paths** panel.   
     a. Create a new path by clicking **+**.   
     b. Name the new path "**/current**".  
     c. In the same *Paths* panel, select the **GET /current** section.    
@@ -70,7 +69,7 @@ _(We'll visit security with API Keys in the next tutorial.)_
     ![](images/path-current-1.png)   
     e. Save your API.  
 
-9. In the navigation panel, scroll down to the **Definitions** panel.   
+9. In the navigation, scroll down to the **Definitions** panel.   
     a. Add a new definition  
     b. Name the new definition _Current_,  
     c. Set the Type to _Object_  
@@ -83,11 +82,11 @@ _(We'll visit security with API Keys in the next tutorial.)_
     ![](images/definition-current-1.png)   
     e. Save your API.  
 
-10. In the left side-navigation panel, scroll back up to the **Paths** panel.
-  a. Open the **GET /current** operation, and scroll to the **Responses** section.
-  b. Change the schema of the 200OK response from "object" to "**Current**".
-  c. Save your API.
-The path and operation you created was to get the current weather data. Next, you'll need to create a similar path and operation to get today's weather data.  
+10. In the navigation, scroll back up to the **Paths** panel.
+    a. Open the **GET /current** operation, and scroll to the **Responses** section.
+    b. Change the schema of the 200OK response from "object" to "**Current**".
+    c. Save your API.
+    The path and operation you created was to get the current weather data. Next, you'll need to create a similar path and operation to get today's weather data.  
 
 11. Similar to how you created the **/current** path in step 8, create a new path: **/today**.
 12. Add a new Parameter under the **GET /today** operation.
@@ -118,7 +117,8 @@ The path and operation you created was to get the current weather data. Next, yo
 The **Operation Switch** provides a decision point. Based on the verb/path pair, the appropriate operation needs to be invoked.
 
     c. Drag the **invoke** policy from the palette and drop it on the canvas. _The invoke action is used to call an existing service from within an operation_.  
-        - Drop an invoke action in the **/get current** path, and one in the **/get today** path.   
+        
+		- Drop an invoke action in the **/get current** path, and one in the **/get today** path.   
         - Select the **invoke** policy in the **/get current** path, and update its title to "**invoke-current**".  
         - Update the URL field with https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode).  
         - Select the **invoke** policy in the **/get today** path, and update its title to "**invoke-today**".  

@@ -74,6 +74,7 @@ _Note: You'll notice that the Host value is set to_ ```$(catalog.host)``` _. Thi
   _In API Connect, **Products** provide a way to group APIs that are intended for a particular use. Products are published to a **Catalog**.  [{{site.data.keyword.apiconnect_short}} glossary](../apic_glossary.html)_
 
 3. On the Assemble tab, click ► to test your API proxy's target invocation.
+
     a. Choose the **get /current** operation.  
     b. Zipcode is a required parameter for this operation, so enter a valid U.S. zip (for example, 90210).  
     c. Click **invoke**, and verify the response.  
