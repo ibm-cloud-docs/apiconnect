@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-07"
+lastupdated: "2017-07-28"
 
 ---
 
@@ -812,5 +812,6 @@ npm cache clean
 If you are using Windows:
 
 3. Delete all files whose names begin with `npm-` in `C:\Users\username\AppData\Local\Temp`
-4. Delete the directory `<home_dir>\.apiconnect`, where `<home_dir>` is the home directory of the user account
-under which the toolkit was previously installed.
+
+4. Delete the directory `<home_dir>\.apiconnect`, where `<home_dir>` is the home directory of the user account under which the toolkit was previously installed.
+
