@@ -7,7 +7,7 @@ lastupdated: "2017-07-28"
 ---
 
 
-{:new_window: target="_blank"}_
+{:new_window: target="_blank"}
 
 {:shortdesc: .shortdesc}
 {:screen: .screen}
