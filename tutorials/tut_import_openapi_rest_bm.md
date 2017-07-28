@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-07-26"
+lastupdated: "2017-07-28"
 ---
 
 {:new_window: target="blank"}
@@ -24,7 +24,7 @@ Before you begin, you will need to <a href="https://github.com/ibm-apiconnect/ge
 
 
 ## Explore the sample app and test the target endpoints
-A sample _weather provider_ app has been created for this tutorial. Its corresponding API specification (Swagger 2.0) can be found ![here](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/bluemix/1a/weather-provider-api_1.0.0.yaml).
+A sample _weather provider_ app has been created for this tutorial. The corresponding API specification (Swagger 2.0) is in the [weather-provider-api_1.0.0.yaml](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/bluemix/1a/weather-provider-api_1.0.0.yaml) file.
 1. To explore the app, go to http://gettingstartedweatherapp.mybluemix.net/.  
 2. Enter a valid 5-digit U.S. zipcode to get the _**current weather**_ and _**today's forecast**_.  
 ![](images/explore-weatherapp-1.png)
