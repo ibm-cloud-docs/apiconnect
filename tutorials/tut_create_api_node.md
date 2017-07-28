@@ -30,7 +30,7 @@ This tutorial guides you through creating an API in Node.js using the LoopBack f
 ---
 ## Prerequisites
 
-Before you begin, you will need to [install the {{site.data.keyword.apiconnect_short}} toolkit](https://github.com/ibm-apiconnect/getting-started/tree/master/toolkit/0-Prereq).
+Before you begin, [install the {{site.data.keyword.apiconnect_short}} toolkit](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_cli_install.html).
 
 ---
 ## Create a LoopBack project from the command line
