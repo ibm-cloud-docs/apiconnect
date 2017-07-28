@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-07"
+lastupdated: "2017-07-28"
 
 ---
 
@@ -224,7 +224,7 @@ icon <img alt="Chain link icon to display the catalog identifier" src="images/ch
 
 3. Copy the catalog identifier. For example:
 ```
-apic config:set catalog=apic-catalog://&lt;region&gt;.apiconnect.ibmcloud.com/orgs/&lt;username_string&gt;-dev/catalogs/&lt;catalog&gt;
+apic config:set catalog=apic-catalog://<region>.apiconnect.ibmcloud.com/orgs/<username_string>-dev/catalogs/<catalog>
 ```
 {: codeblock}
 
@@ -811,5 +811,4 @@ npm cache clean
 If you are using Windows:
 
 3. Delete all files whose names begin with `npm-` in `C:\Users\username\AppData\Local\Temp`
-4. Delete the directory `<home_dir>\.apiconnect`, where `<home_dir>` is the home directory of the user account
-under which the toolkit was previously installed.
+4. Delete the directory `<home_dir>\.apiconnect`, where `<home_dir>` is the home directory of the user account under which the toolkit was previously installed.
