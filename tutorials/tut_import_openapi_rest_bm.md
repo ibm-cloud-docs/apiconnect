@@ -24,7 +24,9 @@ Before you begin, you will need to <a href="https://github.com/ibm-apiconnect/ge
 
 
 ## Explore the sample app and test the target endpoints
-A sample _weather provider_ app has been created for this tutorial. The corresponding API specification (Swagger 2.0) is in the [weather-provider-api_1.0.0.yaml](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/bluemix/1a/weather-provider-api_1.0.0.yaml) file.
+
+A sample _weather provider_ app has been created for this tutorial. The corresponding API specification (Swagger 2.0) is in the  [weather-provider-api_1.0.0.yaml](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/bluemix/1a/weather-provider-api_1.0.0.yaml) file.
+
 1. To explore the app, go to http://gettingstartedweatherapp.mybluemix.net/.  
 2. Enter a valid 5-digit U.S. zipcode to get the _**current weather**_ and _**today's forecast**_.  
 ![](images/explore-weatherapp-1.png)
@@ -45,12 +47,12 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 2. In the {{site.data.keyword.Bluemix_short}} navigation panel, select **Services**, then **Dashboard**.
 3. Launch the API Connect service.  
    ![](images/login-1.png)   ![](images/login-2.png)  
-  
+
 4. In the {{site.data.keyword.apiconnect_short}} interface, make sure the navigation panel on the left side is open. If not, click **>>** to open it.  
 5. Select **Drafts** in the navigation panel.   
 6. In the **APIs** tab, click **Add**. From the dropdown menu, select **Import API from a file or URL**.  
-     ![](images/import-1.png) 
- 
+     ![](images/import-1.png)
+
 7. We will now import the OpenAPI weather definition. In the "Import OpenAPI (Swagger)" dialog box that opens, enter the following URL:
 https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/bluemix/1a/weather-provider-api_1.0.0.yaml. Leave the other options with their default values and click **Import**.  
     ![](images/import-2.png)  
@@ -65,11 +67,11 @@ _Note: You'll notice that the Host value is set to_ ```$(catalog.host)``` _. Thi
 ### Test with the _API Manager test tool_.
 1. In the **Assemble** tab, select **More Actions > Generate a default product**.  
   ![](images/generate-default-product-1.png)   
-  
+
 2. Accept the default options in the **New Product** dialog box, and select **Create Product**. The **Weather Provider API product** is created and published to the Sandbox catalog. A message indicating successful product generation is displayed.  
   ![](images/generate-default-product-2.png)  
-  
-  ![](images/generate-default-product-3.png) 
+
+  ![](images/generate-default-product-3.png)
 
   _In API Connect, **Products** provide a way to group APIs that are intended for a particular use. Products are published to a **Catalog**.  [{{site.data.keyword.apiconnect_short}} glossary](../apic_glossary.html)_
 
@@ -103,4 +105,3 @@ _The Explore Tool allows users to test the correct operation of the API by enfor
 
 ### Conclusion
 In this tutorial, you saw how an existing REST service can be invoked through an API passthrough proxy. We started by checking the availability of the sample service through the web browser. Then we created an API proxy in {{site.data.keyword.apiconnect_short}}, and linked the proxy to the sample service to be invoked. We packaged our API into a product, published the product to catalog, and tested the proxy.
-

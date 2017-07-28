@@ -8,6 +8,7 @@ lastupdated: "2017-07-28"
 
 
 {:new_window: target="_blank"}
+
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -76,7 +77,7 @@ command.
     ```
     apic validate --help
     ```
-	
+
 ## Installing LoopBack connectors
 {: #install_lb_conn}
 
@@ -219,7 +220,7 @@ following steps:
 
 1. Go to the {{site.data.keyword.apiconnect_short}} **Dashboard**.
 
-2. For the catalog that you want to use, click the **Show catalog identifier** 
+2. For the catalog that you want to use, click the **Show catalog identifier**
 icon <img alt="Chain link icon to display the catalog identifier" src="images/chain_link_icon.png">.
 
 3. Copy the catalog identifier. For example:
@@ -251,7 +252,7 @@ To create a LoopBack&reg; API by using the CLI, complete the following steps:
   ? What's the name of your application? (<application name>)
   ```
   {: codeblock}
-  
+
     The tool prompts you to enter the name of the directory in which to create the
     project.
     ```
@@ -604,13 +605,13 @@ First, you need to create a LoopBack&reg; project using the CLI. Complete the fo
   ```
   ? What's the name of your application? (<application name>)
   ```
-    
+
     The tool prompts you to enter the name of the directory in which to create the
     project.
     ```
     ? Enter name of the directory to contain the project: (<project directory name>)
     ```
-    
+
 3. Press **Enter** to use the name you previously entered or type a new name then press **Enter**. The tool prompts you to select the kind of application to
 create:
 ```
@@ -811,4 +812,6 @@ npm cache clean
 If you are using Windows:
 
 3. Delete all files whose names begin with `npm-` in `C:\Users\username\AppData\Local\Temp`
+
 4. Delete the directory `<home_dir>\.apiconnect`, where `<home_dir>` is the home directory of the user account under which the toolkit was previously installed.
+
