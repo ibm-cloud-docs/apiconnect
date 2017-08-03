@@ -2,13 +2,12 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-28"
+lastupdated: "2017-08-01"
 
 ---
 
 
 {:new_window: target="_blank"}
-
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -70,6 +69,7 @@ command.
     ```
     apic
     ```
+	{: codeblock}
 
 3. To view usage help for any command, use the `--help` option.
     For example:
@@ -77,7 +77,8 @@ command.
     ```
     apic validate --help
     ```
-
+	{: codeblock}
+	
 ## Installing LoopBack connectors
 {: #install_lb_conn}
 
@@ -143,10 +144,12 @@ compilers are not installed, you might also need the compiler update for the Win
   ```
   npm install -g npm
   ```
+  {: codeblock}
   Then ensure that the npm command uses the correct version:
   ```
   npm -v
   ```
+  {: codeblock}
   If the version shown is not 3.x.x, then edit your system PATH to ensure that `C:\Users\username\AppData\Roaming\npm` supersedes any other entries.
 
 
@@ -159,6 +162,7 @@ the connector by entering the following command in the project root directory.
 ```
 npm install --save <connector-package>
 ```
+{: codeblock}
 where `<connector-package>` is the name of the npm package for the LoopBack connector, as shown in the table.
 
 <table summary="" id="apic_connectors_table_pre_reqs" class="defaultstyle style-scope doc-content">
@@ -220,7 +224,7 @@ following steps:
 
 1. Go to the {{site.data.keyword.apiconnect_short}} **Dashboard**.
 
-2. For the catalog that you want to use, click the **Show catalog identifier**
+2. For the catalog that you want to use, click the **Show catalog identifier** 
 icon <img alt="Chain link icon to display the catalog identifier" src="images/chain_link_icon.png">.
 
 3. Copy the catalog identifier. For example:
@@ -238,7 +242,7 @@ apic config:set catalog=apic-catalog://<region>.apiconnect.ibmcloud.com/orgs/<us
 
     - `<catalog>` is the name of your catalog
 
-To create a LoopBack&reg; API by using the CLI, complete the following steps:
+To create a LoopBack API by using the CLI, complete the following steps:
 
 1. To create a project, open a command line and enter:
   ```
@@ -251,15 +255,13 @@ To create a LoopBack&reg; API by using the CLI, complete the following steps:
   ```
   ? What's the name of your application? (<application name>)
   ```
-  {: codeblock}
-
+    
     The tool prompts you to enter the name of the directory in which to create the
     project.
     ```
     ? Enter name of the directory to contain the project: (<project directory name>)
     ```
-    {: codeblock}
-
+    
 3. Press **Enter** to use the name you previously entered or type a new name then press **Enter**. The tool prompts you to select the kind of application to
 create:
 ```
@@ -382,7 +384,6 @@ Enter an empty property name when done.
 ? Property name:
 ```
 
-
 16. If required, add another property name. If you do not require any more properties press
 **Enter** to finish adding the model.
 
@@ -452,15 +453,12 @@ do this, complete the following steps:
 
 To test a LoopBack&reg; project, complete the following steps.
 
-
 1. **Optional**: Make sure that your current working directory is the project top-level directory. Enter the
 following command:
 ```
 cd <loopback-project-dir>
 ```
-    where `<loopback-project-dir>` is the name of the directory that
-    contains the project.
-
+where `<loopback-project-dir>` is the name of the directory that contains the project.
 2. Enter the following command:
 ```
 apic start
@@ -483,87 +481,65 @@ If you want to load the API by using a web browser, open
 ```
 
 ### Publishing a LoopBack application to Bluemix from the CLI
-{: pub_lb_app_cli}
+{: #pub_lb_app_cli}
 
-
-To publish a LoopBack&reg; application to {{site.data.keyword.Bluemix_short}} from the command line, complete the
-following steps.
+To publish a LoopBack application to {{site.data.keyword.Bluemix_short}} from the command line, complete the following steps:
 
 1. Enter the following command to ensure that you are in the Loopback project directory.
 ```
 cd <loopback-project-dir>
 ```
-
-2. Enter the following command to log in to {{site.data.keyword.apiconnect_short}} and
-{{site.data.keyword.Bluemix_short}}.
+2. Enter the following command to log in to {{site.data.keyword.apiconnect_short}} and {{site.data.keyword.Bluemix_short}}.
 ```
 apic login --server  <region>.apiconnect.ibmcloud.com -u <username> -p <password>
 ```
-{: codeblock}
 where:
-    - `<username>` is your {{site.data.keyword.apiconnect_short}} org ID.
-    - `<password>` is your {{site.data.keyword.apiconnect_short}} password.
-
-3. Press the space bar to automatically open the **One time passcode** browser
-page.
-
+  * `<username>` is your {{site.data.keyword.apiconnect_short}} org ID.
+  * `<password>` is your {{site.data.keyword.apiconnect_short}} password.
+3. Press the space bar to automatically open the **One time passcode** browser page.
 4. Click **Regenerate** and copy the one time passcode.
-
-5. Back in the CLI, paste the passcode to complete your login.
-The following message is displayed:
+5. Back in the CLI, paste the passcode to complete your login. The following message is displayed:
 ```
 Logged into <region>.apiconnect.ibmcloud.com successfully
 ```
-
 6. Enter the following command:
 ```
 apic organizations -s <region>.apiconnect.ibmcloud.com
 ```
-    where:
-    - `<region>` is the {{site.data.keyword.Bluemix_short}} region. For example:
-    - `eu` if you are using {{site.data.keyword.Bluemix_short}} London.
-    - `us` if you are using {{site.data.keyword.Bluemix_short}} Dallas.
-    - `au` if you are using {{site.data.keyword.Bluemix_short}} Sydney.
+where:
+  * `<region>` is the {{site.data.keyword.Bluemix_short}} region. For example:
+  * `eu` if you are using {{site.data.keyword.Bluemix_short}} London.
+  * `us` if you are using {{site.data.keyword.Bluemix_short}} Dallas.
+  * `au` if you are using {{site.data.keyword.Bluemix_short}} Sydney.
 
-    If you are unsure, you can locate your region by clicking the
-    {{site.data.keyword.avatar}} icon <img src="images/i-avatar-icon.svg" alt="avatar icon"/> in the menu bar to open the Account and Support widget and check the
-    region field.
-
+  If you are unsure, you can locate your region by clicking the {{site.data.keyword.avatar}} icon <img src="images/i-avatar-icon.svg" alt="avatar icon"/> in the menu bar to open the Account and Support widget and check the region field.
 7. Enter the following command to publish your application to {{site.data.keyword.Bluemix_short}}.
 ```
 apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
 ```
-    where:
-    - `<app>` is the name of your app
-    - `<org>` is the name of your {{site.data.keyword.Bluemix_short}} organization
-    - `<region>` is the {{site.data.keyword.Bluemix_short}} region
-    The following output is returned:
-    ```
-    ...preparing project
-    ...building package for deploy
-    ...uploading package
-    Runtime published successfully.
+where:
+  * `<app>` is the name of your app
+  * `<org>` is the name of your {{site.data.keyword.Bluemix_short}} organization
+  * `<region>` is the {{site.data.keyword.Bluemix_short}} region
+The following output is returned:
+  ```
+  ...preparing project
+  ...building package for deploy
+  ...uploading package
+  Runtime published successfully.
+  Management URL: https://new-console.stage1.ng.bluemix.net/apps/3aa7087d-b454-4e13-bbc5-8228ebe00eef
+  API target urls: apiconnect-3aa7087d-b454-4e13-bbc5-8228ebe00eef.pszetousibmcom-dev.apic.stage1.mybluemix.net
+  API invoke tls-profile: client:Loopback-client
+  ```
 
-    Management URL: https://new-console.stage1.ng.bluemix.net/apps/3aa7087d-b454-4e13-bbc5-8228ebe00eef
-    API target urls: apiconnect-3aa7087d-b454-4e13-bbc5-8228ebe00eef.pszetousibmcom-dev.apic.stage1.mybluemix.net
-    API invoke tls-profile: client:Loopback-client
-    ```
-
-8. Next, you must modify the Product definitions with the values that are returned during the
-publish time. To do this complete the following steps:
+8. Next, you must modify the Product definitions with the values that are returned during the publish time. To do this complete the following steps:
 
     1. In the API Designer UI, click **APIs**.
-
     2. Select your API.
-
     3. Click **Assemble**.
-
     4. In the Assembly editor, click the **Filter policies** icon.
-
     5. Select **DataPower Gateway policies**.
-
     6. Double-click **invoke**.
-
     7. Update the following fields with the values you retrieved in step 7.
         - **Invoke URL**: Insert the API target URL. You must specify the secure protocol HTTPS. For
         example:
@@ -571,14 +547,11 @@ publish time. To do this complete the following steps:
         https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<Bluemix org>-<Bluemix space>.apic.<domain name>$(request.path)
         ```
         If you did not make a note of this value, you can retrieve by going to the management URL returned in
-        step 7. You can also retrieve it by logging in
-        to {{site.data.keyword.Bluemix_short}} and viewing your app
-        information.
+        step 7. You can also retrieve it by logging in to {{site.data.keyword.Bluemix_short}} and viewing your app information.
         - **TLS Profile**: Insert the API invoke tls-profile. For example:
         ```
         client:Loopback-client
         ```
-
     8. Click **Save** to save the API.
 
 ## Creating a LoopBack API by using the API Designer
@@ -605,13 +578,13 @@ First, you need to create a LoopBack&reg; project using the CLI. Complete the fo
   ```
   ? What's the name of your application? (<application name>)
   ```
-
+    
     The tool prompts you to enter the name of the directory in which to create the
     project.
     ```
     ? Enter name of the directory to contain the project: (<project directory name>)
     ```
-
+    
 3. Press **Enter** to use the name you previously entered or type a new name then press **Enter**. The tool prompts you to select the kind of application to
 create:
 ```
@@ -637,7 +610,7 @@ that the option to add models and data sources is available when you open the AP
 open the API Designer without changing the directory, you will not be able to add models and data
 sources.
 
-To open the API Designer, complete the following steps.
+To open the API Designer, complete the following steps:
 1. Open a command line and enter:
 ```
 apic edit
@@ -737,7 +710,7 @@ npm install --save <connector-package>
 </tbody>
 </table>
 
-For more information, see [LoopBack&reg; Documentation - Building a connector](https://http://loopback.io//doc/en/lb3/Defining-data-sources.html).
+For more information, see [LoopBack Documentation - Building a connector](https://http://loopback.io//doc/en/lb3/Defining-data-sources.html).
 
 **Note:** If you selected the Oracle connector, you must set an environment variable in
 {{site.data.keyword.Bluemix_short}} for the Oracle app to start. To
@@ -812,6 +785,4 @@ npm cache clean
 If you are using Windows:
 
 3. Delete all files whose names begin with `npm-` in `C:\Users\username\AppData\Local\Temp`
-
 4. Delete the directory `<home_dir>\.apiconnect`, where `<home_dir>` is the home directory of the user account under which the toolkit was previously installed.
-
