@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-24"
+lastupdated: "2017-08-25"
 
 ---
 
@@ -13,17 +13,18 @@ lastupdated: "2017-07-24"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Getting Started Discovering APIs
+# Discovering APIs
 **Duration**: 30 mins  
 **Skill level**: Beginner  
 
 
 ## Prerequisite
-Before you begin, you will need to [install {{site.data.keyword.apiconnect_full}} Developer Portal](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.install.doc/tapim_portal_installing_VA.html). 
+You will need access to a developer portal to complete this tutorial. If you already have access to a developer portal, you can use this tutorial as a general guideline on how to navigate a developer portal. Keep in mind that all developer portals have different skins. This tutorial will provide a general guideline on how to navigate one. 
 
+If you do not have access to an existing developer portal, you can set up and configure a developer portal in Bluemix before proceeding with this tutorial.
 
 ## Objective
-In this tutorial you will learn how to consume the APIs in the {{site.data.keyword.apiconnect_short}} Developer Portal. You will gain an understanding of how to explore products and APIs, view and test APIs, and subscribe to APIs. 
+In this tutorial, you will learn how to consume the APIs in the {{site.data.keyword.apiconnect_short}} Developer Portal. You will gain an understanding of how to explore products and APIs, view and test APIs, and subscribe to APIs. 
  
 
 ## Explore Products & APIs
@@ -52,7 +53,7 @@ In this section, you will explore the products and APIs in the developer portal.
 ## View and test the APIs
 In this section, you will learn how to view and test the available APIs for a product. 
 
-1. Navigate to the API details in the {{site.data.keyword.apiconnect_short}} Developer portal as outlined above.  
+1. Navigate to the API details in the {{site.data.keyword.apiconnect_short}} Developer Portal as outlined in the previous section.  
   ![API Details](images/21-details.png) 
 
 2. You can download and view the APIs Swagger yaml by selecting **Open API**.  
@@ -70,7 +71,7 @@ In this section, you will learn how to view and test the available APIs for a pr
 ---
 
 ## Subscribe to APIs
-In this section, you will learn how to subscribe to APIs in the developer portal. Before you can subscribe to an API, you must login and create an application.
+In this section, you will learn how to subscribe to APIs in the developer portal. Before you can subscribe to an API, you must log in and create an application.
 
 1. Select **Create an account**. 
 ![API Products](images/31-create-account.png)
@@ -79,7 +80,7 @@ In this section, you will learn how to subscribe to APIs in the developer portal
 **Note:** Use a different email address than the one used to create your developer portal in the previous tutorial.
 ![API Products](images/32-create-new-account.png)
 
-3. Once the developer account is created, log in to view the home page. You must have an app to subscribe to the APIs. Select **Apps** to go to the registered apps page.  
+3. After the developer account is created, log in to view the home page. You must have an app to subscribe to the APIs. Select **Apps** to go to the registered apps page.  
   ![API Products](images/33-login.png)
 
 4. To register a new application, select **Create new App**.  
@@ -91,13 +92,13 @@ In this section, you will learn how to subscribe to APIs in the developer portal
 6. Now that you have an App, you can subscribe to API Product plans. Select **available APIs** or **API Products** to browse the API Product plans.  
   ![API Details](images/36-api-products.png) 
 
-7. Select the **API Product** you wish to subscribe to.  
+7. Select the **API Product** you want to subscribe to.  
   ![API Product](images/37-select-product.png) 
 
 8. Select **Subscribe** to subscribe to the API Product Plan.  
   ![API Product Plan](images/38-subscribe-plan.png) 
 
-9. Select the **app** you wish to subscribe to the product plan, then select **Subscribe**. 
+9. Select the **app** you want to subscribe to the product plan, then select **Subscribe**. 
   ![App Subscribe plan](images/39-subscribe-app-plan.png) 
 
 10. Your application has successfully subscribed to the product plan. 
@@ -105,7 +106,6 @@ In this section, you will learn how to subscribe to APIs in the developer portal
 
 ## Conclusion
 In this tutorial, you learned how to explore products and APIs, view and test APIs, and subscribe to APIs. 
-
 
 
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-13"
+lastupdated: "2017-08-24"
 
 ---
 
@@ -13,7 +13,7 @@ lastupdated: "2017-07-13"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Manage a REST Service
+# Managing a REST Service
 {: #tut_rest_landing}
 
 These tutorials provide options on how you can manage existing APIs.
