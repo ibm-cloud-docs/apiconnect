@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-08-24"
+lastupdated: "2017-08-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-08-24"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Import your API spec, and proxy an existing REST service by using the Developer Toolkit
+# Import your API spec and proxy an existing REST service by using the Developer Toolkit
 Duration: 5 mins  
 Skill level: Beginner  
 
@@ -18,22 +18,28 @@ Skill level: Beginner
 ## Objective
 This tutorial illustrates how you can bring your existing API under management control with {{site.data.keyword.apiconnect_short}}. In this tutorial, you will import an OpenAPI spec, and create a passthrough API proxy for an existing REST service.
 
+## Prerequisites
+Before you begin, you will need to <a href="https://github.com/ibm-apiconnect/getting-started/tree/master/bluemix/0-prereq" target="blank">set up your {{site.data.keyword.apiconnect_short}} instance</a>.
+
 ---
 
+
 ## Explore the sample app and test the target endpoints
-A sample _weather provider_ app was created for this tutorial.
+
+A sample _weather provider_ app has been created for this tutorial. The corresponding API specification (Swagger 2.0) is in the [weather-provider-api_1.0.0.yaml](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/bluemix/1a/weather-provider-api_1.0.0.yaml) file.
 
 1. To explore the app, go to http://gettingstartedweatherapp.mybluemix.net/.  
-2. Enter a valid 5-digit U.S. zip code to get the _**current weather**_ and _**today's forecast**_.  
+2. Enter a valid 5-digit U.S. zipcode to get the _**current weather**_ and _**today's forecast**_.  
 ![](images/explore-weatherapp-1.png)
 
-  - The sample weather app was created using APIs that provide the weather data. The endpoint to get the **current** weather data is _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_.
-  - Test it out by going to https://myweatherprovider.mybluemix.net/current?zipcode=90210.  
+3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Test it out by visiting https://myweatherprovider.mybluemix.net/current?zipcode=90210.  
+
   ![](images/explore-weatherapp-2.png)
 
-  - Similarly, the endpoint to get the forecast data for **today** is _**https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}**_.
-  - Test it out by going to https://myweatherprovider.mybluemix.net/today?zipcode=90210.  
+4. Similarly, the Endpoint to get **today's** forecast data is _**https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}**_. Test it out by going to https://myweatherprovider.mybluemix.net/today?zipcode=90210.  
+
   ![](images/explore-weatherapp-3.png)
+
 
 
 ---
