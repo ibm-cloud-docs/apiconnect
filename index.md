@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-14"
+lastupdated: "2017-08-28"
 
 ---
 
@@ -35,10 +35,10 @@ Select one of the following boxes to view the tutorial for that topic.  You can 
 | | <a href="tutorials/tut_manage_soap_api.html"> <img src="images/art_manage_soap_service.png" width="220" alt="Manage a SOAP service"> | |
 {: caption="Bluemix API Connect service getting started tutorials" caption-side="top"}
 
-## Conceptual information
+## API Connect overview
 {: #moregetstart}
 
-<a href="tut_main.html"> <img src="/images/art_view_all_tut.png" width="150" alt="Link to viewing a list of all getting started tutorials."></a> <a href="apiconnect_overview.html"> <img src="/images/art_apic_overview.png" width="150" alt="Link to overview materials for API Connect."></a>
+<a href="apic_overview.html"> <img src="/images/art_apic_overview.png" width="150" alt="Link to overview materials for API Connect."></a>
 
 
 
