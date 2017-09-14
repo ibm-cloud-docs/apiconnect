@@ -38,7 +38,7 @@ or
 	![](images/oauth_provider_2.png)  
 	g. Save your API.  
 
-2. Update the security definition of your Weather Provider API to include OAuth.
+2. Update the security definition of your Weather Provider API to include OAuth.  
 	a. Switch over to your _Weather Provider API_. (Go back to APIs and then select _Weather Provider API_.)  
 	b. Under Security Definitions, add a new definition for OAuth. Name it "OAuth definition".  
 	c. In the Flow field, select **Application**.  
@@ -52,7 +52,7 @@ or
 	i. Save the product, and stage it to your Sandbox.  
 	![](images/oauth_security_definition_3a.png)
 
-3. Test your OAuth security configuration.
+3. Test your OAuth security configuration.  
 	a. Publish your updated product to the sandbox. Click **Dashboard > Sandbox**, and then publish your product.  
 	  ![](images/test_oauth_1.png)
 	b. Click **Explore > Sandbox**.  

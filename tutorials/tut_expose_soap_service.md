@@ -2,7 +2,7 @@
 
 copyright:
 years: 2017
-lastupdated: "2017-09-06"
+lastupdated: "2017-09-13"
 
 ---
 
@@ -117,12 +117,12 @@ To test your API definition by using the API Manager test tool, complete the ste
 	![](images/choose-product-1.png)
 4. Click **Republish product**.
 5. Click **Next**.
-6. Select ```get /getweatherdata``` from the list of operations.
-  ![](images/select-operation-1.png)
-7. Scroll down to the **zip_code** field, enter ```90210```.
-  ![](images/test-api-1.png)
-8. Click **Invoke**. The API returns the current weather.
-  ![](images/test-api-2.png)
+6. Select ```get /getweatherdata``` from the list of operations.  
+	![](images/select-operation-1.png)
+7. Scroll down to the **zip_code** field, enter ```90210```.  
+	![](images/test-api-1.png)
+8. Click **Invoke**. The API returns the current weather.  
+	![](images/test-api-2.png)
 
 ---
 ## What you did in this tutorial
