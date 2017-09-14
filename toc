@@ -21,7 +21,10 @@ API Connect
 			tutorials/tut_secure_id_secret_bm.md
 			tutorials/tut_secure_id_secret_tk.md
 		tutorials/tut_secure_oauth_2.md
+		tutorials/tut_insights_analytics.md
 		tutorials/tut_discover_apis.md
+		tutorials/tut_config_dev_portal.md
+		tutorials/tut_custom_dev_portal.md
 		
 	apic_overview.md
 	    apic_029.md
