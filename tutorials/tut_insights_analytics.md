@@ -24,7 +24,7 @@ In order to view your own API analytics, you must have an API Product created an
 To generate the data in this tutorial, we used Postman's *Collection Runner* to call an API several times, with different data and client IDs. You can use a similar tool (like HttpRequester for Firefox), or just use cURL to call your API multiple times from the command line. You can obtain sample requests for your API by clicking the **Explore** link in {{site.data.keyword.apiconnect_short}}.
 
 ## Introduction to catalog analytics
-As an API owner, you need a way to assess the success and performance of the APIs you offer. The main place you'll look for analytics is at the catalog level. If you have not been introduced to catalogs, see [Working with Catalogs](https://www.ibm.com/support/knowledgecenter/en/SSMNED_5.0.0/com.ibm.apic.apionprem.doc/conref_working_with_env.html) in the IBM Knowledge Center for an introduction. 
+As an API owner, you need a way to assess the success and performance of the APIs you offer. The main place you'll look for analytics is at the catalog level. If you have not been introduced to catalogs, see [Working with Catalogs ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){:new_window} in the IBM Knowledge Center for an introduction. 
 
 You and your App developers can also access app-specific analytics in the Developer Portal, but we'll focus on Catalog Analytics in this tutorial.
 

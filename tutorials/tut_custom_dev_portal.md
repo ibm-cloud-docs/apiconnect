@@ -94,12 +94,12 @@ The developer portal comes with additional themes for you to choose from and cus
 ## Install a new theme for your developer portal
 If modifying an existing theme doesn't suit your needs, the Developer portal also allows you to install a theme to change its look and feel.
 
-1. You can use modules or themes downloaded from [drupal.org](http://drupal.org) to customize your developer portal or you can create your own.
+1. You can use modules or themes downloaded from [drupal.org ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://drupal.org){:new_window} to customize your developer portal or you can create your own.
 
 2. To install a theme into the developer portal, select **Appearance** from the top menu, then select **Install new theme**.  
   ![Install new theme](images/62-install-new.png)
 
-3. You can install themes directly from [drupal.org](http://drupal.org) using a URL, or you can upload a theme you downloaded or created by clicking **Choose File**, then **Install**.  
+3. You can install themes directly from [drupal.org ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://drupal.org){:new_window} using a URL, or you can upload a theme you downloaded or created by clicking **Choose File**, then **Install**.  
   ![Install](images/63-install.png) 
 
 4. When the upload completes, you need to enable the theme. Select **Enable newly added themes**.  

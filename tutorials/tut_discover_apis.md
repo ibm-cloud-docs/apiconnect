@@ -21,7 +21,7 @@ lastupdated: "2017-08-25"
 ## Prerequisite
 You will need access to a developer portal to complete this tutorial. If you already have access to a developer portal, you can use this tutorial as a general guideline on how to navigate a developer portal. Keep in mind that all developer portals have different skins. This tutorial will provide a general guideline on how to navigate one. 
 
-If you do not have access to an existing developer portal, you can set up and configure a developer portal in Bluemix before proceeding with this tutorial.
+If you do not have access to an existing developer portal, you can set up and configure a developer portal in {{site.data.keyword.Bluemix_short}} before proceeding with this tutorial.
 
 ## Objective
 In this tutorial, you will learn how to consume the APIs in the {{site.data.keyword.apiconnect_short}} Developer Portal. You will gain an understanding of how to explore products and APIs, view and test APIs, and subscribe to APIs. 

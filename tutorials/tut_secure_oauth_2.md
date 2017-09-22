@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-06"
+lastupdated: "2017-09-21"
 ---
 
 {:new_window: target="blank"}
@@ -26,6 +26,7 @@ Before you begin, you must have completed the following tutorial.
 or
 - [Securing an API with Client-ID and Client-Secret Keys with the Toolkit](tut_secure_id_secret_tk.html)
 
+## Procedure
 
 1. Create an OAuth Provider API and select your OAuth scheme.  
 	a. Open **Drafts**, select **APIs**, and click **Add** > **OAuth 2.0 Provider API**.  

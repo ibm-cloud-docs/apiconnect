@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-06"
+lastupdated: "2017-09-22"
 ---
 
 {:new_window: target="blank"}
@@ -29,17 +29,17 @@ In this tutorial, you will do the following:
 
 
 ## Prerequisites
-You must have already created an API in {{site.data.keyword.apiconnect_short}}, secured with at least an API Key. In the following instructions, our starting point is the [Weather Provider API example](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/1a/README.md), secured using a [client ID and secret](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/2a/README.md).
+You must have already created an API in {{site.data.keyword.apiconnect_short}}, secured with at least an API Key. In the following instructions, our starting point is the [Weather Provider API example file ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window}, secured using a [client ID and secret](tut_secure_landing.html).
 
 Complete the following tutorials before you start this tutorial:
-- Import your API spec, and proxy an existing REST service
-- Securing your API with a client ID and secret
+- [Import your API spec, and proxy an existing REST service](tut_rest_landing.html).
+- [Secure your API with a client ID and secret](tut_secure_landing.html).
 
 
 ---
 ## Launching API Connect
 
-1. Log in to {{site.data.keyword.Bluemix_short}}: https://console.ng.bluemix.net/login.
+1. Log in to {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/login){:new_window}.
 2. Once logged in to {{site.data.keyword.Bluemix_short}}, scroll down to **All Services**, and click on **API Connect**.
 3. Click on **API Connect** to launch the {{site.data.keyword.apiconnect_short}} service.
 
@@ -79,7 +79,7 @@ Now that we have seen what the default Plan looks like, let's create a new Plan 
 
 ## Staging & publishing an updated Product to the Sandbox Catalog
 
-In previous examples, you may have published your Product using the test tool, which calls your API with a pre-supplied test application's credentials. However, this test application is not subject to rate limits, so we will need to create a new application here for rate limiting purposes. [Reference: API Connect Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html)
+In previous examples, you may have published your Product using the test tool, which calls your API with a pre-supplied test application's credentials. However, this test application is not subject to rate limits, so we will need to create a new application here for rate limiting purposes. See the [IBM Knowledge Center content for API Connect ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){:new_window} for more information.
 
 1. Click the Publish icon to *stage* the Product to the **Sandbox** Catalog. This action adds your draft Product changes to the selected Catalog. We need to *publish* the Product changes next, to make them available to consumers via the Developer Portal.
    ![](./images/stageproduct.png) 
@@ -92,7 +92,7 @@ In previous examples, you may have published your Product using the test tool, w
 
 
 ## Registering a new (consumer) application in the Developer Portal
-Application developers discover and use your APIs by using the Developer Portal. For more information on the Developer Portal, check out this [Knowledge Center article](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html).
+Application developers discover and use your APIs by using the Developer Portal. For more information on the Developer Portal, check out this [IBM Knowledge Center topic ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){:new_window}.
 
 If this is your first time working with the Developer Portal, you will need to provision a Developer Portal for your Sandbox Catalog. The account you are logged in as when you provision the Portal will be the admin account for that Portal. Then, in order to explore and test APIs, you will need to create & login with a new developer account (using a different email address) than the admin account.
 

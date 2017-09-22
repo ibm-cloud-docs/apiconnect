@@ -24,18 +24,18 @@ lastupdated: "2017-08-24"
 
 This tutorial guides you through creating an API in Node.js using the LoopBack framework. The tutorial describes how to:
 1. Create a new LoopBack project.
-2. Add a new data source and model to a LoopBack project using the API Designer in the IBM API Connect toolkit.
+2. Add a new data source and model to a LoopBack project using the API Designer in the {{site.data.keyword.apiconnect_short}} toolkit.
 3. Test your API endpoints using the API Designer Explore tool.
 
 ---
 ## Prerequisites
 
-Before you begin, [install the {{site.data.keyword.apiconnect_short}} toolkit](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_cli_install.html).
+Before you begin, [install the {{site.data.keyword.apiconnect_short}} toolkit](tut_prereq_install_toolkit.html).
 
 ---
 ## Create a Loopback project
 
-You can create a Loopback project using either the API Connect toolkit command-line interface or the API Designer interface. 
+You can create a Loopback project using either the {{site.data.keyword.apiconnect_short}} developer toolkit command-line interface or the API Designer interface. 
  
 ### Create a LoopBack project using the toolkit command line
 
@@ -141,7 +141,7 @@ To add a new data source to a LoopBack project using the API Designer, complete 
 6. Click **New**.
 7. By default, the **Connector** setting shows **In-memory db** and the other settings are blank. Keep the default settings for now, and API Designer automatically saves the new data source.
 	>![info]
-	>The In-memory data source is built into LoopBack and is suitable only for development and initial testing. When you are ready to connect your models to a real data source such as a database server, change the **Connector** setting accordingly and install the data source connector by following the instructions in [Installing LoopBack connectors](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tapim-connector-install.html#task_i2p_dnw_vv). Enter the connector settings (host name, port, database name, user name, password) as appropriate for your Connector type, and click the **Save** icon ![](images/save-icon.png). API Designer automatically tests the connection to the data source. If the test is successful, it displays the message **Success - Data source connection test succeeded**.
+	>The In-memory data source is built into LoopBack and is suitable only for development and initial testing. When you are ready to connect your models to a real data source such as a database server, change the **Connector** setting accordingly and install the data source connector by following the instructions in [Installing LoopBack connectors ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tapim-connector-install.html#task_i2p_dnw_vv){:new_window}. Enter the connector settings (host name, port, database name, user name, password) as appropriate for your Connector type, and click the **Save** icon ![](images/save-icon.png). API Designer automatically tests the connection to the data source. If the test is successful, it displays the message **Success - Data source connection test succeeded**.
 8. Click the Test Connection icon ![](images/db-test-icon.png) to test the data source connection. The message "Data source connection test succeeded" is displayed.
 9. Click **All Data Sources**. The data source will appear in the list of data sources, and the editor updates the server/datasources.json file with settings for the new data source.
 
@@ -205,7 +205,7 @@ To test your API endpoints using the API Designer Explore tool, complete the fol
 	>To restart it, click the **Restart the servers** icon ![](images/restart-icon.png):
 	>![](images/restart-server-1.png)
 	
-4. Click the **Explore** icon ![](images/explore-icon.png) to see the API Designer Explore tool. The sidebar shows all of the REST operations for the LoopBack models in the API. Models that are based on PersistedModel by default have a [standard set of create, read, update, and delete operations](http://loopback.io/doc/en/lb2/PersistedModel-REST-API).
+4. Click the **Explore** icon ![](images/explore-icon.png) to see the API Designer Explore tool. The sidebar shows all of the REST operations for the LoopBack models in the API. Models that are based on PersistedModel by default have a [standard set of create, read, update, and delete operations ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){:new_window}.
 
 5. Click the operation **weather.create** in the left pane to display the endpoint.
 ![](images/explore-test-1.png)

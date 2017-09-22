@@ -2,7 +2,7 @@
 
 copyright:
 years: 2017
-lastupdated: "2017-09-13"
+lastupdated: "2017-09-22"
 
 ---
 
@@ -22,14 +22,14 @@ lastupdated: "2017-09-13"
 In API Manager, you will create a REST API that will accesses a existing SOAP Service and expose it as a REST API.
 
 ## Prerequisites
-1. Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_full}} instance](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/0-prereq/README.md).
-2. Before you begin, copy the WSDL file located at https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/exposing-a-soap-service-as-rest/files/weatherprovider.wsdl to your local filesystem.
+1. Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_full}} instance](tut_prereq_set_up_apic_instance.html).
+2. Before you begin, copy the [weatherprovider.wsdl test ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} file to your local filesystem.
 	>![images/info.png]
 	>You can click **Raw** and then save the resulting page on your local system as a `.wsdl` file.
 
 ---
 ## Setting up a REST API definition
-1. Log in to {{site.data.keyword.Bluemix_short}}: https://new-console.ng.bluemix.net/login.
+1. Log in to {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://new-console.ng.bluemix.net/login){:new_window}.
 2. In the {{site.data.keyword.Bluemix_short}} **Dashboard** scroll down and select {{site.data.keyword.apiconnect_full}}. Alternately, from the menu icon, choose **Services** and then **APIs** to reach the **Work with APIs** window, and select **API Connect**. From the **API Connect** page, you can simply press `Create`, or you can adjust the default settings. For the purposes of this exercise, leave the instance unbound, and adjust the Service name for easier recognition later. One example would be `API Connect-weather-exercise`.
 Press the `Create` button to launch the {{site.data.keyword.apiconnect_short}} service.  
 You may see an alert describing what's new, or the **Draft APIs** informational splash page. After reading the information click the **"Got it"** icon to view the API Manager.

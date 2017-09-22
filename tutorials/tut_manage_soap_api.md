@@ -1,9 +1,7 @@
 ---
-
 copyright:
   years: 2017
-lastupdated: "2017-08-29"
-
+lastupdated: "2017-09-22"
 ---
 
 
@@ -23,23 +21,22 @@ lastupdated: "2017-08-29"
 In this tutorial, you will use API Manager to create a SOAP API that is a proxy for a SOAP-based weather service.
 
 ## Prerequisites
-- Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_full}} instance](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/0-prereq/README.md).
-- Before you begin, copy the WSDL file located at https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl to your local filesystem.
-Note : You can click **Raw** and then save the resulting page on your local system as a `.wsdl` file. As the name suggests, this SOAP service returns weather data when given a zip code.
+- Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_short}} instance](tut_prereq_set_up_apic_instance.html).
+- Before you begin, copy the [weatherprovider.wsdl test ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} file to your local filesystem.
+Note: You can click **Raw** and then save the resulting page on your local system as a `.wsdl` file. As the name suggests, this SOAP service returns weather data when given a zip code.
 
 ---
 ## Setting up a SOAP API definition
-1. Log in to {{site.data.keyword.Bluemix_short}}: https://new-console.ng.bluemix.net/login.
+1. Log in to {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}.
 
 2. In the {{site.data.keyword.Bluemix_short}} **Dashboard**, scroll down to **All Services**.
 
 3. Select **API Connect** to launch the API Connect service. 
-  ![Draft APIs splash page](images/apic_draft-apis.png)
-
-4. Navigate to the Drafts page, if you are not already there:
-   a. In the API Connect interface, click >> to open the navigation panel.
-   b. Click **Drafts** in the navigation panel.
-   c. Go to the **APIs** tab.
+  
+4. Navigate to the Drafts page, if you are not already there:  
+    a. In the API Connect interface, click >> to open the navigation panel.
+    b. Click **Drafts** in the navigation panel.
+    c. Go to the **APIs** tab.
 
 5. In the APIs tab, click `Add +`.
 
@@ -68,6 +65,7 @@ Note : You can click **Raw** and then save the resulting page on your local syst
 
 ---
 ## Testing the SOAP API definition
+
 1. In the **Assemble** tab, click the **More actions** (three dots) icon, and select **Generate a default product** from the menu.
    ![More actions menu, open](images/gen-default-prod.png)
 
@@ -78,7 +76,7 @@ Note : You can click **Raw** and then save the resulting page on your local syst
 
 3. Save your changes.  
 
-4. Next to the Search box, click the test icon ? to test the API service. The Setup menu appears.
+4. Next to the Search box, click the test icon to test the API service. The Setup menu appears.
 
 5. From the Products list, choose ```weatherService product 1.0.0```.
   ![choose weather service](images/12-chooseproduct.png)
@@ -94,7 +92,7 @@ Note : You can click **Raw** and then save the resulting page on your local syst
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
    <soap:Body>
 <wdata:WeatherRequest xmlns:wdata="http://www.ibm.com/wdata">
-       <zipcode>01742</zipcode>
+       <zipcode>10504</zipcode>
 </wdata:WeatherRequest>
    </soap:Body>
 </soap:Envelope>

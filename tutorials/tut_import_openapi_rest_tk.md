@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-08-31"
+lastupdated: "2017-09-22"
 ---
 
 {:new_window: target="blank"}
@@ -19,24 +19,24 @@ Skill level: Beginner
 This tutorial illustrates how you can bring your existing API under management control with {{site.data.keyword.apiconnect_short}}. In this tutorial, you will import an OpenAPI spec, and create a passthrough API proxy for an existing REST service.
 
 ## Prerequisites
-Before you begin, you will need to <a href="https://github.com/ibm-apiconnect/getting-started/tree/master/bluemix/0-prereq" target="blank">set up your {{site.data.keyword.apiconnect_short}} instance</a>.
+Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_short}} instance](tut_prereq_set_up_apic_instance.html).
 
 ---
 
 
 ## Explore the sample app and test the target endpoints
 
-A sample _weather provider_ app has been created for this tutorial. The corresponding API specification (Swagger 2.0) is in the [weather-provider-api_1.0.0.yaml](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/bluemix/1a/weather-provider-api_1.0.0.yaml) file.
+A sample _weather provider_ app has been created for this tutorial. The corresponding API specification (Swagger 2.0) is in the [weather-provider-api_1.0.0.yaml ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window} file.
 
-1. To explore the app, go to http://gettingstartedweatherapp.mybluemix.net/.  
+1. To explore the app, go to [http://gettingstartedweatherapp.mybluemix.net/ ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}.  
 2. Enter a valid 5-digit U.S. zipcode to get the _**current weather**_ and _**today's forecast**_.  
 ![](images/explore-weatherapp-1.png)
 
-3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Test it out by visiting https://myweatherprovider.mybluemix.net/current?zipcode=90210.  
+3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is ```https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}```. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
 
   ![](images/explore-weatherapp-2.png)
 
-4. Similarly, the Endpoint to get **today's** forecast data is _**https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}**_. Test it out by going to https://myweatherprovider.mybluemix.net/today?zipcode=90210.  
+4. Similarly, the Endpoint to get **today's** forecast data is ```https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}```. Test it out by going to [https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){:new_window}.  
 
   ![](images/explore-weatherapp-3.png)
 
@@ -55,7 +55,7 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 7. From the drop-down menu, click **Import API from a file or URL**.
    ![](images/toolkit-import-1.png)
 8. There is an OpenAPI 2.0 definition of the weather API that you will use for this tutorial. In the "Import OpenAPI (Swagger)" dialog box, enter this URL:
-https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml.
+```https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml```.
 9. Leave the _Add a product_ option unchecked and click **Import**.  
     ![](images/screenshot_import-url.png)  
 

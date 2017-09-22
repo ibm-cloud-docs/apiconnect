@@ -18,21 +18,21 @@ lastupdated: "2017-08-24"
 This tutorial helps you get started quickly with {{site.data.keyword.apiconnect_full}}. We'll start by creating a new OpenAPI spec, and then create a passthrough API proxy for an existing REST service.
 
 ## Prerequisite
-Before you begin, you need to [set up your API Connect Instance](/bluemix/0-prereq/README.md).
+Before you begin, you need to [set up your API Connect Instance](tut_prereq_set_up_apic_instance.html).
 
 ---
 
 ### Explore the sample app and test the target endpoints
 A sample _weather provider_ app was created for this tutorial.
-1. To explore the app, go to http://gettingstartedweatherapp.mybluemix.net/.  
+1. To explore the app, go to [http://gettingstartedweatherapp.mybluemix.net/ ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}.  
 2. Enter a valid 5-digit U.S. zipcode to get the _**current weather**_ and _**today's forecast**_.  
 ![](images/explore-weatherapp-1.png)
 
-3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Test it out by visiting https://myweatherprovider.mybluemix.net/current?zipcode=90210.  
+3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
 
   ![](images/explore-weatherapp-2.png)
 
-4. Similarly, the Endpoint to get **today's** forecast data is _**https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}**_. Test it out by going to https://myweatherprovider.mybluemix.net/today?zipcode=90210.  
+4. Similarly, the Endpoint to get **today's** forecast data is _**https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}**_. Test it out by going to [https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){:new_window}.  
 
   ![](images/explore-weatherapp-3.png)
 
@@ -117,9 +117,9 @@ _(We'll visit security with API Keys in the next tutorial.)_
 The **Operation Switch** provides a decision point. Based on the verb/path pair, the appropriate operation needs to be invoked.
     c. Drag the **invoke** policy from the palette and drop it on the canvas. _The invoke action is used to call an existing service from within an operation_.  Drop an invoke action in the **/get current** path, and one in the **/get today** path.   
     d. Select the **invoke** policy in the **/get current** path, and update its title to "**invoke-current**".  
-    e. Update the URL field with https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode).  
+    e. Update the URL field with ```https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode)```.  
     f. Select the **invoke** policy in the **/get today** path, and update its title to "**invoke-today**".  
-    g. Update the URL field with https://myweatherprovider.mybluemix.net/today?zipcode=$(request.parameters.zipcode).  
+    g. Update the URL field with ```https://myweatherprovider.mybluemix.net/today?zipcode=$(request.parameters.zipcode)```.  
        ![](images/assemble-2.png)
 
 22. Save your API.
