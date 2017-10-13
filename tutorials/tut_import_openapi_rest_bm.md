@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-08-24"
+lastupdated: "2017-09-30"
 ---
 
 {:new_window: target="blank"}
@@ -104,3 +104,12 @@ _The Explore Tool allows users to test the correct operation of the API by enfor
 
 ### Conclusion
 In this tutorial, you saw how an existing REST service can be invoked through an API passthrough proxy. You started by checking the availability of the sample service through the web browser. Then you created an API proxy in API Connect, and linked the proxy to the sample service to be invoked. You packaged your API into a product, published the product to catalog, and tested the proxy.
+
+---
+
+## Next step
+
+Secure your API using [rate limiting](tut_rate_limit.html), [client ID and secret](tut_secure_landing.html), or [securing using OAuth 2.0](tut_secure_oauth_2.html).
+
+Create > **Manage** > Secure > Socialize > Analyze
+

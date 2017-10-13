@@ -120,5 +120,11 @@ Congratulations, you have completed this tutorial. In this tutorial you learned 
 * Select a different theme to use for your developer portal
 * Install a new theme for your developer portal
 
-  
+---
+
+## Next step
+
+Learn [how a user navigates through a Developer Portal](tut_discover_apis.html) or [how to gain insights from basic analytics](tut_insights_analytics.html).
+
+Create > Manage > Secure > **Socialize** > Analyze  
 

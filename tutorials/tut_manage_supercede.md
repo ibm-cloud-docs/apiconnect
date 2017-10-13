@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-20"
+lastupdated: "2017-10-10"
 
 ---
 
@@ -12,9 +12,9 @@ lastupdated: "2017-09-20"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Superceding API Products
+# Superseding API Products
 **Duration**: 15 mins  
-**Skill level**: Intermediate  
+**Skill level**: Beginner  
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ lastupdated: "2017-09-20"
 
 ---
 ## Objective
-In this tutorial, you will supercede an existing API with a new one.
+In this tutorial, you will supersede an existing API with a new one.
 
 ---
 ## Superceding an API Product
@@ -77,7 +77,7 @@ In this tutorial, you will supercede an existing API with a new one.
 17.	Click the vertical ellipsis on the **Weather Provider API Product 3.0.0 Staged** line.  
 ![](images/sup-stage-prod-3.png)
 
-18.	Select **Supercede an existing product**.  
+18.	Select **Supersede an existing product**.  
 ![](images/sup-super-prod.png)
 
 19.	Select **Weather Provider API Product 2.0.0** in the list of products presented. Click **Next**.  

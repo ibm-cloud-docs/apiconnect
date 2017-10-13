@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-20"
+lastupdated: "2017-10-10"
 
 ---
 
@@ -14,7 +14,7 @@ lastupdated: "2017-09-20"
 
 # Archiving and deleting API Products
 **Duration**: 15 mins  
-**Skill level**: Intermediate  
+**Skill level**: Beginner 
 
 ## Prerequisites
 

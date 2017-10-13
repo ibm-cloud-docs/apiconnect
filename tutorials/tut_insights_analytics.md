@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-13"
+lastupdated: "2017-09-30"
 ---
 
 {:new_window: target="blank"}
@@ -144,6 +144,10 @@ Using a visualization similar to the one we just built, ACME has this informatio
 
 In this tutorial, we walked through a number of activities to help you create useful combinations of API and consumer data. Using visualizations and dashboards, we quickly created tools that can provide data to help make sure that we are offering the right mix of APIs.
 
+---
 
-  
+## Next step
 
+Learn [how to mangage your APIs and versioning](tut_version_landing.html).
+
+Create > Manage > Secure > Socialize > **Analyze**  

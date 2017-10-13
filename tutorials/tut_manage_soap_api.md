@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-22"
+lastupdated: "2017-09-30"
 ---
 
 
@@ -108,4 +108,12 @@ The API returns a Response **body** consisting of the current weather.
 In this tutorial, you completed the following:
 1. Set up a SOAP API definition
 2. Tested your API definition
-3. Received a Response **body** from the weather API endpoint indicating the result of your Request
+3. Received a Response **body** from the weather API endpoint indicating the result of your request.
+
+---
+
+## Next step
+
+[Expose your service as a REST API](tut_expose_soap_api.html) or secure your API using [rate limiting](tut_rate_limit.html), [client ID and secret](tut_secure_landing.html), or [securing using OAuth 2.0](tut_secure_oauth_2.html).
+
+Create > **Manage** > Secure > Socialize > Analyze

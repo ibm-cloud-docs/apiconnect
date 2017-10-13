@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-19"
+lastupdated: "2017-10-10"
 ---
 
 {:new_window: target="blank"}
@@ -34,7 +34,7 @@ lastupdated: "2017-09-19"
 
 1. Sign up for your IBMid at the following URL: [https://console.ng.bluemix.net/registration/ ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/registration/){:new_window}.
 
-	_Already have an IBMid? Then skip the registration, and just create your free {{site.data.keyword.Bluemix_short}} account at the following URL: [https://console.ng.bluemix.net/ ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/){:new_window}.  
+	Already have an IBMid? Then skip the registration, and just create your free {{site.data.keyword.Bluemix_short}} account at the following URL: [https://console.ng.bluemix.net/ ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/){:new_window}.  
 
 2. When you have your IBMid and {{site.data.keyword.Bluemix_short}} account, create your {{site.data.keyword.apiconnect_short}} instance.  
   a. Log in to {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://new-console.ng.bluemix.net/login){:new_window}.  

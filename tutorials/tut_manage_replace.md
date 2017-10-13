@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-20"
+lastupdated: "2017-09-25"
 
 ---
 
@@ -35,6 +35,8 @@ In this tutorial, you will update an existing API product by replacing it with a
 
 ---
 ## Replacing an API Product
+{: #repl_api_prod}
+
 1. Log in to {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/login){:new_window}.
 
 2. In the {{site.data.keyword.Bluemix_short}} Dashboard, launch the {{site.data.keyword.apiconnect_short}} service.

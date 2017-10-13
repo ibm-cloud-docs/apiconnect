@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-08-24"
+lastupdated: "2017-09-30"
 
 ---
 
@@ -237,8 +237,16 @@ In this tutorial, you completed the following:
 2. Added a new model and data source to a LoopBack project by using the API Designer in {{site.data.keyword.apiconnect_short}} toolkit.
 3. Tested your API endpoints by using the API Designer Explore tool.
 
+
 ---
 
+## Next step
+
+[Manage a REST service](tut_rest_landing.html) or [Manage a SOAP service](tut_manage_soap_api.html).
+
+Create > **Manage** > Secure > Socialize > Analyze
+
+ 
 [important]: ./images/important.png "Important!"
 [info]: ./images/info.png "Information"
 [troubleshooting]: ./images/troubleshooting.png "Troubleshooting" 

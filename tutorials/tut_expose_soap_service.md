@@ -2,7 +2,7 @@
 
 copyright:
 years: 2017
-lastupdated: "2017-09-22"
+lastupdated: "2017-09-30"
 
 ---
 
@@ -132,6 +132,12 @@ In this tutorial, you completed the following activities:
 3. Tested your API definition
 
 ---
+
+## Next step
+
+Secure your API using [rate limiting](tut_rate_limit.html), [client ID and secret](tut_secure_landing.html), or [securing using OAuth 2.0](tut_secure_oauth_2.html).
+
+Create > **Manage** > Secure > Socialize > Analyze
 
 [important]: ./images/important.png "Important!"
 [info]: ./images/info.png "Information"

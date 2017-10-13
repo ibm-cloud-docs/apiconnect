@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-06"
+lastupdated: "2017-09-30"
 ---
 
 {:new_window: target="blank"}
@@ -92,3 +92,11 @@ The security settings can also be tested using the Explore tool that explicitly 
 
 ### Conclusion
 In this tutorial, you learned how to set the identification mechanism of your API, test changes made to your API, and call your API using the Client ID and Client secret. 
+
+---
+
+## Next step
+
+Start to socialize your API by [setting up and configuring a developer portal](tut_config_dev_portal.html).
+
+Create > Manage > **Secure** > Socialize > Analyze
