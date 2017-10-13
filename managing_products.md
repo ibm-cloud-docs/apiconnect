@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-07-11"
+lastupdated: "2017-09-25"
 ---
 
 {:new_window: target="blank"}
@@ -12,7 +12,7 @@ lastupdated: "2017-07-11"
 
 # Managing Products
 
-For details of the ways in which you can manage your Products, see the IBM&reg; Knowledge Center documentation [Managing your Products](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html)
+For details of the ways in which you can manage your Products, see the IBM&reg; Knowledge Center documentation [Managing your Products ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){:new_window}.
 
 ## Product lifecycle
 {: #prod_lifecycle}
@@ -153,11 +153,14 @@ are APIs already selected, and you do not want them included in the Plan you are
 their check boxes.
 
 12. **Optional**:
+Add the billing information for your Plan. To add billing information, you must establish an account with a credit card processing service so your customers can pay with a credit card. Monthly billing Plans are billed on the same date of each month.
+
+13. **Optional**:
 If you want to tailor which operations from an API are included in the Plan, hover the cursor
 over the API that contains the operation. Click the **Show operations** icon, and
 then select or clear the check boxes for the operations you want to include or exclude.
 
-13. **Optional**:
+14. **Optional**:
 To add a rate limit to your Plan, clear the **Unlimited** check box and then
 specify the rate limit that you want to apply. If the **Enforce hard limit**
 check box is selected the Plan will stop applications from calling the API after reaching the rate
@@ -168,12 +171,12 @@ limit, otherwise a warning will be presented.
     set these within the operations themselves and this setting overrides the setting at the Plan
     level.
 
-14. **Optional**:
+15. **Optional**:
 Specify whether your Plan requires subscription approval. If you want subscriptions by
 developers to require approval through the API Manager user interface, select **Require
 subscription approval**; otherwise, ensure that the check box is cleared.
 
-15 **Optional**:
+16. **Optional**:
 Add a rate limit to an operation.
     1. Hover the cursor over the API that contains the operation, click the **Show
 operations** icon.
@@ -251,6 +254,7 @@ Publishing a Product makes it visible in the {{site.data.keyword.Bluemix_short}}
 use.
 
 ### Prerequisites
+{: #prereq_publish_proj}
 
 You must stage a Product before it can be published. For more information about staging Products,
 see [Staging a Product](#stage_product).

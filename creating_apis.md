@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-08-03"
+lastupdated: "2017-09-26"
 
 ---
 
@@ -42,8 +42,9 @@ host port that is displayed when you run the command.
 {: #install_dev_tk}
 
 ### Prerequisites
+{: #prereq_install_dev_tk}
 
-Before you begin, You must install [Node.js](https://nodejs.org/en/) on the machine on which
+Before you begin, You must install [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://nodejs.org/en/){:new_window} on the machine on which
 you want to use the toolkit, and ensure that `node` is in your `PATH`.
 
 The following items are installed when you install the developer toolkit.
@@ -87,6 +88,7 @@ database, you must install the data source connector. The In-memory and email co
 in to LoopBack, so you don't need to install them.
 
 ### Prerequisites
+{: #prereq_install_lb_conn}
 
 The Oracle, DB2, and SQLLite connectors require C compiler tools to build and install binary
 extensions. The exact requirements depend on your operating system as described in the following
@@ -96,29 +98,29 @@ table.
 <caption>Table 1. Operating system-specific installation requirements</caption>
 <thead>
 <tr>
-<th style="width: 33.3%" id="d70e208" class="thleft style-scope doc-content">Windows</th>
-<th style="width: 33.3%" id="d70e210" class="thleft style-scope doc-content">Linux</th>
-<th style="width: 33.3%" id="d70e212" class="thleft style-scope doc-content">MAC OS X</th>
+<th style="width: 33.3%" id="th_d70e208" class="thleft style-scope doc-content">Windows</th>
+<th style="width: 33.3%" id="th_d70e210" class="thleft style-scope doc-content">Linux</th>
+<th style="width: 33.3%" id="th_d70e212" class="thleft style-scope doc-content">MAC OS X</th>
 </tr>
 </thead>
 <tbody >
 <tr class="style-scope doc-content doc-tr-odd">
-<td style="width: 33.3%" ><a href="https://www.microsoft.com/en-us/download/details.aspx?id=17851" rel="external" target="blank" title="(Opens in a new tab or window)" >Microsoft .NET Framework 4</a></td>
+<td style="width: 33.3%" > [Microsoft .NET Framework 4 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.microsoft.com/en-us/download/details.aspx?id=17851) <a href="https://www.microsoft.com/en-us/download/details.aspx?id=17851" rel="external" target="blank" title="(Opens in a new tab or window)" >Microsoft .NET Framework 4</a></td>
 <td style="width: 33.3%">Python v2.7 (v3.x is not supported)</td>
-<td style="width: 33.3%" ><a href="https://www.python.org/downloads/mac-osx/" rel="external" target="blank" title="(Opens in a new tab or window)" >Python
+<td style="width: 33.3%" > [Python Releases for Mac OS X ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.python.org/downloads/mac-osx/) <a href="https://www.python.org/downloads/mac-osx/" rel="external" target="blank" title="(Opens in a new tab or window)" >Python
 Releases for Mac OS X</a></td>
 </tr>
-<tr><td style="width: 33.3%" ><a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" rel="external" target="blank" title="(Opens in a new tab or window)" >Visual Studio</a></td>
+<tr><td style="width: 33.3%" > [Visual Studio ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.visualstudio.com/downloads/download-visual-studio-vs) <a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" rel="external" target="blank" title="(Opens in a new tab or window)" >Visual Studio</a></td>
 <td style="width: 33.3%">
 <code>make</code>
 </td>
-<td style="width: 33.3%" ><a href="https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716" rel="external" target="blank" title="(Opens in a new tab or window)" >Xcode</a></td>
+<td style="width: 33.3%" > [Xcode ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716) <a href="https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716" rel="external" target="blank" title="(Opens in a new tab or window)" >Xcode</a></td>
 </tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" ><a href="https://www.python.org/downloads/release/python-2710/" rel="external" target="blank" title="(Opens in a new tab or window)" >Python v2.7.10</a></td>
+<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" > [Python v2.7.10 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.python.org/downloads/release/python-2710/) <a href="https://www.python.org/downloads/release/python-2710/" rel="external" target="blank" title="(Opens in a new tab or window)" >Python v2.7.10</a></td>
 <td style="width: 33.3%">A C/C++ compiler toolchain, for example GCC version 4.2 or later. </td>
 <td style="width: 33.3%" >&nbsp;</td>
 </tr>
-<tr><td style="width: 33.3%" ><a href="https://www.microsoft.com/en-gb/download/details.aspx?id=8279" rel="external" target="blank" title="(Opens in a new tab or window)" >Microsoft Windows SDK for Windows 7</a></td>
+<tr><td style="width: 33.3%" > [Microsoft Windows SDK for Windows 7 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279) <a href="https://www.microsoft.com/en-gb/download/details.aspx?id=8279" rel="external" target="blank" title="(Opens in a new tab or window)">Microsoft Windows SDK for Windows 7</a></td>
 <td style="width: 33.3%">On Debian and Debian-derived distributions (Ubuntu, Mint etc), use the command:
 <pre class="codeblock style-scope doc-content"><code>apt-get install build-essential</code></pre>
 </td>
@@ -169,8 +171,8 @@ where `<connector-package>` is the name of the npm package for the LoopBack conn
 <caption>Table 3. LoopBack Connectors</caption>
 <thead>
 <tr class="style-scope doc-content doc-tr-even">
-<th style="width: 50%" id="d70e1489" class="thleft style-scope doc-content">Data source</th>
-<th style="width: 50%" id="d70e1491" class="thleft style-scope doc-content">Connector Package</th>
+<th style="width: 50%" id="th_new_d70e1489" class="thleft style-scope doc-content">Data source</th>
+<th style="width: 50%" id="th_new_d70e1491" class="thleft style-scope doc-content">Connector Package</th>
 </tr>
 </thead>
 <tbody>
@@ -217,22 +219,22 @@ The following procedure describes how to create a LoopBack&reg; API by using the
 
 
 ### Prerequisites
+{: #prereq_create_lb_api}
 
 Before you begin, have the catalog
 identifier for the catalog that you want to use to hand. To get the catalog identifier, complete the
-following steps:
+following steps:  
 
 1. Go to the {{site.data.keyword.apiconnect_short}} **Dashboard**.
 
 2. For the catalog that you want to use, click the **Show catalog identifier** 
 icon <img alt="Chain link icon to display the catalog identifier" src="images/chain_link_icon.png">.
 
-3. Copy the catalog identifier. For example:
-```
-apic config:set catalog=apic-catalog://<region>.apiconnect.ibmcloud.com/orgs/<username_string>-dev/catalogs/<catalog>
-```
-{: codeblock}
-
+3. Copy the catalog identifier. For example:  
+  ```
+  apic config:set catalog=apic-catalog://<region>.apiconnect.ibmcloud.com/orgs/<username_string>-dev/catalogs/<catalog>
+  ```
+  {: codeblock}
     where:
 
     - `<region>` is the {{site.data.keyword.Bluemix_short}} region.
@@ -240,7 +242,7 @@ apic config:set catalog=apic-catalog://<region>.apiconnect.ibmcloud.com/orgs/<us
     - `<username_string>` is your {{site.data.keyword.Bluemix_short}} org ID without any symbols. For example,
     `joe@mycompany.com` would be `joemycompanycom`
 
-    - `<catalog>` is the name of your catalog
+    - `<catalog>` is the name of your catalog  
 
 To create a LoopBack API by using the CLI, complete the following steps:
 
@@ -318,7 +320,7 @@ class:
       Checkpoint
     (Move up and down to reveal more choices)
     ```
-    For more information about each option, see [Using built-in models](https://loopback.io/doc/en/lb3/Using-built-in-models.html).
+    For more information about each option, see [Using built-in models ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){:new_window}.
 
 9. Select a base class and press **Enter**. The tool asks whether you want to expose the model's REST
 API.
@@ -561,9 +563,10 @@ The following procedure describes how to create a LoopBack&reg; API by using the
 {:shortdesc}
 
 ### Prerequisites
+{: #prereq_create_lb_api_design}
 
 **Note**: The following instructions assume that you are using the latest version of
-the developer toolkit. To check the latest version, see the [npm](https://www.npmjs.com/package/apiconnect) package page.
+the developer toolkit. To check the latest version, see the [npm ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.npmjs.com/package/apiconnect){:new_window} package page.
 
 First, you need to create a LoopBack&reg; project using the CLI. Complete the following steps to do this:
 
@@ -669,8 +672,8 @@ npm install --save <connector-package>
 <caption>Table 3. LoopBack Connectors</caption>
 <thead>
 <tr class="style-scope doc-content doc-tr-even">
-<th style="width: 50%" id="d70e1489" class="thleft style-scope doc-content">Data source</th>
-<th style="width: 50%" id="d70e1491" class="thleft style-scope doc-content">Connector Package</th>
+<th style="width: 50%" id="3rd_d70e1489" class="thleft style-scope doc-content">Data source</th>
+<th style="width: 50%" id="3rd_d70e1491" class="thleft style-scope doc-content">Connector Package</th>
 </tr>
 </thead>
 <tbody>
@@ -710,7 +713,7 @@ npm install --save <connector-package>
 </tbody>
 </table>
 
-For more information, see [LoopBack Documentation - Building a connector](https://http://loopback.io//doc/en/lb3/Defining-data-sources.html).
+For more information, see [LoopBack Documentation - Building a connector ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://http://loopback.io//doc/en/lb3/Defining-data-sources.html){:new_window}.
 
 **Note:** If you selected the Oracle connector, you must set an environment variable in
 {{site.data.keyword.Bluemix_short}} for the Oracle app to start. To
@@ -763,6 +766,7 @@ cd <project directory name>
 {: #uninstall_dev_tk}
 
 ### Prerequisites
+{: #prereq_uninstall_dev_tk}
 
 Before you begin, you must stop any apps that are running locally by entering the following
 command:
@@ -771,6 +775,7 @@ apic stop --all
 ```
 
 To uninstall the developer toolkit, complete the following steps:
+
 1. Enter the following command:
 ```
 npm rm -g apiconnect
@@ -781,7 +786,8 @@ npm rm -g apiconnect
 ```
 npm cache clean
 ```
-
+{:codeblock}
+  
 If you are using Windows:
 
 3. Delete all files whose names begin with `npm-` in `C:\Users\username\AppData\Local\Temp`

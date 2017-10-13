@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-07-12"
+lastupdated: "2017-09-15"
 ---
 
 {:new_window: target="blank"}
@@ -16,6 +16,7 @@ You can use a Swagger definition file to add a REST API.
 {:shortdesc}
 
 ## Prerequisites
+{: #prereq_import_swagger}
 
 Before you begin, ensure that your file conforms to version 2.0 of the Swagger
 specification. The format of the file can be JSON or YAML.
@@ -140,6 +141,7 @@ When the API definition is imported and integrated, you can manage and govern th
 With this tutorial, you can publish and manage REST APIs that you create with IBM&reg; App Connect Professional with {{site.data.keyword.apiconnect_full}}.
 
 ### Prerequisites
+{: #prereq_pub_api_appconn}
 
 You need valid accounts for IBM&reg; App Connect
 Professional on Cloud and for IBM API Connect&trade; on
@@ -164,7 +166,7 @@ following steps:
 
 1. Create the REST API by using IBM&reg; App Connect
 Professional.
-  - Log in to the [App Connect Professional Web Management Console](https://appconnect.ibmcloud.com/professional/) with your IBMid. For more information about how to complete the tasks for creating a REST API with IBM&reg; App Connect Professional Web Management Console, see [About management console settings](https://www.ibm.com/support/knowledgecenter/en/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html") in the IBM&reg; Knowledge Center.
+  - Log in to the [App Connect Professional Web Management Console ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://appconnect.ibmcloud.com/professional/){:new_window} with your IBMid. For more information about how to complete the tasks for creating a REST API with IBM&reg; App Connect Professional Web Management Console, see [About management console settings ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window} in the IBM&reg; Knowledge Center.
   - Select the Production tab, if it is not already selected.
   - Select **Repository** > **Configurations** in the navigation panel.
   - On the Project Configurations screen, select the project that you are publishing to {{site.data.keyword.apiconnect_short}}.  The Configuration Details of the project that is being published are displayed.
@@ -193,7 +195,7 @@ Professional.
   <tr><td>Password</td>
   <td>Specifies the authentication password that is used for accessing the Management Cluster,
   Server, or Cloud address. This is most likely your IBMid password that you use to log in to
-  Bluemix.</td>
+  {{site.data.keyword.Bluemix_short}}.</td>
   </tr>
   </tbody>
   </table>
@@ -239,7 +241,7 @@ settings.
 8. Configure the host/basePath to the URL field with the following information:
 
 - **hostname**: Setting that depends on your cloud instance. For more information about this setting, see
-[IBM App Connect Professional](https://provide.castiron.ibmcloud.com).
+[IBM App Connect Professional ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://provide.castiron.ibmcloud.com){:new_window}.
 
 - **basepath**: Path that you specify on the httpReceive Request note in App Connect Professional orchestration.
 
