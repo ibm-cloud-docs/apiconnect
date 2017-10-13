@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-08-29"
+lastupdated: "2017-09-30"
 ---
 
 {:new_window: target="blank"}
@@ -161,3 +161,12 @@ _If you run into a CORS error, follow the instructions in the error message. Cli
 
 ## Conclusion
 In this tutorial, you saw how an existing REST service can be invoked through an API passthrough proxy. You started by checking the availability of the sample service through the web browser. Then you created a new OpenAPI spec in {{site.data.keyword.apiconnect_short}}, and linked it to the sample service to be invoked. Finally, you tested the API proxy with the built-in testing tool.
+
+---
+
+## Next step
+
+Secure your API using [rate limiting](tut_rate_limit.html), [client ID and secret](tut_secure_landing.html), or [securing using OAuth 2.0](tut_secure_oauth_2.html).
+
+Create > **Manage** > Secure > Socialize > Analyze
+

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-08-24"
+lastupdated: "2017-09-30"
 ---
 
 {:new_window: target="blank"}
@@ -157,3 +157,11 @@ The **Operation Switch** provides a decision point. Based on the verb/path pair,
 
 ### Conclusion
 In this tutorial, you learned how an existing REST service can be invoked through an API passthrough proxy. You started by checking the availability of the sample service through the web browser. Then you created a new OpenAPI spec in API Connect, and linked it to the sample service to be invoked. You packaged your API into a product, published the product to catalog, and tested the proxy.
+
+---
+
+## Next step
+
+Secure your API using [rate limiting](tut_rate_limit.html), [client ID and secret](tut_secure_landing.html), or [securing using OAuth 2.0](tut_secure_oauth_2.html).
+
+Create > **Manage** > Secure > Socialize > Analyze

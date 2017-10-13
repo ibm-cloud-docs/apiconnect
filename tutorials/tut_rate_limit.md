@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-22"
+lastupdated: "2017-09-30"
 ---
 
 {:new_window: target="blank"}
@@ -152,3 +152,11 @@ We are ready to test this behavior and observe what happens when the application
 ## Conclusion
 
 Congratulations! You have successfully created a rate-limiting Plan, associated it with your secure APIs, and verified that your API only responds to requests within the parameters you specified.
+
+---
+
+## Next step
+
+Start to socialize your API by [setting up and configuring a developer portal](tut_config_dev_portal.html).
+
+Create > Manage > **Secure** > Socialize > Analyze

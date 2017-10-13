@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-21"
+lastupdated: "2017-09-30"
 ---
 
 {:new_window: target="blank"}
@@ -74,3 +74,11 @@ or
     
 ## Conclusion
 In this tutorial, you learned how to create an OAuth Provider API, update the security definitin of an API to include OAuth, and test your security configuration.
+
+---
+
+## Next step
+
+Start to socialize your API by [setting up and configuring a developer portal](tut_config_dev_portal.html).
+
+Create > Manage > **Secure** > Socialize > Analyze
