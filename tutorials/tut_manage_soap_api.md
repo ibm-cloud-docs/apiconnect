@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-17"
 ---
 
 
@@ -61,47 +61,46 @@ Note: You can click **Raw** and then save the resulting page on your local syste
 12. Click the ![save](images/save.png) icon to save your changes. An "API Saved" confirmation notification appears momentarily.
 
 13. In the menu bar with the save icon, the **Design** tab indicates your present location. Next to that, you find the **Source** tab where you can directly view the Swagger (2.0) file that represents your API, and next to that, you find the **Assemble** tab that takes you to a drag and drop interface for API processing. Click **Assemble**.
-  ![Assemble tab](images/assemble-clean.png)
+  ![Assemble tab](images/assemble-clean.png)  
 
----
 ## Testing the SOAP API definition
 
-1. In the **Assemble** tab, click the **More actions** (three dots) icon, and select **Generate a default product** from the menu.
+1. In the **Assemble** tab, click the **More actions** (three dots) icon, and select **Generate a default product** from the menu.  
    ![More actions menu, open](images/gen-default-prod.png)
 
-2. Accept the default options in the **New Product** dialog pop-up, and select **Create Product**. The **weatherService product 1.0.0** is created and published to the Sandbox catalog.
+2. Accept the default options in the **New Product** dialog pop-up, and select **Create Product**. The **weatherService product 1.0.0** is created and published to the Sandbox catalog.  
   ![create a new product](images/12a-chooseproduct.png)
-
-  - _In {{site.data.keyword.apiconnect_short}}, **Products** provide a mechanism to group APIs that are intended for a particular use. Products are published to a **Catalog**. Reference: [{{site.data.keyword.apiconnect_short}} glossary](../apic_glossary.html)_
+ 
+  _In {{site.data.keyword.apiconnect_short}}, **Products** provides a mechanism to group APIs that are intended for a particular use. Products are published to a **Catalog**. Reference: [{{site.data.keyword.apiconnect_short}} glossary](../apic_glossary.html)_
 
 3. Save your changes.  
 
 4. Next to the Search box, click the test icon to test the API service. The Setup menu appears.
 
-5. From the Products list, choose ```weatherService product 1.0.0```.
+5. From the Products list, choose ```weatherService product 1.0.0```.  
   ![choose weather service](images/12-chooseproduct.png)
 
-6.	Scroll to the bottom and click **Next**.
+6. Scroll to the bottom and click **Next**.
 
-7.	From the list of Operations, select ```post /weatherRequest```.
+7. From the list of Operations, select ```post /weatherRequest```.  
   ![post a request](images/13-selectoperation.png)
 
-8.	Scroll down. Enter the following xml in the body field. You can select and copy the following example XML, then click the **body** field to activate the field and place the example XML.
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+8. Scroll down. Enter the following xml in the body field. You can select and copy the following example XML, then click the **body** field to activate the field and place the example XML.  
+  ```
+  <?xml version="1.0" encoding="UTF-8"?>
+  <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
    <soap:Body>
-<wdata:WeatherRequest xmlns:wdata="http://www.ibm.com/wdata">
+  <wdata:WeatherRequest xmlns:wdata="http://www.ibm.com/wdata">
        <zipcode>10504</zipcode>
-</wdata:WeatherRequest>
+  </wdata:WeatherRequest>
    </soap:Body>
-</soap:Envelope>
-```
-{: codeblock}
+  </soap:Envelope>
+  ```
+  {: codeblock}  
   ![the request](images/14-enterrequest.png)
 
-9.	Scroll down if needed, and click **Invoke**.
-The API returns a Response **body** consisting of the current weather.
+9. Scroll down if needed, and click **Invoke**.
+The API returns a Response **body** consisting of the current weather.  
   ![](images/15-success.png)
 
 ## What you did in this tutorial
