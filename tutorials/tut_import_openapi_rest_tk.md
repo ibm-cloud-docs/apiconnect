@@ -55,7 +55,7 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 7. From the drop-down menu, click **Import API from a file or URL**.
    ![](images/toolkit-import-1.png)
 8. There is an OpenAPI 2.0 definition of the weather API that you will use for this tutorial. In the "Import OpenAPI (Swagger)" dialog box, enter this URL:
-```https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml```.
+`https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml`.
 9. Leave the _Add a product_ option unchecked and click **Import**.  
     ![](images/screenshot_import-url.png)  
 

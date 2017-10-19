@@ -53,7 +53,7 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
      ![](images/import-1.png)
 
 6. We will now import the OpenAPI weather definition. In the "Import OpenAPI (Swagger)" dialog box that opens, enter the following URL:
-```https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/bluemix/1a/weather-provider-api_1.0.0.yaml```. Leave the other options with their default values and click **Import**.  
+`https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/bluemix/1a/weather-provider-api_1.0.0.yaml`. Leave the other options with their default values and click **Import**.  
     ![](images/import-2.png)  
 
 7. After you import the OpenAPI spec, you are taken to the **Design** view of the API. Here you can view various sections of the OpenAPI definition. Scroll to explore, and note the **Host** value. You can also view the OpenAPI under the **Source** tab.
