@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-7-18"
+lastupdated: "2017-10-19"
 
 ---
 
@@ -98,7 +98,7 @@ To use your secure gateway with APIs, complete the following steps:
   - Select the type of API that you want to create.
   - Select or click **Add a Product**. **IMPORTANT**: Do not publish the Product yet.
   - Click **Create API**.
-  The API is displayed in the `**Design**` View.
+  The API is displayed in the `Design` View.
   
 2. Click **Assemble**.
 
@@ -312,7 +312,7 @@ Catalog name
 		    - You must configure a DNS entry that maps your custom host name and domain to the default gateway
 		    URL.
 		    - For the endpoints of an API to reflect your custom gateway URL, you must configure the API to be
-		    enforced by the API Connect gateway. For more information, see [Specifying an alternative host for an API](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step).
+		    enforced by the API Connect gateway. For more information, see [Specifying an alternative host for an API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
 		    - Ensure that the same custom gateway URL is not applied to multiple Catalogs as the behavior in
 		    that scenario is undefined.
 	        **TIP**: When you call the API, you can also set the HTTP host header on the API
@@ -334,7 +334,7 @@ Catalog name
 	    production developer portals to advertise the address of the API.
 
 	    **Note:** If you specify a custom API URL for a Catalog, it takes precedence over any host name that you
-	    specify when you configure the API. For more information, see [specifying an alternative host for an API](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step).
+	    specify when you configure the API. For more information, see [Specifying an alternative host for an API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
 
 	    - **Hostname for Developer Portal API Calls**:
 	    In the Port API Endpoint window area, enter a host name for Developer Portal API calls. The host
@@ -363,7 +363,7 @@ the navigation pane. You can manage your Spaces by clicking either of these link
 Spaces are enabled for your Catalog, and a default Space, called New Space is
 created.
 
-For more information about using syndication, see the Knowledge Center topics, [Using syndication in IBM API Connect](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html).
+For more information about using syndication, see the Knowledge Center topics, [Using syndication in IBM API Connect ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}.
 
 ## Configuring a Developer Portal
 {: #config_dev_portal}
@@ -397,7 +397,7 @@ subject line of the email that you received. You can also find the URL in the AP
 clicking **Portal** > **Settings**.
 
 For more information about the tasks that you can complete in the Developer Portal, see the IBM
-Knowledge Center topics about the [Developer Portal](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.html).
+Knowledge Center topics about the [Developer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.html){:new_window}.
 
 ## Configuring permissions for roles
 {: #config_permissions_roles}
@@ -409,7 +409,7 @@ steps.
 with.
 
 2. Click **Settings** > **Permissions**.
-The Product management permissions to which you can assign roles are displayed:<dl>
+The Product management permissions to which you can assign roles are displayed:
   - **Stage**: Allow staging of Products to the Catalog.
   - **View**: Allow viewing and listing of Products in the Catalog.
   - **Manage**: Allow management of Product lifecycle (publishing, deprecating, retiring and archiving).

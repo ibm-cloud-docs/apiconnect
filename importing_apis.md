@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-15"
+lastupdated: "2017-10-19"
 ---
 
 {:new_window: target="blank"}
@@ -102,7 +102,7 @@ steps:
 	4. Select **Save**.
 	5. Select **Refresh listing** to update the screen.
 	6. Verify that the BAR file was successfully uploaded by viewing the API Integration Flow for the API in the *Integrations* window of the IBM Integration Bus on Cloud.
-4. Start the integration flow by selecting the start icon ![Screen capture that shows the start icon.](images/a_play_button.jpg " "). The API starts and displays a status of ```Running```.
+4. Start the integration flow by selecting the start icon ![Screen capture that shows the start icon.](images/a_play_button.jpg " "). The API starts and displays a status of `Running`.
 5. Select the integration from the list of integrations to view information about it. The tree in the Contents menu displays the REST API and the subflows that are associated with it. You can also view information in the other sections. In the Public Endpoints section, you can
 view the public URL that IBM Integration Bus on Cloud assigned
 to your integration flow. Select **Show full URL** to view the complete URL for that operation.
@@ -115,7 +115,7 @@ to your integration flow. Select **Show full URL** to view the complete URL for 
 	1. Log in to your {{site.data.keyword.apiconnect_short}} {{site.data.keyword.Bluemix_notm}} service.
 	2. In the API Manager UI navigation pane, select **Drafts** > **APIs**. The APIs tab opens.
 	3. Select **+ Add** > **Import API from a file or URL**. The *Import OpenAPI (Swagger)* window opens.
-	4. To upload the file that you created from your local file system, select **Select File** and select the file that you created with IBM Integration Bus. Files with the ```.json```, ```.yml```, and ```.yaml``` extensions are supported if they contain a valid Swagger definition. Make sure that the option for **Add a product** is selected. You can optionally publish the product by selecting **Publish this product to a catalog**.
+	4. To upload the file that you created from your local file system, select **Select File** and select the file that you created with IBM Integration Bus. Files with the `.json`, `.yml`, and `.yaml` extensions are supported if they contain a valid Swagger definition. Make sure that the option for **Add a product** is selected. You can optionally publish the product by selecting **Publish this product to a catalog**.
 	5. Click **Import**. A new REST API definition is created, including Paths and HTTP operations. Tip: Cancel the import, refresh your browser, and try importing it again if it takes longer than 1 minute to import. Your session might be expired.
 2. Associate the imported API in {{site.data.keyword.apiconnect_short}} with the API in IBM Integration Bus on Cloud.
 	1. Go to the Dashboard of {{site.data.keyword.apiconnect_short}}.

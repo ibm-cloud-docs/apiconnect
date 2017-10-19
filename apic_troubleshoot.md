@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-25"
+lastupdated: "2017-10-19"
 ---
 
 {:new_window: target="blank"}
@@ -18,7 +18,7 @@ Here are the answers to common troubleshooting questions about using {{site.data
 
 ## Username and password required when adding the API Connect Bluemix service
 
-After you add the {{site.data.keyword.apiconnect_short}} service to your {{site.data.keyword.Bluemix_short}} Dashboard, you are prompted for a username and password when you try to open it. 
+After you add the 	 service to your {{site.data.keyword.Bluemix_short}} Dashboard, you are prompted for a username and password when you try to open it. 
 
 ### Symptoms
 {: #ts_sym_usernamepw}
@@ -61,23 +61,22 @@ You don't have the required rights to create files or directories.
 {: #ts_res_noinstalltk}
 
 Change the rights for the specified directories, or run the command using
-```sudo```. On a local development system, it is better to fix the directory rights as
+`sudo`. On a local development system, it is better to fix the directory rights as
 follows:
-
 ```
 sudo chown -R $USER /usr/local
 ```
 {:codeblock}
 
-This command makes your user account the owner of the ```/usr/local``` directory. Then, you will not need to use sudo to
+This command makes your user account the owner of the `/usr/local` directory. Then, you will not need to use sudo to
 install Node or install packages globally with npm. For more information, see [How to Node ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://howtonode.org/introduction-to-npm){: new_window}. **Note:** Changing directory ownership is appropriate only on a local development system.
 Never do this on a server system.
 
 Also, do not use the previous
-```chown``` command on the ```/usr/bin``` directory;
+`chown` command on the `/usr/bin` directory;
 doing so can seriously misconfigure your system.
 
-If you have to use ```sudo```, use
+If you have to use `sudo`, use
 the following command:
 ```
 sudo npm install -g --unsafe-perm install apiconnect
@@ -110,7 +109,7 @@ You can fix this problem in one of the following ways:
 - If you had to upgrade a program, try the installation again.
 
 If that does not work, install {{site.data.keyword.apiconnect_short}} at a level
-higher than the likely ```C:/program files/nodejs/bin/node_modules...``` folder. If you
+higher than the likely `C:/program files/nodejs/bin/node_modules...` folder. If you
 install at a top-level directory, you will not see this error.
 
 ## Unable to install the developer toolkit on Mac OS X
@@ -189,13 +188,13 @@ debug.
 ### Resolution
 {: #ts_res_npmfail}
 
-When an installation fails, npm writes a line in the ```npm-debug.log</filepath>```
-file to show where the error is located. Use the ```npm-debug.log``` file to determine
+When an installation fails, npm writes a line in the `npm-debug.log</filepath>`
+file to show where the error is located. Use the `npm-debug.log` file to determine
 the cause.
 
 ## Unable to open the API Designer
 
-You enter the command ```apic edit``` and the API Designer does not
+You enter the command `apic edit` and the API Designer does not
 open.
 
 ### Symptoms
@@ -206,7 +205,6 @@ You are unable to open an instance of the API Designer after you enter the comma
 apic edit
 ```
 and the following message is displayed:
-
 ```
 <time stamp>. 329Z ERROR apiConnect: listen EADDRINUSE <ip address> :9000
 ```
@@ -230,7 +228,7 @@ following steps:
 Terminate Batch job (Y/N)?
 ```
 
-3. Type ```Y``` and press Enter.
+3. Type `Y` and press Enter.
 
 ## Cannot configure billing information for a Product
 
