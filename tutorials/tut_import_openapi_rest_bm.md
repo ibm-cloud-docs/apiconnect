@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-19"
 ---
 
 {:new_window: target="blank"}
@@ -31,11 +31,11 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 2. Enter a valid 5-digit U.S. zipcode to get the _**current weather**_ and _**today's forecast**_.  
 ![](images/explore-weatherapp-1.png)
 
-3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is ```https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}```. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
+3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is `https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}`. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
 
   ![](images/explore-weatherapp-2.png)
 
-4. Similarly, the Endpoint to get **today's** forecast data is ```https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}```. Test it out by going to [https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){:new_window}.  
+4. Similarly, the Endpoint to get **today's** forecast data is `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`. Test it out by going to [https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){:new_window}.  
 
   ![](images/explore-weatherapp-3.png)
 
@@ -57,7 +57,7 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
     ![](images/import-2.png)  
 
 7. After you import the OpenAPI spec, you are taken to the **Design** view of the API. Here you can view various sections of the OpenAPI definition. Scroll to explore, and note the **Host** value. You can also view the OpenAPI under the **Source** tab.
-  _Note: You'll notice that the Host value is set to_ ```$(catalog.host)``` _. This is the base URL for your API proxy._
+  _Note: You'll notice that the Host value is set to_ `$(catalog.host)` _. This is the base URL for your API proxy._
 8. Save your API.
 
 

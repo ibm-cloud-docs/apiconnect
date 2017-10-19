@@ -2,7 +2,7 @@
 
 copyright:
 years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-19"
 
 ---
 
@@ -38,17 +38,17 @@ You may see an alert describing what's new, or the **Draft APIs** informational 
 	![](images/drafts-api-1.png)
 5. Select **Add +** > **New API**.
 6. Specify basic information about the API.
-	- In the **Title** field, enter ```Weather Data```.
-	- Leave the **Name** field as ```weather-data``` when it is filled while you enter your title.	
-	- Leave the **Base** Path field as ```/weather-data```.
-	- Leave the **Version** field as ```1.0.0```.
+	- In the **Title** field, enter `Weather Data`.
+	- Leave the **Name** field as `weather-data` when it is filled while you enter your title.	
+	- Leave the **Base** Path field as `/weather-data`.
+	- Leave the **Version** field as `1.0.0`.
 7. Expand **Additional properties** to specify additional properties for the API.
 	- From the **API template** field, select **Default** to indicate that you want to use the default template to create the API definition.
 	- Leave the remaining fields unchanged.
 	![](images/new-api-1.png)
 8. Add your API to a new Product and then create the API definition.
 	- Select **Add a product**.
-	- In the **Title** field, use ```Weather Data product``` as the default.
+	- In the **Title** field, use `Weather Data product` as the default.
 	- Leave the **Name** and **Version** fields unchanged.
 	- Ensure that the **Publish this product to a catalog** check box is selected and then select **Sandbox** as the target Catalog.
 	![](images/new-api-2.png)
@@ -60,15 +60,15 @@ You may see an alert describing what's new, or the **Draft APIs** informational 
 	>![images/info.png]
 	>You may notice that there is a yellow triangular icon that appears next to the save disk icon.  This is a warning that there are definition that may have been defined but not yet used. (This won't affect the API definition.)
 11. In the **Definitions** section, click the **Add Definition** icon ![](images/add-icon.png) and then expand the new definition by clicking it.
-12. Name the definition ```Weather Data Output```.
-13. The definition will have five properties. Click **Add Property** four times to add the additional properties. Rename the ```Property Name``` using the following as a guide and use the default for the ```Description```, ```Type``` and ```Example```:
+12. Name the definition `Weather Data Output`.
+13. The definition will have five properties. Click **Add Property** four times to add the additional properties. Rename the `Property Name` using the following as a guide and use the default for the `Description`, `Type` and `Example`:
 	![](images/definition-new-1.png)
 14. In the **Paths** section, click the **Add Path** icon ![](images/add-icon.png).
-15. In the **Path** field of your newly created Path, replace the contents with ```/getweatherdata```.
+15. In the **Path** field of your newly created Path, replace the contents with `/getweatherdata`.
 16. Expand the **GET /getweatherdata** operation by clicking it.
 	![](images/path-new-1.png)
 17. For your **GET /getweatherdata** operation, click **Add Parameter**, and then click **Add new parameter**.
-18. Name your new parameter ```zip_code``` and leave the rest as default.
+18. Name your new parameter `zip_code` and leave the rest as default.
 19. In the **Schema** column of the **200 OK** response in the **Responses** section, select your **Weather Data Output** definition. For the response to the API call, the object define in by the **Weather Data Output** will be the response object.
 	![](images/path-new-2.png)
 20. Click the Save icon ![](images/save-icon.png) to save your changes.
@@ -76,10 +76,10 @@ You may see an alert describing what's new, or the **Draft APIs** informational 
 ---
 ## Adding and configuring your web service invocation
 To add and configure the invoke and map policies that integrate your web service into your API definition, complete the steps below.
-1. In the **Services** section, click the **Add service** icon ![](images/add-icon.png). The ```Import web service from WSDL``` window opens.
+1. In the **Services** section, click the **Add service** icon ![](images/add-icon.png). The `Import web service from WSDL` window opens.
 	![](images/upload-file-1.png)
 2. Select **Upload file**.
-3. In the **File Upload** window, specify the location to the ```weatherprovider.wsdl``` file that you downloaded in ```step 2``` of the **Prerequisites** section and click **Open** to continue.
+3. In the **File Upload** window, specify the location to the `weatherprovider.wsdl` file that you downloaded in `step 2` of the **Prerequisites** section and click **Open** to continue.
 4. Select the **weatherService** SOAP service and then click **Done**. In the **Services** section, **WeatherService** web service is listed with a single **weatherRequest** operation.
 	![](images/upload-file-2.png)
 
@@ -91,15 +91,15 @@ To add and configure the invoke and map policies that integrate your web service
 	![](images/services-add-2.png)	
 8. Click the **weatherRequest: input** map policy and then click the **Edit inputs** icon ![](images/edit-icon.png) in the Input column of the property sheet.
 	![](images/services-add-3.png)	
-9. Click **+ parameters for operation** and select ```get /getweatherdata```.
-10. Click **Done** to add the ```zip_code``` parameter.
+9. Click **+ parameters for operation** and select `get /getweatherdata`.
+10. Click **Done** to add the `zip_code` parameter.
 	![](images/webservice-input-1.png)
 11. Click the circle corresponding to **zip_code string** on the input side and then click the circle corresponding to **zipcode string** on the output side.  
 	![](images/webservice-input-2.png)
 12. Close the property sheet.
 13. Click the **weatherRequest: output** map policy in the palette and then click the **Edit outputs** icon ![](images/edit-icon.png) in the Output column of the property sheet.
-14. Select **+ outputs for operation** and select ```get /getweatherdata```.
-15. Select **Done** to add the ```Weather Data Output``` output definition.
+14. Select **+ outputs for operation** and select `get /getweatherdata`.
+15. Select **Done** to add the `Weather Data Output` output definition.
 	![](images/webservice-output-1.png)
 16. Click the circle corresponding to **zip string** on the input side and then click the circle corresponding to **zip string** on the output side. Map the remaining parameters using the following as a guide.
 	![](images/webservice-output-2.png)
@@ -113,13 +113,13 @@ To test your API definition by using the API Manager test tool, complete the ste
 1. Click the **Test** icon ![](images/test-icon.png) under the **Assembly** tab to reveal the test pane.
 	![](images/test-pane-1.png)
 2. If you have used the test tool before, click **Change setup**.
-3. Choose ```Weather Data product 1.0.0``` from the list of products.
+3. Choose `Weather Data product 1.0.0` from the list of products.
 	![](images/choose-product-1.png)
 4. Click **Republish product**.
 5. Click **Next**.
-6. Select ```get /getweatherdata``` from the list of operations.  
+6. Select `get /getweatherdata` from the list of operations.  
 	![](images/select-operation-1.png)
-7. Scroll down to the **zip_code** field, enter ```90210```.  
+7. Scroll down to the **zip_code** field, enter `90210`.  
 	![](images/test-api-1.png)
 8. Click **Invoke**. The API returns the current weather.  
 	![](images/test-api-2.png)

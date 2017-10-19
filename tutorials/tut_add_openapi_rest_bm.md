@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-19"
 ---
 
 {:new_window: target="blank"}
@@ -46,13 +46,13 @@ A sample _weather provider_ app was created for this tutorial.
 4. Select **Drafts** in the navigation panel.
 5. In the **APIs** tab, click **Add**. From the dropdown menu, select **New API**.    
   ![](images/create-new-1.png)  
-6. In the *New API* window, enter ```Weather Provider API``` for the title.
+6. In the *New API* window, enter `Weather Provider API` for the title.
 _The Name and Base Path are auto-populated_.  
   ![](images/bluemix-add-new-api.png)
 7. Click **Create API** to complete the wizard.  
 8. After you create your API, the **Design** tab is selected. 
-9. Scroll to the **Host** panel. Enter ```$(catalog.host)``` as the value if the field is not automatically filled in.
-10. In the **Base Path** panel, note the auto-populated value: ```/weather-provider-api```. Your API's target URL will be created from these values.  
+9. Scroll to the **Host** panel. Enter `$(catalog.host)` as the value if the field is not automatically filled in.
+10. In the **Base Path** panel, note the auto-populated value: `/weather-provider-api`. Your API's target URL will be created from these values.  
 
 11. Scroll to the **Security** tab, and delete the "clientIDHeader (API Key)" that has been been auto-generated.  
 _(We'll visit security with API Keys in the next tutorial.)_  
@@ -117,9 +117,9 @@ _(We'll visit security with API Keys in the next tutorial.)_
 The **Operation Switch** provides a decision point. Based on the verb/path pair, the appropriate operation needs to be invoked.
     c. Drag the **invoke** policy from the palette and drop it on the canvas. _The invoke action is used to call an existing service from within an operation_.  Drop an invoke action in the **/get current** path, and one in the **/get today** path.   
     d. Select the **invoke** policy in the **/get current** path, and update its title to "**invoke-current**".  
-    e. Update the URL field with ```https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode)```.  
+    e. Update the URL field with `https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`.  
     f. Select the **invoke** policy in the **/get today** path, and update its title to "**invoke-today**".  
-    g. Update the URL field with ```https://myweatherprovider.mybluemix.net/today?zipcode=$(request.parameters.zipcode)```.  
+    g. Update the URL field with `https://myweatherprovider.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`.  
        ![](images/assemble-2.png)
 
 22. Save your API.

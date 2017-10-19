@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-17"
+lastupdated: "2017-10-19"
 ---
 
 
@@ -46,7 +46,7 @@ Note: You can click **Raw** and then save the resulting page on your local syste
 7. The New API from WSDL dialog box opens. Click **Upload File**.
   ![upload the .wsdl file](images/4-uploadwsdl.png)
 
-8. Select the ```weatherprovider.wsdl``` file that you saved previously.
+8. Select the `weatherprovider.wsdl` file that you saved previously.
 
 9. The New API from WSDL dialog box reappears. Check the **weatherService** check box. Click **Done**.
   ![select weather service](images/newapi2.png)
@@ -77,12 +77,12 @@ Note: You can click **Raw** and then save the resulting page on your local syste
 
 4. Next to the Search box, click the test icon to test the API service. The Setup menu appears.
 
-5. From the Products list, choose ```weatherService product 1.0.0```.  
+5. From the Products list, choose `weatherService product 1.0.0`.  
   ![choose weather service](images/12-chooseproduct.png)
 
 6. Scroll to the bottom and click **Next**.
 
-7. From the list of Operations, select ```post /weatherRequest```.  
+7. From the list of Operations, select `post /weatherRequest`.  
   ![post a request](images/13-selectoperation.png)
 
 8. Scroll down. Enter the following xml in the body field. You can select and copy the following example XML, then click the **body** field to activate the field and place the example XML.  

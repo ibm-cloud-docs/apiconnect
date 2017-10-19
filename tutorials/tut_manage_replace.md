@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-25"
+lastupdated: "2017-10-19"
 
 ---
 
@@ -63,7 +63,7 @@ In this tutorial, you will update an existing API product by replacing it with a
 10.	Select **Weather Provider API Product**.  
 ![](images/rep-draft-prod-list.png)
 
-11.	Change the **Version** to 2.0.0. Enter ```Updated API``` in the **Description** field. Click the disk icon to save the changes.  
+11.	Change the **Version** to 2.0.0. Enter `Updated API` in the **Description** field. Click the disk icon to save the changes.  
 ![](images/rep-update-prod.png)
 
 12.	Click the **Stage** icon to upload the new version. Select the **Sandbox** catalog if it is not already selected.
