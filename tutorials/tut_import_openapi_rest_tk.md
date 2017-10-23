@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-10-23"
 ---
 
 {:new_window: target="blank"}
@@ -26,7 +26,7 @@ Before you begin, you will need to [set up your API Connect Instance](tut_prereq
 
 ## Explore the sample app and test the target endpoints
 
-A sample _weather provider_ app has been created for this tutorial. The corresponding API specification (Swagger 2.0) is in the [weather-provider-api_1.0.0.yaml ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window} file.
+A sample _weather provider_ app has been created for this tutorial. The corresponding API specification (Swagger 2.0) is in the [weather-provider-api_1.yaml ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window} file.
 
 1. To explore the app, go to [http://gettingstartedweatherapp.mybluemix.net/ ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}.  
 2. Enter a valid 5-digit U.S. zipcode to get the _**current weather**_ and _**today's forecast**_.  
@@ -55,7 +55,7 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 7. From the drop-down menu, click **Import API from a file or URL**.
    ![](images/toolkit-import-1.png)
 8. There is an OpenAPI 2.0 definition of the weather API that you will use for this tutorial. In the "Import OpenAPI (Swagger)" dialog box, enter this URL:
-`https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml`.
+`https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml`.
 9. Leave the _Add a product_ option unchecked and click **Import**.  
     ![](images/screenshot_import-url.png)  
 
