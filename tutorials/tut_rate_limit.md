@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-24"
 ---
 
 {:new_window: target="blank"}
@@ -29,7 +29,7 @@ In this tutorial, you will do the following:
 
 
 ## Prerequisites
-You must have already created an API in {{site.data.keyword.apiconnect_short}}, secured with at least an API Key. In the following instructions, our starting point is the [Weather Provider API example file ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window}, secured using a [client ID and secret](tut_secure_landing.html).
+You must have already created an API in {{site.data.keyword.apiconnect_short}}, secured with at least an API Key. In the following instructions, our starting point is the [Weather Provider API example file ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}, secured using a [client ID and secret](tut_secure_landing.html).
 
 Complete the following tutorials before you start this tutorial:
 - [Import your API spec, and proxy an existing REST service](tut_rest_landing.html).
