@@ -2,7 +2,7 @@
 
 copyright:
 years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-01"
 
 ---
 
@@ -23,14 +23,14 @@ In API Manager, you will create a REST API that will accesses a existing SOAP Se
 
 ## Prerequisites
 1. Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_full}} instance](tut_prereq_set_up_apic_instance.html).
-2. Before you begin, copy the [weatherprovider.wsdl test ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} file to your local filesystem.
+2. Before you begin, copy the [weatherprovider.wsdl test ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} file to your local filesystem.
 	>![images/info.png]
 	>You can click **Raw** and then save the resulting page on your local system as a `.wsdl` file.
 
 ---
 ## Setting up a REST API definition
 1. Log in to {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://new-console.ng.bluemix.net/login){:new_window}.
-2. In the {{site.data.keyword.Bluemix_short}} **Dashboard** scroll down and select {{site.data.keyword.apiconnect_full}}. Alternately, from the menu icon, choose **Services** and then **APIs** to reach the **Work with APIs** window, and select **API Connect**. From the **API Connect** page, you can simply press `Create`, or you can adjust the default settings. For the purposes of this exercise, leave the instance unbound, and adjust the Service name for easier recognition later. One example would be `API Connect-weather-exercise`.
+2. In the {{site.data.keyword.Bluemix_notm}} **Dashboard** scroll down and select {{site.data.keyword.apiconnect_short}}. Alternately, from the menu icon, choose **Services** and then **APIs** to reach the **Work with APIs** window, and select **API Connect**. From the **API Connect** page, you can simply press `Create`, or you can adjust the default settings. For the purposes of this exercise, leave the instance unbound, and adjust the Service name for easier recognition later. One example would be `API Connect-weather-exercise`.
 Press the `Create` button to launch the {{site.data.keyword.apiconnect_short}} service.  
 You may see an alert describing what's new, or the **Draft APIs** informational splash page. After reading the information click the **"Got it"** icon to view the API Manager.
 3. In {{site.data.keyword.apiconnect_short}}, if you have not previously pinned the UI navigation pane then click the **Navigate to** icon ![](images/navigate-to.png). The API Manager UI navigation pane opens. To pin the UI Navigation pane, click the **Pin menu** icon ![](images/pinned.png).

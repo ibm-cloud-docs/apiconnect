@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ Duration: 30 mins
 Skill level: Beginner
 
 ## Objective
-This is a basic introduction to API analytics in {{site.data.keyword.apiconnect_long}}. We'll tour the available analytics dashboards, and you can follow along with your own APIs.
+This is a basic introduction to API analytics in {{site.data.keyword.apiconnect_full}}. We'll tour the available analytics dashboards, and you can follow along with your own APIs.
 
 
 ## Prerequisites

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Securing your API with Client ID and Client Secret using the Toolkit
+# Securing your API with Client ID and Client Secret using the Developer Toolkit
 
 
 **Duration:** 10 mins  
@@ -34,7 +34,7 @@ Before you begin, you must have completed one of the following tutorials:
 1. Launch the API Designer (if it is not already open):  
    a. Open your terminal.  
    b. Enter `apic edit` into the command line. _API Designer is launched in your web browser_    
-   c. Click on **Sign in with Bluemix**.  
+   c. Click on **Sign in with {{site.data.keyword.Bluemix_notm}}**.  
    d. Enter your {{site.data.keyword.Bluemix_short}} login information.  
 
 2. Navigate to your API's Design view:

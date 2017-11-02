@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Securing your API with Client ID and Client Secret using IBM Bluemix
+# Securing your API with Client ID and Client Secret using {{site.data.keyword.Bluemix_notm}}
 
 **Duration:** 10 mins  
 **Skill level:** Beginner

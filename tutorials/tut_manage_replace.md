@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -39,7 +39,7 @@ In this tutorial, you will update an existing API product by replacing it with a
 
 1. Log in to {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/login){:new_window}.
 
-2. In the {{site.data.keyword.Bluemix_short}} Dashboard, launch the {{site.data.keyword.apiconnect_short}} service.
+2. In the {{site.data.keyword.Bluemix_notm}} Dashboard, launch the {{site.data.keyword.apiconnect_short}} service.
 ![](images/Bluemix.png)
 
 3. In API Manager, if you have not previously pinned the UI navigation pane, click the **Navigate to** icon ![](images/navigate-to.png). The API Manager UI navigation pane opens. To pin the UI Navigation pane, click the **Pin menu** icon ![](images/pinned.png).

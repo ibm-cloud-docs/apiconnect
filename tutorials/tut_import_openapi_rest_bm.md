@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-23"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-10-23"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Import your API spec and proxy an existing REST service with IBM Bluemix
+# Import your API spec and proxy an existing REST service with {{site.data.keyword.Bluemix_notm}}
 Duration: 5 mins  
 Skill level: Beginner  
 
@@ -44,9 +44,7 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 
 ## Import the sample app's OpenAPI spec to create a REST API proxy
 1. Log in to {{site.data.keyword.Bluemix_short}}: https://new-console.ng.bluemix.net/login.
-2. In the {{site.data.keyword.Bluemix_short}} navigation panel, select **Services**, then **Dashboard**. Launch the API Connect service.  
-   ![](images/login-1.png)   ![](images/login-2.png)  
-
+2. In the {{site.data.keyword.Bluemix_notm}} navigation panel, select **Services**, then **Dashboard**. Launch the {{site.data.keyword.apiconnect_short}} service. 
 3. In {{site.data.keyword.apiconnect_short}}, make sure the navigation panel on the left side is open. If not, click **>>** to open it.  
 4. Select **Drafts** in the navigation panel.   
 5. In the **APIs** tab, click **Add**. From the dropdown menu, select **Import API from a file or URL**.  
@@ -72,7 +70,7 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 
   ![](images/generate-default-product-3.png)
 
-  _In API Connect, **Products** provide a way to group APIs that are intended for a particular use. Products are published to a **Catalog**.  [{{site.data.keyword.apiconnect_short}} glossary](../apic_glossary.html)_
+  _In {{site.data.keyword.apiconnect_short}}, **Products** provide a way to group APIs that are intended for a particular use. Products are published to a **Catalog**.  [{{site.data.keyword.apiconnect_short}} glossary](../apic_glossary.html)_
 
 3. In the Assemble tab, click the play icon to test your API proxy's target invocation.
 
@@ -103,7 +101,7 @@ _The Explore Tool allows users to test the correct operation of the API by enfor
 
 
 ### Conclusion
-In this tutorial, you saw how an existing REST service can be invoked through an API passthrough proxy. You started by checking the availability of the sample service through the web browser. Then you created an API proxy in API Connect, and linked the proxy to the sample service to be invoked. You packaged your API into a product, published the product to catalog, and tested the proxy.
+In this tutorial, you saw how an existing REST service can be invoked through an API passthrough proxy. You started by checking the availability of the sample service through the web browser. Then you created an API proxy in {{site.data.keyword.apiconnect_short}}, and linked the proxy to the sample service to be invoked. You packaged your API into a product, published the product to catalog, and tested the proxy.
 
 ---
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-08-24"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -20,10 +20,10 @@ These tutorials provide options on how you can manage existing APIs.
 
 To manage an existing API, you can start by importing or adding an OpenAPI file.
 
-## IBM Bluemix
+## {{site.data.keyword.Bluemix_notm}}
 
-- [Importing an OpenAPI file by using IBM Bluemix](tut_import_openapi_rest_bm.html)
-- [Creating an OpenAPI file by using IBM Bluemix](tut_add_openapi_rest_bm.html)
+- [Importing an OpenAPI file by using {{site.data.keyword.Bluemix_notm}}](tut_import_openapi_rest_bm.html)
+- [Creating an OpenAPI file by using {{site.data.keyword.Bluemix_notm}}](tut_add_openapi_rest_bm.html)
 
 ## Developer Toolkit
 

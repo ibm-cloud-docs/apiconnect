@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-10-19"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Add a new API spec and invoke an existing REST service with IBM Bluemix
+# Add a new API spec and invoke an existing REST service with {{site.data.keyword.Bluemix_notm}}
 **Duration**: 15 mins  
 **Skill level**: Beginner  
 
@@ -28,7 +28,7 @@ A sample _weather provider_ app was created for this tutorial.
 2. Enter a valid 5-digit U.S. zipcode to get the _**current weather**_ and _**today's forecast**_.  
 ![](images/explore-weatherapp-1.png)
 
-3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
+3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is _**https://myweatherprovider.mybluemix.net/current?zipcode={zipcode}**_. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
 
   ![](images/explore-weatherapp-2.png)
 
@@ -40,8 +40,8 @@ A sample _weather provider_ app was created for this tutorial.
 ---
 
 ### Add a new OpenAPI spec to create a REST API proxy  
-1. Log in to {{site.data.keyword.Bluemix_short}}: https://new-console.ng.bluemix.net/login.
-2. In the {{site.data.keyword.Bluemix_short}} navigation panel, select **Services**, then select **Dashboard**. Launch the {{site.data.keyword.apiconnect_short}} service.
+1. Log in to {{site.data.keyword.Bluemix_notm}}: https://new-console.ng.bluemix.net/login.
+2. In the {{site.data.keyword.Bluemix_notm}} navigation panel, select **Services**, then select **Dashboard**. Launch the {{site.data.keyword.apiconnect_short}} service.
 3. In {{site.data.keyword.apiconnect_short}}, make sure the navigation panel is open. If not, click **>>** to open it.  
 4. Select **Drafts** in the navigation panel.
 5. In the **APIs** tab, click **Add**. From the dropdown menu, select **New API**.    
@@ -156,7 +156,7 @@ The **Operation Switch** provides a decision point. Based on the verb/path pair,
 ---
 
 ### Conclusion
-In this tutorial, you learned how an existing REST service can be invoked through an API passthrough proxy. You started by checking the availability of the sample service through the web browser. Then you created a new OpenAPI spec in API Connect, and linked it to the sample service to be invoked. You packaged your API into a product, published the product to catalog, and tested the proxy.
+In this tutorial, you learned how an existing REST service can be invoked through an API passthrough proxy. You started by checking the availability of the sample service through the web browser. Then you created a new OpenAPI spec in {{site.data.keyword.apiconnect_short}}, and linked it to the sample service to be invoked. You packaged your API into a product, published the product to catalog, and tested the proxy.
 
 ---
 

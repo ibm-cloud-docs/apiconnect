@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -27,10 +27,10 @@ In this section, you will create a developer portal for a catalog.
 
 *Catalogs* are an IBM term for different environments. For example, you would create different catalogs for your testing, staging, and production enviornments. You should have a catalog called Sandbox. Feel free to use this catalog to create your developer portal, or create a new catalog and name it whatever you want.
 
-1. In your Bluemix dashboard, select your **API Connect** service to launch the API Connect dashboard.
+1. In your {{site.data.keyword.Bluemix_short}} dashboard, select your **API Connect** service to launch the {{site.data.keyword.apiconnect_short}} dashboard.
 ![API Connect Service](images/11-Bluemix-Dashboard.png)
 
-2. In the API Connect dashboard, select the catalog for which you want to create a developer portal. For example, **Sandbox**.
+2. In the {{site.data.keyword.apiconnect_short}} dashboard, select the catalog for which you want to create a developer portal. For example, **Sandbox**.
 ![Catalog](images/12-APIC-Dashboard.png)
 
 3. In the catalog, select the **Settings** tab.  
@@ -79,7 +79,7 @@ Note: On the API Products page, you can select one of the products to view the P
   ![API Products](images/27-api-products.png)
 
 ### Conclusion
-In this tutorial, you learned how to set up and configure your API Connect Developer Portal. You also explored the developer portal.
+In this tutorial, you learned how to set up and configure your {{site.data.keyword.apiconnect_short}} Developer Portal. You also explored the developer portal.
 
 ---
 

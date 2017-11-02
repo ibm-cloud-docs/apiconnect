@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
+lastupdated: "2017-10-31"
 
 
 
@@ -23,7 +23,7 @@ There is no prerequisite for this tutorial. As a portal administrator, you can a
 If you do not have an existing developer portal, you can set up and configure a developer portal in {{site.data.keyword.Bluemix_short}} before proceeding with this tutorial.
 
 ## Objective
-In this tutorial, you will learn how a portal user might consume the APIs in the {{site.data.keyword.apiconnect_short}} Developer Portal. You will gain an understanding of how a portal user would explore products and APIs, view and test APIs, and subscribe to APIs. 
+In this tutorial, you will learn how a portal user might consume the APIs in the {{site.data.keyword.apiconnect_full}} Developer Portal. You will gain an understanding of how a portal user would explore products and APIs, view and test APIs, and subscribe to APIs. 
 
 ## Explore Products & APIs
 This section shows how a portal user would explore the products and APIs in the developer portal.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -30,7 +30,7 @@ In this tutorial, you will supersede an existing API with a new one.
 ## Superceding an API Product
 1. Log in to {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/login){:new_window}.
 
-2. In the {{site.data.keyword.Bluemix_short}} Dashboard, launch the {{site.data.keyword.apiconnect_short}} service.
+2. In the {{site.data.keyword.Bluemix_notm}} Dashboard, launch the {{site.data.keyword.apiconnect_short}} service.
 ![](images/Bluemix.png)
 
 3. In API Manager, if you have not previously pinned the UI navigation pane, click the **Navigate to** icon ![](images/navigate-to.png). The API Manager UI navigation pane opens. To pin the UI Navigation pane, click the **Pin menu** icon ![](images/pinned.png).
@@ -105,8 +105,8 @@ In this tutorial, you will supersede an existing API with a new one.
 In this tutorial, you completed the following activities:
 
 1. Updated an API product.
-2. Superceded an existing API product with an updated API product.
-3. Migrated the subscription to the existing API product to the updated API product.
+2. Superceded an existing API product with an updated API Product.
+3. Migrated the subscription to the existing API Product to the updated API Product.
 
 ---
 

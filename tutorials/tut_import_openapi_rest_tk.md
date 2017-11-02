@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-23"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -16,7 +16,7 @@ Skill level: Beginner
 
 
 ## Objective
-This tutorial illustrates how you can bring your existing API under management control with {{site.data.keyword.apiconnect_short}}. In this tutorial, you will import an OpenAPI spec, and create a passthrough API proxy for an existing REST service.
+This tutorial illustrates how you can bring your existing API under management control with {{site.data.keyword.apiconnect_full}}. In this tutorial, you will import an OpenAPI spec, and create a passthrough API proxy for an existing REST service.
 
 ## Prerequisites
 Before you begin, you will need to [set up your API Connect Instance](tut_prereq_set_up_apic_instance.html) and [install the API Connect toolkit](tut_prereq_install_toolkit.html).
@@ -88,7 +88,7 @@ _You'll see that the Host value is set to _ `$(catalog.host)` _. This is the bas
 
 ## Conclusion
 
-In this tutorial, you saw how an existing REST service can be invoked through an API passthrough proxy. You started by checking the availability of the sample service through the web browser. Then you created an API proxy in API Connect, and linked the proxy to the sample service to be invoked. Finally, you tested this service with the {{site.data.keyword.apiconnect_short}} internal testing tools.
+In this tutorial, you saw how an existing REST service can be invoked through an API passthrough proxy. You started by checking the availability of the sample service through the web browser. Then you created an API proxy in {{site.data.keyword.apiconnect_short}}, and linked the proxy to the sample service to be invoked. Finally, you tested this service with the {{site.data.keyword.apiconnect_short}} internal testing tools.
 
 ---
 

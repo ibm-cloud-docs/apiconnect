@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ lastupdated: "2017-10-19"
 **Skill level**: Beginner  
 
 ## Objective
-This tutorial helps you get started quickly with {{site.data.keyword.apiconnect_short}} by illustrating how you can bring your existing API under management control. You'll start by creating a new OpenAPI spec, and then create a passthrough API proxy for an existing REST service.
+This tutorial helps you get started quickly with {{site.data.keyword.apiconnect_full}} by illustrating how you can bring your existing API under management control. You'll start by creating a new OpenAPI spec, and then create a passthrough API proxy for an existing REST service.
 
 ## Prerequisite
 Before you begin, you will need to [set up your API Connect Instance](tut_prereq_set_up_apic_instance.html) and [install the API Connect toolkit](tut_prereq_install_toolkit.html).
@@ -120,9 +120,9 @@ _(We'll visit security with API Keys in the next tutorial.)_
     The **Operation Switch** provides a decision point. Based on the verb/path pair, the appropriate operation must be invoked.  
     c. Drag the **invoke** policy from the palette and drop it on the canvas. Drop one in the **/get current** path and one in the **/get today** path.
     d. Select the **invoke** policy in the **/get current** path, and update its title to "**invoke-current**".  
-    e. Update the URL field with: `https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`.
+    e. Update the URL field with: `https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`.
     f. Select the **invoke** policy in the **/get today** path, and update its title to "**invoke-today**".  
-    g. Update the URL field with: `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`.  
+    g. Update the URL field with: `https://myweatherprovider.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`.  
 
 20. Save your API.
 

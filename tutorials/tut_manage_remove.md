@@ -88,10 +88,10 @@ In this tutorial, you will delete, archive, and retire an API.
 ## What you accomplished in this tutorial
 In this tutorial, you completed the following activities:
 
-1. Deleted an API product
-2. Retired an APIpProduct
-3. Archived an API product
-4. Unarchived an API product
+1. Deleted an API Product
+2. Retired an API Product
+3. Archived an API Product
+4. Unarchived an API Product
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-01"
 ---
 
 
@@ -22,19 +22,19 @@ In this tutorial, you will use API Manager to create a SOAP API that is a proxy 
 
 ## Prerequisites
 - Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_short}} instance](tut_prereq_set_up_apic_instance.html).
-- Before you begin, copy the [weatherprovider.wsdl test ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} file to your local filesystem.
+- Before you begin, copy the [weatherprovider.wsdl test ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} file to your local filesystem.
 Note: You can click **Raw** and then save the resulting page on your local system as a `.wsdl` file. As the name suggests, this SOAP service returns weather data when given a zip code.
 
 ---
 ## Setting up a SOAP API definition
 1. Log in to {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}.
 
-2. In the {{site.data.keyword.Bluemix_short}} **Dashboard**, scroll down to **All Services**.
+2. In the {{site.data.keyword.Bluemix_notm}} **Dashboard**, scroll down to **All Services**.
 
-3. Select **API Connect** to launch the API Connect service. 
+3. Select **API Connect** to launch the {{site.data.keyword.apiconnect_short}} service. 
   
 4. Navigate to the Drafts page, if you are not already there:  
-    a. In the API Connect interface, click >> to open the navigation panel.
+    a. In the {{site.data.keyword.apiconnect_short}} interface, click >> to open the navigation panel.
     b. Click **Drafts** in the navigation panel.
     c. Go to the **APIs** tab.
 

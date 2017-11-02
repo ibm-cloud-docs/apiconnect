@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -31,7 +31,7 @@ or
 1. Create an OAuth Provider API and select your OAuth scheme.  
 	a. Open **Drafts**, select **APIs**, and click **Add** > **OAuth 2.0 Provider API**.  
     ![](images/oauth_provider_1.png)
-	b. Title it "OAuth Endpoint API". (The name and base path should be populated automatically.)  
+	b. Title it "OAuth Endpoint API". The name and base path should be populated automatically.  
 	c. Select **Create API**.  
 	d. In the newly created OAuth Endpoint API, navigate to the **OAuth 2** panel (or scroll down to it), and select "Confidential" as the Client Type.  
 	e. Under Scopes, rename _scope1_ to _view_current_. Delete _scope2_ and _scope3_.  

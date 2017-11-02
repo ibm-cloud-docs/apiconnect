@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -24,7 +24,7 @@ lastupdated: "2017-10-19"
 
 This tutorial guides you through creating an API in Node.js using the LoopBack framework. The tutorial describes how to:
 1. Create a new LoopBack project.
-2. Add a new data source and model to a LoopBack project using the API Designer in the {{site.data.keyword.apiconnect_short}} toolkit.
+2. Add a new data source and model to a LoopBack project using the API Designer in the {{site.data.keyword.apiconnect_full}} toolkit.
 3. Test your API endpoints using the API Designer Explore tool.
 
 ---
@@ -88,7 +88,7 @@ To create a LoopBack project using the API Designer, complete the following step
 	```
 	![](images/api-designer-1.png)
 	>![info]
-	>The above command initializes the APIC toolkit and launches the API Designer in the default browser when it is done.
+	>The above command initializes the {{site.data.keyword.apiconnect_short}} toolkit and launches the API Designer in the default browser when it is done.
 	>![info]
 	>In this tutorial, you will create a project called weather-data.
 2.  If you have not previously pinned the UI navigation pane, click the Navigate to icon ![](images/navigate-to.png). The API Manager UI navigation pane opens. To pin the UI navigation pane, click the Pin menu icon ![](images/pinned.png).

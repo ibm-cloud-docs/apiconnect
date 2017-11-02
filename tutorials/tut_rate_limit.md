@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-24"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -39,8 +39,8 @@ Complete the following tutorials before you start this tutorial:
 ---
 ## Launching API Connect
 
-1. Log in to {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/login){:new_window}.
-2. Once logged in to {{site.data.keyword.Bluemix_short}}, scroll down to **All Services**, and click on **API Connect**.
+1. Log in to {{site.data.keyword.Bluemix_notm}}: [https://console.ng.bluemix.net/login ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/login){:new_window}.
+2. Once logged in to {{site.data.keyword.Bluemix_notm}}, scroll down to **All Services**, and click on **API Connect**.
 3. Click on **API Connect** to launch the {{site.data.keyword.apiconnect_short}} service.
 
 ## Exploring the Default Plan
@@ -84,7 +84,6 @@ In previous examples, you may have published your Product using the test tool, w
 1. Click the Publish icon to *stage* the Product to the **Sandbox** Catalog. This action adds your draft Product changes to the selected Catalog. We need to *publish* the Product changes next, to make them available to consumers via the Developer Portal.
    ![](./images/stageproduct.png) 
 2. Click the >> button to open the navigation menu.
-   ![](./images/navigate.png) 
 3. Select Dashboard, then open the **Sandbox** Catalog. The Weather Provider API Product is listed as **Staged**.
 4. Click the ellipsis, and select **Publish** from the menu.
    ![](./images/publish.png) 
@@ -98,22 +97,20 @@ If this is your first time working with the Developer Portal, you will need to p
 
 The following instructions will guide you through these steps.
 
-1. Launch the Developer Portal. If you don't know the URL, you can find it in the Settings tab of the Sandbox Catalog.
-
-   ![](./images/devportalurl.png)
-    - To provision the developer portal for the first time, select **IBM Developer Portal** from the drop-down.
+1. Launch the Developer Portal. If you don't know the URL, you can find it in the Settings tab of the Sandbox Catalog. To provision the Developer Portal for the first time, see [see setting up and configuring your Developer Portal](tut_config_dev_portal.html).
     - This may take up to an hour to complete. When your Sandbox Developer Portal is ready, you will receive an email
 with a link to your new Developer Portal site. The link is a single use only link for the administrator account.
 2. Log into the Portal using your app developer credentials (**not** your IBM id). ***(Create a new developer account if necessary, using a different address than your IBM id.)***
 3. Click the **Apps** link on the toolbar, and click the **Create new App** button.
 
-   ![](./images/createnewapp.png)
 4. Give the application a title and click **Submit**.
 
    ![](./images/mymobileapp.png)
 5. Save the client secret and client id displayed. This will be the only time your client secret is available for you to copy!
 
    ![](./images/clientidandsecret.png)
+   
+   ![](./images/clientsecret.png)
 
 
 
@@ -122,7 +119,7 @@ with a link to your new Developer Portal site. The link is a single use only lin
 1. Click the **API Products** link on the toolbar. Your Weather Provider API Product is listed! 
 
    ![](./images/apiproducts.png)
-2. Click the link to see details and options. You should see two Plans available: the original Default Plan, and your new Demo Plan. (If you only see one Plan, return to API Connect and ensure that your Product changes have been saved, staged and published to the Sandbox Catalog.) 
+2. Click the link to see details and options. You should see two Plans available: the original Default Plan, and your new Demo Plan. (If you only see one Plan, return to {{site.data.keyword.apiconnect_short}} and ensure that your Product changes have been saved, staged and published to the Sandbox Catalog.) 
 
    ![](./images/plans.png)
 3. Click to **Subscribe** to the Demo Plan, and select the application you just registered. Now, your application can call the APIs associated with this Plan, at a rate of up to *one* API call every minute. 
