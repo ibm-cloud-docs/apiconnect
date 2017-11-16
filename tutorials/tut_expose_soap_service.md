@@ -2,7 +2,7 @@
 
 copyright:
 years: 2017
-lastupdated: "2017-11-01"
+lastupdated: "2017-11-14"
 
 ---
 
@@ -57,7 +57,7 @@ You may see an alert describing what's new, or the **Draft APIs** informational 
 ![](images/api-security-1.png)
 10. Uncheck the **ClientID** option.
 ![](images/api-security-2.png)
-	>![images/info.png]
+	>![](images/info.png)
 	>You may notice that there is a yellow triangular icon that appears next to the save disk icon.  This is a warning that there are definition that may have been defined but not yet used. (This won't affect the API definition.)
 11. In the **Definitions** section, click the **Add Definition** icon ![](images/add-icon.png) and then expand the new definition by clicking it.
 12. Name the definition `Weather Data Output`.

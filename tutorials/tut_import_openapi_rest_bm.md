@@ -56,7 +56,7 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 
 7. After you import the OpenAPI spec, you are taken to the **Design** view of the API. Here you can view various sections of the OpenAPI definition. Scroll to explore, and note the **Host** value. You can also view the OpenAPI under the **Source** tab.
   _Note: You'll notice that the Host value is set to_ `$(catalog.host)` _. This is the base URL for your API proxy._
-8. Save your API.
+8. Your API is saved. 
 
 
 ## Test your API proxy

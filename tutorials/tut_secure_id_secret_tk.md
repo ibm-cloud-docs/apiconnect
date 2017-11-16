@@ -80,7 +80,7 @@ Before you begin, you must have completed one of the following tutorials:
 The security settings can also be tested using the Explore tool that explicitly calls the proxy endpoint, and passes the Client ID and Client Secret keys as header values.
 
 
-1. Click **Explore**, then click **Sandbox**.  
+1. Click **Explore**.
     ![](images/explore_1.png)
 
 2. Click on the **GET /current** operation from the list.  
