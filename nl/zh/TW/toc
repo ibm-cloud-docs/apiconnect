@@ -1,0 +1,60 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="apiconnect" audience="service" href="/docs/services/apiconnect/index.html"}
+API Connect
+	
+	index.md
+	
+	{: .topicgroup}
+	開始使用指導教學
+		tutorials/tut_create_api_node.md
+		tutorials/tut_rest_landing.md
+		    tutorials/tut_import_openapi_rest_bm.md
+			tutorials/tut_add_openapi_rest_bm.md
+			tutorials/tut_import_openapi_rest_tk.md
+			tutorials/tut_add_openapi_rest_tk.md
+			tutorials/tut_prereq_install_toolkit.md
+			tutorials/tut_prereq_set_up_apic_instance.md
+		tutorials/tut_expose_soap_service.md
+		tutorials/tut_manage_soap_api.md
+		tutorials/tut_rate_limit.md
+		tutorials/tut_secure_landing.md
+			tutorials/tut_secure_id_secret_bm.md
+			tutorials/tut_secure_id_secret_tk.md
+		tutorials/tut_secure_oauth_2.md
+		tutorials/tut_insights_analytics.md
+		tutorials/tut_manage_version_landing.md
+			tutorials/tut_manage_replace.md
+			tutorials/tut_manage_supercede.md
+			tutorials/tut_manage_remove.md
+		tutorials/tut_discover_apis.md
+		tutorials/tut_config_dev_portal.md
+		tutorials/tut_custom_dev_portal.md
+		
+	apic_overview.md
+	    apic_029.md
+			
+	creating_apis.md
+	
+	importing_apis.md
+		
+	managing_apis.md
+		
+	managing_products.md
+	
+	create_catalog.md
+	
+	explore_apis.md
+						
+	apic_troubleshoot.md
+		
+	apic_glossary.md
+	
+	{: .topicgroup}
+	相關鏈結
+	    [IBM Knowledge Center：開始使用 IBM API Connect for Bluemix](https://www.ibm.com/support/knowledgecenter/SSFS6T/mapfiles/getting_started_bluemix.html){: new_window}
+	    [IBM Knowledge Center：IBM API Connect 5.0 版登入頁面](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/mapfiles/getting_started.html){: new_window}
+		[IBM Knowledge Center：IBM API Connect for Bluemix 元件](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.overview.doc/capim_overview_apiconnectcomponents.html){: new_window}
+		[IBM Knowledge Center：IBM API Connect for Bluemix 概念](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.overview.doc/capim_overview_apiconnectconcepts.html){: new_window}
+			
