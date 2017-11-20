@@ -4,7 +4,7 @@ copyright:
 lastupdated: "2017-11-02"
 ---
 
-{:new_window: target="blank"}
+{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}

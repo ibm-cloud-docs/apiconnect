@@ -1,10 +1,8 @@
 ---
-
 copyright:
   years: 2017
-lastupdated: "2017-10-31"
-
-
+lastupdated: "2017-11-20"
+---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
