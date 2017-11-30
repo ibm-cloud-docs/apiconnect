@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-31"
+lastupdated: "2017-11-28"
 
 ---
 
@@ -30,7 +30,8 @@ This tutorial guides you through creating an API in Node.js using the LoopBack f
 ---
 ## Prerequisites
 
-Before you begin, [install the {{site.data.keyword.apiconnect_short}} toolkit](tut_prereq_install_toolkit.html).
+Before you begin, [install the {{site.data.keyword.apiconnect_short}} toolkit](tut_prereq_install_toolkit.html). If the toolkit is already installed, ensure that you are running version 5.0.8.1, or later. You can verify this by entering the following command on the command-line:
+```apic -v```
 
 ---
 ## Create a Loopback project
@@ -132,7 +133,7 @@ To add a new data source to a LoopBack project using the API Designer, complete 
 	```
 	The API Designer opens in your default web browser, initially displaying the login page if you haven't logged in recently.  
 	>![info]
-	>You can log in using your Bluemix account or create one.
+	>You can log in using your {{site.data.keyword.Bluemix}} account or create one.
 3. Click the **Data Sources** icon ![](images/datasource-icon.png).
 4. Click **Add**. The New LoopBack Data Source window opens.
 5. Enter `weatherDS` in the **Name** text field.
@@ -156,9 +157,9 @@ To add a new model to a LoopBack project using the API Designer, complete the fo
 5. In the **Properties**, click the **Add property** icon ![](images/add-icon.png).
 6. In the **Property Name** text field, enter `zip_code`.
 7. For **Type**, select **number**.
-8. Select **Required** to make the property required. This means that it must have a value when you add or update a model instance. For now, keep the default values for the other settings:
+8. Select **Required** to make the property required. This means that it must have a value when you add or update a model instance. 
+9. Select **ID** to ensure that the property has a unique identifier. For now, keep the default values for the other settings:
 	- **Is Array**: Whether the property is a JavaScript array with elements of the specified type.
-	- **ID**: Whether the property is a unique identifier.
 	- **Index**: Whether the property represents a column (field) that is a database index.
 	- **Description**: Text description of the property.
 9. Click the **Add property** icon ![](images/add-icon.png) again to add another property.  Reference the table below to complete the remaining properties:
@@ -211,8 +212,14 @@ To test your API endpoints using the API Designer Explore tool, complete the fol
 ![](images/explore-test-1.png)
 The center pane displays summary information about the endpoint, including its parameters, security, model instance data, and response codes. The right pane provides template code to call the endpoint using the curl command, and languages such as Ruby, Python, Java, and Node.
 
-6. To test the REST endpoints in the API Designer Explore tool, on the right pane click **Try it**. Scroll down to **Parameters** and click **Generate** to generate some dummy data. By default, the generated data includes the `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low`, `tonight_humidity_high` and `id` properties. The `id` property is created by LoopBack for a given model and the value is automatically generated. Remove the `id` property from the sample data, update the generated data as required, and click **Call operation**.
-![](images/explore-test-2.png)
+6. To test the REST endpoints in the API Designer Explore tool, complete the following steps:
+    1. On the right pane, click **Try it**. 
+	
+	2. Scroll down to **Parameters**, and click **Generate** to generate some dummy data. By default, the generated data includes the `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low`, and `tonight_humidity_high` properties.
+	
+	3. Click **Call operation**.
+	![](images/explore-test-2.png)
+	
 >![troubleshooting]
 >If you see an error message due to an untrusted certificate for localhost, click the link provided in the error message in API Designer Explore tool to accept the certificate, then proceed to call the operations in your web browser. The exact procedure depends on the web browser you are using. If you load the REST endpoints directly in your browser, you will see the message: {"name":"PreFlowError","message":"unable to process the request"}. You must use the API Designer Explore tool to test REST endpoints in your browser because it includes the requisite headers and other request parameters.
 >
@@ -220,7 +227,7 @@ The center pane displays summary information about the endpoint, including its p
 >If you get a response code of **422 - Unprocessable Entity** with the following payload:
 >![](images/explore-test-3.png)
 >
->the `id` data element has not been removed from the generated data. Remove the `id` data element and re-run the test.
+>ensure that there is not an `id` data element that has not been removed from the generated data. If there is an ID element, remove it and re-run the test.
 >![troubleshooting]
 >If you get the error **failed to parse request body**, you have to remove the comma following the last `humidity_high` number.
 7. Edit the values in the JSON shown in the **data** section. Try changing the generated dummy data, and click **Call operation** again. You should see the request and response parameters, along with the JSON instance data that you entered.
