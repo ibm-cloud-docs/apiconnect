@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-31"
+lastupdated: "2017-12-13"
 ---
 
 {:new_window: target="blank"}
@@ -22,9 +22,11 @@ This tutorial will guide you through securing your API using a two-legged OAuth 
 ## Prerequisites
 
 Before you begin, you must have completed the following tutorial.  
-- [Securing an API with Client-ID and Client-Secret Keys with IBM Bluemix](tut_secure_id_secret_bm.html)
+- [Securing an API with Client-ID and Client-Secret Keys with {{site.data.keyword.Bluemix}}](tut_secure_id_secret_bm.html)
 or
 - [Securing an API with Client-ID and Client-Secret Keys with the Toolkit](tut_secure_id_secret_tk.html)
+
+Note: This tutorial shows the steps and screenshots for accomplishing the task within the {{site.data.keyword.Bluemix}} UI. You can also complete the same procedure by using the command line. You can view that procedure in the [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tutorial_apionprem_security_OAuth_v506.html). 
 
 ## Procedure
 
