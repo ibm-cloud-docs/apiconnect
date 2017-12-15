@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 
 ---
 
@@ -18,15 +18,14 @@ lastupdated: "2017-10-19"
 
 You can use API Connect to manage APIs in {{site.data.keyword.Bluemix}}, whether they are in {{site.data.keyword.Bluemix_notm}} or maintained outside of {{site.data.keyword.Bluemix_notm}}. Managing your APIs allows you to control usage, increase adoption and track statistics.
 
-If you are a customer, you can manage how it is used within the API Manager UI after a developer creates an API and pushes the product to {{site.data.keyword.Bluemix_short}}. The following topics describe how to create and manage products within {{site.data.keyword.apiconnect_short}}.
-Designer.
+If you are a customer, you can manage how it is used within the API Manager UI after a developer creates an API and pushes the product to {{site.data.keyword.Bluemix_notm}}. The following topics describe how to create and manage products within {{site.data.keyword.apiconnect_short}}.
 
 ## Exposing on-premises APIs through a Secure Gateway
 {: #expose_apis_sec_gate}
 
 You can create a secure gateway to safely expose on-premises APIs to {{site.data.keyword.apiconnect_full}}.
 
-When you create a secure gateway, you integrate the features of the {{site.data.keyword.Bluemix_short}}
+When you create a secure gateway, you integrate the features of the {{site.data.keyword.Bluemix_notm}}
 {{site.data.keyword.SecureGateway}} service with {{site.data.keyword.apiconnect_short}}. This means that you have a secure
 way to access your on-premises APIs from {{site.data.keyword.apiconnect_short}} through a secure passage without the
 need to provision a separate instance of the {{site.data.keyword.SecureGateway}} service. Effectively you create a tunnel
@@ -56,8 +55,7 @@ Click through each step of the guided tour to complete your gateway setup.
 The `Create Secure Gateway` dialog box is displayed.
 
 4. Provide a name for your gateway.
-
-**Note:** Only alphanumeric characters and underscores are permitted.
+    **Note:** Only alphanumeric characters and underscores are permitted.
 
 5. Click **Save**.
 The gateway is displayed along with the gateway ID and security token.
@@ -75,7 +73,6 @@ client on your on-premises workstation to connect a remote network to a secure g
     - IBM DataPower&reg;
 
 8. Follow the on-screen directions to install and run the client that you selected.
-
 For more information about setting up a secure gateway client, see [Setting up a client](../../services/SecureGateway/sg_021.html#sg_021).
 
 9. When you finish installing the client, close the **Set Up Secure Gateway Clients** window.
@@ -171,7 +168,7 @@ publish**.
 
 The test results are displayed.
 
-## Staging and publishing a Loopback application
+## Staging and publishing a LoopBack application
 {: #stage_publish_lb_app}
 
 1. In the navigation pane of the API Designer, click **Products**.
@@ -179,20 +176,20 @@ The Products tab opens.
 
 2. Select the version of the Product, ensure that you click the version that you want to work with.
 
-3. To publish the run time to {{site.data.keyword.Bluemix_short}}, click **Publish**.
+3. To publish the run time to {{site.data.keyword.Bluemix_notm}}, click **Publish**.
 
-4. Click **Add and Manage Targets** > **Add IBM Bluemix target**.
+4. Click **Add and Manage Targets** > **Add IBM Cloud target**.
 
-5. Select the {{site.data.keyword.Bluemix_short}} **Region** that you want to publish to and sign in.
+5. Select the {{site.data.keyword.Bluemix_notm}} **Region** that you want to publish to and sign in.
 
-6. Select the {{site.data.keyword.Bluemix_short}} **Organization** that you want to publish to.
+6. Select the {{site.data.keyword.Bluemix_notm}} **Organization** that you want to publish to.
 
 7.  A list of Catalogs is displayed. Select the Catalog that you want to publish to.
 
 8.  Click **Next**.
 
 9. Select the LoopBack application that you want to publish.
-If this is the first time that you are deploying the run time to {{site.data.keyword.Bluemix_short}}, add a name and click the
+If this is the first time that you are deploying the run time to {{site.data.keyword.Bluemix_notm}}, add a name and click the
 **Add** icon.
 
 10.  Click **Save**.
@@ -202,8 +199,7 @@ If this is the first time that you are deploying the run time to {{site.data.key
 12.  Click **Publish**.
 
 13. In the command line, the API Target URL and API invoke tls-profile is specified for the API.
-Make a note of this information. The API invoke tls-profile is always
-`client:Loopback-client`, but you can retrieve the API Target URL as described in the
+Make a note of this information. The API invoke tls-profile is always `client:Loopback-client`, but you can retrieve the API Target URL as described in the
 following step.
     ```
     Deploying to Bluemix
@@ -240,7 +236,7 @@ following step.
 
 To test that the publish worked, complete the following steps:
 
-1. Ensure that the {{site.data.keyword.Bluemix_short}} app is
+1. Ensure that the {{site.data.keyword.Bluemix_notm}} app is
 running.
 
 2. Open a browser window and navigate to the API target URL.

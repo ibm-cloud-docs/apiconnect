@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -13,27 +13,27 @@ lastupdated: "2017-10-19"
 # Troubleshooting
 {: #troubleshoot}
 
-Here are the answers to common troubleshooting questions about using {{site.data.keyword.apiconnect_long}} on {{site.data.keyword.Bluemix_short}}.
+Here are the answers to common troubleshooting questions about using {{site.data.keyword.apiconnect_long}} on {{site.data.keyword.Bluemix_notm}}.
 {:shortdesc}
 
-## Username and password required when adding the API Connect Bluemix service
+## Username and password required when adding the API Connect {{site.data.keyword.Bluemix_notm}} service
 
-After you add the 	 service to your {{site.data.keyword.Bluemix_short}} Dashboard, you are prompted for a username and password when you try to open it. 
+After you add the service to your {{site.data.keyword.Bluemix_notm}} Dashboard, you are prompted for a username and password when you try to open it. 
 
 ### Symptoms
 {: #ts_sym_usernamepw}
 
-Instead of accessing the {{site.data.keyword.Bluemix_short}} service directly when you open a new {{site.data.keyword.apiconnect_short}}, it requires you to log in to the API Manager.
+Instead of accessing the {{site.data.keyword.Bluemix_notm}} service directly when you open a new {{site.data.keyword.apiconnect_short}}, it requires you to log in to the API Manager.
 
 ### Cause
 {: #ts_cause_usernamepw}
 
-Your browser is set to block cookies, or the level is set to a more restricted level than {{site.data.keyword.apiconnect_short}} requires.
+Your browser is set to block cookies, or the level is set to a more restricted level than {{site.data.keyword.apiconnect_notm}} requires.
 
 ### Resolution
 {: #ts_res_usernamepw}
 
-Enable or increase the permission level of cookies in your browser settings until it opens the {{site.data.keyword.Bluemix_short}} service.
+Enable or increase the permission level of cookies in your browser settings until it opens the {{site.data.keyword.Bluemix_notm}} service.
 
 ## Unable to install the developer toolkit
 
@@ -69,8 +69,8 @@ sudo chown -R $USER /usr/local
 {:codeblock}
 
 This command makes your user account the owner of the `/usr/local` directory. Then, you will not need to use sudo to
-install Node or install packages globally with npm. For more information, see [How to Node ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://howtonode.org/introduction-to-npm){: new_window}. **Note:** Changing directory ownership is appropriate only on a local development system.
-Never do this on a server system.
+install Node or install packages globally with npm. 
+    **Note:** Changing directory ownership is appropriate only on a local development system. Never do this on a server system.
 
 Also, do not use the previous
 `chown` command on the `/usr/bin` directory;
@@ -263,17 +263,17 @@ The Stripe credit card processing service allows a maximum of 25 subscriptions p
 ### Resolution
 {: #ts_res_nosubscribe}
 
-Ensure that you have an Enterprise level account for your {{site.data.keyword.Bluemix_short}} {{site.data.keyword.apiconnect_short}} service, and that there are fewer than 25 instances. Remove a service, if you have the maximum number of services.
+Ensure that you have an Enterprise level account for your {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.apiconnect_short}} service, and that there are fewer than 25 instances. Remove a service, if you have the maximum number of services.
 
 ## Getting help and support for API Connect
 
 If you have problems or questions when using {{site.data.keyword.apiconnect_short}}, you can get help by searching for information or by asking questions through a forum. You can also open a support ticket.
 
-When using the forums to ask a question, tag your question so that it is seen by the {{site.data.keyword.Bluemix_short}} development teams. 
+When using the forums to ask a question, tag your question so that it is seen by the {{site.data.keyword.Bluemix_notm}} development teams. 
 
-- If you have technical questions about developing or deploying an app with {{site.data.keyword.apiconnect_short}}, post your question on Stack Overflow and tag your question with "ibm-bluemix" and "api connect."
+- If you have technical questions about developing or deploying an app with {{site.data.keyword.apiconnect_short}}, post your question on Stack Overflow and tag your question with "ibm-cloud" and "api connect."
 
-- For questions about the service and getting stated instructions, use the IBM DeveloperWorks dW Answers forum. Include the "bluemix" and "api connect" tags.
+- For questions about the service and getting stated instructions, use the IBM DeveloperWorks dW Answers forum. Include the "ibm cloud" and "api connect" tags.
 See Getting help for more details about using the forums. 
 
 For information about opening an IBM support ticket, or about support levels and ticket severities, see Contacting support.

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-11-01"
+lastupdated: "2017-12-15"
 ---
 
 
@@ -113,6 +113,6 @@ In this tutorial, you completed the following:
 
 ## Next step
 
-[Expose your service as a REST API](tut_expose_soap_api.html) or secure your API using [rate limiting](tut_rate_limit.html), [client ID and secret](tut_secure_landing.html), or [securing using OAuth 2.0](tut_secure_oauth_2.html).
+[Expose your service as a REST API](tut_expose_soap_service.html) or secure your API using [rate limiting](tut_rate_limit.html), [client ID and secret](tut_secure_landing.html), or [securing using OAuth 2.0](tut_secure_oauth_2.html).
 
 Create > **Manage** > Secure > Socialize > Analyze

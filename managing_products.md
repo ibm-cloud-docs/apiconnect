@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-25"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -124,7 +124,7 @@ communities that you want the Plans in the Product to be visible to.
     To search for developer organizations or communities, the Product must be in the staged,
     published, or deprecated state. If the Catalog in which it is staged, published, or deprecated is
     not a sandbox Catalog, you cannot make other changes to the Product while it is in one of these
-    states. For more information, see [Product lifecycle](#prod_lifecycle}).
+    states. For more information, see [Product lifecycle](#prod_lifecycle).
 
 8. Specify the users that can subscribe to the Product. You can choose **Authenticated
 users** or **Custom**. If you select **Custom**, use
@@ -220,10 +220,10 @@ staged.
 
 5. If the Catalog to which you want to stage the Product is not shown in the list:
     1. Click **Add and Manage Targets**.
-    2. Click **Add IBM Bluemix target**.
+    2. Click **Add {{site.data.keyword.Bluemix_notm}} target**.
     3. Select the {{site.data.keyword.Bluemix_short}}
 **Region** that you want to publish to.
-    4. Select the {{site.data.keyword.Bluemix_short}}
+    4. Select the {{site.data.keyword.Bluemix_notm}}
 **Organization** that you want to publish to.
     5. A list of Catalogs is displayed. Select the Catalog that you want to publish to.
     6. Click **Next**.
@@ -239,7 +239,7 @@ Your Product has been staged to a Catalog. To view the state of the Product in t
 the API Manager UI, select the Dashboard section in the navigation pane, and click on the required
 Catalog. The Product is shown with a state of Staged.
 
-- Open the {{site.data.keyword.Bluemix_short}} **Dashboard**. You will see the application tile in the Applications section.
+- Open the {{site.data.keyword.Bluemix_notm}} **Dashboard**. You will see the application tile in the Applications section.
 
 Open the API Manager to publish your Product to a community for application developers to access
 it in the Developer Portal. For more information, see [Publishing a Product](#publish_proj}).
@@ -283,9 +283,9 @@ search for organizations or communities that you want your Product to be visible
     approval is not required, the Product version is published immediately, and moves to the Published
     state.
 
-Your Product is in the Published state.Your Product is published to your Catalog and
+Your Product is in the Published state. Your Product is published to your Catalog and
 available to your specified organizations or communities. Application developers within the groups
-you selected can see and use the APIs within the Product.Any application developer requests
+you selected can see and use the APIs within the Product. Any application developer requests
 to use your Product are displayed on the Approvals tab in the containing Catalog, where you can
 decline or accept the request.
 
@@ -321,7 +321,7 @@ arrow and select **SAML**.
 
 7. In the navigation pane, click the **Developers** icon.
 
-8. Click **Add Bluemix Organization**.
+8. Click **Add IBM Cloud Organization**.
 
 9. Add your {{site.data.keyword.Bluemix_short}} user email
 address and click **Add**.
@@ -329,10 +329,10 @@ address and click **Add**.
 10. An invitation is sent to your email address.
 
 11. Click the link in the email to accept the invitation.
-The {{site.data.keyword.Bluemix_short}} UI
+The {{site.data.keyword.Bluemix_notm}} UI
 opens.
 
-12. Select your {{site.data.keyword.Bluemix_short}} org and click
+12. Select your {{site.data.keyword.Bluemix_notm}} org and click
 **Confirm**.
 
 13. In the API Manager UI, click the **Products** icon.
