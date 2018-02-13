@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-28"
+lastupdated: "2018-02-12"
 
 ---
 
@@ -15,6 +15,11 @@ lastupdated: "2017-09-28"
 # What's new
 
 {{site.data.keyword.apiconnect_full}} includes the following enhancements:
+
+- **Delete user accounts and Developer organizations in the Developer Portal**: You can delete your user account and Developer organizations in the Developer Portal. You can also change the ownership of your Developer organizations. For more information, see [Deleting your Developer account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_account.html){:new_window}, [Deleting a Developer organization ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_dev_org.html){:new_window}, and [Changing the ownership of a Developer organization ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_dev_org_ownership.dita){:new_window}.
+
+- __Added the *endpoint_url* API event field__: The *endpoint_url* event record field identifies the proxy or invoke target
+URL on which the request failed. See [Deleting your Developer account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/rapim_analytics_apieventrecordfields.html){:new_window} for more information.</dd>
 
 - **Added support and a reference for Developer Portal REST APIs for analytics**: Developer Portal REST APIs help you analyze your catalog APIs. For more information, see [Analytics ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apirest.doc/analytics.html){:new_window}.
 
