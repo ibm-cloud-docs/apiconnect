@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-11-28"
+  years: 2018
+lastupdated: "2018-02-22"
 
 ---
 
@@ -31,7 +31,9 @@ This tutorial guides you through creating an API in Node.js using the LoopBack f
 ## Prerequisites
 
 Before you begin, [install the {{site.data.keyword.apiconnect_short}} toolkit](tut_prereq_install_toolkit.html). If the toolkit is already installed, ensure that you are running version 5.0.8.1, or later. You can verify this by entering the following command on the command-line:
-```apic -v```
+	```
+	apic -v
+	```
 
 ---
 ## Create a Loopback project
@@ -213,7 +215,7 @@ To test your API endpoints using the API Designer Explore tool, complete the fol
 The center pane displays summary information about the endpoint, including its parameters, security, model instance data, and response codes. The right pane provides template code to call the endpoint using the curl command, and languages such as Ruby, Python, Java, and Node.
 
 6. To test the REST endpoints in the API Designer Explore tool, complete the following steps:
-    1. On the right pane, click **Try it**. 
+    1. On the right pane, click **Try it**. If there is an `id` data element, remove it from the generated data before running the test. 
 	
 	2. Scroll down to **Parameters**, and click **Generate** to generate some dummy data. By default, the generated data includes the `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low`, and `tonight_humidity_high` properties.
 	
