@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -39,7 +39,7 @@ In diesem Lernprogramm aktualisieren Sie ein vorhandenes API-Produkt, indem Sie 
 
 1. Melden Sie sich an {{site.data.keyword.Bluemix_short}} an: [https://console.ng.bluemix.net/login ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.ng.bluemix.net/login){:new_window}.
 
-2. Starten Sie im {{site.data.keyword.Bluemix_short}}-Dashboard den {{site.data.keyword.apiconnect_short}}-Service.
+2. Starten Sie im {{site.data.keyword.Bluemix_notm}}-Dashboard den {{site.data.keyword.apiconnect_short}}-Service.
 ![](images/Bluemix.png)
 
 3. Wenn Sie in API Manager bisher nicht den Navigationsbereich der Benutzerschnittstelle fixiert haben, klicken Sie auf das Symbol **Navigieren zu** ![](images/navigate-to.png). Der Navigationsbereich der Benutzerschnittstelle von API Manager wird geöffnet. Klicken Sie zum Fixieren des Navigationsbereichs der Benutzerschnittstelle auf das Symbol für das **Fixiermenü** ![](images/pinned.png).
@@ -66,7 +66,8 @@ In diesem Lernprogramm aktualisieren Sie ein vorhandenes API-Produkt, indem Sie 
 11.	Ändern Sie die **Version** in 2.0.0. Geben Sie `Updated API` in das Feld **Beschreibung** ein. Klicken Sie auf das Plattensymbol, um die Änderungen zu speichern.  
 ![](images/rep-update-prod.png)
 
-12.	Klicken Sie auf das Symbol **Staging**, um die neue Version hochzuladen. Wählen Sie den Katalog **Sandbox** aus, sofern noch nicht geschehen.![](images/rep-stage-prod-2.png)
+12.	Klicken Sie auf das Symbol **Staging**, um die neue Version hochzuladen. Wählen Sie den Katalog **Sandbox** aus, sofern noch nicht geschehen.
+![](images/rep-stage-prod-2.png)
     **Hinweis:** Es ist möglich, eine neue Version in einem anderen Katalog bereitzustellen, und so zu steuern, welche Zielgruppe an Entwicklern diese Version anzeigen können. Diese Funktion kann sinnvoll sein, wenn API-Produkte aus der Entwicklung zum Testen in die Produktion verschoben werden.
 
 13.	Klicken Sie auf **>>**, um das Navigationsmenü zu öffnen, und wählen Sie **Dashboard** aus.  
@@ -87,8 +88,8 @@ In diesem Lernprogramm aktualisieren Sie ein vorhandenes API-Produkt, indem Sie 
 ![](images/rep-replace-dialog-2.png)
 
     Als Ergebnis dieses Ersetzungsvorgangs wird 'Weather Provider API Product 1.0.0' zurückgezogen und 'Weather Provider API Product 2.0.0' veröffentlicht. **Hinweis:** Während des Ersetzungsvorgangs ist es möglich, den Plan zu ändern, der diesem Produkt zugeordnet ist. Dies ist eine einfach Möglichkeit zum Ändern des Plans für ein API-Produkt.
- ![](images/rep-prod-retired.png)
-
+ ![](images/rep-prod-retired.png) 
+ 
 
 ## Was Sie in diesem Lernprogramm erreicht haben
 

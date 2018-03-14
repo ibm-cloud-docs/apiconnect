@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-28"
 
 ---
 
@@ -24,13 +24,16 @@ lastupdated: "2017-10-19"
 
 In diesem Lernprogramm werden Sie durch die Erstellung einer API in Node.js mithilfe eines LoopBack-Frameworks geführt. Im Lernprogramm wird Folgendes beschrieben:
 1. Erstellung eines neuen LoopBack-Projekts
-2. Hinzufügen einer neuen Datenquelle und eines Modells zu einem LoopBack-Projekt mit API Designer im {{site.data.keyword.apiconnect_short}}-Toolkit
+2. Hinzufügen einer neuen Datenquelle und eines Modells zu einem LoopBack-Projekt mit API Designer im {{site.data.keyword.apiconnect_full}}-Toolkit
 3. Test der API-Endpunkte mit dem Tool API Designer Explore
 
 ---
 ## Voraussetzungen
 
-Bevor Sie beginnen, müssen Sie [das {{site.data.keyword.apiconnect_short}}-Toolkit installieren](tut_prereq_install_toolkit.html).
+Bevor Sie beginnen, müssen Sie [das {{site.data.keyword.apiconnect_short}}-Toolkit installieren](tut_prereq_install_toolkit.html). Wenn das Toolkit bereits installiert ist, stellen Sie sicher, dass Version 5.0.8.1 oder eine höhere Version ausgeführt wird. Geben Sie hierzu den folgenden Befehl in der Befehlszeile ein:
+	```
+	apic -v
+	```
 
 ---
 ## LoopBack-Projekt erstellen
@@ -58,9 +61,9 @@ Führen Sie zum Erstellen eines LoopBack-Projekts in der Befehlszeile des {{site
 	```
 4.  Wählen Sie die Version von LoopBack aus, die verwendet werden soll. Wählen Sie die aktuelle Produktionsversion aus: 3.x.
 	```bash
-	? Welche Version von LoopBack möchten Sie verwenden?
-  	2.x (Langfristiger Support)
-	? 3.x (Aktuell)
+	? Welche Version von LoopBack möchten Sie verwenden? 
+  	2.x (Langfristiger Support) 
+	? 3.x (Aktuell) 
 	```
 5.  Geben Sie die Art der Anwendung an, die Sie erstellen möchten; wählen Sie hierzu mit den Pfeiltasten **empty-server** aus.
 	```bash
@@ -88,7 +91,7 @@ Führen Sie die folgenden Schritte aus, um mit API Designer ein LoopBack-Projekt
 	```
 	![](images/api-designer-1.png)
 	>![info]
-	>Mit dem obigen Befehl wird das APIC-Toolkit initialisiert und API Designer im Standardbrowser gestartet.
+	>Mit dem obigen Befehl wird das {{site.data.keyword.apiconnect_short}}-Toolkit initialisiert und API Designer im Standardbrowser gestartet.
 	>![info]
 	>In diesem Lernprogramm erstellen Sie ein Projekt mit der Bezeichnung weather-data.
 2.  Falls Sie den Navigationsbereich der Benutzerschnittstelle vorher nicht fixiert haben, klicken Sie auf das Navigationssymbol ![](images/navigate-to.png). Der Navigationsbereich der Benutzerschnittstelle von API Manager wird geöffnet. Klicken Sie zum Fixieren des Navigationsbereichs der Benutzerschnittstelle auf das Symbol für das Fixiermenü ![](images/pinned.png).
@@ -132,7 +135,7 @@ Führen Sie die folgenden Schritte aus, um eine neue Datenquelle mit API Designe
 	```
 	API Designer wird im Standard-Web-Browser geöffnet, anfangs wird die Anmeldeseite angezeigt, falls Sie sich noch nicht angemeldet haben.  
 	>![info]
-	>Sie können sich unter Verwendung Ihres Bluemix-Kontos anmelden oder ein neues erstellen.
+	>Sie können sich mit Ihrem {{site.data.keyword.Bluemix}}-Kontos anmelden oder ein neues erstellen.
 3. Klicken Sie auf das Symbol **Datenquellen** ![](images/datasource-icon.png).
 4. Klicken Sie auf **Hinzufügen**. Das Fenster 'Neue LoopBack-Datenquelle' wird geöffnet.
 5. Geben Sie `weatherDS` in das Textfeld **Name** ein.
@@ -156,12 +159,12 @@ Führen Sie die folgenden Schritte aus, um ein neues Modell mit API Designer zu 
 5. Klicken Sie in **Eigenschaften** auf das Symbol **Eigenschaft hinzufügen** ![](images/add-icon.png).
 6. Geben Sie in das Textfeld **Eigenschaftsname** die Zeichenfolge `zip_code` ein.
 7. Wählen Sie als **Typ** die Option **Nummer** aus.
-8. Wählen Sie **Erforderlich** aus, damit die Eigenschaft erforderlich ist. Dies bedeutet, dass ein Wert vorhanden sein muss, wenn Sie eine Modellinstanz hinzufügen oder aktualisieren. Behalten Sie vorerst die Standardwerte für die restlichen Einstellungen bei:
+8. Wählen Sie **Erforderlich** aus, damit die Eigenschaft erforderlich ist. Dies bedeutet, dass ein Wert vorhanden sein muss, wenn Sie eine Modellinstanz hinzufügen oder aktualisieren. 
+9. Wählen Sie **ID** aus, um sicherzustellen, das der Eigenschaft eine eindeutige ID zugeordnet ist. Behalten Sie vorerst die Standardwerte für die restlichen Einstellungen bei:
 	- **Ist Array:** Gibt an, ob die Eigenschaft ein JavaScript-Array mit Elementen des angegebenen Typs ist.
-	- **ID:** Gibt an, ob die Eigenschaft eine eindeutige Kennung ist.
 	- **Index:** Gibt an, ob die Eigenschaft für eine Spalte (ein Feld) steht, das ein Datenbankindex ist.
 	- **Beschreibung:** Die Textbeschreibung der Eigenschaft.
-9. Klicken Sie erneut auf das Symbol **Eigenschaft hinzufügen** ![](images/add-icon.png), um eine weitere Eigenschaft hinzuzufügen. Informationen zum Vervollständigen der übrigen Eigenschaften finden Sie in der nachfolgenden Tabelle:
+9. Klicken Sie erneut auf das Symbol **Eigenschaft hinzufügen** ![](images/add-icon.png), um eine weitere Eigenschaft hinzuzufügen.  Informationen zum Vervollständigen der übrigen Eigenschaften finden Sie in der nachfolgenden Tabelle:
 	![](images/new-model-property-1.png)
 10. Klicken Sie auf das Symbol **Speichern** ![](images/save-icon.png), um Ihre Änderungen zu speichern.
 11. Klicken Sie auf **Alle Modelle**, um die Bearbeitung des Modells zu beenden.
@@ -211,16 +214,22 @@ Führen Sie die folgenden Schritte aus, um mit API Designer Explore die API-Endp
 ![](images/explore-test-1.png)
 Im mittleren Teilfenster werden Übersichtsinformationen zum Endpunkt angezeigt, unter anderem zu Parametern, Sicherheit, Modellinstanzdaten und Antwortcodes. Im rechten Teilfenster werden ein Vorlagencode zum Aufrufen des Endpunkts mithilfe des curl-Befehls sowie Sprachen wie Ruby, Python, Java und Node bereitgestellt.
 
-6. Klicken Sie zum Testen der REST-Endpunkte in API Designer Explore im rechten Teilfenster auf **Versuchen**. Blättern Sie abwärts zu **Parameter** und klicken Sie auf **Generieren**, um Testdaten zu generieren. Die generierten Daten umfassen standardmäßig die Eigenschaften Postleitzahl (`zip_code`), aktuelle Temperatur (`current_temperature`), aktuelle Feuchtigkeit (`current_humidity`), nächtliche Tiefsttemperatur (`tonight_temperature_low`), nächtliche Höchsttemperatur (`tonight_temperature_high`), niedrigste nächtliche Feuchtigkeit (`tonight_humidity_low`), höchste nächtliche Feuchtigkeit (`tonight_humidity_high`) und die ID (`id`). Die Eigenschaft `id` wird von LoopBack für ein bestimmtes Modell erstellt und der Wert wird automatisch generiert. Entfernen Sie die Eigenschaft `id` aus den Beispieldaten, aktualisieren Sie die generierten Daten bei Bedarf und klicken Sie auf **Operation aufrufen**.
-![](images/explore-test-2.png)
+6. Führen Sie die folgenden Schritte aus, um die REST-Endpunkte im API Designer Explore-Tool zu testen:
+    1. Klicken Sie im rechten Fensterbereich auf **Ausprobieren**. 
+	
+	2. Blättern Sie abwärts zu **Parameter** und klicken Sie auf **Generieren**, um Testdaten zu generieren. Standardmäßig enthalten die generierten Daten die Eigenschaften `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low` und `tonight_humidity_high`.
+	
+	3. Klicken Sie auf **Operation aufrufen**.
+	![](images/explore-test-2.png)
+	
 >![troubleshooting]
 >Falls aufgrund eines nicht vertrauenswürdigen Zertifikats für einen lokalen Host eine Fehlernachricht angezeigt wird, klicken Sie auf den in der Fehlernachricht API Designer Explore bereitgestellten Link, um das Zertifikat zu bestätigen; fahren Sie anschließend mit dem Aufrufen der Operationen im Web-Browser fort. Die genaue Vorgehensweise hängt vom jeweils verwendeten Browser ab. Falls Sie die REST-Endpunkte direkt in den Browser laden, wird die folgende Nachricht angezeigt: {"name":"PreFlowError","message":"unable to process the request"}. Sie müssen API Designer Explore zum Testen der REST-Endpunkte in Ihrem Browser verwenden, weil es die erforderlichen Header und Anforderungsparameter umfasst.
 >
 >![troubleshooting]
->Falls der Antwortcode **422 - Nicht verarbeitbare Entität** mit den folgenden Angaben zurückgegeben wird:
+>Möglicherweise wird der Antwortcode **422 - Nicht verarbeitbare Entität** mit den folgenden Angaben zurückgegeben:
 >![](images/explore-test-3.png)
 >
->Das Datenelement `id` wurde nicht aus den generierten Daten entfernt. Entfernen Sie das Datenelement `id` und führen Sie den Test erneut durch.
+>Stellen Sie in diesem Fall sicher, dass kein Datenelement `id` vorhanden ist, das nicht aus den generierten Daten entfernt wurde. Ist ein ID-Element vorhanden, entfernen Sie es und führen Sie den Test erneut aus.
 >![troubleshooting]
 >Falls der Fehler **Auswertung des Anforderungshauptteils fehlgeschlagen** angezeigt wird, müssen Sie das Komma nach der letzten Nummer für `humidity_high` entfernen.
 7. Bearbeiten Sie die Werte in den JSON-Daten wie im Abschnitt **Daten** angegeben. Versuchen Sie, die generierten Testdaten zu ändern, und klicken Sie erneut auf **Operation aufrufen**. Jetzt sollten die Anforderungs- und Antwortparameter sowie die von Ihnen eingegebenen JSON-Instanzdaten angezeigt werden.
@@ -232,7 +241,7 @@ Im mittleren Teilfenster werden Übersichtsinformationen zum Endpunkt angezeigt,
 ---
 
 ### Was Sie in diesem Lernprogramm erreicht haben
-In diesem Lernprogramm haben Sie Folgendes durchgeführt: 
+In diesem Lernprogramm haben Sie Folgendes durchgeführt:
 1. Ein neues LoopBack-Projekt in der Befehlszeile des {{site.data.keyword.apiconnect_short}}-Toolkits erstellt.
 2. Ein neues Modell und eine neue Datenquelle mit API Designer im {{site.data.keyword.apiconnect_short}} Toolkit zu einem LoopBack-Projekt hinzugefügt.
 3. Die API-Endpunkte mit API Designer Explore getestet.

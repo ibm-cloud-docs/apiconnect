@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -27,10 +27,10 @@ In diesem Abschnitt erstellen Sie eine Developer Portal-Instanz für einen Katal
 
 *Kataloge* ist ein IBM Begriff für unterschiedliche Umgebungen. Für Test-, Bereitstellungs- und Produktionsumgebungen würden zum Beispiel unterschiedliche Kataloge erstellt werden. Ein Katalog mit dem Namen Sandbox muss vorhanden sein. Sie können entweder diesen Katalog zum Erstellen der Developer Portal-Instanz verwenden oder einen neuen Katalog erstellen und einen beliebigen Namen für diesen definieren.
 
-1. Wählen Sie im Bluemix-Dashboard den Service **API Connect** aus, um das API Connect-Dashboard zu starten.
+1. Wählen Sie im {{site.data.keyword.Bluemix_short}}-Dashboard den Service **API Connect** aus, um das API Connect-Dashboard zu starten.
 ![API Connect-Service](images/11-Bluemix-Dashboard.png)
 
-2. Wählen Sie im API Connect-Dashboard den Katalog aus, für den Sie eine Developer Portal-Instanz erstellen möchten. Beispiel: **Sandbox**.
+2. Wählen Sie im {{site.data.keyword.apiconnect_short}}-Dashboard den Katalog aus, für den Sie eine Developer Portal-Instanz erstellen möchten. Beispiel: **Sandbox**.
 ![Katalog](images/12-APIC-Dashboard.png)
 
 3. Wählen Sie im Katalog die Registerkarte **Einstellungen** aus.  
@@ -64,22 +64,22 @@ In diesem Abschnitt machen Sie sich mit der Developer Portal-Instanz vertraut, d
 4. Nach dem Festlegen des Kennworts können Sie sich mit Developer Portal vertraut machen; beginnen Sie mit **Home** ganz oben auf der Seite.  
   ![Menü 'Home'](images/24-pwsaved.png)
   
-| Registerkarte    | Beschreibung         | 
+| Registerkarte              | Beschreibung          | 
 |:---------------- | -------------------- | 
-| _Home_       | Die Seite 'Home' ist die Begrüßungsseite von Developer Portal. Sie können [die Seite anpassen](tut_custom_dev_portal.html), damit sie Ihren Anforderungen entspricht.| 
+| _Home_       | Die Seite 'Home' ist die Begrüßungsseite von Developer Portal. Sie können [die Seite anpassen](tut_custom_dev_portal.html), damit sie Ihren Anforderungen entspricht. | 
 | _Einführung_       | Die Seite 'Einführung' enthält Anweisungen für Entwickler zum Einstieg in die Verwendung von Developer Portal. |
-| _API-Produkte_ | Auf der Seite 'API-Produkte' durchsuchen und subskribieren die Entwickler die APIs, die im Portal zur Verfügung stehen.| 
-| _Apps_ | Auf der Seite 'Apps' werden die Anwendungen angezeigt, die die APIs verwenden.| 
-| _Blogs_ | Auf der Seite 'Blogs' können Sie Blogbeiträge zu den APIs erstellen und anzeigen.| 
-| _Foren_ | Auf der Seite 'Foren' können Entwickler über APIs diskutieren und Fragen zu den APIs posten.| 
-| _Support_ | Auf der Seite 'Support' können Sie Entwickler darüber informieren, wie Sie Support zu den APIs erhalten können. So können Sie zum Beispiel auf Foren und Häufig gestellten Fragen (FAQs) verweisen. Sie können auch einen Link bereitstellen, über den Sie bei Bedarf ein Support-Ticket öffnen können.| 
+| _API-Produkte_ | Auf der Seite 'API-Produkte' durchsuchen und abonnieren die Entwickler die APIs, die im Portal zur Verfügung stehen. | 
+| _Apps_ | Auf der Seite 'Apps' werden die Anwendungen angezeigt, die die APIs verwenden. | 
+| _Blogs_ | Auf der Seite 'Blogs' können Sie Blogbeiträge zu den APIs erstellen und anzeigen. | 
+| _Foren_ | Auf der Seite 'Foren' können Entwickler über APIs diskutieren und Fragen zu den APIs posten. | 
+| _Support_ | Auf der Seite 'Support' können Sie Entwickler darüber informieren, wie Sie Support zu den APIs erhalten können. So können Sie zum Beispiel auf Foren und Häufig gestellten Fragen (FAQs) verweisen. Sie können auch einen Link bereitstellen, über den Sie bei Bedarf ein Support-Ticket öffnen können. | 
 
 Hinweis: Auf der Seite 'API-Produkte' können Sie eines der Produkte zum Anzeigen der Produktseite für eine API und die verfügbaren Pläne auswählen. Dies ermöglicht es Entwicklern, API-Details zu abonnieren und anzuzeigen. 
 
   ![API-Produkte](images/27-api-products.png)
 
 ### Fazit
-In diesem Lernprogramm haben Sie gelernt, wie Sie API Connect Developer Portal einrichten und konfigurieren. Außerdem haben Sie sich mit der Developer Portal-Instanz vertraut gemacht.
+In diesem Lernprogramm haben Sie gelernt, wie Sie {{site.data.keyword.apiconnect_short}} Developer Portal einrichten und konfigurieren. Außerdem haben Sie sich mit der Developer Portal-Instanz vertraut gemacht.
 
 ---
 

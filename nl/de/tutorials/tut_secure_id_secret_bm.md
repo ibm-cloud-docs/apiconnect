@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# API mit-Client-ID und geheimen Clientschlüssel mithilfe von IBM Bluemix schützen
+# API mit-Client-ID und geheimem Clientschlüssel mithilfe von {{site.data.keyword.Bluemix_notm}} schützen
 
 **Dauer:** 10 Minuten  
 **Kenntnisstufe:** Anfänger
@@ -75,7 +75,7 @@ Bevor Sie beginnen, müssen Sie eines der folgenden Lernprogramme durchgeführt 
     ![](images/test_api_keys_3.png)  
 
 
-## API mit Client-ID und geheimen Clientschlüssel aufrufen
+## API mit Client-ID und geheimem Clientschlüssel aufrufen
 
 Die Sicherheitseinstellungen können auch mit dem Tool Explore getestet werden, von dem explizit der Proxy-Endpunkt aufgerufen wird und die Client-ID mit den geheimen Clientschlüsseln als Headerwerte übergeben wird.
 

@@ -1,10 +1,8 @@
 ---
-
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
-
-
+lastupdated: "2017-11-20"
+---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
@@ -18,33 +16,33 @@ lastupdated: "2017-10-10"
 
 
 ## Voraussetzung
-Für dieses Lernprogramm gibt es keine Voraussetzungen. Als Portaladministrator können Sie dieses Lernprogramm auch durcharbeiten, während Sie in Developer Portal navigieren, um zu untersuchen, wie die Portalbenutzer in Developer Portal navigieren. Beachten Sie, dass alle Instanzen von Developer Portal unterschiedliche Oberflächen aufweisen.
+Für dieses Lernprogramm müssen keine Voraussetzungen erfüllt sein. Als Portaladministrator können Sie dieses Lernprogramm auch durcharbeiten, während Sie in Developer Portal navigieren, um zu untersuchen, wie die Portalbenutzer in Developer Portal navigieren. Beachten Sie, dass alle Instanzen von Developer Portal unterschiedliche Oberflächen aufweisen. 
 
 Wenn Sie nicht über eine vorhandene Developer Portal-Instanz verfügen, können Sie eine solche in {{site.data.keyword.Bluemix_short}} einrichten und konfigurieren, bevor Sie mit diesem Lernprogramm fortfahren.
 
 ## Lernziel
-In diesem Lernprogramm erfahren Sie, wie ein Portalbenutzer die APIs in {{site.data.keyword.apiconnect_short}} Developer Portal nutzen kann. Sie machen sich damit vertraut, wie ein Portalbenutzer Produkte und APIs durchsucht, APIs anzeigt und testet, und wie er die APIs abonniert.
+In diesem Lernprogramm erfahren Sie, wie ein Portalbenutzer die APIs in {{site.data.keyword.apiconnect_full}} Developer Portal nutzen kann. Sie machen sich damit vertraut, wie ein Portalbenutzer Produkte und APIs durchsucht, APIs anzeigt und testet, und wie er die APIs abonniert. 
 
-## Produkte und APIs nutzen
-In diesem Abschnitt wird erläutert, wie ein Portalbenutzer die Produkte und APIs in Developer Portal nutzen würde.
+## Produkte & APIs erkunden
+In diesem Abschnitt wird beschrieben, wie ein Portalbenutzer die Produkte und APIs in Developer Portal erkunden kann.
 
 1. Navigieren Sie in einem Browser zu **API Connect Developer Portal**.
 ![API Connect Developer Portal](images/11-developer-portal.png)
 
-2. Wählen Sie in {{site.data.keyword.apiconnect_short}} Developer Portal die Registerkarte 'API-Produkte' aus.
+2. Wählen Sie in {{site.data.keyword.apiconnect_short}} Developer Portal die Registerkarte mit den API-Produkten aus.
 ![API-Produkte](images/12-API-products.png)
 
 3. Wählen Sie eines der verfügbaren Produkte aus, damit die verfügbaren APIs und Pläne für das Produkt angezeigt werden.  
   ![Produkt auswählen](images/13-product.png)
 
-4. Wählen Sie eine API zum Kennenlernen der Details der verfügbaren APIs aus.  
+4. Wählen Sie eine API aus, um die Details der verfügbaren APIs zu erkunden.  
   ![APIs der Produkte](images/14-api.png)
 
 5. Auf der Detailseite einer API können Sie die verfügbaren Operationen mit ihren Parametern und zurückgegebenen Antworten anzeigen. Am Ende der Seite können Sie die Definitionen anzeigen, die von der API verwendet werden.  
-  ![API-Details](images/15-details.png)
+  ![API-Details](images/15-details.png) 
 
 6. In der Anzeige für die Codebeispiele können Sie die Beispiele in den unterschiedlichen Codesprachen anzeigen, um zu erfahren, wie die Anforderungen und ihre Antworten aufgerufen werden. Wählen Sie eines der Beispiele aus, zum Beispiel **Knoten**, um ein Beispiel in dieser Codesprache anzuzeigen.  
-  ![API-Details](images/16-examples.png)
+  ![API-Details](images/16-examples.png) 
 
 ---
 
@@ -68,17 +66,17 @@ In diesem Abschnitt wird erläutert, wie ein Portalbenutzer die für ein Produkt
 
 ---
 
-## APIs subskribieren
-In diesem Abschnitt wird beschrieben, wie ein Portalbenutzer APIs in Developer Portal subskribiert. 
+## APIs abonnieren
+In diesem Abschnitt wird beschrieben, wie ein Portalbenutzer APIs in Developer Portal abonniert. 
 
 1. Wählen Sie **Konto erstellen** aus.
 ![API-Produkte](images/31-create-account.png)
 
-2. Füllen Sie die erforderlichen Felder aus und wählen Sie **Neues Konto erstellen** ganz unten auf der Seite aus.
+2. Füllen Sie die erforderlichen Felder aus und wählen Sie **Neues Konto erstellen** ganz unten auf der Seite aus. 
 **Hinweis:** Verwenden Sie eine andere E-Mail-Adresse als die, die Sie zum Erstellen der Developer Portal-Instanz im vorherigen Lernprogramm verwendet haben.
 ![API-Produkte](images/32-create-new-account.png)
 
-3. Melden Sie sich nach dem Erstellen des Developer Portal-Kontos an und zeigen Sie die Startseite an. Sie müssen über eine App verfügen, um die APIs subskribieren zu können. Wählen Sie **Apps** aus, um die Seite mit den registrierten Apps aufzurufen.  
+3. Melden Sie sich nach dem Erstellen des Developer Portal-Kontos an und zeigen Sie die Startseite an. Sie müssen über eine App verfügen, um die APIs abonnieren zu können. Wählen Sie **Apps** aus, um die Seite mit den registrierten Apps aufzurufen.  
   ![API-Produkte](images/33-login.png)
 
 4. Wählen Sie zum Registrieren einer neuen Anwendung **Neue App erstellen** aus.  

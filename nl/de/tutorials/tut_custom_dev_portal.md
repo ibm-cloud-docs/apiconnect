@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -16,7 +16,7 @@ lastupdated: "2017-09-12"
 
 
 ## Lernziel
-In diesem Lernprogramm erfahren Sie, wie Sie {{site.data.keyword.apiconnect_short}} Developer Portal schnell anpassen und ein Motiv auswählen, das Ihren Anforderungen entspricht.
+In diesem Lernprogramm erfahren Sie, wie Sie {{site.data.keyword.apiconnect_full}} Developer Portal schnell anpassen und ein Motiv auswählen, das Ihren Anforderungen entspricht.
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# API mit-Client-ID und geheimen Clientschlüssel mithilfe des Toolkits schützen
+# API mit-Client-ID und geheimem Clientschlüssel mithilfe von Developer Toolkit schützen
 
 
 **Dauer:** 10 Minuten  
@@ -34,7 +34,7 @@ Bevor Sie beginnen, müssen Sie eines der folgenden Lernprogramme durchgeführt 
 1. Starten Sie API Designer (falls noch nicht gestartet):  
    a. Öffnen Sie das Terminal.  
    b. Geben Sie in der Befehlszeile `apic edit` ein. _API Designer wird im Web-Browser gestartet._    
-   c. Klicken Sie auf **An Bluemix anmelden**.  
+   c. Klicken Sie auf **Mit {{site.data.keyword.Bluemix_notm}}** anmelden.  
    d. Geben Sie Ihre {{site.data.keyword.Bluemix_short}}-Anmeldeinformationen ein.  
 
 2. Navigieren Sie zur Ansicht 'Design' der API:
@@ -63,7 +63,7 @@ Bevor Sie beginnen, müssen Sie eines der folgenden Lernprogramme durchgeführt 
 
 1. Klicken Sie in der Registerkarte 'Assemblieren' auf die Schaltfläche ►, um die Änderungen zu testen.
 2. Klicken Sie in der Testanzeige auf die Operation **get /current**.
-3. Blättern Sie in der Testanzeige abwärts und beachten Sie, dass die Werte für die Client-ID und den geheimen Clientschlüssel gefüllt wurden. _Hierbei handelt es sich um Testwerte, die für Sandbox generiert wurden; sie stellen die Schlüssel der Anwendung dar, die Ihre API verwendet._   
+3. Blättern Sie in der Testanzeige abwärts und beachten Sie, dass die Werte für die Client-ID und den geheimen Clientschlüssel gefüllt wurden. _Hierbei handelt es sich um Testwerte, die für Sandbox generiert wurden; sie stellen die Schlüssel der Anwendung dar, die Ihre API verwendet._  
 > Hinweis: Die Werte für die Client-ID und den geheimen Clientschlüssel finden Sie auch unter **Dashboard** > **Katalog** > **Einstellungen** > **Endpunkte**.  
 
  ![](images/test_api_keys_1.png)
@@ -75,12 +75,12 @@ Bevor Sie beginnen, müssen Sie eines der folgenden Lernprogramme durchgeführt 
   ![](images/test_api_keys_3.png)  
   
 
-## API mit Client-ID und geheimen Clientschlüssel aufrufen
+## API mit Client-ID und geheimem Clientschlüssel aufrufen
 
 Die Sicherheitseinstellungen können auch mit dem Tool Explore getestet werden, von dem explizit der Proxy-Endpunkt aufgerufen wird und die Client-ID mit den geheimen Clientschlüsseln als Headerwerte übergeben wird.
 
 
-1. Klicken Sie auf **Explore** und anschließend auf **Sandbox**.  
+1. Klicken Sie auf **Erkunden**.
     ![](images/explore_1.png)
 
 2. Klicken Sie in der Liste auf die Operation **GET /current**.  

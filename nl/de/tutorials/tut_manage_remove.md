@@ -89,7 +89,7 @@ In diesem Lernprogramm löschen und archivieren Sie eine API und ziehen eine API
 In diesem Lernprogramm haben Sie Folgendes durchgeführt:
 
 1. Ein API-Produkt gelöscht
-2. Ein API-Produkt zurückgezogen
+2. Ein API-Produkt außer Kraft gesetzt
 3. Ein API-Produkt archiviert
 4. Die Archivierung eines API-Produkts aufgehoben
 

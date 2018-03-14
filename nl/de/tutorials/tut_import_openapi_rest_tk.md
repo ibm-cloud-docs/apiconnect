@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -16,7 +16,7 @@ Kenntnisstufe: Anfänger
 
 
 ## Lernziel
-Dieses Lernprogramm veranschaulicht, wie Sie vorgehen müssen, damit Sie eine vorhandene API mit {{site.data.keyword.apiconnect_short}} verwalten können. Sie importieren in diesem Lernprogramm eine OpenAPI-Spezifikation und erstellen einen Durchgriffs-API-Proxy für einen vorhandenen REST-Service.
+Dieses Lernprogramm veranschaulicht, wie Sie vorgehen müssen, damit Sie eine vorhandene API mit {{site.data.keyword.apiconnect_full}} verwalten können. Sie importieren in diesem Lernprogramm eine OpenAPI-Spezifikation und erstellen einen Durchgriffs-API-Proxy für einen vorhandenen REST-Service.
 
 ## Voraussetzungen
 Bevor Sie beginnen, müssen Sie [eine Instanz von API Connect einrichten](tut_prereq_set_up_apic_instance.html) und [das API Connect-Toolkit installieren](tut_prereq_install_toolkit.html).
@@ -26,7 +26,7 @@ Bevor Sie beginnen, müssen Sie [eine Instanz von API Connect einrichten](tut_pr
 
 ## Beispielapp untersuchen und Zielendpunkt testen
 
-Für dieses Lernprogramm wurde die Beispielapp _weather provider_ erstellt. Die entsprechende API-Spezifikation (Swagger 2.0) befindet sich in der Datei[weather-provider-api_1.0.0.yaml ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window}. 
+Für dieses Lernprogramm wurde die Beispielapp _weather provider_ erstellt. Die entsprechende API-Spezifikation (Swagger 2.0) befindet sich in der Datei [weather-provider-api_1.yaml ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}.
 
 1. Rufen Sie [http://gettingstartedweatherapp.mybluemix.net/ ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://gettingstartedweatherapp.mybluemix.net/){:new_window} auf, um die App kennenzulernen.  
 2. Geben Sie eine gültige fünfstellige US-Postleitzahl ein, um Angaben zum _**aktuellen Wetter**_ und zur _**Vorhersage für heute**_ zu erhalten.  
@@ -55,12 +55,12 @@ Für dieses Lernprogramm wurde die Beispielapp _weather provider_ erstellt. Die 
 7. Klicken Sie im Dropdown-Menü auf **API aus Datei oder URL importieren**.
    ![](images/toolkit-import-1.png)
 8. An dieser Position befindet sich eine OpenAPI 2.0-Definition für die Wetter-API, die Sie für dieses Lernprogramm verwenden. Geben Sie in das Dialogfenster 'OpenAPI importieren (Swagger)' die folgende URL ein:
-`https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml`.
+`https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml`.
 9. Lassen Sie die Option _Produkt hinzufügen_ nicht ausgewählt und klicken Sie auf **Importieren**.  
     ![](images/screenshot_import-url.png)  
 
-Nach dem Import der OpenAPI-Spezifikation wird die Ansicht 'Design' der API angezeigt. Hier können Sie unterschiedliche Abschnitte der OpenAPI-Definition anzeigen. Blättern Sie durch die Abschnitte und notieren Sie insbesondere den Wert für 'Host'. Sie können die OpenAPI auch in der Registerkarte 'Quelle' anzeigen.
-  _Sie werden feststellen, dass für den Host der Wert `$(catalog.host)` eingestellt ist_. Hierbei handelt es sich um die Basis-URL für den API-Proxy.
+Nach dem Import der OpenAPI-Spezifikation wird die Ansicht 'Design' der API angezeigt. Hier können Sie unterschiedliche Abschnitte der OpenAPI-Definition anzeigen. Blättern Sie durch die Abschnitte und notieren Sie insbesondere den Wert für 'Host'. Sie können die OpenAPI auch in der Registerkarte 'Quelle' anzeigen. 
+_Sie werden feststellen, dass für den Host der Wert `$(catalog.host)` eingestellt ist_. Hierbei handelt es sich um die Basis-URL für den API-Proxy.
  
 
 
@@ -88,7 +88,7 @@ Nach dem Import der OpenAPI-Spezifikation wird die Ansicht 'Design' der API ange
 
 ## Fazit
 
-In diesem Lernprogramm haben Sie erfahren, wie ein vorhandener REST-Service über einen Durchgriffs-API-Proxy aufgerufen werden kann. Als ersten Schritt haben Sie die Verfügbarkeit des Beispielservice über den Web-Browser getestet. Anschließend haben Sie einen API-Proxy in API Connect erstellt und den Proxy mit dem Beispielservice verknüpft, der aufgerufen werden soll. Zum Schluss haben Sie diesen Service mit den internen Testtools von {{site.data.keyword.apiconnect_short}} getestet.
+In diesem Lernprogramm haben Sie erfahren, wie ein vorhandener REST-Service über einen Durchgriffs-API-Proxy aufgerufen werden kann. Als ersten Schritt haben Sie die Verfügbarkeit des Beispielservice über den Web-Browser getestet. Anschließend haben Sie einen API-Proxy in {{site.data.keyword.apiconnect_short}} erstellt und den Proxy mit dem Beispielservice verknüpft, der aufgerufen werden soll. Zum Schluss haben Sie diesen Service mit den internen Testtools von {{site.data.keyword.apiconnect_short}} getestet.
 
 ---
 

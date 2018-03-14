@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 ---
 
 
@@ -22,19 +22,19 @@ In diesem Lernprogramm verwenden Sie API Manager, um eine SOAP-API zu erstellen,
 
 ## Voraussetzungen
 - Bevor Sie beginnen, müssen Sie [eine Instanz von {{site.data.keyword.apiconnect_short}} einrichten](tut_prereq_set_up_apic_instance.html).
-- Bevor Sie beginnen, müssen Sie die Testdatei [weatherprovider.wsdl ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} in Ihr lokales Dateisystem kopieren.
+- Bevor Sie beginnen, müssen Sie die Testdatei [weatherprovider.wsdl ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} in Ihr lokales Dateisystem kopieren.
 Hinweis: Sie können auf **Unbearbeitet** klicken und anschließend die resultierende Seite im lokalen System als `.wsdl`-Datei speichern. Wie der Name nahelegt, werden von diesem SOAP-Service Wetterdaten zurückgegeben, wenn eine Postleitzahl eingegeben wird.
 
 ---
 ## SOAP-API-Definition festlegen
 1. Melden Sie sich an {{site.data.keyword.Bluemix_short}} an: [https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}.
 
-2. Blättern Sie im {{site.data.keyword.Bluemix_short}}-**Dashboard** abwärts bis zu **Alle Services**.
+2. Blättern Sie im {{site.data.keyword.Bluemix_notm}}-**Dashboard** abwärts bis zu **Alle Services**.
 
-3. Wählen Sie **API Connect** aus, um den API Connect-Service zu starten. 
+3. Wählen Sie **API Connect** aus, um den {{site.data.keyword.apiconnect_short}}-Service zu starten. 
   
 4. Navigieren Sie zur Seite 'Entwürfe', falls diese noch nicht angezeigt wird:  
-    a. Klicken Sie in der API Connect-Schnittstelle auf >>, um das Navigationsfenster zu öffnen.
+    a. Klicken Sie in der {{site.data.keyword.apiconnect_short}}-Schnittstelle auf >>, um das Navigationsfenster zu öffnen.
     b. Klicken Sie im Navigationsfenster auf **Entwürfe**.
     c. Wechseln Sie zur Registerkarte **APIs**.
 
@@ -56,7 +56,7 @@ Hinweis: Sie können auf **Unbearbeitet** klicken und anschließend die resultie
   ![API-Editorseite](images/designpage2.png)
 
 11. Blättern Sie abwärts bis zur Registerkarte **Sicherheit** und klicken Sie auf das Löschsymbol, um `clientIDHeader (API Key)` zu entfernen (wurde beim Erstellen des Service automatisch generiert).
-_Im nächsten Lernprogramm erfahren Sie mehr über Sicherheit durch API-Schlüssel._
+   _Im nächsten Lernprogramm erfahren Sie mehr über Sicherheit durch API-Schlüssel._
 
 12. Klicken Sie auf das Symbol ![Speichern](images/save.png), um Ihre Änderungen zu speichern. Kurzzeitig wird die Bestätigungsnachricht 'API gespeichert' angezeigt.
 
@@ -113,6 +113,6 @@ In diesem Lernprogramm haben Sie Folgendes durchgeführt:
 
 ## Nächster Schritt
 
-[Service als REST-API verfügbar machen](tut_expose_soap_api.html) oder API mit [Quotenbegrenzung](tut_rate_limit.html), [Client-ID und geheimen Schlüssel](tut_secure_landing.html) oder [Schutz durch OAuth 2.0](tut_secure_oauth_2.html) schützen.
+[Service als REST-API verfügbar machen](tut_expose_soap_service.html) oder API mit [Quotenbegrenzung](tut_rate_limit.html), [Client-ID und geheimen Schlüssel](tut_secure_landing.html) oder [Schutz durch OAuth 2.0](tut_secure_oauth_2.html) schützen.
 
 Erstellen > **Verwalten** > Schützen > Teilen > Analysieren

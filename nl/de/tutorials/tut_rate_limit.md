@@ -1,10 +1,10 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-11-02"
 ---
 
-{:new_window: target="blank"}
+{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -19,7 +19,7 @@ lastupdated: "2017-09-30"
 In diesem Lernprogramm erfahren Sie, wie Sie Quotenbegrenzungen für APIs verwenden. Durch das Festlegen von Quotenbegrenzungen können Sie den Netzverkehr für die
 APIs und bestimmte Operationen in den APIs verwalten. Eine Quotenbegrenzung ist die maximale Anzahl an Aufrufen, die in einem bestimmten Zeitintervall zulässig sein soll.
 
-In {{site.data.keyword.apiconnect_full}} wird mithilfe von *Produkte* eine Möglichkeit zum Gruppieren von APIs in einem Paket für einen bestimmten Anwendungsfall oder eine bestimmte Zielgruppe bereitgestellt. Produkte enthalten auch *Pläne*, in denen die Begriffe beschrieben werden, die Sie Ihren API-Nutzern anbieten möchten. Präziser formuliert, werden in Plänen Regeln definiert, die API-Subskription zugeordnet sind: API-Quotenbegrenzungen und ob die Subskription genehmigt werden muss.
+In {{site.data.keyword.apiconnect_full}} wird mithilfe von *Produkte* eine Möglichkeit zum Gruppieren von APIs in einem Paket für einen bestimmten Anwendungsfall oder eine bestimmte Zielgruppe bereitgestellt. Produkte enthalten auch *Pläne*, in denen die Begriffe beschrieben werden, die Sie Ihren API-Nutzern anbieten möchten. Präziser formuliert, werden in Plänen Regeln definiert, die API-Abonnements zugeordnet sind: API-Quotenbegrenzungen und ob das Abonnement genehmigt werden muss.
 
 Wenn ein Anwendungsentwickler APIs verwenden möchte, wählen Sie ein Produkt aus, in dem die API enthalten ist, die Sie verwenden möchten, und abonnieren abhängig von ihren Nutzungsanforderungen einen der Pläne des Produkts.
 
@@ -29,7 +29,7 @@ In diesem Lernprogramm machen Sie sich mit den folgenden Themen vertraut:
 
 
 ## Voraussetzungen
-Sie müssen bereits eine API in {{site.data.keyword.apiconnect_short}} erstellt haben, die mit mindestens einem API-Schlüssel gesichert ist. In den folgenden Anweisungen ist die [Beispieldatei für 'Weather Provider API' ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window} der Ausgangspunkt, gesichert mithilfe einer [Client-ID und einem geheimen Schlüssel](tut_secure_landing.html).
+Sie müssen bereits eine API in {{site.data.keyword.apiconnect_short}} erstellt haben, die mit mindestens einem API-Schlüssel gesichert ist. In den folgenden Anweisungen ist die [Beispieldatei für 'Weather Provider API' ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window} der Ausgangspunkt, gesichert mithilfe einer [Client-ID und einem geheimen Schlüssel](tut_secure_landing.html).
 
 Führen Sie folgenden Lernprogramme aus, bevor Sie mit diesem Lernprogramm beginnen:
 - [API-Spezifikation importieren und Proxy für vorhandenen REST-Service erstellen](tut_rest_landing.html)
@@ -39,8 +39,8 @@ Führen Sie folgenden Lernprogramme aus, bevor Sie mit diesem Lernprogramm begin
 ---
 ## API Connect starten
 
-1. Melden Sie sich an {{site.data.keyword.Bluemix_short}} an: [https://console.ng.bluemix.net/login ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.ng.bluemix.net/login){:new_window}.
-2. Blättern Sie nach der Anmeldung an {{site.data.keyword.Bluemix_short}} abwärts bis zu **Alle Services** und klicken Sie auf **API Connect**.
+1. Melden Sie sich an {{site.data.keyword.Bluemix_notm}} an: [https://console.ng.bluemix.net/login ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.ng.bluemix.net/login){:new_window}.
+2. Blättern Sie nach der Anmeldung an {{site.data.keyword.Bluemix_notm}} abwärts bis zu **Alle Services** und klicken Sie auf **API Connect**.
 3. Klicken Sie auf **API Connect**, um den {{site.data.keyword.apiconnect_short}}-Service zu starten.
 
 ## Standardplan kennenlernen
@@ -65,7 +65,7 @@ Nachdem Sie sich mit dem Standardplan vertraut gemacht haben, wird im nächsten 
  
     ![](./images/newplanbutton.png) 
     
-    Ein neuer Plan wird erstellt, für den standardmäßig eine unbegrenzte Nutzung zulässig ist (also ohne Quotenbegrenzung). Legen Sie für ihn einen aussagekräftigeren Name und eine restriktivere Begrenzung fest.
+    Ein neuer Plan wird erstellt, für den standardmäßig eine unbegrenzte Nutzung zulässig ist (also ohne Quotenbegrenzung). Legen Sie für ihn einen aussagekräftigeren Name und eine restriktivere Begrenzung fest. 
 2. Klicken Sie auf den neuen Plan (`New Plan 1`), um die Details zu erweitern.
 3. Klicken Sie auf das Feld 'Titel' und legen Sie als Titel für den Plan `Demo` fest.
 4. Klicken Sie auf das Feld 'Name' und legen Sie als Name für den Plan `demo-plan` fest.
@@ -84,7 +84,6 @@ Es kann sein, dass Sie Ihr Produkt in früheren Beispielen mit dem Testtool ver�
 1. Klicken Sie auf das Symbol 'Veröffentlichen' zum *Bereitstellen* des Produkts im **Sandbox**-Katalog. Durch diese Aktion werden die Änderungen am Produktentwurf zum ausgewählten Katalog hinzugefügt. Im nächsten Schritt ist das *Veröffentlichen* der Produktänderungen erforderlich, damit sie für die Nutzer über Developer Portal verfügbar werden.
    ![](./images/stageproduct.png) 
 2. Klicken Sie auf die Schaltfläche >>, um das Navigationsmenü zu öffnen.
-   ![](./images/navigate.png) 
 3. Wählen Sie das Dashboard aus und öffnen Sie anschließend den Katalog **Sandbox**. Das Produkt 'Weather Provider API' wird als **Bereitgestellt** aufgelistet.
 4. Klicken Sie auf den Auslassungspunkt und wählen Sie im Menü **Veröffentlichen** aus.
    ![](./images/publish.png) 
@@ -98,22 +97,20 @@ Wenn Sie zum ersten Mal mit Developer Portal arbeiten, müssen Sie eine Develope
 
 Führen Sie diese Schritte gemäß der folgenden Anweisungen aus.
 
-1. Starten Sie Developer Portal. Wenn Sie die URL nicht kennen, finden Sie diese in der Registerkarte 'Einstellungen' des Sandbox-Katalogs.
-
-   ![](./images/devportalurl.png)
-    - Wenn Sie die Developer Portal-Instanz zum ersten Mal bereitstellen, wählen Sie im Dropdown-Menü **IBM Developer Portal** aus.
+1. Starten Sie Developer Portal. Wenn Sie die URL nicht kennen, finden Sie diese in der Registerkarte 'Einstellungen' des Sandbox-Katalogs. Wenn Sie Developer Portal zum ersten Mal bereitstellen, lesen Sie die Informationen in [Developer Portal einrichten und konfigurieren](tut_config_dev_portal.html).
     - Dieser Vorgang kann bis zu einer Stunde dauern. Wenn die Sandbox-Developer Portal-Instanz fertig ist, empfangen Sie eine E-Mail mit einem Link
 zur neuen Developer Portal-Site. Der Link ist ein Link zur einmaligen Verwendung für das Administratorkonto.
 2. Melden Sie sich mit Ihren App-Entwickler-Berechtigungsnachweisen an (**nicht** mit der IBMid). ***(Erstellen Sie bei Bedarf unter Verwendung einer anderen Adresse als Ihrer IBMid ein neues Entwicklerkonto.)***
 3. Klicken Sie auf den Link **Apps** in der Symbolleiste und klicken Sie auf die Schaltfläche **Neue App erstellen**.
 
-   ![](./images/createnewapp.png)
 4. Legen Sie einen Titel für die Anwendung fest und klicken Sie auf **Abschicken**.
 
    ![](./images/mymobileapp.png)
 5. Speichern Sie den angezeigten geheimen Clientschlüssel und die angezeigte Client-ID. Dies ist die einzige Möglichkeit zum Kopieren des geheimen Clientschlüssels.
 
    ![](./images/clientidandsecret.png)
+   
+   ![](./images/clientsecret.png)
 
 
 
@@ -122,7 +119,7 @@ zur neuen Developer Portal-Site. Der Link ist ein Link zur einmaligen Verwendung
 1. Klicken Sie in der Symbolleiste auf den Link **API-Produkte**. Das Produkt 'Weather Provider API' wird aufgelistet. 
 
    ![](./images/apiproducts.png)
-2. Klicken Sie auf den Link zum Anzeigen der Details und Optionen. Die verfügbaren Pläne sollten angezeigt werden: der ursprüngliche Standardplan und der neue Demoplan. (Falls nur ein Plan angezeigt wird, kehren Sie zu API Connect zurück und stellen sicher, dass die Produktänderungen gespeichert, bereitgestellt und im Sandbox-Katalog veröffentlicht wurden.) 
+2. Klicken Sie auf den Link zum Anzeigen der Details und Optionen. Die verfügbaren Pläne sollten angezeigt werden: der ursprüngliche Standardplan und der neue Demoplan. (Falls nur ein Plan angezeigt wird, kehren Sie zu {{site.data.keyword.apiconnect_short}} zurück und stellen sicher, dass die Produktänderungen gespeichert, bereitgestellt und im Sandbox-Katalog veröffentlicht wurden.) 
 
    ![](./images/plans.png)
 3. Klicken Sie für den Demoplan auf **Abonnieren** und wählen Sie die soeben registrierte Anwendung aus. Jetzt kann die Anwendung die diesem Plan zugeordneten APIs aufrufen; hierbei ist bis zu *ein* API-Aufruf pro Minute zulässig. 

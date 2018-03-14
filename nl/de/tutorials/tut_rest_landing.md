@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-08-24"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -20,10 +20,10 @@ In den folgenden Lernprogrammen werden Optionen zur Verwaltung vorhandener APIs 
 
 Wenn Sie eine vorhandene API verwalten möchten, können Sie mit dem Importieren oder Hinzufügen einer OpenAPI-Datei beginnen.
 
-## IBM Bluemix
+## {{site.data.keyword.Bluemix_notm}}
 
-- [OpenAPI-Datei mit IBM Bluemix importieren](tut_import_openapi_rest_bm.html)
-- [OpenAPI-Datei mit IBM Bluemix erstellen](tut_add_openapi_rest_bm.html)
+- [OpenAPI-Datei mit {{site.data.keyword.Bluemix_notm}} importieren](tut_import_openapi_rest_bm.html)
+- [OpenAPI-Datei mit {{site.data.keyword.Bluemix_notm}} erstellen](tut_add_openapi_rest_bm.html)
 
 ## Developer Toolkit
 

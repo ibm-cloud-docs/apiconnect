@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ Dauer: 30 Minuten
 Kenntnisstufe: Anfänger
 
 ## Lernziel
-Hierbei handelt es sich um eine grundlegende Einführung in {{site.data.keyword.apiconnect_long}}. Die verfügbaren Analysedashboards werden erläutert und später folgen die eigenen APIs.
+Hierbei handelt es sich um eine grundlegende Einführung in {{site.data.keyword.apiconnect_full}}. Die verfügbaren Analysedashboards werden erläutert und später folgen die eigenen APIs.
 
 
 ## Voraussetzungen
@@ -85,9 +85,8 @@ In diesem Schritt wird ein neues Dashboard erstellt, von dem eine Ansicht der AP
    ![](./images/newdashboard.png) 
     Eine Liste der verfügbaren Visualisierungen wird angezeigt.
 
-2. Wählen Sie Visualisierungen aus, die Sie zum Dashboard hinzufügen möchten. Beispiel:
-
-  * Subskribierte Apps
+2. Wählen Sie Visualisierungen aus, die Sie zum Dashboard hinzufügen möchten.  Beispiel:
+  * Abonnierte Apps
   * Apps pro Plan 
   * Erfolgsquote
   * API-Aufrufe pro Tag
@@ -127,7 +126,7 @@ In diesem Diagramm wird (bisher) eine Zeitreihe für API-Aufrufe angezeigt. Wir 
 	* Benutzerdefinierte Bezeichnung: **App**
 	
    ![](./images/subbucket.png)
-8. Klicken Sie auf **Ausführen**, um das Diagramm anzuzeigen. 
+8. Klicken Sie auf **Ausführen**, um das Diagramm anzuzeigen.
 9. Klicken Sie auf **Speichern** und legen Sie für das Diagramm den Namen `API Calls by App` fest.
 10. Fügen Sie die Visualisierung zum Abonnentendashboard (Subscriber Dashboard) hinzu, damit es im richtigen Zusammenhang angezeigt wird.
 
@@ -149,6 +148,6 @@ In diesem Lernprogramm wurden mehrere Aktivitäten beschrieben, die die Erstellu
 
 ## Nächster Schritt
 
-Lernen, [wie die APIs und Versionssteuerung verwaltet werden](tut_version_landing.html).
+Lernen, [wie die APIs und Versionssteuerung verwaltet werden](tut_manage_version_landing.html).
 
 Erstellen > Verwalten > Schützen > Teilen > **Analysieren**  

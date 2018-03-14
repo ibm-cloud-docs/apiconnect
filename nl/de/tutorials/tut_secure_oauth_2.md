@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-12-13"
 ---
 
 {:new_window: target="blank"}
@@ -22,16 +22,18 @@ Im folgenden Lernprogramm wird beschrieben, wie Sie eine API mit einem doppelten
 ## Voraussetzungen
 
 Bevor Sie beginnen, müssen Sie eines der folgenden Lernprogramme durchgeführt haben.  
-- [API mit Client-ID und geheimen Clientschlüssel mithilfe von IBM Bluemix schützen](tut_secure_id_secret_bm.html)
+- [API mit Client-ID und geheimen Clientschlüsseln mithilfe von {{site.data.keyword.Bluemix}}](tut_secure_id_secret_bm.html) schützen
 oder
-- [API mit Client-ID und geheimen Clientschlüssel mithilfe des Toolkits schützen](tut_secure_id_secret_tk.html)
+- [API mit Client-ID und geheimen Clientschlüsseln mithilfe des Toolkits schützen](tut_secure_id_secret_tk.html)
+
+Hinweis: In diesem Lernprogramm sind die Schritte und Screenshots zur Ausführung der Task in der {{site.data.keyword.Bluemix}}-Benutzerschnittstelle dargestellt. Dieselbe Prozedur kann auch über die Befehlszeile ausgeführt werden. Eine Beschreibung dieser Prozedur finden Sie im [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tutorial_apionprem_security_OAuth_v506.html). 
 
 ## Vorgehensweise
 
 1. Erstellen Sie eine OAuth-Provider-API und wählen Sie ein OAuth-Schema aus.  
 	a. Öffnen Sie **Entwürfe**, wählen Sie **APIs** aus und klicken Sie auf **Hinzufügen** > **OAuth 2.0 Provider-API**.  
     ![](images/oauth_provider_1.png)
-	b. Legen Sie den Titel 'OAuth-Endpunkt-API' fest. (Name und Basispfad werden automatisch gefüllt.)  
+	b. Legen Sie den Titel 'OAuth-Endpunkt-API' fest. Name und Basispfad werden automatisch gefüllt.  
 	c. Wählen Sie **API erstellen** aus.  
 	d. Navigieren Sie in der neu erstellten OAuth-Endpunkt-API zur Anzeige **OAuth 2** (oder blättern Sie abwärts zu ihr) und wählen Sie 'Vertraulich' als Clienttyp aus.  
 	e. Benennen Sie unter 'Bereich' den Bereich _scope1_ in _view_current_ um. Löschen Sie _scope2_ und _scope3_.  

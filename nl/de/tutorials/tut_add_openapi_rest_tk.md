@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ lastupdated: "2017-10-19"
 **Kenntnisstufe**: Anfänger  
 
 ## Lernziel
-Dieses Lernprogramm unterstützt Sie beim Einstieg in {{site.data.keyword.apiconnect_short}}, da es verdeutlicht, wie Sie vorgehen müssen, damit Sie eine vorhandene API verwalten können. In einem ersten Schritt wird eine neue OpenAPI-Spezifikation erstellt, anschließend ein Durchgriffs-API-Proxy für einen vorhandenen REST-Service.
+Dieses Lernprogramm unterstützt Sie beim Einstieg in {{site.data.keyword.apiconnect_full}}, da es verdeutlicht, wie Sie vorgehen müssen, damit Sie eine vorhandene API verwalten können. In einem ersten Schritt wird eine neue OpenAPI-Spezifikation erstellt, anschließend ein Durchgriffs-API-Proxy für einen vorhandenen REST-Service.
 
 ## Voraussetzung
 Bevor Sie beginnen, müssen Sie [eine Instanz von API Connect einrichten](tut_prereq_set_up_apic_instance.html) und [das API Connect-Toolkit installieren](tut_prereq_install_toolkit.html).
@@ -120,9 +120,9 @@ _(Die Sicherheit durch API-Schlüssel wird im nächsten Lernprogramm besprochen.
     Von **Operation Switch** wird ein Entscheidungspunkt bereitgestellt. Abhängig vom Verb/Pfad-Paar muss die entsprechende Operation aufgerufen werden.  
     c. Ziehen Sie die Richtlinie **invoke** aus aus der Palette und legen Sie sie im Erstellungsbereich ab. Legen Sie eine im Pfad **/get current** und eine im Pfad **/get today** ab.
     d. Wählen Sie die Richtlinie **invoke** im Pfad **/get current** aus und ändern Sie ihren Titel in '**invoke-current**'.  
-    e. Aktualisieren Sie das Feld 'URL' anhand von `https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`.
+    e. Aktualisieren Sie das Feld 'URL' anhand von `https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`.
     f. Wählen Sie die Richtlinie **invoke** im Pfad **/get today** aus und ändern Sie ihren Titel in '**invoke-today**'.  
-    g. Aktualisieren Sie das URL-Feld mit `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`.  
+    g. Aktualisieren Sie das Feld 'URL' anhand von `https://myweatherprovider.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`.  
 
 20. Speichern Sie die API.
 
@@ -144,7 +144,7 @@ _(Die Sicherheit durch API-Schlüssel wird im nächsten Lernprogramm besprochen.
   b. Klicken Sie auf **Aufrufen** und stellen Sie sicher, dass Folgendes angezeigt wird:
   ```
   200 OK response
-  Current weather data for 90210
+  Current weather data for 90210  
   ```
     ![](images/screenshot_test-2.png)  
 

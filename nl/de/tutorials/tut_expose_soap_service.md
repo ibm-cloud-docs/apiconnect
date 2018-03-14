@@ -2,7 +2,7 @@
 
 copyright:
 years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-14"
 
 ---
 
@@ -23,14 +23,14 @@ Sie erstellen in API Manager eine REST-API, die auf einen vorhandenen SOAP-Servi
 
 ## Voraussetzungen
 1. Bevor Sie beginnen, müssen Sie [eine Instanz von {{site.data.keyword.apiconnect_full}} einrichten](tut_prereq_set_up_apic_instance.html).
-2. Bevor Sie beginnen, müssen Sie die Testdatei [weatherprovider.wsdl![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} in Ihr lokales Dateisystem kopieren.
+2. Bevor Sie beginnen, müssen Sie die Testdatei [weatherprovider.wsdl![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} in Ihr lokales Dateisystem kopieren.
 	>![images/info.png]
 	>Sie können auf **Unbearbeitet** klicken und anschließend die resultierende Seite im lokalen System als `.wsdl`-Datei speichern.
 
 ---
 ## REST-API-Definition festlegen
 1. Melden Sie sich an {{site.data.keyword.Bluemix_short}} an: [https://new-console.ng.bluemix.net/login ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://new-console.ng.bluemix.net/login){:new_window}.
-2. Blättern Sie im {{site.data.keyword.Bluemix_short}} **Dashboard** abwärts und wählen Sie {{site.data.keyword.apiconnect_full}} aus. Alternativ können Sie über das Menüsymbol **Services** und anschließend **APIs** auswählen, um das Fenster **Mit APIs arbeiten** zu öffnen, und **API Connect** auswählen. Auf der Seite **API Connect** können Sie einfach `Erstellen` auswählen oder die Standardeinstellungen anpassen. Belassen Sie die Instanz in diesem Beispiel ohne Bindung und passen Sie den Servicename an, damit Sie ihn später leicht wiedererkennen. Ein Beispiel wäre `API Connect-weather-exercise`.
+2. Blättern Sie im {{site.data.keyword.Bluemix_notm}} **Dashboard** abwärts und wählen Sie {{site.data.keyword.apiconnect_short}} aus. Alternativ können Sie über das Menüsymbol **Services** und anschließend **APIs** auswählen, um das Fenster **Mit APIs arbeiten** zu öffnen, und **API Connect** auswählen. Auf der Seite **API Connect** können Sie einfach `Erstellen` auswählen oder die Standardeinstellungen anpassen. Belassen Sie die Instanz in diesem Beispiel ohne Bindung und passen Sie den Servicename an, damit Sie ihn später leicht wiedererkennen. Ein Beispiel wäre `API Connect-weather-exercise`.
 Klicken Sie auf die Schaltfläche `Erstellen`, um den {{site.data.keyword.apiconnect_short}}-Service zu starten.  
 Es kann ein Alert angezeigt werden, in dem beschrieben wird, was neu ist, oder die Begrüßungsanzeige **APIs entwerfen** wird mit Informationen angezeigt. Klicken Sie nach dem Lesen der Informationen auf das Symbol **Ich habs!**, um API Manager anzuzeigen.
 3. Wenn Sie in {{site.data.keyword.apiconnect_short}} bisher nicht den Navigationsbereich der Benutzerschnittstelle fixiert haben, klicken Sie auf das Symbol **Navigieren zu** ![](images/navigate-to.png). Der Navigationsbereich der Benutzerschnittstelle von API Manager wird geöffnet. Klicken Sie zum Fixieren des Navigationsbereichs der Benutzerschnittstelle auf das Symbol für das **Fixiermenü** ![](images/pinned.png).
@@ -47,7 +47,7 @@ Es kann ein Alert angezeigt werden, in dem beschrieben wird, was neu ist, oder d
 	- Lassen Sie die übrigen Felder unverändert.
 	![](images/new-api-1.png)
 8. Fügen Sie die API zum neuen Produkt hinzu und erstellen Sie anschließend die API-Definition.
-	- Wählen Sie **Produkt hinzufügen** aus. 
+	- Wählen Sie **Produkt hinzufügen** aus.
 	- Verwenden Sie im Feld **Titel** die Zeichenfolge `Weather Data product` als Standardeinstellung.
 	- Belassen Sie die Felder **Name** und **Version** unverändert.
 	- Stellen Sie sicher, dass das Kontrollkästchen **Dieses Produkt in einem Katalog veröffentlichen** ausgewählt ist und wählen Sie anschließend **Sandbox** als Zielkatalog aus.
@@ -57,8 +57,8 @@ Es kann ein Alert angezeigt werden, in dem beschrieben wird, was neu ist, oder d
 ![](images/api-security-1.png)
 10. Nehmen Sie die Auswahl der Option **Client-ID** zurück.
 ![](images/api-security-2.png)
-	>![images/info.png]
-	>Es kann sein, dass ein gelbes Dreieckssymbol neben dem Symbol zum Speichern auf der Platte angezeigt wird. Hierbei handelt es sich um eine Warnung, die besagt, dass bereits eine Definition vorhanden sein kann, die zwar definiert, aber noch nicht verwendet wurde. (Dies hat keinen Einfluss auf die API-Definition).
+	>![](images/info.png)
+	>Gegebenenfalls wird ein gelbes Dreiecksymbol neben dem Symbol für das Speichern auf der Platte angezeigt. Hierbei handelt es sich um eine Warnung, die besagt, dass bereits eine Definition vorhanden sein kann, die zwar definiert, aber noch nicht verwendet wurde. (Dies hat keinen Einfluss auf die API-Definition).
 11. Klicken Sie im Abschnitt **Definitionen** auf das Symbol **Definition hinzufügen** ![](images/add-icon.png) und erweitern Sie die neue Definition anschließend durch Klicken auf die Definition.
 12. Legen Sie für die Definition den Namen `Weather Data Output` fest.
 13. Die Definition besteht aus fünf Eigenschaften. Klicken Sie vier Mal auf **Eigenschaft hinzufügen**, um die zusätzlichen Eigenschaften hinzuzufügen. Benennen Sie die Angabe unter `Property Name` gemäß der nachfolgenden Vorgehensweise um und verwenden Sie den Standard für `Description`, `Type` und `Example`:
@@ -83,7 +83,7 @@ Führen Sie die nachfolgenden Schritte aus, um den Aufruf hinzuzufügen und zu k
 4. Wählen Sie den SOAP-Service **weatherService** aus und klicken Sie auf **Fertig**. Im Abschnitt **Services** wird der Web-Service **WeatherService** mit der einzigen Operation **weatherRequest** aufgelistet.
 	![](images/upload-file-2.png)
 
-	![](images/services-add-1.png)
+	![](images/services-add-1.png)	
 5. Navigieren Sie zur Registerkarte **Assemblieren** und stellen Sie sicher, dass **DataPower-Gateway-Richtlinien** ausgewählt ist.
 6. Löschen Sie die vorhandene Richtlinie **invoke** im Erstellungsbereich; bewegen Sie hierzu den Cursor über die Richtlinie und klicken Sie anschließend auf das Symbol **Richtlinie löschen** ![](images/delete-icon.png).
 	![](images/delete-invoke-1.png)	
