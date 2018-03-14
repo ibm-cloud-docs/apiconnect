@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 ---
 
 
@@ -22,18 +22,19 @@ Dans ce tutoriel, vous utiliserez le gestionnaire d'API pour créer une API SOAP
 
 ## Prérequis
 - Avant de commencer, vous devez [configurer votre instance {{site.data.keyword.apiconnect_short}}](tut_prereq_set_up_apic_instance.html).
-- Avant de commencer, copiez le fichier de test [weatherprovider.wsdl ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} dans votre système de fichiers local. Remarque : Vous pouvez cliquer sur **Brut** puis sauvegarder la page résultante sur votre système de fichiers local en tant que fichier `.wsdl`. Comme le suggère son nom, ce service SOAP renvoie des données météorologiques lorsqu'un code postal est indiqué.
+- Avant de commencer, copiez le fichier de test [weatherprovider.wsdl ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} dans votre système de fichiers local.
+Remarque : Vous pouvez cliquer sur **Brut** puis sauvegarder la page résultante sur votre système de fichiers local en tant que fichier `.wsdl`. Comme le suggère son nom, ce service SOAP renvoie des données météorologiques lorsqu'un code postal est indiqué.
 
 ---
 ## Configuration d'une définition d'API SOAP
 1. Connectez-vous à {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}.
 
-2. Dans le **tableau de bord** {{site.data.keyword.Bluemix_short}}, faites défiler vers le bas jusqu'à **Tous les services**.
+2. Dans le **tableau de bord** {{site.data.keyword.Bluemix_notm}}, faites défiler vers le bas jusqu'à **Tous les services**.
 
-3. Sélectionnez **API Connect** pour lancer le service API Connect. 
+3. Sélectionnez **API Connect** pour lancer le service {{site.data.keyword.apiconnect_short}}. 
   
 4. Accédez à la page Brouillons, si elle n'est pas déjà affichée :  
-    a. Dans l'interface API Connect, cliquez sur >> pour ouvrir le panneau de navigation.
+    a. Dans l'interface {{site.data.keyword.apiconnect_short}}, cliquez sur >> pour ouvrir le panneau de navigation.
     b. Cliquez sur **Brouillons** dans le panneau de navigation.
     c. Cliquez sur l'onglet **API**.
 
@@ -110,8 +111,8 @@ Dans ce tutoriel, vous avez :
 
 ---
 
-## Etape suivante 
+## Etape suivante
 
-[Exposition de votre service en tant qu'API REST](tut_expose_soap_api.html) ou sécurisation de votre API à l'aide d'une [limitation de débit](tut_rate_limit.html), d'un[ID et d'une valeur confidentielle client](tut_secure_landing.html) ou [sécurisation à l'aide de OAuth 2.0](tut_secure_oauth_2.html).
+[Exposition de votre service en tant qu'API REST](tut_expose_soap_service.html) ou sécurisation de votre API à l'aide d'une [limitation de débit](tut_rate_limit.html), d'un[ID et d'une valeur confidentielle client](tut_secure_landing.html) ou [sécurisation à l'aide de OAuth 2.0](tut_secure_oauth_2.html).
 
 Création > **Gestion** > Sécurisation > Réseaux sociaux > Analyse

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Sécurisation de votre API avec un ID client et une valeur confidentielle du client à l'aide du kit d'outils
+# Sécurisation de votre API avec un ID client et une valeur confidentielle du client à l'aide du kit d'outils de développement
 
 
 **Durée :** 10 mn  
@@ -34,7 +34,7 @@ Avant de commencer, vous devez avoir terminé l'un des tutoriels suivants :
 1. Lancez le concepteur d'API (s'il n'est pas déjà ouvert) :  
    a. Ouvrez votre terminal.  
    b. Entrez `apic edit` sur la ligne de commande. _Le concepteur d'API est lancé dans votre navigateur Web_    
-   c. Cliquez sur **Se connecter avec Bluemix**.  
+   c. Cliquez sur **Se connecter avec {{site.data.keyword.Bluemix_notm}}**.  
    d. Entrez vos informations de connexion à {{site.data.keyword.Bluemix_short}}.  
 
 2. Accédez à la vue Concevoir de votre API comme suit :
@@ -56,7 +56,7 @@ Avant de commencer, vous devez avoir terminé l'un des tutoriels suivants :
 4. Faites défiler jusqu'au panneau **Sécurité** et ajoutez une nouvelle option de sécurité.  
    a. Sélectionnez les clés ID client et Valeur confidentielle du client que vous venez de créer.  
    b. Sauvegardez votre API.  
-   c. Basculez sur l'onglet **Assembler**.   
+   c. Basculez sur l'onglet **Assembler**.  
     ![](images/3a.png) 
 
 ## Test des modifications apportées à votre API
@@ -80,8 +80,7 @@ Avant de commencer, vous devez avoir terminé l'un des tutoriels suivants :
 Vous pouvez également tester les paramètres de sécurité à l'aide de l'outil Explorer qui appelle explicitement le noeud final de proxy et transmet les clés ID client et Valeur confidentielle du client en tant que valeurs d'en-tête.
 
 
-1. Cliquez sur **Explorer**, puis sur **Bac à sable**.  
-    ![](images/explore_1.png)
+1. Cliquez sur **Explorer**. ![](images/explore_1.png)
 
 2. Sélectionnez l'opération **GET /current** dans la liste.  
 
@@ -95,7 +94,7 @@ Dans ce tutoriel, vous avez appris à configurer le mécanisme d'identification 
 
 ---
 
-## Etape suivante 
+## Etape suivante
 
 Commencez à diffuser votre API sur les réseaux sociaux via la [création et configuration d'un portail de développeur](tut_config_dev_portal.html).
 

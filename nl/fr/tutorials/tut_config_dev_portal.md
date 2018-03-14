@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -27,10 +27,9 @@ Dans cette section, vous allez créer un portail de développeur pour un catalog
 
 *Catalogue* est un terme IBM qui désigne différents environnements. Par exemple, vous pouvez créer différents catalogues pour vos environnement de test, de transfert et de production. Vous devez disposer d'un catalogue de bac à sable. N'hésitez pas à utiliser ce catalogue pour créer votre portail de développeur ou bien créez un nouveau catalogue que vous nommez comme il vous convient.
 
-1. Dans le tableau de bord Bluemix, sélectionnez le service **API Connect** pour lancer le tableau de bord API Connect.
-![Service API Connect](images/11-Bluemix-Dashboard.png)
+1. Dans le tableau de bord {{site.data.keyword.Bluemix_short}}, sélectionnez le service **API Connect** pour lancer le tableau de bord {{site.data.keyword.apiconnect_short}}. ![Service API Connect](images/11-Bluemix-Dashboard.png)
 
-2. Dans le tableau de bord API Connect, sélectionnez le catalogue pour lequel vous voulez créer un portail de développeur. Par exemple, **Bac à sable**.
+2. Dans le tableau de bord {{site.data.keyword.apiconnect_short}}, sélectionnez le catalogue pour lequel vous voulez créer un portail de développeur. Par exemple, **Bac à sable**.
 ![Catalogue](images/12-APIC-Dashboard.png)
 
 3. Dans le catalogue, sélectionnez l'onglet **Paramètres**.  
@@ -79,11 +78,11 @@ Remarque : Sur la page Produits d'API, vous pouvez sélectionner un produit pour
   ![Produits d'API](images/27-api-products.png)
 
 ### Conclusion
-Dans ce tutoriel, vous avez appris comment créer et configurer votre portail de développeur API Connect. Vous avez également exploré le portail de développeur.
+Dans ce tutoriel, vous avez appris à créer et à configurer votre portail de développeur {{site.data.keyword.apiconnect_short}}. Vous avez également exploré le portail de développeur.
 
 ---
 
-## Etape suivante 
+## Etape suivante
 
 [Personnalisation de votre portail de développeur et sélection d'un thème](tut_custom_dev_portal.html).
 

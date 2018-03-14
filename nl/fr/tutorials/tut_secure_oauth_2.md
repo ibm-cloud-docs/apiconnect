@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-12-13"
 ---
 
 {:new_window: target="blank"}
@@ -22,17 +22,19 @@ Ce tutoriel vous guidera tout au long du processus de sécurisation de votre API
 ## Prérequis
 
 Avant de commencer, vous devez avoir terminé l'un des tutoriels suivants :  
-- [Sécurisation de votre API avec un ID client et une valeur confidentielle du client à l'aide d'IBM Bluemix](tut_secure_id_secret_bm.html)
-or
+- [Sécurisation de votre API avec un ID client et une valeur confidentielle du client à l'aide d'{{site.data.keyword.Bluemix}}](tut_secure_id_secret_bm.html) ou 
 - [Sécurisation de votre API avec un ID client et une valeur confidentielle du client à l'aide du kit d'outils](tut_secure_id_secret_tk.html)
+
+Remarque : Ce tutoriel montre les étapes et les captures d'écran permettant de réaliser la tâche dans l'interface utilisateur d'{{site.data.keyword.Bluemix}}. 
+Vous pouvez également effectuer la même procédure à partir de la ligne de commande. Vous pouvez afficher cette procédure dans l'[IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tutorial_apionprem_security_OAuth_v506.html). 
 
 ## Procédure
 
 1. Créez une API de fournisseur OAuth et sélectionnez votre schéma OAuth.  
 	a. Ouvrez **Brouillons**, sélectionnez **API**, puis cliquez sur **Ajouter** > **API du fournisseur OAuth 2.0**.  
     ![](images/oauth_provider_1.png)
-	b. Intitulez-la "API OAuth Endpoint". (Le nom et le chemin de base doivent être automatiquement renseignés.)  
-	c. Sélectionnez **Créer une API**.   
+	b. Intitulez-la "API OAuth Endpoint". Le nom et le chemin de base doivent être automatiquement renseignés.  
+	c. Sélectionnez **Créer une API**.  
 	d. Dans la nouvelle API OAuth Endpoint, accédez au panneau **OAuth 2** (ou faites défiler vers le bas jusqu'au panneau), puis sélectionnez "Confidentiel" comme type de client.  
 	e. Sous Portées, renommez _scope1_ en _view_current_. Supprimez _scope2_ et _scope3_.  
 	f. Sous **Accords**, désélectionnez **Implicite**, **Mot de passe** et **Code d'accès**. Conservez la sélection de **Application**.  
@@ -77,7 +79,7 @@ Dans ce tutoriel, vous avez appris comment créer une API OAuth Provider, mettre
 
 ---
 
-## Etape suivante 
+## Etape suivante
 
 Commencez à diffuser votre API sur les réseaux sociaux via la [création et configuration d'un portail de développeur](tut_config_dev_portal.html).
 

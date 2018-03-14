@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-10-19"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Ajout d'une nouvelle spécification d'API et appel d'un service REST existant à l'aide d'IBM Bluemix
+# Ajout d'une nouvelle spécification d'API et appel d'un service REST existant à l'aide d'{{site.data.keyword.Bluemix_notm}}
 **Durée**: 15 mn  
 **Niveau de compétence** : Débutant  
 
@@ -28,7 +28,7 @@ Un modèle d'application _weather provider_ a été créé pour ce tutoriel.
 2. Entrez un code postal américain en 5 chiffres valide pour en obtenir la _**météo actuelle**_ et les _**prévisions du jour**_.  
 ![](images/explore-weatherapp-1.png)
 
-3. Le modèle d'application de météo ci-dessus a été généré à l'aide d'API qui fournissent des données météorologiques. Le noeud final permettant d'obtenir les données météorologiques **en cours** est _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Testez-le en accédant à [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
+3. Le modèle d'application de météo ci-dessus a été généré à l'aide d'API qui fournissent des données météorologiques. Le noeud final permettant d'obtenir les données météorologiques **en cours** est _**https://myweatherprovider.mybluemix.net/current?zipcode={zipcode}**_. Testez-le en accédant à [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
 
   ![](images/explore-weatherapp-2.png)
 
@@ -40,9 +40,9 @@ Un modèle d'application _weather provider_ a été créé pour ce tutoriel.
 ---
 
 ### Ajout d'une nouvelle spécification OpenAPI pour créer un proxy d'API REST  
-1. Connectez-vous à {{site.data.keyword.Bluemix_short}} : https://new-console.ng.bluemix.net/login.
-2. Dans le panneau de navigation {{site.data.keyword.Bluemix_short}}, sélectionnez **Services**, puis **Tableau de bord**. Lancez le service {{site.data.keyword.apiconnect_short}}.
-3. Dans {{site.data.keyword.apiconnect_short}}, vérifiez que le panneau de navigation est ouvert. S'il ne l'est pas, cliquez sur **>>** pour l'ouvrir.   
+1. Connectez-vous à {{site.data.keyword.Bluemix_notm}} : https://new-console.ng.bluemix.net/login.
+2. Dans le panneau de navigation {{site.data.keyword.Bluemix_notm}}, sélectionnez **Services**, puis **Tableau de bord**. Lancez le service {{site.data.keyword.apiconnect_short}}.
+3. Dans {{site.data.keyword.apiconnect_short}}, vérifiez que le panneau de navigation est ouvert. S'il ne l'est pas, cliquez sur **>>** pour l'ouvrir.  
 4. Sélectionnez **Brouillons** dans le panneau de navigation.
 5. Dans l'onglet **API**, cliquez sur **Ajouter**. Dans le menu déroulant, sélectionnez **Nouvelle API**.    
   ![](images/create-new-1.png)  
@@ -114,7 +114,7 @@ _(Nous traiterons de la sécurité avec les clés d'API dans le prochain tutorie
       - Ajoutez un nouveau cas : **case 1**.
       - Affectez l'opération **get /today** au cas **case 1**.
     ![](images/assemble-1.png)
-    La logique **Permutation d'opération** fournit un point de décision. Sur la base de la paire verb/path, l'opération appropriée doit être appelée.
+La logique **Permutation d'opération** fournit un point de décision. Sur la base de la paire verb/path, l'opération appropriée doit être appelée.
     c. Faites glisser la stratégie **invoke** depuis la palette et déposez-la sur le canevas. _La stratégie invoke est utilisée pour appeler un service existant dans le cadre d'une opération_.  Déposez une stratégie invoke dans le chemin **/get current** et une dans le chemin **/get today**.   
     d. Sélectionnez la stratégie **invoke** dans le chemin **/get current** et mettez à jour son titre avec "**invoke-current**".  
     e. Mettez à jour la zone URL avec `https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`.  
@@ -144,7 +144,7 @@ _(Nous traiterons de la sécurité avec les clés d'API dans le prochain tutorie
 	b. Cliquez sur **invoke** et observez les informations qui s'affichent : 
   ```
   200 OK response
-  Current weather data for 90210
+  Current weather data for 90210  
   ```
   
     ![](images/test-invoke-1.png)  
@@ -156,11 +156,11 @@ _(Nous traiterons de la sécurité avec les clés d'API dans le prochain tutorie
 ---
 
 ### Conclusion
-Dans ce tutoriel, vous avez vu comment appeler un service REST existant à l'aide d'un proxy passe-système d'API. Vous avez commencé par vérifier la disponibilité de l'exemple de service via le navigateur Web. Puis vous avez créé une nouvelle spécification OpenAPI dans API Connect que vous avez liée à l'exemple de service à appeler. Vous avez conditionné votre API dans un produit, publié ce produit dans un catalogue et testé le proxy.
+Dans ce tutoriel, vous avez vu comment appeler un service REST existant à l'aide d'un proxy passe-système d'API. Vous avez commencé par vérifier la disponibilité de l'exemple de service via le navigateur Web. Puis vous avez créé une nouvelle spécification OpenAPI dans {{site.data.keyword.apiconnect_short}} que vous avez liée à l'exemple de service à appeler. Vous avez conditionné votre API dans un produit, publié ce produit dans un catalogue et testé le proxy.
 
 ---
 
-## Etape suivante 
+## Etape suivante
 
 Sécurisation de votre API à l'aide d'une [limitation de débit](tut_rate_limit.html), d'un [ID et d'une valeur confidentielle client](tut_secure_landing.html) ou [sécurisation à l'aide de OAuth 2.0](tut_secure_oauth_2.html).
 

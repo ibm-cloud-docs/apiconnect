@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -39,7 +39,7 @@ Dans ce tutoriel, vous mettrez à jour un produit d'API existant en le remplaça
 
 1. Connectez-vous à {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://console.ng.bluemix.net/login){:new_window}.
 
-2. Dans le tableau de bord {{site.data.keyword.Bluemix_short}}, lancez le service {{site.data.keyword.apiconnect_short}}.
+2. Dans le tableau de bord {{site.data.keyword.Bluemix_notm}}, lancez le service {{site.data.keyword.apiconnect_short}}.
 ![](images/Bluemix.png)
 
 3. Dans le gestionnaire d'API, si vous n'avez pas encore épinglé le panneau de navigation de l'interface utilisateur, cliquez sur l'icône **Accéder à** ![](images/navigate-to.png). Le panneau de navigation de l'interface utilisateur du gestionnaire d'API s'ouvre. Pour épingler le panneau de Navigation de l'interface utilisateur, cliquez sur l'icône **Epingler le menu** ![](images/pinned.png).
@@ -63,7 +63,7 @@ Dans ce tutoriel, vous mettrez à jour un produit d'API existant en le remplaça
 10.	Sélectionnez **Produit d'API Weather Provider**.  
 ![](images/rep-draft-prod-list.png)
 
-11.	Modifiez la **Version** en 2.0.0. Entrez `API mise à jour` dans la zone **Description**. Cliquez sur l'icône de disque pour sauvegarder les modifications.   
+11.	Modifiez la **Version** en 2.0.0. Entrez `API mise à jour` dans la zone **Description**. Cliquez sur l'icône de disque pour sauvegarder les modifications.  
 ![](images/rep-update-prod.png)
 
 12.	Cliquez sur l'icône **Transférer** pour télécharger la nouvelle version. Sélectionnez le catalogue **Bac à sable** s'il n'est pas déjà sélectionné.
@@ -87,8 +87,8 @@ Dans ce tutoriel, vous mettrez à jour un produit d'API existant en le remplaça
 18.	Sélectionnez **Plan par défaut**. Cliquez sur **Remplacer**.  
 ![](images/rep-replace-dialog-2.png)
 
-    Suite à cette opération, le produit d'API Weather Provider 1.0.0 est retiré et le produit d'API Weather Provider 2.0.0 est publié. **Remarque** : Il est possible de modifier le plan associé à ce produit au cours du processus de remplacement. C'est un moyen facile de modifier le plan d'un produit d'API. ![](images/rep-prod-retired.png)
-
+    Suite à cette opération, le produit d'API Weather Provider 1.0.0 est retiré et le produit d'API Weather Provider 2.0.0 est publié. **Remarque** : Il est possible de modifier le plan associé à ce produit au cours du processus de remplacement. C'est un moyen facile de modifier le plan d'un produit d'API. ![](images/rep-prod-retired.png) 
+ 
 
 ## Tâches exécutées dans ce tutoriel
 

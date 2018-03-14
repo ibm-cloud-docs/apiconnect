@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -16,7 +16,7 @@ lastupdated: "2017-09-12"
 
 
 ## Objectif
-Ce tutoriel vous apprendra à personnaliser rapidement votre portail de développeur {{site.data.keyword.apiconnect_short}} et à sélectionner un thème adapté à vos besoins.
+Ce tutoriel vous apprendra à personnaliser rapidement votre portail de développeur {{site.data.keyword.apiconnect_full}} et à sélectionner un thème adapté à vos besoins.
 
 ---
 
@@ -118,11 +118,11 @@ Bravo, vous avez terminé ce tutoriel. Vous avez appris à :
 * Personnaliser la page d'accueil de votre portail de développeur
 * Personnaliser le thème qu'utilise votre portail de développeur 
 * Sélectionner un autre thème pour votre portail de développeur
-* Installer un nouveau thème pour votre portail de développeur
+* Installation d'un nouveau thème pour votre portail de développeur
 
 ---
 
-## Etape suivante 
+## Etape suivante
 
 Apprenez [comment un utilisateur navigue dans un portail de développeur](tut_discover_apis.html) ou [comment extraire des connaissances à partir d'analyses basiques](tut_insights_analytics.html).
 

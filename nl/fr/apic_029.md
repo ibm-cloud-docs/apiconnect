@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-28"
+lastupdated: "2018-02-12"
 
 ---
 
@@ -15,6 +15,13 @@ lastupdated: "2017-09-28"
 # Nouveautés
 
 {{site.data.keyword.apiconnect_full}} intègre les améliorations suivantes :
+
+- **Suppression des comptes utilisateur et des organisations de développeurs dans le portail de
+développeur** : Vous pouvez supprimer votre compte utilisateur et vos organisations de développeurs dans le portail de
+développeur. Vous pouvez également changer la propriété de vos organisations de développeurs. Pour plus d'informations, voir [Deleting your Developer account ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_account.html){:new_window}, [Deleting a Developer organization ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_dev_org.html){:new_window} et [Changing the ownership of a Developer organization ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_dev_org_ownership.dita){:new_window}.
+
+- __Ajout de la zone d'événement d'API *endpoint_url* __: La zone d'événement d'API *endpoint_url* identifie l'URL de proxy ou l'URL cible d'appel sur laquelle la demande a échoué. 
+Pour plus d'informations, voir [Deleting your Developer account ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/rapim_analytics_apieventrecordfields.html){:new_window}.</dd>
 
 - **Ajout d'une prise en charge et d'une référence pour les API REST de portail de développeur pour des analyses** : Les API REST de portail de développeur vous aident à analyser vos API de catalogue. Pour plus d'informations, voir [Analyses ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apirest.doc/analytics.html){:new_window}.
 
@@ -45,7 +52,7 @@ de votre API peuvent s'abonner avec une carte de crédit. Pour plus d'informatio
 	* latency_info2.task
 	* latency_info2.ended
 
-Pour plus d'information, voir [Zones d'enregistrement d'événement d'API ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/rapim_analytics_apieventrecordfields.html){:new_window} et [Obtention de données d'analyse à l'aide d'appels d'API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/tapim_exportanalytics_api_calls.html){:new_window}.
+Pour plus d'informations, voir [Zones d'enregistrement d'événement d'API ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/rapim_analytics_apieventrecordfields.html){:new_window} et [Obtention de données d'analyse à l'aide d'appels d'API REST ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/tapim_exportanalytics_api_calls.html){:new_window}.
 
 - **Nouveaux paramètres de requête pour l'URL de redirection** : De nouveaux paramètres de requête ont été ajoutés aux informations disponibles pour une tierce partie. Ces nouveaux paramètres sont <code>provider</code>, <code>providerid</code> et
 <code>g-transid</code>. Pour plus d'informations, voir [Authentification et autorisation via une adresse URL de redirection ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_redirect_form_.html){:new_window}.

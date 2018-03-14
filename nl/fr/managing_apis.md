@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 
 ---
 
@@ -18,15 +18,15 @@ lastupdated: "2017-10-19"
 
 Vous pouvez utiliser API Connect pour gérer des API dans {{site.data.keyword.Bluemix}}, qu'elles se trouvent dans {{site.data.keyword.Bluemix_notm}} ou hors de {{site.data.keyword.Bluemix_notm}}. La gestion des API vous permet de contrôler l'utilisation, d'accroître l'adoption et d'assurer le suivi des statistiques.
 
-Si vous êtes un client, vous pouvez gérer comment une API est utilisée dans l'interface utilisateur du gestionnaire d'API une fois qu'un développeur l'a créée et qu'il a envoyé le produit à {{site.data.keyword.Bluemix_short}}. Les rubriques ci-après expliquent comment créer et gérer des produits dans le concepteur
-{{site.data.keyword.apiconnect_short}}.
+Si vous êtes un client, vous pouvez gérer comment une API est utilisée dans l'interface utilisateur du gestionnaire d'API une fois qu'un développeur l'a créée et qu'il a envoyé le produit à {{site.data.keyword.Bluemix_notm}}. 
+Les rubriques ci-après expliquent comment créer et gérer des produits dans {{site.data.keyword.apiconnect_short}}.
 
 ## Exposition d'API sur site via une passerelle sécurisée
 {: #expose_apis_sec_gate}
 
 Vous pouvez créer une passerelle sécurisée pour exposer en toute sécurité des API sur site sur {{site.data.keyword.apiconnect_full}}.
 
-Lorsque vous créez une passerelle sécurisée, vous intégrez les fonctions du service {{site.data.keyword.Bluemix_short}}
+Lorsque vous créez une passerelle sécurisée, vous intégrez les fonctions du service {{site.data.keyword.Bluemix_notm}}
 {{site.data.keyword.SecureGateway}} à {{site.data.keyword.apiconnect_short}}. Cela signifie que vous pouvez accéder de manière sécurisée à vos API sur site à partir d'{{site.data.keyword.apiconnect_short}} via un passage sécurisé sans avoir à mettre à disposition une instance distincte du service {{site.data.keyword.SecureGateway}}. En réalité, vous créez un tunnel vers {{site.data.keyword.apiconnect_short}} dans un environnement public sans exposer vos données sur site. Il
 suffit de créer la passerelle et de la lier à une API. Vous avez déjà terminé
 la création d'une destination, du profil SSL et des certificats.
@@ -63,8 +63,7 @@ Cliquez sur chaque étape de la visite guidée pour finaliser la configuration d
 La boîte de dialogue `Créer une passerelle Secure Gateway` s'affiche.
 
 4. Indiquez un nom pour votre passerelle.
-
-**Remarque :** Seuls les caractères alphanumériques et les traits de soulignement sont admis.
+    **Remarque :** Seuls les caractères alphanumériques et les traits de soulignement sont admis.
 
 5. Cliquez sur **Sauvegarder**.
 La passerelle apparaît, ainsi que l'ID de passerelle et le jeton
@@ -83,7 +82,6 @@ sur votre poste de travail sur site afin de connecter un réseau distant à une 
     - IBM DataPower&reg;
 
 8. Suivez les instructions à l'écran pour installer et exécuter le client que vous avez sélectionné.
-
 Pour plus d'informations sur la configuration d'un client de passerelle
 sécurisée, voir
 [Configuration
@@ -195,13 +193,13 @@ L'onglet Produits s'ouvre.
 
 2. Sélectionnez la version du produit ; veillez à cliquer sur la version que vous souhaitez utiliser.
 
-3. Pour publier l'environnement d'exécution sur {{site.data.keyword.Bluemix_short}}, cliquez sur **Publier**.
+3. Pour publier l'environnement d'exécution sur {{site.data.keyword.Bluemix_notm}}, cliquez sur **Publier**.
 
-4. Cliquez sur **Ajouter et gérer des cibles** > **Ajouter une cible IBM Bluemix**.
+4. Cliquez sur **Ajouter et gérer des cibles** > **Ajouter une cible IBM Cloud**.
 
-5. Sélectionnez la **Région** {{site.data.keyword.Bluemix_short}} cible pour la publication et connectez-vous.
+5. Sélectionnez la **Région** {{site.data.keyword.Bluemix_notm}} cible pour la publication et connectez-vous. 
 
-6. Sélectionnez l'**Organisation** {{site.data.keyword.Bluemix_short}} cible pour la publication. 
+6. Sélectionnez l'**Organisation** {{site.data.keyword.Bluemix_notm}} cible pour la publication.
 
 7.  Une liste de catalogues s'affiche. Sélectionnez le catalogue cible pour la
 publication.
@@ -209,7 +207,7 @@ publication.
 8.  Cliquez sur **Suivant**.
 
 9. Sélectionnez l'application LoopBack que vous voulez publier.
-Si vous déployez l'environnement d'exécution pour la première fois sur {{site.data.keyword.Bluemix_short}}, ajoutez un nom et cliquez sur l'icône **Ajouter**.
+Si vous déployez l'environnement d'exécution pour la première fois sur {{site.data.keyword.Bluemix_notm}}, ajoutez un nom et cliquez sur l'icône **Ajouter**.
 
 10.  Cliquez sur **Sauvegarder**.
 
@@ -254,7 +252,7 @@ Notez ces informations. Le profil TLS d'appel d'API est toujours `client:Loopbac
 
 Pour vérifier que la publication a abouti, procédez comme suit :
 
-1. Vérifiez que l'application {{site.data.keyword.Bluemix_short}} est en cours d'exécution.
+1. Vérifiez que l'application {{site.data.keyword.Bluemix_notm}} est en cours d'exécution.
 
 2. Ouvrez une fenêtre de navigateur et accédez à l'URL cible de l'API.
 L'application est sécurisée au moyen de la validation client. Si vous n'indiquez pas le certificat client approprié, une erreur est générée (comportement normal).

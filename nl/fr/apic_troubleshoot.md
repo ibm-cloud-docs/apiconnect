@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -13,27 +13,27 @@ lastupdated: "2017-10-19"
 # Traitement des incidents
 {: #troubleshoot}
 
-Voici les réponses aux questions fréquentes sur le traitement des incidents liés à l'utilisation d'{{site.data.keyword.apiconnect_long}} sur {{site.data.keyword.Bluemix_short}}.
+Voici les réponses aux questions fréquentes sur le traitement des incidents liés à l'utilisation d'{{site.data.keyword.apiconnect_long}} sur {{site.data.keyword.Bluemix_notm}}.
 {:shortdesc}
 
-## Nom d'utilisateur et mot de passe requis lors de l'ajout du service Bluemix d'API Connect
+## Nom d'utilisateur et mot de passe requis lors de l'ajout du service {{site.data.keyword.Bluemix_notm}} d'API Connect
 
-Une fois que vous avez ajouté le service à votre tableau de bord {{site.data.keyword.Bluemix_short}}, un message vous demande d'entrer un nom d'utilisateur et un mot de passe lorsque vous voulez l'ouvrir. 
+Une fois que vous avez ajouté le service à votre tableau de bord {{site.data.keyword.Bluemix_notm}}, un message vous demande d'entrer un nom d'utilisateur et un mot de passe lorsque vous voulez l'ouvrir. 
 
 ### Symptômes
 {: #ts_sym_usernamepw}
 
-Au lieu d'accéder directement au service {{site.data.keyword.Bluemix_short}} lorsque vous ouvrez une nouvelle session {{site.data.keyword.apiconnect_short}}, vous devez vous connectr au gestionnaire d'API.
+Au lieu d'accéder directement au service {{site.data.keyword.Bluemix_notm}} lorsque vous ouvrez une nouvelle session {{site.data.keyword.apiconnect_short}}, vous devez vous connecter au gestionnaire d'API.
 
 ### Cause
 {: #ts_cause_usernamepw}
 
-Votre navigateur est configuré pour bloquer les cookies ou le niveau défini est plus restrictif que ne le requiert {{site.data.keyword.apiconnect_short}}.
+Votre navigateur est configuré pour bloquer les cookies ou le niveau défini est plus restrictif que ne le requiert {{site.data.keyword.apiconnect_notm}}.
 
 ### Résolution
 {: #ts_res_usernamepw}
 
-Activez ou augmentez le niveau des cookies dans vos paramètres de navigateur jusqu'à ce que le service {{site.data.keyword.Bluemix_short}} s'ouvre.
+Activez ou augmentez le niveau des cookies dans vos paramètres de navigateur jusqu'à ce que le service {{site.data.keyword.Bluemix_notm}} s'ouvre.
 
 ## Impossible d'installer le kit d'outils de développement
 
@@ -65,8 +65,8 @@ sudo chown -R $USER /usr/local
 {:codeblock}
 
 Cette commande fait de votre compte utilisateur
-le propriétaire du répertoire `/usr/local`. Ensuite, vous n'aurez pas besoin d'utiliser sudo pour installer Node ni d'installer des packages globalement à l'aide de npm. Pour plus d'informations, voir [Noeud Comment![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://howtonode.org/introduction-to-npm){: new_window}. **Remarque :** Le changement de propriété pour le répertoire n'est approprié que sur un système de développement local.
-Vous ne devez effectuer cette opération sur un système de serveur.
+le propriétaire du répertoire `/usr/local`. Ensuite, vous n'aurez pas besoin d'utiliser sudo pour installer Node ni d'installer des packages globalement à l'aide de npm. 
+    **Remarque :** Le changement de propriété pour le répertoire n'est approprié que sur un système de développement local. Vous ne devez effectuer cette opération sur un système de serveur.
 
 De plus, vous ne devez pas utiliser la commande `chown` précédente sur le répertoire `/usr/bin`, car cela risquerait de provoquer une configuration erronée du système.
 
@@ -242,20 +242,20 @@ Le service de traitement des cartes de crédit Stripe autorise un maximum de 25 
 ### Résolution
 {: #ts_res_nosubscribe}
 
-Vérifiez que vous avez un compte de niveau Entreprise pour votre service {{site.data.keyword.Bluemix_short}} {{site.data.keyword.apiconnect_short}} et qu'il détient moins de 25 instances. Supprimez un service, si vous avez atteint le nombre maximum de services autorisé.
+Vérifiez que vous avez un compte de niveau Entreprise pour votre service {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.apiconnect_short}} et qu'il détient moins de 25 instances. Supprimez un service, si vous avez atteint le nombre maximum de services autorisé.
 
-## Recherche d'aide et d'assistance pour API Connect
+## Aide et support pour API Connect
 
 Si vous rencontrez des problèmes ou si vous vous posez des questions lors de l'utilisation d'{{site.data.keyword.apiconnect_short}}, vous pouvez obtenir de l'aide en recherchant des informations ou en posant vos questions sur un forum. Vous pouvez également ouvrir un ticket de demande de service.
 
-Si vous utilisez les forums pour poser une question, libellez votre question de sorte qu'elle soit vue par les équipes de développement {{site.data.keyword.Bluemix_short}}. 
+Si vous utilisez les forums pour poser une question, libellez votre question de sorte qu'elle soit vue par les équipes de développement {{site.data.keyword.Bluemix_notm}}. 
 
-- Si vous avez des questions techniques sur le développement ou le déploiement d'une application avec {{site.data.keyword.apiconnect_short}}, publiez votre question sur Stack Overflow et marquez-la avec les étiquettes ibm"-bluemix" et "api connect."
+- Si vous avez des questions techniques sur le développement ou le déploiement d'une application avec {{site.data.keyword.apiconnect_short}}, publiez votre question sur Stack Overflow et marquez-la avec les étiquettes "ibm-cloud" et "api connect."
 
-- Pour des questions relatives au service et aux instructions de mise en route, utilisez le forum IBM DeveloperWorks - dW Answers. Incluez les étiquettes the "bluemix" et "api connect".
-Pour plus de détails sur l'utilisation des forums, voir la rubrique expliquant comment obtenir de l'aide.  
+- Pour des questions relatives au service et aux instructions de mise en route, utilisez le forum IBM DeveloperWorks - dW Answers. Incluez les étiquettes "ibm cloud" et "api connect".
+Voir Obtenir de l'aide pour plus de détails sur l'utilisation des forums.  
 
-Pour plus d'informations sur l'ouverture d'un ticket de demande de service IBM, sur les niveaux de support disponibles ou les niveaux de gravité des tickets, voir la rubrique décrivant comment contacter le support.
+Pour obtenir des informations sur l'ouverture d'un ticket de demande de service IBM ou sur les niveaux de service disponibles et les degrés de gravité des tickets, voir la rubrique Contacter le service de support.
 
 
 

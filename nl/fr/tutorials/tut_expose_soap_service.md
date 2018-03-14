@@ -2,7 +2,7 @@
 
 copyright:
 years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-14"
 
 ---
 
@@ -23,14 +23,14 @@ Dans le gestionnaire d'API, vous allez créer une API REST qui accédera à un s
 
 ## Prérequis
 1. Avant de commencer, vous devez [configurer votre instance {{site.data.keyword.apiconnect_full}}](tut_prereq_set_up_apic_instance.html).
-2. Avant de commencer, copiez le fichier de test [weatherprovider.wsdl ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} dans votre système de fichiers local.
+2. Avant de commencer, copiez le fichier de test [weatherprovider.wsdl ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} dans votre système de fichiers local.
 	>![images/info.png]
 	>Vous pouvez cliquer sur **Brut**, puis sauvegarder la page résultante sur votre système de fichiers local en tant que fichier `.wsdl`.
 
 ---
 ## Configuration d'une définition d'API REST
 1. Connectez-vous à {{site.data.keyword.Bluemix_short}} : [https://new-console.ng.bluemix.net/login ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://new-console.ng.bluemix.net/login){:new_window}.
-2. Dans le **tableau de bord** {{site.data.keyword.Bluemix_short}}, faites défiler vers le bas et sélectionnez {{site.data.keyword.apiconnect_full}}. Vous pouvez également, depuis l'icône de menu, sélectionner **Services** et ensuite **API** pour ouvrir la fenêtre **Utiliser des API**, puis sélectionner **API Connect**. Depuis la page **API Connect**, il suffit d'appuyer sur `Créer` ou d'ajuster les paramètres par défaut. Pour les besoins de cet exercice, laissez l'instance non liée et modifiez le nom de service pour le reconnaître plus facilement par la suite. Par exemple, nommez-le `API Connect-weather-exercise`.
+2. Dans le **tableau de bord** {{site.data.keyword.Bluemix_notm}}, faites défiler vers le bas et sélectionnez {{site.data.keyword.apiconnect_short}}. Vous pouvez également, depuis l'icône de menu, sélectionner **Services** et ensuite **API** pour ouvrir la fenêtre **Utiliser des API**, puis sélectionner **API Connect**. Depuis la page **API Connect**, il suffit d'appuyer sur `Créer` ou d'ajuster les paramètres par défaut. Pour les besoins de cet exercice, laissez l'instance non liée et modifiez le nom de service pour le reconnaître plus facilement par la suite. Par exemple, nommez-le `API Connect-weather-exercise`.
 Appuyez sur le bouton `Créer` pour lancer le service {{site.data.keyword.apiconnect_short}}.  
 Il est possible qu'une alerte décrivant les nouveautés ou la page d'accueil d'informations **API brouillons** s'affiche. Après avoir lu les informations, cliquez sur l'icône **Compris** pour afficher le gestionnaire d'API.
 3. Dans {{site.data.keyword.apiconnect_short}}, si vous n'avez pas encore épinglé le panneau de navigation de l'interface utilisateur, cliquez sur l'icône **Accéder à** ![](images/navigate-to.png). Le panneau de navigation de l'interface utilisateur du gestionnaire d'API s'ouvre. Pour épingler le panneau de Navigation de l'interface utilisateur, cliquez sur l'icône **Epingler le menu** ![](images/pinned.png).
@@ -57,8 +57,8 @@ Il est possible qu'une alerte décrivant les nouveautés ou la page d'accueil d'
 ![](images/api-security-1.png)
 10. Désélectionnez l'option **ID client**.
 ![](images/api-security-2.png)
-	>![images/info.png]
-	>Vous pouvez remarquer qu'une icône de triangle jaune s'affiche en regard de l'icône de sauvegarde disque.  Ce triangle vous avertit que des définitions qui ont été définies n'ont pas encore été utilisées. (Ceci n'affectera pas la définition de l'API.)
+	>![](images/info.png)
+	>Vous pouvez remarquer qu'une icône de triangle jaune s'affiche en regard de l'icône de sauvegarde disque. Ce triangle vous avertit que des définitions qui ont été définies n'ont pas encore été utilisées. (Ceci n'affectera pas la définition de l'API.)
 11. Dans la section **Définitions**, cliquez sur l'icône **Ajouter une définition**, ![](images/add-icon.png) puis développez la nouvelle définition en cliquant dessus.
 12. Nommez la définition `Weather Data Output`.
 13. La définition aura cinq propriétés. Clique quatre fois sur **Ajouter une propriété** pour ajouter les propriétés supplémentaires. Modifiez le `Nom de propriété` en vous aidant des informations suivantes et utilisez la valeur par défaut pour les zones `Description`, `Type` et `Exemple`:
@@ -133,7 +133,7 @@ Dans ce tutoriel, vous avez effectué les activités suivantes :
 
 ---
 
-## Etape suivante 
+## Etape suivante
 
 Sécurisation de votre API à l'aide d'une [limitation de débit](tut_rate_limit.html), d'un [ID et d'une valeur confidentielle client](tut_secure_landing.html) ou [sécurisation à l'aide de OAuth 2.0](tut_secure_oauth_2.html).
 

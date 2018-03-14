@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -16,7 +16,7 @@ Niveau de compétence : Débutant
 
 
 ## Objectif
-Ce tutoriel montre comment passer votre API existante sous contrôle de gestion avec {{site.data.keyword.apiconnect_short}}. Dans ce tutoriel, vous commencerez par importer une spécification d'OpenAPI, puis vous créerez un proxy d'API passe-système pour un service REST existant.
+Ce tutoriel montre comment passer votre API existante sous contrôle de gestion avec {{site.data.keyword.apiconnect_full}}. Dans ce tutoriel, vous commencerez par importer une spécification d'OpenAPI, puis vous créerez un proxy d'API passe-système pour un service REST existant.
 
 ## Prérequis
 Avant de commencer, vous devez [configurer votre instance API Connect](tut_prereq_set_up_apic_instance.html) et [installer le kit d'outils API Connect](tut_prereq_install_toolkit.html).
@@ -26,7 +26,7 @@ Avant de commencer, vous devez [configurer votre instance API Connect](tut_prere
 
 ## Exploration du modèle d'application et test des noeuds finaux cible
 
-Un modèle d'application _weather provider_ a été créé pour ce tutoriel. La spécification d'API correspondante (Swagger 2.0) se trouve dans le fichier [weather-provider-api_1.0.0.yaml ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window}.
+Un modèle d'application _weather provider_ a été créé pour ce tutoriel. La spécification d'API correspondante (Swagger 2.0) se trouve dans le fichier [weather-provider-api_1.yaml ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}.
 
 1. Pour explorer l'application, accédez à [http://gettingstartedweatherapp.mybluemix.net/ ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}.  
 2. Entrez un code postal américain en 5 chiffres valide pour en obtenir la _**météo actuelle**_ et les _**prévisions du jour**_.  
@@ -48,18 +48,19 @@ Un modèle d'application _weather provider_ a été créé pour ce tutoriel. La 
 1. Lancez le **concepteur d'API**. Dans votre fenêtre de terminal, entrez la commande suivante : `apic edit`.
 2. Connectez-vous à l'aide de votre IBMid.
     ![](images/screenshot_apic-edit_login.png)
-3. Dans le **concepteur d'API**, vérifiez que le panneau de navigation est ouvert. S'il ne l'est pas, cliquez sur >> pour l'ouvrir. 
+3. Dans le **concepteur d'API**, vérifiez que le panneau de navigation est ouvert. S'il ne l'est pas, cliquez sur >> pour l'ouvrir.
 4. Dans le panneau de navigation, cliquez sur **Brouillons**.
 5. Cliquez sur l'onglet **API**.
 6. Dans l'onglet API, cliquez sur **Ajouter**.
 7. Dans le menu déroulant, sélectionnez **Importer l'API à partir d'un fichier ou d'une URL**.
    ![](images/toolkit-import-1.png)
-8. Il existe une définition d'OpenAPI 2.0 de l'API weather que vous utiliserez pour ce tutoriel. Dans la boîte de dialogue "Importer OpenAPI (Swagger)", entrez l'adresse URL suivant :
-`https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml`.
+8. Il existe une définition d'OpenAPI 2.0 de l'API weather que vous utiliserez pour ce tutoriel. Dans la boîte de dialogue
+"Importer OpenAPI (Swagger)", entrez l'adresse URL suivante :
+`https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml`.
 9. Laissez l'option _Ajouter un produit_ désélectionnée et cliquez sur **Importer**.  
     ![](images/screenshot_import-url.png)  
 
-Une fois la spécification d'OpenAPI importée, la vue Concevoir de l'API s'affiche. Elle présente les diverses sections de la définition d'OpenAPI. Faites défiler pour l'examiner et notez la valeur de la zone Hôte. Vous pouvez également afficher l'OpenAPI dans l'onglet Source.
+Une fois la spécification d'OpenAPI importée, la vue Concevoir de l'API s'affiche. Elle présente les diverses sections de la définition d'OpenAPI. Faites défiler pour l'examiner et notez la valeur de la zone Hôte. Vous pouvez également afficher l'OpenAPI dans l'onglet Source. 
 _Vous voyez que la zone Hôte est définie sur `$(catalog.host)` _. Il s'agit de l'URL de base de votre proxy d'API._
  
 
@@ -88,11 +89,12 @@ _Vous voyez que la zone Hôte est définie sur `$(catalog.host)` _. Il s'agit de
 
 ## Conclusion
 
-Dans ce tutoriel, vous avez vu comment appeler un service REST existant à l'aide d'un proxy passe-système d'API. Vous avez commencé par vérifier la disponibilité de l'exemple de service via le navigateur Web. Puis vous avez créé un proxy d'API dans API Connect que vous avez lié à l'exemple de service à appeler. Enfin, vous avez testé ce service à l'aide des outils de test internes d'{{site.data.keyword.apiconnect_short}}.
+Dans ce tutoriel, vous avez vu comment appeler un service REST existant à l'aide d'un proxy passe-système d'API. Vous avez commencé par vérifier la disponibilité de l'exemple de service via le navigateur Web. 
+Ensuite, vous avez créé dans {{site.data.keyword.apiconnect_short}} un proxy d'API que vous avez lié à l'exemple de service à appeler. Enfin, vous avez testé ce service à l'aide des outils de test internes d'{{site.data.keyword.apiconnect_short}}.
 
 ---
 
-## Etape suivante 
+## Etape suivante
 
 Sécurisation de votre API à l'aide d'une [limitation de débit](tut_rate_limit.html), d'un [ID et d'une valeur confidentielle client](tut_secure_landing.html) ou [sécurisation à l'aide de OAuth 2.0](tut_secure_oauth_2.html).
 

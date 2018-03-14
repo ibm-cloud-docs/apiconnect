@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Sécurisation de votre API avec un ID client et une valeur confidentielle du client à l'aide d'IBM Bluemix
+# Sécurisation de votre API avec un ID client et une valeur confidentielle du client à l'aide d'{{site.data.keyword.Bluemix_notm}}
 
 **Durée :** 10 mn  
 **Niveau de compétence :** Débutant
@@ -48,7 +48,7 @@ Avant de commencer, vous devez avoir terminé l'un des tutoriels suivants :
 3. Faites défiler jusqu'au panneau **Sécurité** et ajoutez une nouvelle option de sécurité.  
     a. Sélectionnez les clés ID client et Valeur confidentielle du client que vous venez de créer.  
     b. Sauvegardez votre API.  
-    c. Basculez sur l'onglet **Assembler**.   
+    c. Basculez sur l'onglet **Assembler**.  
     ![](images/3_security_option.png)  
 
 
@@ -94,7 +94,7 @@ Dans ce tutoriel, vous avez appris à configurer le mécanisme d'identification 
 
 ---
 
-## Etape suivante 
+## Etape suivante
 
 Commencez à diffuser votre API sur les réseaux sociaux via la [création et configuration d'un portail de développeur](tut_config_dev_portal.html).
 

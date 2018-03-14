@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ lastupdated: "2017-10-19"
 **Niveau de compétence** : Débutant  
 
 ## Objectif
-Ce tutoriel vous aide à démarrer rapidement avec {{site.data.keyword.apiconnect_short}} en vous montrant comment passer une API existante sous contrôle de gestion. Vous commencerez par créer une nouvelle spécification OpenAPI puis à créer un proxy d'API passe-système pour un service REST existant.
+Ce tutoriel vous aide à démarrer rapidement avec {{site.data.keyword.apiconnect_full}} en vous montrant comment passer une API existante sous contrôle de gestion. Vous commencerez par créer une nouvelle spécification OpenAPI puis à créer un proxy d'API passe-système pour un service REST existant.
 
 ## Prérequis
 Avant de commencer, vous devez [configurer votre instance API Connect](tut_prereq_set_up_apic_instance.html) et [installer le kit d'outils API Connect](tut_prereq_install_toolkit.html).
@@ -120,9 +120,9 @@ _(Nous traiterons de la sécurité avec les clés d'API dans le prochain tutorie
     La logique **Permutation d'opération** fournit un point de décision. Sur la base de la paire verb/path, l'opération appropriée doit être appelée.  
     c. Faites glisser la stratégie **invoke** depuis la palette et déposez-la sur le canevas. Déposez une stratégie invoke dans le chemin **/get current** et une dans le chemin **/get today**.
     d. Sélectionnez la stratégie **invoke** dans le chemin **/get current** et mettez à jour son titre avec "**invoke-current**".  
-    e. Mettez à jour la zone URL avec : `https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`.
+    e. Mettez à jour la zone URL avec : `https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`.
     f. Sélectionnez la stratégie **invoke** dans le chemin **/get today** et mettez à jour son titre avec "**invoke-today**".  
-    g. Mettez à jour la zone URL avec : `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`.  
+    g. Mettez à jour la zone URL avec : `https://myweatherprovider.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`.  
 
 20. Sauvegardez votre API.
 
@@ -164,7 +164,7 @@ Dans ce tutoriel, vous avez vu comment appeler un service REST existant à l'aid
 
 ---
 
-## Etape suivante 
+## Etape suivante
 
 Sécurisation de votre API à l'aide d'une [limitation de débit](tut_rate_limit.html), d'un [ID et d'une valeur confidentielle client](tut_secure_landing.html) ou [sécurisation à l'aide de OAuth 2.0](tut_secure_oauth_2.html).
 

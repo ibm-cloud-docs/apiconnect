@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -18,14 +18,14 @@ lastupdated: "2017-10-10"
 ## Ce dont vous avez besoin :
 1. Un IBMid
 2. Un compte {{site.data.keyword.Bluemix_short}}
-3. Une instance {{site.data.keyword.apiconnect_short}} avec au moins un plan _Lite_
+3. Une instance {{site.data.keyword.apiconnect_full}} avec au moins un plan _Lite_
 
 
 <table>
   <tr><td><b>IBMid</b> : Utilisé pour accéder à toutes les applications, communautés, support et autres d'IBM
     <br>
-    <b>{{site.data.keyword.Bluemix_short}}</b> : Plateforme cloud d'IBM qui héberge {{site.data.keyword.apiconnect_short}} ainsi que d'autres applications et services<br>
-    <b>{{site.data.keyword.apiconnect_short}}Lite</b> : Version gratuite d'{{site.data.keyword.apiconnect_short}} hébergée sur {{site.data.keyword.Bluemix_short}}</td></tr>
+    <b>{{site.data.keyword.Bluemix_notm}}</b> : Plateforme cloud d'IBM qui héberge {{site.data.keyword.apiconnect_short}} ainsi que d'autres applications et services<br>
+    <b>{{site.data.keyword.apiconnect_short}}Lite</b> : Version gratuite d'{{site.data.keyword.apiconnect_short}} hébergée sur {{site.data.keyword.Bluemix_notm}}</td></tr>
   </table>  
 
 
@@ -36,10 +36,10 @@ lastupdated: "2017-10-10"
 
 	Vous avez déjà un IBMid ? Alors, sautez l'étape d'enregistrement et créez simplement votre compte {{site.data.keyword.Bluemix_short}} gratuit à l'adresse URL suivante : [https://console.ng.bluemix.net/ ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://console.ng.bluemix.net/){:new_window}.  
 
-2. Une fois en possession de votre IBMid et de votre compte {{site.data.keyword.Bluemix_short}}, créez votre instance {{site.data.keyword.apiconnect_short}}.  
-  a. Connectez-vous à {{site.data.keyword.Bluemix_short}} : [https://new-console.ng.bluemix.net/login ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://new-console.ng.bluemix.net/login){:new_window}.  
+2. Une fois en possession de votre IBMid et de votre compte {{site.data.keyword.Bluemix_notm}}, créez votre instance {{site.data.keyword.apiconnect_short}}.  
+  a. Connectez-vous à {{site.data.keyword.Bluemix_notm}} : [https://new-console.ng.bluemix.net/login ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://new-console.ng.bluemix.net/login){:new_window}.  
   ![](images/prereqs-1.png)  
-  b. Créez votre _organisation_ dans {{site.data.keyword.Bluemix_short}}. Un message vous y invite lors de votre première connexion.  
+  b. Créez votre _organisation_ dans {{site.data.keyword.Bluemix_notm}}. Un message vous y invite lors de votre première connexion.  
   ![](images/prereqs-2.png)
   c. Créez votre _espace_.  
   ![](images/prereqs-3.png)

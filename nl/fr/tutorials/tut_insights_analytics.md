@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ Durée : 30 mn
 Niveau de compétence : Débutant
 
 ## Objectif
-Introduction de base aux analyses d'API dans {{site.data.keyword.apiconnect_long}}. Nous ferons le tour des tableaux de bord d'analyse disponibles et vous pourrez continuer avec vos propres API.
+Introduction de base aux analyses d'API dans {{site.data.keyword.apiconnect_full}}. Nous ferons le tour des tableaux de bord d'analyse disponibles et vous pourrez continuer avec vos propres API.
 
 
 ## Prérequis
@@ -47,7 +47,7 @@ Le tableau de bord par défaut Vue d'ensemble s'affiche. Il présente deux visua
 * 5 produits les plus actifs 
 * 5 API les plus actives 
 
-3. Survolez l'une des barres pour afficher des détails supplémentaires, tels que le nombre d'API, les noms d'API, etc. 
+3. Survolez l'une des barres pour afficher des détails supplémentaires, tels que le nombre d'API, les noms d'API, etc.
 
    ![](./images/defaultoverview.png) 
 
@@ -126,7 +126,7 @@ Ce graphique (jusqu'à présent) affiche une série temporelle d'appels API. Nou
 	* Libellé personnalisé : **App**
 	
    ![](./images/subbucket.png)
-8. Cliquez sur **Exécuter** pour afficher votre graphique. 
+8. Cliquez sur **Exécuter** pour afficher votre graphique.
 9. Cliquez sur **Sauvegarder** et attribuez un nom à votre graphique `API Calls by App`.
 10. Pour voir votre visualisation en contexte, ajoutez-la dans le tableau de bord d'abonnés.
 
@@ -146,8 +146,8 @@ Dans ce tutoriel, nous avons parcouru un certains nombre d'activités pour vous 
 
 ---
 
-## Etape suivante 
+## Etape suivante
 
-Apprennez [comment gérer vos API et vos versions](tut_version_landing.html).
+Apprenez à [gérer vos API et vos versions](tut_manage_version_landing.html).
 
 Création > Gestion >Sécurisation> Réseaux sociaux > **Analyse**  

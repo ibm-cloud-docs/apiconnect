@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-25"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -69,7 +69,7 @@ offre que vous mettez à la disposition de vos développeurs. Un plan inclut des
 **Conseil** : En plus d'utiliser la méthode décrite dans cette tâche, vous pouvez également créer un produit
 lorsque vous créez une API. Si vous créez une API en utilisant l'interface de ligne de commande du kit d'outils de développement, un produit est automatiquement créé pour vous. Vous pouvez ensuite modifier les paramètres de produit en ouvrant votre nouveau produit sur la page **Produits** du concepteur d'API.
 
-Pour créer un produit à l'aide du concepteur d'API (API Designer), procédez comme suit :
+Pour créer un produit à l'aide du concepteur d'API, procédez comme suit :
 1. Pour ouvrir l'interface utilisateur du concepteur d'API, ouvrez une ligne de commande et entrez la commande suivante :
 ```
 apic edit
@@ -102,7 +102,7 @@ lesquels vous souhaitez que le produit soit visible. Vous avez le choix entre **
     Pour que vous puissiez rechercher des organisations ou des communautés de développeurs, le produit doit être à l'état transféré,
     publié ou déprécié. Si le catalogue dans lequel il est transféré, publié ou déprécié n'est pas un
 catalogue de bac à sable, vous ne pouvez pas apporter d'autres modifications au
-produit tant qu'il est dans l'un de ces trois états. Pour plus d'information, voir [Cycle de vie de produit](#prod_lifecycle}).
+produit tant qu'il est dans l'un de ces trois états. Pour plus d'informations, voir [Cycle de vie de produit](#prod_lifecycle).
 
 8. Définissez les utilisateurs qui peuvent s'abonner au produit. Vous pouvez choisir **Utilisateurs authentifiés** ou **Personnalisé**. Si vous sélectionnez **Personnalisé**, vous pouvez utiliser la zone **Type à ajouter** pour rechercher les organisations ou communautés de développeurs que vous souhaitez autoriser à s'abonner aux plans du produit.
 
@@ -178,11 +178,10 @@ publiés)** et **Publier**. Votre produit a été transféré.
 5. Si le catalogue vers lequel vous souhaitez transférer le produit ne
 figure pas dans la liste :
     1. Cliquez sur **Ajouter et gérer des cibles**.
-    2. Cliquez sur **Ajouter une cible IBM Bluemix**.
+    2. Cliquez sur **Ajouter une cible {{site.data.keyword.Bluemix_notm}}**.
     3. Sélectionnez la **Région** {{site.data.keyword.Bluemix_short}}
 cible pour la publication.
-    4. Sélectionnez l'**Organisation**
-{{site.data.keyword.Bluemix_short}} cible pour la publication. 
+    4. Sélectionnez l'**Organisation** {{site.data.keyword.Bluemix_notm}} cible pour la publication.
     5. Une liste de catalogues s'affiche. Sélectionnez le catalogue cible pour la
 publication.
     6. Cliquez sur **Suivant**.
@@ -199,7 +198,7 @@ produit dans le catalogue, ouvrez l'interface utilisateur du gestionnaire
 d'API, sélectionnez la section Tableau de bord dans le panneau de navigation,
 puis cliquez sur le catalogue requis. Le produit est affiché à l'état transféré.
 
-- Ouvrez le **Tableau de bord** {{site.data.keyword.Bluemix_short}}. La vignette de l'application apparaît dans la section Applications.
+- Ouvrez le **Tableau de bord** {{site.data.keyword.Bluemix_notm}}. La vignette de l'application apparaît dans la section Applications.
 
 Ouvrez le gestionnaire d'API pour publier votre produit sur une communauté et permettre aux développeurs d'applications d'y accéder dans le portail de développeur. Pour plus d'informations, voir [Publication d'un produit](#publish_proj}).
 
@@ -231,18 +230,18 @@ produits disponibles dans le catalogue sont affichés. Vous pouvez sélectionner
     - `Visible pour` : Vous avez le choix entre **Utilisateurs publics**, **Utilisateurs authentifiés**
     ou **Personnalisé**. Si vous sélectionnez `Personnalisé`, vous pouvez utiliser la zone **Type à ajouter...** pour
 rechercher les organisations ou communautés pour lesquelles vous souhaitez que le produit soit visible.
-    - `Ouvert à l'abonnement pour` : Vous avez le choix entre **Utilisateurs authentifiés** ou **Personnalisé**. Si vous sélectionnez `Personnalisé`, vous pouvez utiliser la zone **Type à ajouter...** pour rechercher les organisations ou communautés pour lesquelles vous souhaitez que le produit soit visible.
+    - `Ouvert à l'abonnement pour` : Vous avez le choix entre **Utilisateurs authentifiés** ou **Personnalisé**. Si vous sélectionnez `Personnalisé`, vous pouvez utiliser la zone **Type à ajouter...** pour
+rechercher les organisations ou communautés pour lesquelles vous souhaitez que le produit soit visible.
 
 4. Cliquez sur **Publier**.
     Si une approbation est requise pour publier des produits dans ce catalogue,
 une demande d'approbation est envoyée et le produit passe à l'état En attente.
 Il est publié dès l'approbation de la demande. Si aucune approbation n'est requise, la version de produit est immédiatement publiée et passe à l'état Publié.
 
-Votre produit est à l'état Publié. Le produit est publié dans votre catalogue et
-disponible pour les communautés et organisations spécifiées. Les développeur d'applications faisant partie des groupes
-sélectionnés peuvent voir et utiliser les API dans le produit. Tout développeur d'applications qui demande
-à utiliser votre produit est affiché dans l'onglet Approbations du catalogue hôte, dans lequel vous pouvez
-décliner ou accepter la demande 
+Votre produit est à l'état Publié. Le produit est publié dans votre
+catalogue et disponible pour les communautés et organisations spécifiées. Les développeurs d'applications faisant partie des groupes sélectionnés peuvent voir et utiliser les API dans le produit. Tout développeur d'applications qui demande à utiliser votre produit est
+affiché dans l'onglet Approbations du catalogue hôte, dans lequel vous pouvez
+décliner ou accepter la demande.
 
 
 ## Publication d'un produit sur Bluemix
@@ -271,16 +270,16 @@ Avant de commencer, si vous souhaitez publier une API REST implémentée avec Lo
 
 7. Dans le panneau de navigation, cliquez sur l'icône **Développeurs**.
 
-8. Cliquez sur **Ajouter l'organisation Bluemix**.
+8. Cliquez sur **Ajouter une organisation IBM Cloud**.
 
 9. Ajoutez votre adresse électronique d'utilisateur {{site.data.keyword.Bluemix_short}} et cliquez sur **Ajouter**.
 
 10. Une invitation est envoyée à votre adresse électronique.
 
 11. Cliquez sur le lien figurant dans le courrier électronique pour accepter l'invitation.
-L'interface utilisateur d'{{site.data.keyword.Bluemix_short}} s'ouvre.
+L'interface utilisateur d'{{site.data.keyword.Bluemix_notm}} s'ouvre.
 
-12. Sélectionnez votre organisation {{site.data.keyword.Bluemix_short}} et cliquez sur **Confirmer**.
+12. Sélectionnez votre organisation {{site.data.keyword.Bluemix_notm}} et cliquez sur **Confirmer**.
 
 13. Dans l'interface utilisateur du gestionnaire d'API, cliquez sur l'icône **Produits**.
 

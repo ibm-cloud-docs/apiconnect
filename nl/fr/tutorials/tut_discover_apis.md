@@ -1,10 +1,8 @@
 ---
-
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
-
-
+lastupdated: "2017-11-20"
+---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
@@ -18,19 +16,21 @@ lastupdated: "2017-10-10"
 
 
 ## Prérequis
-Ce tutoriel ne nécessite aucun prérequis. En tant qu'administrateur du portail, vous pouvez également mener à bien ce tutoriel tout en naviguant dans le portail de développeur pour observer comment les utilisateurs naviguent dans votre portail. N'oubliez pas tous les portails de développeur ont une apparence différente.
+Ce tutoriel ne nécessite aucun prérequis. En tant qu'administrateur du portail, vous pouvez également mener à bien ce tutoriel tout en naviguant dans le portail de développeur pour observer comment les utilisateurs naviguent dans votre portail. N'oubliez pas tous les portails de développeur ont une apparence différente. 
 
 Si vous ne disposez pas d'un portail de développeur existant, vous pouvez en installer et en configurer un dans {{site.data.keyword.Bluemix_short}} avant de lancer ce tutoriel.
+
 ## Objectif
-Dans ce tutoriel, vous apprendrez comment un utilisateur de portail peut consommer les API dans le portail de développeur {{site.data.keyword.apiconnect_short}}. Vous comprendrez comment un utilisateur de portail explorer des produits et des API, affiche et teste des API et s'abonne à des API.
-## Exploration des produits & et des API
-Cette section montre comment un utilisateur de portail explorer les produits et les API dans le portail de développeur.
+Dans ce tutoriel, vous apprendrez comment un utilisateur de portail peut consommer les API dans le portail de développeur {{site.data.keyword.apiconnect_full}}. 
+Vous comprendrez comment un utilisateur de portail explore des produits et des API, affiche et teste des API et s'abonne à des
+API. 
 
-1. Dans un navigateur, accédez à votre **portail de développeur API Connect**.
-![Portail de développeur API Connect](images/11-developer-portal.png)
+## Exploration des produits & des API
+Cette section montre comment un utilisateur de portail explore les produits et les API dans le portail de développeur.
 
-2. Dans le portail de développeur {{site.data.keyword.apiconnect_short}}, sélectionnez l'onglet Produits d'API.
-![Produits d'API](images/12-API-products.png)
+1. Dans un navigateur, accédez à votre **portail de développeur API Connect**. ![Portail de développeur API Connect](images/11-developer-portal.png)
+
+2. Dans le portail de développeur {{site.data.keyword.apiconnect_short}}, sélectionnez l'onglet Produits d'API. ![Produits d'API](images/12-API-products.png)
 
 3. Sélectionnez l'un des produits d'API disponibles pour afficher les API et plans disponibles pour le produit.  
   ![Sélection d'un produit](images/13-product.png)
@@ -39,14 +39,14 @@ Cette section montre comment un utilisateur de portail explorer les produits et 
   ![API de produit](images/14-api.png)
 
 5. La page des détails d'une API affiche les opérations disponibles accompagnées de leurs paramètres et des réponses renvoyées. Au bas de la page, sont indiquées les définitions qu'utilise l'API.  
-  ![Détails d'API](images/15-details.png)
+  ![Détails d'API](images/15-details.png) 
 
 6. Le panneau Code examples répertorie des exemples, dans différents langages de codification, d'appels de requête et de leurs réponses. Sélectionnez l'un des exemples, par exemple, **Node**, pour afficher un exemple dans ce langage de codification.  
-  ![Détails d'API](images/16-examples.png)
+  ![Détails d'API](images/16-examples.png) 
 
 ---
 
-## Affichage et teste des API
+## Affichage et test des API
 Cette section montre comment un utilisateur de portail affiche et teste les API disponibles pour un produit. 
 
 1. Accédez aux détails d'API dans le portail de développeur {{site.data.keyword.apiconnect_short}} comme indiqué dans la section précédente.  
@@ -72,7 +72,7 @@ Cette section montre comment un utilisateur de portail s'abonne à des API dans 
 1. Sélectionnez **Créer un compte**.
 ![Produits d'API](images/31-create-account.png)
 
-2. Renseignez les zones requises, puis sélectionnez **Create new account** au bas de la page.
+2. Renseignez les zones requises, puis sélectionnez **Create new account** au bas de la page. 
 **Remarque :** Utilisez une autre adresse électronique que celle utilisée pour créer votre portail de développeur dans le tutoriel précédent.
 ![Produits d'API](images/32-create-new-account.png)
 
@@ -106,9 +106,9 @@ Dans ce tutoriel, vous avez appris comment vos utilisateurs de portail explorent
 
 ---
 
-## Etape suivante 
+## Etape suivante
 
-Apprenez [comment extraire des connaissances à partir d'analyses basiques](tut_insights_analytics.html).
+Apprenez à [extraire des connaissances à partir d'analyses basiques](tut_insights_analytics.html).
 
 Création >Gestion> Sécurisation > ** Réseaux sociaux ** > Analyse  
 

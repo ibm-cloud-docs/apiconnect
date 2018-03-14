@@ -127,8 +127,9 @@ la même manière, c'est-à-dire à des fins de test uniquement et non pour des 
 réels.
 
 - **Abonnement automatique** : L'activation d'un abonnement automatique pour un catalogue facilite le test de vos API dans l'interface utilisateur du gestionnaire d'API car une application de test est utilisée, avec un ID client
-et un secret client préfournis, et abonnée automatiquement à tous les plans du catalogue. Par conséquent, vous n'avez pas à spécifier un plan ou une application lors des tests. L'application de test n'est pas soumise à des limites de débit. La fonction d'abonnement automatique est disponible uniquement pour un
-catalogue de développement.
+et un secret client préfournis, et abonnée automatiquement à tous les plans du catalogue. Par conséquent, vous n'avez pas à spécifier un plan ou une application lors des tests. L'application de test n'est pas soumise à des limites de débit. La fonction
+d'abonnement automatique est disponible uniquement pour un catalogue de
+développement.
 
 - **Par défaut** : Vous pouvez définir l'un de vos catalogues comme le catalogue par défaut. Ensuite, les appels d'API qui sont publiés sur ce catalogue peuvent utiliser
 une URL plus courte qui ne comporte pas le nom de catalogue.

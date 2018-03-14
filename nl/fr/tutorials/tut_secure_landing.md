@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -20,9 +20,9 @@ Ces tutoriels fournissent des procédures qui montrent comment sécuriser vos AP
 
 Pour sécuriser une API avec un ID client et une valeur confidentielle du client, vous devez sélectionner une méthode pour votre processus.
 
-## IBM Bluemix
+## {{site.data.keyword.Bluemix_notm}}
 
-- [Sécurisation de votre API avec un ID client et une valeur confidentielle du client à l'aide d'IBM Bluemix](tut_secure_id_secret_bm.html)
+- [Sécurisation de votre API avec un ID client et une valeur confidentielle du client à l'aide d'{{site.data.keyword.Bluemix_notm}}](tut_secure_id_secret_bm.html)
 
 ## Kit d'outils de développement
 

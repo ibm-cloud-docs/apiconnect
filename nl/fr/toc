@@ -7,7 +7,7 @@ API Connect
 	index.md
 	
 	{: .topicgroup}
-	Tutoriels d'initiation
+	Getting started tutorials
 		tutorials/tut_create_api_node.md
 		tutorials/tut_rest_landing.md
 		    tutorials/tut_import_openapi_rest_bm.md
@@ -18,10 +18,10 @@ API Connect
 			tutorials/tut_prereq_set_up_apic_instance.md
 		tutorials/tut_expose_soap_service.md
 		tutorials/tut_manage_soap_api.md
-		tutorials/tut_rate_limit.md
 		tutorials/tut_secure_landing.md
 			tutorials/tut_secure_id_secret_bm.md
 			tutorials/tut_secure_id_secret_tk.md
+		tutorials/tut_rate_limit.md
 		tutorials/tut_secure_oauth_2.md
 		tutorials/tut_insights_analytics.md
 		tutorials/tut_manage_version_landing.md

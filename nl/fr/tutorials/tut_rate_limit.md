@@ -1,10 +1,10 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-11-02"
 ---
 
-{:new_window: target="blank"}
+{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -28,7 +28,7 @@ Dans ce tutoriel, vous allez :
 
 
 ## Prérequis
-Vous devez au préalable avoir créé dans {{site.data.keyword.apiconnect_short}} une API sécurisée avec au moins une clé d'API. Dans les instructions, notre point de départ est le [fichier d'exemple API Weather Provider ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window}, sécurisé avec un [ID client et une valeur confidentielle](tut_secure_landing.html).
+Vous devez au préalable avoir créé dans {{site.data.keyword.apiconnect_short}} une API sécurisée avec au moins une clé d'API. Dans les instructions, notre point de départ est le [fichier d'exemple API Weather Provider ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}, sécurisé avec un [ID client et une valeur confidentielle](tut_secure_landing.html).
 
 Avant de commencer ce tutoriel, effectuez les opérations suivantes :
 - [Importez votre spécification d'API et passez par un proxy un service REST existant](tut_rest_landing.html).
@@ -38,8 +38,8 @@ Avant de commencer ce tutoriel, effectuez les opérations suivantes :
 ---
 ## Lancement d'API Connect
 
-1. Connectez-vous à {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://console.ng.bluemix.net/login){:new_window}.
-2. Une fois connecté à {{site.data.keyword.Bluemix_short}}, faites défiler la page jusqu'à **Tous les services**, puis cliquez sur **API Connect**.
+1. Connectez-vous à {{site.data.keyword.Bluemix_notm}}: [https://console.ng.bluemix.net/login ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://console.ng.bluemix.net/login){:new_window}.
+2. Une fois connecté à {{site.data.keyword.Bluemix_notm}}, faites défiler la page jusqu'à **Tous les services**, puis cliquez sur **API Connect**.
 3. Cliquez sur **API Connect** pour lancer le service {{site.data.keyword.apiconnect_short}}.
 
 ## Exploration du Plan par défaut
@@ -64,7 +64,7 @@ Maintenant que vous avons vu à quoi ressemble le plan par défaut, créons un n
  
     ![](./images/newplanbutton.png) 
     
-    Un nouveau plan, défini par défaut pour autoriser un usage illimité (c'est-à-dire, sans aucune limite de débit), est automatiquement créé. Attribuons lui un nom plus significatif et définissons une limite plus restrictive.
+    Un nouveau plan, défini par défaut pour autoriser un usage illimité (c'est-à-dire, sans aucune limite de débit), est automatiquement créé. Attribuons lui un nom plus significatif et définissons une limite plus restrictive. 
 2. Cliquez sur le nouveau plan (`Nouveau plan 1`) afin de développer ses détails.
 3. Cliquez sur la zone Titre et attribuez au plan le titre `Démo`.
 4. Cliquez sur la zone Nom et attribuez au plan le nom `demo-plan`.
@@ -83,7 +83,6 @@ Dans les exemples précédents, vous pouviez avoir publié votre produit à l'ai
 1. Cliquez sur l'icône Publier pour *transférer* le produit vers le catalogue **Bac à sable**. Cette action ajoute vos modifications apportées au brouillon du produit dans le catalogue sélectionné. Nous devons ensuite *publier* les modifications du produit de sorte qu'elles soient disponibles pour les consommateurs via le portail de développeur.
    ![](./images/stageproduct.png) 
 2. Cliquez sur le bouton >> pour ouvrir le menu de navigation.
-   ![](./images/navigate.png) 
 3. Sélectionnez Tableau de bord, puis ouvrez le cataloguer **Bac à sable**. Le produit API Weather Provider est répertorié comme étant **Transféré**.
 4. Cliquez sur les points de suspension et sélectionnez **Publier** dans le menu.
    ![](./images/publish.png) 
@@ -97,30 +96,28 @@ La première fois où vous travaillez avec le portail de développeur, vous devr
 
 Les instructions suivantes vous guident tout au long de cette procédure.
 
-1. Ouvrez le portail de développeur. Si vous ne connaissez pas l'adresse URL, vous la trouverez dans l'onglet Paramètres du catalogue de bac à sable.
-
-   ![](./images/devportalurl.png)
-    - Pour la première mise à disposition du portail de développeur, sélectionnez **IBM Developer Portal** dans le menu déroulant.
+1. Ouvrez le portail de développeur. Si vous ne connaissez pas l'adresse URL, vous la trouverez dans l'onglet Paramètres du catalogue de bac à sable. Pour mettre à disposition le portail de développeur pour la première fois, voir [Création et configuration de votre portail de développeur](tut_config_dev_portal.html).
     - Cette opération peut prendre jusqu'à une heure pour s'exécuter. Lorsque votre portail de développeur de bac à sable est prêt, vous recevez un courrier électronique contenant un lien vers votre nouveau site de portail de développeur. Le lien est à usage unique pour le compte administrateur.
 2. Connectez-vous au portail avec vos données d'identification de développeur d'applications (**pas** votre ID IBM). ***(Au besoin, créez un nouveau compte de développeur, en utilisant une autre adresse que votre ID IBM.)***
 3. Cliquez sur le lien **Applis** de la barre d'outils, puis cliquez sur le bouton **Créer une application**.
 
-   ![](./images/createnewapp.png)
 4. Donnez un titre à l'application, puis cliquez sur **Soumettre**.
 
    ![](./images/mymobileapp.png)
-5. Sauvegardez la valeur confidentielle et l'ID du client affichés. Vous ne disposez que de cette seule opportunité pour copier la valeur confidentielle du client. 
+5. Sauvegardez la valeur confidentielle et l'ID du client affichés. Vous ne disposez que de cette seule opportunité pour copier la valeur confidentielle du client.
 
    ![](./images/clientidandsecret.png)
+   
+   ![](./images/clientsecret.png)
 
 
 
 ## Abonnement à un produit d'API
 
-1. Cliquez sur le lien **Produits d'API** de la barre d'outils. Votre produit API Weather Provider est réperetorié.  
+1. Cliquez sur le lien **Produits d'API** de la barre d'outils. Votre produit API Weather Provider est réperetorié. 
 
    ![](./images/apiproducts.png)
-2. Cliquez sur le lien pour afficher les détails et options. Deux plans doivent être disponibles : le plan par défaut d'origine et votre nouveau plan Démo. (Si vous ne voyez qu'un seul plan, revenez dans API Connect et vérifiez que vos modifications apportées au produit ont été sauvegardées, transférées et publiées dans le catalogue de bac à sable.) 
+2. Cliquez sur le lien pour afficher les détails et options. Deux plans doivent être disponibles : le plan par défaut d'origine et votre nouveau plan Démo. (Si vous ne voyez qu'un seul plan, revenez dans {{site.data.keyword.apiconnect_short}} et vérifiez que vos modifications apportées au produit ont été sauvegardées, transférées et publiées dans le catalogue de bac à sable.) 
 
    ![](./images/plans.png)
 3. Cliquez sur **S'abonner** au plan Démo et sélectionnez l'application que vous venez d'enregistrer. Votre application peut maintenant appeler les API associées à ce plan, selon un débit d'*un* appel d'API par minute. 
@@ -153,7 +150,7 @@ Félicitations ! Vous avez créé avec succès un plan avec limite de débit, vo
 
 ---
 
-## Etape suivante 
+## Etape suivante
 
 Commencez à diffuser votre API sur les réseaux sociaux via la [création et configuration d'un portail de développeur](tut_config_dev_portal.html).
 
