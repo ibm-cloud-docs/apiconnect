@@ -1,7 +1,7 @@
 ---
-opyright:
+copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 ---
 
 
@@ -22,20 +22,20 @@ lastupdated: "2017-10-19"
 
 ## 전제조건
 - 시작하기 전에 [{{site.data.keyword.apiconnect_short}} 인스턴스를 설정](tut_prereq_set_up_apic_instance.html)해야 합니다.
-- 시작하기 전에 [weatherprovider.wsdl 테스트![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} 파일을 로컬 파일 시스템에 복사하십시오.
+- 시작하기 전에 [weatherprovider.wsdl 테스트![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} 파일을 로컬 파일 시스템에 복사하십시오.
 참고: **원시**를 클릭한 다음 로컬 시스템에 결과 페이지를 `.wsdl` 파일로 저장할 수 있습니다. 이름에서 알 수 있듯이 이 SOAP 서비스에서는 우편번호를 지정하면 날씨 데이터를 리턴합니다.
 
 ---
 ## SOAP API 정의 설정
 1. {{site.data.keyword.Bluemix_short}}에 로그인: [https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}.
 
-2. {{site.data.keyword.Bluemix_short}} **대시보드**에서 아래로 스크롤하여 **모든 서비스**로 이동하십시오.
+2. {{site.data.keyword.Bluemix_notm}} **대시보드**에서 아래로 스크롤하여 **모든 서비스**로 이동하십시오.
 
-3. **API Connect**를 선택하여 API Connect 서비스를 실행하십시오. 
+3. **API Connect**를 선택하여 {{site.data.keyword.apiconnect_short}} 서비스를 실행하십시오. 
   
-4. 이미 초안 페이지에 있지 않은 경우 해당 페이지로 이동하십시오.  
-    a. API Connect 인터페이스에서 >>를 클릭하여 탐색 페이지를 여십시오.
-    b. 탐색 패널에서 **초안**을 클릭하십시오.
+4. 이미 드래프트 페이지에 있지 않은 경우 해당 페이지로 이동하십시오.  
+    a. {{site.data.keyword.apiconnect_short}} 인터페이스에서 >>를 클릭하여 탐색 페이지를 여십시오.
+    b. 탐색 패널에서 **드래프트**를 클릭하십시오.
     c. **API** 탭으로 이동하십시오.
 
 5. API 탭에서 `추가 +`를 클릭하십시오.
@@ -85,7 +85,7 @@ lastupdated: "2017-10-19"
 7. 오퍼레이션 목록에서 `post /weatherRequest`를 선택하십시오.  
   ![요청 게시](images/13-selectoperation.png)
 
-8. 아래로 스크롤하십시오. 본문 필드에 다음 xml을 입력하십시오. 다음 예제 XML을 선택하고 복사한 다음 **body**를 클릭하여 필드를 활성화하고 예제 XML을 두십시오.   
+8. 아래로 스크롤하십시오. 본문 필드에 다음 xml을 입력하십시오. 다음 예제 XML을 선택하고 복사한 다음 **body**를 클릭하여 필드를 활성화하고 예제 XML을 두십시오.  
   ```
   <?xml version="1.0" encoding="UTF-8"?>
   <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
@@ -113,6 +113,6 @@ API에서 현재 날씨로 구성된 응답 **body**를 리턴합니다.
 
 ## 다음 단계
 
-[서비스를 REST API로 노출](tut_expose_soap_api.html)하거나 [비율 한계](tut_rate_limit.html), [클라이언트 ID 및 시크릿](tut_secure_landing.html) 또는 [OAuth 2.0을 사용하여 보호](tut_secure_oauth_2.html)를 사용하여 API를 보호하십시오.
+[서비스를 REST API로 노출](tut_expose_soap_service.html)하거나 [비율 한계](tut_rate_limit.html), [클라이언트 ID 및 시크릿](tut_secure_landing.html) 또는 [OAuth 2.0을 사용하여 보호](tut_secure_oauth_2.html)를 사용하여 API를 보호하십시오.
 
 작성 > **관리** > 보안 > 소셜화 > 분석

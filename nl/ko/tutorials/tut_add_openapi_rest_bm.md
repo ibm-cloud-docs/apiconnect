@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-10-19"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# IBM Bluemix로 새 API 스펙 가져오기 및 기존 REST 서비스 호출
+# {{site.data.keyword.Bluemix_notm}}로 새 API 스펙 가져오기 및 기존 REST 서비스 호출
 **기간**: 15분  
 **스킬 레벨**: 초보자  
 
@@ -28,7 +28,7 @@ lastupdated: "2017-10-19"
 2. 올바른 5자리 미국 우편번호를 입력하여 _**현재 날씨**_ 및 _**오늘의 예보**_를 보십시오.  
 ![](images/explore-weatherapp-1.png)
 
-3. 위의 샘플 날씨 앱은 날씨 데이터를 제공하는 API를 사용하여 빌드되었습니다. **현재** 날씨 데이터를 가져오는 엔드포인트는 _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_입니다. [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}을 방문하여 테스트하십시오.  
+3. 위의 샘플 날씨 앱은 날씨 데이터를 제공하는 API를 사용하여 빌드되었습니다. **현재** 날씨 데이터를 가져오는 엔드포인트는 _**https://myweatherprovider.mybluemix.net/current?zipcode={zipcode}**_입니다. [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}을 방문하여 테스트하십시오.  
 
   ![](images/explore-weatherapp-2.png)
 
@@ -40,10 +40,10 @@ lastupdated: "2017-10-19"
 ---
 
 ### 새 OpenAPI 스펙을 추가하여 REST API 프록시 작성  
-1. {{site.data.keyword.Bluemix_short}}에 로그인: https://new-console.ng.bluemix.net/login.
-2. {{site.data.keyword.Bluemix_short}} 탐색 패널에서 **서비스**를 선택한 다음 **대시보드**를 선택하십시오. {{site.data.keyword.apiconnect_short}} 서비스를 시작하십시오.
+1. {{site.data.keyword.Bluemix_notm}}에 로그인: https://new-console.ng.bluemix.net/login.
+2. {{site.data.keyword.Bluemix_notm}} 탐색 패널에서 **서비스**를 선택한 다음 **대시보드**를 선택하십시오. {{site.data.keyword.apiconnect_short}} 서비스를 시작하십시오.
 3. {{site.data.keyword.apiconnect_short}}에서 탐색 패널이 열려 있는지 확인하십시오. 열려 있지 않으면 **>>**를 클릭하여 여십시오.  
-4. 탐색 패널에서 **초안**을 선택하십시오.
+4. 탐색 패널에서 **드래프트**를 선택하십시오.
 5. **API** 탭에서 **추가**를 클릭하십시오. 드롭 다운 메뉴에서 **새 API**를 선택하십시오.    
   ![](images/create-new-1.png)  
 6. *새 API* 창에서 제목으로 `Weather Provider API`를 입력하십시오.
@@ -115,7 +115,7 @@ _(다음 튜토리얼에서 API 키로 보안을 확인합니다.)_
       - **get /today** 오퍼레이션을 **case 1**에 지정합니다.
       ![](images/assemble-1.png)
 **오퍼레이션 스위치**에서 의사결정 지점을 제공합니다. verb/path 쌍을 기반으로 적절한 오퍼레이션을 호출해야 합니다.
-    c. 팔레트에서 **호출** 정책을 끌어와 캔버스에 놓으십시오. _호출 조치는 오퍼레이션에서 기존 서비스를 호출하는 데 사용합니다_. **/get current** 경로와 **/get today** 경로에 각각 호출 조치를 놓습니다.   
+    c. 팔레트에서 **호출** 정책을 끌어와 캔버스에 놓으십시오. _호출 조치는 오퍼레이션에서 기존 서비스를 호출하는 데 사용합니다_.  **/get current** 경로와 **/get today** 경로에 각각 호출 조치를 놓습니다.   
     d. **/get current** 경로에서 **호출** 정책을 선택하고 제목을 "**invoke-current**"로 업데이트하십시오.  
     e. URL 필드를 `https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`로 업데이트하십시오.  
     f. **/get today** 경로에서 **호출** 정책을 선택하고 제목을 "**invoke-today**"로 업데이트하십시오.  
@@ -128,7 +128,7 @@ _(다음 튜토리얼에서 API 키로 보안을 확인합니다.)_
 
 ### API 프록시 테스트
 1. **어셈블** 탭에서 추가 조치를 위한 아이콘을 클릭한 다음 **기본 제품 생성**을 선택하십시오.  
-   ![](images/generate-default-product-1.png)
+   ![](images/generate-default-product-1.png) 
 
 2. **새 제품** 대화 상자에서 기본 옵션을 승인하고 **제품 작성**을 클릭하십시오. Weather Provider API 제품이 작성되어 샌드박스 카탈로그에 공개됩니다. 제품 생성 성공을 나타내는 메시지가 표시됩니다.  
   ![](images/generate-default-product-2.png)  
@@ -156,7 +156,7 @@ _(다음 튜토리얼에서 API 키로 보안을 확인합니다.)_
 ---
 
 ### 결론
-이 튜토리얼에서는 API 통과 프록시를 통해 기존 REST 서비스를 호출하는 방법을 학습했습니다. 웹 브라우저를 통해 샘플 서비스의 가용성을 확인하는 작업부터 시작했습니다. 그런 다음 API Connect에서 새 OpenAPI 스펙을 작성하여 호출할 샘플 서비스에 연결했습니다. API를 제품에 패키징하고 제품을 카탈로그에 공개한 다음 프록시를 테스트했습니다.
+이 튜토리얼에서는 API 통과 프록시를 통해 기존 REST 서비스를 호출하는 방법을 학습했습니다. 웹 브라우저를 통해 샘플 서비스의 가용성을 확인하는 작업부터 시작했습니다. 그런 다음 {{site.data.keyword.apiconnect_short}}에서 새 OpenAPI 스펙을 작성하여 호출할 샘플 서비스에 연결했습니다. API를 제품에 패키징하고 제품을 카탈로그에 공개한 다음 프록시를 테스트했습니다.
 
 ---
 

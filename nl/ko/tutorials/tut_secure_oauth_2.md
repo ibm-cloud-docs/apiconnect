@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-12-13"
 ---
 
 {:new_window: target="blank"}
@@ -22,16 +22,18 @@ lastupdated: "2017-09-30"
 ## 전제조건
 
 시작하기 전에 다음 튜토리얼을 완료해야 합니다.  
-- [IBM Bluemix를 사용하여 클라이언트 ID와 클라이언트 시크릿 키로 API 보호](tut_secure_id_secret_bm.html)
+- [{{site.data.keyword.Bluemix}}를 사용하여 클라이언트 ID와 클라이언트 시크릿 키로 API 보호](tut_secure_id_secret_bm.html)
 또는
 - [툴킷을 사용하여 클라이언트 ID와 클라이언트 시크릿 키로 API 보호](tut_secure_id_secret_tk.html)
+
+참고: 이 튜토리얼에서는 {{site.data.keyword.Bluemix}} UI에서 태스크를 수행하기 위한 단계 및 스크린샷을 표시합니다. 명령행을 사용하는 방법으로도 동일한 프로시저를 완료할 수 있습니다. [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tutorial_apionprem_security_OAuth_v506.html)에서 해당 프로시저를 볼 수 있습니다. 
 
 ## 프로시저
 
 1. OAuth Provider API를 작성하고 OAuth 스키마를 선택하십시오.  
-	a. **초안**을 열고 **API**를 선택한 다음 **추가** > **OAuth 2.0 Provider API**를 클릭하십시오.  
+	a. **드래프트**를 열고 **API**를 선택한 다음 **추가** > **OAuth 2.0 Provider API**를 클릭하십시오.  
     ![](images/oauth_provider_1.png)
-	b. "OAuth Endpoint API"로 제목을 지정하십시오. (이름과 기본 경로는 자동으로 채워져야 합니다.)  
+	b. "OAuth Endpoint API"로 제목을 지정하십시오. 이름과 기본 경로는 자동으로 채워져야 합니다.  
 	c. **API 작성**을 선택하십시오.  
 	d. 새로 작성된 OAuth Endpoint API에서 **OAuth 2** 패널로 이동(또는 아래로 스크롤하여 이동)한 다음 클라이언트 유형으로 "기밀"을 선택하십시오.  
 	e. 범위에서 _scope1_의 이름을 _view_current_로 바꾸십시오. _scope2_ 및 _scope3_을 삭제하십시오.  
@@ -49,7 +51,7 @@ lastupdated: "2017-09-30"
 	f. **보안**에서 **OAuth 정의** 및 **view_current**를 선택하고 클라이언트 ID와 클라이언트 시크릿을 선택한 상태로 두십시오.  
 	![](images/oauth_security_definition_2.png)
 	g. 저장을 클릭하십시오.  
-	h. **초안**으로 다시 이동하여 **제품**을 선택하십시오. Weather Provider 제품에 OAuth Endpoint API를 추가하십시오.  
+	h. **드래프트**로 다시 이동하여 **제품**을 선택하십시오. Weather Provider 제품에 OAuth Endpoint API를 추가하십시오.  
 	i. 제품을 저장하고 샌드박스로 스테이징하십시오.  
 	![](images/oauth_security_definition_3a.png)
 

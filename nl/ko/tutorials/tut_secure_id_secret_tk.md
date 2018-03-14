@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# 툴킷을 사용하여 클라이언트 ID와 클라이언트 시크릿으로 API 보호
+# 개발자 툴킷을 사용하여 클라이언트 ID와 클라이언트 시크릿으로 API 보호
 
 
 **기간:** 10분  
@@ -34,11 +34,11 @@ lastupdated: "2017-09-30"
 1. 다음과 같이 API Designer를 실행하십시오(아직 열려있지 않은 경우).  
    a. 터미널을 여십시오.  
    b. 명령행에 `apic edit`를 입력하십시오. _API Designer는 웹 브라우저에서 실행됩니다._    
-   c. **Bluemix로 로그인**을 클릭하십시오.  
+   c. **{{site.data.keyword.Bluemix_notm}}로 로그인**을 클릭하십시오.  
    d. {{site.data.keyword.Bluemix_short}} 로그인 정보를 입력하십시오.  
 
 2. 다음과 같이 API의 디자인 보기로 이동하십시오.
-    a. 왼쪽 탐색 패널에서 **초안**을 클릭하십시오. 
+    a. 왼쪽 탐색 패널에서 **드래프트**를 클릭하십시오. 
     b. 그런 다음 **API** 탭을 클릭하십시오.
     c. 이전 튜토리얼에서 작성한 _Weather Provider API_를 클릭하십시오. 그러면 API의 **디자인** 보기가 열립니다.  
     ![](images/1_goto_drafts_api.png)  
@@ -49,14 +49,14 @@ lastupdated: "2017-09-30"
 
    b. **보안 정의 추가** 아이콘(+)을 클릭한 다음 **API 키**를 클릭하십시오.  
       - 이름: Client ID; 매개변수 이름: X-IBM-Client-ID  
-      - 이름: Client Secret;  매개변수 이름: X-IBM-Client-Secret  
+      - 이름: Client Secret; 매개변수 이름: X-IBM-Client-Secret  
       - 새로운 두 키 모두에서 **Located In** 필드가 "Header"로 설정되었는지 확인하십시오.  
       ![](images/2a.png)    
 
 4. 아래로 스크롤하여 **보안** 패널로 이동하고 새 보안 옵션을 추가하십시오.  
    a. 새로 작성된 클라이언트 ID 및 클라이언트 시크릿 키를 선택하십시오.  
    b. API를 저장하십시오.  
-   c. **어셈블** 탭으로 전환하십시오.   
+   c. **어셈블** 탭으로 전환하십시오.  
     ![](images/3a.png) 
 
 ## API 변경사항 테스트
@@ -80,7 +80,7 @@ lastupdated: "2017-09-30"
 프록시 엔드포인트를 명시적으로 호출하고 클라이언트 ID와 클라이언트 시크릿 키를 헤더 값으로 전달하는 탐색 도구를 사용하여 보안 설정을 테스트할 수 있습니다.
 
 
-1. **탐색**을 클릭한 다음 **샌드박스**를 클릭하십시오.  
+1. **탐색**을 클릭하십시오.
     ![](images/explore_1.png)
 
 2. 목록에서 **GET /current** 오퍼레이션을 클릭하십시오.  

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-08-24"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -20,10 +20,10 @@ lastupdated: "2017-08-24"
 
 기존 API를 관리하려면 OpenAPI 파일을 가져오거나 추가하여 시작할 수 있습니다.
 
-## IBM Bluemix
+## {{site.data.keyword.Bluemix_notm}}
 
-- [IBM Bluemix를 사용하여 OpenAPI 파일 가져오기](tut_import_openapi_rest_bm.html)
-- [IBM Bluemix를 사용하여 OpenAPI 파일 작성](tut_add_openapi_rest_bm.html)
+- [{{site.data.keyword.Bluemix_notm}}를 사용하여 OpenAPI 파일 가져오기](tut_import_openapi_rest_bm.html)
+- [{{site.data.keyword.Bluemix_notm}}를 사용하여 OpenAPI 파일 작성](tut_add_openapi_rest_bm.html)
 
 ## 개발자 툴킷
 

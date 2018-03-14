@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# IBM Bluemix를 사용하여 클라이언트 ID와 클라이언트 시크릿으로 API 보호
+# {{site.data.keyword.Bluemix_notm}}를 사용하여 클라이언트 ID와 클라이언트 시크릿으로 API 보호
 
 **기간:** 10분  
 **스킬 레벨:** 초보자
@@ -32,7 +32,7 @@ lastupdated: "2017-09-30"
 ## API의 ID 메커니즘 설정
 
 1. 다음과 같이 API의 디자인 보기로 이동하십시오.  
-   a. 왼쪽 탐색 패널에서 **초안**을 클릭하십시오.  
+   a. 왼쪽 탐색 패널에서 **드래프트**를 클릭하십시오.  
    b. 그런 다음 **API** 탭을 클릭하십시오.  
    c. 이전 튜토리얼에서 작성한 _Weather Provider API_를 클릭하십시오. 그러면 API의 **디자인** 보기가 열립니다.  
    ![](images/1_goto_drafts_api.png)  
@@ -48,7 +48,7 @@ lastupdated: "2017-09-30"
 3. 아래로 스크롤하여 **보안** 패널로 이동하고 새 보안 옵션을 추가하십시오.  
     a. 새로 작성된 클라이언트 ID 및 클라이언트 시크릿 키를 선택하십시오.  
     b. API를 저장하십시오.  
-    c. **어셈블** 탭으로 전환하십시오.   
+    c. **어셈블** 탭으로 전환하십시오.  
     ![](images/3_security_option.png)  
 
 

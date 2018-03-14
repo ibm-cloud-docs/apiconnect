@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -30,7 +30,7 @@ lastupdated: "2017-10-10"
 ## API 제품 대체
 1. {{site.data.keyword.Bluemix_short}}에 로그인: [https://console.ng.bluemix.net/login ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.ng.bluemix.net/login){:new_window}.
 
-2. {{site.data.keyword.Bluemix_short}} 대시보드에서 {{site.data.keyword.apiconnect_short}} 서비스를 실행하십시오.
+2. {{site.data.keyword.Bluemix_notm}} 대시보드에서 {{site.data.keyword.apiconnect_short}} 서비스를 실행하십시오.
 ![](images/Bluemix.png)
 
 3. API Manager에서 UI 탐색 분할창을 아직 고정하지 않은 경우 **이동 위치** 아이콘 ![](images/navigate-to.png)을 클릭하십시오. API Manager UI 탐색 분할창이 열립니다. UI 탐색 분할창을 고정하려면 **핀 메뉴** 아이콘 ![](images/pinned.png)을 클릭하십시오.
@@ -38,7 +38,7 @@ lastupdated: "2017-10-10"
 4. **샌드박스**를 클릭하여 샌드박스 카탈로그를 여십시오. **참고**: 화면에 카탈로그 목록이 아니라 타일이 표시될 수 있습니다.
 ![](images/del-sandbox-list.png)
 
-4. **초안** > **API**를 클릭하십시오.
+4. **드래프트** > **API**를 클릭하십시오.
 
 5. API 패널에서 **Weather Provider API**를 클릭하여 REST 프록시 API를 여십시오.  
 ![](images/rep-api-list.png)
@@ -80,12 +80,12 @@ lastupdated: "2017-10-10"
 18.	**기존 제품 대체**를 선택하십시오.  
 ![](images/sup-super-prod.png)
 
-19.	표시된 제품 목록에서 **Weather Provider API 제품 2.0.0**을 선택하십시오. **다음**을 클릭하십시오.   
+19.	표시된 제품 목록에서 **Weather Provider API 제품 2.0.0**을 선택하십시오. **다음**을 클릭하십시오.  
 ![](images/sup-super-dialog-1.png)
 
 20.	**기본 플랜**을 선택하십시오. **대체**를 클릭하십시오.  
 ![](images/sup-super-dialog-2.png)
-    이와 같이 바꾸기를 수행하면 Weather Provider API 제품 2.0.0이 더 이상 사용되지 않고 Weather Provider API 제품 3.0.0이 공개됩니다.   
+    이와 같이 바꾸기를 수행하면 Weather Provider API 제품 2.0.0이 더 이상 사용되지 않고 Weather Provider API 제품 3.0.0이 공개됩니다.  
 ![](images/sup-dash-prods-3.png) 
  
 21.	**커뮤니티 >> 등록**을 클릭하십시오.  
@@ -105,8 +105,8 @@ lastupdated: "2017-10-10"
 이 튜토리얼에서 다음 활동을 완료했습니다.
 
 1. API 제품 업데이트.
-2. 기존 API를 업데이트된 API 제품으로 대체.
-3. 기존 API 제품의 등록을 업데이트된 API 제품으로 마이그레이션.
+2. 기존 API를 업데이트된 API 제품으로 대체
+3. 기존 API 제품의 등록을 업데이트된 API 제품으로 마이그레이션
 
 ---
 

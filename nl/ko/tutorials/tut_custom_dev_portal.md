@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -16,7 +16,7 @@ lastupdated: "2017-09-12"
 
 
 ## 목표
-이 튜토리얼을 사용하면 신속하게 {{site.data.keyword.apiconnect_short}} 개발자 포털을 사용자 정의하고 요구사항에 맞는 테마를 선택할 수 있습니다.
+이 튜토리얼을 사용하면 신속하게 {{site.data.keyword.apiconnect_full}} 개발자 포털을 사용자 정의하고 요구사항에 맞는 테마를 선택할 수 있습니다.
 
 ---
 
@@ -124,7 +124,7 @@ lastupdated: "2017-09-12"
 
 ## 다음 단계
 
-[개발자 포털을 통해 탐색하는 방법](tut_discover_apis.html) 또는 [기본 분석에서 통찰력을 얻는 방법](tut_insights_analytics.html)을 알아보십시오.
+[개발자 포털을 통해 탐색하는 방법](tut_discover_apis.html) 또는 [기본 분석에서 인사이트를 얻는 방법](tut_insights_analytics.html)을 알아보십시오.
 
 작성 >관리> 보안 > ** 소셜화 ** > 분석  
 

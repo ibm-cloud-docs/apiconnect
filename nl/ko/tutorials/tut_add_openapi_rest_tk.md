@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ lastupdated: "2017-10-19"
 **스킬 레벨**: 초보자  
 
 ## 목표
-이 튜토리얼을 사용하면 기존 API를 관리 제어하는 방법을 설명하여 {{site.data.keyword.apiconnect_short}}를 신속하게 시작할 수 있습니다. 새로운 OpenAPI 스펙 작성부터 시작한 다음 기존 REST 서비스의 통과(passthrough) API 프록시를 작성합니다.
+이 튜토리얼을 사용하면 기존 API를 관리 제어하는 방법을 설명하여 {{site.data.keyword.apiconnect_full}}를 신속하게 시작할 수 있습니다. 새로운 OpenAPI 스펙 작성부터 시작한 다음 기존 REST 서비스의 통과(passthrough) API 프록시를 작성합니다.
 
 ## 전제조건
 시작하기 전에 [API Connect 인스턴스를 설정](tut_prereq_set_up_apic_instance.html)하고 [API Connect 툴킷을 설치](tut_prereq_install_toolkit.html)해야 합니다.
@@ -43,7 +43,7 @@ lastupdated: "2017-10-19"
 1. **API Designer**를 실행하십시오. 터미널에서 `apic edit`을 입력하십시오.
 2. IBM ID를 사용하여 로그인하십시오.
     ![](images/screenshot_apic-edit_login.png)
-3.   API Designer에서 탐색 패널이 열려 있는지 확인하십시오. 열려 있지 않으면 >>를 클릭하여 여십시오. **API Designer** 탐색 패널에서 **드래프트>API**를 선택하십시오. 
+3.   API Designer에서 탐색 패널이 열려 있는지 확인하십시오. 열려 있지 않으면 >>를 클릭하여 여십시오. **API Designer** 탐색 패널에서 **드래프트>API**를 선택하십시오.
 4. **API** 패널에서 **추가 > 새 API**를 선택하십시오.
 5. 새 API 창에서 제목으로 "Weather Provider API"를 입력하십시오. _이름과 기본 경로가 자동으로 채워집니다_.  
   ![](images/toolkit-add-new-api.png)   
@@ -117,12 +117,12 @@ _(다음 튜토리얼에서 API 키로 보안을 확인합니다.)_
       - 새 케이스, **case 1**을 추가합니다.
       - **get /today** 오퍼레이션을 **case 1**에 지정합니다.
       ![](images/assemble-1.png)
-**오퍼레이션 스위치**에서 의사결정 지점을 제공합니다. verb/path 쌍을 기반으로 적절한 오퍼레이션을 호출해야 합니다.  
+    **오퍼레이션 스위치**에서 의사결정 지점을 제공합니다. verb/path 쌍을 기반으로 적절한 오퍼레이션을 호출해야 합니다.  
     c. 팔레트에서 **호출** 정책을 끌어와 캔버스에 놓으십시오. **/get current** 경로와 **/get today** 경로에 각각 호출 조치를 놓습니다.
     d. **/get current** 경로에서 **호출** 정책을 선택하고 제목을 "**invoke-current**"로 업데이트하십시오.  
-    e. URL 필드를 `https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`로 업데이트하십시오.
+    e. URL 필드를 `https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`로 업데이트하십시오.
     f. **/get today** 경로에서 **호출** 정책을 선택하고 제목을 "**invoke-today**"로 업데이트하십시오.  
-    g. URL 필드를 `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`로 업데이트하십시오.  
+    g. URL 필드를 `https://myweatherprovider.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`로 업데이트하십시오.  
 
 20. API를 저장하십시오.
 
@@ -144,7 +144,7 @@ _(다음 튜토리얼에서 API 키로 보안을 확인합니다.)_
   b. **호출**을 클릭하여 다음이 표시되는지 확인하십시오.
   ```
   200 OK response
-  Current weather data for 90210
+  Current weather data for 90210  
   ```
     ![](images/screenshot_test-2.png)  
 

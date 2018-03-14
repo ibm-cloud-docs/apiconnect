@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-28"
+lastupdated: "2018-02-12"
 
 ---
 
@@ -15,6 +15,11 @@ lastupdated: "2017-09-28"
 # 새로운 기능
 
 {{site.data.keyword.apiconnect_full}}에는 다음 개선사항이 포함되어 있습니다.
+
+- **개발자 포털에서 사용자 계정 및 개발자 조직 삭제**: 개발자 포털에서 사용자 계정 및 개발자 조직을 삭제할 수 있습니다. 또한 개발자 조직의 소유권을 변경할 수 있습니다. 자세한 정보는 [개발자 계정 삭제 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_account.html){:new_window}, [개발자 조직 삭제 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_dev_org.html){:new_window} 및 [개발자 조직의 소유권 변경 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_dev_org_ownership.dita){:new_window}을 참조하십시오.
+
+- __추가된 *endpoint_url* API 이벤트 필드__: *endpoint_url* 이벤트
+레코드 필드는 요청이 실패한 프록시 또는 호출 대상 URL을 식별합니다. 자세한 정보는 [개발자 계정 삭제 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/rapim_analytics_apieventrecordfields.html){:new_window}를 참조하십시오.</dd>
 
 - **분석을 위해 개발자 포털 REST API 참조 및 지원 추가**: 개발자 포털 REST API를 사용하면 카탈로그 API를 분석할 수 있습니다. 자세한 정보는 [분석 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apirest.doc/analytics.html){:new_window}을 참조하십시오.
 

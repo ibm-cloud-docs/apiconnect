@@ -1,10 +1,10 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-11-02"
 ---
 
-{:new_window: target="blank"}
+{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -29,7 +29,7 @@ lastupdated: "2017-09-30"
 
 
 ## 전제조건
-{{site.data.keyword.apiconnect_short}}에 하나 이상의 API 키로 보호되는 API가 이미 작성되어 있어야 합니다. 다음 지시사항에서는 [클라이언트 ID 및 시크릿](tut_secure_landing.html)으로 보호되는 [Weather Provider API 예제 파일 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window}부터 시작합니다.
+{{site.data.keyword.apiconnect_short}}에 하나 이상의 API 키로 보호되는 API가 이미 작성되어 있어야 합니다. 다음 지시사항에서는 [클라이언트 ID 및 시크릿](tut_secure_landing.html)으로 보호되는 [Weather Provider API 예제 파일 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}부터 시작합니다.
 
 이 튜토리얼을 시작하기 전에 다음 튜토리얼을 완료하십시오.
 - [API 스펙 가져오기 및 기존 REST 서비스 프록시](tut_rest_landing.html).
@@ -39,12 +39,12 @@ lastupdated: "2017-09-30"
 ---
 ## API Connect 실행
 
-1. {{site.data.keyword.Bluemix_short}}에 로그인: [https://console.ng.bluemix.net/login ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.ng.bluemix.net/login){:new_window}.
-2. {{site.data.keyword.Bluemix_short}}에 로그인하고 나면 아래로 스크롤하여 **모든 서비스**로 이동한 다음 **API Connect**를 클릭하십시오.
+1. {{site.data.keyword.Bluemix_notm}}에 로그인: [https://console.ng.bluemix.net/login ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.ng.bluemix.net/login){:new_window}.
+2. {{site.data.keyword.Bluemix_notm}}에 로그인하고 나면 아래로 스크롤하여 **모든 서비스**로 이동한 다음 **API Connect**를 클릭하십시오.
 3. **API Connect**를 클릭하여 {{site.data.keyword.apiconnect_short}} 서비스를 실행하십시오.
 
 ## 기본 플랜 탐색
-1. {{site.data.keyword.apiconnect_short}} 탐색 패널에서 **초안**을 선택하십시오. (탐색 패널이 열려 있지 않으면 **>>**를 클릭하여 여십시오.)
+1. {{site.data.keyword.apiconnect_short}} 탐색 패널에서 **드래프트**를 선택하십시오. (탐색 패널이 열려 있지 않으면 **>>**를 클릭하여 여십시오.)
 2. **제품 탭**을 선택하면 Weather Provider API 제품이 나열되어야 합니다.
 
    ![](./images/draftproducts.png)      
@@ -65,13 +65,13 @@ lastupdated: "2017-09-30"
  
     ![](./images/newplanbutton.png) 
     
-    새로운 플랜이 작성되며, 기본적으로 무제한 사용을 허용하도록 설정됩니다(즉, 비율 한계가 없음). 더 의미 있는 이름을 부여하고 더 제한적인 한계를 설정해 보겠습니다.
+    새로운 플랜이 작성되며, 기본적으로 무제한 사용을 허용하도록 설정됩니다(즉, 비율 한계가 없음). 더 의미 있는 이름을 부여하고 더 제한적인 한계를 설정해 보겠습니다. 
 2. 새 플랜(`New Plan 1`)을 클릭하여 세부사항을 펼치십시오.
 3. 제목 필드를 클릭하고 플랜 제목을 `Demo`로 설정하십시오.
 4. 이름 필드를 클릭하고 플랜 이름을 `demo-plan`으로 설정하십시오.
 5. +를 클릭하고 새 비율 한계를 추가하십시오.
 6. 새 비율 한계의 이름을 `demo-rate-limit`로 바꾸고 `1 / 1 Minute`로 설정되었는지 확인하십시오.
-7. `Enforce hard limit` 선택란을 선택하십시오(이 설정이 사용 가능한 경우 등록된 플랜 한계에 따라 허용되는 수보다 많이 API를 호출하면 애플리케이션에서 오류가 발생함).
+7. `Enforce hard limit` 선택란을 선택하십시오 (이 설정이 사용 가능한 경우 등록된 플랜 한계에 따라 허용되는 수보다 많이 API를 호출하면 애플리케이션에서 오류가 발생함).
 8. 다른 기본 설정을 모두 승인하고 제품을 저장하십시오.
 
    ![](./images/demoplan.png) 
@@ -81,10 +81,9 @@ lastupdated: "2017-09-30"
 
 이전 예에서 테스트 도구를 사용하여 제품을 공개했습니다. 그러면 이 도구에서 사전 제공된 테스트 애플리케이션 신임 정보를 사용하여 API를 호출합니다. 그러나 이 테스트 애플리케이션에는 비율 한계가 적용되지 않으므로, 여기서는 비율 한계 용도로 새 애플리케이션을 작성하지 않습니다. 자세한 정보는 [API Connect에 대한 IBM Knowledge Center 컨텐츠![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){:new_window}을 참조하십시오.
 
-1. 공개 아이콘을 클릭하여 제품을 **샌드박스** 카탈로그로 *스테이징*하십시오. 이 조치를 수행하면 선택한 카탈로그에 초안 제품 변경사항을 추가합니다. 다음으로, 개발자 포털을 통해 이용자가 사용할 수 있도록 제품 변경사항을 *공개*해야 합니다.
+1. 공개 아이콘을 클릭하여 제품을 **샌드박스** 카탈로그로 *스테이징*하십시오. 이 조치를 수행하면 선택한 카탈로그에 드래프트 제품 변경사항을 추가합니다. 다음으로, 개발자 포털을 통해 이용자가 사용할 수 있도록 제품 변경사항을 *공개*해야 합니다.
    ![](./images/stageproduct.png) 
 2. >> 단추를 클릭하여 탐색 메뉴를 여십시오.
-   ![](./images/navigate.png) 
 3. 대시보드를 선택한 다음 **샌드박스** 카탈로그를 여십시오. Weather Provider API 제품이 **스테이징됨**으로 나열됩니다.
 4. 생략 기호를 클릭하고 메뉴에서 **공개**를 선택하십시오.
    ![](./images/publish.png) 
@@ -98,22 +97,20 @@ lastupdated: "2017-09-30"
 
 다음 지시사항은 이 단계를 안내합니다.
 
-1. 개발자 포털을 실행하십시오. URL을 모르면 샌드박스 카탈로그의 설정 탭에서 찾을 수 있습니다.
-
-   ![](./images/devportalurl.png)
-    - 개발자 포털을 처음으로 프로비저닝하려면 드롭 다운에서 **IBM Developer Portal**을 선택하십시오.
+1. 개발자 포털을 실행하십시오. URL을 모르면 샌드박스 카탈로그의 설정 탭에서 찾을 수 있습니다. 개발자 포털을 처음으로 프로비저닝하려면 [개발자 포털 설정 및 구성](tut_config_dev_portal.html)을 참조하십시오.
     - 이 작업을 완료하는 데 최대 1시간이 걸릴 수 있습니다. 샌드박스 개발자 포털이 준비되면
 새 개발자 포털 사이트의 링크가 있는 이메일이 전송됩니다. 이 링크는 관리자 계정에 대한 일회용 링크입니다.
 2. 앱 개발자 신임 정보(사용자의 IBM ID가 **아님**) 를 사용하여 포털에 로그인하십시오. ***(필요한 경우 IBM ID 이외의 다른 주소를 사용하여 새 개발자를 작성하십시오.)***
 3. 도구 모음에서 **앱** 링크를 클릭한 다음 **새 앱 작성** 단추를 클릭하십시오.
 
-   ![](./images/createnewapp.png)
 4. 애플리케이션에 제목을 지정하고 **제출**을 클릭하십시오.
 
    ![](./images/mymobileapp.png)
 5. 표시되는 클라이언트 시크릿과 클라이언트 ID를 저장하십시오. 지금이 아니면 클라이언트 시크릿을 복사할 수 없습니다!
 
    ![](./images/clientidandsecret.png)
+   
+   ![](./images/clientsecret.png)
 
 
 
@@ -122,7 +119,7 @@ lastupdated: "2017-09-30"
 1. 도구 모음에서 **API 제품** 링크를 클릭하십시오. Weather Provider API 제품이 나열됩니다! 
 
    ![](./images/apiproducts.png)
-2. 링크를 클릭하여 세부사항과 옵션을 표시하십시오. 사용 가능한 두 플랜(원래 기본 플랜과 새 데모 플랜)이 표시되어야 합니다. (한 플랜만 표시되는 경우 API Connect로 돌아가 제품 변경사항이 샌드박스 카탈로그에 저장, 스테이징 및 공개되었는지 확인하십시오.) 
+2. 링크를 클릭하여 세부사항과 옵션을 표시하십시오. 사용 가능한 두 플랜(원래 기본 플랜과 새 데모 플랜)이 표시되어야 합니다. (한 플랜만 표시되는 경우 {{site.data.keyword.apiconnect_short}}로 돌아가 제품 변경사항이 샌드박스 카탈로그에 저장, 스테이징 및 공개되었는지 확인하십시오.) 
 
    ![](./images/plans.png)
 3. 데모 플랜에 **등록**을 클릭하고 방금 등록한 애플리케이션을 선택하십시오. 이제 애플리케이션에서 분당 최대 *하나*의 API를 호출하는 비율로 이 플랜과 연관된 API를 호출할 수 있습니다. 
@@ -134,7 +131,7 @@ lastupdated: "2017-09-30"
 1. 개발자 포털의 Weather Provider API 제품 페이지에서 API 링크를 클릭하십시오.
 
    ![](./images/weatherproviderapi.png)
-2. 페이지가 새로 고치기되어 API, 오퍼레이션에 대한 세부사항이 표시되고, 테스트할 위치가 제공됩니다(이 방식으로 API 이용자가 API를 검색하고 테스트함). 어두운 테스트 분할창이 표시되므로 아래쪽으로 스크롤하여 첫 번째 **이 오퍼레이션 시도** 섹션으로 이동하십시오.
+2. 페이지가 새로 고치기되어 API, 오퍼레이션에 대한 세부사항이 표시되고, 테스트할 위치가 제공됩니다 (이 방식으로 API 이용자가 API를 검색하고 테스트함). 어두운 테스트 분할창이 표시되므로 아래쪽으로 스크롤하여 첫 번째 **이 오퍼레이션 시도** 섹션으로 이동하십시오.
 
 3. `GET /current` 오퍼레이션을 테스트하려면 애플리케이션의 클라이언트 시크릿과 올바른 우편번호를 입력하십시오. **오퍼레이션 호출** 단추를 클릭하십시오. 해당 우편번호의 현재 날씨에 대한 데이터와 함께 `200 OK` 응답이 표시되어야 합니다. 
 

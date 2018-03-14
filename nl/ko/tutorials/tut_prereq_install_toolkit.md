@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-19"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -17,7 +17,7 @@ lastupdated: "2017-09-19"
 ## 필요한 항목
 1. Node.js
 2. NPM(Node Product Manager)
-3. {{site.data.keyword.apiconnect_short}} _Lite_
+3. {{site.data.keyword.apiconnect_full}} _Lite_
 
 <table>
   <tr><td><b>Node.js</b>: 확장 가능 네트워크 애플리케이션을 빌드하고 실행하는 데 사용한 비동기 이벤트 중심 JavaScript 런타임
