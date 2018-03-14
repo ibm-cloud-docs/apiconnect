@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-07-07"
+lastupdated: "2017-10-24"
 ---
 
 {:new_window: target="blank"}
@@ -13,7 +13,7 @@ lastupdated: "2017-07-07"
 # Katalog konfigurieren
 
 Sie können API Manager-Kataloge erstellen und konfigurieren. Kataloge sind nützlich,
-um Produkte und APIs zum Testen voneinander zu trennen, bevor Sie sie Entwicklerorganisationen verfügbar machen.
+um Produkte und APIs zum Testen voneinander zu trennen, bevor Sie sie Developer-Organisationen verfügbar machen.
 Wenn Sie einen Katalog konfigurieren, können Sie außerdem das angepasste Branding konfigurieren,
 sodass Sie nicht auf die Verwendung der standardmäßigen API-URL angewiesen sind, die API Manager bereitstellt.
 
@@ -28,7 +28,7 @@ Das Fenster **Katalog hinzufügen** wird angezeigt.
 
 4. Geben Sie den Text, der das Katalogsegment der URL bilden soll, im Feld
 **Name** ein.
-**Hinweis:** Das Feld **Name** darf nur alphanumerische Zeichen
+	**Hinweis:** Das Feld **Name** darf nur alphanumerische Zeichen
 in Kleinschreibung (a-z und 0-9) oder Trennstriche (-) enthalten. Der Trennstrich darf nicht als erstes oder
 letztes Zeichen im Namen verwendet werden.
 
@@ -39,17 +39,16 @@ letztes Zeichen im Namen verwendet werden.
 Wenn Sie den Entwicklungsmodus auswählen, werden die Bereitstellungs- (Staging-) und Veröffentlichungsaktionen erzwungen.
 Das bedeutet, dass ein bereits veröffentlichtes Produkt bei seiner erneuten Veröffentlichung ohne Warnung überschrieben wird. Werden Konflikte festgestellt,
 werden diese automatisch vom System aufgelöst. Aktionen zum Rückgängigmachen der Veröffentlichung erfolgen automatisch.
-**Hinweis:** Für Entwicklungskataloge werden keine Genehmigungsfelder angezeigt. Der Genehmigungsprozess
+	**Hinweis:** Für Entwicklungskataloge werden keine Genehmigungsfelder angezeigt. Der Genehmigungsprozess
 für Lebenszyklen kann nicht aktiviert werden.
-  2. Wenn Sie die automatische Subskription für den Katalog aktivieren wollen,
-wählen Sie **Automatisches Abonnement** aus. Die Aktivierung der
-automatischen Subskription vereinfacht das Testen Ihrer APIs, denn es wird eine Testanwendung mit einer vorab bereitgestellten Client-ID und einem ebensolchen geheimen
-Clientschlüssel verwendet. Diese Testanwendung ist automatisch bei allen Plänen im Katalog subskribiert, sodass Sie beim Testen keinen bestimmten Plan bzw. keine bestimmte
-Anwendung angeben müssen. **Hinweis:** Die automatische Subskription ist nur für Entwicklungskataloge verfügbar.
-  3. Wenn es sich bei dem Katalog um den Standardbereitstellungskatalog handelt, wählen Sie **Standard** aus. Dann können Aufrufe an die APIs,
-die im Katalog veröffentlicht sind, eine kürzere URL verwenden, die nicht den
+  2. Wenn Sie das automatische Abonnement für den Katalog aktivieren wollen,
+wählen Sie **Automatisches Abonnement** aus.
+Die Aktivierung des automatischen Abonnements vereinfacht das Testen Ihrer APIs, denn es wird eine Testanwendung mit einer vorab bereitgestellten Client-ID und einem ebensolchen geheimen Clientschlüssel verwendet. Diese Testanwendung ist automatisch bei allen Plänen im Katalog abonniert, sodass Sie beim Testen keinen bestimmten Plan bzw. keine bestimmte Anwendung angeben müssen.
+    **Hinweis:** Das automatische Abonnement ist nur für Entwicklungskataloge verfügbar.
+  3. Wenn es sich bei dem Katalog um den Standardbereitstellungskatalog handelt, wählen Sie **Standard** aus. Dann können Aufrufe
+an die APIs, die im Katalog veröffentlicht sind, eine kürzere URL verwenden, die nicht den
 Katalognamen enthält.
-**Hinweis:** Sie können nur **Standard** für einen Katalog auswählen.
+    **Hinweis:** Die Option **Standard** kann nur für einen einzelnen Katalog ausgewählt werden.
   4. **Optional:** Klicken Sie auf **Endpunkte** und füllen Sie die folgenden Felder aus:
         - **Angepasste Gateway-URL**: Geben Sie eine URL im Feld 'Angepasste Gateway-URL' ein. Die Verwendung einer
         angepassten Gateway-URL bietet sich an, wenn Sie ein angepasstes Branding von URLs für APIs erzielen möchten,
@@ -59,17 +58,17 @@ Katalognamen enthält.
         ```
         https://gateway_cluster_hostname/organization_name/Catalog_name
         ```
-         Diesen Standard können Sie jedoch außer Kraft setzen, indem Sie eine URL angeben,
+        Diesen Standard können Sie jedoch außer Kraft setzen, indem Sie eine URL angeben,
          die sich für Ihr Unternehmen besser eignet, wie zum Beispiel `https://api.mycompany.com`. Alle API-Endpunkte, die im Developer Portal angezeigt werden,
         werden dann die angegebene URL widerspiegeln.
-        **Hinweise:**
+			**Hinweise:**
 		    - Sie müssen einen DNS-Eintrag konfigurieren, über den die Zuordnung Ihres angepassten Hostnamens mitsamt Domäne zur
 Standard-Gateway-URL erfolgt.
 		    - Damit die Endpunkte einer API Ihre Standard-Gateway-URL widerspiegeln, müssen Sie die API so konfigurieren,
-dass sie durch das API Connect-Gateway umgesetzt wird. Weitere Informationen finden Sie in [Specifying an alternative host for an API](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step).
+dass sie durch das API Connect-Gateway umgesetzt wird. Weitere Informationen finden Sie unter [Specifying an alternative host for an API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
 		    - Stellen Sie sicher, dass eine einzige angepasste Gateway-URL nicht etwa auf mehrere Kataloge angepasst wird,
 denn das Verhalten für ein derartiges Szenario ist nicht definiert.
-        **Tipp:** Wenn Sie die API aufrufen, können Sie auch den HTTP-Host-Header für die API-Anforderung auf den Wert festlegen, den Sie
+				**Tipp:** Wenn Sie die API aufrufen, können Sie auch den HTTP-Host-Header für die API-Anforderung auf den Wert festlegen, den Sie
 im Feld 'Angepasste Gateway-URL' angegeben haben.
 
 	    - **Angepasste API-URL**
@@ -88,7 +87,7 @@ der API-Assembly auf dem Gateway zugeordnet. Die von der angepassten API-URL abg
 in Entwicklerportalen für die Produktion veröffentlicht, um die Adresse der API zugänglich zu machen.
 
 	    **Hinweis:** Wenn Sie eine angepasste API-URL für einen Katalog angeben, so hat diese Vorrang vor jeglichem Hostnamen, den Sie
-     beim Konfigurieren der API angeben. Weitere Informationen finden Sie in [Specifying an alternative host for an API](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step).
+     beim Konfigurieren der API angeben. Weitere Informationen finden Sie unter [Specifying an alternative host for an API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
 
 	    - **Hostname für Aufrufe der Developer Portal-API:**
      Geben Sie im Fensterbereich für den Port-API-Endpunkt einen Hostnamen für Aufrufe der Developer Portal-API ein. Bei dem Hostnamen, den Sie eingeben,
@@ -118,4 +117,4 @@ wird zum Navigationsbereich hinzugefügt. Sie können Ihre Bereiche verwalten, i
 Für den Katalog werden Bereiche aktiviert und ein Standardbereich namens 'Neuer Bereich'
 wird erstellt.
 
-Weitere Informationen zur Verwendung der Syndikation finden Sie in den entsprechenden Knowledge Center-Themen im Abschnitt zur [Verwendung der Syndikation in IBM API Connect](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html).
+Weitere Informationen zur Verwendung der Syndikation finden Sie in den Abschnitten im Knowledge Center unter [Verwendung der Syndikation in IBM API Connect ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}.

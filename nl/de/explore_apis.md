@@ -20,8 +20,8 @@ die in Ihrer {{site.data.keyword.Bluemix_short}}-Organisation für die gemeinsam
 
 2. Erweitern Sie die API, um weitere zugehörige Informationen anzuzeigen.
 
-3. Um eine API zu subskribieren, klicken Sie auf ein API-Produkt.
-Das Developer Portal wird geöffnet und Sie können einen Plan subskribieren, um auf
+3. Um eine API zu abonnieren, klicken Sie auf ein API-Produkt.
+Das Developer Portal wird geöffnet und Sie können einen Plan abonnieren, um auf
 eine API zuzugreifen.
 
 ## APIs in Developer Portal anzeigen und testen
@@ -42,7 +42,8 @@ auf die Operation, für die Sie den zugehörigen Beispielcode anzeigen möchten.
 Beispielcode für Ihre Operation in verschiedenen Sprachen anzeigen.
 
 Führen Sie die folgenden Schritte aus, um eine API zu testen.
-1. Klicken Sie auf **APIs**. Alle APIs, die von Anwendungsentwicklern genutzt werden können, werden angezeigt.
+1. Klicken Sie auf **APIs**.
+Alle APIs, die von Anwendungsentwicklern genutzt werden können, werden angezeigt.
 
 2. Klicken Sie auf den Namen der API, die Sie testen möchten.
 
@@ -58,7 +59,7 @@ Führen Sie die folgenden Schritte aus, um eine API zu testen.
 Das Ergebnis wird im Feld 'Antworthauptteil' angezeigt. Sie können nach Bedarf weitere
 Parameterwerte testen.
 
-## APIs zur Verwendung subskribieren
+## APIs zur Verwendung abonnieren
 {: #subscrib_apis}
 
 1. Klicken Sie in Developer Portal auf **API-Produkte**.
@@ -69,13 +70,15 @@ Parameterwerte testen.
 für den ausgewählten Plan werden angezeigt.
 
 4. Nachdem Sie den Plan identifiziert haben, den Sie verwenden möchten, klicken Sie auf **Diesen
-Plan verwenden**. Das Dialogfeld 'Diesen Plan verwenden' wird angezeigt.
+Plan verwenden**.
+Das Dialogfeld 'Diesen Plan verwenden' wird angezeigt.
 
 5. Wählen Sie die Anwendung aus, die Sie mit diesem Plan verwenden möchten, und klicken Sie
-anschließend auf **Speichern**. Die Anwendungsdetails werden angezeigt.
+anschließend auf **Speichern**.
+Die Anwendungsdetails werden angezeigt.
 
-6. Um die Operationen für die APIs anzuzeigen, die in den von der Anwendung subskribierten Plänen
-enthalten sind, klicken Sie auf den Namen der API. 
+6. Um die Operationen für die APIs anzuzeigen, die in den von der Anwendung abonnierten Plänen
+enthalten sind, klicken Sie auf den Namen der API.
 
 7. Wenn der Plan nicht eingeschränkt ist, können Sie ihn sofort verwenden. Wenn der Plan eingeschränkt ist,
 wird `Anstehende Genehmigung` angezeigt, und Sie können den angeforderten Plan erst verwenden, nachdem

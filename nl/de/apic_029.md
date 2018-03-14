@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-28"
+lastupdated: "2018-02-12"
 
 ---
 
@@ -15,6 +15,10 @@ lastupdated: "2017-09-28"
 # Neuerungen
 
 {{site.data.keyword.apiconnect_full}} enthält die folgenden Erweiterungen:
+
+- **Benutzerkonten und Developer-Organisationen in Developer Portal löschen**: Sie können Ihr Benutzerkonto und Ihre Developer-Organisationen in Developer Portal löschen. Darüber hinaus können Sie das Eigentumsrecht für Ihre Developer-Organisationen ändern. Weitere Informationen finden Sie in [Developer-Konto löschen![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_account.html){:new_window}, [Developer-Organisation löschen![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_dev_org.html){:new_window} und [Eigentumsrecht einer Developer-Organisation ändern![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_dev_org_ownership.dita){:new_window}.
+
+- __API-Ereignisfeld *endpoint_url* hinzugefügt__: Das Ereignisdatensatzfeld *endpoint_url* identifiziert die Proxy- oder Aufrufziel-URL, bei der die Anforderung fehlgeschlagen ist. Weitere Informationen finden Sie in [Developer-Konto löschen![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/rapim_analytics_apieventrecordfields.html){:new_window}.</dd>
 
 - **Unterstützung und ein Verweis auf Developer Portal-REST-APIs für Analyse hinzugefügt**: Mit den Developer Portal-REST-APIs können Sie Ihre Katalog-APIs analysieren. Weitere Informationen finden Sie unter [Analyse ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apirest.doc/analytics.html){:new_window}.
 

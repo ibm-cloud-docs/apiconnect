@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-26"
+lastupdated: "2017-12-15"
 
 ---
 
@@ -105,22 +105,21 @@ beschrieben.
 </thead>
 <tbody >
 <tr class="style-scope doc-content doc-tr-odd">
-<td style="width: 33.3%" > [Microsoft .NET Framework 4 ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.microsoft.com/en-us/download/details.aspx?id=17851) <a href="https://www.microsoft.com/en-us/download/details.aspx?id=17851" rel="external" target="blank" title="(Wird in neuer Registerkarte oder neuem Fenster geöffnet)" >Microsoft .NET Framework 4</a></td>
+<td style="width: 33.3%" > [Microsoft .NET Framework 4 ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.microsoft.com/en-us/download/details.aspx?id=17851)</td>
 <td style="width: 33.3%">Python v2.7 (v3.x wird nicht unterstützt)</td>
-<td style="width: 33.3%" > [Python-Versionen für Mac OS X ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.python.org/downloads/mac-osx/) <a href="https://www.python.org/downloads/mac-osx/" rel="external" target="blank" title="(Wird in neuer Registerkarte oder neuem Fenster geöffnet)" >Python-Versionen
-für Mac OS X</a></td>
+<td style="width: 33.3%" > [Python-Releases für Mac OS X ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.python.org/downloads/mac-osx/)</td>
 </tr>
-<tr><td style="width: 33.3%" > [Visual Studio ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.visualstudio.com/downloads/download-visual-studio-vs) <a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" rel="external" target="blank" title="(Wird in neuer Registerkarte oder neuem Fenster geöffnet)" >Visual Studio</a></td>
+<tr><td style="width: 33.3%" > [Visual Studio ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.visualstudio.com/downloads/download-visual-studio-vs)</td>
 <td style="width: 33.3%">
 <code>make</code>
 </td>
-<td style="width: 33.3%" > [Xcode ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716) <a href="https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716" rel="external" target="blank" title="(Wird in neuer Registerkarte oder neuem Fenster geöffnet)" >Xcode</a></td>
+<td style="width: 33.3%" > [Xcode ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716)</td>
 </tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" > [Python v2.7.10 ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.python.org/downloads/release/python-2710/) <a href="https://www.python.org/downloads/release/python-2710/" rel="external" target="blank" title="(Wird in neuer Registerkarte oder neuem Fenster geöffnet)" >Python v2.7.10</a></td>
-<td style="width: 33.3%">Eine C/C++-Compiler-Toolchain, zum Beispiel GCC Version 4.2 oder höher.</td>
+<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" > [Python v2.7.10 ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.python.org/downloads/release/python-2710/)</td>
+<td style="width: 33.3%">Eine C/C++-Compiler-Toolchain, zum Beispiel GCC Version 4.2 oder höher. </td>
 <td style="width: 33.3%" >&nbsp;</td>
 </tr>
-<tr><td style="width: 33.3%" > [Microsoft Windows SDK for Windows 7 ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279) <a href="https://www.microsoft.com/en-gb/download/details.aspx?id=8279" rel="external" target="blank" title="(Wird in neuer Registerkarte oder neuem Fenster geöffnet)">Microsoft Windows SDK for Windows 7</a></td>
+<tr><td style="width: 33.3%" > [Microsoft Windows SDK for Windows 7 ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279)</td>
 <td style="width: 33.3%">Verwenden Sie in Debian und in von Debian abgeleiteten Distributionen (Ubuntu, Mint usw.) den folgenden Befehl:
 <pre class="codeblock style-scope doc-content"><code>apt-get install build-essential</code></pre>
 </td>
@@ -235,11 +234,12 @@ abzurufen:
   apic config:set catalog=apic-catalog://<region>.apiconnect.ibmcloud.com/orgs/<username_string>-dev/catalogs/<catalog>
   ```
   {: codeblock}
-Dabei gilt Folgendes:
+    Dabei
+gilt Folgendes:
 
-    - `<region>` steht für die {{site.data.keyword.Bluemix_short}}-Region.
+    - `<region>` steht für die {{site.data.keyword.Bluemix_notm}}-Region.
 
-    - `<username_string>` steht für die {{site.data.keyword.Bluemix_short}}-Organisations-ID ohne Symbole. So sähe beispielsweise
+    - `<username_string>` steht für die {{site.data.keyword.Bluemix_notm}}-Organisations-ID ohne Symbole. So sähe beispielsweise
 `joe@mycompany.com` wie folgt aus: `joemycompanycom`.
 
     - `<catalog>` steht für den Namen des Katalogs.  
@@ -273,9 +273,9 @@ Anwendung auszuwählen:
 ```
 
 4. Wählen Sie den gewünschten Anwendungstyp aus und drücken Sie die **Eingabetaste**.
-Vom Tool wird eine Anzahl an Nachrichten angezeigt, wenn das Projektverzeichnis erstellt und eine Anzahl an
-Verzeichnissen und Dateien erstellt werden. Außerdem wird `npm install` zum Installieren aller
-Projektabhängigkeiten ausgeführt (wie in `package.json` angegeben).
+Vom Tool wird eine Anzahl an Nachrichten angezeigt, wenn das Projektverzeichnis erstellt und
+eine Anzahl an Verzeichnissen und Dateien hinzugefügt werden. Außerdem wird `npm install` zum
+Installieren aller Projektabhängigkeiten ausgeführt (wie in `package.json` angegeben).
 Dieser Vorgang kann einige Zeit dauern.
 
 5. Vor dem Erstellen eines Modells müssen Sie sicherstellen, dass das Basisverzeichnis des Projekts
@@ -327,9 +327,8 @@ möchten.
 ```
 ? Zweig über REST-API bereitstellen? (J/n)
 ```
-Wenn das Modell über REST bereitgestellt
-wird, sind alle Standardoperationen zum Erstellen,
-Lesen, Aktualisieren und Löschen über REST-Endpunkte verfügbar.
+Wenn das Modell über REST bereitgestellt wird, sind alle Standardoperationen
+zum Erstellen, Lesen, Aktualisieren und Löschen über REST-Endpunkte verfügbar.
 
 10. Treffen Sie die gewünschte Auswahl und drücken Sie die **Eingabetaste**.
 Wenn Sie sich dafür entschieden haben, das Modell über REST bereitzustellen, werden Sie vom Tool aufgefordert, den
@@ -340,9 +339,9 @@ Modellnamen in der Pluralform anzugeben.
 
 11. Drücken Sie die **Eingabetaste**, wenn die Standardregeln der englischen Sprache für die Pluralbildung verwendet
 werden sollen.
-Das Tool fragt an, ob Sie ein reines Servermodell erstellen möchten oder ein allgemeines Modell,
-das sowohl in der Server- als auch in der Client-LoopBack&reg;-API
-verwendet werden kann.
+Das Tool fordert Sie auf anzugeben, ob ein reines Servermodell erstellt werden soll oder
+ein allgemeines Modell, das sowohl in der Server- als auch in der
+Client-LoopBack-API verwendet werden kann.
 ```
 ? Allgemeines Modell oder nur Servermodell? (Pfeiltasten verwenden)
 ```
@@ -389,7 +388,7 @@ Geben Sie anschließend einen leeren Eigenschaftsnamen ein.
 16. Fügen Sie bei Bedarf einen weiteren Eigenschaftsnamen hinzu. Falls Sie keine weiteren Eigenschaften benötigen, drücken Sie die
 **Eingabetaste**, damit das Modell hinzugefügt wird.
 
-Ein LoopBack&reg;-Projekt wird standardmäßig mit einer speicherinternen Datenquelle bereitgestellt, die für Entwicklungs- und Testzwecke geeignet ist. Zu einem späteren Zeitpunkt wird es jedoch erforderlich sein, Ihre Modelle mit einer echten Datenquelle wie einem Datenbankserver zu verbinden. Führen Sie die folgenden Schritte aus, um eine Datenquelle hinzuzufügen:
+Ein LoopBack-Projekt wird standardmäßig mit einer speicherinternen Datenquelle bereitgestellt, die für Entwicklungs- und Testzwecke geeignet ist. Zu einem späteren Zeitpunkt wird es jedoch erforderlich sein, Ihre Modelle mit einer echten Datenquelle wie einem Datenbankserver zu verbinden. Führen Sie die folgenden Schritte aus, um eine Datenquelle hinzuzufügen:
 
 1. Geben Sie den folgenden Befehl ein:
 ```
@@ -401,7 +400,7 @@ Das Tool fordert Sie auf, den Namen der Datenquelle anzugeben.
 ? Datenquellennamen eingeben:
 ```
 
-2. Geben Sie einen Namen für die Datenquelle ein. Ein Datenquellenname darf beliebige alphanumerische Zeichen sowie Gedankenstriche und
+2. Geben Sie einen Namen für die Datenquelle ein.  Ein Datenquellenname darf beliebige alphanumerische Zeichen sowie Gedankenstriche und
 Unterstreichungszeichen enthalten. Das Tool fordert Sie auf, den Connector auszuwählen, der für die Datenquelle verwendet werden soll:
 ```
 ? Connector für 'myds' auswählen: (Pfeiltasten verwenden)
@@ -420,7 +419,7 @@ anschließend die **Eingabetaste**.
 Das Tool fügt die Datenquelle zu dem Projekt hinzu.
 
 4. Geben Sie Ihren Berechtigungsnachweise für Host, Port, Benutzer, Kennwort und Datenbank ein.
-Das Tool fordert Sie auf, den LoopBack&reg;-Connector zu installieren.
+Das Tool fordert Sie auf, den LoopBack-Connector zu installieren.
 ```
 Install loopback-connector-<connector>?
 ```
@@ -429,10 +428,10 @@ Install loopback-connector-<connector>?
 Das Tool installiert den Connector.
 
 Hinweis: Wenn Sie den Oracle-Connector ausgewählt haben, müssen Sie eine Umgebungsvariable in
-{{site.data.keyword.Bluemix_short}} festlegen, damit die Oracle-App gestartet wird. Führen Sie dazu die folgenden
+{{site.data.keyword.Bluemix_notm}} festlegen, damit die Oracle-App gestartet wird. Führen Sie dazu die folgenden
 Schritte aus:
 
-1. Wählen Sie in der Benutzerschnittstelle von {{site.data.keyword.Bluemix_short}}
+1. Wählen Sie in der Benutzerschnittstelle von {{site.data.keyword.Bluemix_notm}}
 die Option **Compute** aus.
 
 2. Wählen Sie bei den CF-Anwendungen die Anwendung aus, mit der Sie arbeiten möchten.
@@ -453,10 +452,9 @@ die Option **Compute** aus.
 ### LoopBack-Projekt testen
 {: #test_lb_proj}
 
-Führen Sie die folgenden Schritte aus, um ein LoopBack&reg;-Projekt zu testen.
+Führen Sie die folgenden Schritte aus, um ein LoopBack-Projekt zu testen.
 
-1. **Optional**: Stellen Sie sicher, dass das Basisverzeichnis des Projekts als aktuelles Arbeitsverzeichnis verwendet wird. Geben Sie den
-folgenden Befehl ein:
+1. **Optional**: Stellen Sie sicher, dass das Basisverzeichnis des Projekts als aktuelles Arbeitsverzeichnis verwendet wird. Geben Sie den folgenden Befehl ein:
 ```
 cd <loopback-projektverzeichnis>
 ```
@@ -465,7 +463,7 @@ Hierbei gilt: `<loopback-project-dir>` ist der Name des Verzeichnisses, in dem d
 ```
 apic start
 ```
-Dieser Befehl führt das LoopBack&reg;-Projekt (API) und das Micro Gateway lokal aus. Die folgenden Nachrichten werden angezeigt:
+Dieser Befehl führt das LoopBack-Projekt (API) und das Micro Gateway lokal aus. Die folgenden Nachrichten werden angezeigt:
 ```
 Waiting for loopback-project to complete deployment.
 Waiting for loopback-project-gw to complete deployment.
@@ -477,12 +475,12 @@ dem das Projekt enthalten ist.
 
 Anschließend können Sie beispielsweise unter Verwendung von `curl` beliebige API-Endpunkte testen.
 Wenn Sie die API in einem Web-Browser laden möchten, öffnen Sie die Adresse
-`http://localhost:4001` in Ihrem Browser. Für das LoopBack&reg;-Standardprojekt (Projekttyp 'empty' oder 'hello-world') wird ungefähr Folgendes angezeigt:
+`http://localhost:4001` in Ihrem Browser. Für das LoopBack-Standardprojekt (Projekttyp 'empty' oder 'hello-world') wird ungefähr Folgendes angezeigt:
 ```
 {"started":"2016-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-### LoopBack-Anwendung über die CLI in Bluemix veröffentlichen
+### LoopBack-Anwendung über die CLI in {{site.data.keyword.Bluemix_notm}} veröffentlichen
 {: #pub_lb_app_cli}
 
 Führen Sie die folgenden Schritte aus, um eine LoopBack-Anwendung über die Befehlszeile in {{site.data.keyword.Bluemix_short}} zu veröffentlichen:
@@ -491,7 +489,7 @@ Führen Sie die folgenden Schritte aus, um eine LoopBack-Anwendung über die Bef
 ```
 cd <loopback-projektverzeichnis>
 ```
-2. Geben Sie den folgenden Befehl ein, um sich an {{site.data.keyword.apiconnect_short}} und {{site.data.keyword.Bluemix_short}} anzumelden.
+2. Geben Sie den folgenden Befehl ein, um sich an {{site.data.keyword.apiconnect_short}} und {{site.data.keyword.Bluemix_notm}} anzumelden.
 ```
 apic login --server  <region>.apiconnect.ibmcloud.com -u <username> -p <password>
 ```
@@ -509,20 +507,20 @@ Logged into <region>.apiconnect.ibmcloud.com successfully
 apic organizations -s <region>.apiconnect.ibmcloud.com
 ```
 Dabei gilt Folgendes:
-  * `<region>` steht für die {{site.data.keyword.Bluemix_short}}-Region. Beispiel:
-  * Die Angabe für die Region ist `eu`, wenn Sie {{site.data.keyword.Bluemix_short}} London verwenden.
-  * Die Angabe für die Region ist `us`, wenn Sie {{site.data.keyword.Bluemix_short}} Dallas verwenden.
-  * Die Angabe für die Region ist `au`, wenn Sie {{site.data.keyword.Bluemix_short}} Sydney verwenden.
+  * `<region>` steht für die {{site.data.keyword.Bluemix_notm}}-Region. Beispiel:
+  * Die Angabe für die Region ist `eu`, wenn Sie {{site.data.keyword.Bluemix_notm}} London verwenden.
+  * Die Angabe für die Region ist `us`, wenn Sie {{site.data.keyword.Bluemix_notm}} Dallas verwenden.
+  * Die Angabe für die Region ist `au`, wenn Sie {{site.data.keyword.Bluemix_notm}} Sydney verwenden.
 
   Wenn Sie nicht sicher sind, wie die Angabe in Ihrem Fall lauten muss, können Sie Ihre Region ermitteln, indem Sie in der Menüleiste auf das {{site.data.keyword.avatar}}-Symbol <img src="images/i-avatar-icon.svg" alt="Avatar-Symbol"/> klicken, um das Widget 'Konto und Unterstützung' zu öffnen und den Inhalt des Regionsfelds zu prüfen.
-7. Geben Sie den folgenden Befehl ein, um Ihre Anwendung in {{site.data.keyword.Bluemix_short}} zu veröffentlichen.
+7. Geben Sie den folgenden Befehl ein, um Ihre Anwendung in {{site.data.keyword.Bluemix_notm}} zu veröffentlichen.
 ```
 apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
 ```
 Dabei gilt Folgendes:
   * `<app>` steht für den Namen der App.
-  * `<org>` steht für den Namen der {{site.data.keyword.Bluemix_short}}-Organisation.
-  * `<region>` steht für die {{site.data.keyword.Bluemix_short}}-Region.
+  * `<org>` steht für den Namen der {{site.data.keyword.Bluemix_notm}}-Organisation.
+  * `<region>` steht für die {{site.data.keyword.Bluemix_notm}}-Region.
 Die folgende Ausgabe wird zurückgegeben:
   ```
   ...preparing project
@@ -543,13 +541,12 @@ Die folgende Ausgabe wird zurückgegeben:
     5. Wählen Sie **DataPower-Gateway-Richtlinien** aus.
     6. Doppelklicken Sie auf **Aufrufen**.
     7. Aktualisieren Sie die folgenden Felder mit den in Schritt 7 abgerufenen Werten.
-        - **Aufruf-URL**: Fügen Sie die API-Ziel-URL ein. Sie müssen das sichere Protokoll HTTPS angeben. Zum
-        Beispiel:
+        - **Aufruf-URL**: Fügen Sie die API-Ziel-URL ein. Sie müssen das sichere Protokoll HTTPS angeben. Beispiel:
         ```
         https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<Bluemix org>-<Bluemix space>.apic.<domain name>$(request.path)
         ```
         Wenn Sie diesen Wert nicht notiert haben, können Sie ihn durch Aufrufen der in Schritt 7 zurückgegebenen Management-URL abrufen.
-        Sie können den Wert auch ermitteln, indem Sie sich an {{site.data.keyword.Bluemix_short}} anmelden und die Informationen zu Ihrer App aufrufen.
+        Sie können den Wert auch ermitteln, indem Sie sich an {{site.data.keyword.Bluemix_notm}} anmelden und die Informationen zu Ihrer App aufrufen.
         - **TLS-Profil**: Fügen Sie den Wert für 'API invoke tls-profile' ein. Beispiel:
         ```
         client:Loopback-client
@@ -559,7 +556,7 @@ Die folgende Ausgabe wird zurückgegeben:
 ## LoopBack-API mit API Designer erstellen
 {: #create_lb_api_design}
 
-Im Folgenden wird die Vorgehensweise zum Erstellen einer LoopBack&reg;-API mit API Designer beschrieben.
+Im Folgenden wird die Vorgehensweise zum Erstellen einer LoopBack-API mit API Designer beschrieben.
 {:shortdesc}
 
 ### Voraussetzungen
@@ -568,7 +565,7 @@ Im Folgenden wird die Vorgehensweise zum Erstellen einer LoopBack&reg;-API mit A
 **Hinweis:** Bei den folgenden Anweisungen wird vorausgesetzt, dass Sie die neueste Version von
 Developer Toolkit verwenden. Informationen zum Überprüfen der neuesten Version finden Sie auf der Seite unter [npm ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.npmjs.com/package/apiconnect){:new_window}-Pakets.
 
-Erstellen Sie in der Befehlszeilenschnittstelle zuerst ein LoopBack&reg;-Projekt. Führen Sie hierfür die folgenden Schritte aus:
+Erstellen Sie zuerst ein LoopBack-Projekt mit der CLI (Befehlszeilenschnittstelle). Führen Sie hierfür die folgenden Schritte aus:
 
 1. Um ein Projekt zu erstellen, öffnen Sie eine Befehlszeile und geben Sie Folgendes ein:
   ```
@@ -624,11 +621,12 @@ apic edit
     ```
     API Designer wird in Ihrem Standard-Web-Browser geöffnet.
 
-2. Geben Sie auf der Anmeldeseite Ihre Bluemix&reg;-ID und das zugehörige Kennwort ein. Klicken Sie auf**Anmelden**.
+2. Geben Sie auf der Anmeldeseite Ihre {{site.data.keyword.Bluemix_notm}}-ID und das
+zugehörige Kennwort ein. Klicken Sie auf**Anmelden**.
 
 3. Klicken Sie auf **Modelle**.
 
-4. Klicken Sie auf **Hinzufügen**. Das Fenster **LoopBack&reg;-Modell** wird geöffnet.
+4. Klicken Sie auf **Hinzufügen**. Das Fenster **LoopBack-Modell** wird geöffnet.
 
 5. Geben Sie einen Modellnamen ein.
 Ein Modellname darf beliebige alphanumerische Zeichen sowie Gedankenstriche und Unterstreichungszeichen
@@ -642,11 +640,11 @@ enthalten.
 
 9. Klicken Sie nach dem Angeben der Eigenschaften für das Modell auf **Speichern**.
 
-In einem leeren LoopBack&reg;-Projekt sind standardmäßig keine Datenquellen definiert. Führen Sie die folgenden Schritte aus, um eine Datenquelle zu definieren:
+In einem leeren LoopBack-Projekt sind standardmäßig keine Datenquellen definiert. Führen Sie die folgenden Schritte aus, um eine Datenquelle zu definieren:
 1. Klicken Sie auf **Datenquellen**.
 
 2. Klicken Sie auf das Symbol **Hinzufügen**.
-Das Fenster **Neues LoopBack&reg;-Modell** wird geöffnet.
+Das Fenster **Neues LoopBack-Modell** wird geöffnet.
 
 3. Geben Sie einen Datenquellennamen ein. Ein Datenquellenname darf beliebige alphanumerische Zeichen sowie Gedankenstriche und
 Unterstreichungszeichen enthalten.
@@ -664,9 +662,9 @@ Sie den Connector, indem Sie den folgenden Befehl eingeben:
 ```
 npm install --save <connector-package>
 ```
-    Hierbei gilt: `<connector-package>` ist der Name des npm-Pakets für den LoopBack&reg;-Connector, den Sie ausgewählt haben. Die folgende Tabelle enthält eine Liste der Connectorpakete.
+    Hierbei gilt: `<connector-package>` ist der Name des npm-Pakets für den LoopBack-Connector, den Sie ausgewählt haben. Die folgende Tabelle enthält eine Liste der Connectorpakete.
 
-**Hinweis:** Die speicherinternen Connector und E-Mail-Connector sind in LoopBack&reg; integriert, d. h. sie müssen nicht installiert werden.
+**Hinweis:** Die speicherinternen Connector und E-Mail-Connector sind in LoopBack integriert, d. h. sie müssen nicht installiert werden.
 
 <table>
 <caption>Tabelle 3. LoopBack-Connector</caption>
@@ -713,13 +711,13 @@ npm install --save <connector-package>
 </tbody>
 </table>
 
-Weitere Informationen finden Sie in der [LoopBack-Dokumentation unter Building a Connector ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://http://loopback.io//doc/en/lb3/Defining-data-sources.html){:new_window}.
+Weitere Informationen finden Sie in der [LoopBack-Dokumentation unter Building a Connector ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){:new_window}.
 
 **Hinweis:** Wenn Sie den Oracle-Connector ausgewählt haben, müssen Sie eine Umgebungsvariable in
-{{site.data.keyword.Bluemix_short}} festlegen, damit die Oracle-App gestartet wird. Führen Sie dazu die folgenden
+{{site.data.keyword.Bluemix_notm}} festlegen, damit die Oracle-App gestartet wird. Führen Sie dazu die folgenden
 Schritte aus:
 
-1. Wählen Sie in der Benutzerschnittstelle von {{site.data.keyword.Bluemix_short}}
+1. Wählen Sie in der Benutzerschnittstelle von {{site.data.keyword.Bluemix_notm}}
 die Option **Compute** aus.
 
 2. Wählen Sie bei den CF-Anwendungen die Anwendung aus, mit der Sie arbeiten möchten.
@@ -737,24 +735,23 @@ die Option **Compute** aus.
 
 8. Klicken Sie auf **Speichern**.
 
-Führen Sie die folgenden Schritte aus, um ein LoopBack&reg;-Projekt zu testen:
+Führen Sie die folgenden Schritte aus, um ein LoopBack-Projekt zu testen:
 1. Klicken Sie auf das Symbol **Server starten**.
 Die folgende Nachricht wird angezeigt:
 ```
 http://localhost:<4001/>Running
 ```
-In Abhängigkeit von Ihrer Projektkonfiguration
-und den weiteren aktiven Prozessen wird möglicherweise
+In Abhängigkeit von Ihrer Projektkonfiguration und den weiteren aktiven Prozessen wird möglicherweise
 eine andere Portnummer angezeigt.
 
-2. Klicken Sie auf **localhost:4001**, um den API-Stammendpunkt anzuzeigen. Für das
-LoopBack&reg;-Standardprojekt (Projekttyp 'empty' oder 'hello-world') wird
-ungefähr Folgendes angezeigt:
+2. Klicken Sie auf **localhost:4001**, um den API-Stammendpunkt anzuzeigen. Für das LoopBack-Standardprojekt
+(Projekttyp 'empty' oder 'hello-world') wird in etwa
+Folgendes angezeigt:
 ```
 {"started":"2017-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-Erstellen Sie als Nächstes ein Produkt. Weitere Informationen finden Sie unter [Produkte erstellen](managing_products.html#create_products).
+Erstellen Sie als Nächstes ein Produkt. Weitere Informationen finden Sie in [Produkt erstellen](managing_products.html#create_product).
 **Tipp:** Wann immer Sie eine neue Eingabeaufforderung öffnen, müssen Sie sicherstellen, dass Ihr aktuelles Arbeitsverzeichnis das
 Basisverzeichnis des Projekts ist. Geben Sie hierfür den folgenden
 Befehl ein:

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-25"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -39,26 +39,26 @@ Produktlebenszyklus für eine Produktversion.
 <td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">Bereitgestellt</td>
 <td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">Eine nicht veränderbare Kopie der Produktversion ist in der Zielumgebung
 bereitgestellt. 'Bereitgestellt' ist der Anfangsstatus beim Bereitstellen eines Produktentwurfs. Ein Produkt mit dem Status 'Bereitgestellt' ist noch nicht
-für Entwickler sichtbar und kann noch nicht von Entwicklern subskribiert werden.</td>
+für Entwickler sichtbar und kann noch nicht von Entwicklern abonniert werden.</td>
 </tr>
 <tr class="style-scope doc-content doc-tr-odd">
 <td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">Veröffentlicht</td>
 <td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">Die Produktversion wird zielgruppenspezifisch für Entwickler oder Communitys
-angezeigt und kann subskribiert werden.</td>
+angezeigt und kann abonniert werden.</td>
 </tr>
 <tr class="style-scope doc-content doc-tr-even">
 <td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">Veraltet</td>
 <td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">Die Produktversion ist nur für Entwickler sichtbar, deren Anwendungen derzeit
-subskribiert sind. Neue Subskriptionen für das Produkt sind nicht möglich.</td>
+abonniert sind. Neue Abonnements für das Produkt sind nicht möglich.</td>
 </tr>
 <tr class="style-scope doc-content doc-tr-odd">
 <td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">Zurückgezogen</td>
-<td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">Die Produktversion kann weder angezeigt noch subskribiert werden und alle zugehörigen
+<td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">Die Produktversion kann weder angezeigt noch abonniert werden und alle zugehörigen
 APIs sind gestoppt. Eine zurückgezogene Produktversion wird standardmäßig auf der Seite
 Produkte in der Benutzerschnittstelle von API Manager angezeigt.</td>
 </tr>
 <tr class="style-scope doc-content doc-tr-even"><td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">Archiviert</td>
-<td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">Die Produktversion kann weder angezeigt noch subskribiert werden und alle zugehörigen
+<td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">Die Produktversion kann weder angezeigt noch abonniert werden und alle zugehörigen
 APIs sind gestoppt. Die Produktversion wird nicht standardmäßig auf der Seite Produkte in der Benutzerschnittstelle von API Manager angezeigt.</td>
 </tr>
 </tbody>
@@ -117,19 +117,19 @@ das Produkt im Abschnitt **Info** ein.
 7. Geben Sie im Abschnitt **Sichtbarkeit** an, für welche Benutzer
 das Produkt sichtbar sein soll. Auswahlmöglichkeiten sind **Öffentlich**, **Authentifizierte
 Benutzer** oder **Angepasst**. Wenn Sie die Option **Angepasst** auswählen,
-können Sie im Feld **Typ zum Hinzufügen** nach den Entwicklerorganisationen oder
+können Sie im Feld **Typ zum Hinzufügen** nach den Developer-Organisationen oder
 -Communitys suchen, für die die Pläne im Produkt sichtbar sein sollen.
 
     **Hinweis:**
-    Um nach Entwicklerorganisationen oder -Communitys zu suchen, muss das Produkt den Status
+    Um nach Developer-Organisationen oder -Communitys zu suchen, muss das Produkt den Status
     'Bereitgestellt', 'Veröffentlicht' oder 'Veraltet' aufweisen. Wenn es sich bei dem Katalog, in dem das bereitgestellte,
     veröffentlichte oder veraltete Produkt enthalten ist, nicht um einen Sandbox-Katalog handelt, können Sie keine weiteren Änderungen
-    an dem Produkt vornehmen, solange es eine dieser Statusangaben aufweist. Weitere Informationen finden Sie unter [Produktlebenszyklus](#prod_lifecycle}).
+    an dem Produkt vornehmen, solange es eine dieser Statusangaben aufweist. Weitere Informationen finden Sie unter [Produktlebenszyklus](#prod_lifecycle).
 
-8. Geben Sie an, welche Benutzer das Produkt subskribieren können. Auswahlmöglichkeiten sind **Authentifizierte
+8. Geben Sie an, welche Benutzer das Produkt abonnieren können. Auswahlmöglichkeiten sind **Authentifizierte
 Benutzer** oder **Angepasst**. Wenn Sie **Angepasst** auswählen,
-können Sie im Feld **Typ zum Hinzufügen** nach den Entwicklerorganisationen oder
--Communitys suchen, die in der Lage sein sollen, die Pläne in dem Produkt zu subskribieren.
+können Sie im Feld **Typ zum Hinzufügen** nach den Developer-Organisationen oder
+-Communitys suchen, die in der Lage sein sollen, die Pläne in dem Produkt zu abonnieren.
 
 9. Geben Sie im Abschnitt für APIs an, welche APIs Sie in das Produkt einbeziehen möchten.
     1. Klicken Sie auf das Symbol **API hinzufügen**.
@@ -172,8 +172,8 @@ erreicht ist. Andernfalls wird eine Warnung ausgegeben.
     die Begrenzung auf Planebene außer Kraft setzen.
 
 15. **Optional**:
-Geben Sie an, ob für Ihren Plan eine Subskriptionsgenehmigung erforderlich ist. Wenn für Subskriptionen der Entwickler eine Genehmigung über
-die Benutzerschnittstelle von API Manager erforderlich sein soll, wählen Sie **Subskriptionsgenehmigung erforderlich** aus.
+Geben Sie an, ob für Ihren Plan eine Abonnementgenehmigung erforderlich ist. Wenn für Abonnements der Entwickler eine Genehmigung über
+die Benutzerschnittstelle von API Manager erforderlich sein soll, wählen Sie **Abonnementgenehmigung erforderlich** aus.
 Wenn keine Genehmigung erforderlich sein soll, wählen Sie das Kontrollkästchen ab.
 
 16. **Optional**:
@@ -199,7 +199,7 @@ Stellen Sie als Nächstes Ihr Produkt in einem Katalog bereit. Weitere Informati
 
 Stellen Sie ein Produkt bereit, um vor dem Veröffentlichen eine bestimmte Version des Produkts
 in einem Katalog zu erstellen. Ein Produkt mit dem Status 'Bereitgestellt' ist noch nicht für Entwickler sichtbar
-und kann noch nicht von Entwicklern subskribiert werden.
+und kann noch nicht von Entwicklern abonniert werden.
 
 **Hinweis:** Die Benutzerschnittstelle von API Manager bietet ebenfalls die Möglichkeit zum Bereitstellen von Produkten;
 die bevorzugte Methode für diese Tasks ist jedoch die Benutzerschnittstelle von API Designer, wie in der folgenden Prozedur beschrieben.
@@ -220,11 +220,11 @@ bereitgestellt.
 
 5. Gehen Sie wie folgt vor, wenn der Katalog, in dem Sie das Produkt bereitstellen möchten, nicht in der Liste enthalten ist:
     1. Klicken Sie auf **Ziele hinzufügen und verwalten**.
-    2. Klicken Sie auf **IBM Bluemix-Ziel hinzufügen**.
+    2. Klicken Sie auf **{{site.data.keyword.Bluemix_notm}}-Ziel hinzufügen**.
     3. Wählen Sie die {{site.data.keyword.Bluemix_short}}-**Region**
 für die Veröffentlichung aus.
-    4. Wählen Sie die {{site.data.keyword.Bluemix_short}}-**Organisation**
-aus, die Sie veröffentliche möchten.
+    4. Wählen Sie die {{site.data.keyword.Bluemix_notm}}-**Organisation**
+für die Veröffentlichung aus.
     5. Eine Liste mit Katalogen wird angezeigt. Wählen Sie den Katalog aus, in dem Sie die Anwendung veröffentlichen möchten.
     6. Klicken Sie auf **Weiter**.
     7. Wenn Sie über eine LoopBack-Anwendung verfügen, die Sie veröffentlichen möchten, wählen Sie die App aus, in der die Veröffentlichung erfolgen soll.
@@ -239,7 +239,7 @@ Ihr Produkt wird in einem Katalog bereitgestellt. Um den Status des Produkts im 
 öffnen Sie die Benutzerschnittstelle von API Manager, wählen Sie im Navigationsbereich den Abschnitt
 für das Dashboard aus und klicken Sie auf den betreffenden Katalog. Für das Produkt wird der Status 'Bereitgestellt' angezeigt.
 
-- Öffnen Sie das {{site.data.keyword.Bluemix_short}} **-Dashboard**. Die Kachel für die Anwendung wird im Bereich 'Anwendungen' angezeigt.
+- Öffnen Sie das {{site.data.keyword.Bluemix_notm}} **-Dashboard**. Die Kachel für die Anwendung wird im Bereich 'Anwendungen' angezeigt.
 
 Öffnen Sie API Manager, um Ihr Produkt in einer Community zu veröffentlichen, damit Anwendungsentwickler
 im Developer Portal darauf zugreifen können. Weitere Informationen finden Sie unter [Produkt veröffentlichen](#publish_proj}).
@@ -268,24 +268,25 @@ Status angezeigt werden sollen, indem Sie die entsprechenden Filteroptionen rech
 
 2. Klicken Sie neben der Produktversion, mit der Sie arbeiten möchten, auf das Symbol
 **Verwalten** und anschließend auf **Veröffentlichen**. Das Dialogfeld
-zum Bearbeiten der Sichtbarkeit und der Subskribenten wird angezeigt.
+zum Bearbeiten der Sichtbarkeit und der Abonnenten wird angezeigt.
 
 3. Geben Sie die folgenden Optionen an:
     - `Sichtbar für:` Sie können **Öffentliche Benutzer**, **Authentifizierte Benutzer**
     oder **Angepasst** auswählen. Wenn Sie `Angepasst` auswählen, können Sie im Feld **Typ zum Hinzufügen**
 nach den Organisationen oder Communitys suchen, für die das Produkt sichtbar sein soll.
-    - `Subskribierbar für:` Sie können **Authentifizierte Benutzer** oder **Angepasst** auswählen. Wenn
-Sie `Angepasst` auswählen, können Sie im Feld **Typ zum Hinzufügen** nach den Organisationen oder Communitys suchen, für die das Produkt sichtbar sein soll.
+    - `Abonnierbar für:` Sie können **Authentifizierte Benutzer** oder **Angepasst** auswählen. Wenn Sie `Angepasst` auswählen, können Sie im Feld **Typ zum Hinzufügen**
+nach den Organisationen oder Communitys suchen, für die das Produkt sichtbar sein soll.
 
 4. Klicken Sie auf **Veröffentlichen**.
     Wenn zum Veröffentlichen von Produkten in diesem Katalog eine Genehmigung erforderlich ist, wird eine Genehmigungsanforderung gesendet und das Produkt wird in
     den Status 'Anstehend' versetzt. Das Produkt wird veröffentlicht, sobald die Anforderung genehmigt wurde. Falls keine Genehmigung
     erforderlich ist, wird die Produktversion sofort veröffentlicht und in den Status 'Veröffentlicht'
-    versetzt. 
+    versetzt.
 
 Ihr Produkt befindet sich im Status 'Veröffentlicht'. Das Produkt ist in Ihrem Katalog
-veröffentlicht und für die von Ihnen angegebenen Organisationen oder Communitys verfügbar. Anwendungsentwickler, die den von Ihnen ausgewählten Gruppen angehören,
-können die im Produkt enthaltenen APIs anzeigen und verwenden. Alle Anforderungen der Anwendungsentwickler, die Ihr Produkt verwenden möchten,
+veröffentlicht und für die von Ihnen angegebenen Organisationen oder Communitys verfügbar. Anwendungsentwickler,
+die den von Ihnen ausgewählten Gruppen angehören, können die im Produkt enthaltenen APIs anzeigen und
+verwenden. Alle Anforderungen der Anwendungsentwickler, die Ihr Produkt verwenden möchten,
 werden in der Registerkarte 'Genehmigungen' des betreffenden Katalogs angezeigt und können dort
 von Ihnen akzeptiert oder abgelehnt werden.
 
@@ -321,7 +322,7 @@ und wählen Sie **SAML** aus.
 
 7. Klicken Sie im Navigationsbereich auf das Symbol **Entwickler**.
 
-8. Klicken Sie auf **Bluemix-Organisation hinzufügen**.
+8. Klicken Sie auf **IBM Cloud-Organisation hinzufügen**.
 
 9. Fügen Sie Ihre {{site.data.keyword.Bluemix_short}}-Benutzer-E-Mail-Adresse
 hinzu und klicken Sie auf **Hinzufügen**.
@@ -329,30 +330,30 @@ hinzu und klicken Sie auf **Hinzufügen**.
 10. Eine Einladung wird an Ihre E-Mail-Adresse gesendet.
 
 11. Klicken Sie auf den Link in der E-Mail, um die Einladung anzunehmen.
-Die {{site.data.keyword.Bluemix_short}}-Benutzerschnittstelle
+Die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle
 wird geöffnet.
 
-12. Wählen Sie Ihre {{site.data.keyword.Bluemix_short}}-Organisation aus
+12. Wählen Sie Ihre {{site.data.keyword.Bluemix_notm}}-Organisation aus
 und klicken Sie auf **Bestätigen**.
 
 13. Klicken Sie in der Benutzerschnittstelle von API Manager auf das Symbol **Produkte**.
 
 14. Klicken Sie neben der Produktversion, mit der Sie arbeiten möchten, auf das Symbol
 **Verwalten** und anschließend auf **Veröffentlichen**. Das Dialogfeld
-zum Bearbeiten der Sichtbarkeit und der Subskribenten wird angezeigt.
+zum Bearbeiten der Sichtbarkeit und der Abonnenten wird angezeigt.
 
 15. Geben Sie die folgenden Optionen an:
     - **Sichtbar für:** Wählen Sie **Angepasst** aus und verwenden Sie das Feld **Typ zum Hinzufügen** zum
-Auswählen der Entwicklerorganisation und aller anderen, die Sie hinzufügen möchten.
-    - **Subskribierbar für:** Wählen Sie **Angepasst** aus und verwenden Sie das Feld **Typ zum Hinzufügen** zum
-Auswählen der Entwicklerorganisation und aller anderen, die Sie hinzufügen möchten.
+Auswählen der Developer-Organisation und aller anderen, die Sie hinzufügen möchten.
+    - **Abonnierbar für:** Wählen Sie **Angepasst** aus und verwenden Sie das Feld **Typ zum Hinzufügen** zum
+Auswählen der Developer-Organisation und aller anderen, die Sie hinzufügen möchten.
 
 16. Klicken Sie auf **Veröffentlichen**.
 
-Wenn zum Veröffentlichen von Produkten in diesem Katalog eine Genehmigung erforderlich ist, wird eine Genehmigungsanforderung gesendet und das Produkt
-wird in den Status 'Anstehend' versetzt. Das Produkt wird veröffentlicht, sobald die Anforderung genehmigt wurde. Falls keine Genehmigung erforderlich ist,
+Wenn zum Veröffentlichen von Produkten in diesem Katalog eine Genehmigung erforderlich ist, wird eine Genehmigungsanforderung gesendet und das Produkt wird in
+    den Status 'Anstehend' versetzt. Das Produkt wird veröffentlicht, sobald die Anforderung genehmigt wurde. Falls keine Genehmigung erforderlich ist,
 wird die Produktversion sofort veröffentlicht und in den Status 'Veröffentlicht'
-versetzt. 
+versetzt.
 
 Das Produkt wird in der Registerkarte **APIs durchsuchen** des {{site.data.keyword.apiconnect_short}}-**Dashboards**
 angezeigt. Wenn Sie auf den Link für das Produkt klicken, wird das Produkt im Developer Portal

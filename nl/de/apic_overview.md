@@ -42,7 +42,8 @@ Erstellungs-, Lese-, Aktualisierungs- und Löschoperationen.
 
 APIs werden im Entwicklertoolkit erstellt. Das Entwicklertoolkit beinhaltet eine Befehlszeilenschnittstelle
 (Command Line Interface, CLI) sowie die grafische Benutzerschnittstelle API Designer. Um auf das Entwicklertoolkit zuzugreifen,
-müssen Sie es zunächst von npm herunterladen und installieren. Beim Installieren des Toolkits erstellen Sie zunächst ein LoopBack-Projekt. Das folgende Diagramm
+müssen Sie es zunächst von npm herunterladen und installieren.
+Beim Installieren des Toolkits erstellen Sie zunächst ein LoopBack-Projekt. Das folgende Diagramm
 zeigt den Inhalt eines LoopBack-Projekts.
 
 - **LoopBack-Projekt**: Das LoopBack-Projekt enthält die LoopBack-Anwendung und das API-Produkt.
@@ -79,7 +80,7 @@ Ein Produkt enthält einen Plan, der wiederum eine API beinhaltet, wie im folgen
 
 ### Pläne
 
-Eine API, die für einen Kunden bereitgestellt werden soll, muss in einem Plan enthalten sein. Pläne ermöglichen das Bereitstellen unterschiedlicher Produktangebote. Dabei können Pläne APIs gemeinsam nutzen; ob eine Genehmigung für die Subskription erforderlich ist, hängt jedoch von dem Plan selbst ab. Darüber hinaus können Sie mithilfe von Plänen Quotenbegrenzungen durchsetzen oder mithilfe von Operationen in den APIs eines Plans die Quotenbegrenzung für diesen Plan außer Kraft setzen.
+Eine API, die für einen Kunden bereitgestellt werden soll, muss in einem Plan enthalten sein. Pläne ermöglichen das Bereitstellen unterschiedlicher Produktangebote. Dabei können Pläne APIs gemeinsam nutzen; ob eine Genehmigung für das Abonnement erforderlich ist, hängt jedoch von dem Plan selbst ab. Darüber hinaus können Sie mithilfe von Plänen Quotenbegrenzungen durchsetzen oder mithilfe von Operationen in den APIs eines Plans die Quotenbegrenzung für diesen Plan außer Kraft setzen.
 
 ### Produkte
 
@@ -87,8 +88,8 @@ Pläne und APIs werden in Produkten zusammengefasst. Produkte ermöglichen das V
 
 Das folgende Diagramm veranschaulicht die Beziehungen zwischen Produkten, Plänen und APIs. Dabei wird deutlich, dass Pläne nur einem Produkt zugeordnet sind, sie können jedoch verschiedene APIs für andere Pläne beinhalten und APIs mit Plänen aus jedem beliebigen Produkt gemeinsam nutzen. In der Abbildung wird die Hierarchie der Produkte, Pläne und APIs dargestellt. <img src="images/plan_product_hierarchy.png" alt="Abbildung der Hierarchie der Produkte, Pläne und APIs."/>
 
-Pläne können nur innerhalb von Produkten erstellt werden und diese Produkte werden dann in einem Katalog veröffentlicht. In einem Lebenszyklusmanager kann die Verfügbarkeit und Sichtbarkeit von APIs  und Plänen mit API Manager gesteuert werden. Anschließend kann der Kunde im Developer Portal einen der für ihn verfügbaren Pläne subskribieren. Die Verfügbarkeit wird in API Manager festgelegt. Der Benutzer kann lediglich einen Plan aus
-einem bestimmten Produkt subskribieren. Mehrere Pläne innerhalb eines Produkts können nützlich sein, um ähnliche Zielsetzungen mit verschiedenen Leistungsanforderungen zu realisieren. Beispielsweise können Sie einen "Demoplan" verwenden, der eine bestimmte API zur Verfügung stellt, und einen "Vollständigen Plan", der mehrere APIs zur Verfügung stellt.
+Pläne können nur innerhalb von Produkten erstellt werden und diese Produkte werden dann in einem Katalog veröffentlicht. In einem Lebenszyklusmanager kann die Verfügbarkeit und Sichtbarkeit von APIs  und Plänen mit API Manager gesteuert werden. Anschließend kann der Kunde im Developer Portal einen der für ihn verfügbaren Pläne abonnieren. Die Verfügbarkeit wird in API Manager festgelegt. Der Benutzer kann lediglich einen Plan aus
+einem bestimmten Produkt abonnieren. Mehrere Pläne innerhalb eines Produkts können nützlich sein, um ähnliche Zielsetzungen mit verschiedenen Leistungsanforderungen zu realisieren. Beispielsweise können Sie einen "Demoplan" verwenden, der eine bestimmte API zur Verfügung stellt, und einen "Vollständigen Plan", der mehrere APIs zur Verfügung stellt.
 
 Pläne können jedoch nicht nur steuern, welche APIs ein Kunde nutzen kann, sondern auch Quotenbegrenzungen umsetzen. Eine Quotenbegrenzung kann als Standardrate für einen ganzen Plan implementiert werden, oder um bestimmte Operationen einer API innerhalb des Plans von der Quotenbegrenzung auszuschließen. Verschiedene Pläne können über verschiedene Quotenbegrenzungen verfügen, sowohl zwischen Operationen als auch für die Gesamtbegrenzung. Auf diese Weise können verschiedene Servicestufen für Kunden bereitgestellt werden. Beispiel: Für einen "Demoplan" kann eine Quotenbegrenzung von 10 Aufrufen pro Minute gelten, während ein "Vollständiger Plan" bis zu 1.000 Aufrufe pro Minute zulässt.
 
@@ -102,7 +103,7 @@ Weitere Informationen zu den Tasks, die zum Verwalten von APIs erforderlich sind
 
 ### Kataloge
 
-Produkte müssen in einem Katalog bereitgestellt und anschließend in Entwicklerorganisationen veröffentlicht werden, damit sie für Anwendungsentwickler zur Verfügung gestellt werden können. In {{site.data.keyword.apiconnect_short}} können Sie mehrere Kataloge erstellen. Kataloge sind nützlich, um Produkte und APIs zum Testen voneinander zu trennen, bevor Sie sie Entwicklerorganisationen verfügbar machen.
+Produkte müssen in einem Katalog bereitgestellt und anschließend in Developer-Organisationen veröffentlicht werden, damit sie für Anwendungsentwickler zur Verfügung gestellt werden können. In {{site.data.keyword.apiconnect_short}} können Sie mehrere Kataloge erstellen. Kataloge sind nützlich, um Produkte und APIs zum Testen voneinander zu trennen, bevor Sie sie Developer-Organisationen verfügbar machen.
 
 Ein Katalog ist ein Bereitstellungsziel und verhält sich wie eine logische Partition des Gateway und des Developer Portal. Die URL für API-Aufrufe und für das Developer Portal ist für einen bestimmten Katalog spezifisch. In einer Standardkonfiguration verwendet eine API-Provider-Organisation einen Entwicklungskatalog zum Testen von APIs, die sich in der Entwicklung befinden, und einen Produktionskatalog für das Hosten von APIs, die für eine umfassende Verwendung bereit sind. Ein allgemeiner Ansatz ist das Vorhandensein einer Entwicklungscloud mit einem Entwicklungskatalog, einige Testkataloge und eine Produktionscloud mit einem eigenen Testkatalog.
 
@@ -112,7 +113,7 @@ Sie können die folgenden Einstellungen auf einen Katalog anwenden:
 
 - **Entwicklung**: Ein Entwicklungskatalog wird standardmäßig bereitgestellt. Ein solcher Katalog darf nur für Testzwecke verwendet werden. In einem Entwicklungskatalog werden die Bereitstellungs- (Staging-) und Veröffentlichungsaktionen erzwungen. Das bedeutet, dass ein bereits veröffentlichtes Produkt bei seiner erneuten Veröffentlichung ohne Warnung überschrieben wird. Werden Konflikte festgestellt, werden diese automatisch vom System aufgelöst. Aktionen zum Rückgängigmachen der Veröffentlichung erfolgen automatisch. Wenn Sie das Testtool in einem Entwicklungskatalog verwenden, werden alle getesteten Produkte durchgesetzt und überschreiben bereitgestellte und veröffentlichte Produkte selbst dann, wenn die Operationen im Developer Portal verwendet werden. Ein aus einem Entwicklungskatalog erstelltes Developer Portal muss in gleicher Weise (d. h. nur für Testzwecke) verwendet werden wie der Katalog.
 
-- **Automatische Subskription**: Die Aktivierung der automatischen Subskription vereinfacht das Testen Ihrer APIs in der API Manager-Benutzerschnittstelle, denn es wird eine Testanwendung mit einer vorab bereitgestellten Client-ID und einem ebensolchen geheimen Clientschlüssel verwendet. Diese Testanwendung ist automatisch bei allen Plänen im Katalog subskribiert, sodass Sie beim Testen keinen bestimmten Plan bzw. keine bestimmte Anwendung angeben müssen. Die Testanwendung unterliegt keinerlei Quotenbegrenzungen. Die automatische Subskription ist nur für Entwicklungskataloge verfügbar.
+- **Automatisches Abonnement**: Die Aktivierung des automatischen Abonnements vereinfacht das Testen Ihrer APIs in der API Manager-Benutzerschnittstelle, denn es wird eine Testanwendung mit einer vorab bereitgestellten Client-ID und einem ebensolchen geheimen Clientschlüssel verwendet. Diese Testanwendung ist automatisch bei allen Plänen im Katalog abonniert, sodass Sie beim Testen keinen bestimmten Plan bzw. keine bestimmte Anwendung angeben müssen. Die Testanwendung unterliegt keinerlei Quotenbegrenzungen. Das automatische Abonnement ist nur für Entwicklungskataloge verfügbar.
 
 - **Standard**: Sie können einen Ihrer Kataloge als Standardkatalog festlegen. Dann können Aufrufe an die APIs, die in diesem Katalog veröffentlicht sind, eine kürzere URL verwenden, die nicht den Katalognamen enthält.
 
@@ -129,7 +130,8 @@ So kann jedes Team unabhängig seine eigenen APIs verwalten.
 Wenn Sie eine API in einem Katalog bereitstellen oder veröffentlichen, für den Bereiche aktiviert sind,
 geben Sie den Bereich innerhalb des Katalogs an, in dem die API bereitgestellt oder veröffentlicht werden soll. Jedoch sind sich Anwendungsentwickler,
 die für den Katalog auf das Developer Portal zugreifen, der Bereichsaufteilung des Katalogs nicht bewusst und sehen die APIs
-als ein koordiniertes Angebot an. Jeder Bereich verfügt über sein eigenes Produkt-Lifecycle-Management, eigene Subskriptionsgenehmigungen und Analysedaten.
+als ein koordiniertes Angebot an.
+Jeder Bereich verfügt über sein eigenes Produkt-Lifecycle-Management, eigene Abonnementgenehmigungen und Analysedaten.
 Mithilfe einer bereichsspezifischen Zugriffssteuerung können Sie den Benutzerzugriff auf die einzelnen Bereiche eingrenzen.
 Beispielsweise kann ein Entwickler im Team 'Flights' nur APIs im Bereich 'Flights' bereitstellen.
 

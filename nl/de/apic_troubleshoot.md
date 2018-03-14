@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -13,27 +13,27 @@ lastupdated: "2017-10-19"
 # Fehlerbehebung
 {: #troubleshoot}
 
-Dieser Abschnitt enthält Antworten auf häufig gestellte Fragen bei der Fehlerbehebung für {{site.data.keyword.apiconnect_long}} unter {{site.data.keyword.Bluemix_short}}.
+Dieser Abschnitt enthält Antworten auf häufig gestellte Fragen bei der Fehlerbehebung für {{site.data.keyword.apiconnect_long}} unter {{site.data.keyword.Bluemix_notm}}.
 {:shortdesc}
 
-## Benutzername und Kennwort, die zum Hinzufügen des API Connect Bluemix-Service erforderlich sind
+## Benutzername und Kennwort, die zum Hinzufügen des {{site.data.keyword.Bluemix_notm}}-Service 'API Connect' erforderlich sind
 
-Nachdem Sie den Service zum {{site.data.keyword.Bluemix_short}}-Dashboard hinzugefügt haben, werden Sie aufgefordert, Benutzernamen und Kennwort einzugeben, wenn Sie versuchen, ihn zu öffnen. 
+Nachdem Sie den Service zum {{site.data.keyword.Bluemix_notm}}-Dashboard hinzugefügt haben, werden Sie aufgefordert, Benutzernamen und Kennwort einzugeben, wenn Sie versuchen, ihn zu öffnen. 
 
 ### Symptome
 {: #ts_sym_usernamepw}
 
-Sie können nicht direkt auf den {{site.data.keyword.Bluemix_short}}-Service zugreifen, wenn Sie eine neue {{site.data.keyword.apiconnect_short}}-Instanz öffnen, sondern müssen sich dazu an API Manager anmelden.
+Sie können nicht direkt auf den {{site.data.keyword.Bluemix_notm}}-Service zugreifen, wenn Sie eine neue {{site.data.keyword.apiconnect_short}}-Instanz öffnen, sondern müssen sich dazu an API Manager anmelden.
 
 ### Ursache
 {: #ts_cause_usernamepw}
 
-Im Browser ist das Blockieren von Cookies eingestellt oder es ist eine eingeschränktere Ebene eingerichtet, als für {{site.data.keyword.apiconnect_short}} erforderlich ist.
+Im Browser ist das Blockieren von Cookies eingestellt oder es ist eine eingeschränktere Ebene eingerichtet, als für {{site.data.keyword.apiconnect_notm}} erforderlich ist.
 
 ### Lösung
 {: #ts_res_usernamepw}
 
-Aktivieren oder erhöhen Sie die Berechtigungsebene der Cookies in den Browsereinstellungen, bis der {{site.data.keyword.Bluemix_short}}-Service geöffnet werden kann.
+Aktivieren oder erhöhen Sie die Berechtigungsebene der Cookies in den Browsereinstellungen, bis der {{site.data.keyword.Bluemix_notm}}-Service geöffnet werden kann.
 
 ## Developer Toolkit kann nicht installiert werden
 
@@ -69,8 +69,8 @@ sudo chown -R $USER /usr/local
 {:codeblock}
 
 Durch diesen Befehl wird Ihr Benutzerkonto zum Eigner des Verzeichnisses `/usr/local`. Dadurch ist es nicht mehr nötig, 'sudo' zum Installieren
-von Node zu verwenden oder die Installation von Paketen global mit npm vorzunehmen. Weitere Informationen finden Sie unter [How to Node ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://howtonode.org/introduction-to-npm){: new_window}. **Hinweis:** Eine Änderung der Eigentumsrechte für ein Verzeichnis ist nur auf einem lokalen Entwicklungssystem angemessen.
-Führen Sie diesen Schritt niemals auf einem Serversystem aus.
+von Node zu verwenden oder die Installation von Paketen global mit npm vorzunehmen. 
+    **Hinweis:** Eine Änderung der Eigentumsrechte für ein Verzeichnis ist nur auf einem lokalen Entwicklungssystem angemessen. Führen Sie diesen Schritt niemals auf einem Serversystem aus.
 
 Verzichten Sie außerdem unbedingt auf die Anwendung
 des zuvor genannten Befehls `chown` auf das Verzeichnis
@@ -145,7 +145,7 @@ sudo xcode-select
 2. Installieren Sie Developer Toolkit erneut.
 
 
-## Developer Toolkit kann unter Ubuntu nicht installiert werden 
+## Developer Toolkit kann unter Ubuntu nicht installiert werden
 
 Nach der Bereitstellung des {{site.data.keyword.apiconnect_short}}-Service schlägt der
 Installationsversuch für Developer Toolkit fehl.
@@ -263,18 +263,18 @@ Für den Stripe-Service zur Kreditkartenverarbeitung ist ein Maximum von 25 Abon
 ### Lösung
 {: #ts_res_nosubscribe}
 
-Stellen Sie sicher, dass Sie über ein Konto auf Unternehmensebene für den {{site.data.keyword.Bluemix_short}} {{site.data.keyword.apiconnect_short}}-Service verfügen und dass weniger als 25 Instanzen vorhanden sind. Entfernen Sie einen Service, wenn die maximale Anzahl an Services vorhanden ist.
+Stellen Sie sicher, dass Sie über ein Konto auf Unternehmensebene für den {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.apiconnect_short}}-Service verfügen und dass weniger als 25 Instanzen vorhanden sind. Entfernen Sie einen Service, wenn die maximale Anzahl an Services vorhanden ist.
 
 ## Hilfe und Unterstützung für API Connect abrufen
 
 Falls Probleme oder Fragen bei der Verwendung von {{site.data.keyword.apiconnect_short}} auftreten, können Sie Hilfe erhalten, indem Sie im Forum nach entsprechenden Informationen suchen oder Fragen stellen. Sie können auch ein Support-Ticket öffnen.
 
-Wenn Sie in den Foren eine Frage stellen, versehen Sie Ihre Frage mit einem Tag, sodass sie von den {{site.data.keyword.Bluemix_short}}-Entwicklungsteams gesehen wird. 
+Wenn Sie in den Foren eine Frage stellen, versehen Sie Ihre Frage mit einem Tag, sodass sie von den {{site.data.keyword.Bluemix_notm}}-Entwicklungsteams gesehen wird. 
 
-- Bei technischen Fragen zur Entwicklung oder Bereitstellung einer App mit {{site.data.keyword.apiconnect_short}} sollten Sie Ihre Frage auf Stack Overflow veröffentlichen und mit den Tags 'ibm-bluemix' und 'api connect' versehen.
+- Bei technischen Fragen zur Entwicklung oder Bereitstellung einer App mit {{site.data.keyword.apiconnect_short}} veröffentlichen Sie Ihre Frage auf Stack Overflow und verwenden Sie die Tags "ibm-cloud" und "api connect".
 
-- Bei Fragen zum Service und zu den Einführungsanweisungen sollten Sie das Forum IBM developerWorks dW Answers verwenden. Schließen Sie die Tags 'bluemix' und 'api connect' ein.
-Weitere Informationen zur Verwendung der Foren finden Sie unter Hilfe aufrufen. 
+- Bei Fragen zum Service und zu den Einführungsanweisungen nutzen Sie das Forum IBM developerWorks dW Answers. Verwenden Sie die Tags "ibm cloud" und "api connect".
+Weitere Einzelheiten zur Verwendung der Foren finden Sie im Abschnitt zum Anfordern von Unterstützung. 
 
 Information dazu, wie Sie ein IBM Support-Ticket öffnen, sowie zu Supportebenen und Ticket-Prioritäten, finden Sie im Abschnitt 'Support kontaktieren'.
 

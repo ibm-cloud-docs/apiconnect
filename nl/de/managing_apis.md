@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 
 ---
 
@@ -18,14 +18,14 @@ lastupdated: "2017-10-19"
 
 Sie können API Connect zum Verwalten der APIs in {{site.data.keyword.Bluemix}} verwenden; hierbei ist es unerheblich, ob sie sich innerhalb von {{site.data.keyword.Bluemix_notm}} oder außerhalb von {{site.data.keyword.Bluemix_notm}} befinden. Durch das Verwalten der APIs können Sie die Nutzung steuern, die Akzeptanz erhöhen und Statistiken verfolgen.
 
-Wenn Sie ein Kunde sind, können Sie die Verwendung in der API Manager-Benutzerschnittstelle verwalten, nachdem ein Entwickler eine API erstellt und das Produkt anhand einer Push-Operation an {{site.data.keyword.Bluemix_short}} übertragen hat. In den folgenden Abschnitten werden die Vorgehensweisen zum Erstellen und Verwalten von Produkten in {{site.data.keyword.apiconnect_short}} beschrieben. Designer.
+Wenn Sie ein Kunde sind, können Sie die Verwendung in der API Manager-Benutzerschnittstelle verwalten, nachdem ein Entwickler eine API erstellt und das Produkt anhand einer Push-Operation an {{site.data.keyword.Bluemix_notm}} übertragen hat. In den folgenden Abschnitten werden die Vorgehensweisen zum Erstellen und Verwalten von Produkten in {{site.data.keyword.apiconnect_short}} beschrieben.
 
 ## Lokale APIs über einen sicheren Gateway verfügbar machen
 {: #expose_apis_sec_gate}
 
 Sie können ein sicheres Gateway erstellen, um lokale APIs sicher in {{site.data.keyword.apiconnect_full}} bereitzustellen.
 
-Wenn Sie ein sicheres Gateway erstellen, integrieren Sie die Funktionen des {{site.data.keyword.Bluemix_short}}
+Wenn Sie ein sicheres Gateway erstellen, integrieren Sie die Funktionen des {{site.data.keyword.Bluemix_notm}}
 {{site.data.keyword.SecureGateway}}-Service in {{site.data.keyword.apiconnect_short}}. Das bedeutet, dass Sie eine sichere Möglichkeit haben,
 von {{site.data.keyword.apiconnect_short}} über eine sichere Passage auf Ihre lokalen APIs zuzugreifen, ohne eine separate Instanz des
 {{site.data.keyword.SecureGateway}}-Service bereitstellen zu müssen. Effektiv erstellen Sie einen Tunnel
@@ -55,8 +55,7 @@ Klicken Sie auf jeden Schritt der geführten Tour, um Ihre Gateway-Einrichtung d
 Das Dialogfeld `Secure Gateway erstellen` wird angezeigt.
 
 4. Geben Sie einen Namen für Ihr Gateway an.
-
-**Hinweis:** Nur alphanumerische Zeichen und Unterstriche sind zulässig.
+    **Hinweis:** Nur alphanumerische Zeichen und Unterstriche sind zulässig.
 
 5. Klicken Sie auf **Speichern**.
 Das Gateway wird gemeinsam mit der Gateway-ID und dem Sicherheitstoken angezeigt.
@@ -74,14 +73,14 @@ installieren, um eine Verbindung zwischen einem fernen Netz und einem sicheren G
     - IBM DataPower&reg;
 
 8. Befolgen Sie die Anweisungen am Bildschirm, um den ausgewählten Client zu installieren und auszuführen.
-
 Weitere Informationen zum Einrichten eines Secure Gateway-Clients finden Sie unter [Client einrichten](../../services/SecureGateway/sg_021.html#sg_021).
 
 9. Wenn Sie die Installation des Clients beendet haben, schließen Sie das Fenster **Secure Gateway-Clients einrichten**.
 
 10. Aktualisieren Sie die Seite.
 
-Die Verbindung zum Client wird hergestellt und die ID und der Status des Gateways werden angezeigt. Sie haben die Gateway-Konfiguration abgeschlossen und ein sicheres Gateway erstellt. Verwenden Sie als Nächstes das sichere Gateway für den Zugriff auf Ihre lokalen APIs.
+Die Verbindung zum Client wird hergestellt und die ID und der Status des Gateways werden angezeigt. Sie haben die Gateway-Konfiguration abgeschlossen und ein sicheres Gateway erstellt.
+Verwenden Sie als Nächstes das sichere Gateway für den Zugriff auf Ihre lokalen APIs.
 
 ### Sicheres Gateway mit den APIs verwenden
 {: #using_sec_gate_apis notoc}
@@ -113,7 +112,7 @@ target-url: http://onpremdb2.rtp.raleigh.ibm.com:3055$(request.path)$(request.se
 
 6. Klicken Sie auf **Speichern** <img src="images/icon_save.png" alt="Symbol 'Speichern'" />.
 
-7. Klicken Sie auf die Registerkarte **Quelle**. Versehen Sie das Feld `secure-gateway` mit dem Wert `true`.
+7. Klicken Sie auf die Registerkarte **Quelle**.  Versehen Sie das Feld `secure-gateway` mit dem Wert `true`.
 
 8. Klicken Sie auf **Alle APIs** > **Produkte** und wählen Sie das zuvor erstellte Produkt aus.
 
@@ -138,7 +137,7 @@ Testen Sie als Nächstes die {{site.data.keyword.SecureGateway}}-API.
 {: test_sec_gate notoc}
 
 Nachdem Sie das Gateway mit einer API verbunden haben, können Sie die API testen, um sicherzustellen, dass das Gateway ordnungsgemäß funktioniert
-und die richtige Antwort zurückgibt. 
+und die richtige Antwort zurückgibt.
 
 Um eine API mit dem sicheren Gateway zu testen, führen Sie die folgenden Schritte aus:
 
@@ -168,7 +167,7 @@ und veröffentlichen**.
 
 Die Testergebnisse werden angezeigt.
 
-## Loopback-Anwendung bereitstellen und veröffentlichen
+## LoopBack-Anwendung per Staging bereitstellen und veröffentlichen
 {: #stage_publish_lb_app}
 
 1. Klicken Sie im Navigationsbereich von API Designer auf **Produkte**.
@@ -176,20 +175,20 @@ Die Registerkarte 'Produkte' wird geöffnet.
 
 2. Wählen Sie die Version des Produkts aus und stellen Sie sicher, dass Sie auf die Version klicken, mit der Sie arbeiten möchten.
 
-3. Um die Laufzeit in {{site.data.keyword.Bluemix_short}} zu veröffentlichen, klicken Sie auf **Veröffentlichen**.
+3. Um die Laufzeit in {{site.data.keyword.Bluemix_notm}} zu veröffentlichen, klicken Sie auf **Veröffentlichen**.
 
-4. Klicken Sie auf **Ziele hinzufügen und verwalten** > **IBM Bluemix-Ziel hinzufügen**.
+4. Klicken Sie auf **Ziele hinzufügen und verwalten** > **IBM Cloud-Ziel hinzufügen**.
 
-5. Wählen Sie die {{site.data.keyword.Bluemix_short}}-**Region** für die Veröffentlichung aus und melden Sie sich an.
+5. Wählen Sie die {{site.data.keyword.Bluemix_notm}}-**Region** für die Veröffentlichung aus und melden Sie sich an.
 
-6. Wählen Sie die {{site.data.keyword.Bluemix_short}}-**Organisation** aus, die Sie veröffentliche möchten.
+6. Wählen Sie die {{site.data.keyword.Bluemix_notm}}-**Organisation** für die Veröffentlichung aus.
 
 7.  Eine Liste mit Katalogen wird angezeigt. Wählen Sie den Katalog aus, in dem Sie die Anwendung veröffentlichen möchten.
 
 8.  Klicken Sie auf **Weiter**.
 
 9. Wählen Sie die LoopBack-Anwendung aus, die Sie veröffentlichen möchten.
-Wenn Sie die Laufzeit zum ersten Mal in {{site.data.keyword.Bluemix_short}} bereitstellen,
+Wenn Sie die Laufzeit zum ersten Mal in {{site.data.keyword.Bluemix_notm}} bereitstellen,
 fügen Sie einen Namen hinzu und klicken Sie auf das Symbol **Hinzufügen**.
 
 10.  Klicken Sie auf **Speichern**.
@@ -237,7 +236,7 @@ beschrieben abrufen.
 
 Führen Sie die folgenden Schritte aus, um zu testen, ob das Veröffentlichen erfolgreich durchgeführt wurde:
 
-1. Stellen Sie sicher, dass die {{site.data.keyword.Bluemix_short}}-App
+1. Stellen Sie sicher, dass die {{site.data.keyword.Bluemix_notm}}-App
 aktiv ist.
 
 2. Öffnen Sie ein Browserfenster und navigieren Sie zur API-Ziel-URL.
@@ -255,7 +254,8 @@ Eine Antwort aus der Serie 200 wird angezeigt.
 ## Katalog konfigurieren
 
 Sie können API Manager-Kataloge erstellen und konfigurieren. Kataloge sind nützlich, um Produkte und APIs zum Testen voneinander zu trennen,
-bevor Sie sie Entwicklerorganisationen verfügbar machen. Wenn Sie einen Katalog konfigurieren, können Sie außerdem das angepasste Branding konfigurieren, sodass
+bevor Sie sie Developer-Organisationen verfügbar machen.
+Wenn Sie einen Katalog konfigurieren, können Sie außerdem das angepasste Branding konfigurieren, sodass
 Sie nicht auf die Verwendung der standardmäßigen API-URL angewiesen sind, die API Manager bereitstellt.
 
 Führen Sie die folgenden Schritte aus, um einen Katalog zu erstellen:
@@ -268,7 +268,8 @@ Das Fenster **Katalog hinzufügen** wird angezeigt.
 3.  Geben Sie den Namen für Ihren neuen Katalog im Feld **Anzeigename** ein.
 
 4. Geben Sie den Text, der das Katalogsegment der URL bilden soll, im
-Feld **Name** ein. **Hinweis:** Das Feld **Name** darf nur alphanumerische Zeichen in Kleinschreibung
+Feld **Name** ein.
+**Hinweis:** Das Feld **Name** darf nur alphanumerische Zeichen in Kleinschreibung
 (a-z und 0-9) oder Trennstriche (-) enthalten. Der Trennstrich darf nicht als erstes oder letztes Zeichen im Namen verwendet
 werden.
 
@@ -281,11 +282,11 @@ Das bedeutet, dass ein bereits veröffentlichtes Produkt bei seiner erneuten Ver
 diese automatisch vom System aufgelöst. Aktionen zum Rückgängigmachen der Veröffentlichung erfolgen automatisch.
 **Hinweis:** Für Entwicklungskataloge werden keine Genehmigungsfelder angezeigt. Der Genehmigungsprozess für Lebenszyklen
 kann nicht aktiviert werden.
-  2. Wenn Sie die automatische Subskription für den Katalog aktivieren möchten, wählen Sie
-**Automatisches Abonnement** aus. Die Aktivierung der
-automatischen Subskription vereinfacht das Testen Ihrer APIs, denn es wird eine Testanwendung mit einer vorab bereitgestellten Client-ID und einem ebensolchen geheimen
-Clientschlüssel verwendet. Diese Testanwendung ist automatisch bei allen Plänen im Katalog subskribiert, sodass Sie beim Testen keinen bestimmten Plan bzw. keine bestimmte
-Anwendung angeben müssen. **Hinweis:** Die automatische Subskription ist nur für Entwicklungskataloge verfügbar.
+  2. Wenn Sie das automatische Abonnement für den Katalog aktivieren möchten, wählen Sie
+**Automatisches Abonnement** aus.
+Die Aktivierung des automatischen Abonnements vereinfacht das Testen Ihrer APIs, denn es wird eine Testanwendung mit einer vorab bereitgestellten Client-ID und einem ebensolchen geheimen
+Clientschlüssel verwendet. Diese Testanwendung ist automatisch bei allen Plänen im Katalog abonniert, sodass Sie beim Testen keinen bestimmten Plan bzw. keine bestimmte
+Anwendung angeben müssen. **Hinweis:** Das automatische Abonnement ist nur für Entwicklungskataloge verfügbar.
   3. Wenn es sich bei dem Katalog um den Standardbereitstellungskatalog handelt, wählen Sie **Standard** aus. Dann können Aufrufe an die APIs,
 die im Katalog veröffentlicht sind, eine kürzere URL verwenden, die nicht den
 Katalognamen enthält.
@@ -336,14 +337,14 @@ Katalognamen enthält.
      Developer Portal-API zugreifen zu können, müssen Sie den Basishostnamen für Aufrufe der Developer Portal-API
      konfigurieren. Diese Aktion ermöglicht API Manager die Zuordnung Ihres Hostnamens zur
      Provider-Organisation und zum Katalog der Developer Portal-API-Aufrufe; es ist nun nicht mehr
-     erforderlich, diese Angaben nachzuschlagen und in die Aufrufe einzubinden. 
+     erforderlich, diese Angaben nachzuschlagen und in die Aufrufe einzubinden.
 
 7. Klicken Sie auf das Symbol **Speichern**.
 
 ## Katalog in Bereiche aufteilen
 
 Um die Syndikationsfunktion in {{site.data.keyword.apiconnect_short}} verwenden zu können, müssen Sie Bereiche in allen Katalogen
-aktivieren, in denen die Syndikationsfunktionalität benötigt wird. 
+aktivieren, in denen die Syndikationsfunktionalität benötigt wird.
 
 Führen Sie die folgenden Schritte aus, um Bereiche in einem Katalog zu aktivieren:
 1. Wählen Sie im Dashboard der Benutzerschnittstelle von API Manager den Katalog aus, mit dem Sie arbeiten möchten.
