@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -112,23 +112,24 @@ Swagger 文件在驗證時發生任何錯誤，那些驗證錯誤會顯示在精
 
 ## 發佈 IBM API Connect 中使用 IBM App Connect Professional 建立的 API
 
-使用此指導教學，您可以發佈及管理使用 IBM&reg; App Connect Professional 搭配 {{site.data.keyword.apiconnect_full}} 建立的 REST API。
+使用此指導教學，您可以發佈及管理使用 IBM App Connect Professional 搭配 {{site.data.keyword.apiconnect_full}} 建立的 REST API。
 
 ### 必要條件
 {: #prereq_pub_api_appconn}
 
-您需要 IBM&reg; App Connect Professional on Cloud 及 IBM API Connect&trade; on Bluemix&reg; 的有效帳戶，才能完成此指導教學。請確定您的 REST API 檔案符合 2.0 版的 Swagger 規格。此檔案的格式可以是 JSON 或 YAML。
+您需要 IBM App Connect Professional on Cloud 和 {{site.data.keyword.apiconnect_short}} 的有效帳戶才能夠完成此指導教學。請確定您的 REST API 檔案符合 2.0 版的 Swagger 規格。此檔案的格式可以是 JSON 或 YAML。
 
-您可以使用 IBM&reg; App Connect Professional 建立 REST API，這些特殊化應用程式可以用來將整合公開為 RESTful Web 服務，且可以由 HTTP 用戶端進行呼叫。建立 API 之後，您可以使用 {{site.data.keyword.apiconnect_short}} 發佈及管理它們。下列清單包含在 {{site.data.keyword.apiconnect_short}} 管理 API 的一些優點：
+您可以使用 IBM App Connect Professional 建立 REST API，也就是特殊化的應用程式，可以用來將整合公開為 RESTful Web 服務，且可以被 HTTP 用戶端呼叫。建立 API 之後，您可以使用 {{site.data.keyword.apiconnect_short}} 發佈及管理它們。下列清單包含在 {{site.data.keyword.apiconnect_short}} 管理 API 的一些優點：
 
 - 您可以監視 API 的呼叫數目。
 - 您可以控制 API 的呼叫數目。
 - 您可以維護多個版本的 API。
 
-如需瞭解更多優點，請參閱[管理 API](managing_apis.html)。若要在 IBM&reg; App Connect Professional 中建立 REST API，並將它發佈至 {{site.data.keyword.apiconnect_short}}，請完成下列步驟：
+如需瞭解更多優點，請參閱[管理 API](managing_apis.html)。若要在 IBM App Connect Professional 建立 REST API 並將它發佈到 {{site.data.keyword.apiconnect_short}}，請完成下列步驟：
 
-1. 使用 IBM&reg; App Connect Professional 建立 REST API。
-  - 使用您的 IBM ID 登入 [App Connect Professional Web Management Console ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://appconnect.ibmcloud.com/professional/){:new_window}。如需如何完成使用 IBM&reg; App Connect Professional Web Management Console 建立 REST API 的作業相關資訊，請參閱 IBM&reg; Knowledge Center 中的[關於管理主控台設定 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window}。
+1. 使用 IBM App Connect Professional 建立 REST API。
+  - 使用您的 IBM ID 登入 [App Connect Professional Web Management Console ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://appconnect.ibmcloud.com/professional/){:new_window}。如需如何完成使用 IBM App Connect Professional Web Management Console 建立 REST API 的作業相關資訊，請參閱 IBM Knowledge Center 中的[關於管理主控台設定 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window}。
+
   - 如果尚未選取，請選取「正式作業」標籤。
   - 在導覽畫面中，選取**儲存庫** > **配置**。
   - 在「專案配置」畫面上，選取您要發佈到 {{site.data.keyword.apiconnect_short}} 的專案。畫面上會顯示正在發佈之專案的配置詳細資料。
@@ -136,7 +137,7 @@ Swagger 文件在驗證時發生任何錯誤，那些驗證錯誤會顯示在精
 
   - 在「推送至 API Management」畫面上，輸入下列資訊以建立與 API Management 系統的連線。
 
-  <table><caption>表 1. API 發佈至 API Connect 的連線資訊</caption>
+  <table><caption>表 １. API 發佈至 {{site.data.keyword.apiconnect_short}} 的連線資訊</caption>
   <thead>
   <tr>
   <th>欄位名稱</th>
@@ -145,17 +146,17 @@ Swagger 文件在驗證時發生任何錯誤，那些驗證錯誤會顯示在精
   </thead>
   <tbody>
   <tr><td>主機</td>
-  <td>指定管理叢集、伺服器或雲端位址的主機名稱。對於 {{site.data.keyword.Bluemix_short}}，此項目很可能是 us.apiconnect.ibmcloud.com。</td>
+  <td>指定管理叢集、伺服器或雲端位址的主機名稱。對於 {{site.data.keyword.Bluemix_notm}}，此項目很可能是 us.apiconnect.ibmcloud.com。</td>
   </tr>
   <tr>
   <td>埠</td>
   <td>指定連接管理叢集、伺服器或雲端位址所需的埠號。</td>
   </tr>
   <tr><td>使用者 ID</td>
-  <td>指定用來存取管理叢集、伺服器或雲端位址的鑑別使用者名稱。這很可能是您用來登入 {{site.data.keyword.Bluemix_short}} 的 IBM ID。</td>
+  <td>指定用來存取管理叢集、伺服器或雲端位址的鑑別使用者名稱。這很可能是您用來登入 {{site.data.keyword.Bluemix_notm}} 的 IBM ID。</td>
   </tr>
   <tr><td>密碼</td>
-  <td>指定用來存取管理叢集、伺服器或雲端位址的鑑別密碼。這很可能是您用來登入 {{site.data.keyword.Bluemix_short}} 的 IBM ID 密碼。</td>
+  <td>指定用來存取管理叢集、伺服器或雲端位址的鑑別密碼。這很可能是您用來登入 {{site.data.keyword.Bluemix_notm}} 的 IBM ID 密碼。</td>
   </tr>
   </tbody>
   </table>
@@ -168,13 +169,13 @@ Swagger 文件在驗證時發生任何錯誤，那些驗證錯誤會顯示在精
 
 5. 選取**關閉**以關閉視窗。在您的預設瀏覽器中會開啟新的瀏覽器分頁，並顯示您的 API。
 
-將 IBM&reg; App Connect API 與 {{site.data.keyword.apiconnect_short}} 相關聯。
+將 IBM App Connect API 與 {{site.data.keyword.apiconnect_short}} 相關聯。
 
 #### 匯入 Swagger API 定義
 
-若要將與 IBM&reg; App Connect 中 REST API 專案相關聯的 Swagger 檔案匯入至 {{site.data.keyword.apiconnect_short}} 服務，請遵循下列步驟：
+若要將與 IBM App Connect 中 REST API 專案相關聯的 Swagger 檔案匯入至 {{site.data.keyword.apiconnect_short}} 服務，請遵循下列步驟：
 
-1. 登入 {{site.data.keyword.apiconnect_short}}Bluemix&reg; 服務。
+1. 登入 {{site.data.keyword.apiconnect_short}} {{site.data.keyword.Bluemix_notm}} 服務。
 
 1.  在 API Manager 使用者介面標題列中，選取**導覽至** > **草稿**。
 

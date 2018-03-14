@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -13,26 +13,26 @@ lastupdated: "2017-10-19"
 # 疑難排解
 {: #troubleshoot}
 
-以下是有關在 {{site.data.keyword.Bluemix_short}} 上使用 {{site.data.keyword.apiconnect_long}} 的常見疑難排解問題的答案。{:shortdesc}
+以下是有關在 {{site.data.keyword.Bluemix_notm}} 上使用 {{site.data.keyword.apiconnect_long}} 的常見疑難排解問題的答案。{:shortdesc}
 
-## 新增 API Connect Bluemix 服務時所需的使用者名稱及密碼
+## 新增 API Connect {{site.data.keyword.Bluemix_notm}} 服務時所需的使用者名稱及密碼
 
-將服務新增至「{{site.data.keyword.Bluemix_short}} 儀表板」之後，當您嘗試開啟它時，系統會提示您輸入使用者名稱和密碼。 
+將服務新增至「{{site.data.keyword.Bluemix_notm}} 儀表板」之後，當您嘗試開啟它時，系統會提示您輸入使用者名稱和密碼。 
 
 ### 症狀
 {: #ts_sym_usernamepw}
 
-當您開啟新的 {{site.data.keyword.apiconnect_short}} 時，需要登入 API Manager，而不是直接存取 {{site.data.keyword.Bluemix_short}} 服務。
+當您開啟新的 {{site.data.keyword.apiconnect_short}} 時，需要登入 API Manager，而不是直接存取 {{site.data.keyword.Bluemix_notm}} 服務。
 
 ### 原因
 {: #ts_cause_usernamepw}
 
-您的瀏覽器已設為封鎖 Cookie，或層次已設為比 {{site.data.keyword.apiconnect_short}} 所需更受限制的層次。
+您的瀏覽器已設為封鎖 Cookie，或層次已設為比 {{site.data.keyword.apiconnect_notm}} 所需更受限制的層次。
 
 ### 解決方法
 {: #ts_res_usernamepw}
 
-啟用或增加瀏覽器設定中 Cookie 的許可權層次，直到它開啟 {{site.data.keyword.Bluemix_short}} 服務為止。
+啟用或增加瀏覽器設定中 Cookie 的許可權層次，直到它開啟 {{site.data.keyword.Bluemix_notm}} 服務為止。
 
 ## 無法安裝 Developer Toolkit
 
@@ -65,7 +65,8 @@ sudo chown -R $USER /usr/local
 ```
 {:codeblock}
 
-這個指令會讓您的使用者帳戶成為 `/usr/local` 目錄的擁有者。如此，您便不需要使用 sudo 安裝 Node，使用 npm 廣域地安裝套件。如需相關資訊，請參閱 [How to Node ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://howtonode.org/introduction-to-npm){: new_window}。**附註：**變更目錄所有權只適用於本端開發系統。請絕對不要在伺服器系統上這麼做。
+這個指令會讓您的使用者帳戶成為 `/usr/local` 目錄的擁有者。如此，您便不需要使用 sudo 安裝 Node，使用 npm 廣域地安裝套件。 
+    **附註：**變更目錄所有權只適用於本端開發系統。請絕對不要在伺服器系統上這麼做。
 
 此外，請不要對 `/usr/bin` 目錄使用前述的
 `chown` 指令；這麼做可能會導致您的系統嚴重地配置錯誤。
@@ -239,17 +240,17 @@ Terminate Batch job (Y/N)?
 ### 解決方法
 {: #ts_res_nosubscribe}
 
-請確定您有 {{site.data.keyword.Bluemix_short}} {{site.data.keyword.apiconnect_short}} 服務的「企業」層次帳戶，而且實例少於 25 個。如果您有最大服務數目，請移除服務。
+請確定您有 {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.apiconnect_short}} 服務的「企業」層次帳戶，而且實例少於 25 個。如果您有最大服務數目，請移除服務。
 
 ## 取得 API Connect 的協助及支援
 
 如果您在使用 {{site.data.keyword.apiconnect_short}} 時有問題或疑問，可以透過搜尋資訊或透過討論區提出問題來取得協助。您也可以開立支援問題單。
 
-使用討論區提出問題時，請標記您的問題，讓 {{site.data.keyword.Bluemix_short}} 開發團隊可以看到它。 
+使用討論區提出問題時，請標記您的問題，讓 {{site.data.keyword.Bluemix_notm}} 開發團隊可以看到它。 
 
-- 如果您有關於使用 {{site.data.keyword.apiconnect_short}} 開發或部署應用程式的技術問題，請將問題張貼到 Stack Overflow，並使用 "ibm-bluemix" 和 "api connect" 來標記問題。
+- 如果您有關於使用 {{site.data.keyword.apiconnect_short}} 開發或部署應用程式的技術問題，請將問題張貼到 Stack Overflow，並使用 "ibm-cloud" 和 "api connect" 來標記問題。
 
-- 若為關於服務及開始使用指示的問題，請使用 IBM DeveloperWorks dW Answers 討論區。請包含 "bluemix" 和 "api connect" 標籤。如需使用討論區的詳細資料，請參閱「取得協助」。 
+- 若為關於服務及開始使用指示的問題，請使用 IBM DeveloperWorks dW Answers 討論區。請包含 "ibm cloud" 和 "api connect" 標籤。如需使用討論區的詳細資料，請參閱「取得協助」。 
 
 如需開立 IBM 支援問題單的相關資訊，或支援層次與問題單嚴重性的相關資訊，請參閱「與支援中心聯絡」。
 

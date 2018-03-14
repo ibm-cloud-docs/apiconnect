@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 ---
 
 
@@ -22,18 +22,18 @@ lastupdated: "2017-10-19"
 
 ## 必要條件
 - 開始之前，您需要[設定 {{site.data.keyword.apiconnect_short}} 實例](tut_prereq_set_up_apic_instance.html)。
-- 開始之前，請將 [weatherprovider.wsdl 測試 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} 檔案複製到本端檔案系統。附註：您可以按一下**原始**，然後將產生的頁面以 `.wsdl` 檔案形式儲存在本端系統上。顧名思義，此 SOAP 服務會在給定郵遞區號時傳回天氣資料。
+- 開始之前，請將 [weatherprovider.wsdl 測試 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} 檔案複製到本端檔案系統。附註：您可以按一下**原始**，然後將產生的頁面以 `.wsdl` 檔案形式儲存在本端系統上。顧名思義，此 SOAP 服務會在給定郵遞區號時傳回天氣資料。
 
 ---
 ## 設定 SOAP API 定義
 1. 登入 {{site.data.keyword.Bluemix_short}}：[https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}。
 
-2. 在 {{site.data.keyword.Bluemix_short}} **儀表板**中，向下捲動至**所有服務**。
+2. 在 {{site.data.keyword.Bluemix_notm}} **儀表板**中，向下捲動至**所有服務**。
 
-3. 選取 **API Connect**，以啟動 API Connect 服務。 
+3. 選取 **API Connect**，以啟動 {{site.data.keyword.apiconnect_short}} 服務。 
   
 4. 導覽至「草稿」頁面（如果您尚未處於該處）：  
-    a. 在 API Connect 介面中，按一下 >> 以開啟導覽畫面。
+    a. 在 {{site.data.keyword.apiconnect_short}} 介面中，按一下 >> 以開啟導覽畫面。
     b. 按一下導覽畫面中的**草稿**。
     c. 移至 **API** 標籤。
 
@@ -112,6 +112,6 @@ API 會傳回包含現行天氣的「回應**內文**」。
 
 ## 下一步
 
-[將服務公開為 REST API](tut_expose_soap_api.html)，或使用[速率限制](tut_rate_limit.html)、[用戶端 ID 及密碼](tut_secure_landing.html)或[使用 OAuth 2.0 保護](tut_secure_oauth_2.html)來保護 API。
+[將服務公開為 REST API](tut_expose_soap_service.html)，或使用[速率限制](tut_rate_limit.html)、[用戶端 ID 及密碼](tut_secure_landing.html)或[使用 OAuth 2.0 保護](tut_secure_oauth_2.html)來保護 API。
 
 建立 > **管理** > 安全 > 社交化 > 分析

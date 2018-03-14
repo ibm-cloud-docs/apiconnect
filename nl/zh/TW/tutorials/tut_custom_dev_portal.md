@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -16,7 +16,7 @@ lastupdated: "2017-09-12"
 
 
 ## 目標
-本指導教學將協助您快速自訂「{{site.data.keyword.apiconnect_short}} 開發人員入口網站」，並選取符合您需求的佈景主題。
+本指導教學將協助您快速自訂「{{site.data.keyword.apiconnect_full}} 開發人員入口網站」，並選取符合您需求的佈景主題。
 
 ---
 

@@ -1,10 +1,10 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-11-02"
 ---
 
-{:new_window: target="blank"}
+{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -28,7 +28,7 @@ lastupdated: "2017-09-30"
 
 
 ## 必要條件
-您必須已在使用至少一個「API 金鑰」保護的 {{site.data.keyword.apiconnect_short}} 中建立 API。在下列指示中，我們是從使用[用戶端 ID 及密碼](tut_secure_landing.html)所保護的 [Weather Provider API 範例檔案 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window} 開始。
+您必須已在使用至少一個「API 金鑰」保護的 {{site.data.keyword.apiconnect_short}} 中建立 API。在下列指示中，我們是從使用[用戶端 ID 及密碼](tut_secure_landing.html)所保護的 [Weather Provider API 範例檔案 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window} 開始。
 
 開始本指導教學之前，請完成下列指導教學：
 - [匯入 API 規格並對現有 REST 服務進行 Proxy 處理](tut_rest_landing.html)。
@@ -38,8 +38,8 @@ lastupdated: "2017-09-30"
 ---
 ## 啟動 API Connect
 
-1. 登入 {{site.data.keyword.Bluemix_short}}：[https://console.ng.bluemix.net/login ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.ng.bluemix.net/login){:new_window}。
-2. 登入 {{site.data.keyword.Bluemix_short}} 之後，請向下捲動至**所有服務**，然後按一下 **API Connect**。
+1. 登入 {{site.data.keyword.Bluemix_notm}}：[https://console.ng.bluemix.net/login ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.ng.bluemix.net/login){:new_window}。
+2. 登入 {{site.data.keyword.Bluemix_notm}} 之後，請向下捲動至**所有服務**，然後按一下 **API Connect**。
 3. 按一下 **API Connect**，以啟動 {{site.data.keyword.apiconnect_short}} 服務。
 
 ## 探索預設方案
@@ -82,8 +82,7 @@ lastupdated: "2017-09-30"
 
 1. 按一下「發佈」圖示，以將「產品」*編譯打包* 到**沙盤推演**「型錄」。此動作會將您的草稿「產品」變更新增至選取的「型錄」。我們接下來需要*發佈*「產品」變更，以透過「開發人員入口網站」讓消費者可以使用它們。
    ![](./images/stageproduct.png) 
-2. 按一下 >> 按鈕，以開啟導覽功能表。
-   ![](./images/navigate.png) 
+2. 按一下 >> 按鈕以開啟導覽功能表。
 3. 選取「儀表板」，然後開啟**沙盤推演**「型錄」。「Weather Provider API 產品」會列為**已編譯打包**。
 4. 按一下省略符號，然後從功能表中選取**發佈**。
    ![](./images/publish.png) 
@@ -97,21 +96,20 @@ lastupdated: "2017-09-30"
 
 下列指示將引導您完成這些步驟。
 
-1. 啟動「開發人員入口網站」。如果您不知道 URL，可以在「沙盤推演型錄」的「設定」標籤中找到它。
+1. 啟動「開發人員入口網站」。如果您不知道 URL，可以在「沙盤推演型錄」的「設定」標籤中找到它。若要第一次佈建「開發人員入口網站」，請參閱[查看設定及配置開發人員入口網站](tut_config_dev_portal.html)。
 
-   ![](./images/devportalurl.png)
-    - 若要第一次佈建開發人員入口網站，請從下拉清單中選取 **IBM 開發人員入口網站**。
     - 這最多可能需要一個小時才能完成。「沙盤推演開發人員入口網站」備妥時，您就會收到內含新「開發人員入口網站」鏈結的電子郵件。此鏈結是提供給管理者帳戶的僅限單次使用鏈結。
 2. 使用應用程式開發人員認證（**非** IBM ID）來登入「入口網站」***（必要的話，請使用不同於您 IBM ID 的位址來建立新的開發人員帳戶）。***
 3. 按一下工具列上的**應用程式**鏈結，然後按一下**建立新的應用程式**按鈕。
 
-   ![](./images/createnewapp.png)
 4. 提供應用程式標題，然後按一下**提交**。
 
    ![](./images/mymobileapp.png)
 5. 儲存顯示的用戶端密碼及用戶端 ID。這將是您唯一可以複製用戶端密碼的機會！
 
    ![](./images/clientidandsecret.png)
+   
+   ![](./images/clientsecret.png)
 
 
 
@@ -120,7 +118,7 @@ lastupdated: "2017-09-30"
 1. 按一下工具列上的 **API 產品**鏈結。即會列出「Weather Provider API 產品」！ 
 
    ![](./images/apiproducts.png)
-2. 按一下鏈結，以查看詳細資料及選項。您應該會看到兩個可用的「方案」：原始「預設方案」及新的「展示方案」（如果您只看到一個「方案」，請回到 API Connect，並確定已將「產品」變更儲存、編譯打包及發佈至「沙盤推演型錄」）。 
+2. 按一下鏈結，以查看詳細資料及選項。您應該會看到兩個可用的「方案」：原始「預設方案」及新的「展示方案」。（如果您只看到一個「方案」，請回到 {{site.data.keyword.apiconnect_short}}，並確定已儲存「產品」變更並編譯打包及發佈至「沙盤推演型錄」。） 
 
    ![](./images/plans.png)
 3. 按一下以**訂閱**「展示方案」，然後選取您剛才登錄的應用程式。現在，您的應用程式可以呼叫與此「方案」相關聯的 API，而且速率是每分鐘最多*一次* API 呼叫。 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-12-13"
 ---
 
 {:new_window: target="blank"}
@@ -22,15 +22,17 @@ lastupdated: "2017-09-30"
 ## 必要條件
 
 開始之前，您必須已完成下列指導教學。  
-- [使用 IBM Bluemix 搭配用戶端 ID 及用戶端密碼金鑰來保護 API](tut_secure_id_secret_bm.html) 或
+- [使用 {{site.data.keyword.Bluemix}} 搭配用戶端 ID 及用戶端密碼金鑰來保護 API](tut_secure_id_secret_bm.html)或
 - [使用 Toolkit 搭配用戶端 ID 及用戶端密碼金鑰來保護 API](tut_secure_id_secret_tk.html)
+
+附註：本指導教學顯示在 {{site.data.keyword.Bluemix}} 使用者介面內完成作業的步驟及擷取畫面。您也可以使用指令行來完成相同的程序。您可以在 [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tutorial_apionprem_security_OAuth_v506.html) 中檢視該程序。 
 
 ## 程序
 
 1. 建立「OAuth 提供者 API」，然後選取 OAuth 方法。  
 	a. 開啟**草稿**，選取 **API**，然後按一下**新增** > **OAuth 2.0 提供者 API**。  
     ![](images/oauth_provider_1.png)
-	b. 將其標題設為 "OAuth Endpoint API"（應會自動移入名稱及基礎路徑資料）。  
+	b. 將其標題設為 "OAuth Endpoint API"。應會自動移入名稱及基礎路徑。  
 	c. 選取**建立 API**。  
 	d. 在最近建立的「OAuth 端點 API」中，導覽或向下捲動至 **OAuth 2** 畫面，然後選取「機密」作為「用戶端類型」。  
 	e. 在「範圍」下，將 _scope1_ 重新命名為 _view_current_。刪除 _scope2_ 及 _scope3_。  

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# 使用 IBM Bluemix 搭配用戶端 ID 及用戶端密碼來保護 API
+# 使用 {{site.data.keyword.Bluemix_notm}} 搭配用戶端 ID 及用戶端密碼來保護 API
 
 **持續時間**：10 分鐘  
 **技能水準**：初學者

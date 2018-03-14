@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -16,7 +16,7 @@ lastupdated: "2017-10-19"
 
 
 ## 目標
-本指導教學說明如何使用 {{site.data.keyword.apiconnect_short}} 對現有 API 進行管理控制。在本指導教學中，您將匯入 OpenAPI 規格，然後為現有 REST 服務建立透通 API Proxy。
+本指導教學說明如何使用 {{site.data.keyword.apiconnect_full}} 對現有 API 進行管理控制。在本指導教學中，您將匯入 OpenAPI 規格，然後為現有 REST 服務建立透通 API Proxy。
 
 ## 必要條件
 開始之前，您需要[設定 API Connect 實例](tut_prereq_set_up_apic_instance.html)及[安裝 API Connect Toolkit](tut_prereq_install_toolkit.html)。
@@ -26,7 +26,7 @@ lastupdated: "2017-10-19"
 
 ## 探索範例應用程式並測試目標端點
 
-已針對本指導教學建立範例_氣象局_ 應用程式。對應的 API 規格 (Swagger 2.0) 位於 [weather-provider-api_1.0.0.yaml ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window} 檔案中。
+已針對本指導教學建立範例_氣象局_ 應用程式。對應的 API 規格 (Swagger 2.0) 位於 [weather-provider-api_1.yaml![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window} 檔案中。
 
 1. 若要探索應用程式，請移至 [http://gettingstartedweatherapp.mybluemix.net/ ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}。  
 2. 輸入有效的 5 位數美國郵遞區號，以取得_**現行天氣**_ 及_**今天的預測**_。  
@@ -54,7 +54,7 @@ lastupdated: "2017-10-19"
 6. 在 API 標籤中，按一下**新增**。
 7. 從下拉功能表中，按一下**從檔案或 URL 匯入 API**。
    ![](images/toolkit-import-1.png)
-8. 具有您要用於本指導教學之天氣 API 的 OpenAPI 2.0 定義。在「匯入 OpenAPI (Swagger)」對話框中，輸入以下 URL：`https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml`。
+8. 具有您要用於本指導教學之天氣 API 的 OpenAPI 2.0 定義。在「匯入 OpenAPI (Swagger)」對話方塊中，輸入以下 URL：`https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml`。
 9. 保持不勾選_新增產品_ 選項，然後按一下**匯入**。  
     ![](images/screenshot_import-url.png)  
 
@@ -87,7 +87,7 @@ _您會看到「主機」值設為 _ `$(catalog.host)`_。這是 API Proxy 的�
 
 ## 結論
 
-在本指導教學中，您看到如何透過 API 透通 Proxy 來呼叫現有 REST 服務。您是從透過 Web 瀏覽器檢查範例服務可用性開始。然後，您會在 API Connect 中建立 API Proxy，並將此 Proxy 鏈結至要呼叫的範例服務。最後，您已使用 {{site.data.keyword.apiconnect_short}} 內部測試工具測試過此服務。
+在本指導教學中，您看到如何透過 API 透通 Proxy 來呼叫現有 REST 服務。您是從透過 Web 瀏覽器檢查範例服務可用性開始。然後，您會在 {{site.data.keyword.apiconnect_short}} 中建立 API Proxy，並將此 Proxy 鏈結至要呼叫的範例服務。最後，您已使用 {{site.data.keyword.apiconnect_short}} 內部測試工具測試過此服務。
 
 ---
 

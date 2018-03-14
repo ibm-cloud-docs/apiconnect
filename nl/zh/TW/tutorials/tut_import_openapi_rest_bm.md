@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-10-19"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# 匯入 API 規格並使用 IBM Bluemix 對現有 REST 服務進行 Proxy 處理
+# 匯入 API 規格並使用 {{site.data.keyword.Bluemix_notm}} 對現有 REST 服務進行 Proxy 處理
 持續時間：5 分鐘  
 技能水準：初學者  
 
@@ -25,7 +25,7 @@ lastupdated: "2017-10-19"
 
 ## 探索範例應用程式並測試目標端點
 
-已針對本指導教學建立範例_氣象局_ 應用程式。對應的 API 規格 (Swagger 2.0) 位於 [weather-provider-api_1.0.0.yaml ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window} 檔案中。
+已針對本指導教學建立範例_氣象局_ 應用程式。對應的 API 規格 (Swagger 2.0) 位於 [weather-provider-api_1.yaml![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window} 檔案中。
 
 1. 若要探索應用程式，請移至 [http://gettingstartedweatherapp.mybluemix.net/ ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}。  
 2. 輸入有效的 5 位數美國郵遞區號，以取得_**現行天氣**_ 及_**今天的預測**_。  
@@ -44,20 +44,18 @@ lastupdated: "2017-10-19"
 
 ## 匯入範例應用程式的 OpenAPI 規格以建立 REST API Proxy
 1. 登入 {{site.data.keyword.Bluemix_short}}：https://new-console.ng.bluemix.net/login。
-2. 在 {{site.data.keyword.Bluemix_short}} 導覽畫面中，選取**服務**，然後選取**儀表板**。啟動 API Connect 服務。  
-   ![](images/login-1.png)   ![](images/login-2.png)  
-
+2. 在 {{site.data.keyword.Bluemix_notm}} 導覽畫面中，選取**服務**，然後選取**儀表板**。啟動 {{site.data.keyword.apiconnect_short}} 服務。 
 3. 在 {{site.data.keyword.apiconnect_short}} 中，確定左側的導覽畫面已開啟。否則，請按一下 **>>** 將它開啟。  
 4. 在導覽畫面中，選取**草稿**。   
 5. 在 **API** 標籤中，按一下**新增**。從下拉功能表中，選取**從檔案或 URL 匯入 API**。  
      ![](images/import-1.png)
 
-6. 我們現在將匯入 OpenAPI 天氣定義。在開啟的「匯入 OpenAPI (Swagger)」對話框中，輸入下列 URL：`https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/bluemix/1a/weather-provider-api_1.0.0.yaml`。請讓其他選項保留為其預設值，然後按一下**匯入**。  
+6. 我們現在將匯入 OpenAPI 天氣定義。在開啟的「匯入 OpenAPI (Swagger)」對話框中，輸入下列 URL：`https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml`。請讓其他選項保留為其預設值，然後按一下**匯入**。  
     ![](images/import-2.png)  
 
 7. 匯入 OpenAPI 規格之後，您會被帶到 API 的**設計**視圖。您可以在這裡檢視 OpenAPI 定義的各個區段。捲動以進行探索，並記下**主機**值。您也可以在**來源**標籤下檢視 OpenAPI。
 _附註：您會注意到「主機」值設為 _`$(catalog.host)`_。這是 API Proxy 的基本 URL。_
-8. 儲存 API。
+8. 已儲存 API。 
 
 
 ## 測試 API Proxy
@@ -71,7 +69,7 @@ _附註：您會注意到「主機」值設為 _`$(catalog.host)`_。這是 API 
 
   ![](images/generate-default-product-3.png)
 
-  _在 API Connect 中，**產品**提供一種用來對特定用途的 API 進行分組的方式。產品會發佈至**型錄**。[{{site.data.keyword.apiconnect_short}} 名詞解釋](../apic_glossary.html)_
+  _在 {{site.data.keyword.apiconnect_short}} 中，**產品**提供一種用來對特定用途的 API 進行分組的方式。產品會發佈至**型錄**。[{{site.data.keyword.apiconnect_short}} 名詞解釋](../apic_glossary.html)_
 
 3. 在「組合」標籤中，按一下播放圖示來測試 API Proxy 的目標呼叫。
 
@@ -102,7 +100,7 @@ _「探索工具」容許使用者藉由強制執行 OpenAPI 定義中所設定�
 
 
 ### 結論
-在本指導教學中，您看到如何透過 API 透通 Proxy 來呼叫現有 REST 服務。您是從透過 Web 瀏覽器檢查範例服務可用性開始。然後，您會在 API Connect 中建立 API Proxy，並將此 Proxy 鏈結至要呼叫的範例服務。您已將 API 包裝成產品、已將產品發佈至型錄，並且已測試 Proxy。
+在本指導教學中，您看到如何透過 API 透通 Proxy 來呼叫現有 REST 服務。您是從透過 Web 瀏覽器檢查範例服務可用性開始。然後，您會在 {{site.data.keyword.apiconnect_short}} 中建立 API Proxy，並將此 Proxy 鏈結至要呼叫的範例服務。您已將 API 包裝成產品、已將產品發佈至型錄，並且已測試 Proxy。
 
 ---
 

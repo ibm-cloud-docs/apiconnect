@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# 使用 Toolkit 搭配用戶端 ID 及用戶端密碼來保護 API
+# 使用 Developer Toolkit 搭配用戶端 ID 及用戶端密碼來保護 API
 
 
 **持續時間**：10 分鐘  
@@ -33,7 +33,7 @@ lastupdated: "2017-09-30"
 1. 啟動 API Designer（如果尚未開啟）：  
    a. 開啟終端機。  
    b. 在指令行中，輸入 `apic edit`。_即會在 Web 瀏覽器中啟動 API Designer_    
-   c. 按一下**使用 Bluemix 登入**。  
+   c. 按一下**使用 {{site.data.keyword.Bluemix_notm}} 登入**。  
    d. 輸入 {{site.data.keyword.Bluemix_short}} 登入資訊。  
 
 2. 導覽至 API 的「設計」視圖：
@@ -79,7 +79,7 @@ lastupdated: "2017-09-30"
 也可以使用明確呼叫 Proxy 端點的「探索」工具來測試安全設定，並將「用戶端 ID」及「用戶端密碼」金鑰作為標頭值傳遞。
 
 
-1. 按一下**探索**，然後按一下**沙盤推演**。  
+1. 按一下**探索**。
     ![](images/explore_1.png)
 
 2. 按一下清單中的 **GET /current** 作業。  

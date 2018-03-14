@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-10-19"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# 新增 API 規格並使用 IBM Bluemix 呼叫現有 REST 服務
+# 新增 API 規格並使用 {{site.data.keyword.Bluemix_notm}} 呼叫現有 REST 服務
 **持續時間**：15 分鐘  
 **技能水準**：初學者  
 
@@ -28,7 +28,7 @@ lastupdated: "2017-10-19"
 2. 輸入有效的 5 位數美國郵遞區號，以取得_**現行天氣**_ 及_**今天的預測**_。  
 ![](images/explore-weatherapp-1.png)
 
-3. 上述範例天氣應用程式是使用可提供天氣資料的 API 所建置。用來取得**現行**天氣資料的端點是 _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_。請造訪 [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}，以進行測試。  
+3. 上述範例天氣應用程式是使用可提供天氣資料的 API 所建置。用來取得**現行**天氣資料的端點是 _**https://myweatherprovider.mybluemix.net/current?zipcode={zipcode}**_。請造訪 [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}，以進行測試。  
 
   ![](images/explore-weatherapp-2.png)
 
@@ -40,8 +40,8 @@ lastupdated: "2017-10-19"
 ---
 
 ### 新增 OpenAPI 規格以建立 REST API Proxy  
-1. 登入 {{site.data.keyword.Bluemix_short}}：https://new-console.ng.bluemix.net/login。
-2. 在 {{site.data.keyword.Bluemix_short}} 導覽畫面中，選取**服務**，然後選取**儀表板**。啟動 {{site.data.keyword.apiconnect_short}} 服務。
+1. 登入 {{site.data.keyword.Bluemix_notm}}：https://new-console.ng.bluemix.net/login。
+2. 在 {{site.data.keyword.Bluemix_notm}} 導覽畫面中，選取**服務**，然後選取**儀表板**。啟動 {{site.data.keyword.apiconnect_short}} 服務。
 3. 在 {{site.data.keyword.apiconnect_short}} 中，確定導覽畫面已開啟。否則，請按一下 **>>** 將它開啟。  
 4. 在導覽畫面中，選取**草稿**。
 5. 在 **API** 標籤中，按一下**新增**。從下拉功能表中，選取**新建 API**。    
@@ -156,7 +156,7 @@ _（在下一個指導教學中，我們將討論使用 API 金鑰的安全）�
 ---
 
 ### 結論
-在本指導教學中，您學習到如何透過 API 透通 Proxy 來呼叫現有 REST 服務。您是從透過 Web 瀏覽器檢查範例服務可用性開始。然後，您會在 API Connect 中建立新的 OpenAPI 規格，並將它鏈結至要呼叫的範例服務。您已將 API 包裝成產品、已將產品發佈至型錄，並且已測試 Proxy。
+在本指導教學中，您學習到如何透過 API 透通 Proxy 來呼叫現有 REST 服務。您是從透過 Web 瀏覽器檢查範例服務可用性開始。然後，您會在 {{site.data.keyword.apiconnect_short}} 中建立新的 OpenAPI 規格，並將它鏈結至要呼叫的範例服務。您已將 API 包裝成產品、已將產品發佈至型錄，並且已測試 Proxy。
 
 ---
 

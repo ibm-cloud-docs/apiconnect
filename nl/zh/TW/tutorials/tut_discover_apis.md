@@ -1,10 +1,8 @@
 ---
-
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
-
-
+lastupdated: "2017-11-20"
+---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
@@ -20,30 +18,34 @@ lastupdated: "2017-10-10"
 ## 必要條件
 本指導教學沒有必要條件。身為入口網站管理者，您可以在導覽開發人員入口網站以體驗入口網站使用者如何導覽您的開發人員入口網站時，同時完成本指導教學。請謹記，所有開發人員入口網站都有不同的外觀。
 
-如果您沒有現有開發人員入口網站，可以先在 {{site.data.keyword.Bluemix_short}} 中設定並配置開發人員入口網站，然後再繼續本指導教學。
-## 目標
-在本指導教學中，您將學習到入口網站使用者在「{{site.data.keyword.apiconnect_short}} 開發人員入口網站」中取用 API 的方式。您將瞭解入口網站使用者如何探索產品及 API、檢視及測試 API，以及訂閱 API。
+ 
 
-## 探索產品 & API
+如果您沒有現有開發人員入口網站，可以先在 {{site.data.keyword.Bluemix_short}} 中設定並配置開發人員入口網站，然後再繼續本指導教學。
+
+
+## 目標
+在本指導教學中，您將學習到入口網站使用者在「{{site.data.keyword.apiconnect_full}} 開發人員入口網站」中取用 API 的方式。您將瞭解入口網站使用者如何探索產品及 API、檢視及測試 API，以及訂閱 API。
+
+ 
+
+## 探索產品及 API
 本節顯示入口網站使用者在開發人員入口網站中探索產品及 API 的方式。
 
-1. 在瀏覽器中，導覽至 **API Connect 開發人員入口網站**。
-![API Connect 開發人員入口網站](images/11-developer-portal.png)
+1. 在瀏覽器中，導覽至 **API Connect 開發人員入口網站**。![API Connect 開發人員入口網站](images/11-developer-portal.png)
 
-2. 在「{{site.data.keyword.apiconnect_short}} 開發人員入口網站」中，選取「API 產品」標籤。
-![API 產品](images/12-API-products.png)
+2. 在「{{site.data.keyword.apiconnect_short}} 開發人員入口網站」中，選取「API 產品」標籤。![API 產品](images/12-API-products.png)
 
-3. 選取其中一個可用的 API 產品，顯示此產品的可用 API 及「方案」。  
+3. 選取其中一個可用的 API 產品，顯示此產品可用的 API 及「方案」。  
   ![選取產品](images/13-product.png)
 
 4. 選取 API，以探索可用 API 的詳細資料。  
   ![產品 API](images/14-api.png)
 
 5. 在 API 的詳細資料頁面上，您可以檢視可用的作業以及其參數和傳回的回應。在頁面尾端，您可以檢視 API 所使用的定義。  
-  ![API 詳細資料](images/15-details.png)
+  ![API 詳細資料](images/15-details.png) 
 
 6. 在「程式碼範例」畫面中，您可以檢視不同編碼語言的範例，以瞭解如何呼叫要求及其回應。選取其中一個範例（例如**節點**），以查看該編碼語言的範例。  
-  ![API 詳細資料](images/16-examples.png)
+  ![API 詳細資料](images/16-examples.png) 
 
 ---
 

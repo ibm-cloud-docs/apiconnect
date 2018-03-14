@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -27,10 +27,9 @@ lastupdated: "2017-09-12"
 
 *型錄* 是適用於不同環境的 IBM 術語。例如，您將針對測試、編譯打包及正式作業環境建立不同的型錄。您應會有一個稱為「沙盤推演」的型錄。請任意使用此型錄來建立開發人員入口網站，或建立新的型錄，並將它命名為您想要的名稱。
 
-1. 在 Bluemix 儀表板中，選取您的 **API Connect** 服務，以啟動 API Connect 儀表板。
-![API Connect 服務](images/11-Bluemix-Dashboard.png)
+1. 在 {{site.data.keyword.Bluemix_short}} 儀表板中，選取 **API Connect** 服務，以啟動 {{site.data.keyword.apiconnect_short}} 儀表板。![API Connect 服務](images/11-Bluemix-Dashboard.png)
 
-2. 在 API Connect 儀表板中，選取您要建立開發人員入口網站的型錄。例如，**沙盤推演**。
+2. 在 {{site.data.keyword.apiconnect_short}} 儀表板中，選取您要建立開發人員入口網站的型錄。例如，**沙盤推演**。
 ![型錄](images/12-APIC-Dashboard.png)
 
 3. 在型錄中，選取**設定**標籤。  
@@ -79,7 +78,7 @@ lastupdated: "2017-09-12"
   ![API 產品](images/27-api-products.png)
 
 ### 結論
-在本指導教學中，您學習到如何設定及配置「API Connect 開發人員入口網站」。您也已探索開發人員入口網站。
+在本指導教學中，您學習到如何設定及配置 {{site.data.keyword.apiconnect_short}} 開發人員入口網站。您也已探索開發人員入口網站。
 
 ---
 

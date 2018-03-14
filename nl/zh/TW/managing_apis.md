@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 
 ---
 
@@ -18,14 +18,14 @@ lastupdated: "2017-10-19"
 
 您可以在 {{site.data.keyword.Bluemix}} 中使用 API Connect 管理 API，不論它們是在 {{site.data.keyword.Bluemix_notm}} 中，還是在 {{site.data.keyword.Bluemix_notm}} 外部維護。管理 API 容許您控制用量、提高採用，以及追蹤統計資料。
 
-如果您是客戶，則可以在開發人員建立 API 並將產品推送至 {{site.data.keyword.Bluemix_short}} 之後，管理它在 API Manager 使用者介面內的使用方式。下列各主題說明如何在 {{site.data.keyword.apiconnect_short}} 內建立及管理產品。Designer。
+如果您是客戶，則可以在開發人員建立 API 並將產品推送至 {{site.data.keyword.Bluemix_notm}} 之後，管理它在 API Manager 使用者介面內的使用方式。下列各主題說明如何在 {{site.data.keyword.apiconnect_short}} 內建立及管理產品。
 
 ## 透過 Secure Gateway 公開內部部署 API
 {: #expose_apis_sec_gate}
 
 您可以建立 Secure Gateway，以安全地將內部部署 API 公開到 {{site.data.keyword.apiconnect_full}}。
 
-建立 Secure Gateway 時，會整合 {{site.data.keyword.Bluemix_short}} {{site.data.keyword.SecureGateway}} 服務與 {{site.data.keyword.apiconnect_short}} 的特性。這表示您有安全的方式可以透過安全通道從 {{site.data.keyword.apiconnect_short}} 存取內部部署 API，而不需要佈建個別的 {{site.data.keyword.SecureGateway}} 服務實例。您可以有效率地在公用環境上建立與 {{site.data.keyword.apiconnect_short}} 的通道，而不需要公開內部部署資料。您只需要建立閘道，並將它連接至 API。即會自動為您建立目的地、SSL 設定檔及憑證。如需 {{site.data.keyword.SecureGateway}} 服務的相關資訊，請參閱[關於 {{site.data.keyword.SecureGateway}}](../../services/SecureGateway/sg_overview.html#sg_overview)。若要建立 Secure Gateway，請完成下列主題中的步驟。
+建立 Secure Gateway 時，會整合 {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.SecureGateway}} 服務與 {{site.data.keyword.apiconnect_short}} 的特性。這表示您有安全的方式可以透過安全通道從 {{site.data.keyword.apiconnect_short}} 存取內部部署 API，而不需要佈建個別的 {{site.data.keyword.SecureGateway}} 服務實例。您可以有效率地在公用環境上建立與 {{site.data.keyword.apiconnect_short}} 的通道，而不需要公開內部部署資料。您只需要建立閘道，並將它連接至 API。即會自動為您建立目的地、SSL 設定檔及憑證。如需 {{site.data.keyword.SecureGateway}} 服務的相關資訊，請參閱[關於 {{site.data.keyword.SecureGateway}}](../../services/SecureGateway/sg_overview.html#sg_overview)。若要建立 Secure Gateway，請完成下列主題中的步驟。
 
 ### 建立 Secure Gateway
 {: #create_sec_gate notoc}
@@ -42,9 +42,7 @@ lastupdated: "2017-10-19"
 
 3. 按一下**新增**。即會顯示`建立 Secure Gateway` 對話框。
 
-4. 提供閘道的名稱。
-
-**附註：**只允許英數字元及底線。
+4. 提供閘道的名稱。**附註：**只允許英數字元及底線。
 
 5. 按一下**儲存**。即會顯示閘道以及閘道 ID 和安全記號。
 
@@ -58,9 +56,7 @@ lastupdated: "2017-10-19"
     - Docker
     - IBM DataPower&reg;
 
-8. 遵循螢幕指示，安裝及執行您所選取的用戶端。
-
-如需設定 Secure Gateway 用戶端的相關資訊，請參閱[設定用戶端](../../services/SecureGateway/sg_021.html#sg_021)。
+8. 遵循螢幕指示，安裝及執行您所選取的用戶端。如需設定 Secure Gateway 用戶端的相關資訊，請參閱[設定用戶端](../../services/SecureGateway/sg_021.html#sg_021)。
 
 9. 完成安裝用戶端時，請關閉**設定 Secure Gateway 用戶端**視窗。
 
@@ -134,26 +130,26 @@ target-url: http://onpremdb2.rtp.raleigh.ibm.com:3055$(request.path)$(request.se
 
 即會顯示測試結果。
 
-## 編譯打包及發佈 Loopback 應用程式
+## 編譯打包及發佈 LoopBack 應用程式
 {: #stage_publish_lb_app}
 
 1. 在 API Designer 的導覽窗格中，按一下**產品**。即會開啟「產品」標籤。
 
 2. 選取「產品」的版本，並確保按一下您要使用的版本。
 
-3. 若要將運行環境發佈至 {{site.data.keyword.Bluemix_short}}，請按一下**發佈**。
+3. 若要將運行環境發佈至 {{site.data.keyword.Bluemix_notm}}，請按一下**發佈**。
 
-4. 按一下**新增及管理目標** > **新增 IBM Bluemix 目標**。
+4. 按一下**新增及管理目標** > **新增 IBM Cloud 目標**。
 
-5. 選取您要發佈至其中的 {{site.data.keyword.Bluemix_short}} **地區**，並登入。
+5. 選取您要發佈至其中的 {{site.data.keyword.Bluemix_notm}} **地區**，並登入。
 
-6. 選取您要發佈至其中的 {{site.data.keyword.Bluemix_short}} **組織**。
+6. 選取您要發佈至其中的 {{site.data.keyword.Bluemix_notm}} **組織**。
 
 7.  即會顯示「型錄」清單。選取您要發佈到其中的「型錄」。
 
 8.  按**下一步**。
 
-9. 選取您要發佈的 LoopBack 應用程式。如果這是您第一次將運行環境部署至 {{site.data.keyword.Bluemix_short}}，請新增名稱，然後按一下**新增**圖示。
+9. 選取您要發佈的 LoopBack 應用程式。如果這是您第一次將運行環境部署至 {{site.data.keyword.Bluemix_notm}}，請新增名稱，然後按一下**新增**圖示。
 
 10.  按一下**儲存**。
 
@@ -197,7 +193,7 @@ target-url: http://onpremdb2.rtp.raleigh.ibm.com:3055$(request.path)$(request.se
 
 若要測試發佈已運作，請完成下列步驟：
 
-1. 確定 {{site.data.keyword.Bluemix_short}} 應用程式在執行中。
+1. 確定 {{site.data.keyword.Bluemix_notm}} 應用程式在執行中。
 
 2. 開啟瀏覽器視窗，然後導覽至 API 目標 URL。應用程式是使用用戶端驗證進行保護。如果您未提供正確的用戶端憑證，則會發生錯誤（這是預期狀況）。
 

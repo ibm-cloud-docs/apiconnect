@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ lastupdated: "2017-09-30"
 技能水準：初學者
 
 ## 目標
-這是 {{site.data.keyword.apiconnect_long}} 中 API 分析的基本簡介。我們將導覽可用的分析儀表板，而且您可以追蹤自己的 API。
+這是 {{site.data.keyword.apiconnect_full}} 中 API 分析的基本簡介。我們將導覽可用的分析儀表板，而且您可以追蹤自己的 API。
 
 
 ## 必要條件
@@ -85,6 +85,8 @@ lastupdated: "2017-09-30"
    ![](./images/newdashboard.png) 
     即會顯示可用的視覺化清單。
 
+
+
 2. 選取一些視覺化來新增至儀表板。例如：
   * 已訂閱的應用程式
   * 每個方案的應用程式 
@@ -148,6 +150,6 @@ lastupdated: "2017-09-30"
 
 ## 下一步
 
-學習[如何管理 API 及版本化](tut_version_landing.html)。
+學習[如何管理 API 及版本化](tut_manage_version_landing.html)。
 
 建立 > 管理 > 安全 > 社交化 > **分析**  

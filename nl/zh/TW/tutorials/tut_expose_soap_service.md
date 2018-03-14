@@ -2,7 +2,7 @@
 
 copyright:
 years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-14"
 
 ---
 
@@ -23,14 +23,14 @@ lastupdated: "2017-10-19"
 
 ## 必要條件
 1. 開始之前，您需要[設定 {{site.data.keyword.apiconnect_full}} 實例](tut_prereq_set_up_apic_instance.html)。
-2. 開始之前，請將 [weatherprovider.wsdl 測試 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} 檔案複製到本端檔案系統。
+2. 開始之前，請將 [weatherprovider.wsdl 測試 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} 檔案複製到本端檔案系統。
 	>![images/info.png]
 	>您可以按一下**原始**，然後將產生的頁面以 `.wsdl` 檔案形式儲存在本端系統上。
 
 ---
 ## 設定 REST API 定義
 1. 登入 {{site.data.keyword.Bluemix_short}}：[https://new-console.ng.bluemix.net/login ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://new-console.ng.bluemix.net/login){:new_window}。
-2. 在 {{site.data.keyword.Bluemix_short}} **儀表板**中，向下捲動並選取 {{site.data.keyword.apiconnect_full}}。或者，從功能表圖示中，依序選擇**服務**及 **API** 以到達**使用 API** 視窗，然後選取 **API Connect**。從 **API Connect** 頁面中，您可以簡單地按下`建立`，也可以調整預設值。基於本練習的目的，請保持實例不連結，並於稍後調整「服務」名稱以更輕鬆地識別。其中一個範例是 `API Connect-weather-exercise`。
+2. 在 {{site.data.keyword.Bluemix_notm}} **儀表板**中，向下捲動並選取 {{site.data.keyword.apiconnect_short}}。或者，從功能表圖示中，依序選擇**服務**及 **API** 以到達**使用 API** 視窗，然後選取 **API Connect**。從 **API Connect** 頁面中，您可以簡單地按下`建立`，也可以調整預設值。基於本練習的目的，請保持實例不連結，並於稍後調整「服務」名稱以更輕鬆地識別。其中一個範例是 `API Connect-weather-exercise`。
 按`建立`按鈕，以啟動 {{site.data.keyword.apiconnect_short}} 服務。  
 您可能會看到說明新增功能的警示，或**草稿 API** 參考資訊啟動頁面。閱讀資訊之後，請按一下**了解**圖示來檢視 API Manager。
 3. 在 {{site.data.keyword.apiconnect_short}} 中，如果您先前未固定使用者介面導覽窗格，則請按一下**導覽至**圖示 ![](images/navigate-to.png)。即會開啟 API Manager 使用者介面導覽窗格。若要固定「使用者介面導覽」窗格，請按一下**固定功能表**圖示 ![](images/pinned.png)。
@@ -57,8 +57,9 @@ lastupdated: "2017-10-19"
 ![](images/api-security-1.png)
 10. 取消勾選 **ClientID** 選項。
 ![](images/api-security-2.png)
-	>![images/info.png]
-	>您可能會發現儲存磁碟圖示旁出現一個黃色三角形圖示。這是有可能已定義但尚未使用之定義的警告（這不會影響 API 定義）。
+	>![](images/info.png)
+	
+>您可能會發現儲存磁碟圖示旁出現一個黃色三角形圖示。這是有可能已定義但尚未使用之定義的警告（這不會影響 API 定義）。
 11. 在**定義**區段中，按一下**新增定義**圖示 ![](images/add-icon.png)，然後按一下新定義將它展開。
 12. 將定義命名為 `Weather Data Output`。
 13. 定義會有五個內容。按一下**新增內容**四次，以新增其他內容。使用下列內容作為指引來重新命名`內容名稱`，並使用`說明`、`類型`及`範例`的預設值：

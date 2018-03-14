@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ lastupdated: "2017-10-19"
 **技能水準**：初學者  
 
 ## 目標
-本指導教學藉由說明如何對現有 API 進行管理控制，協助您快速開始使用 {{site.data.keyword.apiconnect_short}}。您將從建立新的 OpenAPI 規格開始，然後為現有 REST 服務建立透通 API Proxy。
+本指導教學藉由說明如何對現有 API 進行管理控制，協助您快速開始使用 {{site.data.keyword.apiconnect_full}}。您將從建立新的 OpenAPI 規格開始，然後為現有 REST 服務建立透通 API Proxy。
 
 ## 必要條件
 開始之前，您需要[設定 API Connect 實例](tut_prereq_set_up_apic_instance.html)及[安裝 API Connect Toolkit](tut_prereq_install_toolkit.html)。
@@ -120,9 +120,9 @@ _（在下一個指導教學中，我們將討論使用 API 金鑰的安全）�
 **Operation Switch** 會提供決策點。根據動詞/路徑配對，必須呼叫適當的作業。  
     c. 從選用區中，將**呼叫**原則拖曳至畫布上。將其中一個放置在 **/get current** 路徑中，並將另一個放置在 **/get today** 路徑中。
     d. 選取 **/get current** 路徑中的**呼叫**原則，並將其標題更新為 "**invoke-current**"。  
-    e. 將 URL 欄位更新為 `https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`。
+    e. 將 URL 欄位更新為 `https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`。
     f. 選取 **/get today** 路徑中的**呼叫**原則，並將其標題更新為 "**invoke-today**"。  
-    g. 將 URL 欄位更新為 `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`。  
+    g. 將 URL 欄位更新為 `https://myweatherprovider.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`。  
 
 20. 儲存 API。
 

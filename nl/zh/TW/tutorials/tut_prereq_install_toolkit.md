@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-19"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -17,7 +17,7 @@ lastupdated: "2017-09-19"
 ## 需要的項目
 1. Node.js
 2. Node 產品管理程式 (NPM)
-3. {{site.data.keyword.apiconnect_short}} _精簡_
+3. {{site.data.keyword.apiconnect_full}} _精簡_
 
 <table>
   <tr><td><b>Node.js</b>：用來建置及執行可擴充網路應用程式的非同步事件驅動 JavaScript 運行環境

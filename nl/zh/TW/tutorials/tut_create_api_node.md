@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-28"
 
 ---
 
@@ -24,13 +24,16 @@ lastupdated: "2017-10-19"
 
 本指導教學會引導您使用 LoopBack 架構在 Node.js 中建立 API。本指導教學說明如何進行下列作業：
 1. 建立新的 LoopBack 專案。
-2. 使用 {{site.data.keyword.apiconnect_short}} Toolkit 中的 API Designer，將新的資料來源及模型新增至 LoopBack 專案。
+2. 使用 {{site.data.keyword.apiconnect_full}} Toolkit 中的 API Designer，將新的資料來源及模型新增至 LoopBack 專案。
 3. 使用 API Designer「探索」工具來測試 API 端點。
 
 ---
 ## 必要條件
 
-開始之前，請[安裝 {{site.data.keyword.apiconnect_short}} Toolkit](tut_prereq_install_toolkit.html)。
+開始之前，請[安裝 {{site.data.keyword.apiconnect_short}} Toolkit](tut_prereq_install_toolkit.html)。如果已經安裝工具箱，請確定您執行的是 5.0.8.1 版或更新版本。您可以在指令行上輸入下列指令來進行此驗證：
+	```
+	apic -v
+	```
 
 ---
 ## 建立 Loopback 專案
@@ -88,7 +91,7 @@ lastupdated: "2017-10-19"
 	```
 	![](images/api-designer-1.png)
 	>![info]
-	>上述指令會起始設定 APIC Toolkit，並在完成時使用預設瀏覽器啟動 API Designer。
+	>上述指令會起始設定 {{site.data.keyword.apiconnect_short}} 工具箱，並在完成時使用預設瀏覽器啟動 API Designer。
 	>![info]
 	>在本指導教學中，您將建立稱為 weather-data 的專案。
 2.  如果您先前未固定使用者介面導覽窗格，請按一下「導覽至」圖示 ![](images/navigate-to.png)。即會開啟 API Manager 使用者介面導覽窗格。若要固定使用者介面導覽窗格，請按一下「固定」功能表圖示 ![](images/pinned.png)。
@@ -131,7 +134,7 @@ lastupdated: "2017-10-19"
 	```
 	即會在預設 Web 瀏覽器中開啟 API Designer，如果您最近沒有登入，則一開始會顯示登入頁面。  
 	>![info]
-	>您可以使用 Bluemix 帳戶登入，或建立一個帳戶。
+	>您可以使用 {{site.data.keyword.Bluemix}} 帳戶登入，或建立一個帳戶。
 3. 按一下**資料來源**圖示 ![](images/datasource-icon.png)。
 4. 按一下**新增**。即會開啟「新建 LoopBack 資料來源」視窗。
 5. 在**名稱**文字欄位中，輸入 `weatherDS`。
@@ -154,9 +157,9 @@ lastupdated: "2017-10-19"
 5. 在**內容**中，按一下**新增內容**圖示 ![](images/add-icon.png)。
 6. 在**內容名稱**文字欄位中，輸入 `zip_code`。
 7. 在**類型**中，選取 **number**。
-8. 選取**必要**，將內容設為必要項目。這表示在您新增或更新模型實例時，它必須要有值。現在，會保留其他設定的預設值：
+8. 選取**必要**，將內容設為必要項目。這表示在您新增或更新模型實例時，它必須要有值。 
+9. 選取 **ID** 以確定內容具有唯一 ID。現在，會保留其他設定的預設值：
 	- **是陣列**：內容是否為具有已指定類型之元素的 JavaScript 陣列。
-	- **ID**：內容是否為唯一 ID。
 	- **索引**：內容是否代表作為資料庫索引的直欄（欄位）。
 	- **說明**：內容的文字說明。
 9. 再按一下**新增內容**圖示 ![](images/add-icon.png)，新增另一個內容。請參照下表來完成其餘內容：
@@ -209,8 +212,13 @@ lastupdated: "2017-10-19"
 ![](images/explore-test-1.png)
 中心窗格會顯示有關端點的摘要資訊，其中包括其參數、安全、模型實例資料及回應碼。右窗格提供使用 curl 指令呼叫端點的範本程式碼，以及 Ruby、Python、Java 及 Node 這類語言。
 
-6. 若要在 API Designer「探索」工具中測試 REST 端點，請按一下右窗格上的**試用**。向下捲動至**參數**，然後按一下**產生**以產生一些虛擬資料。依預設，產生的資料包括 `zip_code`、`current_temperature`、`current_humidity`、`tonight_temperature_low`、`tonight_temperature_high`、`tonight_humidity_low`、`tonight_humidity_high` 及 `id` 內容。`id` 內容是由 LoopBack 針對給定模型所建立，並且會自動產生值。請從範例資料中移除 `id` 內容，並視需要更新產生的資料，然後按一下**呼叫作業**。
-![](images/explore-test-2.png)
+6. 若要在 API Designer「探索」工具中測試 REST 端點，請完成下列步驟：
+    1. 在右窗格上，按一下**試用**。 
+	
+	2. 向下捲動至**參數**，然後按一下**產生**以產生一些虛擬資料。依預設，產生的資料包括 `zip_code`、`current_temperature`、`current_humidity`、`tonight_temperature_low`、`tonight_temperature_high`、`tonight_humidity_low`，以及 `tonight_humidity_high` 內容。
+	
+	3. 按一下**呼叫作業**。![](images/explore-test-2.png)
+	
 >![troubleshooting]
 >如果您看到由於 localhost 的未受信任憑證而發出的錯誤訊息，請按一下 API Designer「探索」工具的錯誤訊息中所提供的鏈結來接受憑證，然後繼續在 Web 瀏覽器中呼叫作業。確切的程序取決於您使用的 Web 瀏覽器。如果您直接在瀏覽器中載入 REST 端點，則會看到此訊息：{"name":"PreFlowError","message":"無法處理要求"}。您必須使用 API Designer「探索」工具在瀏覽器中測試 REST 端點，因為它包括必要的標頭及其他要求參數。
 >
@@ -218,7 +226,7 @@ lastupdated: "2017-10-19"
 >如果您收到回應碼 **422 - 無法處理的實體**與下列有效負載：
 >![](images/explore-test-3.png)
 >
->尚未從產生的資料中移除 `id` 資料元素。請移除 `id` 資料元素，然後重新執行測試。
+>確定沒有尚未從產生的資料移除的 `id` 資料元素。如果有 ID 元素，請移除該元素然後重新執行測試。
 >![troubleshooting]
 >如果您收到**無法剖析要求內文**錯誤，則必須移除最後一個 `humidity_high` 數字後面的逗點。
 7. 編輯 **data** 區段中顯示的 JSON 值。請嘗試變更產生的虛擬資料，然後再按一下**呼叫作業**。您應該會看到要求和回應參數，以及您所輸入的 JSON 實例資料。

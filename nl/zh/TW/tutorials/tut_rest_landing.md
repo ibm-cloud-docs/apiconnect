@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-08-24"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -20,10 +20,10 @@ lastupdated: "2017-08-24"
 
 若要管理現有 API，您可以從匯入或新增 OpenAPI 檔案開始。
 
-## IBM Bluemix
+## {{site.data.keyword.Bluemix_notm}}
 
-- [使用 IBM Bluemix 匯入 OpenAPI 檔案](tut_import_openapi_rest_bm.html)
-- [使用 IBM Bluemix 建立 OpenAPI 檔案](tut_add_openapi_rest_bm.html)
+- [使用 {{site.data.keyword.Bluemix_notm}} 匯入 OpenAPI 檔案](tut_import_openapi_rest_bm.html)
+- [使用 {{site.data.keyword.Bluemix_notm}} 建立 OpenAPI 檔案](tut_add_openapi_rest_bm.html)
 
 ## Developer Toolkit
 

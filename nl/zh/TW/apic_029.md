@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-28"
+lastupdated: "2018-02-12"
 
 ---
 
@@ -15,6 +15,10 @@ lastupdated: "2017-09-28"
 # 新增功能
 
 {{site.data.keyword.apiconnect_full}} 包括下列加強功能：
+
+- **刪除「開發人員入口網站」中的刪除使用者帳戶及「開發者」組織**：您可以刪除「開發人員入口網站」中您的使用者帳戶及「開發者」組織。您也可以變更您的「開發者」組織的所有權。如需相關資訊，請參閱[刪除您的開發人員帳戶 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_account.html){:new_window}、[刪除開發人員組織 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_dev_org.html){:new_window}，以及[變更開發人員組織的所有權 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_dev_org_ownership.dita){:new_window}。
+
+- __新增 *endpoint_url* API 事件欄位__：*endpoint_url* 事件記錄欄位識別 Proxy 或者對要求失敗的項目呼叫目標 URL。如需相關資訊，請參閱[刪除您的開發人員帳戶 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/rapim_analytics_apieventrecordfields.html){:new_window}。</dd>
 
 - **新增了「開發人員入口網站 REST API」支援及參照來進行分析**：「開發人員入口網站 REST API」可協助您分析型錄 API。如需相關資訊，請參閱[分析 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apirest.doc/analytics.html){:new_window}。
 

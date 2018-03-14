@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -30,7 +30,7 @@ lastupdated: "2017-10-10"
 ## 接替 API 產品
 1. 登入 {{site.data.keyword.Bluemix_short}}：[https://console.ng.bluemix.net/login ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.ng.bluemix.net/login){:new_window}。
 
-2. 在「{{site.data.keyword.Bluemix_short}} 儀表板」中，啟動 {{site.data.keyword.apiconnect_short}} 服務。
+2. 在「{{site.data.keyword.Bluemix_notm}} 儀表板」中，啟動 {{site.data.keyword.apiconnect_short}} 服務。
 ![](images/Bluemix.png)
 
 3. 在 API Manager 中，如果您先前未固定使用者介面導覽窗格，請按一下**導覽至**圖示 ![](images/navigate-to.png)。即會開啟 API Manager 使用者介面導覽窗格。若要固定「使用者介面導覽」窗格，請按一下**固定功能表**圖示 ![](images/pinned.png)。
@@ -105,8 +105,8 @@ lastupdated: "2017-10-10"
 在本指導教學中，您已完成下列活動：
 
 1. 已更新 API 產品。
-2. 已將現有 API 產品接替為更新的 API 產品。
-3. 已將現有 API 產品的訂閱移轉至更新的 API 產品。
+2. 已將現有 API 產品接替為更新的「API 產品」。
+3. 已將現有「API 產品」的訂閱移轉至更新的「API 產品」。
 
 ---
 
