@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 
 ---
 
@@ -18,14 +18,14 @@ lastupdated: "2017-10-19"
 
 不管 API 是位于 {{site.data.keyword.Bluemix_notm}} 中，还是在 {{site.data.keyword.Bluemix_notm}} 外部进行维护，都可以使用 API Connect 在 {{site.data.keyword.Bluemix}} 中管理这些 API。通过管理 API，可以控制使用情况，提高采用率以及跟踪统计信息。
 
-如果您是客户，那么开发者创建 API 并将产品推送到 {{site.data.keyword.Bluemix_short}} 后，您可以在 API Manager UI 内管理其使用方式。以下主题描述了如何在 {{site.data.keyword.apiconnect_short}} 中创建和管理产品。
+如果您是客户，那么开发者创建 API 并将产品推送到 {{site.data.keyword.Bluemix_notm}} 后，您可以在 API Manager UI 内管理其使用方式。以下主题描述了如何在 {{site.data.keyword.apiconnect_short}} 中创建和管理产品。
 
 ## 通过安全网关公开内部部署 API
 {: #expose_apis_sec_gate}
 
 您可以创建安全网关来安全地将内部部署 API 公开到 {{site.data.keyword.apiconnect_full}}。
 
-创建安全网关时，可将 {{site.data.keyword.Bluemix_short}}
+创建安全网关时，可将 {{site.data.keyword.Bluemix_notm}}
 {{site.data.keyword.SecureGateway}} 服务的功能与 {{site.data.keyword.apiconnect_short}} 相集成。这意味着您可通过安全通道安全地从 {{site.data.keyword.apiconnect_short}} 访问内部部署 API，而无需供应 {{site.data.keyword.SecureGateway}} 服务的单独实例。您可在公共环境上有效地创建 {{site.data.keyword.apiconnect_short}} 的隧道，而不公开内部部署数据。您所需要做的只是创建网关并将其附加至 API。
 系统会自动为您完成创建目标、SSL 概要文件和证书。有关 {{site.data.keyword.SecureGateway}} 服务的更多信息，请参阅[关于 {{site.data.keyword.SecureGateway}}](../../services/SecureGateway/sg_overview.html#sg_overview)。要创建安全网关，请完成以下主题中的步骤。
 
@@ -44,9 +44,7 @@ lastupdated: "2017-10-19"
 
 3. 单击**添加**。这将显示`创建安全网关`对话框。
 
-4. 为您的网关提供名称。
-
-**注：**仅允许使用字母数字字符和下划线。
+4. 为您的网关提供名称。**注：**仅允许使用字母数字字符和下划线。
 
 5. 单击**保存**。网关会与网关标识和安全性令牌一起显示。
 
@@ -60,9 +58,7 @@ lastupdated: "2017-10-19"
     - Docker
     - IBM DataPower&reg;
 
-8. 遵循屏幕上的指导信息来安装并运行所选客户机。
-
-有关设置安全网关客户机的更多信息，请参阅[设置客户机](../../services/SecureGateway/sg_021.html#sg_021)。
+8. 遵循屏幕上的指导信息来安装并运行所选客户机。有关设置安全网关客户机的更多信息，请参阅[设置客户机](../../services/SecureGateway/sg_021.html#sg_021)。
 
 9. 客户机安装完成后，关闭**设置安全网关客户机**窗口。
 
@@ -139,26 +135,26 @@ target-url: http://onpremdb2.rtp.raleigh.ibm.com:3055$(request.path)$(request.se
 
 此时将显示测试结果。
 
-## 编译打包和发布 Loopback 应用程序
+## 编译打包和发布 LoopBack 应用程序
 {: #stage_publish_lb_app}
 
 1. 在 API Designer 的导航窗格中，单击**产品**。这将打开“产品”选项卡。
 
 2. 选择产品的版本，确保单击要使用的版本。
 
-3. 要将运行时发布到 {{site.data.keyword.Bluemix_short}}，请单击**发布**。
+3. 要将运行时发布到 {{site.data.keyword.Bluemix_notm}}，请单击**发布**。
 
-4. 单击**添加和管理目标** > **添加 IBM Bluemix 目标**。
+4. 单击**添加和管理目标** > **添加 IBM Cloud 目标**。
 
-5. 选择要发布到的 {{site.data.keyword.Bluemix_short}} **区域**并登录。
+5. 选择要发布到的 {{site.data.keyword.Bluemix_notm}} **区域**并登录。
 
-6. 选择要发布到的 {{site.data.keyword.Bluemix_short}} **组织**。
+6. 选择要发布到的 {{site.data.keyword.Bluemix_notm}} **组织**。
 
 7.  这将显示目录的列表。选择要发布到的目录。
 
 8.  单击**下一步**。
 
-9. 选择要发布的 LoopBack 应用程序。如果这是第一次将运行时部署到 {{site.data.keyword.Bluemix_short}}，请添加名称，然后单击**添加**图标。
+9. 选择要发布的 LoopBack 应用程序。如果这是第一次将运行时部署到 {{site.data.keyword.Bluemix_notm}}，请添加名称，然后单击**添加**图标。
 
 10.  单击**保存**。
 
@@ -202,7 +198,7 @@ target-url: http://onpremdb2.rtp.raleigh.ibm.com:3055$(request.path)$(request.se
 
 要测试发布是否已生效，请完成以下步骤：
 
-1. 确保 {{site.data.keyword.Bluemix_short}} 应用程序正在运行。
+1. 确保 {{site.data.keyword.Bluemix_notm}} 应用程序正在运行。
 
 2. 打开浏览器窗口，并浏览至“API 目标 URL”。应用程序通过客户机验证进行保护。如果未提供正确的客户机证书，那么将输出错误（这是预期行为）。
 
@@ -211,6 +207,8 @@ target-url: http://onpremdb2.rtp.raleigh.ibm.com:3055$(request.path)$(request.se
 https://<domain>/<Bluemix org>-<Bluemix space>/<Catalog identifier>/api/notes
 ```
 这将显示 200 响应。
+
+
 
 ## 配置目录
 
@@ -242,7 +240,7 @@ https://<domain>/<Bluemix org>-<Bluemix space>/<Catalog identifier>/api/notes
         https://gateway_cluster_hostname/organization_name/Catalog_name
         ```
         但是，您可以通过指定更适合企业的 URL 来覆盖缺省值；例如，`https://api.mycompany.com`。之后，开发者门户网站中显示的任何 API 端点都将反映该指定的 URL。**注：**
-		    - 您必须配置 DNS 条目，以将定制主机名和域映射到缺省网管 URL。
+		    - 您必须配置 DNS 条目，以将定制主机名和域映射到缺省网关 URL。
 		    - 对于要反映定制网关 URL 的 API 的端点，您必须对该 API 进行配置，以由 API Connect 网管强制执行。有关更多信息，请参阅[为 API 指定替代主机 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}。
 		    - 确保未向多个目录应用相同的定制网关 URL，因为并未在该场景中定义此类行为。
         **提示：**调用 API 时，还可以将 API 请求上的 HTTP 主机头设置为在“定制网关 URL”字段中指定的值。

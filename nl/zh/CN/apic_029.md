@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-28"
+lastupdated: "2018-02-12"
 
 ---
 
@@ -15,6 +15,11 @@ lastupdated: "2017-09-28"
 # 新增内容
 
 {{site.data.keyword.apiconnect_full}} 包括以下增强功能：
+
+- **删除开发者门户网站中的用户帐户和开发者组织**：您可以删除开发者门户网站中您的用户帐户和开发者组织。还可以更改开发者组织的所有权。有关更多信息，请参阅[删除您的开发者帐户 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_account.html){:new_window}、[删除开发者组织 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_dev_org.html){:new_window} 和[更改开发者组织的所有权 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_dev_org_ownership.dita){:new_window}。
+
+- __添加了 *endpoint_url* API 事件字段__：*endpoint_url* 事件记录字段标识请求在其上失败的代理或调用目标
+URL。有关更多信息，请参阅[删除您的开发者帐户 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/rapim_analytics_apieventrecordfields.html){:new_window}。</dd>
 
 - **添加了针对分析用开发者门户网站 REST API 的支持和参考**：开发者门户网站 REST API 可帮助您分析目录 API。有关更多信息，请参阅[分析 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apirest.doc/analytics.html){:new_window}。
 

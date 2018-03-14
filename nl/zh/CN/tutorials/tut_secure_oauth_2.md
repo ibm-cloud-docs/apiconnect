@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-12-13"
 ---
 
 {:new_window: target="blank"}
@@ -22,15 +22,17 @@ lastupdated: "2017-09-30"
 ## 先决条件
 
 开始之前，必须已完成以下教程。  
-- [通过 IBM Bluemix 使用客户机标识和客户机私钥保护 API](tut_secure_id_secret_bm.html) 或
+- [通过 {{site.data.keyword.Bluemix}} 使用客户机标识和客户机私钥保护 API](tut_secure_id_secret_bm.html) 或
 - [通过工具箱使用客户机标识和客户机私钥保护 API](tut_secure_id_secret_tk.html)
+
+注：本教程显示了在 {{site.data.keyword.Bluemix}} UI 中完成任务的步骤和屏幕快照。您还可以使用命令行完成相同的过程。在 [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tutorial_apionprem_security_OAuth_v506.html) 中可查看该过程。 
 
 ## 过程
 
 1. 创建 OAuth Provider API 并选择 OAuth 方案。  
 	a. 打开**草稿**，选择 **API**，然后单击**添加** > **OAuth 2.0 Provider API**。  
     ![](images/oauth_provider_1.png)
-	b. 将“标题”设置为“OAuth Endpoint API”。（名称和基本路径应该会自动填充。）  
+	b. 将“标题”设置为“OAuth Endpoint API”。名称和基本路径应该会自动填充。  
 	c. 选择**创建 API**。  
 	d. 在新创建的 OAuth Endpoint API 中，导航至 **OAuth 2** 面板（或向下滚动到该面板），然后选择“机密”作为“客户机类型”。  
 	e. 在“作用域”下，将 _scope1_ 重命名为 _view_current_。删除 _scope2_ 和 _scope3_。  

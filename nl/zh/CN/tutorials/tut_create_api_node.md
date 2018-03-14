@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-28"
 
 ---
 
@@ -24,13 +24,16 @@ lastupdated: "2017-10-19"
 
 本教程将指导您逐步使用 LoopBack 框架以 Node.js 创建 API。本教程将描述如何执行以下操作：
 1. 创建新的 LoopBack 项目。
-2. 使用 {{site.data.keyword.apiconnect_short}} 工具箱中的 API Designer 向 LoopBack 项目添加新的数据源和模型。
+2. 使用 {{site.data.keyword.apiconnect_full}} 工具箱中的 API Designer 向 LoopBack 项目添加新的数据源和模型。
 3. 使用 API Designer 浏览工具测试 API 端点。
 
 ---
 ## 先决条件
 
-开始之前，请[安装 {{site.data.keyword.apiconnect_short}} 工具箱](tut_prereq_install_toolkit.html)。
+开始之前，请[安装 {{site.data.keyword.apiconnect_short}} 工具箱](tut_prereq_install_toolkit.html)。如果已安装工具箱，请确保运行的是 V5.0.8.1 或更高版本。可通过在命令行上输入以下命令进行验证：
+	```
+	apic -v
+	```
 
 ---
 ## 创建 LoopBack 项目
@@ -89,7 +92,7 @@ lastupdated: "2017-10-19"
 	```
 	![](images/api-designer-1.png)
 	>![参考信息]
-	>以上命令会初始化 APIC 工具箱，并在完成后在缺省浏览器中启动 API Designer。
+	>以上命令会初始化 {{site.data.keyword.apiconnect_short}} 工具箱，并在完成后在缺省浏览器中启动 API Designer。
 	>![参考信息]
 	>在本教程中，将创建名为 weather-data 的项目。
 2.  如果先前未锁定 UI 导航窗格，请单击“导航至”图标 ![](images/navigate-to.png)。这将打开 API Manager UI 导航窗格。要锁定 UI 导航窗格，请单击“锁定菜单”图标 ![](images/pinned.png)。
@@ -132,7 +135,7 @@ lastupdated: "2017-10-19"
 	```
 	API Designer 将在缺省 Web 浏览器中打开，如果您最近未登录过，那么初始会显示登录页面。  
 	>![参考信息]
-	>可以使用自己的 Bluemix 帐户进行登录，也可以创建一个帐户。
+	>可以使用自己的 {{site.data.keyword.Bluemix}} 帐户进行登录，也可以创建一个帐户。
 3. 单击**数据源**图标 ![](images/datasource-icon.png)。
 4. 单击**添加**。这将打开“新建 LoopBack 数据源”窗口。
 5. 在**名称**文本字段中输入 `weatherDS`。
@@ -155,9 +158,9 @@ lastupdated: "2017-10-19"
 5. 在**属性**中，单击**添加属性**图标 ![](images/add-icon.png)。
 6. 在**属性名称**文本字段中，输入 `zip_code`。
 7. 对于**类型**，选择 **number**。
-8. 选中**必需**以使此属性成为必需属性。这表示在添加或更新模型实例时，此属性必须具有值。目前，请保留其他设置的缺省值：
+8. 选中**必需**以使此属性成为必需属性。这表示在添加或更新模型实例时，此属性必须具有值。 
+9. 选择**标识**以确保属性具有唯一标识。目前，请保留其他设置的缺省值：
 	- **是数组**：属性是否为包含指定类型的元素的 JavaScript 数组。
-	- **标识**：属性是否为唯一标识。
 	- **索引**：属性是否表示作为数据库索引的列（字段）。
 	- **描述**：属性的文本描述。
 9. 再次单击**添加属性**图标 ![](images/add-icon.png) 以添加其他属性。请参阅下表以完成其余属性：
@@ -184,6 +187,7 @@ lastupdated: "2017-10-19"
 	Express server listening on http://127.0.0.1:9000
 	```
 	API Designer 将在缺省 Web 浏览器中打开，如果您最近未登录过，那么初始会显示登录页面。
+	
 2. 启动本地测试服务器。
 	a. 在屏幕底部的测试控制台中，单击**启动服务器**图标 ![](images/test-icon.png)：
 	![](images/start-server-1.png)
@@ -209,8 +213,14 @@ lastupdated: "2017-10-19"
 ![](images/explore-test-1.png)
 中间窗格显示有关端点的摘要信息，包括其参数、安全性、模型实例数据和响应代码。右侧窗格提供使用 curl 命令以及 Ruby、Python、Java 和 Node 等语言调用端点的模板代码。
 
-6. 要在 API Designer 浏览工具中测试 REST 端点，请在右侧窗格上单击**试用**。向下滚动到**参数**，然后单击**生成**以生成一些哑元数据。缺省情况下，生成的数据包括 `zip_code`、`current_temperature`、`current_humidity`、`tonight_temperature_low`、`tonight_temperature_high`、`tonight_humidity_low`、`tonight_humidity_high` 和 `id` 属性。`id` 属性由 LoopBack 针对给定模型创建，其值将自动生成。从样本数据中除去 `id` 属性，根据需要更新生成的数据，然后单击**调用操作**。
+6. 要在 API Designer 浏览工具中测试 REST 端点，请完成以下步骤：
+    1. 在右侧窗格中，单击**试用**。 
+	
+	2. 向下滚动到**参数**，然后单击**生成**以生成一些哑元数据。缺省情况下，生成的数据包括 `zip_code`、`current_temperature`、`current_humidity`、`tonight_temperature_low`、`tonight_temperature_high`、`tonight_humidity_low` 和 `tonight_humidity_high` 属性。
+	
+	3. 单击**调用操作**。
 ![](images/explore-test-2.png)
+	
 >![故障诊断]
 >如果看到由于本地主机的证书不可信而生成的错误消息，请单击 API Designer 浏览工具中的错误消息内提供的链接以接受证书，然后继续在 Web 浏览器中调用操作。具体过程取决于您使用的 Web 浏览器。如果在浏览器中直接装入 REST 端点，那么将看到以下消息：{"name":"PreFlowError","message":"unable to process the request"}。必须使用 API Designer 浏览工具在浏览器中测试 REST 端点，因为该端点包含必需的头和其他请求参数。
 >
@@ -218,7 +228,7 @@ lastupdated: "2017-10-19"
 >如果获得响应代码 **422 - 无法处理的实体**，其中包含以下有效内容：
 >![](images/explore-test-3.png)
 >
->说明 `id` 数据元素尚未从生成的数据中除去。请除去 `id` 数据元素，然后重新运行测试。
+>确保生成的数据中不具有未除去的 `id` 数据元素。如果具有标识元素，请将其除去，并重新运行测试。
 >![故障诊断]
 >如果收到错误称**未能解析请求主体**，那么必须除去最后一个 `humidity_high` 数字后的逗号。
 7. 编辑 **data** 部分中显示的 JSON 格式的值。尝试更改生成的哑元数据，然后再次单击**调用操作**。您应该会看到请求和响应参数以及您输入的 JSON 实例数据。

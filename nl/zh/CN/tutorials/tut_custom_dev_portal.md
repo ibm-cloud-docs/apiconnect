@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -16,7 +16,7 @@ lastupdated: "2017-09-12"
 
 
 ## 目标
-本教程旨在帮助您快速定制 {{site.data.keyword.apiconnect_short}} 开发者门户网站并选择适合您需求的主题。
+本教程旨在帮助您快速定制 {{site.data.keyword.apiconnect_full}} 开发者门户网站并选择适合您需求的主题。
 
 ---
 

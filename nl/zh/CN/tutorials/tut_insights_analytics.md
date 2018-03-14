@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ lastupdated: "2017-09-30"
 技能级别：初学者
 
 ## 目标
-这是对 {{site.data.keyword.apiconnect_long}} 中 API 分析的基本介绍。我们将浏览可用的分析仪表板，并且在这个过程中，您可以使用自己的 API。
+这是对 {{site.data.keyword.apiconnect_full}} 中 API 分析的基本介绍。我们将浏览可用的分析仪表板，并且在这个过程中，您可以使用自己的 API。
 
 
 ## 先决条件
@@ -85,6 +85,8 @@ lastupdated: "2017-09-30"
    ![](./images/newdashboard.png) 
 这将显示可用可视化项的列表。
 
+
+
 2. 选择要添加到仪表板的一些可视化项。例如：
   * 预订的应用程序
   * 每个套餐的应用程序数 
@@ -148,6 +150,6 @@ lastupdated: "2017-09-30"
 
 ## 下一步
 
-学习[如何管理 API 和版本控制](tut_version_landing.html)。
+学习[如何管理 API 和版本控制](tut_manage_version_landing.html)。
 
 创建 > 管理 > 安全 > 社交化 > **分析**  

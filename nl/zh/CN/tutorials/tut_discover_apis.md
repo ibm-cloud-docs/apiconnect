@@ -1,10 +1,8 @@
 ---
-
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
-
-
+lastupdated: "2017-11-20"
+---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
@@ -18,12 +16,18 @@ lastupdated: "2017-10-10"
 
 
 ## 先决条件
-本教程没有先决条件。作为门户网站管理员，您还可以在浏览开发者门户网站以感受门户网站用户如何浏览开发者门户网站时完成本教程。请记住，所有开发者门户网站都有不同的外表。
+本教程无先决条件。作为门户网站管理员，您还可以在浏览开发者门户网站以感受门户网站用户如何浏览开发者门户网站时完成本教程。请记住，所有开发者门户网站都有不同的外表。
+
+ 
 
 如果您没有现有的开发者门户网站，那么可以先在 {{site.data.keyword.Bluemix_short}} 中设置和配置开发者门户网站，然后再继续本教程。
 
+
+
 ## 目标
-在本教程中，您将学习门户网站用户可在 {{site.data.keyword.apiconnect_short}} 开发者门户网站中如何使用 API。您将了解门户网站用户如何浏览产品和 API，查看和测试 API 以及预订 API。
+在本教程中，您将学习门户网站用户如何在 {{site.data.keyword.apiconnect_full}} 开发者门户网站中使用 API。您将了解门户网站用户如何浏览产品和 API，查看和测试 API 以及预订 API。
+
+ 
 
 ## 浏览产品和 API
 本部分显示门户网站用户将如何在开发者门户网站中浏览产品和 API。
@@ -41,10 +45,10 @@ lastupdated: "2017-10-10"
   ![产品 API](images/14-api.png)
 
 5. 在 API 的详细信息页面上，可以查看可用的操作及其参数和返回的响应。在页面末尾，可以查看 API 使用的定义。  
-  ![API 详细信息](images/15-details.png)
+  ![API 详细信息](images/15-details.png) 
 
 6. 在“代码示例”面板中，可以查看不同编码语言的示例，以了解调用请求的方式及其响应。选择其中一个示例（例如 **Node**）以查看该编码语言的示例。  
-  ![API 详细信息](images/16-examples.png)
+  ![API 详细信息](images/16-examples.png) 
 
 ---
 

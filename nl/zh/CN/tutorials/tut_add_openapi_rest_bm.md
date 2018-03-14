@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-10-19"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# 使用 IBM Bluemix 添加新的 API 规范并调用现有 REST 服务
+# 使用 {{site.data.keyword.Bluemix_notm}} 添加新的 API 规范并调用现有 REST 服务
 **持续时间**：15 分钟  
 **技能级别**：初学者  
 
@@ -28,7 +28,7 @@ lastupdated: "2017-10-19"
 2. 输入有效的 5 位美国邮政编码，以获取_**当前天气**_和_**今日预测**_。  
 ![](images/explore-weatherapp-1.png)
 
-3. 以上样本天气应用程序是使用提供天气数据的 API 构建的。用于获取**当前**天气数据的端点为 _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_。通过访问 [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window} 对其进行测试。  
+3. 以上样本天气应用程序是使用提供天气数据的 API 构建的。用于获取**当前**天气数据的端点为 _**https://myweatherprovider.mybluemix.net/current?zipcode={zipcode}**_。通过访问 [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window} 对其进行测试。  
 
   ![](images/explore-weatherapp-2.png)
 
@@ -40,8 +40,8 @@ lastupdated: "2017-10-19"
 ---
 
 ### 添加新的 OpenAPI 规范以创建 REST API 代理  
-1. 登录到 {{site.data.keyword.Bluemix_short}}：https://new-console.ng.bluemix.net/login。
-2. 在 {{site.data.keyword.Bluemix_short}} 导航面板中，选择**服务**，然后选择**仪表板**。启动 {{site.data.keyword.apiconnect_short}} 服务。
+1. 登录到 {{site.data.keyword.Bluemix_notm}}：https://new-console.ng.bluemix.net/login。
+2. 在 {{site.data.keyword.Bluemix_notm}} 导航面板中，选择**服务**，然后选择**仪表板**。启动 {{site.data.keyword.apiconnect_short}} 服务。
 3. 在 {{site.data.keyword.apiconnect_short}} 中，确保导航面板已打开。如果未打开，请单击 **>>** 将其打开。  
 4. 在导航面板中选择**草稿**。
 5. 在 **API** 选项卡中，单击**添加**。从下拉菜单中，选择**新建 API**。    
@@ -153,7 +153,7 @@ _（我们将在下一个教程的“API 密钥”中探讨安全性。）_
 ---
 
 ### 结论
-在本教程中，您已学习如何通过 API 传递代理来调用现有 REST 服务。首先，通过 Web 浏览器检查了样本服务的可用性。接着，在 API Connect 中创建了新的 OpenAPI 规范，并将其链接到要调用的样本服务。随后，将 API 打包成产品，将产品发布到目录，然后测试了代理。
+在本教程中，您已学习如何通过 API 传递代理来调用现有 REST 服务。首先，通过 Web 浏览器检查了样本服务的可用性。接着，在 {{site.data.keyword.apiconnect_short}} 中创建了新的 OpenAPI 规范，并将其链接到要调用的样本服务。随后，将 API 打包成产品，将产品发布到目录，然后测试了代理。
 
 ---
 

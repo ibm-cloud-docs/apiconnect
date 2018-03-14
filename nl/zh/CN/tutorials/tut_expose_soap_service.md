@@ -2,7 +2,7 @@
 
 copyright:
 years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-14"
 
 ---
 
@@ -23,14 +23,14 @@ lastupdated: "2017-10-19"
 
 ## 先决条件
 1. 开始之前，需要[设置 {{site.data.keyword.apiconnect_full}} 实例](tut_prereq_set_up_apic_instance.html)。
-2. 开始之前，请将 [weatherprovider.wsdl 测试 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} 文件复制到本地文件系统。
+2. 开始之前，请将 [weatherprovider.wsdl 测试 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} 文件复制到本地文件系统。
 	>![images/info.png]
 	>可以单击**原始**，然后将生成的页面在本地系统上另存为 `.wsdl` 文件。
 
 ---
 ## 设置 REST API 定义
 1. 登录到 {{site.data.keyword.Bluemix_short}}：[https://new-console.ng.bluemix.net/login ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://new-console.ng.bluemix.net/login){:new_window}。
-2. 在 {{site.data.keyword.Bluemix_short}} **仪表板**中，向下滚动并选择 {{site.data.keyword.apiconnect_full}}。或者，从菜单图标中，选择**服务**，接着选择 **API** 以访问**使用 API** 窗口，然后选择 **API Connect**。在 **API Connect** 页面中，可以直接按`创建`，也可以调整缺省设置。对于本练习，请将此实例保留未绑定状态，并调整“服务名称”以方便以后更容易识别。例如，`API Connect-weather-exercise`。按`创建`按钮以启动 {{site.data.keyword.apiconnect_short}} 服务。  
+2. 在 {{site.data.keyword.Bluemix_notm}} **仪表板**中，向下滚动并选择 {{site.data.keyword.apiconnect_short}}。或者，从菜单图标中，选择**服务**，接着选择 **API** 以访问**使用 API** 窗口，然后选择 **API Connect**。在 **API Connect** 页面中，可以直接按`创建`，也可以调整缺省设置。对于本练习，请将此实例保留未绑定状态，并调整“服务名称”以方便以后更容易识别。例如，`API Connect-weather-exercise`。按`创建`按钮以启动 {{site.data.keyword.apiconnect_short}} 服务。  
 您可能会看到一条描述新增内容的警报，或者看到**草稿 API** 信息启动页面。阅读相应信息后，单击“**知道了**”图标以查看 API Manager。
 3. 在 {{site.data.keyword.apiconnect_short}} 中，如果先前未锁定 UI 导航窗格，请单击**导航至**图标 ![](images/navigate-to.png)。这将打开 API Manager UI 导航窗格。要锁定 UI 导航窗格，请单击**锁定菜单**图标 ![](images/pinned.png)。
 4. 在 UI 导航窗格中选择**草稿**，然后单击 **API** 选项卡。这将打开 **API** 选项卡。
@@ -56,8 +56,9 @@ lastupdated: "2017-10-19"
 ![](images/api-security-1.png)
 10. 取消选中 **ClientID** 选项。
 ![](images/api-security-2.png)
-	>![images/info.png]
-	>您可能会注意到，在“保存”磁盘图标旁显示有一个黄色三角形图标。这是警告，指示存在已定义但尚未使用的定义。（此警告不会影响 API 定义。）
+	>![](images/info.png)
+	
+>您可能会注意到，在“保存”磁盘图标旁显示有一个黄色三角形图标。这是警告，指示存在已定义但尚未使用的定义。（此警告不会影响 API 定义。）
 11. 在**定义**部分中，单击**添加定义**图标 ![](images/add-icon.png)，然后通过单击该图标来展开新定义。
 12. 将定义命名为 `Weather Data Output`。
 13. 该定义将有五个属性。请单击**添加属性**四次以添加其他属性。参考下图来对`属性名称`重命名，并对`描述`、`类型`和`示例`使用缺省值：![](images/definition-new-1.png)

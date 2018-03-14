@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -65,7 +65,7 @@ API 定义导入后，会显示在“**草稿**”页面中 **API** 选项卡的
 		1. 选择**创建 REST API 并自行定义资源和操作**。
 		2. 单击**完成**。此时将为新 REST API 自动打开 REST API 编辑器，定义资源、模型和操作时必须使用此编辑器。
 		
-	**通过现有 Swagger 2.0 文档操作**：
+	**从现有 Swagger 2.0 文档操作**：
 		1. 选择**导入 Swagger 文档中定义的资源和操作**并单击**下一步**。
 		2. 选择描述 REST API 中所需资源和操作的 Swagger 文档的路径。您可以从文件系统或工作空间中的现有项目导入 Swagger 文档。此时将验证文件是否可在 REST API 中使用。如果验证所选 Swagger 文档时发现任何错误，那么会在向导开头显示这些验证错误。如果在所选 Swagger 文档中发现验证错误，那么无法继续。
 		3. 选择**完成**以创建 API。
@@ -112,30 +112,30 @@ API 定义导入后，会显示在“**草稿**”页面中 **API** 选项卡的
 
 ## 在 IBM API Connect 中发布使用 IBM App Connect Professional 创建的 API
 
-在本教程中，可以通过 {{site.data.keyword.apiconnect_full}} 发布并管理使用 IBM&reg; App Connect Professional 创建的 REST API。
+在本教程中，可以通过 {{site.data.keyword.apiconnect_full}} 发布并管理使用 IBM App Connect Professional 创建的 REST API。
 
 ### 先决条件
 {: #prereq_pub_api_appconn}
 
-您需要 IBM&reg; App Connect Professional on Cloud 和 IBM API Connect&trade; on Bluemix&reg; 的有效帐户才能完成本教程的学习。请确保您的 REST API 文件符合 Swagger 规范 V2.0。该文件的格式可以是 JSON 或 YAML。
+您需要 IBM App Connect Professional on Cloud 和 {{site.data.keyword.apiconnect_short}} 的有效帐户才能完成此教程的学习。请确保您的 REST API 文件符合 Swagger 规范 V2.0。该文件的格式可以是 JSON 或 YAML。
 
-您可以使用 IBM&reg; App Connect Professional 创建 REST API，这些 API 是专用应用程序，可用于将集成作为 RESTful Web Service 公开且可由 HTTP 客户机调用。创建 API 后，您可以通过使用 {{site.data.keyword.apiconnect_short}} 来发布并管理这些 API。以下列表中包含了在 {{site.data.keyword.apiconnect_short}} 中管理 API 的一些优势：
+您可以使用 IBM App Connect Professional 创建 REST API，这些 API 是专用应用程序，可用于将集成作为 RESTful Web Service 公开且可由 HTTP 客户机调用。创建 API 后，您可以通过使用 {{site.data.keyword.apiconnect_short}} 来发布并管理这些 API。以下列表中包含了在 {{site.data.keyword.apiconnect_short}} 中管理 API 的一些优势：
 
 - 您可以监视对 API 执行的调用数。
 - 您可以控制对 API 执行的调用数。
 - 您可以维护多个 API 版本。
 
-有关更多优点，请参阅[管理 API](managing_apis.html)。要在 IBM&reg; App Connect Professional 中创建 REST API 并将其发布到 {{site.data.keyword.apiconnect_short}}，请完成以下步骤：
+有关更多优点，请参阅[管理 API](managing_apis.html)。要在 IBM App Connect Professional 中创建 REST API 并将其发布到 {{site.data.keyword.apiconnect_short}}，请完成以下步骤：
 
-1. 使用 IBM&reg; App Connect Professional 创建 REST API。
-  - 使用 IBM 标识登录到 [App Connect Professional Web 管理控制台 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://appconnect.ibmcloud.com/professional/){:new_window}。有关如何完成使用 IBM&reg; App Connect Professional Web 管理控制台创建 REST API 的任务的更多信息，请参阅 IBM&reg; Knowledge Center 中的[关于管理控制台设置 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window}。
+1. 通过使用 IBM App Connect Professional 创建 REST API。
+  - 使用 IBM 标识登录到 [App Connect Professional Web 管理控制台 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://appconnect.ibmcloud.com/professional/){:new_window}。有关如何完成使用 IBM App Connect Professional Web 管理控制台创建 REST API 的任务的更多信息，请参阅 IBM Knowledge Center 中的[关于管理控制台设置 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window}。
   - 选择“生产”选项卡（如果尚未选择）。
   - 在导航面板中选择**存储库** > **配置**。
   - 在“项目配置”屏幕中，选择要发布到 {{site.data.keyword.apiconnect_short}} 的项目。将显示要发布的项目的“配置详细信息”。
   - 选择**推送到 API 管理**。**提示**：仅当您要导入的项目的状态为正在运行或已部署时，**推送到 API 管理**按钮才处于活动状态。如果未显示此链接，请选择播放按钮以启动此项目。
   - 在“推送到 API 管理”屏幕上，输入以下信息以创建与 API 管理系统的连接。
 
-  <table><caption>表 1. 用于向 API Connect 发布 API 的连接信息</caption>
+  <table><caption>表 1. 用于向 {{site.data.keyword.apiconnect_short}} 发布 API 的连接信息</caption>
   <thead>
   <tr>
   <th>字段名称</th>
@@ -144,17 +144,17 @@ API 定义导入后，会显示在“**草稿**”页面中 **API** 选项卡的
   </thead>
   <tbody>
   <tr><td>主机</td>
-  <td>指定管理集群、服务器或云地址的主机名。对于 {{site.data.keyword.Bluemix_short}}，此条目最有可能是 us.apiconnect.ibmcloud.com。</td>
+  <td>指定管理集群、服务器或云地址的主机名。对于 {{site.data.keyword.Bluemix_notm}}，此条目最有可能是 us.apiconnect.ibmcloud.com。</td>
   </tr>
   <tr>
   <td>端口</td>
   <td>指定连接到管理集群、服务器或云地址所需的端口号。</td>
   </tr>
   <tr><td>用户标识</td>
-  <td>指定用于访问管理集群、服务器或云地址的认证用户名。此条目最有可能是您用于登录到 {{site.data.keyword.Bluemix_short}} 的 IBM 标识。</td>
+  <td>指定用于访问管理集群、服务器或云地址的认证用户名。此条目最有可能是您用于登录到 {{site.data.keyword.Bluemix_notm}} 的 IBM 标识。</td>
   </tr>
   <tr><td>密码</td>
-  <td>指定用于访问管理集群、服务器或云地址的认证密码。此条目最有可能是您用于登录到 {{site.data.keyword.Bluemix_short}} 的 IBM 标识密码。</td>
+  <td>指定用于访问管理集群、服务器或云地址的认证密码。此条目最有可能是您用于登录到 {{site.data.keyword.Bluemix_notm}} 的 IBM 标识密码。</td>
   </tr>
   </tbody>
   </table>
@@ -167,13 +167,13 @@ API 定义导入后，会显示在“**草稿**”页面中 **API** 选项卡的
 
 5. 选择**关闭**以关闭窗口。一个新的浏览器选项卡将在缺省浏览器中打开，并显示您的 API。
 
-将 IBM&reg; App Connect API 与 {{site.data.keyword.apiconnect_short}} 相关联。
+将 IBM App Connect API 与 {{site.data.keyword.apiconnect_short}} 相关联。
 
 #### 导入 Swagger API 定义
 
-要将与 IBM&reg; App Connect 中的 REST API 项目关联的 Swagger 文件导入到 {{site.data.keyword.apiconnect_short}} 服务，请执行以下步骤：
+要将与 IBM App Connect 中的 REST API 项目关联的 Swagger 文件导入到 {{site.data.keyword.apiconnect_short}} 服务，请执行以下步骤：
 
-1. 登录到 {{site.data.keyword.apiconnect_short}}Bluemix&reg; 服务。
+1. 登录到 {{site.data.keyword.apiconnect_short}} {{site.data.keyword.Bluemix_notm}} 服务。
 
 1.  在 API Manager UI 标题栏中，选择**导航至** > **草稿**。
 

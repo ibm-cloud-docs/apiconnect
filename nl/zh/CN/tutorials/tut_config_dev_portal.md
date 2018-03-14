@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -27,9 +27,9 @@ lastupdated: "2017-09-12"
 
 *目录*是一个 IBM 术语，表示不同的环境。例如，可针对测试、编译打包和生产环境创建不同的目录。您应该有一个名为“沙箱”的目录。请自由使用此目录来创建开发者门户网站，也可创建新目录并根据您的需要命名。
 
-1. 在 Bluemix“仪表板”中，选择 **API Connect** 服务以启动 API Connect“仪表板”。![API Connect 服务](images/11-Bluemix-Dashboard.png)
+1. 在 {{site.data.keyword.Bluemix_short}} 仪表板中，选择 **API Connect** 服务以启动 {{site.data.keyword.apiconnect_short}} 仪表板。![API Connect 服务](images/11-Bluemix-Dashboard.png)
 
-2. 在 API Connect“仪表板”中，选择要为其创建开发者门户网站的目录。例如，**沙箱**。![目录](images/12-APIC-Dashboard.png)
+2. 在 {{site.data.keyword.apiconnect_short}} 仪表板中，选择要为其创建开发者门户网站的目录。例如，**沙箱**。![目录](images/12-APIC-Dashboard.png)
 
 3. 在该目录中，选择**设置**选项卡。  
   ![目录设置](images/13-catalog-settings.png)
@@ -75,7 +75,7 @@ lastupdated: "2017-09-12"
   ![API 产品](images/27-api-products.png)
 
 ### 结论
-在本教程中，您已学习如何设置和配置 API Connect 开发者门户网站。此外，还浏览了开发者门户网站。
+在本教程中，您已学习如何设置和配置 {{site.data.keyword.apiconnect_short}} 开发者门户网站。此外，还浏览了开发者门户网站。
 
 ---
 

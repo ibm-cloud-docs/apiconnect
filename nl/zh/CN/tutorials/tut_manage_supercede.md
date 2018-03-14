@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -30,7 +30,7 @@ lastupdated: "2017-10-10"
 ## 取代 API 产品
 1. 登录到 {{site.data.keyword.Bluemix_short}}：[https://console.ng.bluemix.net/login ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://console.ng.bluemix.net/login){:new_window}。
 
-2. 在 {{site.data.keyword.Bluemix_short}}“仪表板”中，启动 {{site.data.keyword.apiconnect_short}} 服务。
+2. 在 {{site.data.keyword.Bluemix_notm}}“仪表板”中，启动 {{site.data.keyword.apiconnect_short}} 服务。
 ![](images/Bluemix.png)
 
 3. 在 API Manager 中，如果先前未锁定 UI 导航窗格，请单击**导航至**图标 ![](images/navigate-to.png)。这将打开 API Manager UI 导航窗格。要锁定 UI 导航窗格，请单击**锁定菜单**图标 ![](images/pinned.png)。

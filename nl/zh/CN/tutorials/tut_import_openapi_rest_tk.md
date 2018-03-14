@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -16,7 +16,7 @@ lastupdated: "2017-10-19"
 
 
 ## 目标
-本教程说明如何使用 {{site.data.keyword.apiconnect_short}} 将现有 API 纳入管理控制。在本教程中，将导入 OpenAPI 规范，然后为现有 REST 服务创建传递 API 代理。
+本教程说明如何使用 {{site.data.keyword.apiconnect_full}} 将现有 API 纳入管理控制。在本教程中，将导入 OpenAPI 规范，然后为现有 REST 服务创建传递 API 代理。
 
 ## 先决条件
 开始之前，需要[设置 API Connect 实例](tut_prereq_set_up_apic_instance.html)和[安装 API Connect 工具箱](tut_prereq_install_toolkit.html)。
@@ -26,7 +26,7 @@ lastupdated: "2017-10-19"
 
 ## 浏览样本应用程序并测试目标端点
 
-针对本教程已经创建了样本 _Weather Provider_ 应用程序。对应的 API 规范 (Swagger 2.0) 位于 [weather-provider-api_1.0.0.yaml ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window} 文件中。
+针对本教程已经创建了样本 _Weather Provider_ 应用程序。对应的 API 规范 (Swagger 2.0) 位于 [weather-provider-api_1.yaml ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window} 文件中。
 
 1. 要浏览该应用程序，请转至 [http://gettingstartedweatherapp.mybluemix.net/ ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}。  
 2. 输入有效的 5 位美国邮政编码，以获取_**当前天气**_和_**今日预测**_。  
@@ -53,7 +53,7 @@ lastupdated: "2017-10-19"
 6. 在“API”选项卡中，单击**添加**。
 7. 从下拉菜单中，单击**通过文件或 URL 导入 API**。
 ![](images/toolkit-import-1.png)
-8. 本教程中将使用天气 API 的 OpenAPI 2.0 定义。在“导入 OpenAPI (Swagger)”对话框中，输入以下 URL：`https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml`。
+8. 本教程中将使用天气 API 的 OpenAPI 2.0 定义。在“导入 OpenAPI (Swagger)”对话框中，输入以下 URL：`https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml`。
 9. 将_添加产品_选项保留未选中状态，然后单击**导入**。  
     ![](images/screenshot_import-url.png)  
 
@@ -84,7 +84,7 @@ lastupdated: "2017-10-19"
 
 ## 结论
 
-在本教程中，您了解了如何通过 API 传递代理来调用现有 REST 服务。首先，通过 Web 浏览器检查了样本服务的可用性。接着，在 API Connect 中创建了 API 代理，并将该代理链接到要调用的样本服务。最后，您使用 {{site.data.keyword.apiconnect_short}} 内部测试工具测试了此服务。
+在本教程中，您了解了如何通过 API 传递代理来调用现有 REST 服务。首先，通过 Web 浏览器检查了样本服务的可用性。接着，在 {{site.data.keyword.apiconnect_short}} 中创建了 API 代理，并将该代理链接到要调用的样本服务。最后，您使用 {{site.data.keyword.apiconnect_short}} 内部测试工具测试了此服务。
 
 ---
 

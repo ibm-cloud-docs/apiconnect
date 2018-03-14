@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -13,27 +13,27 @@ lastupdated: "2017-10-19"
 # 故障诊断
 {: #troubleshoot}
 
-下面是有关在 {{site.data.keyword.Bluemix_short}} 上使用 {{site.data.keyword.apiconnect_long}} 的常见故障诊断问题的回答。
+下面是有关在 {{site.data.keyword.Bluemix_notm}} 上使用 {{site.data.keyword.apiconnect_long}} 的常见故障诊断问题的回答。
 {:shortdesc}
 
-## 添加 API Connect Bluemix 服务时需要用户名和密码
+## 添加 API Connect {{site.data.keyword.Bluemix_notm}} 服务时需要用户名和密码
 
-将服务添加到 {{site.data.keyword.Bluemix_short}}“仪表板”后，在尝试打开该服务时，系统会提示您输入用户名和密码。 
+将服务添加到 {{site.data.keyword.Bluemix_notm}}“仪表板”后，在尝试打开该服务时，系统会提示您输入用户名和密码。 
 
 ### 症状
 {: #ts_sym_usernamepw}
 
-打开新的 {{site.data.keyword.apiconnect_short}} 时无法直接访问 {{site.data.keyword.Bluemix_short}} 服务，而需要登录到 API Manager。
+打开新的 {{site.data.keyword.apiconnect_short}} 时无法直接访问 {{site.data.keyword.Bluemix_notm}} 服务，而需要登录到 API Manager。
 
 ### 原因
 {: #ts_cause_usernamepw}
 
-浏览器设置为阻止 cookie，或者级别设置为比 {{site.data.keyword.apiconnect_short}} 所需级别限制更严的级别。
+浏览器设置为阻止 cookie，或者级别设置为比 {{site.data.keyword.apiconnect_notm}} 所需级别限制更严的级别。
 
 ### 解决方法
 {: #ts_res_usernamepw}
 
-在浏览器设置中启用或增加 cookie 的许可权级别，直至打开 {{site.data.keyword.Bluemix_short}} 服务为止。
+在浏览器设置中启用或增加 cookie 的许可权级别，直至打开 {{site.data.keyword.Bluemix_notm}} 服务为止。
 
 ## 无法安装开发者工具箱
 
@@ -64,7 +64,8 @@ sudo chown -R $USER /usr/local
 ```
 {:codeblock}
 
-此命令使您的用户帐户成为 `/usr/local` 目录的所有者。然后，您将不需要使用 sudo 来安装节点或使用 npm 全局安装软件包。有关更多信息，请参阅[如何使用 Node ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://howtonode.org/introduction-to-npm){: new_window}。**注：**您只能在本地开发系统上更改目录所有权。永远不要对服务器系统执行此操作。
+此命令使您的用户帐户成为 `/usr/local` 目录的所有者。然后，您将不需要使用 sudo 来安装节点或使用 npm 全局安装软件包。 
+    **注：**您只能在本地开发系统上更改目录所有权。永远不要对服务器系统执行此操作。
 
 此外，请勿在 `/usr/bin` 目录上使用先前的 `chown` 命令；执行此操作可能会导致系统配置严重错误。
 
@@ -237,19 +238,19 @@ Stripe 信用卡处理服务允许每个帐户最多有 25 个预订。
 ### 解决方法
 {: #ts_res_nosubscribe}
 
-确保您有 {{site.data.keyword.Bluemix_short}} {{site.data.keyword.apiconnect_short}} 服务的企业级别帐户，并且实例数少于 25 个。如果您已经有最大数量的服务，请除去某个服务。
+确保您有 {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.apiconnect_short}} 服务的企业级别帐户，并且实例数少于 25 个。如果您已经有最大数量的服务，请除去某个服务。
 
 ## 获取 API Connect 的帮助和支持
 
 如果您在使用 {{site.data.keyword.apiconnect_short}} 时有任何疑问或遇到任何问题，您可以在论坛中搜索相关信息或进行提问来获取帮助。
 还可以提交支持凭单。
 
-使用论坛进行提问时，请使用适当的标记来标注您的问题，以方便 {{site.data.keyword.Bluemix_short}} 开发团队识别。 
+使用论坛进行提问时，请使用适当的标记来标注您的问题，以方便 {{site.data.keyword.Bluemix_notm}} 开发团队识别。 
 
 - 如果您有关于使用 {{site.data.keyword.apiconnect_short}} 开发或部署应用程序的技术问题，请将您的问题发布到 Stack
-Overflow 上，并使用“ibm-bluemix”和“api connect”标记您的问题。
+Overflow 上，并使用“ibm-cloud”和“api connect”标记您的问题。
 
-- 有关服务的问题和入门指示信息，请使用 IBM DeveloperWorks dW Answers 论坛。请加上“bluemix”和“api connect”标记。有关使用论坛的更多详细信息，请参阅“获取帮助”。 
+- 有关服务的问题和入门指示信息，请使用 IBM DeveloperWorks dW Answers 论坛。请加上“ibm cloud”和“api connect”标记。有关使用论坛的更多详细信息，请参阅“获取帮助”。 
 
 有关开具 IBM 支持凭单的信息，或有关支持级别和凭单严重性的信息，请参阅“联系支持人员”。
 

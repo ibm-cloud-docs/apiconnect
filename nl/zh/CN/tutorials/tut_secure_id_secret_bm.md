@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# 通过 IBM Bluemix 使用客户机标识和客户机私钥保护 API
+# 通过 {{site.data.keyword.Bluemix_notm}} 使用客户机标识和客户机私钥保护 API
 
 **持续时间**：10 分钟  
 **技能级别**：初学者

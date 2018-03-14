@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-10-19"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# 使用 IBM Bluemix 导入 API 规范并代理现有 REST 服务
+# 使用 {{site.data.keyword.Bluemix_notm}} 导入 API 规范并代理现有 REST 服务
 持续时间：5 分钟  
 技能级别：初学者  
 
@@ -25,7 +25,7 @@ lastupdated: "2017-10-19"
 
 ## 浏览样本应用程序并测试目标端点
 
-针对本教程已经创建了样本 _Weather Provider_ 应用程序。对应的 API 规范 (Swagger 2.0) 位于 [weather-provider-api_1.0.0.yaml ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window} 文件中。
+针对本教程已经创建了样本 _Weather Provider_ 应用程序。对应的 API 规范 (Swagger 2.0) 位于 [weather-provider-api_1.yaml ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window} 文件中。
 
 1. 要浏览该应用程序，请转至 [http://gettingstartedweatherapp.mybluemix.net/ ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}。  
 2. 输入有效的 5 位美国邮政编码，以获取_**当前天气**_和_**今日预测**_。  
@@ -44,19 +44,17 @@ lastupdated: "2017-10-19"
 
 ## 导入样本应用程序的 OpenAPI 规范以创建 REST API 代理
 1. 登录到 {{site.data.keyword.Bluemix_short}}：https://new-console.ng.bluemix.net/login。
-2. 在 {{site.data.keyword.Bluemix_short}} 导航面板中，选择**服务**，然后选择**仪表板**。启动 API Connect 服务。  
-   ![](images/login-1.png)   ![](images/login-2.png)  
-
+2. 在 {{site.data.keyword.Bluemix_notm}} 导航面板中，选择**服务**，然后选择**仪表板**。启动 {{site.data.keyword.apiconnect_short}} 服务。 
 3. 在 {{site.data.keyword.apiconnect_short}} 中，确保左侧的导航面板已打开。如果未打开，请单击 **>>** 将其打开。  
 4. 在导航面板中选择**草稿**。   
 5. 在 **API** 选项卡中，单击**添加**。从下拉菜单中，选择**通过文件或 URL 导入 API**。  
      ![](images/import-1.png)
 
-6. 现在，我们将导入 OpenAPI 天气定义。在打开的“导入 OpenAPI (Swagger)”对话框中，输入以下 URL：`https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/bluemix/1a/weather-provider-api_1.0.0.yaml`。将其他选项保留其缺省值，然后单击**导入**。  
+6. 现在，我们将导入 OpenAPI 天气定义。在打开的“导入 OpenAPI (Swagger)”对话框中，输入以下 URL：`https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml`。将其他选项保留其缺省值，然后单击**导入**。  
     ![](images/import-2.png)  
 
 7. 导入 OpenAPI 规范后，将转至 API 的**设计**视图。在其中，可以查看 OpenAPI 定义的各个部分。滚动进行浏览，并记下**主机**值。还可以在**源**选项卡下查看 OpenAPI。_注：您将注意到“主机”值设置为 _`$(catalog.host)`_。这是 API 代理的基本 URL。_
-8. 保存 API。
+8. API 已保存。 
 
 
 ## 测试 API 代理
@@ -70,7 +68,7 @@ lastupdated: "2017-10-19"
 
   ![](images/generate-default-product-3.png)
 
-  _在 API Connect 中，**产品**用于对特定用途的 API 进行分组。产品将发布到**目录**。[{{site.data.keyword.apiconnect_short}} 词汇表](../apic_glossary.html)_
+  _在 {{site.data.keyword.apiconnect_short}} 中，**产品**用于对特定用途的 API 进行分组。产品将发布到**目录**。[{{site.data.keyword.apiconnect_short}} 词汇表](../apic_glossary.html)_
 
 3. 在“组合”选项卡中，单击“播放”图标以测试 API 代理的目标调用。
 
@@ -99,7 +97,7 @@ _浏览工具允许用户通过强制实施在 OpenAPI 定义中设置的任何�
 
 
 ### 结论
-在本教程中，您了解了如何通过 API 传递代理来调用现有 REST 服务。首先，通过 Web 浏览器检查了样本服务的可用性。接着，在 API Connect 中创建了 API 代理，并将该代理链接到要调用的样本服务。随后，将 API 打包成产品，将产品发布到目录，然后测试了代理。
+在本教程中，您了解了如何通过 API 传递代理来调用现有 REST 服务。首先，通过 Web 浏览器检查了样本服务的可用性。接着，在 {{site.data.keyword.apiconnect_short}} 中创建了 API 代理，并将该代理链接到要调用的样本服务。随后，将 API 打包成产品，将产品发布到目录，然后测试了代理。
 
 ---
 

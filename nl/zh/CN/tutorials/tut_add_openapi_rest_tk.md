@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ lastupdated: "2017-10-19"
 **技能级别**：初学者  
 
 ## 目标
-本教程通过说明如何将现有 API 纳入管理控制，帮助您快速上手使用 {{site.data.keyword.apiconnect_short}}。首先将创建新的 OpenAPI 规范，然后为现有 REST 服务创建传递 API 代理。
+本教程通过说明如何将现有 API 纳入管理控制，帮助您快速上手使用 {{site.data.keyword.apiconnect_full}}。首先将创建新的 OpenAPI 规范，然后为现有 REST 服务创建传递 API 代理。
 
 ## 先决条件
 开始之前，需要[设置 API Connect 实例](tut_prereq_set_up_apic_instance.html)和[安装 API Connect 工具箱](tut_prereq_install_toolkit.html)。
@@ -116,9 +116,9 @@ _（我们将在下一个教程的“API 密钥”中探讨安全性。）_
       - 将 **get /today** 操作分配给**用例 1**。![](images/assemble-1.png)**Operation Switch** 将提供决策点。相应的操作必须根据动词/路径对进行调用。  
     c. 将 **invoke** 策略从选用板中拖放到画布上。在 **/get current** 路径和 **/get today** 路径中分别放入一个。
     d. 在 **/get current** 路径中选择 **invoke** 策略，并将其标题更新为“**invoke-current**”。  
-    e. 使用以下内容更新 URL 字段：`https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`。
+    e. 使用 `https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode)` 更新 URL 字段。
     f. 在 **/get today** 路径中选择 **invoke** 策略，并将其标题更新为“**invoke-today**”。  
-    g. 使用以下内容更新 URL 字段：`https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`。  
+    g. 使用 `https://myweatherprovider.mybluemix.net/today?zipcode=$(request.parameters.zipcode)` 更新 URL 字段。  
 
 20. 保存 API。
 

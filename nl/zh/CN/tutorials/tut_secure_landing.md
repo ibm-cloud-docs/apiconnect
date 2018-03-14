@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -20,9 +20,9 @@ lastupdated: "2017-09-12"
 
 要使用客户机标识和客户机私钥来保护 API，必须为过程选择一种方法。
 
-## IBM Bluemix
+## {{site.data.keyword.Bluemix_notm}}
 
-- [通过 IBM Bluemix 使用客户机标识和客户机私钥保护 API](tut_secure_id_secret_bm.html)
+- [通过 {{site.data.keyword.Bluemix_notm}} 使用客户机标识和客户机私钥保护 API](tut_secure_id_secret_bm.html)
 
 ## 开发者工具箱
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-26"
+lastupdated: "2017-12-15"
 
 ---
 
@@ -90,21 +90,21 @@ Oracle、DB2 和 SQLLite 连接器需要 C 编译器工具，才能构建和安�
 </thead>
 <tbody >
 <tr class="style-scope doc-content doc-tr-odd">
-<td style="width: 33.3%" > [Microsoft .NET Framework 4 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.microsoft.com/en-us/download/details.aspx?id=17851) <a href="https://www.microsoft.com/en-us/download/details.aspx?id=17851" rel="external" target="blank" title="（在新选项卡或窗口中打开）" >Microsoft .NET Framework 4</a></td>
+<td style="width: 33.3%" > [Microsoft .NET Framework 4 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.microsoft.com/en-us/download/details.aspx?id=17851)</td>
 <td style="width: 33.3%">Python V2.7（不支持 V3.x）</td>
-<td style="width: 33.3%" > [针对 Mac OS X 的 Python 发行版 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.python.org/downloads/mac-osx/)<a href="https://www.python.org/downloads/mac-osx/" rel="external" target="blank" title="（在新选项卡或窗口中打开） " >针对 Mac OS X 的 Python 发行版</a></td>
+<td style="width: 33.3%" > [Python Releases for Mac OS X ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.python.org/downloads/mac-osx/)</td>
 </tr>
-<tr><td style="width: 33.3%" > [Visual Studio ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.visualstudio.com/downloads/download-visual-studio-vs) <a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" rel="external" target="blank" title="（在新选项卡或窗口中打开）" >Visual Studio</a></td>
+<tr><td style="width: 33.3%" > [Visual Studio ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.visualstudio.com/downloads/download-visual-studio-vs)</td>
 <td style="width: 33.3%">
 <code>make</code>
 </td>
-<td style="width: 33.3%" > [Xcode ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716) <a href="https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716" rel="external" target="blank" title="（在新选项卡或窗口中打开）" >Xcode</a></td>
+<td style="width: 33.3%" > [Xcode ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716)</td>
 </tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" > [Python V2.7.10 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.python.org/downloads/release/python-2710/) <a href="https://www.python.org/downloads/release/python-2710/" rel="external" target="blank" title="（在新选项卡或窗口中打开）" >Python V2.7.10</a></td>
+<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" > [Python V2.7.10 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.python.org/downloads/release/python-2710/)</td>
 <td style="width: 33.3%">C/C++ 编译器工具链，例如 GCC V4.2 或更高版本。</td>
 <td style="width: 33.3%" >&nbsp;</td>
 </tr>
-<tr><td style="width: 33.3%" > [Microsoft Windows SDK for Windows 7 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279) <a href="https://www.microsoft.com/en-gb/download/details.aspx?id=8279" rel="external" target="blank" title="（在新选项卡或窗口中打开）">Microsoft Windows SDK for Windows 7</a></td>
+<tr><td style="width: 33.3%" > [Microsoft Windows SDK for Windows 7 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279)</td>
 <td style="width: 33.3%">在 Debian 和 Debian 派生的分发版（Ubuntu、Mint 等）上，使用以下命令：<pre class="codeblock style-scope doc-content"><code>apt-get install build-essential</code></pre>
 </td>
 <td style="width: 33.3%" >&nbsp;</td>
@@ -132,6 +132,9 @@ Oracle、DB2 和 SQLLite 连接器需要 C 编译器工具，才能构建和安�
   ```
   {: codeblock}
 如果所显示的版本不是 3.x.x，请编辑您的系统 PATH，以确保 `C:\Users\username\AppData\Roaming\npm` 取代任何其他条目。
+
+
+
 1. **可选**：如果使用的是 API Designer，请打开新的 shell 窗口。
 
 2. 当您已安装操作系统所需的编译器工具时，请输入以下命令以在项目根目录中安装连接器。
@@ -141,6 +144,8 @@ npm install --save <connector-package>
 ```
 {: codeblock}
 其中，`<connector-package>` 是 LoopBack 连接器的 npm 软件包的名称，如表中所示。
+
+
 <table summary="" id="apic_connectors_table_pre_reqs" class="defaultstyle style-scope doc-content">
 <caption>表 3. LoopBack 连接器</caption>
 <thead>
@@ -208,9 +213,11 @@ npm install --save <connector-package>
   {: codeblock}
     其中：
 
-    - `<region>` 是 {{site.data.keyword.Bluemix_short}} 区域。
 
-    - `<username_string>` 是不带任何符号的 {{site.data.keyword.Bluemix_short}} 组织标识。例如，`joe@mycompany.com` 会是 `joemycompanycom`
+
+    - `<region>` 是 {{site.data.keyword.Bluemix_notm}} 区域。
+
+    - `<username_string>` 是不带任何符号的 {{site.data.keyword.Bluemix_notm}} 组织标识。例如，`joe@mycompany.com` 会是 `joemycompanycom`
 
     - `<catalog>` 是您的目录名称  
 
@@ -282,6 +289,8 @@ npm install --save <connector-package>
     (Move up and down to reveal more choices)
     ```
 有关每个选项的更多信息，请参阅[使用内置模型 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){:new_window}。
+
+
 9. 选择基类，然后按 **Enter** 键。工具将询问您是否要公开模型的 REST API。
 
 ```
@@ -289,13 +298,15 @@ npm install --save <connector-package>
 ```
 如果模型通过 REST 公开，那么可以通过 REST 端点使用所有标准的创建、读取、更新和删除操作。
 
+
+
 10. 输入您的选择，然后按 **Enter** 键。如果您选择通过 REST 公开模型，那么工具会提示您输入模型名称的复数形式。
 ```
 ? Custom plural form (used to build REST URL):
 ```
 
 11. 按 **Enter** 键，以使用复数的缺省标准英文规则。
-工具将提示您选择是要创建仅服务器模型，还是创建可以同时在服务器和客户机 LoopBack&reg; API 中使用的通用模型。
+工具将提示您选择是要创建仅服务器模型，还是创建可以同时在服务器和客户机 LoopBack API 中使用的通用模型。
 ```
 ? Common model or server only? (Use arrow keys)
 ```
@@ -337,7 +348,7 @@ Enter an empty property name when done.
 
 16. 如果需要，请添加其他属性名称。如果不需要更多属性，请按 **Enter** 键以完成添加模型的过程。
 
-缺省情况下，LoopBack&reg; 项目配置有内存中数据源，适用于开发和测试。但是，在某个时候，您会希望将模型连接到实际数据源，例如数据库服务器。要添加数据源，请完成以下步骤：
+缺省情况下，LoopBack 项目配置有内存中数据源，适用于开发和测试。但是，在某个时候，您会希望将模型连接到实际数据源，例如数据库服务器。要添加数据源，请完成以下步骤：
 
 1. 输入以下命令：
 ```
@@ -366,16 +377,16 @@ apic create --type datasource
 
 3. 使用方向键选择要使用的连接器，然后按 **Enter** 键。随后工具会将数据源添加到项目。
 
-4. 输入主机、端口、用户、密码和数据库凭证。工具将提示您安装 LoopBack&reg; 连接器。
+4. 输入主机、端口、用户、密码和数据库凭证。工具将提示您安装 LoopBack 连接器。
 ```
 Install loopback-connector-<connector>?
 ```
 
 5. 输入 `Yes`。工具将安装该连接器。
 
-注：如果您已选择 Oracle 连接器，那么必须在 {{site.data.keyword.Bluemix_short}} 中设置环境变量，以便 Oracle 应用程序能够启动。为此，请完成以下步骤：
+注：如果您已选择 Oracle 连接器，那么必须在 {{site.data.keyword.Bluemix_notm}} 中设置环境变量，以便 Oracle 应用程序能够启动。为此，请完成以下步骤：
 
-1. 在 {{site.data.keyword.Bluemix_short}} UI 中，选择**计算**。
+1. 在 {{site.data.keyword.Bluemix_notm}} UI 中，选择**计算**。
 
 2. 在“CF 应用程序”中，选择要使用的应用程序。
 
@@ -394,7 +405,7 @@ Install loopback-connector-<connector>?
 ### 测试 LoopBack 项目
 {: #test_lb_proj}
 
-要测试 LoopBack&reg; 项目，请完成以下步骤。
+要测试 LoopBack 项目，请完成以下步骤。
 
 1. **可选**：确保当前工作目录为项目顶级目录。输入以下命令：
 ```
@@ -405,7 +416,7 @@ cd <loopback-project-dir>
 ```
 apic start
 ```
-这将在本地运行 LoopBack&reg; 项目 (API) 和 Micro Gateway。将显示以下消息：
+这将在本地运行 LoopBack 项目 (API) 和 Micro Gateway。将显示以下消息：
 ```
 Waiting for loopback-project to complete deployment.
 Waiting for loopback-project-gw to complete deployment.
@@ -414,13 +425,14 @@ Service loopback-project-gw (id 2) started on port 4002
 ```
 其中：`<loopback-project>` 是包含项目的目录的名称。
 
+
 例如，随后可以使用 `curl` 来测试任何 API 端点。如果要使用 Web 浏览器装入 API，请在浏览器中打开
-`http://localhost:4001`。对于缺省 LoopBack&reg;（为空或为 hello-world）项目，将看到类似于以下内容的内容：
+`http://localhost:4001`。对于缺省 LoopBack（为空或为 hello-world）项目，将看到如下内容：
 ```
 {"started":"2016-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-### 通过 CLI 将 LoopBack 应用程序发布到 Bluemix
+### 通过 CLI 将 LoopBack 应用程序发布到 {{site.data.keyword.Bluemix_notm}}
 {: #pub_lb_app_cli}
 
 要通过命令行将 LoopBack 应用程序发布到 {{site.data.keyword.Bluemix_short}}，请完成以下步骤：
@@ -429,7 +441,7 @@ Service loopback-project-gw (id 2) started on port 4002
 ```
 cd <loopback-project-dir>
 ```
-2. 输入以下命令以登录到 {{site.data.keyword.apiconnect_short}} 和 {{site.data.keyword.Bluemix_short}}。
+2. 输入以下命令以登录到 {{site.data.keyword.apiconnect_short}} 和 {{site.data.keyword.Bluemix_notm}}。
 ```
 apic login --server  <region>.apiconnect.ibmcloud.com -u <username> -p <password>
 ```
@@ -447,20 +459,20 @@ Logged into <region>.apiconnect.ibmcloud.com successfully
 apic organizations -s <region>.apiconnect.ibmcloud.com
 ```
 其中：
-  * `<region>` 是 {{site.data.keyword.Bluemix_short}} 区域。例如：
-  * `eu`（如果使用的是 {{site.data.keyword.Bluemix_short}} 伦敦）。
-  * `us`（如果使用的是 {{site.data.keyword.Bluemix_short}} 达拉斯）。
-  * `au`（如果使用的是 {{site.data.keyword.Bluemix_short}} 悉尼）。
+  * `<region>` 是 {{site.data.keyword.Bluemix_notm}} 区域。例如：
+  * `eu`（如果使用的是 {{site.data.keyword.Bluemix_notm}} 伦敦）。
+  * `us`（如果使用的是 {{site.data.keyword.Bluemix_notm}} 达拉斯）。
+  * `au`（如果使用的是 {{site.data.keyword.Bluemix_notm}} 悉尼）。
 
   如果您不确定，那么可以通过单击菜单栏中的 {{site.data.keyword.avatar}} 图标 <img src="images/i-avatar-icon.svg" alt="“头像”图标"/> 以打开“帐户和支持”窗口小部件并检查区域字段，从而找到您的区域。
-7. 输入以下命令以将应用程序发布到 {{site.data.keyword.Bluemix_short}}。
+7. 输入以下命令以将应用程序发布到 {{site.data.keyword.Bluemix_notm}}。
 ```
 apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
 ```
 其中：
   * `<app>` 是您的应用程序的名称
-  * `<org>` 是您的 {{site.data.keyword.Bluemix_short}} 组织的名称
-  * `<region>` 是 {{site.data.keyword.Bluemix_short}} 区域
+  * `<org>` 是您的 {{site.data.keyword.Bluemix_notm}} 组织的名称
+  * `<region>` 是 {{site.data.keyword.Bluemix_notm}} 区域
 这将返回以下输出：
   ```
   ...preparing project
@@ -485,7 +497,7 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
         ```
         https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<Bluemix org>-<Bluemix space>.apic.<domain name>$(request.path)
         ```
-        如果您未记下此值，那么可以通过转至步骤 7 中返回的管理 URL 来进行检索。您还可以通过登录到 {{site.data.keyword.Bluemix_short}} 并查看应用程序信息来检索此值。
+如果您未记下此值，那么可以通过转至步骤 7 中返回的管理 URL 来进行检索。您还可以通过登录到 {{site.data.keyword.Bluemix_notm}} 并查看应用程序信息来检索此值。
         - **TLS 概要文件**：插入 API 调用 tls-profile。例如：
         ```
         client:Loopback-client
@@ -495,7 +507,7 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
 ## 使用 API Designer 创建 LoopBack API
 {: #create_lb_api_design}
 
-以下过程描述了如何使用 API Designer 来创建 LoopBack&reg; API。
+以下过程描述了如何使用 API Designer 来创建 LoopBack API。
 {:shortdesc}
 
 ### 先决条件
@@ -503,7 +515,7 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
 
 **注**：以下指示信息假设您使用的是最新版本的开发者工具箱。要检查最新的版本，请参阅 [npm ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.npmjs.com/package/apiconnect){:new_window} 软件包页面。
 
-首先，需要使用 CLI 创建 LoopBack&reg; 项目。为此，请完成以下步骤：
+首先，需要使用 CLI 创建 LoopBack 项目。为此，请完成以下步骤：
 
 1. 要创建项目，请打开命令行并输入：
   ```
@@ -550,11 +562,13 @@ apic edit
     ```
     API Designer 将在缺省 Web 浏览器中打开。
 
-2. 在登录页面中，输入您的 Bluemix&reg; 标识和密码。单击**登录**。
+
+
+2. 在登录页面中，输入您的 {{site.data.keyword.Bluemix_notm}} 标识和密码。单击**登录**。
 
 3. 单击**模型**。
 
-4. 单击**添加**。这将打开“LoopBack&reg; **模型**”窗口。
+4. 单击**添加**。这将打开“LoopBack**模型**”窗口。
 
 5. 输入模型名称。通常，可以在模型名称中使用任何字母数字字符以及连字符和下划线。
 
@@ -566,10 +580,10 @@ apic edit
 
 9. 输入完模型的属性后，单击**保存**。
 
-缺省情况下，空的 LoopBack&reg; 项目未定义任何数据源。要定义数据源，请完成以下步骤：
+缺省情况下，空的 LoopBack 项目未定义任何数据源。要定义数据源，请完成以下步骤：
 1. 单击**数据源**。
 
-2. 单击**添加**图标。这将打开“新建 LoopBack&reg; **模型**”窗口。
+2. 单击**添加**图标。这将打开“新建 LoopBack**模型**”窗口。
 
 3. 输入数据源名称。可以在数据源名称中使用任何字母数字字符、连字符和下划线。
 
@@ -583,9 +597,11 @@ apic edit
 ```
 npm install --save <connector-package>
 ```
-其中，`<connector-package>` 是所选 LoopBack&reg; 连接器的 npm 软件包的名称。请参阅下表以获取连接器包的列表。
+其中，`<connector-package>` 是所选 LoopBack 连接器的 npm 软件包的名称。请参阅下表以获取连接器包的列表。
 
-**注：**内存中和电子邮件连接器内置于 LoopBack&reg; 中，所以无需进行安装。
+
+
+**注：**内存中和电子邮件连接器内置于 LoopBack 中，所以无需进行安装。
 
 <table>
 <caption>表 3. LoopBack 连接器</caption>
@@ -632,11 +648,11 @@ npm install --save <connector-package>
 </tbody>
 </table>
 
-有关更多信息，请参阅 [LoopBack 文档 - 构建连接器 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://http://loopback.io//doc/en/lb3/Defining-data-sources.html){:new_window}。
+有关更多信息，请参阅 [LoopBack 文档 - 构建连接器 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){:new_window}。
 
-**注：**如果您已选择 Oracle 连接器，那么必须在 {{site.data.keyword.Bluemix_short}} 中设置环境变量，以便 Oracle 应用程序能够启动。为此，请完成以下步骤：
+**注：**如果您已选择 Oracle 连接器，那么必须在 {{site.data.keyword.Bluemix_notm}} 中设置环境变量，以便 Oracle 应用程序能够启动。为此，请完成以下步骤：
 
-1. 在 {{site.data.keyword.Bluemix_short}} UI 中，选择**计算**。
+1. 在 {{site.data.keyword.Bluemix_notm}} UI 中，选择**计算**。
 
 2. 在“CF 应用程序”中，选择要使用的应用程序。
 
@@ -652,19 +668,21 @@ npm install --save <connector-package>
 
 8. 单击**保存**。
 
-要测试 LoopBack&reg; 项目，请完成以下步骤：
+要测试 LoopBack 项目，请完成以下步骤：
 1. 单击**启动服务器**图标。这将显示以下消息：
 ```
 http://localhost:<4001/>Running
 ```
 根据项目配置以及是否有其他进程在运行，可能会显示不同的端口号。
 
-2. 单击 **localhost:4001** 以显示 API 根端点。对于缺省 LoopBack&reg;（为空或为 hello-world）项目，将看到类似于以下内容的内容：
+
+
+2. 单击 **localhost:4001** 以显示 API 根端点。对于缺省 LoopBack（为空或为 hello-world）项目，将看到如下内容：
 ```
 {"started":"2017-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-接下来，需要创建产品。有关更多信息，请参阅[创建产品](managing_products.html#create_products)。
+接下来，需要创建产品。有关更多信息，请参阅[创建产品](managing_products.html#create_product)。
 **提示**：无论何时启动新命令提示符，都要确保当前工作目录为项目顶级目录。为此，请输入以下命令：
 ```
 cd <project directory name>

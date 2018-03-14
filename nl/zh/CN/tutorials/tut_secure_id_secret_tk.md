@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# 通过工具箱使用客户机标识和客户机私钥保护 API
+# 通过开发者工具箱使用客户机标识和客户机私钥保护 API
 
 
 **持续时间**：10 分钟  
@@ -33,7 +33,7 @@ lastupdated: "2017-09-30"
 1. 启动 API Designer（如果尚未打开）：  
    a. 打开终端。  
    b. 在命令行中输入 `apic edit`。_这将在 Web 浏览器中启动 API Designer_。    
-   c. 单击**登录 Bluemix**。  
+   c. 单击**使用 {{site.data.keyword.Bluemix_notm}} 登录**。  
    d. 输入您的 {{site.data.keyword.Bluemix_short}} 登录信息。  
 
 2. 导航至 API 的“设计”视图：
@@ -79,7 +79,7 @@ lastupdated: "2017-09-30"
 还可以使用显式调用代理端点的浏览工具来测试安全设置，并将“客户机标识”和“客户机私钥”作为头值传递。
 
 
-1. 单击**浏览**，然后单击**沙箱**。  
+1. 单击**浏览**。
     ![](images/explore_1.png)
 
 2. 单击列表中的 **GET /current** 操作。  

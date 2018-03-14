@@ -1,10 +1,10 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-11-02"
 ---
 
-{:new_window: target="blank"}
+{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -28,7 +28,7 @@ lastupdated: "2017-09-30"
 
 
 ## 先决条件
-您必须已在 {{site.data.keyword.apiconnect_short}} 中创建了 API，并且至少使用 API 密钥对其进行保护。在以下指示信息中，首先从使用[客户机标识和私钥](tut_secure_landing.html)保护的 [Weather Provider API 示例文件 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window} 开始。
+您必须已在 {{site.data.keyword.apiconnect_short}} 中创建了 API，并且至少使用 API 密钥对其进行保护。在以下指示信息中，首先从使用[客户机标识和私钥](tut_secure_landing.html)保护的 [Weather Provider API 示例文件 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window} 开始。
 
 开始本教程之前，请先完成以下教程：
 - [导入 API 规范并代理现有 REST 服务](tut_rest_landing.html)。
@@ -38,8 +38,8 @@ lastupdated: "2017-09-30"
 ---
 ## 启动 API Connect
 
-1. 登录到 {{site.data.keyword.Bluemix_short}}：[https://console.ng.bluemix.net/login ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://console.ng.bluemix.net/login){:new_window}。
-2. 登录到 {{site.data.keyword.Bluemix_short}} 后，向下滚动到**所有服务**，然后单击 **API Connect**。
+1. 登录到 {{site.data.keyword.Bluemix_notm}}：[https://console.ng.bluemix.net/login ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://console.ng.bluemix.net/login){:new_window}。
+2. 登录到 {{site.data.keyword.Bluemix_notm}} 后，向下滚动到**所有服务**，然后单击 **API Connect**。
 3. 单击 **API Connect** 以启动 {{site.data.keyword.apiconnect_short}} 服务。
 
 ## 浏览缺省套餐
@@ -83,7 +83,6 @@ lastupdated: "2017-09-30"
 1. 单击“发布”图标，以将产品*编译打包*到**沙箱**目录。此操作会将草稿产品更改添加到所选目录。接下来，我们需要*发布*产品更改，以使其可供使用者通过开发者门户网站使用。
 ![](./images/stageproduct.png) 
 2. 单击 >> 按钮以打开导航菜单。
-![](./images/navigate.png) 
 3. 选择“仪表板”，然后打开**沙箱**目录。Weather Provider API 产品会作为**已编译打包**项列出。
 4. 单击省略号，然后从菜单中选择**发布**。
 ![](./images/publish.png) 
@@ -97,21 +96,19 @@ lastupdated: "2017-09-30"
 
 以下指示信息将指导您完成这些步骤。
 
-1. 启动开发者门户网站。如果您不知道该 URL，那么可以在“沙箱”目录的“设置”选项卡中找到该 URL。
-
-   ![](./images/devportalurl.png)
-    - 如果是首次供应开发者门户网站，请从下拉列表中选择 **IBM 开发者门户网站**。
+1. 启动开发者门户网站。如果您不知道该 URL，那么可以在“沙箱”目录的“设置”选项卡中找到该 URL。如果是首次供应开发者门户网站，请参阅[设置和配置开发者门户网站](tut_config_dev_portal.html)。
     - 这可能需要一个小时才能完成。当沙箱开发者门户网站就绪后，您将收到一封电子邮件，其中包含新开发者门户网站站点的链接。这是管理员帐户的仅使用一次的链接。
 2. 使用应用程序开发者凭证（而**不是**您的 IBM 标识）登录到门户网站。***（必要时，使用与 IBM 标识不同的地址来创建新的开发者帐户。）***
 3. 单击工具栏上的**应用程序**链接，然后单击**新建应用程序**按钮。
 
-   ![](./images/createnewapp.png)
 4. 为应用程序提供标题，然后单击**提交**。
 
    ![](./images/mymobileapp.png)
 5. 保存所显示的客户机私钥和客户机标识。这是您可以复制客户机私钥的唯一机会！
 
    ![](./images/clientidandsecret.png)
+   
+   ![](./images/clientsecret.png)
 
 
 
@@ -120,7 +117,7 @@ lastupdated: "2017-09-30"
 1. 单击工具栏上的 **API 产品**链接。Weather Provider API 产品已列出！ 
 
    ![](./images/apiproducts.png)
-2. 单击此链接以查看详细信息和选项。您应该看到两个可用的套餐：原始缺省套餐和新的 Demo 套餐。（如果只看到一个套餐，请返回到 API Connect，并确保产品更改已保存、编译打包和发布到“沙箱”目录。） 
+2. 单击此链接以查看详细信息和选项。您应该看到两个可用的套餐：原始缺省套餐和新的 Demo 套餐。（如果只看到一个套餐，请返回到 {{site.data.keyword.apiconnect_short}}，并确保产品更改已保存、编译打包和发布到“沙箱”目录。） 
 
    ![](./images/plans.png)
 3. 单击以**预订** Demo 套餐，然后选择刚注册的应用程序。现在，该应用程序可以调用与此套餐关联的 API，最高速率是每分钟*一个* API 调用。 

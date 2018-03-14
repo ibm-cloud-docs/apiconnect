@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-19"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -17,7 +17,7 @@ lastupdated: "2017-09-19"
 ## 所需项目
 1. Node.js
 2. Node Product Manager (NPM)
-3. {{site.data.keyword.apiconnect_short}} _Lite_
+3. {{site.data.keyword.apiconnect_full}} _Lite_
 
 <table>
   <tr><td><b>Node.js</b>：事件驱动的异步 JavaScript 运行时，用于构建和运行可扩展网络应用程序<br>
