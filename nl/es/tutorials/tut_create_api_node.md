@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-28"
 
 ---
 
@@ -24,13 +24,16 @@ lastupdated: "2017-10-19"
 
 Esta guía de aprendizaje le guiará a través de la creación de una API en Node.js utilizando la infraestructura de LoopBack. La guía de aprendizaje describe cómo:
 1. Crear un nuevo proyecto de LoopBack.
-2. Añadir un nuevo origen de datos y modelo a un proyecto de LoopBack utilizando API Designer en el kit de herramientas de {{site.data.keyword.apiconnect_short}}.
+2. Añadir un nuevo origen de datos y modelo a un proyecto de LoopBack utilizando API Designer en el kit de herramientas de {{site.data.keyword.apiconnect_full}}.
 3. Probar los puntos finales de la API utilizando la herramienta API Designer Explore.
 
 ---
 ## Requisitos previos
 
-Antes de empezar, [instale el kit de herramientas de {{site.data.keyword.apiconnect_short}}](tut_prereq_install_toolkit.html).
+Antes de empezar, [instale el kit de herramientas de {{site.data.keyword.apiconnect_short}}](tut_prereq_install_toolkit.html).Si el kit de herramientas ya está instalado, asegúrese de que está ejecutando la versión 5.0.8.1, o posterior. Puede verificarlo especificando el siguiente mandato en la línea de mandatos: 
+	```
+	apic -v
+	```
 
 ---
 ## Crear un proyecto de Loopback
@@ -88,7 +91,7 @@ Para crear un proyecto de LoopBack utilizando el API Designer, siga estos pasos:
 	```
 	![](images/api-designer-1.png)
 	>![información]
-	>El mandato anterior inicia el kit de herramientas de APIC e inicia el API Designer en el navegador predeterminado cuando se realiza.
+	>El mandato anterior inicia el kit de herramientas de {{site.data.keyword.apiconnect_short}} e inicia API Designer en el navegador predeterminado cuando se realiza.
 	>![información]
 	>En esta guía de aprendizaje, creará un proyecto denominado weather-data.
 2.  Si no ha marcado anteriormente el panel de navegación de IU, pulse el icono Navegar a ![](images/navigate-to.png). Se abrirá el panel de navegación de la IU de API Manager. Para marcar el panel de navegación de la IU, pulse el icono de menú Marcar ![](images/pinned.png).
@@ -132,7 +135,7 @@ Para añadir un nuevo origen de datos a un proyecto de LoopBack utilizando el AP
 	```
 	API Designer se abrirá en el navegador web predeterminado, que muestra inicialmente la página de inicio de sesión si no ha iniciado la sesión recientemente.  
 	>![información]
-	>Puede iniciar sesión utilizando su cuenta de Bluemix o puede crear una.
+	>Puede iniciar sesión utilizando su cuenta de {{site.data.keyword.Bluemix}} o bien crear una.
 3. Pulse el icono **Orígenes de datos** ![](images/datasource-icon.png).
 4. Pulse **Añadir**. Se abrirá la ventana Nuevos orígenes de datos de LoopBack.
 5. Escriba `weatherDS` en el campo de texto **Nombre**.
@@ -156,9 +159,9 @@ Para añadir un nuevo modelo a un proyecto de LoopBack utilizando el API Designe
 5. En las **Propiedades**, pulse el icono **Añadir propiedad** ![](images/add-icon.png).
 6. En el campo de texto **Nombre de propiedad**, escriba `código_postal`.
 7. Para **Tipo**, seleccione **número**.
-8. Seleccione **Necesario** para convertir la propiedad en necesaria. Esto significa que debe tener un valor cuando añada o actualice una instancia de modelo. Por ahora, mantenga los valores predeterminados para los demás valores:
+8. Seleccione **Necesario** para convertir la propiedad en necesaria. Esto significa que debe tener un valor cuando añada o actualice una instancia de modelo.  
+9. Seleccione **ID** para asegurarse de que la propiedad tenga un identificador exclusivo. Por ahora, mantenga los valores predeterminados para los demás valores:
 	- **Es matriz**: Si la propiedad es una matriz JavaScript con elementos del tipo especificado.
-	- **ID**: Si la propiedad es un identificador exclusivo.
 	- **Índice**: Si la propiedad representa una columna (campo) que es un índice de base de datos.
 	- **Descripción**: Descripción en texto de la propiedad.
 9. Pulse el icono **Añadir propiedad** ![](images/add-icon.png) de nuevo para añadir otra propiedad. Haga referencia a la tabla siguiente para completar el resto de las propiedades:
@@ -211,8 +214,14 @@ Para probar los puntos finales de la API utilizando la herramienta Explorar de A
 ![](images/explore-test-1.png)
 El panel central muestra información de resumen sobre el punto final, incluidos sus parámetros, seguridad, datos de instancia del modelo y códigos de respuesta. El panel derecho proporciona código de plantilla para llamar al punto final utilizando el mandato curl, y lenguajes como Ruby, Python, Java y Node.
 
-6. Para probar los puntos finales REST en la herramienta Explorar de API Designer, en el panel derecho pulse **Probarlo**. Desplácese hasta **Parámetros** y pulse **Generar** para generar algunos datos ficticios. De forma predeterminada, entre los datos generados se incluyen las propiedades `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low`, `tonight_humidity_high` e `id`. La propiedad `id` la crea LoopBack para un modelo determinado y el valor se genera automáticamente. Elimine la propiedad `id` de los datos de ejemplo, actualice los datos generados según sea necesario, y pulse **Llamar operación**.
-![](images/explore-test-2.png)
+6. Para probar los puntos finales REST en la herramienta Explorar de API Designer Explore, realice los siguientes pasos:
+    1. En el panel de la derecha, pulse **Probarlo**. 
+	
+	2. Desplácese hasta **Parámetros**, y pulse **Generar** para generar algunos datos ficticios. De forma predeterminada, entre los datos generados se incluyen las propiedades `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low` y `tonight_humidity_high`.
+	
+	3. Pulse **Llamar operación**.
+	![](images/explore-test-2.png)
+	
 >![resolución de problemas]
 >Si ve un mensaje de error debido a un certificado no de confianza para localhost, pulse el enlace proporcionado en el mensaje de error de la herramienta Explorar de API Designer para aceptar el certificado y, a continuación, siga llamando las operaciones en el navegador web. El procedimiento exacto depende del navegador web que está utilizando. Si carga los puntos finales REST directamente en el navegador, verá el mensaje: {"name":"PreFlowError","message":"unable to process the request"}. Debe utilizar la herramienta Explorar de API Designer para probar los puntos finales REST en el navegador porque incluye las cabeceras necesarias y otros parámetros de solicitud.
 >
@@ -220,7 +229,7 @@ El panel central muestra información de resumen sobre el punto final, incluidos
 >Si obtiene un código de respuesta de **422 - Unprocessable Entity** con la carga útil siguiente:
 >![](images/explore-test-3.png)
 >
->el elemento de datos `id` no se ha eliminado de los datos generados. Elimine el elemento de datos `id` y vuelva a ejecutar la prueba.
+>asegúrese de que no se haya eliminado ningún elemento de datos `id` de los datos generados. Si hay un elemento ID, elimínelo y vuelva a ejecutar la prueba. 
 >![resolución de problemas]
 >Si recibe el error **no se ha podido analizar el cuerpo de la solicitud**, debe eliminar la coma después del último número de `humidity_high`.
 7. Edite los valores de JSON que se muestran en la sección **datos**. Intente cambiar los datos ficticios generados, y pulse **Llamar operación** de nuevo. Debería ver los parámetros de solicitud y respuesta, junto con los datos de instancia de JSON que ha especificado.

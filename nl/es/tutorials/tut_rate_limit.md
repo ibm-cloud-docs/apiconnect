@@ -1,10 +1,10 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-11-02"
 ---
 
-{:new_window: target="blank"}
+{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -29,7 +29,7 @@ En esta guía de aprendizaje, hará lo siguiente:
 
 
 ## Requisitos previos
-Debe haber creado ya una API en {{site.data.keyword.apiconnect_short}}, protegida con al menos una clave de API. En las instrucciones siguientes, nuestro punto de partida es el [archivo de ejemplo de Weather Provider API ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window}, protegido utilizando un [ID y secreto de cliente](tut_secure_landing.html).
+Debe haber creado ya una API en {{site.data.keyword.apiconnect_short}}, protegida con al menos una clave de API. En las instrucciones siguientes, nuestro punto de partida es el [archivo de ejemplo de Weather Provider API ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}, protegido utilizando un [ID y secreto de cliente](tut_secure_landing.html).
 
 Complete las guías de aprendizaje siguientes antes de empezar esta guía de aprendizaje:
 - [Importe la especificación de la API, y el proxy en un servicio REST anterior](tut_rest_landing.html).
@@ -39,12 +39,12 @@ Complete las guías de aprendizaje siguientes antes de empezar esta guía de apr
 ---
 ## Iniciar API Connect
 
-1. Inicie sesión en {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.ng.bluemix.net/login){:new_window}.
-2. Una vez que haya iniciado sesión en {{site.data.keyword.Bluemix_short}}, desplácese hasta **Todos los servicios**, y pulse en **API Connect**.
+1. Inicie sesión en {{site.data.keyword.Bluemix_notm}}: [https://console.ng.bluemix.net/login ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.ng.bluemix.net/login){:new_window}.
+2. Una vez que haya iniciado sesión en {{site.data.keyword.Bluemix_notm}}, desplácese hasta **Todos los servicios**, y pulse en **API Connect**.
 3. Pulse en **API Connect** para iniciar el servicio de {{site.data.keyword.apiconnect_short}}.
 
 ## Explorar el plan predeterminado
-1. En el panel de navegación de {{site.data.keyword.apiconnect_short}}, seleccione **Borradores**. (Si el panel de navegación no está abierto, pulse **>>** para abrirlo.)
+1. En el panel de navegación de {{site.data.keyword.apiconnect_short}}, seleccione **Borradores**. (Si el panel de navegación no está abierto, pulse **>>** para abrirlo).
 2. Seleccione el **separador Productos**, y debería ver el producto Weather Provider API en la lista.
 
    ![](./images/draftproducts.png)      
@@ -84,7 +84,6 @@ En ejemplos anteriores, puede haber publicado el Producto utilizando la herramie
 1. Pulse el icono Publicar para *transferir* el Producto al Catálogo de **recinto de pruebas**. Esta acción añade los cambios del Producto de borrador al Catálogo seleccionado. Necesitamos *publicar* los cambios del Producto a continuación, para ponerlos a disposición de los consumidores a través del Portal del desarrollador.
    ![](./images/stageproduct.png) 
 2. Pulse el botón >> para abrir el menú de navegación.
-   ![](./images/navigate.png) 
 3. Seleccione Panel de control y abra el Catálogo de **recinto de pruebas**. Weather Provider API Product aparece como **Transferido**.
 4. Pulse los puntos suspensivos y seleccione **Publicar** desde el menú.
    ![](./images/publish.png) 
@@ -98,22 +97,20 @@ Si esta es la primera vez que trabaja con el Portal del desarrollador, deberá s
 
 Las siguientes instrucciones le guiarán a través de estos pasos.
 
-1. Inicie el Portal del desarrollador. Si no conoce el URL, puede encontrarlo en el separador Configuración del Catálogo del recinto de pruebas.
-
-   ![](./images/devportalurl.png)
-    - Para suministrar el Portal del desarrollador por primera vez, seleccione **IBM Developer Portal** desde el desplegable.
+1. Inicie el Portal del desarrollador. Si no conoce el URL, puede encontrarlo en el separador Configuración del Catálogo del recinto de pruebas.Para suministrar el Portal del desarrollador por primera vez, consulte [Establecimiento y configuración del Portal del desarrollador](tut_config_dev_portal.html).
     - Esto puede tardar hasta una hora en completarse. Cuando el Portal del desarrollador del recinto de pruebas esté listo, recibirá un correo electrónico
 con un enlace a su nuevo sitio de Portal del desarrollador. El enlace es un enlace de un solo uso para la cuenta de administrador. 
-2. Inicie sesión en el Portal utilizando las credenciales de desarrollador de apps (**no** su ID de IBM). ***(Cree una nueva cuenta de desarrollador si es necesario, utilizando una dirección distinta de su ID de IBM.)***
+2. Inicie sesión en el Portal utilizando las credenciales de desarrollador de apps (**no** su ID de IBM). ***(Cree una nueva cuenta de desarrollador si es necesario, utilizando una dirección distinta de su ID de IBM).***
 3. Pulse el enlace **Apps** en la barra de herramientas, y pulse el botón **Crear nueva app**.
 
-   ![](./images/createnewapp.png)
 4. Dé un título a la aplicación y pulse **Enviar**.
 
    ![](./images/mymobileapp.png)
 5. Guarde el secreto de cliente y el identificador de cliente mostrados. Esta será la única vez que el secreto de cliente estará disponible para su copia.
 
    ![](./images/clientidandsecret.png)
+   
+   ![](./images/clientsecret.png)
 
 
 
@@ -122,7 +119,7 @@ con un enlace a su nuevo sitio de Portal del desarrollador. El enlace es un enla
 1. Pulse el enlace **Productos de API** en la barra de herramientas. El Producto Weather Provider API aparecerá listado. 
 
    ![](./images/apiproducts.png)
-2. Pulse el enlace para ver detalles y opciones. Debería ver dos Planes disponibles: el Plan predeterminado original, y el nuevo Plan demo. (Si sólo ve un Plan, vuelva a API Connect y asegúrese de que los cambios al Producto se han guardado, transferido y publicado en el Catálogo de reciento de pruebas.) 
+2. Pulse el enlace para ver detalles y opciones. Debería ver dos Planes disponibles: el Plan predeterminado original, y el nuevo Plan demo. (Si solo ve un Plan, vuelva a {{site.data.keyword.apiconnect_short}} y asegúrese de que los cambios al Producto se han guardado, transferido y publicado en el Catálogo de reciento de pruebas). 
 
    ![](./images/plans.png)
 3. Pulse en **Suscribirse** en el Plan demo y seleccione la aplicación que acaba de registrar. Ahora, la aplicación puede llamar a las API asociadas con este Plan, a una velocidad de hasta *una* llamada de API cada minuto. 
@@ -134,7 +131,7 @@ Estamos listos para probar este comportamiento y observar lo que ocurre cuando l
 1. En la página Producto de Weather Provider API del Portal del desarrollador, pulse el enlace de la API.
 
    ![](./images/weatherproviderapi.png)
-2. La página se renovará para mostrar los detalles sobre la API, sus operaciones y proporcionar un lugar para probarlo. (Así es cómo descubrirán y probarán los consumidores de la API su API también.) Observe el panel de prueba oscuro, y desplácese hasta la primera sección **Intentar esta operación**.
+2. La página se renovará para mostrar los detalles sobre la API, sus operaciones y proporcionar un lugar para probarlo. (Así es cómo descubrirán y probarán los consumidores de la API su API también). Observe el panel de prueba oscuro, y desplácese hasta la primera sección **Intentar esta operación**.
 
 3. Para probar la operación `GET /current`, escriba el secreto de cliente de aplicaciones y un código postal válido. Pulse el botón **Llamar operación**. Debería obtener una respuesta `200 Aceptar`, con datos sobre el tiempo actual en ese código postal, 
 

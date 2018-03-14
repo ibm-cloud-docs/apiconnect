@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -16,7 +16,7 @@ lastupdated: "2017-09-12"
 
 
 ## Objetivo
-Esta guía de aprendizaje le ayudará a personalizar rápidamente el Portal del desarrollador de {{site.data.keyword.apiconnect_short}} y a seleccionar un tema que se ajuste a sus necesidades.
+Esta guía de aprendizaje le ayudará a personalizar rápidamente el Portal del desarrollador de {{site.data.keyword.apiconnect_full}} y a seleccionar un tema que se ajuste a sus necesidades.
 
 ---
 

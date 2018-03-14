@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ Duración: 30 minutos
 Nivel de habilidad: Principiante
 
 ## Objetivo
-Esta es una introducción básica al análisis de la API en {{site.data.keyword.apiconnect_long}}. Haremos una visita guiada por los paneles de control de análisis disponibles, y puede seguirla junto con sus propias API.
+Esta es una introducción básica al análisis de la API en {{site.data.keyword.apiconnect_full}}. Haremos una visita guiada por los paneles de control de análisis disponibles, y puede seguirla junto con sus propias API.
 
 
 ## Requisitos previos
@@ -85,6 +85,8 @@ Ahora, vamos a crear un nuevo panel de control que proporcionará la vista de pa
    ![](./images/newdashboard.png) 
     Se mostrará una lista de visualizaciones disponibles.
 
+
+
 2. Seleccione algunas visualizaciones que añadir a su panel de control. Por ejemplo:
   * Apps suscritas
   * Apps por plan 
@@ -148,6 +150,6 @@ En esta guía de aprendizaje, le hemos guiado por una serie de actividades para 
 
 ## Paso siguiente
 
-Aprender [cómo gestionar sus API y sus versiones](tut_version_landing.html).
+Aprender [cómo gestionar sus API y las versiones](tut_manage_version_landing.html).
 
 Crear > Gestionar > Proteger > Socializar > **Analizar**  

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-19"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -17,7 +17,7 @@ lastupdated: "2017-09-19"
 ## Lo que necesitará
 1. Node.js
 2. Node Product Manager (NPM)
-3. {{site.data.keyword.apiconnect_short}} _Lite_
+3. {{site.data.keyword.apiconnect_full}} _Lite_
 
 <table>
   <tr><td><b>Node.js</b>: Un tiempo de ejecución de JavaScript gestionado por sucesos asíncrono que se utiliza para construir y ejecutar aplicaciones de red escalables
@@ -29,7 +29,7 @@ lastupdated: "2017-09-19"
 
 ## Instalar node.js
 1. Descargue e instale node.js de una de estas dos fuentes:
-   * [https://nodejs.org/en/download/ ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://nodejs.org/en/download/){:new_window} (Nota: Descargue la versión LTS para la plataforma, no la más reciente, o puede experimentar errores.)
+   * [https://nodejs.org/en/download/ ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://nodejs.org/en/download/){:new_window} (Nota: Descargue la versión LTS para la plataforma, no la más reciente, o puede experimentar errores)
       **O**
    * [https://developer.ibm.com/node/sdk/v6/ ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/node/sdk/v6/){:new_window}  
 

@@ -1,10 +1,8 @@
 ---
-
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
-
-
+lastupdated: "2017-11-20"
+---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
@@ -18,15 +16,21 @@ lastupdated: "2017-10-10"
 
 
 ## Requisito previo
-No hay ningún requisito previo para esta guía de aprendizaje. Como administrador del portal, también puede completar esta guía de aprendizaje mientras navega por el portal del desarrollador para experimentar cómo navegan los usuarios del portal por el portal del desarrollador. Tenga en cuenta que todos los portales de desarrolladores tienen diferentes texturas. Si no tiene un portal del desarrollador existente, puede establecer y configurar un portal del desarrollador en {{site.data.keyword.Bluemix_short}} antes de continuar con esta guía de aprendizaje.
+No hay ningún requisito previo para esta guía de aprendizaje. Como administrador del portal, también puede completar esta guía de aprendizaje mientras navega por el portal del desarrollador para experimentar cómo navegan los usuarios del portal por el portal del desarrollador. Tenga en cuenta que todos los portales de desarrolladores tienen diferentes texturas.  
+
+Si no tiene un portal del desarrollador existente, puede establecer y configurar un portal del desarrollador en {{site.data.keyword.Bluemix_short}} antes de continuar con esta guía de aprendizaje.
+
+
 
 ## Objetivo
-En esta guía de aprendizaje, aprenderá cómo un usuario del portal puede consumir las API en el Portal del desarrollador de {{site.data.keyword.apiconnect_short}}. Comprenderá cómo un usuario del portal puede explorar productos y API, ver y probar API, y suscribirse a las API.
+En esta guía de aprendizaje, aprenderá cómo un usuario del portal puede consumir las API en el Portal del desarrollador de {{site.data.keyword.apiconnect_full}}. Comprenderá cómo un usuario del portal puede explorar productos y API, ver y probar API, y suscribirse a las API.
 
-## Explorar productos y API
-Esta sección muestra cómo un usuario del portal puede explorar los productos y API en el portal del desarrollador.
+ 
 
-1. En un navegador, vaya al **Portal del desarrollador de API Connect**.
+## Explorar los productos y las API
+Esta sección muestra cómo un usuario del portal exploraría los productos y las API en el portal del desarrollador.
+
+1. En un navegador, vaya a su **Portal del desarrollador de API Connect**.
 ![Portal del desarrollador de API Connect](images/11-developer-portal.png)
 
 2. En el Portal del desarrollador de {{site.data.keyword.apiconnect_short}}, seleccione el separador Productos de la API.
@@ -39,10 +43,10 @@ Esta sección muestra cómo un usuario del portal puede explorar los productos y
   ![API de productos](images/14-api.png)
 
 5. En la página de detalles de una API, puede ver las operaciones disponibles junto con sus parámetros y las respuestas devueltas. Al final de la página, puede ver las definiciones que utiliza la API.  
-  ![Detalles de la API](images/15-details.png)
+  ![Detalles de la API](images/15-details.png) 
 
 6. En el panel Códigos de ejemplo, puede ver ejemplos en distintos lenguajes de codificación de cómo invocar las solicitudes y sus respuestas. Seleccione uno de los ejemplos, como **Nodo**, para ver un ejemplo en dicho lenguaje de codificación.  
-  ![Detalles de la API](images/16-examples.png)
+  ![Detalles de la API](images/16-examples.png) 
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ lastupdated: "2017-10-19"
 **Nivel de habilidad**: Principiante  
 
 ## Objetivo
-Esta guía de aprendizaje le ayuda a comenzar rápidamente con {{site.data.keyword.apiconnect_short}} ilustrando cómo puede llevar su API anterior bajo control de gestión. Empezará por crear una nueva especificación de OpenAPI, y luego por crear un proxy de API de paso a través para un servicio REST anterior.
+Esta guía de aprendizaje le ayuda a comenzar rápidamente con {{site.data.keyword.apiconnect_full}} ilustrando cómo puede llevar su API anterior bajo control de gestión. Empezará por crear una nueva especificación de OpenAPI, y luego por crear un proxy de API de paso a través para un servicio REST anterior.
 
 ## Requisito previo
 Antes de empezar, necesita [configurar la instancia de API Connect](tut_prereq_set_up_apic_instance.html) e [instalar el kit de herramientas de API Connect](tut_prereq_install_toolkit.html).
@@ -54,7 +54,7 @@ Se ha creado una app _weather provider_ de ejemplo para esta guía de aprendizaj
 8. Desplácese al panel **Host**. Escriba `$(catalog.host)` como el valor si el campo no se rellena automáticamente.
 
 9. Desplácese al separador **Seguridad** y suprima "clientIDHeader (Clave de API)" que se ha generado automáticamente.  
-_(Visitaremos la seguridad con las Claves de API en la siguiente guía de aprendizaje.)_  
+_(Visitaremos la seguridad con las Claves de API en la siguiente guía de aprendizaje)._  
 
 10. En el panel **Vías de acceso**, cree una vía de acceso nueva pulsando **+**.
   a. Dé un nombre a la nueva vía de acceso "**/current**".  
@@ -120,9 +120,9 @@ _(Visitaremos la seguridad con las Claves de API en la siguiente guía de aprend
 El **Conmutador de funcionamiento** proporciona un punto de decisión. Basándose en el par verbo/vía de acceso, deberá invocarse la operación apropiada.  
     c. Arrastre la política de **invocación** desde la paleta y suéltela en el lienzo. Suelte una en la vía de acceso **/get current** y otra en la vía de acceso **/get today**.
     d. Seleccione la política de **invocación** en la vía de acceso **/get current**, y actualice su título a "**invoke-current**".  
-    e. Actualice el campo URL con: `https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`.
+    e. Actualice el campo URL con: `https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`.
     f. Seleccione la política de **invocación** en la vía de acceso **/get today**, y actualice su título a "**invoke-today**".  
-    g. Actualice el campo URL con: `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`.  
+    g. Actualice el campo URL con: `https://myweatherprovider.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`.  
 
 20. Guarde la API.
 

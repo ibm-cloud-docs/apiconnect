@@ -88,10 +88,10 @@ En esta guía de aprendizaje, suprimirá, archivará y retirará una API.
 ## Qué ha hecho en esta guía de aprendizaje
 En esta guía de aprendizaje, ha completado las actividades siguientes:
 
-1. Ha suprimido un producto de API
-2. Ha retirado un producto de API
-3. Ha archivado un producto de API
-4. Ha desarchivado un producto de API
+1. Se ha suprimido un producto de API
+2. Se ha retirado un producto de API
+3. Se ha archivado un producto de API
+4. Se ha desarchivado un producto de API
 
 ---
 

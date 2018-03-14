@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-08-24"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -20,10 +20,10 @@ Estas guías de aprendizaje proporcionan opciones sobre cómo puede gestionar AP
 
 Para gestionar una API existente, puede empezar importando o añadiendo un archivo OpenAPI.
 
-## IBM Bluemix
+## {{site.data.keyword.Bluemix_notm}}
 
-- [Importación de un archivo OpenAPI mediante IBM Bluemix](tut_import_openapi_rest_bm.html)
-- [Creación de un archivo OpenAPI mediante IBM Bluemix](tut_add_openapi_rest_bm.html)
+- [Importación de un archivo OpenAPI mediante {{site.data.keyword.Bluemix_notm}}](tut_import_openapi_rest_bm.html)
+- [Creación de un archivo OpenAPI mediante {{site.data.keyword.Bluemix_notm}}](tut_add_openapi_rest_bm.html)
 
 ## Developer Toolkit
 

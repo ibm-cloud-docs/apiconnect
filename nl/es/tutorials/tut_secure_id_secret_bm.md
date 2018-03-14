@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Protección de su API con el ID de cliente y el Secreto de cliente utilizando IBM Bluemix
+# Protección de la API con el ID de cliente y el Secreto de cliente utilizando {{site.data.keyword.Bluemix_notm}}
 
 **Duración:** 10 minutos  
 **Nivel de habilidad:** Principiante

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-12-13"
 ---
 
 {:new_window: target="blank"}
@@ -22,16 +22,18 @@ Esta guía de aprendizaje le guiará por la protección de la API utilizando un 
 ## Requisitos previos
 
 Antes de empezar, debe haber completado la siguiente guía de aprendizaje.  
-- [Protección de una API con las claves Client-ID y Client-Secret con IBM Bluemix](tut_secure_id_secret_bm.html)
+- [Protección de una API con las claves Client-ID y Client-Secret con {{site.data.keyword.Bluemix}}](tut_secure_id_secret_bm.html)
 o
 - [Protección de una API con las claves Client-ID y Client-Secret con Toolkit](tut_secure_id_secret_tk.html)
+
+Nota: en esta guía de aprendizaje se muestran los pasos y las capturas de pantalla para completar la tarea en la interfaz de usuario de {{site.data.keyword.Bluemix}}. También puede realizar el mismo procedimiento utilizando la línea de mandatos. Puede consultar el procedimiento en el [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tutorial_apionprem_security_OAuth_v506.html). 
 
 ## Procedimiento
 
 1. Cree una API de proveedor de OAuth y seleccione el esquema de OAuth.  
 	a. Abra **Borradores**, seleccione **API**, y pulse **Añadir** > **API de proveedor de OAuth 2.0**.  
     ![](images/oauth_provider_1.png)
-	b. Titúlelo "API de punto final de OAuth". (El nombre y la vía de acceso base se deben rellenar automáticamente.)  
+	b. Titúlelo "API de punto final de OAuth". El nombre y la vía de acceso base se deben rellenar automáticamente.  
 	c. Seleccione **Crear API**.  
 	d. En la API de punto final de OAuth recién creada, navegue hasta el panel **OAuth 2** (o desplácese hasta él), y seleccione "Confidencial" como Tipo de cliente.  
 	e. En Ámbitos, cambie el nombre de _scope1_ a _view_current_. Suprima _scope2_ y _scope3_.  
@@ -40,7 +42,7 @@ o
 	g. Guarde la API.  
 
 2. Actualice la definición de seguridad de Weather Provider API para incluir OAuth.  
-	a. Conmute a _Weather Provider API_. (Vuelva a las API y seleccione _Weather Provider API_.)  
+	a. Conmute a _Weather Provider API_. (Vuelva a las API y seleccione _Weather Provider API_).  
 	b. En Definiciones de seguridad, añada una nueva definición para OAuth. Dele el nombre "Definición de OAuth".  
 	c. En el campo Flujo, seleccione **Aplicación**.  
 	d. Especifique el URL de señal _<su URL base>/oauth-endpoint-api/oauth2/token_.  

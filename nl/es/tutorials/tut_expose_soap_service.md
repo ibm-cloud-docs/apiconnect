@@ -2,7 +2,7 @@
 
 copyright:
 years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-14"
 
 ---
 
@@ -23,14 +23,14 @@ En API Manager, creará una API REST que accederá a un Servicio SOAP anterior y
 
 ## Requisitos previos
 1. Antes de empezar, deberá [configurar la instancia de {{site.data.keyword.apiconnect_full}}](tut_prereq_set_up_apic_instance.html).
-2. Antes de empezar, copie el archivo de [prueba weatherprovider.wsdl ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} en el sistema de archivos local.
+2. Antes de empezar, copie el archivo de [prueba weatherprovider.wsdl ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} en el sistema de archivos local.
 	>![images/info.png]
 	>Puede pulsar **Sin procesar** y, a continuación, guardar la página resultante en el sistema local como un archivo `.wsdl`.
 
 ---
 ## Configuración de una definición de API REST
 1. Inicie sesión en {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://new-console.ng.bluemix.net/login){:new_window}.
-2. En el **Panel de control** de {{site.data.keyword.Bluemix_short}}, desplácese hacia abajo y seleccione {{site.data.keyword.apiconnect_full}}. Como alternativa, desde el icono de menú, seleccione **Servicios** y, a continuación, **API** para llegar a la ventana **Trabajar con API**, y seleccione **API Connect**. En la página **API Connect**, simplemente puede pulsar `Crear`, o puede ajustar los valores predeterminados. Para los objetivos de este ejercicio, deje la instancia sin enlazar y ajuste el nombre de Servicio para facilitar el reconocimiento posterior. Un ejemplo sería `API Connect-weather-exercise`.
+2. En el **Panel de control** de {{site.data.keyword.Bluemix_notm}}, desplácese y seleccione {{site.data.keyword.apiconnect_short}}. Como alternativa, desde el icono de menú, seleccione **Servicios** y, a continuación, **API** para llegar a la ventana **Trabajar con API**, y seleccione **API Connect**. En la página **API Connect**, simplemente puede pulsar `Crear`, o puede ajustar los valores predeterminados. Para los objetivos de este ejercicio, deje la instancia sin enlazar y ajuste el nombre de Servicio para facilitar el reconocimiento posterior. Un ejemplo sería `API Connect-weather-exercise`.
 Pulse el botón `Crear` para iniciar el servicio de {{site.data.keyword.apiconnect_short}}.  
 Puede ver una alerta que describe las novedades, o la página de bienvenida informativa **API de borradores**. Después de leer la información, pulse el icono **"Conseguido"** para ver el API Manager.
 3. En {{site.data.keyword.apiconnect_short}}, si no ha marcado anteriormente el panel de navegación de la IU, pulse el icono **Navegar a** ![](images/navigate-to.png). Se abrirá el panel de navegación de la IU de API Manager. Para marcar el panel de navegación de la IU, pulse el icono **de menú Marcar** ![](images/pinned.png).
@@ -57,8 +57,9 @@ Puede ver una alerta que describe las novedades, o la página de bienvenida info
 ![](images/api-security-1.png)
 10. Desmarque la opción **ClientID**.
 ![](images/api-security-2.png)
-	>![images/info.png]
-	>Puede observar que hay un icono triangular amarillo que aparece junto al icono de guardar disco. Este es un aviso de que hay una definición que puede haber sido definida pero no utilizada aún. (Esto no afectará a la definición de la API.)
+	>![](images/info.png)
+	
+>Puede observar que hay un icono triangular amarillo que aparece junto al icono de guardar disco. Este es un aviso de que hay una definición que puede haber sido definida pero no utilizada aún. (Esto no afectará a la definición de la API).
 11. En la sección **Definiciones**, pulse el icono **Añadir definición** ![](images/add-icon.png) y, a continuación, expanda la nueva definición pulsándola.
 12. Asigne un nombre a la definición `Salida de Weather Data`.
 13. La definición tendrá cinco propiedades. Pulse **Añadir propiedad** cuatro veces para añadir las propiedades adicionales. Cambie el nombre de `Nombre de propiedad` utilizando lo siguiente como guía y utilice el valor predeterminado para la `Descripción`, el `Tipo` y el `Ejemplo`:

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 ---
 
 
@@ -22,18 +22,18 @@ En esta guía de aprendizaje, utilizará la API Manager para crear una API SOAP 
 
 ## Requisitos previos
 - Antes de empezar, deberá [configurar la instancia de {{site.data.keyword.apiconnect_short}}](tut_prereq_set_up_apic_instance.html).
-- Antes de empezar, copie el archivo de [prueba weatherprovider.wsdl ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} en el sistema de archivos local. Nota: Puede pulsar **Sin procesar** y, a continuación, guardar la página resultante en el sistema local como un archivo `.wsdl`. Como el nombre sugiere, este servicio SOAP devuelve datos meteorológicos cuando se proporciona un código postal.
+- Antes de empezar, copie el archivo de [prueba weatherprovider.wsdl ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} en el sistema de archivos local. Nota: Puede pulsar **Sin procesar** y, a continuación, guardar la página resultante en el sistema local como un archivo `.wsdl`. Como el nombre sugiere, este servicio SOAP devuelve datos meteorológicos cuando se proporciona un código postal.
 
 ---
 ## Configuración de una definición de API SOAP
 1. Inicie sesión en {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}.
 
-2. En el **Panel de control** de {{site.data.keyword.Bluemix_short}}, desplácese hasta **Todos los servicios**.
+2. En el **Panel de control** de {{site.data.keyword.Bluemix_notm}}, desplácese hasta **Todos los servicios**.
 
-3. Seleccione **API Connect** para iniciar el servicio de API Connect. 
+3. Seleccione **API Connect** para iniciar el servicio de {{site.data.keyword.apiconnect_short}}. 
   
 4. Vaya a la página Borradores, si no está aún allí:  
-    a. En la interfaz de API Connect, pulse >> para abrir el panel de navegación.
+    a. En la interfaz de {{site.data.keyword.apiconnect_short}}, pulse >> para abrir el panel de navegación. 
     b. Pulse **Borradores** en el panel de navegación.
     c. Vaya al separador **API**.
 
@@ -112,6 +112,6 @@ En esta guía de aprendizaje, ha realizado lo siguiente:
 
 ## Paso siguiente
 
-[Exponer el servicio como una API REST](tut_expose_soap_api.html) o proteger la API utilizando [limitación de tarifas](tut_rate_limit.html), [ID de cliente y secreto](tut_secure_landing.html), o [protección mediante OAuth 2.0](tut_secure_oauth_2.html).
+[Exponer el servicio como una API REST](tut_expose_soap_service.html) o proteger la API utilizando [limitación de tarifas](tut_rate_limit.html), [ID de cliente y secreto](tut_secure_landing.html), o [protección mediante OAuth 2.0](tut_secure_oauth_2.html).
 
 Crear > **Gestionar** > Proteger > Socializar > Analizar

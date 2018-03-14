@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-10-19"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Añadir una nueva especificación de API e invocar un servicio REST existente con IBM Bluemix
+# Añadir una nueva especificación de API e invocar un servicio REST existente con {{site.data.keyword.Bluemix_notm}}
 **Duración**: 15 minutos  
 **Nivel de habilidad**: Principiante  
 
@@ -28,7 +28,7 @@ Se ha creado una app _weather provider_ de ejemplo para esta guía de aprendizaj
 2. Especifique un código postal de Estados Unidos de 5 dígitos válido para obtener el _**tiempo actual**_ y la _**previsión de hoy**_.  
 ![](images/explore-weatherapp-1.png)
 
-3. La app de tiempo de ejemplo anterior se ha creado utilizando API que proporcionan los datos meteorológicos. El punto final para obtener los datos meteorológicos **actuales** es _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Pruébelo visitando [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
+3. La app de tiempo de ejemplo anterior se ha creado utilizando API que proporcionan los datos meteorológicos. El punto final para obtener los datos meteorológicos **actuales** es _**https://myweatherprovider.mybluemix.net/current?zipcode={zipcode}**_. Pruébelo visitando [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
 
   ![](images/explore-weatherapp-2.png)
 
@@ -40,8 +40,8 @@ Se ha creado una app _weather provider_ de ejemplo para esta guía de aprendizaj
 ---
 
 ### Añadir una nueva especificación de OpenAPI parar crear un proxy de API REST  
-1. Inicie sesión en {{site.data.keyword.Bluemix_short}}: https://new-console.ng.bluemix.net/login.
-2. En el panel de navegación de {{site.data.keyword.Bluemix_short}}, seleccione **Servicios**, y luego **Panel de control**. Inicie el servicio {{site.data.keyword.apiconnect_short}}.
+1. Inicie sesión en {{site.data.keyword.Bluemix_notm}}: https://new-console.ng.bluemix.net/login.
+2. En el panel de navegación de {{site.data.keyword.Bluemix_notm}}, seleccione **Servicios**, y luego **Panel de control**. Inicie el servicio {{site.data.keyword.apiconnect_short}}.
 3. En {{site.data.keyword.apiconnect_short}}, asegúrese de que el panel de navegación está abierto. Si no lo está, pulse **>>** para abrirlo.  
 4. Seleccione **Borradores** en el panel de navegación.
 5. En el separador **API**, pulse **Añadir**. Desde el menú desplegable, seleccione **Nueva API**.    
@@ -55,7 +55,7 @@ _El Nombre y la Vía de acceso base se rellenan automáticamente_.
 10. En el panel **Vía de acceso base**, anote el valor rellenado automáticamente: `/weather-provider-api`. El URL de destino de la API se creará a partir de estos valores.  
 
 11. Desplácese al separador **Seguridad** y suprima "clientIDHeader (Clave de API)" que se ha generado automáticamente.  
-_(Visitaremos la seguridad con las Claves de API en la siguiente guía de aprendizaje.)_  
+_(Visitaremos la seguridad con las Claves de API en la siguiente guía de aprendizaje)._  
 
 12. En la navegación, desplácese hacia abajo hasta el panel **Vías de acceso** y cree una nueva vía de acceso pulsando **+**.     
     a. Dé un nombre a la nueva vía de acceso "**/current**".  
@@ -156,7 +156,7 @@ El **Conmutador de funcionamiento** proporciona un punto de decisión. Basándos
 ---
 
 ### Conclusión
-En esta guía de aprendizaje, ha aprendido cómo se puede invocar un servicio REST anterior mediante un proxy de paso a través de la API. Ha comenzado comprobando la disponibilidad del servicio de ejemplo mediante el explorador web. A continuación, ha creado una nueva especificación de OpenAPI en API Connect, y la ha enlazado al servicio de ejemplo que se invocará. Ha empaquetado la API en un producto, ha publicado el producto en el catálogo y ha probado el proxy.
+En esta guía de aprendizaje, ha aprendido cómo se puede invocar un servicio REST anterior mediante un proxy de paso a través de la API. Ha comenzado comprobando la disponibilidad del servicio de ejemplo mediante el explorador web. A continuación, ha creado una nueva especificación de OpenAPI en {{site.data.keyword.apiconnect_short}}, y la ha enlazado al servicio de ejemplo que se invocará. Ha empaquetado la API en un producto, ha publicado el producto en el catálogo y ha probado el proxy.
 
 ---
 

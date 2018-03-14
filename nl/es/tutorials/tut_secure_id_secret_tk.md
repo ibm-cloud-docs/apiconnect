@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Proteger la API con el ID de cliente y el Secreto de cliente mediante el Toolkit
+# Protección de la API con el ID de cliente y el Secreto de cliente mediante el Developer Toolkit
 
 
 **Duración:** 10 minutos  
@@ -33,7 +33,7 @@ Antes de empezar, debe haber completado una de las siguientes guías de aprendiz
 1. Inicie API Designer (si no está ya abierto):  
    a. Abra el terminal.  
    b. Escriba `apic edit` en la línea de mandatos. _API Designer se ha iniciado en su navegador web_    
-   c. Pulse en **Iniciar sesión con Bluemix**.  
+   c. Pulse **Iniciar sesión con {{site.data.keyword.Bluemix_notm}}**.  
    d. Escriba la información de inicio de sesión de {{site.data.keyword.Bluemix_short}}.  
 
 2. Vaya a la vista Diseño de la API:
@@ -79,7 +79,7 @@ Antes de empezar, debe haber completado una de las siguientes guías de aprendiz
 Los valores de seguridad también puede se pueden probar utilizando la herramienta Explorar que explícitamente llama al punto final de proxy, y pasa las claves ID de cliente y Secreto de cliente como valores de cabecera.
 
 
-1. Pulse **Explorar** y, a continuación, pulse **Recinto de pruebas**.  
+1. Pulse **Explorar**.
     ![](images/explore_1.png)
 
 2. Pulse en la operación **GET /current** de la lista.  

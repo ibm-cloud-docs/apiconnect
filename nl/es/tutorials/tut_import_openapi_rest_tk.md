@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -16,7 +16,7 @@ Nivel de habilidad: Principiante
 
 
 ## Objetivo
-Esta guía de aprendizaje ilustra cómo puede llevar su API anterior bajo control de gestión con {{site.data.keyword.apiconnect_short}}. En esta guía de aprendizaje, importará una especificación de OpenAPI, y creará un proxy de API de paso a través para un servicio REST existente.
+Esta guía de aprendizaje ilustra cómo puede llevar su API anterior bajo control de gestión con {{site.data.keyword.apiconnect_full}}. En esta guía de aprendizaje, importará una especificación de OpenAPI, y creará un proxy de API de paso a través para un servicio REST existente.
 
 ## Requisitos previos
 Antes de empezar, necesita [configurar la instancia de API Connect](tut_prereq_set_up_apic_instance.html) e [instalar el kit de herramientas de API Connect](tut_prereq_install_toolkit.html).
@@ -26,7 +26,7 @@ Antes de empezar, necesita [configurar la instancia de API Connect](tut_prereq_s
 
 ## Explorar la app de ejemplo y probar los puntos finales de destino
 
-Se ha creado una app _weather provider_ de ejemplo para esta guía de aprendizaje. La especificación de API correspondiente (Swagger 2.0) se encuentra en el archivo [weather-provider-api_1.0.0.yaml ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window}.
+Se ha creado una app _weather provider_ de ejemplo para esta guía de aprendizaje. La especificación de API correspondiente (Swagger 2.0) se encuentra en el archivo [weather-provider-api_1.yaml ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}.
 
 1. Para explorar la app, vaya a [http://gettingstartedweatherapp.mybluemix.net/ ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}.  
 2. Especifique un código postal de Estados Unidos de 5 dígitos válido para obtener el _**tiempo actual**_ y la _**previsión de hoy**_.  
@@ -54,8 +54,7 @@ Se ha creado una app _weather provider_ de ejemplo para esta guía de aprendizaj
 6. En el separador API, pulse **Añadir**.
 7. Desde el menú desplegable, pulse **Importar API desde un archivo o URL**.
    ![](images/toolkit-import-1.png)
-8. Hay una definición de OpenAPI 2.0 de la API meteorológica que utilizará para esta guía de aprendizaje. En el recuadro de diálogo "Importar OpenAPI (Swagger)", escriba este URL:
-`https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml`.
+8. Hay una definición de OpenAPI 2.0 de la API meteorológica que utilizará para esta guía de aprendizaje. En el recuadro de diálogo "Importar OpenAPI (Swagger)", escriba este URL: `https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml`.
 9. Deje la opción _Añadir un producto_ desmarcada y pulse **Importar**.  
     ![](images/screenshot_import-url.png)  
 
@@ -88,7 +87,7 @@ _Verá que el valor de Host está establecido en _ `$(catalog.host)` _. Este es 
 
 ## Conclusión
 
-En esta guía de aprendizaje, ha visto cómo se puede invocar un servicio REST anterior mediante un proxy de paso a través de la API. Ha comenzado comprobando la disponibilidad del servicio de ejemplo mediante el explorador web. A continuación, ha creado un proxy de API en API Connect, y lo ha enlazado al servicio de ejemplo que se invocará. Finalmente, ha probado este servicio con las herramientas de prueba internas de {{site.data.keyword.apiconnect_short}}.
+En esta guía de aprendizaje, ha visto cómo se puede invocar un servicio REST anterior mediante un proxy de paso a través de la API. Ha comenzado comprobando la disponibilidad del servicio de ejemplo mediante el explorador web. A continuación, ha creado un proxy de API en {{site.data.keyword.apiconnect_short}} y lo ha enlazado al servicio de ejemplo que se invocará. Finalmente, ha probado este servicio con las herramientas de prueba internas de {{site.data.keyword.apiconnect_short}}.
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -27,10 +27,10 @@ En esta sección, creará un portal del desarrollador para un catálogo.
 
 *Catálogos* es un término de IBM para distintos entornos. Por ejemplo, puede crear catálogos distintos para la prueba, la transferencia y los entornos de producción. Debe tener un catálogo denominado Recinto de pruebas. Empiece a utilizar este catálogo para crear el portal del desarrollador, o crear un nuevo catálogo y ponerle el nombre que desee.
 
-1. En el panel de control de Bluemix, seleccione el servicio de **API Connect** para iniciar el panel de control de API Connect.
+1. En el panel de control de {{site.data.keyword.Bluemix_short}}, seleccione el servicio de **API Connect** para iniciar el panel de control de {{site.data.keyword.apiconnect_short}}.
 ![Servicio de API Connect](images/11-Bluemix-Dashboard.png)
 
-2. En el panel de control de API Connect, seleccione el catálogo para el que desea crear un portal del desarrollador. Por ejemplo, **Recinto de pruebas**.
+2. En el panel de control de {{site.data.keyword.apiconnect_short}}, seleccione el catálogo para el que desea crear un portal del desarrollador. Por ejemplo, **Recinto de pruebas**.
 ![Catálogo](images/12-APIC-Dashboard.png)
 
 3. En el catálogo, seleccione el separador **Valores**.  
@@ -79,7 +79,7 @@ Nota: En la página Productos de API, puede seleccionar uno de los productos par
   ![Productos de la API](images/27-api-products.png)
 
 ### Conclusión
-En esta guía de aprendizaje, ha aprendido cómo establecer y configurar el Portal del desarrollador de API Connect. También ha explorado el portal del desarrollador.
+En esta guía de aprendizaje, ha aprendido cómo establecer y configurar el Portal del desarrollador de {{site.data.keyword.apiconnect_short}}. También ha explorado el portal del desarrollador.
 
 ---
 
