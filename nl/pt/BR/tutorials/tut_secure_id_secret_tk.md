@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Protegendo sua API com ID de cliente e Segredo do cliente usando o kit de ferramentas
+# Protegendo sua API com ID de cliente e Segredo do cliente usando o Developer Toolkit
 
 
 **Duração:** 10 min  
@@ -33,7 +33,7 @@ Antes de iniciar, deve-se ter concluído um dos tutoriais a seguir:
 1. Ative o API Designer (se ainda não estiver aberto):  
    a. Abra seu terminal.  
    b. Insira `apic edit` na linha de comandos. _O API Designer é ativado em seu navegador da web_    
-   c. Clique em **Conectar-se ao Bluemix**.  
+   c. Clique em **Conectar-se ao {{site.data.keyword.Bluemix_notm}}**.  
    d. Insira suas informações de login do {{site.data.keyword.Bluemix_short}}.  
 
 2. Navegue para a visualização Design de sua API:
@@ -79,7 +79,7 @@ Antes de iniciar, deve-se ter concluído um dos tutoriais a seguir:
 As configurações de segurança também podem ser testadas usando a ferramenta Explorar que chama explicitamente o terminal de proxy e passa as chaves Identificador de cliente e Segredo do cliente como valores de cabeçalho.
 
 
-1. Clique em **Explorar**, em seguida, clique em **Ambiente de simulação**.  
+1. Clique em **Explorar**.
     ![](images/explore_1.png)
 
 2. Clique na operação **GET /current** na lista.  

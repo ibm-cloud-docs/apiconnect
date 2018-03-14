@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-08-24"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -20,10 +20,10 @@ Estes tutoriais fornecem opções sobre como é possível gerenciar APIs existen
 
 Para gerenciar uma API existente, é possível iniciar importando ou incluindo um arquivo OpenAPI.
 
-## IBM Bluemix
+## {{site.data.keyword.Bluemix_notm}}
 
-- [Importando um arquivo OpenAPI usando o IBM Bluemix](tut_import_openapi_rest_bm.html)
-- [Criando um arquivo OpenAPI usando o IBM Bluemix](tut_add_openapi_rest_bm.html)
+- [Importando um arquivo OpenAPI usando o {{site.data.keyword.Bluemix_notm}}](tut_import_openapi_rest_bm.html)
+- [Criando um arquivo OpenAPI usando o {{site.data.keyword.Bluemix_notm}}](tut_add_openapi_rest_bm.html)
 
 ## Kit de ferramentas do desenvolvedor
 

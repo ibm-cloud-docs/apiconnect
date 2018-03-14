@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -30,7 +30,7 @@ Neste tutorial, você irá suplantar uma API existente por uma nova.
 ## Suplantando uma API de Produto
 1. Efetue login no {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://console.ng.bluemix.net/login){:new_window}.
 
-2. No Painel do {{site.data.keyword.Bluemix_short}}, ative o serviço {{site.data.keyword.apiconnect_short}}. ![](images/Bluemix.png)
+2. No Painel do {{site.data.keyword.Bluemix_notm}}, ative o serviço {{site.data.keyword.apiconnect_short}}. ![](images/Bluemix.png)
 
 3. No API Manager, se você não tiver fixado anteriormente a área de janela de navegação da UI, clique no ícone **Navegar para** ![](images/navigate-to.png). A área de janela de navegação da UI do API Manager é aberta. Para fixar a área de janela de navegação da UI, clique no ícone do **menu Fixar** ![](images/pinned.png).
 
@@ -104,8 +104,8 @@ Neste tutorial, você irá suplantar uma API existente por uma nova.
 Neste tutorial, você concluiu as atividades a seguir:
 
 1. Atualizou um produto de API.
-2. Suplantou um produto de API existente por um produto de API atualizado.
-3. Migrou a assinatura do produto de API existente para o produto de API atualizado.
+2. Substituiu um produto de API existente por um produto de API atualizado.
+3. Migrou a assinatura do Produto de API existente para o Produto de API atualizado.
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-10-19"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Incluir uma nova especificação de API e chamar um serviço REST existente com o IBM Bluemix
+# Inclua uma nova especificação de API e chame um serviço REST existente com o {{site.data.keyword.Bluemix_notm}}
 **Duração**: 15 min  
 **Nível de qualificação**: iniciante  
 
@@ -28,7 +28,7 @@ Um app de _provedor de clima_ de amostra foi criado para este tutorial.
 2. Insira um CEP válido de 5 dígitos dos EUA para obter o _**clima atual**_ e a _**previsão de hoje**_.  
 ![](images/explore-weatherapp-1.png)
 
-3. O app de clima de amostra acima foi construído usando APIs que fornecem os dados de clima. O terminal para obter os dados de clima **atuais** é _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Experimente-o visitando [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
+3. O app de clima de amostra acima foi construído usando APIs que fornecem os dados de clima. O terminal para obter os dados de clima **atuais** é _**https://myweatherprovider.mybluemix.net/current?zipcode={zipcode}**_. Experimente-o visitando [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
 
   ![](images/explore-weatherapp-2.png)
 
@@ -40,8 +40,8 @@ Um app de _provedor de clima_ de amostra foi criado para este tutorial.
 ---
 
 ### Incluir uma nova especificação OpenAPI para criar um proxy de API de REST  
-1. Efetue login no {{site.data.keyword.Bluemix_short}}: https://new-console.ng.bluemix.net/login.
-2. No painel de navegação do {{site.data.keyword.Bluemix_short}}, selecione **Serviços**, em seguida, selecione **Painel**. Ative o serviço {{site.data.keyword.apiconnect_short}}.
+1. Efetue login no {{site.data.keyword.Bluemix_notm}}: https://new-console.ng.bluemix.net/login.
+2. No painel de navegação do {{site.data.keyword.Bluemix_notm}}, selecione **Serviços**, em seguida, selecione **Painel**. Ative o serviço {{site.data.keyword.apiconnect_short}}.
 3. No {{site.data.keyword.apiconnect_short}}, certifique-se de que o painel de navegação esteja aberto. Caso contrário, clique em **>>** para abri-la.  
 4. Selecione **Rascunhos** no painel de navegação.
 5. Na guia **APIs**, clique em **Incluir**. No menu suspenso, selecione **Nova API**.    
@@ -155,7 +155,7 @@ O **Comutador de operação** fornece um ponto de decisão. Baseado no par verbo
 ---
 
 ### Conclusão
-Neste tutorial, você aprendeu como um serviço REST existente pode ser chamado por meio de um proxy de passagem de API. Você iniciou verificando a disponibilidade do serviço de amostra por meio do navegador da web. Depois, você criou uma nova especificação OpenAPI no API Connect e a vinculou ao serviço de amostra a ser chamado. Você empacotou sua API em um produto, publicou o produto no catálogo e testou o proxy.
+Neste tutorial, você aprendeu como um serviço REST existente pode ser chamado por meio de um proxy de passagem de API. Você iniciou verificando a disponibilidade do serviço de amostra por meio do navegador da web. Depois, você criou uma nova especificação OpenAPI no {{site.data.keyword.apiconnect_short}} e a vinculou ao serviço de amostra a ser chamado. Você empacotou sua API em um produto, publicou o produto no catálogo e testou o proxy.
 
 ---
 

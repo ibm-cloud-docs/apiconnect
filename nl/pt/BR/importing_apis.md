@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -12,7 +12,7 @@ lastupdated: "2017-10-19"
 
 # Importando APIs
 
-É possível usar um arquivo de definição do Swagger para incluir uma API REST.
+É possível usar um arquivo de definição do Swagger para incluir uma API de REST.
 {:shortdesc}
 
 ## Pré-requisito
@@ -58,7 +58,7 @@ outra definição de API REST.
 ## Importando APIs do IBM Integration Bus
 {: #tut_import_iib_apic}
 
-Com este tutorial, é possível importar APIs de REST que você cria com o IBM Integration Bus no {{site.data.keyword.apiconnect_full}}, que torna mais fácil gerenciar e publicá-las.
+Com este tutorial, é possível importar APIs de REST que você cria com o IBM Integration Bus no {{site.data.keyword.apiconnect_full}}, que torna mais fácil gerenciar e publicá-las. 
 {: shortdesc}
 
 Antes de iniciar, assegure-se de que o arquivo API de REST esteja em conformidade com a versão 2.0 da especificação Swagger. O formato do arquivo pode ser JSON ou YAML.
@@ -80,7 +80,7 @@ para o {{site.data.keyword.apiconnect_short}}, conclua as etapas
 a seguir:
 1. Crie a API de REST usando o IBM Integration Bus. Restrição: é possível criar uma API de REST somente com o IBM Integration Toolkit, que é fornecido com a versão instalada do IBM Integration Bus.
 	1. Crie uma API de REST usando o IBM Integration
-Toolkit. Para obter mais informações sobre como concluir as tarefas para criação de uma API de REST com o IBM Integration Bus, veja [Desenvolvendo soluções de integração usando APIs de REST ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bi12016_.htm){: new_window} no IBM Knowledge Center.
+Toolkit. Para obter mais informações sobre como concluir as tarefas para criação de uma API de REST com o IBM Integration Bus, veja [Desenvolvendo soluções de integração usando APIs de REST ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bi12016_.htm){: new_window} no IBM Knowledge Center.
 		
 	2. Abra o assistente Criar uma API de REST selecionando **Arquivo** > **Novo** > **API de REST**.
 		
@@ -96,7 +96,7 @@ e operações você mesmo**.
 de REST para a nova API de REST é aberto automaticamente e deve ser
 usado para definir recursos, modelos e operações.
 		
-	**De um documento Swagger 2.0 existente**:
+	**Em um documento Swagger 2.0 existente**:
 		1. Selecione **Importar recursos e operações definidos em um documento Swagger** e clique em
 **Avançar**.
 		2. Selecione o caminho para o documento Swagger que descreve os
@@ -128,7 +128,7 @@ você ativou a Autenticação Básica, observe também o nome de usuário e a se
 	1. Efetue login no serviço {{site.data.keyword.apiconnect_short}} {{site.data.keyword.Bluemix_notm}}.
 	2. Na área de janela de navegação da UI do API Manager, selecione **Rascunhos** > **APIs**. A guia APIs é aberta.
 	3. Selecione **+ Incluir** > **Importar API de um arquivo ou URL**. A janela *Importar OpenAPI (Swagger)* é aberta.
-	4. Para fazer upload do arquivo que você criou de seu sistema de arquivos local, selecione **Selecionar arquivo** e selecione o arquivo que foi criado com o IBM Integratio Bus. Os arquivos com as extensões `.json`, `.yml` e `.yaml` serão
+	4. Para fazer upload do arquivo que você criou de seu sistema de arquivos local, selecione **Selecionar arquivo** e selecione o arquivo que foi criado com o IBM Integration Bus. Os arquivos com as extensões `.json`, `.yml` e `.yaml` serão
 suportados se contiverem uma definição de swagger válida. Certifique-se de que a opção para **Incluir um produto** está selecionada. Opcionalmente, é possível publicar o produto, selecionando
 **Publicar este produto em um catálogo**.
 	5. Clique em **Importar**. Uma nova definição de API REST é criada, incluindo operações de Caminhos e
@@ -144,7 +144,7 @@ conjunto** para incluir a política de proxy.
 	7. Se você ativou a Autenticação básica para sua API de REST, insira o nome do usuário e a senha que foram gerados no IBM Integration Bus on Cloud.
 	8. Salve as configurações da API.
 3. Teste a API.
-	1. Na guia Montar de sua API, selecione o botão Teste ![Test button](images/a_play_button.jpg "Screen capture that shows the test button icon.").
+	1. Na guia Montar de sua API, selecione o botão Teste ![Botão de teste](images/a_play_button.jpg "Captura de tela que mostra o ícone do botão de teste.").
 	2. Selecione **Publicar produto novamente**.
 	3. Selecione a operação.
 	4. Insira os parâmetros necessários.
@@ -157,18 +157,17 @@ de API de REST. Para obter mais informações sore as APIs, veja [Gerenciando AP
 
 ## Publicando APIs criadas com o IBM App Connect Professional no IBM API Connect
 
-Com este tutorial, é possível publicar e gerenciar APIs de REST que você cria com o IBM&reg; App Connect Professional com o {{site.data.keyword.apiconnect_full}}.
+Com este tutorial, é possível publicar e gerenciar APIs de REST que você cria com o IBM App Connect Professional com {{site.data.keyword.apiconnect_full}}.
 
 ### Pré-requisito
 {: #prereq_pub_api_appconn}
 
-Você precisa de contas válidas para o IBM&reg; App Connect
-Professional on Cloud e para o IBM API Connect&trade; no
-Bluemix&reg; para concluir este tutorial. Assegure-se de que seu arquivo de API de REST esteja em conformidade com a versão 2.0 da especificação de Swagger. O formato do arquivo pode ser JSON ou YAML.
+Serão necessárias contas válidas para o IBM App Connect
+Professional on Cloud e para o {{site.data.keyword.apiconnect_short}} para concluir este tutorial. Assegure-se de que seu arquivo de API de REST esteja em conformidade com a versão 2.0 da especificação de Swagger. O formato do arquivo pode ser JSON ou YAML.
 
-É possível usar o IBM&reg; App Connect Professional para criar APIs de
-REST, que são aplicativos especializados que podem ser usados para expor integrações, como um serviço da web
-RESTful e que podem ser chamados por clientes HTTP. Após criar as APIs, será possível publicar e gerenciá-las usando o {{site.data.keyword.apiconnect_short}}.
+É possível usar o IBM App Connect Professional para criar APIs de REST,
+que são aplicativos especializados que podem ser usados para expor integrações como um serviço da web RESTful e
+podem ser chamados por clientes HTTP. Após criar as APIs, será possível publicar e gerenciá-las usando o {{site.data.keyword.apiconnect_short}}.
 A lista a seguir contém algumas vantagens de gerenciar suas APIs no {{site.data.keyword.apiconnect_short}}:
 
 - É possível monitorar o número de chamadas à API.
@@ -176,13 +175,13 @@ A lista a seguir contém algumas vantagens de gerenciar suas APIs no {{site.data
 - É possível manter várias versões para cada API.
 
 Para obter mais benefícios, veja [Gerenciando APIs](managing_apis.html).
-Para criar uma API de REST no IBM&reg; App Connect Professional e
-publicá-la no {{site.data.keyword.apiconnect_short}}, conclua as
-etapas a seguir:
+Para criar uma API de REST no IBM App Connect Professional e
+publicá-la no {{site.data.keyword.apiconnect_short}}, conclua
+as etapas a seguir:
 
-1. Crie a API de REST usando o IBM &reg; App Connect
+1. Crie a API de REST usando o IBM App Connect
 Professional.
-  - Efetue login no [App Connect Professional Web Management Console ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://appconnect.ibmcloud.com/professional/){:new_window} com seu IBMid. Para obter mais informações sobre como concluir as tarefas para criar uma API de REST com o IBM&reg; App Connect Professional Web Management Console, veja [Sobre configurações do console de gerenciamento ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window} no IBM&reg; Knowledge Center.
+  - Efetue login no [App Connect Professional Web Management Console ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://appconnect.ibmcloud.com/professional/){:new_window} com seu IBMid. Para obter mais informações sobre como concluir as tarefas para criar uma API de REST com o IBM App Connect Professional Web Management Console, consulte [Sobre configurações do console de gerenciamento ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window} no IBM Knowledge Center.
   - Selecione a guia Produção, se ela ainda não estiver selecionada.
   - Selecione **Repositório** > **Configurações** no painel de navegação.
   - Na tela Configurações de projeto, selecione o projeto que estiver publicando em {{site.data.keyword.apiconnect_short}}.  Os Detalhes de configuração do projeto que está sendo publicado são exibidos.
@@ -190,27 +189,27 @@ Professional.
       **Dica**: o botão **Enviar por push para API Management** está ativo somente quando o projeto que você está importando tem um status de execução ou implementado. Selecione o botão reproduzir para iniciar o projeto, se o link não for exibido.
   - Na tela Enviar push para API Management, insira as informações a seguir para criar uma conexão com o sistema de gerenciamento de API.
 
-  <table><caption>Tabela 1. Informações de conexão para publicação de API no API Connect</caption>
+  <table><caption>Tabela 1. Informações de conexão para publicação de API no {{site.data.keyword.apiconnect_short}}</caption>
   <thead>
   <tr>
-  <th>Nome do Campo</th>
+  <th>Nome do campo</th>
   <th>Descrição</th>
   </tr>
   </thead>
   <tbody>
   <tr><td>Host</td>
-  <td>Especifica o nome do host do Cluster de gerenciamento, Servidor ou Endereço da nuvem. Para {{site.data.keyword.Bluemix_short}}, esta entrada é provavelmente us.apiconnect.ibmcloud.com.</td>
+  <td>Especifica o nome do host do Cluster de gerenciamento, Servidor ou Endereço da nuvem. Para {{site.data.keyword.Bluemix_notm}}, esta entrada é provavelmente us.apiconnect.ibmcloud.com.</td>
   </tr>
   <tr>
   <td>Porta</td>
   <td>Especifica o número da porta que é necessário para se conectar ao Cluster de gerenciamento, Servidor ou Endereço de nuvem.</td>
   </tr>
   <tr><td>ID do usuário</td>
-  <td>Especifica o nome do usuário de autenticação que é usado para acessar o Cluster de gerenciamento, o Servidor ou o Endereço de nuvem. Este é provavelmente o seu IBMid que você usa para efetuar login no {{site.data.keyword.Bluemix_short}}.</td>
+  <td>Especifica o nome do usuário de autenticação que é usado para acessar o Cluster de gerenciamento, o Servidor ou o Endereço de nuvem. Este é provavelmente o seu IBMid que você usa para efetuar login no {{site.data.keyword.Bluemix_notm}}.</td>
   </tr>
-  <tr><td>Password</td>
+  <tr><td>Senha</td>
   <td>Especifica a senha de autenticação que é usada para acessar o Cluster de gerenciamento, o Servidor ou o Endereço de nuvem. Este é provavelmente sua senha do IBMid que você usa para efetuar login no
-{{site.data.keyword.Bluemix_short}}.</td>
+{{site.data.keyword.Bluemix_notm}}.</td>
   </tr>
   </tbody>
   </table>
@@ -224,13 +223,13 @@ Professional.
 5. Selecione **Fechar** para fechar a janela.
 Uma nova guia do navegador se abre em seu navegador padrão e exibe sua API.
 
-Associe o IBM&reg; App Connect API ao {{site.data.keyword.apiconnect_short}}.
+Associe o IBM App Connect API ao {{site.data.keyword.apiconnect_short}}.
 
 #### Importar definição de API do Swagger
 
-Para importar o arquivo Swagger que está associado ao projeto API de REST no IBM&reg; App Connect para o serviço {{site.data.keyword.apiconnect_short}}, siga estas etapas:
+Para importar o arquivo Swagger que está associado ao projeto da API de REST no IBM App Connect no serviço do {{site.data.keyword.apiconnect_short}}, siga estas etapas:
 
-1. Efetue login no serviço {{site.data.keyword.apiconnect_short}}Bluemix&reg;.
+1. Efetue login no serviço {{site.data.keyword.apiconnect_short}} {{site.data.keyword.Bluemix_notm}}.
 
 1.  Na barra de título da UI do API Manager, selecione **Navegar para** > **Rascunhos**.
 
@@ -251,7 +250,7 @@ Uma lista de políticas é exibida na janela de navegação.
 8. Configure o host/basePath para o campo de URL com as informações a seguir:
 
 - **hostname**: configuração que depende de sua instância da nuvem. Para obter mais informações sobre essa configuração, veja
-[IBM App Connect Professional ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://provide.castiron.ibmcloud.com){:new_window}.
+[IBM App Connect Professional ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://provide.castiron.ibmcloud.com){:new_window}.
 
 - **basepath**: caminho que você especifica na nota de Solicitação httpReceive na orquestração do App Connect Professional.
 
@@ -261,15 +260,14 @@ Uma lista de políticas é exibida na janela de navegação.
 
 Para testar a API, siga estas etapas:
 
-1. Na guia Montar de sua API, selecione o botão Teste <img alt="Screen capture that shows the test button icon" src="images/a_play_button.jpg" />.
+1. Na guia Montar de sua API, selecione o botão Teste <img alt="Captura de tela que mostra o ícone do botão de teste" src="images/a_play_button.jpg" />.
 2. Selecione **Publicar produto novamente**.
 3. Selecione a operação.
 4.  Insira os parâmetros necessários.
 5. Selecione **Chamar**.
 6. Verifique se você recebe a resposta esperada da API.
 
-Quando a definição da API é importada e integrada, é possível
-gerenciar e controlar as APIs como é feito com qualquer outra definição
-de API de REST. Para obter mais informações sore as APIs, veja [Gerenciando APIs](managing_apis.html).
+Quando a definição da API é importada e integrada, é possível gerenciar e controlar as APIs como
+você faria com qualquer outra definição de API de REST. Para obter mais informações sore as APIs, veja [Gerenciando APIs](managing_apis.html).
 
 

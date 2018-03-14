@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-10-19"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Importar sua especificação de API e usar proxy de um serviço REST existente com o IBM Bluemix
+# Importar sua especificação de API e efetuar proxy de um serviço REST existente com o {{site.data.keyword.Bluemix_notm}}
 Duração: 5 min  
 Nível de qualificação: iniciante  
 
@@ -25,7 +25,7 @@ Antes de iniciar, será necessário [configurar sua instância do {{site.data.ke
 
 ## Explore o app de amostra e teste os terminais de destino
 
-Um app de _provedor de clima_ de amostra foi criado para este tutorial. A especificação da API correspondente (Swagger 2.0) está no arquivo [weather-provider-api_1.0.0.yaml ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window}.
+Um app de _provedor de clima_ de amostra foi criado para este tutorial. A especificação da API correspondente (Swagger 2.0) está no arquivo [clima-provider-api_1.yaml ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}.
 
 1. Para explorar o app, acesse [http://gettingstartedweatherapp.mybluemix.net/ ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}.  
 2. Insira um CEP válido de 5 dígitos dos EUA para obter o _**clima atual**_ e a _**previsão de hoje**_.  
@@ -44,21 +44,18 @@ Um app de _provedor de clima_ de amostra foi criado para este tutorial. A especi
 
 ## Importe a especificação OpenAPI do app de amostra para criar um proxy de API de REST
 1. Efetue login no {{site.data.keyword.Bluemix_short}}: https://new-console.ng.bluemix.net/login.
-2. No painel de navegação do {{site.data.keyword.Bluemix_short}}, selecione **Serviços**, em seguida, **Painel**. Ative o serviço API Connect.  
-   ![](images/login-1.png)   ![](images/login-2.png)  
-
+2. No painel de navegação do {{site.data.keyword.Bluemix_notm}}, selecione **Serviços**, em seguida, **Painel**. Ative o serviço {{site.data.keyword.apiconnect_short}}. 
 3. No {{site.data.keyword.apiconnect_short}}, certifique-se de que o painel de navegação no lado esquerdo esteja aberto. Caso contrário, clique em **>>** para abri-la.  
 4. Selecione **Rascunhos** no painel de navegação.   
 5. Na guia **APIs**, clique em **Incluir**. No menu suspenso, selecione **Importar API de um arquivo ou URL**.  
      ![](images/import-1.png)
 
-6. Vamos agora importar a definição de clima OpenAPI. Na caixa de diálogo "Importar OpenAPI (Swagger)" que é aberta, insira a URL a seguir:
-`https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/bluemix/1a/weather-provider-api_1.0.0.yaml`. Deixe as outras opções com seus valores padrão e clique em **Importar**.  
+6. Vamos agora importar a definição de clima OpenAPI. Na caixa de diálogo "Importar OpenAPI (Swagger)" que é aberta, insira a URL a seguir: `https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml`. Deixe as outras opções com seus valores padrão e clique em **Importar**.  
     ![](images/import-2.png)  
 
 7. Depois de importar a especificação OpenAPI, você é levado para a visualização **Design** da API. Aqui é possível visualizar várias seções da definição OpenAPI. Role para explorar e anote o valor **Host**. Também é possível visualizar o OpenAPI sob a guia **Origem**.
   _Nota: você notará que o valor do Host está configurado para_ `$(catalog.host)`_. Essa é a URL base para seu proxy de API._
-8. Salve sua API.
+8. Sua API é salva. 
 
 
 ## Teste seu proxy de API
@@ -72,7 +69,7 @@ Um app de _provedor de clima_ de amostra foi criado para este tutorial. A especi
 
   ![](images/generate-default-product-3.png)
 
-  _No API Connect, os **Produtos** fornecem uma maneira de agrupar as APIs que são destinadas para um uso específico. Os produtos são publicados em um **Catálogo**.  [{{site.data.keyword.apiconnect_short}} glossário](../apic_glossary.html)_
+  _No {{site.data.keyword.apiconnect_short}}, **Produtos** fornecem uma maneira de agrupar as APIs que são destinadas para um uso específico. Os produtos são publicados em um **Catálogo**.  [{{site.data.keyword.apiconnect_short}} glossário](../apic_glossary.html)_
 
 3. Na guia Montar, clique no ícone de reprodução para testar a chamada de destino do proxy de API.
 
@@ -103,7 +100,7 @@ _A ferramenta Explore permite que os usuários testem a operação correta da AP
 
 
 ### Conclusão
-Neste tutorial, você viu como um serviço REST existente pode ser chamado por meio de um proxy de passagem de API. Você iniciou verificando a disponibilidade do serviço de amostra por meio do navegador da web. Em seguida, você criou um proxy de API no API Connect e vinculou-o ao serviço de amostra a ser chamado. Você empacotou sua API em um produto, publicou o produto no catálogo e testou o proxy.
+Neste tutorial, você viu como um serviço REST existente pode ser chamado por meio de um proxy de passagem de API. Você iniciou verificando a disponibilidade do serviço de amostra por meio do navegador da web. Então você criou um proxy de API no {{site.data.keyword.apiconnect_short}} e vinculou o proxy ao serviço de amostra a ser chamado. Você empacotou sua API em um produto, publicou o produto no catálogo e testou o proxy.
 
 ---
 

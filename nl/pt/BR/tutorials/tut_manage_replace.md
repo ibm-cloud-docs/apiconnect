@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -38,7 +38,7 @@ Neste tutorial, você irá atualizar um produto de API existente substituindo-o 
 
 1. Efetue login no {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://console.ng.bluemix.net/login){:new_window}.
 
-2. No Painel do {{site.data.keyword.Bluemix_short}}, ative o serviço {{site.data.keyword.apiconnect_short}}. ![](images/Bluemix.png)
+2. No Painel do {{site.data.keyword.Bluemix_notm}}, ative o serviço {{site.data.keyword.apiconnect_short}}. ![](images/Bluemix.png)
 
 3. No API Manager, se você não tiver fixado anteriormente a área de janela de navegação da UI, clique no ícone **Navegar para** ![](images/navigate-to.png). A área de janela de navegação da UI do API Manager é aberta. Para fixar a área de janela de navegação da UI, clique no ícone do **menu Fixar** ![](images/pinned.png).
 
@@ -86,8 +86,8 @@ Neste tutorial, você irá atualizar um produto de API existente substituindo-o 
 ![](images/rep-replace-dialog-2.png)
 
     Como resultado dessa substituição, o Weather Provider API Product 1.0.0 é desativado e o Weather Provider API Product 2.0.0 é publicado. **Nota**: é possível mudar o plano associado a esse produto durante o processo de substituição. Esta é uma maneira fácil de alterar o plano para um produto de API.
-![](images/rep-prod-retired.png)
-
+![](images/rep-prod-retired.png) 
+ 
 
 ## O que você realizou neste tutorial
 

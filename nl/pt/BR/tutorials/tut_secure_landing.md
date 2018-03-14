@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -20,9 +20,9 @@ Estes tutoriais fornecem procedimentos sobre como é possível proteger suas API
 
 Para proteger uma API com um ID de cliente e Segredo do cliente, deve-se selecionar um método para seu processo.
 
-## IBM Bluemix
+## {{site.data.keyword.Bluemix_notm}}
 
-- [Protegendo sua API com ID de cliente e Segredo do cliente usando o IBM Bluemix](tut_secure_id_secret_bm.html)
+- [Protegendo sua API com ID de cliente e Segredo do cliente usando o {{site.data.keyword.Bluemix_notm}}](tut_secure_id_secret_bm.html)
 
 ## Kit de ferramentas do desenvolvedor
 

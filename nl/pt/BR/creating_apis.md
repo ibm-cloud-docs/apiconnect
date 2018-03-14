@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-26"
+lastupdated: "2017-12-15"
 
 ---
 
@@ -43,7 +43,7 @@ comando.
 ### Pré-requisito
 {: #prereq_install_dev_tk}
 
-Antes de iniciar, deve-se instalar o [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://nodejs.org/en/){:new_window} na máquina em que
+Antes de iniciar, deve-se instalar o [Node.js ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://nodejs.org/en/){:new_window} na máquina em que
 você deseja usar o kit de ferramentas e assegurar que `nó` esteja em seu `PATH`.
 
 Os itens a seguir são instalados quando você instala o
@@ -106,22 +106,21 @@ seguir.
 </thead>
 <tbody >
 <tr class="style-scope doc-content doc-tr-odd">
-<td style="width: 33.3%" > [Microsoft .NET Framework 4 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.microsoft.com/en-us/download/details.aspx?id=17851) <a href="https://www.microsoft.com/en-us/download/details.aspx?id=17851" rel="external" target="blank" title="(Opens in a new tab or window)" >Microsoft .NET Framework 4</a></td>
+<td style="width: 33.3%" > [Microsoft .NET Framework 4 ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.microsoft.com/en-us/download/details.aspx?id=17851)</td>
 <td style="width: 33.3%">Python v2.7 (v3.x não é suportado)</td>
-<td style="width: 33.3%" > [Liberações do Python para Mac OS X ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.python.org/downloads/mac-osx/) <a href="https://www.python.org/downloads/mac-osx/" rel="external" target="blank" title="(Opens in a new tab or window)" >Liberações
-do Python para Mac OS X</a></td>
+<td style="width: 33.3%" > [Liberações do Python para Mac OS X ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.python.org/downloads/mac-osx/)</td>
 </tr>
-<tr><td style="width: 33.3%" > [Visual Studio ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.visualstudio.com/downloads/download-visual-studio-vs) <a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" rel="external" target="blank" title="(Opens in a new tab or window)" >Visual Studio</a></td>
+<tr><td style="width: 33.3%" > [Visual Studio ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.visualstudio.com/downloads/download-visual-studio-vs)</td>
 <td style="width: 33.3%">
 <code>make</code>
 </td>
-<td style="width: 33.3%" > [Xcode ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716) <a href="https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716" rel="external" target="blank" title="(Opens in a new tab or window)" >Xcode</a></td>
+<td style="width: 33.3%" > [Xcode ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716)</td>
 </tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" > [Python v2.7.10 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.python.org/downloads/release/python-2710/) <a href="https://www.python.org/downloads/release/python-2710/" rel="external" target="blank" title="(Opens in a new tab or window)" >Python v2.7.10</a></td>
+<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" > [Python v2.7.10 ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.python.org/downloads/release/python-2710/)</td>
 <td style="width: 33.3%">Uma cadeia de ferramentas do compilador C/C++, por exemplo, GCC versão 4.2 ou mais recente. </td>
 <td style="width: 33.3%" >&nbsp;</td>
 </tr>
-<tr><td style="width: 33.3%" > [Microsoft Windows SDK para Windows 7 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279) <a href="https://www.microsoft.com/en-gb/download/details.aspx?id=8279" rel="external" target="blank" title="(Opens in a new tab or window)">Microsoft Windows SDK para Windows 7</a></td>
+<tr><td style="width: 33.3%" > [Microsoft Windows SDK para Windows 7 ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279)</td>
 <td style="width: 33.3%">Em distribuições Debian e derivadas de Debian (Ubuntu, Mint, etc.), use o comando:
 <pre class="codeblock style-scope doc-content"><code>apt-get install build-essential</code></pre>
 </td>
@@ -233,7 +232,7 @@ Antes de iniciar, tenha em mãos o identificador de catálogo do catálogo que v
 1. Acesse **Painel** do {{site.data.keyword.apiconnect_short}}.
 
 2. Para o catálogo que você deseja usar, clique no ícone **Mostrar identificador de catálogo**
-<img alt="Chain link icon to display the catalog identifier" src="images/chain_link_icon.png">.
+<img alt="Ícone do link de cadeia para exibir o identificador do catálogo" src="images/chain_link_icon.png">.
 
 3. Copie o identificador de catálogo. Por exemplo:  
   ```
@@ -242,9 +241,9 @@ Antes de iniciar, tenha em mãos o identificador de catálogo do catálogo que v
   {: codeblock}
     em que:
 
-    - `<region>` é a região do {{site.data.keyword.Bluemix_short}}.
+    - `<region>` é a região do {{site.data.keyword.Bluemix_notm}}.
 
-    - `<username_string>` é seu ID de organização do {{site.data.keyword.Bluemix_short}} sem nenhum símbolo. Por exemplo,
+    - `<username_string>` é seu ID de organização do {{site.data.keyword.Bluemix_notm}} sem nenhum símbolo. Por exemplo,
 `joe@mycompany.com` seria `joemycompanycom`
 
     - `<catalog>` é o nome de seu catálogo  
@@ -323,7 +322,7 @@ do modelo:
       Checkpoint
     (Move up and down to reveal more choices)
     ```
-    Para obter mais informações sobre cada opção, veja [Usando modelos integrados ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){:new_window}.
+    Para obter mais informações sobre cada opção, veja [Usando modelos integrados ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){:new_window}.
 
 9. Selecione uma classe base e pressione **Enter**. A ferramenta pergunta se você deseja expor a API REST
 do modelo.
@@ -342,9 +341,8 @@ do nome do modelo.
 
 11. Pressione **Enter** para usar as regras padrão de pluralização
 em inglês.
-A ferramenta solicita se você deseja criar um modelo somente de servidor ou um modelo comum que
-possa ser usado na API de LoopBack&reg; de servidor ou
-cliente.
+A ferramenta pergunta se você deseja criar um modelo somente de servidor ou um modelo comum que
+possa ser usado na API do LoopBack do servidor ou do cliente.
 ```
 ? Common model or server only? (Use arrow keys)
 ```
@@ -355,7 +353,7 @@ modelo:
 ```
 Let's add some branch properties now.
 Enter an empty property name when done.
-? Nome da propriedade:
+? Property name:
 ```
 
 13. Informe um nome de propriedade.
@@ -375,7 +373,7 @@ propriedade:
 14. Selecione o tipo de sequência e pressione **Enter**.
 A ferramenta pergunta se a propriedade é necessária:
 ```
-? Necessário? (y/N)
+? Required? (y/N)
 ```
 
 15. Digite `y` ou `n` e pressione
@@ -384,13 +382,13 @@ A ferramenta solicita que você inclua outra propriedade:
 ```
 Let's add another branch property.
 Enter an empty property name when done.
-? Nome da propriedade:
+? Property name:
 ```
 
 16. Se necessário, inclua outro nome de propriedade. Se você não precisar de mais
 propriedades, pressione **Enter** para concluir a inclusão do modelo.
 
-Por padrão, um projeto LoopBack&reg; vem configurado com uma origem de dados na memória, adequada para desenvolvimento e teste. Entretanto, em algum ponto, você desejará conectar
+Por padrão, um projeto LoopBack vem configurado com uma origem de dados na memória, adequada para desenvolvimento e teste. Entretanto, em algum ponto, você desejará conectar
 seus modelos a uma origem de dados real, como o servidor de banco de dados. Conclua
 as etapas a seguir para incluir uma origem de dados:
 
@@ -423,7 +421,7 @@ seguida, pressione **Enter**.
 A ferramenta então inclui a origem de dados no projeto.
 
 4. Insira o host, a porta, o usuário, a senha e as credenciais do banco de dados.
-A ferramenta solicita que você instale o conector LoopBack&reg;.
+A ferramenta solicita que você instale o conector LoopBack.
 ```
 Install loopback-connector-<connector>?
 ```
@@ -432,9 +430,9 @@ Install loopback-connector-<connector>?
 A ferramenta instala o conector.
 
 NOTA: se você selecionou o conector Oracle, deve-se configurar uma variável de ambiente no
-{{site.data.keyword.Bluemix_short}} para o app Oracle ser iniciado. Para fazer isso, conclua as etapas a seguir:
+{{site.data.keyword.Bluemix_notm}} para o app Oracle ser iniciado. Para fazer isso, conclua as etapas a seguir:
 
-1. Na UI (interface com o usuário) do {{site.data.keyword.Bluemix_short}}, selecione
+1. Na UI (interface com o usuário) do {{site.data.keyword.Bluemix_notm}}, selecione
 **Calcular**.
 
 2. Em Aplicativos CF, selecione o aplicativo com o qual deseja trabalhar.
@@ -455,7 +453,7 @@ NOTA: se você selecionou o conector Oracle, deve-se configurar uma variável de
 ### Testando um projeto LoopBack
 {: #test_lb_proj}
 
-Para testar um projeto LoopBack&reg;, conclua as etapas a seguir.
+Para testar um projeto LoopBack, conclua as etapas a seguir.
 
 1. **Opcional**: certifique-se de que seu diretório atualmente em funcionamento seja o diretório de nível superior do projeto. Insira o comando a seguir:
 ```
@@ -466,7 +464,7 @@ em que `<loopback-project-dir>` é o nome do diretório que contém o projeto.
 ```
 apic start
 ```
-Isso executa o projeto LoopBack&reg; (API) e o Micro Gateway localmente. As mensagens a seguir são exibidas:
+Isso executa o projeto LoopBack (API) e o Micro Gateway localmente. As mensagens a seguir são exibidas:
 ```
 Waiting for loopback-project to complete deployment.
 Waiting for loopback-project-gw to complete deployment.
@@ -477,12 +475,13 @@ em que: `<loopback-project>` é o nome do diretório que contém o projeto.
 
 É possível então testar qualquer um dos terminais de API usando `curl`, por exemplo.
 Se você desejar carregar a API usando um navegador da web, abra
-`http://localhost:4001` em seu navegador. Para o projeto padrão LoopBack&reg; (vazio ou hello-world), você vê algo assim:
+`http://localhost:4001` em seu navegador. Para o projeto LoopBack
+padrão (vazio ou hello-world), você verá algo como:
 ```
 {"started":"2016-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-### Publicando um aplicativo LoopBack para Bluemix por meio da CLI
+### Publicando um aplicativo LoopBack no {{site.data.keyword.Bluemix_notm}} da CLI
 {: #pub_lb_app_cli}
 
 Para publicar um aplicativo LoopBack no {{site.data.keyword.Bluemix_short}} por meio da linha de comandos, conclua as etapas a seguir:
@@ -491,7 +490,7 @@ Para publicar um aplicativo LoopBack no {{site.data.keyword.Bluemix_short}} por 
 ```
 cd <loopback-project-dir>
 ```
-2. Insira o comando a seguir para efetuar login no {{site.data.keyword.apiconnect_short}} e {{site.data.keyword.Bluemix_short}}.
+2. Insira o comando a seguir para efetuar login no {{site.data.keyword.apiconnect_short}} e {{site.data.keyword.Bluemix_notm}}.
 ```
 apic login --server  <region>.apiconnect.ibmcloud.com -u <username> -p <password>
 ```
@@ -509,21 +508,21 @@ Logged into <region>.apiconnect.ibmcloud.com successfully
 apic organizations -s <region>.apiconnect.ibmcloud.com
 ```
 em que:
-  * `<region>` é a região do {{site.data.keyword.Bluemix_short}}. Por exemplo:
-  * `eu` se você estiver usando o {{site.data.keyword.Bluemix_short}} em Londres.
-  * `us` se você estiver usando o {{site.data.keyword.Bluemix_short}} em Dallas.
-  * `au` se você estiver usando o {{site.data.keyword.Bluemix_short}} em Sydney.
+  * `<region>` é a região do {{site.data.keyword.Bluemix_notm}}. Por exemplo:
+  * `eu` se você estiver usando o {{site.data.keyword.Bluemix_notm}} em Londres.
+  * `us` se você estiver usando o {{site.data.keyword.Bluemix_notm}} em Dallas.
+  * `au` se você estiver usando o {{site.data.keyword.Bluemix_notm}} em Sydney.
 
   Se você não tiver certeza, será possível localizar sua região clicando no ícone {{site.data.keyword.avatar}} <img src="images/i-avatar-icon.svg" alt="avatar icon"/> na barra de menus para abrir o widget Conta e suporte e verificar o campo de região.
 7. Insira o comando a seguir para publicar seu aplicativo no
-{{site.data.keyword.Bluemix_short}}.
+{{site.data.keyword.Bluemix_notm}}.
 ```
 apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
 ```
 em que:
   * `<app>` é o nome de seu app
-  * `<org>` é o nome de sua organização do {{site.data.keyword.Bluemix_short}}
-  * `<region>` é a região do {{site.data.keyword.Bluemix_short}}
+  * `<org>` é o nome de sua organização do {{site.data.keyword.Bluemix_notm}}
+  * `<region>` é a região do {{site.data.keyword.Bluemix_notm}}
 A saída a seguir é retornada:
   ```
   ...preparing project
@@ -551,7 +550,7 @@ HTTPS. Por exemplo:
         https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<Bluemix org>-<Bluemix space>.apic.<domain name>$(request.path)
         ```
         Se você não anotou esse valor, é possível recuperá-lo acessando a URL de gerenciamento retornada na
-        etapa 7. É possível também recuperá-lo efetuando login no {{site.data.keyword.Bluemix_short}} e visualizando suas informações do app.
+        etapa 7. É possível também recuperá-lo efetuando login no {{site.data.keyword.Bluemix_notm}} e visualizando suas informações do app.
         - **Perfil do TLS**: insira a chamada de API tls-profile. Por exemplo:
         ```
         client:Loopback-client
@@ -561,7 +560,8 @@ HTTPS. Por exemplo:
 ## Criando uma API LoopBack usando o API Designer
 {: #create_lb_api_design}
 
-O procedimento a seguir descreve como criar uma API &reg;LoopBack usando o API Designer.
+O procedimento a seguir descreve como criar uma API LoopBack usando o API
+Designer.
 {:shortdesc}
 
 ### Pré-requisito
@@ -570,7 +570,7 @@ O procedimento a seguir descreve como criar uma API &reg;LoopBack usando o API D
 **Nota**: as instruções a seguir presumem que você está usando a versão mais recente do
 kit de ferramentas do desenvolvedor. Para verificar a versão mais recente, veja a página do pacote [npm ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.npmjs.com/package/apiconnect){:new_window}.
 
-Primeiro, você precisa criar um projeto LoopBack&reg; usando a CLI. Conclua as etapas a seguir para fazer isso:
+Primeiro, você precisa criar um projeto LoopBack usando a CLI. Conclua as etapas a seguir para fazer isso:
 
 1. Para criar um projeto, abra uma linha de comandos e insira:
   ```
@@ -624,18 +624,19 @@ apic edit
     ```
     O API Designer é aberto no navegador da web padrão.
 
-2. Na página de login, insira seu ID e senha do Bluemix&reg;. Clique em **Efetuar Sign In**.
+2. Na página de login, digite seu ID e senha do
+{{site.data.keyword.Bluemix_notm}}. Clique em **Efetuar Sign In**.
 
 3. Clique em **Modelos**.
 
-4. Clique em **Incluir (Add)**. A janela &reg; **Modelo**
+4. Clique em **Incluir**. A janela **Modelo**
 de LoopBack é aberta.
 
 5. Insira um nome de modelo.
 Em geral, é possível usar quaisquer caracteres alfanuméricos além de traços e sublinhados em um
 nome de modelo.
 
-6. Clique em **New**.
+6. Clique em **Novo**.
 
 7. Na página do editor de modelo, acesse Propriedades e clique em
 **Incluir**.
@@ -645,15 +646,15 @@ nome de modelo.
 9. Quando terminar de inserir as Propriedades do modelo, clique em
 **Salvar**.
 
-Por padrão, um projeto LoopBack&reg; vazio não tem nenhuma origem de dados definida. Para definir uma fonte de dados, execute as seguintes etapas:
+Por padrão, um projeto LoopBack vazio não possui nenhuma origem de dados definida. Para definir uma fonte de dados, execute as seguintes etapas:
 1. Clique em **Origens de Dados**.
 
 2. Clique no ícone **Incluir**.
-A janela Novo &reg; **modelo** de LoopBack é aberta.
+A janela Novo **modelo** de LoopBack é aberta.
 
 3. Insira um nome da origem de dados. É possível usar qualquer caractere alfanumérico, traços e sublinhados em um nome de origem de dados.
 
-4. Clique em **New**.
+4. Clique em **Novo**.
 A origem de dados aparece na lista de origens de dados e o editor atualiza
 o arquivo `server/datasources.json` com as configurações para a nova
 origem de dados.
@@ -669,10 +670,10 @@ inserindo o comando a seguir:
 ```
 npm install --save <connector-package>
 ```
-    em que `<connector-package>` é o nome do pacote npm para o conector &reg;LoopBack selecionado. Consulte a tabela a seguir para ver uma lista de
+    em que `<connector-package>` é o nome do pacote npm para o conector LoopBack selecionado. Consulte a tabela a seguir para ver uma lista de
 pacotes do Connector.
 
-**Nota:** os conectores na memória e de e-mail estão integrados no LoopBack&reg;, então não é necessário instalá-los.
+**Nota:** os conectores na memória e de e-mail estão integrados no LoopBack, portanto, não é necessário instalá-los.
 
 <table>
 <caption>Tabela 3. Conectores de LoopBack</caption>
@@ -720,12 +721,12 @@ SQL Server</td>
 </tbody>
 </table>
 
-Para obter mais informações, veja [Documentação do LoopBack - Construindo um conector ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://http://loopback.io//doc/en/lb3/Defining-data-sources.html){:new_window}.
+Para obter mais informações, veja [Documentação do LoopBack - Construindo um conector ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){:new_window}.
 
 **Nota:** se você selecionou o conector Oracle, deve-se configurar uma variável de ambiente no
-{{site.data.keyword.Bluemix_short}} para o app Oracle ser iniciado. Para fazer isso, conclua as etapas a seguir:
+{{site.data.keyword.Bluemix_notm}} para o app Oracle ser iniciado. Para fazer isso, conclua as etapas a seguir:
 
-1. Na UI (interface com o usuário) do {{site.data.keyword.Bluemix_short}}, selecione
+1. Na UI (interface com o usuário) do {{site.data.keyword.Bluemix_notm}}, selecione
 **Calcular**.
 
 2. Em Aplicativos CF, selecione o aplicativo com o qual deseja trabalhar.
@@ -743,7 +744,7 @@ Para obter mais informações, veja [Documentação do LoopBack - Construindo um
 
 8. Clique em **Salvar**.
 
-Para testar um projeto LoopBack&reg;, conclua as etapas a seguir:
+Para testar um projeto LoopBack, conclua as etapas a seguir:
 1. Clique no ícone **Iniciar os servidores**.
 A seguinte mensagem é exibida:
 ```
@@ -752,12 +753,13 @@ http://localhost:<4001/>Running
 Dependendo da configuração de seu projeto e de se outros processos estão em execução, um número de porta
 diferente poderá ser exibido.
 
-2. Clique em **localhost:4001** para exibir o terminal raiz da API. Para o projeto padrão LoopBack&reg; (vazio ou hello-world), você vê algo assim:
+2. Clique em **localhost:4001** para exibir o terminal raiz da API. Para o projeto LoopBack
+padrão (vazio ou hello-world), você verá algo como:
 ```
 {"started":"2017-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-Em seguida, é necessário criar um Produto. Para obter mais informações, veja [Criando produtos](managing_products.html#create_products).
+Em seguida, é necessário criar um Produto. Para obter mais informações, consulte [Criando um produto](managing_products.html#create_product).
 **Dica**: sempre que você iniciar um novo prompt de comandos, certifique-se de que seu diretório atualmente
 em funcionamento seja o diretório de nível superior do projeto. Para fazer isso, insira o seguinte comando:
 ```

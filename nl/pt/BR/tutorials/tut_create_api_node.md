@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-28"
 
 ---
 
@@ -24,13 +24,16 @@ lastupdated: "2017-10-19"
 
 Este tutorial fornece orientação durante a criação de uma API em Node.js usando a estrutura LoopBack. O tutorial descreve como:
 1. Criar um novo projeto LoopBack.
-2. Incluir uma nova origem de dados e modelo em um projeto LoopBack usando o API Designer no kit de ferramentas do {{site.data.keyword.apiconnect_short}}.
+2. Incluir uma nova origem de dados e modelo em um projeto LoopBack usando o API Designer no kit de ferramentas do {{site.data.keyword.apiconnect_full}}.
 3. Testar seus terminais de API usando a ferramenta API Designer Explore.
 
 ---
 ## Pré-requisito
 
-Antes de iniciar, [instale o kit de ferramentas do {{site.data.keyword.apiconnect_short}}](tut_prereq_install_toolkit.html).
+Antes de iniciar, [instale o kit de ferramentas do {{site.data.keyword.apiconnect_short}}](tut_prereq_install_toolkit.html). Se o kit de ferramentas já estiver instalado, certifique-se de que você esteja executando a versão 5.0.8.1 ou mais recente. É possível verificar isso inserindo o comando a seguir na linha de comandos:
+	```
+	apic -v
+	```
 
 ---
 ## Criar um projeto Loopback
@@ -58,9 +61,9 @@ Para criar um projeto LoopBack usando a linha de comandos do kit de ferramentas 
 	```
 4.  Selecione a versão de LoopBack a ser usada. Escolha a versão de produção atual: 3.x.
 	```bash
-	? Which version of LoopBack would you like to use?
-  	2.x (long term support)
-	? 3.x (current)
+	? Which version of LoopBack would you like to use? 
+  	2.x (long term support) 
+	? 3.x (current) 
 	```
 5.  Especifique o tipo de aplicativo que você deseja criar usando as teclas de seta para selecionar **empty-server**.
 	```bash
@@ -88,7 +91,7 @@ Para criar um projeto LoopBack usando o API Designer, conclua as etapas a seguir
 	```
 	![](images/api-designer-1.png)
 	>![informações]
-	>O comando acima inicializa o kit de ferramentas do APIC e ativa o API Designer no navegador padrão quando ele está pronto.
+	>O comando acima inicializa o kit de ferramentas do {{site.data.keyword.apiconnect_short}} e ativa o API Designer no navegador padrão quando ele é concluído.
 	>![informações]
 	>Neste tutorial, você criará um projeto chamado weather-data.
 2.  Se você não tiver fixado anteriormente a área de janela de navegação da UI, clique no ícone Navegar para ![](images/navigate-to.png). A área de janela de navegação da UI do API Manager é aberta. Para fixar a área de janela de navegação da UI, clique no ícone de menu Fixar ![](images/pinned.png).
@@ -132,16 +135,16 @@ Para incluir uma nova origem de dados em um projeto LoopBack usando o API Design
 	```
 	O API Designer será aberto no navegador da web padrão, exibindo inicialmente a página de login, se você não tiver efetuado login recentemente.  
 	>![informações]
-	>É possível efetuar login usando sua conta do Bluemix ou criar uma.
+	>É possível efetuar login usando sua conta do {{site.data.keyword.Bluemix}} ou criar uma.
 3. Clique no ícone **Origens de dados** ![](images/datasource-icon.png).
-4. Clique em **Incluir (Add)**. A janela Nova origem de dados de LoopBack é aberta.
+4. Clique em **Incluir**. A janela Nova origem de dados de LoopBack é aberta.
 5. Insira `weatherDS` no campo de texto **Nome**.
 	>![informações]
 	>É possível usar quaisquer caracteres alfanuméricos, traços e sublinhados em um nome de origem de dados.
-6. Clique em **New**.
+6. Clique em **Novo**.
 7. Por padrão, a configuração **Conector** mostra **BD na memória** e as outras configurações estão em branco. Mantenha as configurações padrão por enquanto e o API Designer salva automaticamente a nova origem de dados.
 	>![informações]
- >A origem de dados na memória é construída no LoopBack e é adequada somente para desenvolvimento e teste inicial. Quando você estiver pronto para conectar seus modelos a uma origem de dados real, como um servidor de banco de dados, mude a configuração **Conector** adequadamente e instale o conector de origem de dados seguindo as instruções em [Instalando conectores LoopBack ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tapim-connector-install.html#task_i2p_dnw_vv){:new_window}. Insira as configurações do conector (nome do host, porta, nome do banco de dados, nome do usuário, senha) conforme apropriado para seu tipo de Conector e clique no conector **Salvar** ![](images/save-icon.png). O API Designer testa automaticamente a conexão com a origem de dados. Se o teste for bem-sucedido, ele exibirá a mensagem **Sucesso - teste de conexão de origem de dados bem-sucedido**.
+ >A origem de dados na memória é construída no LoopBack e é adequada somente para desenvolvimento e teste inicial. Quando você estiver pronto para conectar seus modelos a uma origem de dados real, como um servidor de banco de dados, mude a configuração **Conector** adequadamente e instale o conector de origem de dados seguindo as instruções em [Instalando conectores LoopBack ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tapim-connector-install.html#task_i2p_dnw_vv){:new_window}. Insira as configurações do conector (nome do host, porta, nome do banco de dados, nome do usuário, senha) conforme apropriado para seu tipo de Conector e clique no conector **Salvar** ![](images/save-icon.png). O API Designer testa automaticamente a conexão com a origem de dados. Se o teste for bem-sucedido, ele exibirá a mensagem **Sucesso - teste de conexão de origem de dados bem-sucedido**.
 8. Clique no ícone Conexão de teste ![](images/db-test-icon.png) para testar a conexão de origem de dados. A mensagem "Teste de conexão de origem de dados bem-sucedido" é exibida.
 9. Clique em **Todas as origens de dados**. A origem de dados aparecerá na lista de origens de dados e o editor atualizará o arquivo server/datasources.json com as configurações para a nova origem de dados.
 
@@ -149,19 +152,19 @@ Para incluir uma nova origem de dados em um projeto LoopBack usando o API Design
 
 Para incluir um novo modelo em um projeto LoopBack usando o API Designer, conclua as etapas a seguir:
 1. Clique no ícone **Modelos** ![](images/models-icon.png).
-2. Clique em **Incluir (Add)**. A janela Novo modelo de LoopBack é aberta.
+2. Clique em **Incluir**. A janela Novo modelo de LoopBack é aberta.
 3. Insira `weather` no campo de texto **Nome**, em seguida, clique em **Novo**.
 4. No campo **Origem de dados**, selecione **weatherDS**.
  ![](images/new-model-1.png)
 5. Nas **Propriedades**, clique no ícone **Incluir propriedade** ![](images/add-icon.png).
 6. No campo de texto **Nome da propriedade**, insira `zip_code`.
 7. Para **Tipo**, selecione **número**.
-8. Selecione **Necessário** para tornar a propriedade necessária. Isso significa que ela deve ter um valor ao incluir ou atualizar uma instância de modelo. Por enquanto, mantenha os valores padrão para as outras configurações:
+8. Selecione **Necessário** para tornar a propriedade necessária. Isso significa que ela deve ter um valor ao incluir ou atualizar uma instância de modelo. 
+9. Selecione **ID** para assegurar que a propriedade tenha um identificador exclusivo. Por enquanto, mantenha os valores padrão para as outras configurações:
 	- **É matriz**: indica se a propriedade é uma matriz JavaScript com elementos do tipo especificado.
-	- **ID**: indica se a propriedade é um identificador exclusivo.
 	- **Índice**: indica se a propriedade representa uma coluna (campo) que é um índice do banco de dados.
 	- **Descrição**: descrição de texto da propriedade.
-9. Clique no ícone **Incluir propriedade** ![](images/add-icon.png) novamente para incluir outra propriedade. Referencie a tabela abaixo para concluir as propriedades restantes:
+9. Clique no ícone **Incluir propriedade** ![](images/add-icon.png) novamente para incluir outra propriedade.  Referencie a tabela abaixo para concluir as propriedades restantes:
 ![](images/new-model-property-1.png)
 10. Clique no ícone **Salvar** ![](images/save-icon.png) para salvar suas mudanças.
 11. Clique em **Todos os modelos** para concluir a edição do modelo.
@@ -185,7 +188,7 @@ Para testar seus terminais de API usando a ferramenta API Designer Explore, conc
 	Express server listening on http://127.0.0.1:9000
 	```
 	O API Designer será aberto no navegador da web padrão, exibindo inicialmente a página de login, se você não tiver efetuado login recentemente.
-
+	
 2. Inicie os servidores de teste local.
 	a. No console de teste na parte inferior da tela, clique no ícone **Iniciar os servidores** ![](images/test-icon.png):
  ![](images/start-server-1.png)
@@ -205,14 +208,20 @@ Para testar seus terminais de API usando a ferramenta API Designer Explore, conc
 	>Para reiniciá-lo, clique no ícone **Reiniciar os servidores** ![](images/restart-icon.png):
  >![](images/restart-server-1.png)
 	
-4. Clique no ícone **Explorar** ![](images/explore-icon.png) para ver a ferramenta API Designer Explore. A barra lateral mostra todas as operações REST para os modelos LoopBack na API. Os modelos que são baseados em PersistedModel têm, por padrão, um [conjunto padrão de operações de criação, leitura, atualização e exclusão ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){:new_window}.
+4. Clique no ícone **Explorar** ![](images/explore-icon.png) para ver a ferramenta API Designer Explore. A barra lateral mostra todas as operações REST para os modelos LoopBack na API. Os modelos que são baseados em PersistedModel têm, por padrão, um [conjunto padrão de operações de criação, leitura, atualização e exclusão ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){:new_window}.
 
 5. Clique na operação **weather.create** na área de janela esquerda para exibir o terminal.
 ![](images/explore-test-1.png)
 A área de janela central exibe informações de resumo sobre o terminal, incluindo seus parâmetros, segurança, dados de instância do modelo e códigos de resposta. A área de janela direita fornece o código de modelo para chamar o terminal usando o comando curl e linguagens como Ruby, Python, Java e Node.
 
-6. Para testar os terminais REST na ferramenta API Designer Explore, na área de janela direita, clique em **Testar**. Role para baixo até **Parâmetros** e clique em **Gerar** para gerar alguns dados simulados. Por padrão, os dados gerados incluem as propriedades `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low`, `tonight_humidity_high` e `id`. A propriedade `id` é criada por LoopBack para um determinado modelo e o valor é gerado automaticamente. Remova a propriedade `id` dos dados de amostra, atualize os dados gerados conforme necessário e clique em **Chamar operação**.
+6. Para testar os terminais REST na ferramenta API Designer Explore, conclua as etapas a seguir:
+    1. Na área de janela direita, clique em **Experimente**. 
+	
+	2. Role para baixo até **Parâmetros** e clique em **Gerar** para gerar alguns dados simulados. Por padrão, os dados gerados incluem as propriedades `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low` e `tonight_humidity_high`.
+	
+	3. Clique em **Chamar operação**.
 ![](images/explore-test-2.png)
+	
 >![resolução de problemas]
 >Se você vir uma mensagem de erro devido a um certificado não confiável para o host local, clique no link fornecido na mensagem de erro na ferramenta API Designer Explore para aceitar o certificado, em seguida, continue para chamar as operações em seu navegador da web. O procedimento exato depende do navegador da web que você está usando. Se você carregar os terminais REST diretamente em seu navegador, você verá a mensagem: {"name":"PreFlowError","message":"unable to process the request"}. Deve-se usar a ferramenta API Designer Explore para testar terminais REST em seu navegador porque ela inclui os cabeçalhos de requisito e outros parâmetros de solicitação.
 >
@@ -220,7 +229,7 @@ A área de janela central exibe informações de resumo sobre o terminal, inclui
 >Se você obtém um código de resposta de **422 - Entidade não processável** com a carga útil a seguir:
 >![](images/explore-test-3.png)
 >
->o elemento de dados `id` não foi removido dos dados gerados. Remova o elemento de dados `id` e execute novamente o teste.
+>Assegure-se de que não haja um elemento de dados `id` que não tenha sido removido dos dados gerados. Se houver um elemento ID, remova-o e execute novamente o teste.
 >![resolução de problemas]
 >Se você obtém o erro **Falha ao analisar o corpo da solicitação**, é necessário remover a vírgula após o último número de `humidity_high`.
 7. Edite os valores no JSON mostrado na seção **dados**. Tente mudar os dados simulados gerados e clique em **Chamar operação** novamente. Você verá os parâmetros de solicitação e de resposta, juntamente com os dados de instância JSON inseridos.

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-25"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -12,7 +12,7 @@ lastupdated: "2017-09-25"
 
 # Gerenciando Produtos
 
-Para obter detalhes das maneiras nas quais é possível gerenciar seus Produtos, veja a documentação do IBM&reg; Knowledge Center [Gerenciando seus produtos ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){:new_window}.
+Para obter detalhes das maneiras nas quais é possível gerenciar seus Produtos, veja a documentação do IBM&reg; Knowledge Center [Gerenciando seus produtos ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){:new_window}.
 
 ## Ciclo de vida do produto
 {: #prod_lifecycle}
@@ -33,7 +33,7 @@ versão do Produto.
 </thead>
 <tbody class="style-scope doc-content">
 <tr class="style-scope doc-content doc-tr-odd">
-<td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">Draft</td>
+<td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">Rascunho</td>
 <td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">O produto não está implementado e não está associado a um Catálogo do API Connect.</td>
 </tr>
 <tr class="style-scope doc-content doc-tr-even">
@@ -110,11 +110,11 @@ A guia Produtos é aberta.
 A janela Incluir um novo produto é aberta.
 
 4. Conclua os campos a seguir:
-    - Título (Title)
+    - Título
     - Nome
     - Versão
 
-5. Clique em **Incluir (Add)**.
+5. Clique em **Incluir**.
 A guia Design para o novo Produto é aberta.
 
 6. **Opcional**:
@@ -129,7 +129,7 @@ Para procurar organizações ou comunidades do desenvolvedor, o Produto deve est
 publicado ou descontinuado. Se
 o Catálogo no qual ele é montado, publicado ou descontinuado não for um Catálogo de
 ambiente de simulação, não será possível fazer outras mudanças no Produto enquanto ele
-estiver em um desses estados. Para obter mais informações, veja [Ciclo de vida do produto](#prod_lifecycle}).
+estiver em um desses estados. Para obter mais informações, veja [Ciclo de vida do produto](#prod_lifecycle).
 
 8. Especifique os usuários que podem assinar o Produto. É possível escolher **Usuários Autenticados** ou **Customizado**. Se
 você selecionar **Customizado**, use o campo **Tipo a ser
@@ -216,10 +216,11 @@ serão publicados)**, seguido por **Publicar**. Seu Produto foi colocado em est�
 
 5. Se o Catálogo no qual você deseja montar o Produto não for mostrado na lista:
     1. Clique em **Incluir e gerenciar destinos**.
-    2. Clique em **Incluir destino do IBM Bluemix**.
+    2. Clique em **Incluir destino do {{site.data.keyword.Bluemix_notm}}**.
     3. Selecione a **Região** do {{site.data.keyword.Bluemix_short}}
 na qual você deseja publicar.
-    4. Selecione a **Organização** do {{site.data.keyword.Bluemix_short}} na qual você deseja publicar.
+    4. Selecione a **Organização** do
+{{site.data.keyword.Bluemix_notm}} na qual você deseja publicar.
     5. Uma lista de Catálogos é exibida. Selecione o Catálogo no qual deseja publicar.
     6. Clique em **Avançar**.
     7. Se você tiver um aplicativo LoopBack que deseja publicar, selecione o App no qual
@@ -236,7 +237,7 @@ Catálogo, abra a UI do API Manager, selecione a seção Painel na área de jane
 navegação e clique no Catálogo requerido. O Produto é mostrado com o estado
 de Em estágio.
 
-- Abra o **Painel** do {{site.data.keyword.Bluemix_short}}. Você verá
+- Abra o **Painel** do {{site.data.keyword.Bluemix_notm}}. Você verá
 o tile do aplicativo na seção Aplicativos.
 
 Abra o API Manager para publicar seu produto em uma comunidade para
@@ -279,11 +280,12 @@ de aprovação será enviada e o Produto será movido para o estado Pendente; o 
 publicado quando a solicitação for aprovada. Se a aprovação não for necessária, a versão
 do Produto será publicada imediatamente e movida para o estado Publicado.
 
-Seu produto está no estado Publicado. Ele foi publicado no Catálogo e
-está disponível para as organizações ou comunidades especificadas. Os desenvolvedores de aplicativos dentro dos
-grupos selecionados podem ver e usar as APIs no Produto. Quaisquer solicitações de desenvolvedor de aplicativos
-para usar seu Produto são exibidas na guia Aprovações no Catálogo que a contém, na qual é possível
-recusar ou aceitar a solicitação.
+Seu produto está no estado Publicado. Seu Produto foi publicado no Catálogo e
+está disponível para as organizações ou comunidades especificadas. Os desenvolvedores
+de aplicativos dentro dos grupos selecionados podem ver e usar as APIs no
+Produto. Qualquer solicitação do desenvolvedor de aplicativos para usar seu Produto
+é exibida na guia Aprovações no Catálogo de contenção, no qual é possível recusar ou
+aceitar a solicitação.
 
 
 ## Publicando um Produto para Bluemix
@@ -320,7 +322,7 @@ do usuário** e selecione **SAML**.
 
 7. Na área de janela de navegação, clique no ícone **Desenvolvedores**.
 
-8. Clique em **Incluir organização Bluemix**.
+8. Clique em **Incluir organização do IBM Cloud**.
 
 9. Inclua seu endereço de e-mail do usuário do
 {{site.data.keyword.Bluemix_short}} e clique em
@@ -330,10 +332,10 @@ do usuário** e selecione **SAML**.
 
 11. Clique no link do e-mail para aceitar o convite.
 A UI do
-{{site.data.keyword.Bluemix_short}} é aberta.
+{{site.data.keyword.Bluemix_notm}} é aberta.
 
 12. Selecione sua organização do
-{{site.data.keyword.Bluemix_short}} e clique em
+{{site.data.keyword.Bluemix_notm}} e clique em
 **Confirmar**.
 
 13. Na UI do API Manager, clique no ícone **Produtos**.

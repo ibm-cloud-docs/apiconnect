@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ Duração: 30 minutos
 Nível de qualificação: iniciante
 
 ## Objetivo
-Esta é uma introdução básica para analítica de API no {{site.data.keyword.apiconnect_long}}. Faremos um tour nos painéis de análise de dados disponíveis e será possível seguir junto com suas próprias APIs.
+Esta é uma introdução básica para analítica de API no {{site.data.keyword.apiconnect_full}}. Faremos um tour nos painéis de análise de dados disponíveis e será possível seguir junto com suas próprias APIs.
 
 
 ## Pré-requisito
@@ -24,7 +24,7 @@ Para visualizar sua própria analítica de API, deve-se ter um Produto de API cr
 Para gerar os dados neste tutorial, usamos o *Collection Runner* do Postman para chamar uma API várias vezes, com diferentes dados e IDs de cliente. É possível usar uma ferramenta semelhante (como HttpRequester para Firefox) ou apenas usar cURL para chamar sua API várias vezes por meio da linha de comandos. É possível obter solicitações de amostra para sua API clicando no link **Explorar** no {{site.data.keyword.apiconnect_short}}.
 
 ## Introdução à analítica do catálogo
-Como um proprietário de API, você precisa de uma maneira de avaliar o sucesso e o desempenho das APIs oferecidas. O local principal em que você procurará a analítica é no nível de catálogo. Se você não tiver feito a introdução aos catálogos, veja [Trabalhando com catálogos ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){:new_window} no IBM Knowledge Center para obter uma introdução. 
+Como um proprietário de API, você precisa de uma maneira de avaliar o sucesso e o desempenho das APIs oferecidas. O local principal em que você procurará a analítica é no nível de catálogo. Se você não tiver feito a introdução aos catálogos, veja [Trabalhando com catálogos ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){:new_window} no IBM Knowledge Center para obter uma introdução. 
 
 Você e seus desenvolvedores de aplicativo também podem acessar a analítica específica do app no Portal do Desenvolvedor, mas vamos nos concentrar na Analítica de catálogo neste tutorial.
 
@@ -85,7 +85,7 @@ Agora, vamos criar um novo painel que fornecerá a visualização de padrões de
    ![](./images/newdashboard.png) 
     Uma lista de visualizações disponíveis é exibida.
 
-2. Selecione alguns visualizações para incluir em seu painel. Por exemplo:
+2. Selecione alguns visualizações para incluir em seu painel.  Por exemplo:
   * Apps assinados
   * Apps por plano 
   * Taxa de sucesso
@@ -148,6 +148,6 @@ Neste tutorial, percorremos várias atividades para ajudar a criar combinações
 
 ## Próxima etapa
 
-Saiba [como gerenciar suas APIs e o versionamento](tut_version_landing.html).
+Saiba [como gerenciar suas APIs e versões](tut_manage_version_landing.html).
 
 Criar > Gerenciar > Proteger > Socializar > **Analisar**  

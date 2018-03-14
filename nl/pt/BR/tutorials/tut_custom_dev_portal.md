@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -16,7 +16,7 @@ lastupdated: "2017-09-12"
 
 
 ## Objetivo
-Este tutorial ajudará você a customizar rapidamente o Portal do Desenvolvedor do {{site.data.keyword.apiconnect_short}} e selecionar um tema que se adeque às suas necessidades.
+Este tutorial ajudará você a customizar rapidamente o Portal do Desenvolvedor do {{site.data.keyword.apiconnect_full}} e selecionar um tema que se adeque às suas necessidades.
 
 ---
 

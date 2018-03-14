@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -15,27 +15,27 @@ lastupdated: "2017-10-19"
 
 Aqui estão as respostas às perguntas comuns de resolução de problemas sobre o
 uso do {{site.data.keyword.apiconnect_long}} no
-{{site.data.keyword.Bluemix_short}}.
+{{site.data.keyword.Bluemix_notm}}.
 {:shortdesc}
 
-## Nome do usuário e senha necessários ao incluir o serviço API Connect do Bluemix
+## Nome do usuário e senha necessários ao incluir o serviço API Connect {{site.data.keyword.Bluemix_notm}}
 
-Depois de incluir o serviço em seu Painel do {{site.data.keyword.Bluemix_short}}, um nome de usuário e uma senha são solicitados quando você tenta abri-lo. 
+Depois de incluir o serviço em seu Painel do {{site.data.keyword.Bluemix_notm}}, um nome de usuário e uma senha são solicitados quando você tenta abri-lo. 
 
 ### Sintomas
 {: #ts_sym_usernamepw}
 
-Em vez de acessar o serviço {{site.data.keyword.Bluemix_short}} diretamente ao abrir um novo {{site.data.keyword.apiconnect_short}}, ele requer que você efetue login no API Manager.
+Em vez de acessar o serviço {{site.data.keyword.Bluemix_notm}} diretamente ao abrir um novo {{site.data.keyword.apiconnect_short}}, ele requer que você efetue login no API Manager.
 
 ### Causa
 {: #ts_cause_usernamepw}
 
-Seu navegador está configurado para bloquear cookies ou o nível está configurado para um nível mais restrito do que o {{site.data.keyword.apiconnect_short}} requer.
+Seu navegador está configurado para bloquear cookies ou o nível está configurado para um nível mais restrito do que o {{site.data.keyword.apiconnect_notm}} requer.
 
 ### Resolução
 {: #ts_res_usernamepw}
 
-Ative ou aumente o nível de permissão de cookies em suas configurações do navegador até que ele abra o serviço {{site.data.keyword.Bluemix_short}}.
+Ative ou aumente o nível de permissão de cookies em suas configurações do navegador até que ele abra o serviço {{site.data.keyword.Bluemix_notm}}.
 
 ## Não é possível instalar o kit de ferramentas do desenvolvedor
 
@@ -72,8 +72,8 @@ sudo chown -R $USER /usr/local
 
 Esse comando torna sua conta do usuário
 a proprietária do diretório `/usr/local`. Em seguida, não será necessário usar sudo para
-instalar o Node ou instalar pacotes globalmente com npm. Para obter mais informações, veja [How to Node ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://howtonode.org/introduction-to-npm){: new_window}. **Nota:** mudar a propriedade do diretório é apropriado somente em um sistema de desenvolvimento local.
-Nunca faça isso em um sistema servidor.
+instalar o Node ou instalar pacotes globalmente com npm. 
+    **Nota:** mudar a propriedade do diretório é apropriado somente em um sistema de desenvolvimento local. Nunca faça isso em um sistema servidor.
 
 Além disso, não use o comando
 `chown` anterior no diretório `/usr/bin`;
@@ -272,7 +272,7 @@ O serviço de processamento de cartão de crédito de Faixa permite um máximo d
 ### Resolução
 {: #ts_res_nosubscribe}
 
-Assegure-se de que você tenha uma conta no nível Corporativo para seu serviço {{site.data.keyword.Bluemix_short}} {{site.data.keyword.apiconnect_short}} e que existam menos de 25 instâncias. Remova um serviço, se você tiver o número máximo de serviços.
+Assegure-se de que você tenha uma conta no nível Corporativo para seu serviço {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.apiconnect_short}} e que existam menos de 25 instâncias. Remova um serviço, se você tiver o número máximo de serviços.
 
 ## Obtendo ajuda e suporte para o API Connect
 
@@ -282,11 +282,11 @@ poderá obter ajuda procurando por informações ou fazendo perguntas
 através de um fórum. Também é possível abrir um chamado de suporte.
 
 Ao usar os fóruns para fazer uma pergunta, marque a sua pergunta
-para que ela possa ser vista pelas equipes de desenvolvimento do {{site.data.keyword.Bluemix_short}}. 
+para que ela possa ser vista pelas equipes de desenvolvimento do {{site.data.keyword.Bluemix_notm}}. 
 
-- Se você tiver questões técnicas sobre como desenvolver ou implementar um app com o {{site.data.keyword.apiconnect_short}}, poste sua pergunta no Stack Overflow e identifique a sua pergunta com "ibm-bluemix" e "api connect".
+- Se você tiver questões técnicas sobre como desenvolver ou implementar um app com o {{site.data.keyword.apiconnect_short}}, poste sua pergunta no Stack Overflow e identifique-a com "ibm-cloud" e "api connect".
 
-- Para perguntas sobre o serviço e instruções de introdução, use o IBM DeveloperWorks dW Answers. Inclua as tags "bluemix" e "api connect".
+- Para perguntas sobre o serviço e instruções de introdução, use o IBM DeveloperWorks dW Answers. Inclua as tags "ibm cloud" e "api connect".
 Veja Obtendo ajuda para obter mais detalhes sobre como usar os fóruns. 
 
 Para obter informações sobre como abrir um chamado de suporte IBM ou sobre os níveis de suporte e as severidades de chamados, veja Entrando em contato com o suporte.

@@ -49,7 +49,7 @@ Neste tutorial, você irá excluir, arquivar e desativar uma API.
 
 
 ## Arquivando um Produto de API
-1. Clique nas reticências verticais na linha **Weather Provider API 2.0.0**.  
+1. Clique nas reticências verticais na linha **API do Provedor de clima 2.0.0**.  
 ![](images/del-prod-list2.png)
 
 2. Selecione **Desativar**.  
@@ -74,7 +74,7 @@ Neste tutorial, você irá excluir, arquivar e desativar uma API.
 8. Marque **Arquivado**.  
 ![](images/del-view-archived.png)
 
-9. Clique nas reticências verticais na linha **Weather Provider API 2.0.0**.  
+9. Clique nas reticências verticais na linha **API do Provedor de clima 2.0.0**.  
 ![](images/del-prod-list5.png)
 
 10. Selecione **Desarquivar**.  
@@ -87,10 +87,10 @@ Neste tutorial, você irá excluir, arquivar e desativar uma API.
 ## O que você realizou neste tutorial
 Neste tutorial, você concluiu as atividades a seguir:
 
-1. Excluiu um produto de API
-2. Desativou um produto de API
-3. Arquivou um produto de API
-4. Desarquivou um produto de API
+1. Excluiu um Produto de API
+2. Desativou um Produto de API
+3. Arquivou um Produto de API
+4. Desarquivou um Produto de API
 
 ---
 

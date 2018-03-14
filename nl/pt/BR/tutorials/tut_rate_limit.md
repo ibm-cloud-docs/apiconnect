@@ -1,10 +1,10 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-11-02"
 ---
 
-{:new_window: target="blank"}
+{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -29,7 +29,7 @@ Neste tutorial, você fará o seguinte:
 
 
 ## Pré-requisito
-Deve-se já ter criado uma API no {{site.data.keyword.apiconnect_short}}, protegida com pelo menos uma Chave API. Nas instruções a seguir, o nosso ponto de início é o [Arquivo de exemplo do Weather Provider API![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window}, protegido usando um [ID de cliente e o segredo](tut_secure_landing.html).
+Deve-se já ter criado uma API no {{site.data.keyword.apiconnect_short}}, protegida com pelo menos uma Chave API. Nas instruções a seguir, o nosso ponto de início é o [Arquivo de exemplo do Weather Provider API![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}, protegido usando um [ID de cliente e o segredo](tut_secure_landing.html).
 
 Conclua os tutoriais a seguir antes de iniciar este tutorial:
 - [Importar a especificação de API e usar proxy de um serviço REST existente](tut_rest_landing.html).
@@ -39,8 +39,8 @@ Conclua os tutoriais a seguir antes de iniciar este tutorial:
 ---
 ## Ativando o API Connect
 
-1. Efetue login no {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://console.ng.bluemix.net/login){:new_window}.
-2. Depois de efetuar login no {{site.data.keyword.Bluemix_short}}, role para baixo para **Todos os serviços** e clique em **API Connect**.
+1. Efetue login no {{site.data.keyword.Bluemix_notm}}: [https://console.ng.bluemix.net/login ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://console.ng.bluemix.net/login){:new_window}.
+2. Depois de efetuar login no {{site.data.keyword.Bluemix_notm}}, role para baixo para **Todos os serviços** e clique em **API Connect**.
 3. Clique em **API Connect** para ativar o serviço {{site.data.keyword.apiconnect_short}}.
 
 ## Explorando o Plano padrão
@@ -65,7 +65,7 @@ Agora que vimos a aparência do Plano padrão, vamos criar um novo Plano com lim
  
     ![](./images/newplanbutton.png) 
     
-    Um novo Plano é criado para você e, por padrão, ele é configurado para permitir o uso ilimitado (ou seja, sem nenhum limite de taxa). Vamos dar um nome mais significativo a ele e configurar um limite mais restritivo.
+    Um novo Plano é criado para você e, por padrão, ele é configurado para permitir o uso ilimitado (ou seja, sem nenhum limite de taxa). Vamos dar um nome mais significativo a ele e configurar um limite mais restritivo. 
 2. Clique no novo Plano (`Novo plano 1`) para expandir os detalhes.
 3. Clique no campo Título e configure o título Plano para: `Demo`.
 4. Clique no campo Nome e configure o nome Plano para `demo-plan`.
@@ -83,7 +83,6 @@ Em exemplos anteriores, você pode ter publicado o seu Produto usando a ferramen
 
 1. Clique no ícone Publicar para *montar* o Produto no catálogo **Ambiente de simulação**. Essa ação inclui suas mudanças do Produto de rascunho no Catálogo selecionado. Precisamos *publicar* as mudanças do Produto em seguida, para torná-las disponíveis para os consumidores por meio do Portal do Desenvolvedor.    ![](./images/stageproduct.png) 
 2. Clique no botão >> para abrir o menu de navegação.
-   ![](./images/navigate.png) 
 3. Selecione Painel, em seguida, abra o catálogo **Ambiente de simulação**. O Weather Provider API Product é listado como **Montado**.
 4. Clique nas reticências e selecione **Publicar** no menu.
    ![](./images/publish.png) 
@@ -91,28 +90,26 @@ Em exemplos anteriores, você pode ter publicado o seu Produto usando a ferramen
 
 
 ## Registrando um novo aplicativo (consumidor) no Portal do Desenvolvedor
-Os desenvolvedores de aplicativos descobrem e usam suas APIs usando o Portal do Desenvolvedor. Para obter mais informações sobre o Portal do Desenvolvedor, verifique este [tópico do IBM Knowledge Center ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){:new_window}.
+Os desenvolvedores de aplicativos descobrem e usam suas APIs usando o Portal do Desenvolvedor. Para obter mais informações sobre o Portal do Desenvolvedor, verifique este [tópico do IBM Knowledge Center ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){:new_window}.
 
 Se esta for sua primeira vez trabalhando com o Portal do Desenvolvedor, você precisará provisionar um Portal do Desenvolvedor para seu catálogo Ambiente de simulação. A conta em que você efetuou login ao provisionar o Portal será a conta do administrador para esse Portal. Em seguida, a fim de explorar e testar APIs, você precisará criar e efetuar login com uma nova conta do desenvolvedor, usando um endereço de e-mail diferente daquele da conta do administrador.
 
 As instruções a seguir guiarão você por estas etapas.
 
-1. Ative o Portal do Desenvolvedor. Se você não sabe a URL, é possível localizá-la na guia Configurações do catálogo Ambiente de simulação.
-
-   ![](./images/devportalurl.png)
-    - Para provisionar o portal do desenvolvedor pela primeira vez, selecione **Portal do Desenvolvedor IBM** na lista suspensa.
+1. Ative o Portal do Desenvolvedor. Se você não sabe a URL, é possível localizá-la na guia Configurações do catálogo Ambiente de simulação. Para provisionar o Portal do Desenvolvedor pela primeira vez, consulte [Instalando e configurando o Portal do Desenvolvedor](tut_config_dev_portal.html).
     - Isso pode levar até uma hora para ser concluído. Quando seu Portal do Desenvolvedor do Ambiente de simulação estiver pronto, você receberá um e-mail
 com um link para seu novo site do Portal do Desenvolvedor. Esse é um link somente de uso único para a conta do administrador.
 2. Efetue login no Portal usando suas credenciais do desenvolvedor de aplicativo (**não** seu IBMid). ***(Crie uma nova conta do desenvolvedor, se necessário, usando um endereço diferente do seu IBMid.)***
 3. Clique no link **Apps** na barra de ferramentas e clique no botão **Criar novo app**.
 
-   ![](./images/createnewapp.png)
 4. Dê ao aplicativo um título e clique em **Enviar**.
 
    ![](./images/mymobileapp.png)
 5. Salve o segredo do cliente e ID de cliente exibidos. Esta será a única vez que seu segredo do cliente estará disponível para você copiar!
 
    ![](./images/clientidandsecret.png)
+   
+   ![](./images/clientsecret.png)
 
 
 
@@ -121,7 +118,7 @@ com um link para seu novo site do Portal do Desenvolvedor. Esse é um link somen
 1. Clique no link **Produtos de API** na barra de ferramentas. Seu Weather Provider API Product é listado! 
 
    ![](./images/apiproducts.png)
-2. Clique no link para ver detalhes e opções. Você deverá ver dois Planos disponíveis: o Plano padrão original e seu novo Plano demo. (Se você vir somente um Plano, retorne para o API Connect e assegure-se de que as mudanças do Produto tenham sido salvas, montadas e publicadas no catálogo Ambiente de simulação.) 
+2. Clique no link para ver detalhes e opções. Você deverá ver dois Planos disponíveis: o Plano padrão original e seu novo Plano demo. (Se você vir somente um Plano, retorne para o {{site.data.keyword.apiconnect_short}} e assegure-se de que as mudanças em seu Produto tenham sido salvas, montadas e publicadas no Catálogo do Ambiente de Simulação.) 
 
    ![](./images/plans.png)
 3. Clique em **Assinar** para o Plano demo e selecione o aplicativo que você acabou de registrar. Agora, seu aplicativo pode chamar as APIs associadas a esse Plano, em uma taxa de até *uma* chamada API a cada minuto. 

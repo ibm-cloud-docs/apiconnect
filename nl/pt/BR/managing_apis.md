@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 
 ---
 
@@ -18,8 +18,7 @@ lastupdated: "2017-10-19"
 
 É possível usar o API Connect para gerenciar APIs no {{site.data.keyword.Bluemix}}, quer elas estejam no {{site.data.keyword.Bluemix_notm}} ou mantidas fora do {{site.data.keyword.Bluemix_notm}}. Gerenciar suas APIs permite controlar o uso, aumentar a adoção e rastrear as estatísticas.
 
-Se você é um cliente, é possível gerenciar como ela é usada na UI do API Manager depois que um desenvolvedor cria uma API e envia por push o produto para o {{site.data.keyword.Bluemix_short}}. Os tópicos a seguir descrevem como criar e gerenciar produtos no {{site.data.keyword.apiconnect_short}}.
-Designer.
+Se você é um cliente, é possível gerenciar como ela é usada na UI do API Manager depois que um desenvolvedor cria uma API e envia por push o produto para o {{site.data.keyword.Bluemix_notm}}. Os tópicos a seguir descrevem como criar e gerenciar produtos no {{site.data.keyword.apiconnect_short}}.
 
 ## Expondo APIs no local por meio de um Secure Gateway
 {: #expose_apis_sec_gate}
@@ -29,7 +28,7 @@ local com segurança para
 {{site.data.keyword.apiconnect_full}}.
 
 Ao criar um gateway seguro, você integra os recursos do
-serviço {{site.data.keyword.Bluemix_short}}
+serviço {{site.data.keyword.Bluemix_notm}}
 {{site.data.keyword.SecureGateway}} com o {{site.data.keyword.apiconnect_short}}. Isso significa que você tem uma maneira segura de acessar suas APIs
 no local do
 {{site.data.keyword.apiconnect_short}}
@@ -56,7 +55,7 @@ segurança para se conectar ao cliente para que possa acessar suas APIs locais.
 
 Para criar um gateway, conclua as etapas a seguir:
 
-1. Clique em **Navegar para** <img alt="Navigate to icon" src="images/navigate_to_icon.png"> > **Administrador** > **Secure Gateways**.
+1. Clique em **Navegar para** <img alt="ícone Navegar para" src="images/navigate_to_icon.png"> > **Administrador** > **Secure Gateways**.
 A página `Secure Gateways` é exibida e um tour guiado por
 Secure Gateways é exibido no canto da UI.
 
@@ -69,8 +68,7 @@ Gateway` caixa de
 diálogo é exibida.
 
 4. Forneça um nome para o gateway.
-
-**Nota:** somente caracteres alfanuméricos e sublinhados são permitidos.
+    **Nota:** somente caracteres alfanuméricos e sublinhados são permitidos.
 
 5. Clique em **Salvar**.
 O gateway é exibido com o ID do gateway e o token de segurança.
@@ -91,7 +89,6 @@ seguir:
 
 8. Siga as instruções na tela para instalar e executar o cliente
 que você selecionou.
-
 Para obter mais informações sobre como configurar um cliente Secure Gateway, consulte
 [Configurando
 um cliente](../../services/SecureGateway/sg_021.html#sg_021).
@@ -113,7 +110,7 @@ Quando você tiver configurado o gateway, será possível usá-lo com suas APIs.
 
 Para usar seu Secure Gateway com APIs, conclua as etapas a seguir:
 1. Crie sua API e Produto, conforme descrito nas etapas a seguir.
-  - Clique em **Navegar para** <img src="images/navigate_to_icon.png" alt="Navigate to icon" /> > **Rascunhos** > **APIs** > **Incluir**.
+  - Clique em **Navegar para** <img src="images/navigate_to_icon.png" alt="ícone Navegar para" /> > **Rascunhos** > **APIs** > **Incluir**.
   - Selecione o tipo de API que você deseja criar.
   - Selecione ou clique em **Incluir um produto**. **IMPORTANTE**: não publique o Produto ainda.
   - Clique em **Criar API**.
@@ -136,9 +133,9 @@ nome do host e o número da porta do local. Por exemplo,
 target-url: http://onpremdb2.rtp.raleigh.ibm.com:3055$(request.path)$(request.search)
 ```
 
-6. Clique em **Salvar** <img src="images/icon_save.png" alt="Save icon" />.
+6. Clique em **Salvar** <img src="images/icon_save.png" alt="ícone Salvar" />.
 
-7. Clique na guia **Source**.  Observe o campo `secure-gateway` com um
+7. Clique na guia **Origem**.  Observe o campo `secure-gateway` com um
 valor `true`.
 
 8. Clique em **Todas as APIs** > **Produtos** e selecione o Produto que você criou anteriormente.
@@ -155,7 +152,7 @@ valor `true`.
 Você expôs com segurança a API no local para
 {{site.data.keyword.apiconnect_short}}. Quaisquer perfis TLS que estão associados a um destino são
 incluídos. Para verificar os perfis TLS,
-clique em **Navegar para** <img src="images/navigate_to_icon.png" alt="Navigate to icon" /> > **Administrador** > **Segurança** > **Perfis TLS**.
+clique em **Navegar para** <img src="images/navigate_to_icon.png" alt="ícone Navegar para" /> > **Administrador** > **Segurança** > **Perfis TLS**.
 Você pode ter diversos gateways
 para cada API. Você decide qual gateway usará quando
 publicar a API. Se já tiver o serviço {{site.data.keyword.SecureGateway}} provisionado, você estará apto a
@@ -172,10 +169,10 @@ assegurar que o gateway esteja funcionando e produza a resposta correta.
 
 Para testar uma API usando o Secure Gateway, conclua as etapas a seguir:
 
-1. Clique em <img alt="Navigate to icon" src="images/navigate_to_icon.png" /> > **Rascunhos** > **APIs**
+1. Clique em <img alt="ícone Navegar para" src="images/navigate_to_icon.png" /> > **Rascunhos** > **APIs**
 **<Sua API>** > **Montar**.
 
-2. Clique no ícone **Teste** <img src="images/test_icon.png" alt="test icon"/>.
+2. Clique no ícone **Teste** <img src="images/test_icon.png" alt="ícone de teste"/>.
 
 3. Selecione um catálogo para testar de dentro da lista fornecida.
 
@@ -201,7 +198,7 @@ publicar**.
 Os resultados do teste são
 exibidos.
 
-## Preparando e publicando um aplicativo Loopback
+## Preparando e publicando um aplicativo LoopBack
 {: #stage_publish_lb_app}
 
 1. Na área de janela de navegação do API Designer, clique em
@@ -211,14 +208,14 @@ A guia Produtos é aberta.
 2. Selecione a versão do Produto, assegure-se de clicar na versão com a qual você deseja trabalhar.
 
 3. Para publicar o tempo de execução no
-{{site.data.keyword.Bluemix_short}}, clique em
+{{site.data.keyword.Bluemix_notm}}, clique em
 **Publicar**.
 
-4. Clique em **Incluir e gerenciar destinos** > **Incluir destino do IBM Bluemix**.
+4. Clique em **Incluir e gerenciar destinos** > **Incluir destino do IBM Cloud**.
 
-5. Selecione a **Região** do {{site.data.keyword.Bluemix_short}} na qual você deseja publicar e conectar.
+5. Selecione a **Região** do {{site.data.keyword.Bluemix_notm}} que você deseja publicar e assinar.
 
-6. Selecione a **Organização** do {{site.data.keyword.Bluemix_short}} na qual você deseja publicar.
+6. Selecione a **Organização** do {{site.data.keyword.Bluemix_notm}} na qual você deseja publicar.
 
 7.  Uma lista de Catálogos é exibida. Selecione o Catálogo no qual deseja publicar.
 
@@ -226,7 +223,7 @@ A guia Produtos é aberta.
 
 9. Selecione o aplicativo LoopBack que você deseja publicar.
 Se esta for a primeira vez que você está implementando o tempo de execução no
-{{site.data.keyword.Bluemix_short}}, inclua um
+{{site.data.keyword.Bluemix_notm}}, inclua um
 nome e clique no ícone **Incluir**.
 
 10.  Clique em **Salvar**.
@@ -270,14 +267,14 @@ destino da API conforme descrito na etapa a seguir.
     2. Selecione as opções a seguir:
 	    - Preparar ou publicar produtos
         - Selecionar produtos específicos
-        - _your product_
+        - _seu produto_
  
     3. Clique em **Publicar**.
 
 Para testar se a publicação funcionou, conclua as etapas a seguir:
 
 1. Assegure-se de que o app
-{{site.data.keyword.Bluemix_short}} esteja em
+{{site.data.keyword.Bluemix_notm}} esteja em
 execução.
 
 2. Abra uma janela do navegador e navegue para a URL de destino da API.
@@ -314,7 +311,7 @@ A janela **Incluir catálogo** é exibida.
 e 0-9) ou caracteres de hífen (-). Um hífen
 não pode ser usado como o primeiro ou último caractere no nome.
 
-5. Clique em **Incluir (Add)**. Seu Catálogo é criado e exibido no painel.
+5. Clique em **Incluir**. Seu Catálogo é criado e exibido no painel.
 
 6. Para configurar o Catálogo, clique no nome do Catálogo e, em seguida, clique em **Configurações** > **Informações** e continue com as etapas a seguir:
   1. Se o novo Catálogo for um de desenvolvimento, selecione **Modo de desenvolvimento**.
@@ -395,7 +392,7 @@ desses links.
 Os Espaços são ativados para seu catálogo e um Espaço padrão, chamado Novo Espaço
 é criado.
 
-Para obter mais informações sobre o uso de organização, veja os tópicos do Knowledge Center, [Usando a organização no IBM API Connect ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}.
+Para obter mais informações sobre o uso de organização, veja os tópicos do Knowledge Center, [Usando a organização no IBM API Connect ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}.
 
 ## Configurando um Portal do desenvolvedor
 {: #config_dev_portal}
@@ -432,7 +429,7 @@ Portal do desenvolvedor na linha de assunto do e-mail que você recebeu. Também
 clicando em **Portal** > **Configurações**.
 
 Para obter mais informações sobre as tarefas que podem ser concluídas no Portal do Desenvolvedor, veja os
-tópicos do IBM Knowledge Center sobre o [Portal do Desenvolvedor ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.html){:new_window}.
+tópicos do IBM Knowledge Center sobre o [Portal do Desenvolvedor ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.html){:new_window}.
 
 ## Configurando permissões para funções
 {: #config_permissions_roles}
@@ -454,7 +451,7 @@ As permissões de gerenciamento do produto às quais é possível designar funç
 3. Para incluir uma função nas permissões **Montar**, **Visualizar** ou
 **Gerenciar**, clique no ícone **+** correspondente.
 A lista a seguir mostra as funções disponíveis padrão:
-  - Administrator
+  - Administrador
   - Gerente de produto
   - Desenvolvedor de API
   - Publicador

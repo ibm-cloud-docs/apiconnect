@@ -2,7 +2,7 @@
 
 copyright:
 years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-14"
 
 ---
 
@@ -23,14 +23,14 @@ No API Manager, você criará uma API de REST que acessará um serviço SOAP exi
 
 ## Pré-requisito
 1. Antes de iniciar, você precisará [configurar sua instância do {{site.data.keyword.apiconnect_full}}](tut_prereq_set_up_apic_instance.html).
-2. Antes de iniciar, copie o arquivo de [teste weatherprovider.wsdl ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} para seu sistema de arquivos local.
+2. Antes de iniciar, copie o arquivo de [teste weatherprovider.wsdl ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} para seu sistema de arquivos local.
 	>![images/info.png]
 	>É possível clicar em **Bruto** e, em seguida, salvar a página resultante em seu sistema local como um arquivo `.wsdl`.
 
 ---
 ## Configurando uma definição de API de REST
 1. Efetue login no {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://new-console.ng.bluemix.net/login){:new_window}.
-2. No **Painel** do {{site.data.keyword.Bluemix_short}}, role para baixo e selecione {{site.data.keyword.apiconnect_full}}. Como alternativa, no ícone de menu, escolha **Serviços** e, em seguida, **APIs** para atingir a janela **Trabalhar com APIs** e selecione **API Connect**. Na página **API Connect**, é possível simplesmente pressionar `Criar` ou ajustar as configurações padrão. Para os propósitos deste exercício, deixe a instância desvinculada ajuste o nome do Serviço para facilitar o reconhecimento mais tarde. Um exemplo seria `API Connect-weather-exercise`.
+2. No {{site.data.keyword.Bluemix_notm}} **Painel** role para baixo e selecione {{site.data.keyword.apiconnect_short}}. Como alternativa, no ícone de menu, escolha **Serviços** e, em seguida, **APIs** para atingir a janela **Trabalhar com APIs** e selecione **API Connect**. Na página **API Connect**, é possível simplesmente pressionar `Criar` ou ajustar as configurações padrão. Para os propósitos deste exercício, deixe a instância desvinculada ajuste o nome do Serviço para facilitar o reconhecimento mais tarde. Um exemplo seria `API Connect-weather-exercise`.
 Pressione o botão `Criar` para ativar o serviço {{site.data.keyword.apiconnect_short}}.  
 Você pode ver um alerta que descreve o que há de novo ou a página de abertura informativa **APIs de rascunhos**. Depois de ler as informações, clique no ícone **"Pronto"** para visualizar o API Manager.
 3. No {{site.data.keyword.apiconnect_short}}, se você não tiver fixado anteriormente a área de janela de navegação da UI, clique em **Navegar para** ![](images/navigate-to.png). A área de janela de navegação da UI do API Manager é aberta. Para fixar a área de janela de navegação da UI, clique no ícone do **menu Fixar** ![](images/pinned.png).
@@ -57,8 +57,8 @@ Você pode ver um alerta que descreve o que há de novo ou a página de abertura
 ![](images/api-security-1.png)
 10. Desmarque a opção **ClientID**.
 ![](images/api-security-2.png)
-	>![images/info.png]
-	>Você pode observar que há um ícone triangular amarelo que aparece próximo ao ícone de disco de salvamento. Este é um aviso de que há definição que pode ter sido definida, mas ainda não usada. (Isso não afetará a definição de API.)
+	>![](images/info.png)
+	>Você pode observar que há um ícone triangular amarelo que aparece próximo ao ícone de salvamento do disco. Este é um aviso de que há definição que pode ter sido definida, mas ainda não usada. (Isso não afetará a definição de API.)
 11. Na seção **Definições**, clique no ícone **Incluir definição** ![](images/add-icon.png) e, em seguida, expanda a nova definição clicando nela.
 12. Nomeie a definição `Weather Data Output`.
 13. A definição terá cinco propriedades. Clique em **Incluir propriedade** quatro vezes para incluir as propriedades adicionais. Renomeie o `Property Name` usando o seguinte como guia e use o padrão para `Description`, `Type` e `Example`:

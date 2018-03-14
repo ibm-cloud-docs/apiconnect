@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ lastupdated: "2017-10-19"
 **Nível de qualificação**: iniciante  
 
 ## Objetivo
-Este tutorial ajuda você a começar rapidamente o {{site.data.keyword.apiconnect_short}} ilustrando como é possível colocar sua API existente sob o controle de gerenciamento. Você iniciará criando uma nova especificação OpenAPI e, em seguida, criará um proxy de API de passagem para um serviço REST existente.
+Este tutorial ajuda você a começar rapidamente com o {{site.data.keyword.apiconnect_full}} ilustrando como é possível colocar sua API existente sob o controle de gerenciamento. Você iniciará criando uma nova especificação OpenAPI e, em seguida, criará um proxy de API de passagem para um serviço REST existente.
 
 ## Pré-requisito
 Antes de iniciar, será necessário [configurar sua instância do API Connect](tut_prereq_set_up_apic_instance.html) e [instalar o kit de ferramentas do API Connect](tut_prereq_install_toolkit.html).
@@ -119,9 +119,9 @@ _(Visitaremos a segurança com chaves API no próximo tutorial.)_
     O **Comutador de operação** fornece um ponto de decisão. Baseado no par verbo/caminho, a operação apropriada deve ser chamada.  
     c. Arraste a política **invoke** da paleta e solte-a na tela. Solte uma no caminho **/get current** e uma no caminho **/get today**.
     d. Selecione a política **invoke** no caminho **/get current** e atualize seu título para "**invoke-current**".  
-    e. Atualize o campo URL com: `https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`.
+    e. Atualize o campo URL com: `https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`.
     f. Selecione a política **invoke** no caminho **/get today** e atualize seu título para "**invoke-today**".  
-    g. Atualize o campo URL com: `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`.  
+    g. Atualize o campo URL com: `https://myweatherprovider.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`.  
 
 20. Salve sua API.
 

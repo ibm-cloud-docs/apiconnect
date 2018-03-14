@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-19"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -17,7 +17,7 @@ lastupdated: "2017-09-19"
 ## O que você precisará
 1. Node.js
 2. Node Product Manager (NPM)
-3. {{site.data.keyword.apiconnect_short}} _Lite_
+3. {{site.data.keyword.apiconnect_full}} _Lite_
 
 <table>
   <tr><td><b>Node.js</b>: um tempo de execução JavaScript acionado por evento assíncrono usado para construir e executar aplicativos de rede escalável

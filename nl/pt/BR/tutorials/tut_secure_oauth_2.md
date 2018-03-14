@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-12-13"
 ---
 
 {:new_window: target="blank"}
@@ -22,16 +22,17 @@ Este tutorial orientará você para proteger sua API usando um fluxo OAuth 2.0 d
 ## Pré-requisito
 
 Antes de iniciar, deve-se ter concluído o tutorial a seguir.  
-- [Protegendo uma API com chaves de ID de cliente ou Segredo do cliente com o IBM Bluemix](tut_secure_id_secret_bm.html)
-ou
+- [Protegendo uma API com chaves de ID de cliente ou Segredo do cliente com o {{site.data.keyword.Bluemix}}](tut_secure_id_secret_bm.html) ou
 - [Protegendo uma API com chaves de ID de cliente ou Segredo do cliente com o kit de ferramentas](tut_secure_id_secret_tk.html)
+
+Nota: este tutorial mostra as etapas e capturas de tela para realizar a tarefa na UI do {{site.data.keyword.Bluemix}}. Também é possível concluir o mesmo procedimento usando a linha de comandos. É possível visualizar esse procedimento no [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tutorial_apionprem_security_OAuth_v506.html). 
 
 ## Procedimento
 
 1. Crie uma API do Provedor OAuth e selecione seu esquema do OAuth.  
 	a. Abra **Rascunhos**, selecione **APIs** e clique em **Incluir** > **API do Provedor OAuth 2.0**.  
     ![](images/oauth_provider_1.png)
-	b. Forneça o título "API de terminal OAuth". (O nome e o caminho base devem ser preenchidos automaticamente.)  
+	b. Forneça o título "API de terminal OAuth". O nome e o caminho base devem ser preenchidos automaticamente.  
 	c. Selecione **Criar API**.  
 	d. Na API de terminal do OAuth recém-criada, navegue para o painel **OAuth 2** (ou role para baixo até ele) e selecione "Confidencial" como o Tipo de cliente.  
 	e. Em Escopos, renomeie _scope1_ para _view_current_. Exclua _scope2_ e _scope3_.  
