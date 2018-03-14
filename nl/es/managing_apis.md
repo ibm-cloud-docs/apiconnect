@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 
 ---
 
@@ -18,15 +18,14 @@ lastupdated: "2017-10-19"
 
 Puede utilizar API Connect para gestionar API en {{site.data.keyword.Bluemix}}, tanto si están en {{site.data.keyword.Bluemix_notm}} o se mantienen fuera de {{site.data.keyword.Bluemix_notm}}. La gestión de las API le permite controlar el uso, aumentar la adopción y seguir estadísticas.
 
-Si es un cliente, puede gestionar cómo se utiliza en la interfaz de usuario de API Manager una vez que un desarrollador cree una API y envíe el producto a {{site.data.keyword.Bluemix_short}}. Los temas siguientes describen cómo crear y gestionar productos en {{site.data.keyword.apiconnect_short}}
-Designer.
+Si es un cliente, puede gestionar cómo se utiliza en la interfaz de usuario de API Manager una vez que un desarrollador cree una API y envíe el producto a {{site.data.keyword.Bluemix_notm}}. Los temas siguientes describen cómo crear y gestionar productos en {{site.data.keyword.apiconnect_short}}.
 
 ## Exposición de API locales mediante una Secure Gateway
 {: #expose_apis_sec_gate}
 
 Puede crear una pasarela segura para exponer de forma segura las API locales en {{site.data.keyword.apiconnect_full}}.
 
-Al crear una pasarela segura, integre las características del servicio de {{site.data.keyword.Bluemix_short}}
+Al crear una pasarela segura, integre las características del servicio de {{site.data.keyword.Bluemix_notm}}
 {{site.data.keyword.SecureGateway}} con {{site.data.keyword.apiconnect_short}}. Esto significa que tiene una forma segura
 de acceder a las API locales desde {{site.data.keyword.apiconnect_short}} a través de un pasaje seguro sin la necesidad de suministrar una instancia separada del servicio de {{site.data.keyword.SecureGateway}}. Cree de forma efectiva un túnel
 a {{site.data.keyword.apiconnect_short}} en un entorno público
@@ -52,9 +51,7 @@ Pulse en cada paso de la visita guiada para completar la configuración de la pa
 3. Pulse **Añadir**.
 Se mostrará el recuadro de diálogo `Crear Secure Gateway`.
 
-4. Especifique un nombre para la pasarela.
-
-**Nota:** Sólo se permiten caracteres alfanuméricos y de subrayado.
+4. Especifique un nombre para la pasarela.**Nota:** Sólo se permiten caracteres alfanuméricos y de subrayado.
 
 5. Pulse **Guardar**.
 La pasarela se muestra junto con el ID de pasarela y la señal de seguridad.
@@ -71,9 +68,7 @@ para conectar una red remota a una pasarela segura en la red de Bluemix&reg;.
     - Docker
     - IBM DataPower&reg;
 
-8. Siga las direcciones en pantalla para instalar y ejecutar el cliente que ha seleccionado.
-
-Para obtener más información sobre cómo configurar un cliente de pasarela segura, consulte [Configuración de un cliente](../../services/SecureGateway/sg_021.html#sg_021).
+8. Siga las direcciones en pantalla para instalar y ejecutar el cliente que ha seleccionado.Para obtener más información sobre cómo configurar un cliente de pasarela segura, consulte [Configuración de un cliente](../../services/SecureGateway/sg_021.html#sg_021).
 
 9. Cuando haya terminado de instalar el cliente, cierre la ventana **Configurar clientes de Secure Gateway**.
 
@@ -162,7 +157,7 @@ publicar**.
 
 Se mostrarán los resultados de la prueba.
 
-## Transferir y publicar una aplicación Loopback
+## Transferir y publicar una aplicación LoopBack
 {: #stage_publish_lb_app}
 
 1. En el panel de navegación de API Designer, pulse **Productos**.
@@ -170,20 +165,20 @@ Se abre el separador Productos.
 
 2. Seleccione la versión del Producto, asegúrese de pulsar la versión con la que desea trabajar.
 
-3. Para publicar el tiempo de ejecución en {{site.data.keyword.Bluemix_short}}, pulse **Publicar**.
+3. Para publicar el tiempo de ejecución en {{site.data.keyword.Bluemix_notm}}, pulse **Publicar**.
 
-4. Pulse **Añadir y gestionar destinos** > **Añadir destino de IBM Bluemix**.
+4. Pulse **Añadir y gestionar destinos** > **Añadir destino de IBM Cloud**.
 
-5. Seleccione la **Región** de {{site.data.keyword.Bluemix_short}} en la que desea efectuar la publicación e inicie sesión.
+5. Seleccione la **Región** de {{site.data.keyword.Bluemix_notm}} en la que desea publicar e iniciar sesión.
 
-6. Seleccione la **Organización** de {{site.data.keyword.Bluemix_short}} en la que desea efectuar la publicación.
+6. Seleccione la **Organización** de {{site.data.keyword.Bluemix_notm}} en la que desea publicar.
 
 7.  Se muestra una lista de catálogos. Seleccione el catálogo en el que desea efectuar la publicación.
 
 8.  Pulse **Siguiente**.
 
 9. Seleccione la aplicación de LoopBack que desee publicar.
-Si es la primera vez que despliega el tiempo de ejecución en {{site.data.keyword.Bluemix_short}}, añada un nombre y pulse el icono **Añadir**.
+Si es la primera vez que despliega el tiempo de ejecución en {{site.data.keyword.Bluemix_notm}}, añada un nombre y pulse el icono **Añadir**.
 
 10.  Pulse **Guardar**.
 
@@ -230,7 +225,7 @@ campo **Nueva app**. El servicio no se interrumpe.
 
 Para comprobar que la publicación ha funcionado, lleve a cabo los siguientes pasos:
 
-1. Asegúrese de que la app de {{site.data.keyword.Bluemix_short}} está en ejecución.
+1. Asegúrese de que la app de {{site.data.keyword.Bluemix_notm}} está en ejecución.
 
 2. Abra una ventana del navegador y vaya a la dirección URL de destino de la API.
 La aplicación está protegida con la validación del cliente. Si no proporciona el certificado de cliente correcto, se producirá un error (comportamiento previsto).

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-07-07"
+lastupdated: "2017-10-24"
 ---
 
 {:new_window: target="blank"}
@@ -43,12 +43,10 @@ de forma automática.
   2. Si quiere habilitar la suscripción automática para el catálogo, seleccione **Suscripción
 automática**.
 Al habilitar la suscripción automática, hace que las pruebas a las API sean más fáciles, porque se
-utiliza una aplicación de pruebas, con un ID de cliente y un secreto de cliente suministrado anteriormente,
-que se suscribe automáticamente a todas las planificaciones en el catálogo, así que no tiene que especificar
-una planificación o aplicación al realizar pruebas.**Nota:** La suscripción automática sólo está disponible para un catálogo de desarrollo.
-  3. Si el catálogo es el catálogo de transferencia predeterminado, seleccione **Predeterminado**. A continuación, las llamadas a las API publicadas en este catálogo, pueden utilizar un URL más corto que no incluya
-el nombre del catálogo
-    **Nota:** Sólo puede seleccionar **Predeterminado** para un catálogo.
+utiliza una aplicación de pruebas, con un ID de cliente y un secreto de cliente suministrado anteriormente. La aplicación de pruebas se suscribe automáticamente a todas las planificaciones en el catálogo, por lo que no tiene que especificar una planificación o aplicación al realizar pruebas. **Nota:** La suscripción automática sólo está disponible para un catálogo de desarrollo.
+  3. Si el catálogo es el catálogo de transferencia predeterminado, seleccione **Predeterminado**. A continuación, las llamadas a las API publicadas en el catálogo, pueden utilizar un URL más corto que no incluye
+el nombre del catálogo.
+    **Nota:** Solo puede seleccionar **Predeterminado** para un catálogo.
   4. **Opcional**: Pulse **Puntos finales** y rellene los campos siguientes:
         - **URL de pasarela personalizado**: En el campo de texto URL de pasarela personalizado, especifique un URL. Utilice el URL de pasarela
 personalizado si quiere conseguir marca personalizada de los URL para las API desplegadas en
@@ -66,7 +64,7 @@ Portal del desarrollador reflejará entonces el URL especificado.
 		    - Debe configurar una entrada DNS que correlacione el dominio y nombre de host personalizado con el
 URL de la pasarela predeterminado.
 		    - Para que los puntos finales de una API reflejen el URL de la pasarela personalizada, debe
-configurar la API para que la pasarela de API Connect la imponga. Para obtener más información, consulte [Cómo especificar un host alternativo para una API](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step).
+configurar la API para que la pasarela de API Connect la imponga. Para obtener más información, consulte [Cómo especificar un host alternativo para una API ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
 		    - Asegúrese de que el mismo URL de la pasarela personalizada no se aplique a varios catálogos ya que
 el comportamiento en ese caso no estará definido.
 	        **SUGERENCIA**: Cuando invoque la API, también puede establecer la cabecera de host HTTP en la solicitud de la API
@@ -88,7 +86,7 @@ correlacionada con los puntos finales de ensamblaje de la API o el proxy de la A
 desarrolladores de producción para publicar la dirección de la API.
 
 	    **Nota:** Si especifica un URL de API personalizado para un catálogo, prevalece sobre los nombres de host
-que especifique al configurar la API. Para obtener más información, consulte [cómo especificar un host alternativo para una API](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step).
+que especifique al configurar la API. Para obtener más información, consulte [Cómo especificar un host alternativo para una API ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
 
 	    - **Nombre de host para las llamadas de API del portal de desarrolladores**:
 	    En el área de ventana Punto final de API del puerto, especifique un nombre de host para las
@@ -116,4 +114,4 @@ Se muestra un enlace **Gestionar espacios** bajo el control deslizante **Espacio
 
 Los espacios se habilitan para el catálogo y se crea un espacio predeterminado llamado Nuevo espacio.
 
-Para obtener más información sobre cómo utilizar la sindicación, consulte en los temas de Knowledge [Utilización de la sindicación en IBM API Connect](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html).
+Para obtener más información sobre cómo utilizar la sindicación, consulte en los temas de Knowledge Center, [Utilización de la sindicación en IBM API Connect ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}.

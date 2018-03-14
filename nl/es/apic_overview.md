@@ -106,7 +106,7 @@ Puede aplicar los siguientes valores a un catálogo:
 - **Desarrollo**: De forma predeterminada se proporciona un catálogo de desarrollo. Un catálogo de desarrollo solo se debe utilizar para realizar pruebas. En un catálogo de desarrollo, las acciones de transferencia y publicación se fuerzan,
 es decir, si vuelve a publicar un producto publicado anteriormente, se sobrescribe sin aviso. Si se encuentra
 algún conflicto, el sistema lo resuelve automáticamente. Las acciones de anulación de publicación se producen
-de forma automática. Cuando utilice la herramienta de prueba en un catálogo de desarrollo, cualquier producto que pruebe se fuerza y sobrescribe los productos transferidos y publicados aunque las operaciones se estén utilizando en Developer Portal. Un Developer Portal
+de forma automática. Cuando utilice la herramienta de prueba en un catálogo de desarrollo, cualquier producto que pruebe se fuerza y sobrescribe los productos transferidos y publicados aunque las operaciones se estén utilizando en el Portal del desarrollador. Un Portal del desarrollador
 creado a partir de un catálogo de desarrollo se debe utilizar del mismo modo, es decir, solo para pruebas, no para casos reales.
 
 - **Suscripción automática**: Si habilita la suscripción automática para un catálogo, las pruebas de las API en la interfaz de usuario de API Manager serán más fáciles, porque se utiliza una aplicación de pruebas, con un ID de cliente y un secreto de cliente suministrado anteriormente,
@@ -116,7 +116,7 @@ una planificación o aplicación al realizar pruebas. La aplicación de prueba n
 - **Predeterminado**: Puede establecer uno de los catálogos como el catálogo predeterminado. A continuación, las llamadas a las API publicadas en este catálogo, pueden utilizar un URL más corto que no incluya
 el nombre del catálogo.
 
-Para obtener más información sobre cómo utilizar Developer Portal, consulte [Descubrimiento y utilización de API](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.dita).
+Para obtener más información sobre cómo utilizar el Portal del desarrollador, consulte [Descubrimiento y utilización de API](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.dita).
 
 ### Sindicación
 

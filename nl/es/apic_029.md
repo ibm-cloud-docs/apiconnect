@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-28"
+lastupdated: "2018-02-12"
 
 ---
 
@@ -16,13 +16,17 @@ lastupdated: "2017-09-28"
 
 La {{site.data.keyword.apiconnect_full}} incluye las mejoras siguientes:
 
-- **Se ha añadido soporte y una referencia para las API REST de Developer Portal para analíticas**: las API REST de Developer Portal le ayudan a analizar las API de catálogo. Para obtener más información, consulte [Analytics ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apirest.doc/analytics.html){:new_window}.
+- **Suprimir cuentas de usuario y organizaciones de desarrolladores en el Portal del desarrollador**: puede suprimir su cuenta de usuario y las organizaciones de desarrolladores en el Portal del desarrollador. También puede cambiar la propiedad de sus organizaciones de desarrolladores. Para obtener más información, consulte [Cómo suprimir su cuenta de desarrollador ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_account.html){:new_window}, [Cómo suprimir una organización de desarrolladores ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_dev_org.html){:new_window}, y [Cómo cambiar la propiedad de una organización de desarrolladores ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_dev_org_ownership.dita){:new_window}.
+
+- __Se ha añadido el campo de sucesos de la API *endpoint_url*__: el campo de registro de sucesos *endpoint_url* identifica el proxy o invoca el URL de destino en el cual ha fallado la solicitud. Consulte [Cómo suprimir su cuenta de desarrollador ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/rapim_analytics_apieventrecordfields.html){:new_window} para obtener más información.</dd>
+
+- **Se ha añadido soporte y una referencia para las API REST del Portal del desarrollador para analíticas**: las API REST del Portal del desarrollador le ayudan a analizar las API de catálogo. Para obtener más información, consulte [Analytics ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apirest.doc/analytics.html){:new_window}.
 
 - **Se ha añadido la sección Analytics al crear una API**: Puede definir y especificar parámetros existentes para la API que se pueden utilizar para recopilar datos analíticos
 sobre la API. Consulte [Cómo componer una definición de API REST ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html){:new_window} para obtener más información.
 
-- **Se fomenta el uso de la autenticación de dos factores en el Developer Portal**: Puede alentar a los usuarios del Developer Portal a configurar la autenticación de dos factores (TFA) en
-su cuenta aplicando un módulo de TFA Rules. Para obtener más información, consulte [Alentar a los usuarios a configurar la autenticación de dos factores en su cuenta de Developer Portal ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapim_portal_two_factor_auth_enforce.html){:new_window}.
+- **Se fomenta el uso de la autenticación de dos factores en el Portal del desarrollador**: Puede alentar a los usuarios del Portal del desarrollador a configurar la autenticación de dos factores (TFA) en
+su cuenta aplicando un módulo de TFA Rules. Para obtener más información, consulte [Alentar a los usuarios a configurar la autenticación de dos factores en su cuenta del Portal del desarrollador ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapim_portal_two_factor_auth_enforce.html){:new_window}.
 
 - **Características añadidas a la facturación integrada y a la gestión de pago**:
     Administrador:
@@ -30,7 +34,7 @@ su cuenta aplicando un módulo de TFA Rules. Para obtener más información, con
 	* Aproveche una cuenta de Stripe para gestionar el pago de las suscripciones.
 	* Especifique un número de días de prueba gratuita en el plan de suscripción para nuevos suscriptores. El pago comienza automáticamente una vez que caduquen los días de prueba.
 	Cliente:
-	* Suscríbase a los planes de pago del Developer Portal que le permiten utilizar productos que contienen una o varias API. Consulte [Guía de aprendizaje: Suscripción a un plan de precios de ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tutorial_portal_sub_paid_plan.html){:new_window} para obtener más información.
+	* Suscríbase a los planes de pago del Portal del desarrollador que le permiten utilizar productos que contienen una o varias API. Consulte [Guía de aprendizaje: Suscripción a un plan de precios de ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tutorial_portal_sub_paid_plan.html){:new_window} para obtener más información.
 
 - **Invocar lo sustituido automáticamente en la pasarela**: La última invocación de su política se podría sustituir mediante un proxy. Esto lo realiza la pasarela automáticamente para mejorar el rendimiento. Para obtener más información, consulte: [Propiedades de API de ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/configuration_props.html){:new_window}.
 

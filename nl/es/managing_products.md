@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-25"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -94,7 +94,7 @@ Indique una descripción, un contacto, una licencia y los términos del servicio
 7. En la sección **Visibilidad**, especifique los usuarios que podrán ver el producto. Puede elegir **Público**, **Usuarios autenticados** o **Personalizado**. Si selecciona **Personalizado**, utilice el campo **Tipo que se va a añadir** para buscar organizaciones o comunidades de los desarrolladores en las que desea que estén visibles los planes del producto.
 
     **Nota:**
-    Para buscar organizaciones o comunidades de desarrolladores, el producto debe tener el estado Transferido, Publicado o En desuso. Si el catálogo en el que está transferido, publicado o en desuso no es un catálogo de recinto de pruebas, no podrá efectuar otros cambios en el producto mientras tenga uno de los estados mencionados. Para obtener más información, consulte [Ciclo de vida del producto](#prod_lifecycle}).
+    Para buscar organizaciones o comunidades de desarrolladores, el producto debe tener el estado Transferido, Publicado o En desuso. Si el catálogo en el que está transferido, publicado o en desuso no es un catálogo de recinto de pruebas, no podrá efectuar otros cambios en el producto mientras tenga uno de los estados mencionados. Para obtener más información, consulte [Ciclo de vida del producto](#prod_lifecycle).
 
 8. Especifique los usuarios que se pueden suscribir al producto. Puede elegir **Usuarios autenticados** o **Personalizado**. Si selecciona **Personalizado**, utilice el campo **Tipo que se va a añadir** para buscar las organizaciones o comunidades de los desarrolladores que podrán suscribirse a los planes del producto.
 
@@ -158,10 +158,10 @@ del producto, asegúrese de pulsar la versión con la que desea trabajar.
 
 5. Si el catálogo al que desea transferir el producto no aparece en la lista:
     1. Pulse **Añadir y gestionar destinos**.
-    2. Pulse **Añadir destino de IBM Bluemix**.
+    2. Pulse **Añadir destino de {{site.data.keyword.Bluemix_notm}}**.
     3. Seleccione la **Región** de {{site.data.keyword.Bluemix_short}}
 en la que desea efectuar la publicación.
-    4. Seleccione la **Organización** de {{site.data.keyword.Bluemix_short}} en la que desea efectuar la publicación.
+    4. Seleccione la **Organización** de {{site.data.keyword.Bluemix_notm}} en la que desea publicar.
     5. Se muestra una lista de catálogos. Seleccione el catálogo en el que desea efectuar la publicación.
     6. Pulse **Siguiente**.
     7. Si tiene una aplicación de LoopBack que desea publicar, selecciónela.
@@ -175,7 +175,7 @@ De lo contrario, seleccione **Ninguno**.
 Su producto se ha transferido a un catálogo. Para ver el estado del producto en el catálogo, abra la interfaz de usuario de
 API Manager, seleccione la sección Panel de control del panel de navegación y pulse el catálogo que desee. El producto aparece con el estado Transferido.
 
-- Abra el **Panel de control** de {{site.data.keyword.Bluemix_short}}. Verá el icono de la aplicación en la sección Aplicaciones.
+- Abra el **panel de control** de {{site.data.keyword.Bluemix_notm}}. Verá el icono de la aplicación en la sección Aplicaciones.
 
 Abra API Manager para publicar el producto en una comunidad para que los desarrolladores de aplicaciones puedan acceder a él en el portal de desarrolladores. Para obtener más información, consulte [Publicación de un producto](#publish_proj}).
 
@@ -209,7 +209,7 @@ organizaciones o comunidades en las que desea que esté visible el producto.
 4. Pulse **Publicar**.
     Si se necesita la aprobación para publicar productos en este catálogo, se envía una solicitud de aprobación y el producto pasa a estar en estado Pendiente; el producto se publica una vez aprobada la solicitud. Si no es necesaria la aprobación, la versión del producto se publica de inmediato y pasa a tener el estado Publicado.
 
-El producto se encuentra en el estado Publicado. El producto se publica en el catálogo y está disponible para las organizaciones o comunidades especificadas. Los desarrolladores de aplicaciones que están dentro de los grupos seleccionados pueden ver y utilizar las API en el producto. Las solicitudes de desarrollador de aplicaciones para utilizar su producto se visualizan en el separador Aprobaciones del catálogo que lo contiene, donde puede rechazar o aceptar la solicitud.
+Su producto tiene el estado Publicado.El producto se publica en el catálogo y está disponible para las organizaciones o comunidades especificadas. Los desarrolladores de aplicaciones que están dentro de los grupos seleccionados pueden ver y utilizar las API en el producto.Las solicitudes de desarrollador de aplicaciones para utilizar su producto se visualizan en el separador Aprobaciones del catálogo que lo contiene, donde puede rechazar o aceptar la solicitud.
 
 
 ## Publicación de un producto en Bluemix
@@ -239,16 +239,16 @@ y seleccione **SAML**.
 
 7. En el panel de navegación, pulse el icono **Desarrolladores**.
 
-8. Pulse **Añadir organización de Bluemix**.
+8. Pulse **Añadir organización de IBM Cloud**.
 
 9. Añada la dirección de correo electrónico de su usuario de {{site.data.keyword.Bluemix_short}} y pulse **Añadir**.
 
 10. Se envía una invitación a su dirección de correo electrónico.
 
 11. Pulse el enlace del correo electrónico para aceptar la invitación.
-Se abre la interfaz de usuario de {{site.data.keyword.Bluemix_short}}.
+Se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
 
-12. Seleccione su organización de {{site.data.keyword.Bluemix_short}} y pulse
+12. Seleccione su organización de {{site.data.keyword.Bluemix_notm}} y pulse
 **Confirmar**.
 
 13. En la interfaz de usuario de API Manager, pulse el icono **Productos**.
