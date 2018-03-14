@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -18,14 +18,14 @@ lastupdated: "2017-10-10"
 ## 必要なもの:
 1. IBMid
 2. {{site.data.keyword.Bluemix_short}} アカウント
-3. {{site.data.keyword.apiconnect_short}} インスタンス (少なくとも _Lite_ プラン)
+3. {{site.data.keyword.apiconnect_full}} インスタンス (少なくとも _Lite_ プラン)
 
 
 <table>
   <tr><td><b>IBMid</b>: IBM のすべてのアプリケーション、コミュニティー、サポートなどにアクセスする時に使用されます
     <br>
-    <b>{{site.data.keyword.Bluemix_short}}</b>: {{site.data.keyword.apiconnect_short}} と他のアプリケーションやサービスをホストする IBM のクラウド・プラットフォーム<br>
-    <b>{{site.data.keyword.apiconnect_short}} Lite</b>: {{site.data.keyword.Bluemix_short}} でホストする無料版の {{site.data.keyword.apiconnect_short}}</td></tr>
+    <b>{{site.data.keyword.Bluemix_notm}}</b>: {{site.data.keyword.apiconnect_short}} と他のアプリケーションやサービスをホストする IBM のクラウド・プラットフォーム<br>
+    <b>{{site.data.keyword.apiconnect_short}} Lite</b>: {{site.data.keyword.Bluemix_notm}} でホストする無料版の {{site.data.keyword.apiconnect_short}}</td></tr>
   </table>  
 
 
@@ -36,10 +36,10 @@ lastupdated: "2017-10-10"
 
 	IBMid を既に持っている場合は、登録をスキップして、無料の {{site.data.keyword.Bluemix_short}} アカウントを作成します (URL は [https://console.ng.bluemix.net/ ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://console.ng.bluemix.net/){:new_window})。  
 
-2. IBMid と {{site.data.keyword.Bluemix_short}} アカウントがそろったら、{{site.data.keyword.apiconnect_short}} インスタンスを作成します。  
-  a. {{site.data.keyword.Bluemix_short}} にログインします ([https://new-console.ng.bluemix.net/login) ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://new-console.ng.bluemix.net/login){:new_window}。  
+2. IBMid と {{site.data.keyword.Bluemix_notm}} アカウントがそろったら、{{site.data.keyword.apiconnect_short}} インスタンスを作成します。  
+  a. {{site.data.keyword.Bluemix_notm}} にログインします ([https://new-console.ng.bluemix.net/login) ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://new-console.ng.bluemix.net/login){:new_window}。  
   ![](images/prereqs-1.png)  
-  b. {{site.data.keyword.Bluemix_short}} で_組織_ を作成します。初めてログインした時に、その作業を求める画面が表示されます。  
+  b. {{site.data.keyword.Bluemix_notm}} で_組織_ を作成します。 初めてログインした時に、その作業を求める画面が表示されます。  
   ![](images/prereqs-2.png)
   c. _スペース_ を作成します。  
   ![](images/prereqs-3.png)

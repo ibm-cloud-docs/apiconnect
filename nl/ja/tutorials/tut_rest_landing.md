@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-08-24"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -20,10 +20,10 @@ lastupdated: "2017-08-24"
 
 既存の API を管理するには、まず OpenAPI ファイルをインポートするか追加することができます。
 
-## IBM Bluemix
+## {{site.data.keyword.Bluemix_notm}}
 
-- [OpenAPI ファイルのインポート (IBM Bluemix を使用する場合)](tut_import_openapi_rest_bm.html)
-- [OpenAPI ファイルの作成 (IBM Bluemix を使用する場合)](tut_add_openapi_rest_bm.html)
+- [OpenAPI ファイルのインポート ({{site.data.keyword.Bluemix_notm}}](tut_import_openapi_rest_bm.html) を使用する場合)
+- [OpenAPI ファイルの作成 ({{site.data.keyword.Bluemix_notm}} を使用する場合)](tut_add_openapi_rest_bm.html)
 
 ## デベロッパーズ・ツールキット
 

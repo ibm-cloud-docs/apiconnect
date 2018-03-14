@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -20,9 +20,9 @@ lastupdated: "2017-09-12"
 
 クライアント ID とクライアント秘密鍵によって API を保護するために、ご使用のプロセスに適した方法を選択する必要があります。
 
-## IBM Bluemix
+## {{site.data.keyword.Bluemix_notm}}
 
-- [クライアント ID とクライアント秘密鍵による API の保護 (IBM Bluemix を使用する場合)](tut_secure_id_secret_bm.html)
+- [クライアント ID とクライアント秘密鍵による API の保護 ({{site.data.keyword.Bluemix_notm}} を使用する場合)](tut_secure_id_secret_bm.html)
 
 ## デベロッパーズ・ツールキット
 

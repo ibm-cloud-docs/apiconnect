@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -30,7 +30,7 @@ lastupdated: "2017-10-19"
 
 ---
 ## 目標
-このチュートリアルでは、既存の API 製品を新しい製品に置換して更新します。API 製品を置換すると、変更内容がすぐに有効になり、すべてのアプリケーションのサブスクリプションが自動的に更新されます。  
+このチュートリアルでは、既存の API 製品を新しい製品に置換して更新します。 API 製品を置換すると、変更内容がすぐに有効になり、すべてのアプリケーションのサブスクリプションが自動的に更新されます。  
 
 
 ---
@@ -39,10 +39,10 @@ lastupdated: "2017-10-19"
 
 1. {{site.data.keyword.Bluemix_short}} にログインします ([https://console.ng.bluemix.net/login) ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://console.ng.bluemix.net/login){:new_window}。
 
-2. {{site.data.keyword.Bluemix_short}} ダッシュボードで {{site.data.keyword.apiconnect_short}} サービスを起動します。
+2. {{site.data.keyword.Bluemix_notm}} ダッシュボードで {{site.data.keyword.apiconnect_short}} サービスを起動します。
 ![](images/Bluemix.png)
 
-3. 以前に UI ナビゲーション・ペインをピン留めしていなかった場合は、API Manager で**「ナビゲート」**アイコン ![](images/navigate-to.png) をクリックします。API Manager UI ナビゲーション・ペインが開きます。UI ナビゲーション・ペインをピン留めするには、**「メニューのピン留め」**アイコン ![](images/pinned.png) をクリックします。
+3. 以前に UI ナビゲーション・ペインをピン留めしていなかった場合は、API Manager で**「ナビゲート」**アイコン ![](images/navigate-to.png) をクリックします。 API Manager UI ナビゲーション・ペインが開きます。 UI ナビゲーション・ペインをピン留めするには、**「メニューのピン留め」**アイコン ![](images/pinned.png) をクリックします。
 
 4. **「ドラフト」** > **「API」**をクリックします。
 
@@ -63,12 +63,12 @@ lastupdated: "2017-10-19"
 10.	**Weather Provider API Product** を選択します。  
 ![](images/rep-draft-prod-list.png)
 
-11.	**バージョン**を 2.0.0 に変更します。**「説明」**フィールドに `Updated API` と入力します。ディスク・アイコンをクリックして、変更内容を保存します。  
+11.	**バージョン**を 2.0.0 に変更します。 **「説明」**フィールドに `Updated API` と入力します。 ディスク・アイコンをクリックして、変更内容を保存します。  
 ![](images/rep-update-prod.png)
 
-12.	**「ステージ」**アイコンをクリックして、新しいバージョンをアップロードします。**「サンドボックス」** カタログが選択されていない場合は選択します。
+12.	**「ステージ」**アイコンをクリックして、新しいバージョンをアップロードします。 **「サンドボックス」** カタログが選択されていない場合は選択します。
 ![](images/rep-stage-prod-2.png)
-    **注**: 新しいバージョンを別のカタログにステージングすることも可能です。そうすれば、そのバージョンの対象者をどの開発者にするかを制御できます。開発、テスト、実動という順序で API 製品を移す時にこの機能を使用できます。
+    **注**: 新しいバージョンを別のカタログにステージングすることも可能です。そうすれば、そのバージョンの対象者をどの開発者にするかを制御できます。 開発、テスト、実動という順序で API 製品を移す時にこの機能を使用できます。
 
 13.	**「>>」**をクリックしてナビゲーション・メニューを開き、**「ダッシュボード」**を選択します。  
 ![](images/rep-dashboard.png)
@@ -81,16 +81,15 @@ lastupdated: "2017-10-19"
 16.	**「既存の製品の置換」**を選択します。  
 ![](images/rep-replace-prod.png)
 
-17.	表示される製品リストで **Weather Provider API Product 1.0.0** を選択します。**「次へ」**をクリックします。
-  
+17.	表示される製品リストで **Weather Provider API Product 1.0.0** を選択します。 **「次へ」**をクリックします。  
 ![](images/rep-replace-dialog.png)
 
-18.	**「デフォルトのプラン」**を選択します。**「置換」**をクリックします。  
+18.	**「デフォルトのプラン」**を選択します。 **「置換」**をクリックします。  
 ![](images/rep-replace-dialog-2.png)
 
-    このようにして置換すると、Weather Provider API Product 1.0.0 が破棄され、Weather Provider API Product 2.0.0 が公開されます。**注**: 置換プロセスでこの製品に関連付けるプランを変更することも可能です。そのようにして、API 製品のプランを簡単に変更できます。
- ![](images/rep-prod-retired.png)
-
+    このようにして置換すると、Weather Provider API Product 1.0.0 が破棄され、Weather Provider API Product 2.0.0 が公開されます。 **注**: 置換プロセスでこの製品に関連付けるプランを変更することも可能です。 そのようにして、API 製品のプランを簡単に変更できます。
+ ![](images/rep-prod-retired.png) 
+ 
 
 ## このチュートリアルで学習したこと
 

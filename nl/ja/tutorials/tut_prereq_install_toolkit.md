@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-19"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -17,7 +17,7 @@ lastupdated: "2017-09-19"
 ## 必要なもの
 1. Node.js
 2. ノード・プロダクト・マネージャー (NPM)
-3. {{site.data.keyword.apiconnect_short}} _Lite_
+3. {{site.data.keyword.apiconnect_full}} _Lite_
 
 <table>
   <tr><td><b>Node.js</b>: スケーラブルなネットワーク・アプリケーションを作成して実行するために使用する非同期イベント・ドリブン型 JavaScript ランタイム
@@ -38,7 +38,7 @@ lastupdated: "2017-09-19"
 2.  Node.js をダウンロードしてインストールしたら、それが _PATH_ に存在することを確認します。
 ![](images/verify-path.png)  
 
-3. **npm** を更新します。コマンド・ラインで `npm install -g npm` と入力します。  
+3. **npm** を更新します。 コマンド・ラインで `npm install -g npm` と入力します。  
    **注:** npm `--engine-strict` や `npm config set engine-strict true` のように設定すると、インストールが完了しません。
 
 

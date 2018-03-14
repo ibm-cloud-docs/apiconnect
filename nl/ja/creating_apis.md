@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-26"
+lastupdated: "2017-12-15"
 
 ---
 
@@ -21,12 +21,14 @@ lastupdated: "2017-09-26"
 ## デベロッパーズ・ツールキット CLI
 {: #dev_tk_cli notoc}
 
-デベロッパーズ・ツールキットで提供されるコマンド・ライン・インターフェースを使用して、API を {{site.data.keyword.apiconnect_long}} に公開することができます。API を製品に含めた後にその製品を公開することで、API を公開します。ローカル・ファイル・システムに YAML 定義ファイルを作成して検証することで、API と製品を定義します。その後、ツールキットのコマンドを使用して、{{site.data.keyword.apiconnect_long}} と対話式に操作を実行できます。
+デベロッパーズ・ツールキットで提供されるコマンド・ライン・インターフェースを使用して、API を {{site.data.keyword.apiconnect_long}} に公開することができます。
+API を製品に含めた後にその製品を公開することで、API を公開します。 ローカル・ファイル・システムに YAML 定義ファイルを作成して検証することで、API と製品を定義します。 その後、ツールキットのコマンドを使用して、{{site.data.keyword.apiconnect_long}} と対話式に操作を実行できます。
 
 ## API Designer
 {: #designer notoc}
 
-API Designer は、デベロッパーズ・ツールキット内のオフラインのグラフィカル・ユーザー・インターフェースです。これは、API の作成および構成のための機能を提供します。API Designer は、コマンド・ライン・インターフェースから edit コマンドを使用することで実行されます。edit コマンドが使用されると、API Designer は、デフォルト・ブラウザーで開くか、そのコマンドを実行すると表示されるローカル・ホスト・ポートからアクセスできます。
+API Designer は、デベロッパーズ・ツールキット内のオフラインのグラフィカル・ユーザー・インターフェースです。これは、API の作成および構成のための機能を提供します。
+API Designer は、コマンド・ライン・インターフェースから edit コマンドを使用することで実行されます。 edit コマンドが使用されると、API Designer は、デフォルト・ブラウザーで開くか、そのコマンドを実行すると表示されるローカル・ホスト・ポートからアクセスできます。
 
 ## デベロッパーズ・ツールキットのインストール
 {: #install_dev_tk}
@@ -47,32 +49,36 @@ API Designer は、デベロッパーズ・ツールキット内のオフライ�
 1. ツールキットをインストールするには、管理者としてコマンド・プロンプトを開き、以下のコマンドを入力します。
 
     ```
-npm install -g apiconnect```
+    npm install -g apiconnect
+    ```
     {: codeblock}
 
-    **注:** インストール中に、`node-gyp` モジュールからエラーが表示されることがあります。これらのエラーは、オプションの依存関係に由来するものであり、インストールは正常に完了します。
+    **注:** インストール中に、`node-gyp` モジュールからエラーが表示されることがあります。 これらのエラーは、オプションの依存関係に由来するものであり、インストールは正常に完了します。
 
 2. すべてのツールキット・コマンドの使用法に関するヘルプの要約を表示するには、以下のコマンドを入力します。
 
     ```
-apic```
+    apic
+    ```
 	{: codeblock}
 
-3. いずれかのコマンドの使用法に関するヘルプを表示するには、`--help` オプションを使用します。以下に例を示します。
+3. いずれかのコマンドの使用法に関するヘルプを表示するには、`--help` オプションを使用します。
+    以下に例を示します。
 
     ```
-apic validate --help```
+    apic validate --help
+    ```
 	{: codeblock}
 	
 ## LoopBack コネクターのインストール
 {: #install_lb_conn}
 
-LoopBack データ・ソースを使用して、データベースなどのバックエンド・システム内のデータにアクセスするには、その前に、データ・ソース・コネクターをインストールする必要があります。メモリー内のコネクターと E メール・コネクターは LoopBack に組み込まれているため、インストールする必要はありません。
+LoopBack データ・ソースを使用して、データベースなどのバックエンド・システム内のデータにアクセスするには、その前に、データ・ソース・コネクターをインストールする必要があります。 メモリー内のコネクターと E メール・コネクターは LoopBack に組み込まれているため、インストールする必要はありません。
 
 ### 前提条件
 {: #prereq_install_lb_conn}
 
-Oracle、DB2、および SQLLite の各コネクターでは、バイナリー拡張子をビルドしてインストールするために、C コンパイラー・ツールが必要です。次の表に記述されているように、正確な要件はオペレーティング・システムによって異なります。
+Oracle、DB2、および SQLLite の各コネクターでは、バイナリー拡張子をビルドしてインストールするために、C コンパイラー・ツールが必要です。 次の表に記述されているように、正確な要件はオペレーティング・システムによって異なります。
 
 <table summary="" id="apic_028__table_pre_reqs" class="defaultstyle style-scope doc-content">
 <caption>表 1. オペレーティング・システム固有のインストール要件</caption>
@@ -85,22 +91,21 @@ Oracle、DB2、および SQLLite の各コネクターでは、バイナリー�
 </thead>
 <tbody >
 <tr class="style-scope doc-content doc-tr-odd">
-<td style="width: 33.3%" > [Microsoft .NET Framework 4 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.microsoft.com/en-us/download/details.aspx?id=17851) <a href="https://www.microsoft.com/en-us/download/details.aspx?id=17851" rel="external" target="blank" title="(新しいタブまたはウィンドウで開く)" >Microsoft .NET Framework 4</a></td>
+<td style="width: 33.3%" > [Microsoft .NET Framework 4 ![外部リンク・アイコン](../../icons/launch-glyph.svg "External link icon")](https://www.microsoft.com/en-us/download/details.aspx?id=17851)</td>
 <td style="width: 33.3%">Python v2.7 (v3.x はサポートされません)</td>
-<td style="width: 33.3%" > [Python Releases for Mac OS X ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.python.org/downloads/mac-osx/) <a href="https://www.python.org/downloads/mac-osx/" rel="external" target="blank" title="(新しいタブまたはウィンドウで開く)" >Python
-Releases for Mac OS X</a></td>
+<td style="width: 33.3%" > [Python Releases for Mac OS X ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.python.org/downloads/mac-osx/)</td>
 </tr>
-<tr><td style="width: 33.3%" > [Visual Studio ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.visualstudio.com/downloads/download-visual-studio-vs) <a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" rel="external" target="blank" title="(新しいタブまたはウィンドウで開く)" >Visual Studio</a></td>
+<tr><td style="width: 33.3%" > [Visual Studio ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.visualstudio.com/downloads/download-visual-studio-vs)</td>
 <td style="width: 33.3%">
 <code>make</code>
 </td>
-<td style="width: 33.3%" > [Xcode ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716) <a href="https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716" rel="external" target="blank" title="(新しいタブまたはウィンドウで開く)" >Xcode</a></td>
+<td style="width: 33.3%" > [Xcode ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716)</td>
 </tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" > [Python v2.7.10 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.python.org/downloads/release/python-2710/) <a href="https://www.python.org/downloads/release/python-2710/" rel="external" target="blank" title="(新しいタブまたはウィンドウで開く)" >Python v2.7.10</a></td>
-<td style="width: 33.3%">C/C++ コンパイラー・ツールチェーン (例えば、GCC バージョン 4.2 以降)。</td>
+<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" > [Python v2.7.10 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.python.org/downloads/release/python-2710/)</td>
+<td style="width: 33.3%">C/C++ コンパイラー・ツールチェーン (例えば、GCC バージョン 4.2 以降)。 </td>
 <td style="width: 33.3%" >&nbsp;</td>
 </tr>
-<tr><td style="width: 33.3%" > [Microsoft Windows SDK for Windows 7 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279) <a href="https://www.microsoft.com/en-gb/download/details.aspx?id=8279" rel="external" target="blank" title="(新しいタブまたはウィンドウで開く)">Microsoft Windows SDK for Windows 7</a></td>
+<tr><td style="width: 33.3%" > [Microsoft Windows SDK for Windows 7 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279)</td>
 <td style="width: 33.3%">Debian または Debian 派生ディストリビューション (Ubuntu、Mint など) では、以下のコマンドを使用します。
 <pre class="codeblock style-scope doc-content"><code>apt-get install build-essential</code></pre>
 </td>
@@ -115,15 +120,18 @@ Releases for Mac OS X</a></td>
 
 **注:** Windows インストール済み環境の場合:
 
-- Visual Studio Enterprise を購入しない場合は、Visual Studio Community を使用してください。インストーラーを実行し、「プログラミング言語」の下の「Visual C++」にチェック・マークを付けて、デフォルトのインストール場所を受け入れます。
+- Visual Studio Enterprise を購入しない場合は、Visual Studio Community を使用してください。 インストーラーを実行し、「プログラミング言語」の下の「Visual C++」にチェック・マークを付けて、デフォルトのインストール場所を受け入れます。
 
-- Node.js およびネイティブ・モジュールの 64 ビット・ビルドの場合は、Windows&trade; 7 の 64 ビット SDK も必要です。インストールが失敗した場合は、最初にインストールした C++ 2010 x64&amp;x86 再配布可能パッケージをアンインストールしてみてください。64 ビット・コンパイラーがインストールされていないというエラーが表示された場合は、Windows&trade; SDK 7.1 用のコンパイラー更新も必要である可能性があります。
+- Node.js およびネイティブ・モジュールの 64 ビット・ビルドの場合は、Windows&trade; 7 の 64 ビット SDK も必要です。 インストールが失敗した場合は、最初にインストールした C++ 2010 x64&amp;x86 再配布可能パッケージをアンインストールしてみてください。 64 ビット・コンパイラーがインストールされていないというエラーが表示された場合は、Windows&trade; SDK 7.1 用のコンパイラー更新も必要である可能性があります。
 - 以下のコマンドを入力して、npm バージョン 3 をインストールします。
   ```
-npm install -g npm```
+  npm install -g npm
+  ```
   {: codeblock}
-次に、以下のコマンドを入力して、npm コマンドが正しいバージョンを使用していることを確認します。```
-npm -v```
+  次に、以下のコマンドを入力して、npm コマンドが正しいバージョンを使用していることを確認します。
+  ```
+  npm -v
+  ```
   {: codeblock}
   表示されたバージョンが 3.x.x ではない場合は、システム PATH を編集して、`C:\Users\username\AppData\Roaming\npm` が、それ以外のすべてのエントリーを置き換えるようにします
 
@@ -137,7 +145,7 @@ API Designer を使用している場合は、新しいシェル・ウィンド�
 npm install --save <connector-package>
 ```
 {: codeblock}
-ここで `<connector-package>` は、LoopBack コネクターの npm パッケージの名前 (次の表を参照) です。
+ここで、`<connector-package>` は、LoopBack コネクターの npm パッケージの名前 (次の表を参照) です。
 
 <table summary="" id="apic_connectors_table_pre_reqs" class="defaultstyle style-scope doc-content">
 <caption>表 3. LoopBack コネクター</caption>
@@ -193,23 +201,22 @@ npm install --save <connector-package>
 ### 前提条件
 {: #prereq_create_lb_api}
 
-始めに、使用するカタログのカタログ ID を手許に用意します。
-カタログ ID を取得するには、以下の手順を実行します。  
+始めに、使用するカタログのカタログ ID を手許に用意します。 カタログ ID を取得するには、以下の手順を実行します。  
 
 1. {{site.data.keyword.apiconnect_short}} の**「ダッシュボード」**を開きます。
 
 2. 使用するカタログについて、**「カタログ ID の表示」**アイコン <img alt="カタログ ID を表示するためのチェーン・リンク・アイコン" src="images/chain_link_icon.png"> をクリックします。
 
-
-3. カタログ ID をコピーします。以下に例を示します。  
+3. カタログ ID をコピーします。 以下に例を示します。  
   ```
   apic config:set catalog=apic-catalog://<region>.apiconnect.ibmcloud.com/orgs/<username_string>-dev/catalogs/<catalog>
   ```
   {: codeblock}
-ここで、
-    - `<region>` は、{{site.data.keyword.Bluemix_short}} 地域です。
+    ここで、
 
-    - `<username_string>` は、記号を含まない {{site.data.keyword.Bluemix_short}} 組織 ID です。例えば、`joe@mycompany.com` は、`joemycompanycom` のようになります。
+    - `<region>` は、{{site.data.keyword.Bluemix_notm}} 地域です。
+
+    - `<username_string>` は、記号を含まない {{site.data.keyword.Bluemix_notm}} 組織 ID です。 例えば、`joe@mycompany.com` は、`joemycompanycom` のようになります。
 
     - `<catalog>` は、カタログの名前です  
 
@@ -217,51 +224,58 @@ CLI で LoopBack API を作成する場合は、以下の手順を実行しま�
 
 1. プロジェクトを作成するには、コマンド・ラインを開き、以下を入力します。
   ```
-apic loopback```
+  apic loopback
+  ```
   {: codeblock}
 
-2. 後続のプロンプトで、アプリケーションの名前を尋ねられます。名前を入力して、**「Enter」**キーを押します。
+2. 後続のプロンプトで、アプリケーションの名前を尋ねられます。 名前を入力して、**「Enter」**キーを押します。
   ```
-  ? What's the name of your application? (<application name>)```
+  ? What's the name of your application? (<application name>)
+  ```
     
     ツールで、プロジェクトを作成するディレクトリーの名前を入力するように求めるプロンプトが出されます。
     ```
-    ? Enter name of the directory to contain the project: (<project directory name>)```
+    ? Enter name of the directory to contain the project: (<project directory name>)
+    ```
     
-3. **Enter** を押して前に入力した名前を使用するか、新しい名前を入力してから **Enter** を押します。以下のように、ツールで、作成するアプリケーションの種類を選択するように求めるプロンプトが出されます。
+3. **Enter** を押して前に入力した名前を使用するか、新しい名前を入力してから **Enter** を押します。 以下のように、ツールで、作成するアプリケーションの種類を選択するように求めるプロンプトが出されます。
 ```
 ? What kind of application do you have in mind? (Use arrow keys)
   empty-server (An empty LoopBack API, without any configured models or datasources)
 > hello-world (A project containing a basic working example, including a memory database)
 ```
 
-4. 使用するアプリケーションを選択して、**Enter** を押します。ツールで、プロジェクト・ディレクトリーが作成され、そこにいくつかのディレクトリーとファイルが追加される間、いくつかのメッセージが表示されます。
+4. 使用するアプリケーションを選択して、**Enter** を押します。
+ツールで、プロジェクト・ディレクトリーが作成され、そこにいくつかのディレクトリーとファイルが追加される間、いくつかのメッセージが表示されます。
 また、`npm install` が実行され、`package.json` での指定に従ってすべてのプロジェクト依存関係がインストールされます。
 この処理にはある程度時間がかかることがあります。
 
-5. モデルを作成するには、その前に、現行作業ディレクトリーがプロジェクトの最上位ディレクトリーになっていることを確認する必要があります。これを行うには、以下のコマンドを入力します。
+5. モデルを作成するには、その前に、現行作業ディレクトリーがプロジェクトの最上位ディレクトリーになっていることを確認する必要があります。 これを行うには、以下のコマンドを入力します。
     ```
-cd <project directory name>
-```
+    cd <project directory name>
+    ```
     {: codeblock}
 
 6. モデルを作成するには、以下のコマンドを入力します。
     ```
-apic create --type model```
+    apic create --type model
+    ```
     {: codeblock}
 
     ツールで、モデルの名前を入力するように求めるプロンプトが出されます。
 
-
     ```
-    ? Enter the model name:```
-
-7. モデルの名前を入力します。一般的に、モデル名では任意の英数字、ダッシュ、および下線を使用できます。プロジェクトに追加したすべてのデータ・ソースがリストされており、ツールにより、使用するデータ・ソースを選択するように求める以下のようなプロンプトが出されます。
-
+    ? Enter the model name:
     ```
-    ? Select the data-source to attach item to: (Use arrow keys)```
 
-8. 使用するデータ・ソースを選択して、**「Enter」**キーを押します。以下のように、ツールで、モデルの基本クラスを選択するように求めるプロンプトが出されます。
+7. モデルの名前を入力します。
+    一般的に、モデル名では任意の英数字、ダッシュ、および下線を使用できます。
+    プロジェクトに追加したすべてのデータ・ソースがリストされており、ツールにより、使用するデータ・ソースを選択するように求める以下のようなプロンプトが出されます。
+    ```
+    ? Select the data-source to attach item to: (Use arrow keys)
+    ```
+
+8. 使用するデータ・ソースを選択して、**「Enter」**キーを押します。 以下のように、ツールで、モデルの基本クラスを選択するように求めるプロンプトが出されます。
     ```
     ? Select model's base class (Use arrow keys)
        Model
@@ -275,25 +289,34 @@ apic create --type model```
     ```
     各オプションについて詳しくは、[Using built-in models ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){:new_window} を参照してください。
 
-9. 基本クラスを選択して、**「Enter」**キーを押します。ツールで、モデルの REST API を公開するかどうかを選択するように求められます。
+9. 基本クラスを選択して、**「Enter」**キーを押します。 ツールで、モデルの REST API を公開するかどうかを選択するように求められます。
 ```
-? Expose branch via the REST API? (Y/n)```
-REST を介してモデルを公開した場合、REST エンドポイントを介してすべての標準的な作成、読み取り、更新、および削除の操作が使用可能になります。10. 選択項目を入力して、**「Enter」**キーを押します。REST を介してモデルを公開するように選択すると、ツールから、モデル名の複数形を入力するように求められます。
+? Expose branch via the REST API? (Y/n)
 ```
-? Custom plural form (used to build REST URL):```
+REST を介してモデルを公開した場合、REST エンドポイントを介してすべての標準的な作成、読み取り、更新、および削除の操作が使用可能になります。
 
-11. **「Enter」**キーを押して、デフォルトの標準的な英文法による複数形化を使用します。ツールでは、サーバー専用モデルを作成するのか、サーバーとクライアントの LoopBack&reg; API の両方で使用できる共通モデルを作成するのかを選択するように求めるプロンプトが出されます。
+10. 選択項目を入力して、**「Enter」**キーを押します。
+REST を介してモデルを公開するように選択すると、ツールから、モデル名の複数形を入力するように求められます。
+```
+? Custom plural form (used to build REST URL):
+```
+
+11. **「Enter」**キーを押して、デフォルトの標準的な英文法による複数形化を使用します。
+ツールでは、サーバー専用モデルを作成するのか、サーバーとクライアントの LoopBack API の両方で使用できる共通モデルを作成するのかを選択するように求めるプロンプトが出されます。
 ```
 ? Common model or server only? (Use arrow keys)
 ```
 
-12. 矢印キーを使用して選択を行い、**「Enter」**キーを押します。以下のように、ツールで、プロパティーをモデルに追加するように求めるプロンプトが出されます。
+12. 矢印キーを使用して選択を行い、**「Enter」**キーを押します。
+以下のように、ツールで、プロパティーをモデルに追加するように求めるプロンプトが出されます。
 ```
 Let's add some branch properties now.
 Enter an empty property name when done.
-? Property name: ```
+? Property name:
+```
 
-13. プロパティー名を入力します。以下のように、ツールで、プロパティーのデータ型を選択するように求めるプロンプトが出されます。
+13. プロパティー名を入力します。
+以下のように、ツールで、プロパティーのデータ型を選択するように求めるプロンプトが出されます。
 ```
 ? Property type: (Use arrow keys)
 > string
@@ -305,29 +328,35 @@ Enter an empty property name when done.
   buffer
 ```
 
-14. ストリング・タイプを選択して、**「Enter」**キーを押します。ツールで、プロパティーが必須かどうかを選択するように求められます。
+14. ストリング・タイプを選択して、**「Enter」**キーを押します。
+ツールで、プロパティーが必須かどうかを選択するように求められます。
 ```
-? 必須(y/N) ```
+? 必須 (y/N)
+```
 
-15. `y` または `n` を入力して、**「Enter」**キーを押します。以下のように、ツールで、別のプロパティーを追加するように求めるプロンプトが出されます。
+15. `y` または `n` を入力して、**「Enter」**キーを押します。
+以下のように、ツールで、別のプロパティーを追加するように求めるプロンプトが出されます。
 ```
 Let's add another branch property.
 Enter an empty property name when done.
-? Property name: ```
+? Property name:
+```
 
-16. 必要に応じて、別のプロパティー名を追加します。それ以上のプロパティーは必要ない場合は、**「Enter」**キーを押して、モデルの追加を終了します。
+16. 必要に応じて、別のプロパティー名を追加します。 それ以上のプロパティーは必要ない場合は、**「Enter」**キーを押して、モデルの追加を終了します。
 
-デフォルトでは、LoopBack&reg; プロジェクトは、開発やテストに適した、メモリー内のデータ・ソースを構成済みで出荷されます。しかし、ある時点で、データベース・サーバーなどの実際のデータ・ソースにモデルを接続することが必要になります。データ・ソースを追加するには、以下の手順を実行します。
+デフォルトでは、LoopBack プロジェクトは、開発やテストに適した、メモリー内のデータ・ソースを構成済みで出荷されます。 しかし、ある時点で、データベース・サーバーなどの実際のデータ・ソースにモデルを接続することが必要になります。 データ・ソースを追加するには、以下の手順を実行します。
 
 1. 以下のコマンドを入力します。
 ```
-apic create --type datasource```
+apic create --type datasource
+```
 {: codeblock}
 ツールで、データ・ソースの名前を入力するように求めるプロンプトが出されます。
 ```
-? Enter the data-source name:```
+? Enter the data-source name:
+```
 
-2. データ・ソースの名前を入力します。データ・ソース名では任意の英数字、ダッシュ、および下線を使用できます。以下のように、ツールで、データ・ソースで使用するコネクターを選択するように求めるプロンプトが出されます。
+2. データ・ソースの名前を入力します。  データ・ソース名では任意の英数字、ダッシュ、および下線を使用できます。 以下のように、ツールで、データ・ソースで使用するコネクターを選択するように求めるプロンプトが出されます。
 ```
 ? Select the connector for myds: (Use arrow keys)
 > In-memory db (supported by StrongLoop)
@@ -340,20 +369,21 @@ apic create --type datasource```
 (Move up and down to reveal more choices)
 ```
 
-3. 矢印キーを使用して、使用するコネクターを選択し、**「Enter」**キーを押します。ツールにより、データ・ソースがプロジェクトに追加されます。
+3. 矢印キーを使用して、使用するコネクターを選択し、**「Enter」**キーを押します。
+ツールにより、データ・ソースがプロジェクトに追加されます。
 
-4. ホスト、ポート、ユーザー、パスワード、およびデータベースの資格情報を入力します。LoopBack&reg; コネクターのインストールを求めるプロンプトがツールによって出されます。
-
+4. ホスト、ポート、ユーザー、パスワード、およびデータベースの資格情報を入力します。
+LoopBack コネクターのインストールを求めるプロンプトがツールによって出されます。
 ```
 Install loopback-connector-<connector>?
 ```
 
-5. `Yes` を入力します。ツールにより、コネクターがインストールされます。
+5. `Yes` を入力します。
+ツールにより、コネクターがインストールされます。
 
-注: Oracle コネクターを選択した場合、Oracle アプリを開始するには、{{site.data.keyword.Bluemix_short}} で環境変数を設定する必要があります。これを行うには、以下の手順を実行します。
+注: Oracle コネクターを選択した場合、Oracle アプリを開始するには、{{site.data.keyword.Bluemix_notm}} で環境変数を設定する必要があります。 これを行うには、以下の手順を実行します。
 
-
-1. {{site.data.keyword.Bluemix_short}} UI で、**「コンピュート」**を選択します。
+1. {{site.data.keyword.Bluemix_notm}} UI で、**「コンピュート」**を選択します。
 
 2. 「CF アプリケーション」で、使用するアプリケーションを選択します。
 
@@ -372,17 +402,18 @@ Install loopback-connector-<connector>?
 ### LoopBack プロジェクトのテスト
 {: #test_lb_proj}
 
-LoopBack&reg; プロジェクトをテストするには、以下の手順を実行します。
+LoopBack プロジェクトをテストするには、以下の手順を実行します。
 
-1. **オプション**: 現行作業ディレクトリーがプロジェクトの最上位ディレクトリーになっていることを確認します。以下のコマンドを入力します。
+1. **オプション**: 現行作業ディレクトリーがプロジェクトの最上位ディレクトリーになっていることを確認します。 以下のコマンドを入力します。
 ```
 cd <loopback-project-dir>
 ```
-ここで `<loopback-project-dir>` は、プロジェクトを含むディレクトリーの名前です。
+ここで、`<loopback-project-dir>` は、プロジェクトが入っているディレクトリーの名前です。
 2. 以下のコマンドを入力します。
 ```
-apic start```
-これにより、LoopBack&reg; プロジェクト (API) および Micro Gateway がローカルで実行されます。以下のメッセージが表示されます。
+apic start
+```
+これにより、LoopBack プロジェクト (API) および Micro Gateway がローカルで実行されます。 以下のメッセージが表示されます。
 ```
 Waiting for loopback-project to complete deployment.
 Waiting for loopback-project-gw to complete deployment.
@@ -392,11 +423,13 @@ Service loopback-project-gw (id 2) started on port 4002
 ここで、`<loopback-project>` は、プロジェクトが入っているディレクトリーの名前です。
 
 
-その後、例えば `curl` を使用して、任意の API エンドポイントをテストできます。Web ブラウザーを使用して API をロードする場合、ブラウザーで `http://localhost:4001` を開きます。デフォルトの LoopBack&reg; (空または hello-world) プロジェクトの場合、以下のように表示されます。
+その後、例えば `curl` を使用して、任意の API エンドポイントをテストできます。
+Web ブラウザーを使用して API をロードする場合、ブラウザーで `http://localhost:4001` を開きます。 デフォルトの LoopBack (空または hello-world) プロジェクトの場合、以下のように表示されます。
 ```
-{"started":"2016-03-07T22:24:55.322Z","uptime":35.839}```
+{"started":"2016-03-07T22:24:55.322Z","uptime":35.839}
+```
 
-### CLI から Bluemix への LoopBack アプリケーションの公開
+### CLI から {{site.data.keyword.Bluemix_notm}} への LoopBack アプリケーションの公開
 {: #pub_lb_app_cli}
 
 コマンド・ラインから {{site.data.keyword.Bluemix_short}} に LoopBack アプリケーションを公開するには、以下の手順を実行します。
@@ -405,7 +438,7 @@ Service loopback-project-gw (id 2) started on port 4002
 ```
 cd <loopback-project-dir>
 ```
-2. 以下のコマンドを入力して、{{site.data.keyword.apiconnect_short}} と {{site.data.keyword.Bluemix_short}} にログインします。
+2. 以下のコマンドを入力して、{{site.data.keyword.apiconnect_short}} と {{site.data.keyword.Bluemix_notm}} にログインします。
 ```
 apic login --server  <region>.apiconnect.ibmcloud.com -u <username> -p <password>
 ```
@@ -414,26 +447,29 @@ apic login --server  <region>.apiconnect.ibmcloud.com -u <username> -p <password
   * `<password>` は、{{site.data.keyword.apiconnect_short}} のパスワードです。
 3. スペース・バーを押すと、**「ワンタイム・パスコード」**ブラウザー・ページが自動的に開きます。
 4. **「再生成」**をクリックして、ワンタイム・パスコードをコピーします。
-5. CLI に戻り、パスコードを貼り付けてログインを完了します。以下のメッセージが表示されます。
+5. CLI に戻り、パスコードを貼り付けてログインを完了します。 以下のメッセージが表示されます。
 ```
-Logged into <region>.apiconnect.ibmcloud.com successfully```
+Logged into <region>.apiconnect.ibmcloud.com successfully
+```
 6. 以下のコマンドを入力します。
 ```
-apic organizations -s <region>.apiconnect.ibmcloud.com```
+apic organizations -s <region>.apiconnect.ibmcloud.com
+```
 ここで、
-  * `<region>` は、{{site.data.keyword.Bluemix_short}} 地域です。以下に例を示します。
-  * {{site.data.keyword.Bluemix_short}} ロンドンを使用している場合は `eu`。
-  * {{site.data.keyword.Bluemix_short}} ダラスを使用している場合は `us`。
-  * {{site.data.keyword.Bluemix_short}} シドニーを使用している場合は `au`。
+  * `<region>` は、{{site.data.keyword.Bluemix_notm}} 地域です。 以下に例を示します。
+  * {{site.data.keyword.Bluemix_notm}} ロンドンを使用している場合は `eu`。
+  * {{site.data.keyword.Bluemix_notm}} ダラスを使用している場合は `us`。
+  * {{site.data.keyword.Bluemix_notm}} シドニーを使用している場合は `au`。
 
   ご使用の地域が分からない場合は、メニュー・バーの「{{site.data.keyword.avatar}}」アイコン <img src="images/i-avatar-icon.svg" alt="アバター・アイコン"/> をクリックして「アカウントとサポート」ウィジェットを開くと、地域フィールドで確認できます。
-7. 以下のコマンドを入力して、アプリケーションを {{site.data.keyword.Bluemix_short}} に公開します。
+7. 以下のコマンドを入力して、アプリケーションを {{site.data.keyword.Bluemix_notm}} に公開します。
 ```
-apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com```
+apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
+```
 ここで、
   * `<app>` は、アプリの名前です。
-  * `<org>` は、{{site.data.keyword.Bluemix_short}} 組織の名前です。
-  * `<region>`は、{{site.data.keyword.Bluemix_short}} 地域です。
+  * `<org>` は、{{site.data.keyword.Bluemix_notm}} 組織の名前です。
+  * `<region>`は、{{site.data.keyword.Bluemix_notm}} 地域です。
 次の出力が返されます。
   ```
   ...preparing project
@@ -445,7 +481,7 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com```
   API invoke tls-profile: client:Loopback-client
   ```
 
-8. 次に、公開時に返された値を使用して、製品定義を変更する必要があります。これを行うには、次の手順を実行します。
+8. 次に、公開時に返された値を使用して、製品定義を変更する必要があります。 これを行うには、次の手順を実行します。
 
     1. API Designer UI で、**「API」**をクリックします。
     2. 「API」を選択します。
@@ -454,72 +490,84 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com```
     5. **「DataPower Gateway ポリシー」**を選択します。
     6. **「呼び出し」**をダブルクリックします。
     7. ステップ 7 で取得した値を使用して、以下のフィールドを更新します。
-        - **呼び出し URL**: API ターゲット URL を挿入します。セキュア・プロトコル HTTPS を指定する必要があります。以下に例を示します。
+        - **呼び出し URL**: API ターゲット URL を挿入します。 セキュア・プロトコル HTTPS を指定する必要があります。 以下に例を示します。
         ```
-https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<Bluemix org>-<Bluemix space>.apic.<domain name>$(request.path)```
-        この値をメモしていなかった場合は、ステップ 7 で返された管理 URL にアクセスして取得できます。また、{{site.data.keyword.Bluemix_short}} にログインし、アプリ情報を確認して取得することもできます。
-        - **TLS プロファイル**: 「API 呼び出し TLS プロファイル」を挿入します。以下に例を示します。
+        https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<Bluemix org>-<Bluemix space>.apic.<domain name>$(request.path)
         ```
-client:Loopback-client```
+        この値をメモしていなかった場合は、ステップ 7 で返された管理 URL にアクセスして取得できます。また、{{site.data.keyword.Bluemix_notm}} にログインし、アプリ情報を確認して取得することもできます。
+        - **TLS プロファイル**: 「API 呼び出し TLS プロファイル」を挿入します。 以下に例を示します。
+        ```
+        client:Loopback-client
+        ```
     8. **「保存」**をクリックして API を保存します。
 
 ## API Designer を使用した LoopBack API の作成
 {: #create_lb_api_design}
 
-以下の手順では、API Designer を使用して LoopBack&reg; API を作成する方法を説明します。{:shortdesc}
+以下の手順では、API Designer を使用して LoopBack API を作成する方法を説明します。
+{:shortdesc}
 
 ### 前提条件
 {: #prereq_create_lb_api_design}
 
-**注**: 以下の手順は、最新バージョンのデベロッパーズ・ツールキットを使用することを想定しています。最新バージョンを確認するには、[npm ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.npmjs.com/package/apiconnect){:new_window} パッケージのページを参照してください。
+**注**: 以下の手順は、最新バージョンのデベロッパーズ・ツールキットを使用することを想定しています。 最新バージョンを確認するには、[npm ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.npmjs.com/package/apiconnect){:new_window} パッケージのページを参照してください。
 
-最初に、CLI を使用して LoopBack&reg; プロジェクトを作成する必要があります。これを行うには、以下の手順を実行します。
+最初に、CLI を使用して LoopBack プロジェクトを作成する必要があります。 これを行うには、以下の手順を実行します。
 
 1. プロジェクトを作成するには、コマンド・ラインを開き、以下を入力します。
   ```
-apic loopback```
+  apic loopback
+  ```
   {: codeblock}
 
-2. 後続のプロンプトで、アプリケーションの名前を尋ねられます。名前を入力して、**「Enter」**キーを押します。
+2. 後続のプロンプトで、アプリケーションの名前を尋ねられます。 名前を入力して、**「Enter」**キーを押します。
   ```
-  ? What's the name of your application? (<application name>)```
+  ? What's the name of your application? (<application name>)
+  ```
     
     ツールで、プロジェクトを作成するディレクトリーの名前を入力するように求めるプロンプトが出されます。
     ```
-    ? Enter name of the directory to contain the project: (<project directory name>)```
+    ? Enter name of the directory to contain the project: (<project directory name>)
+    ```
     
-3. **Enter** を押して前に入力した名前を使用するか、新しい名前を入力してから **Enter** を押します。以下のように、ツールで、作成するアプリケーションの種類を選択するように求めるプロンプトが出されます。
+3. **Enter** を押して前に入力した名前を使用するか、新しい名前を入力してから **Enter** を押します。 以下のように、ツールで、作成するアプリケーションの種類を選択するように求めるプロンプトが出されます。
 ```
 ? What kind of application do you have in mind? (Use arrow keys)
   empty-server (An empty LoopBack API, without any configured models or datasources)
 > hello-world (A project containing a basic working example, including a memory database)
 ```
 
-4. 使用するアプリケーションを選択して、**Enter** を押します。ツールで、プロジェクト・ディレクトリーが作成され、そこにいくつかのディレクトリーとファイルが追加される間、いくつかのメッセージが表示されます。
+4. 使用するアプリケーションを選択して、**Enter** を押します。
+ツールで、プロジェクト・ディレクトリーが作成され、そこにいくつかのディレクトリーとファイルが追加される間、いくつかのメッセージが表示されます。
 また、`npm install` が実行され、`package.json` での指定に従ってすべてのプロジェクト依存関係がインストールされます。
 この処理にはある程度時間がかかることがあります。
 
-5. モデルを作成するには、その前に、現行作業ディレクトリーがプロジェクトの最上位ディレクトリーになっていることを確認する必要があります。これを行うには、以下のコマンドを入力します。
+5. モデルを作成するには、その前に、現行作業ディレクトリーがプロジェクトの最上位ディレクトリーになっていることを確認する必要があります。 これを行うには、以下のコマンドを入力します。
 ```
 cd <project directory name>
 ```
 
-**注**: 現行作業ディレクトリーをプロジェクトの最上位のディレクトリーにすると、API Designer を開いたときに、モデルやデータ・ソースを追加するためのオプションが選択可能になります。ディレクトリーを変更せずに API Designer を開いた場合は、モデルやデータ・ソースを追加できません。
+**注**: 現行作業ディレクトリーをプロジェクトの最上位のディレクトリーにすると、API Designer を開いたときに、モデルやデータ・ソースを追加するためのオプションが選択可能になります。 ディレクトリーを変更せずに API Designer を開いた場合は、モデルやデータ・ソースを追加できません。
 
 API Designer を開くには、以下のステップを実行します。
 1. コマンド・ラインを開き、以下を入力します。
 ```
-apic edit ```
-しばらくしてから、以下のメッセージが表示されます。
+apic edit
 ```
-Express server listening on http://127.0.0.1:9000```
-API Designer がデフォルトの Web ブラウザーで開きます。2. ログイン・ページで、Bluemix&reg; ID とパスワードを入力します。**「サインイン」**をクリックします。
+    しばらくしてから、以下のメッセージが表示されます。
+    ```
+    Express server listening on http://127.0.0.1:9000
+    ```
+    API Designer がデフォルトの Web ブラウザーで開きます。
+
+2. ログイン・ページで、{{site.data.keyword.Bluemix_notm}} ID とパスワードを入力します。 **「サインイン」**をクリックします。
 
 3. **「モデル」**をクリックします。
 
-4. **「追加」**をクリックします。 LoopBack&reg; の**「モデル」**ウィンドウが開きます。
+4. **「追加」**をクリックします。 LoopBack の**「モデル」**ウィンドウが開きます。
 
-5. モデル名を入力します。一般的に、モデル名では任意の英数字、ダッシュ、および下線を使用できます。
+5. モデル名を入力します。
+一般的に、モデル名では任意の英数字、ダッシュ、および下線を使用できます。
 
 6. **「新規」**をクリックします。
 
@@ -529,12 +577,13 @@ API Designer がデフォルトの Web ブラウザーで開きます。2. ロ�
 
 9. モデルに関するプロパティーの入力が終了したら、**「保存」**をクリックします。
 
-デフォルトでは、空の LoopBack&reg; プロジェクトには、データ・ソースは定義されていません。データ・ソースを定義するには、以下のステップを実行します。
+デフォルトでは、空の LoopBack プロジェクトには、データ・ソースは定義されていません。 データ・ソースを定義するには、以下のステップを実行します。
 1. **「データ・ソース」**をクリックします。
 
-2. **「追加」**アイコンをクリックします。LoopBack&reg; の新しい**「モデル」**ウィンドウが開きます。
+2. **「追加」**アイコンをクリックします。
+新しい LoopBack の**「モデル」**ウィンドウが開きます。
 
-3. データ・ソース名を入力します。データ・ソース名では任意の英数字、ダッシュ、および下線を使用できます。
+3. データ・ソース名を入力します。 データ・ソース名では任意の英数字、ダッシュ、および下線を使用できます。
 
 4. **「新規」**をクリックします。
 当該データ・ソースがデータ・ソースのリストに表示されます。また、エディターにより、`server/datasources.json` ファイルが新しいデータ・ソースの設定で更新されます。
@@ -547,7 +596,9 @@ API Designer がデフォルトの Web ブラウザーで開きます。2. ロ�
 ```
 npm install --save <connector-package>
 ```
-    ここで、`<connector-package>` は、選択した LoopBack&reg; コネクターの npm パッケージの名前です。コネクター・パッケージのリストについては、以下の表を参照してください。**注:** メモリー内コネクターと E メール・コネクターは LoopBack&reg; に組み込まれているため、インストールする必要はありません。
+    ここで、`<connector-package>` は、選択した LoopBack コネクターの npm パッケージの名前です。 コネクター・パッケージのリストについては、以下の表を参照してください。
+
+**注:** メモリー内コネクターと E メール・コネクターは LoopBack に組み込まれているため、インストールする必要はありません。
 
 <table>
 <caption>表 3. LoopBack コネクター</caption>
@@ -594,12 +645,11 @@ npm install --save <connector-package>
 </tbody>
 </table>
 
-詳しくは、[LoopBack Documentation - Building a connector ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://http://loopback.io//doc/en/lb3/Defining-data-sources.html){:new_window} を参照してください。
+詳しくは、[LoopBack Documentation - Building a connector ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){:new_window} を参照してください。
 
-**注:** Oracle コネクターを選択した場合、Oracle アプリを開始するには、{{site.data.keyword.Bluemix_short}} で環境変数を設定する必要があります。これを行うには、以下の手順を実行します。
+**注:** Oracle コネクターを選択した場合、Oracle アプリを開始するには、{{site.data.keyword.Bluemix_notm}} で環境変数を設定する必要があります。 これを行うには、以下の手順を実行します。
 
-
-1. {{site.data.keyword.Bluemix_short}} UI で、**「コンピュート」**を選択します。
+1. {{site.data.keyword.Bluemix_notm}} UI で、**「コンピュート」**を選択します。
 
 2. 「CF アプリケーション」で、使用するアプリケーションを選択します。
 
@@ -615,18 +665,20 @@ npm install --save <connector-package>
 
 8. **「保存」**をクリックします。
 
-LoopBack&reg; プロジェクトをテストするには、以下の手順を実行します。
-1. **「サーバーの開始 (Start the servers)」**アイコンをクリックします。以下のメッセージが表示されます。
+LoopBack プロジェクトをテストするには、以下の手順を実行します。
+1. **「サーバーの開始 (Start the servers)」**アイコンをクリックします。
+以下のメッセージが表示されます。
 ```
 http://localhost:<4001/>Running
 ```
-プロジェクトの構成や他のプロセスが実行中かどうかによって、表示されるポート番号が異なる場合があります。2. **「localhost:4001」**をクリックして、API ルート・エンドポイントを表示します。デフォルトの LoopBack&reg; (空または hello-world) プロジェクトの場合、以下のように表示されます。
+プロジェクトの構成や他のプロセスが実行中かどうかによって、表示されるポート番号が異なる場合があります。
+
+2. **「localhost:4001」**をクリックして、API ルート・エンドポイントを表示します。 デフォルトの LoopBack (空または hello-world) プロジェクトの場合、以下のように表示されます。
 ```
 {"started":"2017-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-次に、製品を作成する必要があります。詳しくは、[製品の作成](managing_products.html#create_products)を参照してください。
-**ヒント**: 新しいコマンド・プロンプトを開始する際には、必ず、現行作業ディレクトリーがプロジェクトの最上位ディレクトリーになっていることを確認する必要があります。これを行うには、以下のコマンドを入力します。
+次に、製品を作成する必要があります。 詳しくは、[製品の作成](managing_products.html#create_product)を参照してください。**ヒント**: 新しいコマンド・プロンプトを開始する際には、必ず、現行作業ディレクトリーがプロジェクトの最上位ディレクトリーになっていることを確認する必要があります。 これを行うには、以下のコマンドを入力します。
 ```
 cd <project directory name>
 ```
@@ -639,18 +691,21 @@ cd <project directory name>
 
 始めに、以下のコマンドを入力して、ローカルで実行されているアプリをすべて停止する必要があります。
 ```
-apic stop --all```
+apic stop --all
+```
 
 デベロッパーズ・ツールキットをアンインストールするには、以下の手順を実行します。
 
 1. 以下のコマンドを入力します。
 ```
-npm rm -g apiconnect```
+npm rm -g apiconnect
+```
 {: codeblock}
 
 2. npm キャッシュをクリアします。
 ```
-npm cache clean```
+npm cache clean
+```
 {:codeblock}
   
 Windows を使用している場合:
