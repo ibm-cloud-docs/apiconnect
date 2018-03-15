@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-19"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -17,7 +17,7 @@ lastupdated: "2017-09-19"
 ## Cosa ti serve
 1. Node.js
 2. Node Product Manager (NPM)
-3. {{site.data.keyword.apiconnect_short}} _Lite_
+3. {{site.data.keyword.apiconnect_full}} _Lite_
 
 <table>
   <tr><td><b>Node.js</b>: un evento asincrono guidato dal runtime JavaScript utilizzato per creare ed eseguire le applicazioni di rete scalabili.
@@ -54,7 +54,7 @@ lastupdated: "2017-09-19"
 2. Installa il toolkit {{site.data.keyword.apiconnect_short}} da **npm**.  
     `npm install -g apiconnect`
 
-3. Controlla la versione installata.   
+3. Controlla la versione installata.  
     `apic -v`
 
 4. Immetti il seguente comando nella riga di comando: `npm install -g microgateway`.

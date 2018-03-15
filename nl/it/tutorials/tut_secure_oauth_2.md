@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-12-13"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Proteggi la tua API con OAuth a due fasi 
+# Proteggi la tua API con OAuth a due fasi
 
 Durata: 10 minuti  
 Livello di competenza: Principiante
@@ -21,17 +21,19 @@ Questa esercitazione ti guiderà su come proteggere la tua API con un flusso OAu
 
 ## Prerequisiti
 
-Prima di iniziare, devi aver completato la seguente esercitazione.   
-- [Proteggi un'API con le chiavi segreto e ID client con IBM Bluemix](tut_secure_id_secret_bm.html)
-or
+Prima di iniziare, devi aver completato la seguente esercitazione.  
+- [Proteggi un'API con le chiavi segreto e ID client con {{site.data.keyword.Bluemix}}](tut_secure_id_secret_bm.html)
+o
 - [Proteggi un'API con le chiavi segreto e ID client con il toolkit](tut_secure_id_secret_tk.html)
 
-## Procedura 
+Nota: questa esercitazione mostra i passi e le schermate per eseguire l'attività all'interno della IU {{site.data.keyword.Bluemix}}. Puoi anche completare la stessa procedura utilizzando la riga di comando. Puoi visualizzare tale procedura nel [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tutorial_apionprem_security_OAuth_v506.html). 
+
+## Procedura
 
 1. Crea un'API provider OAuth e seleziona il tuo schema OAuth.  
 	a. Apri **Drafts**, seleziona **APIs** e fai clic su **Add** > **OAuth 2.0 Provider API**.  
     ![](images/oauth_provider_1.png)
-	b. Denominala "OAuth Endpoint API". (Il nome e il percorso di base dovrebbe venire popolati automaticamente.)  
+	b. Denominala "OAuth Endpoint API". Il nome e il percorso di base dovrebbe venire popolati automaticamente.   
 	c. Seleziona **Create API**.  
 	d. Nell'API endpoint OAuth appena creata, passa al pannello **OAuth 2** (o scorri fino ad esso) e seleziona "Confidential" come tipo di client.  
 	e. In Scopes, ridenomina _scope1_ con _view_current_. Elimina _scope2_ e _scope3_.  

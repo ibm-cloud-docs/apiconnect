@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 ---
 
 
@@ -22,19 +22,19 @@ In questa esercitazione, utilizzerai API Manager per creare un'API SOAP che è u
 
 ## Prerequisiti
 - Prima di iniziare, dovrai [configurare la tua istanza {{site.data.keyword.apiconnect_short}}](tut_prereq_set_up_apic_instance.html).
-- Prima di iniziare, copia il file di test [weatherprovider.wsdl ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} nel tuo file system locale.
+- Prima di iniziare, copia il file di test [weatherprovider.wsdl ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} nel tuo file system locale.
 Nota: puoi fare clic su **Raw** e salvare la pagina risultante nel tuo sistema locale come un file `.wsdl`. Come suggerisce il nome, questo servizio SOAP restituisce i dati meteo quando viene fornito un codice postale.
 
 ---
 ## Configurazione di una definizione dell'API SOAP
 1. Accedi a {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}.
 
-2. Nel **Dashboard** {{site.data.keyword.Bluemix_short}}, scorri fino a **All Services**.
+2. Nel **Dashboard** {{site.data.keyword.Bluemix_notm}}, scorri fino a **All Services**.
 
-3. Seleziona **API Connect** per avviare il servizio API Connect. 
+3. Seleziona **API Connect** per avviare il servizio {{site.data.keyword.apiconnect_short}}. 
   
 4. Passa alla pagina delle bozze, se non già lì:  
-    a. Nell'interfaccia API Connect, fai clic su >> per aprire il pannello di navigazione.
+    a. Nell'interfaccia {{site.data.keyword.apiconnect_short}}, fai clic su >> per aprire il pannello di navigazione.
     b. Fai clic su **Drafts** nel pannello di navigazione.
     c. Vai alla scheda **APIs**.
 
@@ -48,14 +48,14 @@ Nota: puoi fare clic su **Raw** e salvare la pagina risultante nel tuo sistema l
 
 8. Seleziona il file `weatherprovider.wsdl` che hai salvato precedentemente.
 
-9. Viene rivisualizzata a finestra New API dalla finestra di dialogo WSDL. Controlla la casella di spunta **weatherService**. Fai clic su **Done**.
+9. Viene rivisualizzata la finestra New API dalla finestra di dialogo WSDL. Controlla la casella di spunta **weatherService**. Fai clic su **Done**.
   ![seleziona servizio meteo](images/newapi2.png)
 
 10. Dopo una corretta importazione, viene visualizzata la vista di progettazione dell'API. Inoltre, puoi visualizzare la definizione OpenAPI nella scheda dell'origine.
    _Nella scheda dell'origine, vedrai che WSDL è incluso nella definizione OpenAPI._
   ![Pagina editor API](images/designpage2.png)
 
-11. Scorri fino a **Security tab** e fai clic sull'icona di eliminazione per rimuovere `clientIDHeader (API Key)` che è stato generato automaticamente quando hai creato il servizio.
+11. Scorri fino alla **scheda Security** e fai clic sull'icona di eliminazione per rimuovere `clientIDHeader (API Key)` che è stato generato automaticamente quando hai creato il servizio.
    _Avrai informazioni sulla sicurezza con le chiavi API nella prossima esercitazione._
 
 12. Fai clic sull'icona ![save](images/save.png) per salvare le tue modifiche. Viene visualizzata momentaneamente una notifica di conferma "API Saved".
@@ -63,7 +63,7 @@ Nota: puoi fare clic su **Raw** e salvare la pagina risultante nel tuo sistema l
 13. Nella barra del menu con l'icona di salvataggio, la scheda **Design** indica la tua ubicazione presente. Accanto ad essa, trovi la scheda **Source** dove puoi direttamente visualizzare il file Swagger (2.0) che rappresenta la tua API e accanto ad esso trovi la scheda **Assemble** che ti porta a un'interfaccia di trascinamento e rilascio per l'elaborazione dell'API. Fai clic su **Assemble**.
   ![Scheda assemblaggio](images/assemble-clean.png)  
 
-## Verifica della definizione dell'API SOAP 
+## Verifica della definizione dell'API SOAP
 
 1. Nella scheda **Assemble**, fai clic sull'icona **More actions** (tre punti) e seleziona **Generate a default product** dal menu.  
    ![Menu ulteriori azioni, apri](images/gen-default-prod.png)
@@ -113,6 +113,6 @@ In questa esercitazione, hai completato quanto segue:
 
 ## Passo successivo
 
-[Esponi il tuo servizio come un'API REST](tut_expose_soap_api.html) o proteggi la tua API utilizzando [limitazione della frequenza](tut_rate_limit.html), [segreto e ID client](tut_secure_landing.html) o [proteggi tramite OAuth 2.0](tut_secure_oauth_2.html).
+[Esponi il tuo servizio come un'API REST](tut_expose_soap_service.html) o proteggi la tua API utilizzando [limitazione della frequenza](tut_rate_limit.html), [segreto e ID client](tut_secure_landing.html) o [proteggi tramite OAuth 2.0](tut_secure_oauth_2.html).
 
 Create > **Manage** > Secure > Socialize > Analyze

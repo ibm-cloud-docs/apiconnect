@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-19"
+years: 2017
+lastupdated: "2017-11-14"
 
 ---
 
@@ -23,14 +23,14 @@ In API Manager, creerai un'API REST che accederà a un servizio SOAP esistente e
 
 ## Prerequisiti
 1. Prima di iniziare, dovrai [configurare la tua istanza {{site.data.keyword.apiconnect_full}}](tut_prereq_set_up_apic_instance.html).
-2. Prima di iniziare, copia il file di test [weatherprovider.wsdl ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://github.com/ibm-apiconnect/getting-started/blob/master/bluemix/manage-soap-api/files/weatherprovider.wsdl){:new_window} nel tuo file system locale.
+2. Prima di iniziare, copia il file di test [weatherprovider.wsdl ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} nel tuo file system locale.
 	>![images/info.png]
 	>Puoi fare clic su **Raw** e salvare la pagina risultante nel tuo sistema locale come un file `.wsdl`.
 
 ---
 ## Configurazione di una definizione dell'API REST
 1. Accedi a {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://new-console.ng.bluemix.net/login){:new_window}.
-2. Nel **Dashboard** {{site.data.keyword.Bluemix_short}} scorri fino a e seleziona {{site.data.keyword.apiconnect_full}}. In alternativa, dall'icona del menu, scegli **Services** e **APIs** per raggiungere la finestra **Work with APIs** e seleziona **API Connect**. Dalla pagina **API Connect**, puoi semplicemente premere `Create` o puoi modificare le impostazioni predefinite. Ai fini dell'esercizio, lascia l'istanza non associata e modifica il nome del servizio in modo da riconoscerlo facilmente successivamente. Un esempio potrebbe essere `API Connect-weather-exercise`.
+2. Nel **Dashboard** {{site.data.keyword.Bluemix_notm}} scorri fino a e seleziona {{site.data.keyword.apiconnect_short}}. In alternativa, dall'icona del menu, scegli **Services** e **APIs** per raggiungere la finestra **Work with APIs** e seleziona **API Connect**. Dalla pagina **API Connect**, puoi semplicemente premere `Create` o puoi modificare le impostazioni predefinite. Ai fini dell'esercizio, lascia l'istanza non associata e modifica il nome del servizio in modo da riconoscerlo facilmente successivamente. Un esempio potrebbe essere `API Connect-weather-exercise`.
 Premi il pulsante `Create` per avviare il servizio {{site.data.keyword.apiconnect_short}}.  
 Potresti visualizzare un avviso che descrive le novità o la pagina iniziale informativa **Draft APIs**. Dopo aver letto le informazioni fai clic sull'icona **"Got it"** per visualizzare API Manager.
 3. In {{site.data.keyword.apiconnect_short}}, se non hai precedentemente bloccato il riquadro di navigazione della IU fai clic sull'icona **Navigate to** ![](images/navigate-to.png). Viene aperto il pannello di navigazione della IU API Manager. Per bloccare il pannello di navigazione della IU, fai clic sull'icona **Pin menu** ![](images/pinned.png).
@@ -57,7 +57,7 @@ Potresti visualizzare un avviso che descrive le novità o la pagina iniziale inf
 ![](images/api-security-1.png)
 10. Deseleziona l'opzione **ClientID**.
 ![](images/api-security-2.png)
-	>![images/info.png]
+	>![](images/info.png)
 	>Potresti notare che è presente un'icona triangolare gialla visualizzata accanto all'icona di salvataggio su disco.  Questa è un'avvertenza che è presente una definizione definita ma non ancora utilizzata. (Questo non influenza la definizione dell'API.)
 11. Nella sezione **Definitions**, fai clic sull'icona **Add Definition** ![](images/add-icon.png) e espandi la nuova definizione facendo clic su di essa.
 12. Denomina la definizione `Weather Data Output`.

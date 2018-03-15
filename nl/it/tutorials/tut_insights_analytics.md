@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ Durata: 30 minuti
 Livello di competenza: Principiante
 
 ## Obiettivo
-Questa è un'introduzione di base alle analisi API in {{site.data.keyword.apiconnect_long}}. Faremo un tour dei dashboard di analisi disponibili e che puoi seguire con le tue proprie API.
+Questa è un'introduzione di base alle analisi API in {{site.data.keyword.apiconnect_full}}. Faremo un tour dei dashboard di analisi disponibili e che puoi seguire con le tue proprie API.
 
 
 ## Prerequisiti
@@ -127,7 +127,7 @@ Questo grafico (finora) mostra una serie temporale delle chiamate API. Noi vogli
 	* Etichetta personalizzata: **App**
 	
    ![](./images/subbucket.png)
-8. Fai clic su **Run** per visualizzare il tuo grafico. 
+8. Fai clic su **Run** per visualizzare il tuo grafico.
 9. Fai clic su **Save** e fornisci al tuo grafico un nome `API Calls by App`.
 10. Per visualizzare la tua visualizzazione nel contesto, aggiungila al dashboard Subscriber.
 
@@ -149,6 +149,6 @@ In questa esercitazione, abbiamo eseguito diverse attività per aiutarti a crear
 
 ## Passo successivo
 
-Impara [come gestire le tue API e le versioni](tut_version_landing.html).
+Impara [come gestire le tue API e le versioni](tut_manage_version_landing.html). 
 
 Create > Manage > Secure > Socialize > **Analyze**  

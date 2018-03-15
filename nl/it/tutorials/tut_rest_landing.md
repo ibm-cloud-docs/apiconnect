@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-08-24"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -13,17 +13,17 @@ lastupdated: "2017-08-24"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Gestione di un servizio REST 
+# Gestione di un servizio REST
 {: #tut_rest_landing}
 
 Queste esercitazioni forniscono opzioni su come puoi gestire le API esistenti.
 
 Per gestire un'API esistente, puoi iniziare importando o aggiungendo un file OpenAPI.
 
-## IBM Bluemix
+## {{site.data.keyword.Bluemix_notm}}
 
-- [Importazione di un file OpenAPI utilizzando IBM Bluemix](tut_import_openapi_rest_bm.html)
-- [Creazione di un file OpenAPI utilizzando IBM Bluemix](tut_add_openapi_rest_bm.html)
+- [Importazione di un file OpenAPI utilizzando {{site.data.keyword.Bluemix_notm}}](tut_import_openapi_rest_bm.html)
+- [Creazione di un file OpenAPI utilizzando {{site.data.keyword.Bluemix_notm}}](tut_add_openapi_rest_bm.html)
 
 ## Toolkit sviluppatori
 

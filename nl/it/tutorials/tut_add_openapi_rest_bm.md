@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -10,11 +10,11 @@ lastupdated: "2017-10-19"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Aggiungi una nuova specifica API e richiama un servizio REST esistente con IBM Bluemix
+# Aggiungi una nuova specifica API e richiama un servizio REST esistente con {{site.data.keyword.Bluemix_notm}}
 **Durata**: 15 minuti  
-**Livello di competenza**: Principiante   
+**Livello di competenza**: Principiante  
 
-## Obiettivo 
+## Obiettivo
 Questa esercitazione ti aiuta ad iniziare ad utilizzare velocemente {{site.data.keyword.apiconnect_full}}. Inizieremo creando una nuova specifica OpenAPI e poi creando un proxy API passthrough per un servizio REST esistente.
 
 ## Prerequisito
@@ -28,7 +28,7 @@ Prima di iniziare, devi [configurare la tua istanza API Connect](tut_prereq_set_
 2. Immetti un codice postale U.S. valido per ottenere il tuo _**meteo corrente**_ e le _**previsioni di oggi**_.  
 ![](images/explore-weatherapp-1.png)
 
-3. La precedente applicazione di esempio meteo è stata creata utilizzando API che forniscono dati meteo. L'endpoint per ottenere i dati meteo **correnti** è _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Verifica visitando [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
+3. La precedente applicazione di esempio meteo è stata creata utilizzando API che forniscono dati meteo. L'endpoint per ottenere i dati meteo **correnti** è _**https://myweatherprovider.mybluemix.net/current?zipcode={zipcode}**_. Verifica visitando [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
 
   ![](images/explore-weatherapp-2.png)
 
@@ -40,8 +40,8 @@ Prima di iniziare, devi [configurare la tua istanza API Connect](tut_prereq_set_
 ---
 
 ### Aggiungi una nuova specifica OpenAPI per creare un proxy API REST  
-1. Accedi a {{site.data.keyword.Bluemix_short}}: https://new-console.ng.bluemix.net/login.
-2. Nel pannello di navigazione {{site.data.keyword.Bluemix_short}}, seleziona **Services** e quindi **Dashboard**. Avvia il servizio {{site.data.keyword.apiconnect_short}}.
+1. Accedi a {{site.data.keyword.Bluemix_notm}}: https://new-console.ng.bluemix.net/login.
+2. Nel pannello di navigazione {{site.data.keyword.Bluemix_notm}}, seleziona **Services** e quindi **Dashboard**. Avvia il servizio {{site.data.keyword.apiconnect_short}}.
 3. In {{site.data.keyword.apiconnect_short}}, assicurati che il pannello di navigazione sia aperto. Se non lo è, fai clic su **>>** per aprirlo.  
 4. Seleziona **Drafts** nel pannello di navigazione.
 5. Nella scheda **APIs**, fai clic su **Add**. Dal menu a discesa, seleziona **New API**.    
@@ -69,7 +69,7 @@ _(Visiteremo la sicurezza con le chiavi API nella prossima esercitazione.)_
     d. Salva la tua API.  
 
 13. Con i tuoi parametri di query definiti nel passo precedente, devi ora definire l'oggetto di risposta restituito quando richiami l'API meteo. Per far ciò, scorri fino al pannello **Definitions**.   
-    a. Aggiungi una nuova definizione.   
+    a. Aggiungi una nuova definizione.  
     b. Denomina la nuova definizione con _Current_.  
     c. Imposta il tipo su _Object_.  
     d. Aggiungi nuove proprietà per la definizione **Current**.    
@@ -156,11 +156,11 @@ _(Visiteremo la sicurezza con le chiavi API nella prossima esercitazione.)_
 ---
 
 ### Conclusioni
-In questa esercitazione hai imparato come può essere richiamato un servizio REST esistente tramite un proxy passthrough dell'API. Hai iniziato verificando la disponibilità del servizio di esempio tramite il browser web. Poi hai creato una nuova specifica OpenAPI in API Connect e l'hai collegata al servizio di esempio da richiamare. Hai impacchettato la tua API in un prodotto, pubblicato il prodotto nel catalogo e verificato il proxy.
+In questa esercitazione hai imparato come può essere richiamato un servizio REST esistente tramite un proxy passthrough dell'API. Hai iniziato verificando la disponibilità del servizio di esempio tramite il browser web. Poi hai creato una nuova specifica OpenAPI in {{site.data.keyword.apiconnect_short}} e l'hai collegata al servizio di esempio da richiamare. Hai impacchettato la tua API in un prodotto, pubblicato il prodotto nel catalogo e verificato il proxy.
 
 ---
 
-## Passo successivo 
+## Passo successivo
 
 Proteggi la tua API utilizzando [la limitazione di frequenza](tut_rate_limit.html), [il segreto e l'ID client](tut_secure_landing.html) o [la protezione tramite OAuth 2.0](tut_secure_oauth_2.html).
 

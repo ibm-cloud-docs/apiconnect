@@ -1,16 +1,16 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-11-02"
 ---
 
-{:new_window: target="blank"}
+{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Impostazione dei limiti di frequenza 
+# Impostazione dei limiti di frequenza
 **Durata**: 15 minuti  
 **Livello di competenza**: Principiante  
 
@@ -29,7 +29,7 @@ In questa esercitazione, farai quanto segue:
 
 
 ## Prerequisiti
-Devi aver già creato un'API in {{site.data.keyword.apiconnect_short}} e averla protetta con almeno una chiave API. Nelle seguenti istruzioni, il nostro punto di partenza è il file di esempio [Weather Provider API ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window} protetto utilizzando [segreto e ID client](tut_secure_landing.html).
+Devi aver già creato un'API in {{site.data.keyword.apiconnect_short}} e averla protetta con almeno una chiave API. Nelle seguenti istruzioni, il nostro punto di partenza è il file di esempio [Weather Provider API ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window} protetto utilizzando [segreto e ID client](tut_secure_landing.html).
 
 Completa le seguenti esercitazioni prima di iniziare questa esercitazione:
 - [Importa la tua specifica API e collegati tramite proxy a un servizio REST esistente](tut_rest_landing.html).
@@ -39,13 +39,13 @@ Completa le seguenti esercitazioni prima di iniziare questa esercitazione:
 ---
 ## Avvio di API Connect
 
-1. Accedi a {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://console.ng.bluemix.net/login){:new_window}.
-2. Una volta collegato a {{site.data.keyword.Bluemix_short}}, scorri fino a **All Services** e fai clic su **API Connect**.
+1. Accedi a {{site.data.keyword.Bluemix_notm}}: [https://console.ng.bluemix.net/login ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://console.ng.bluemix.net/login){:new_window}.
+2. Una volta collegato a {{site.data.keyword.Bluemix_notm}}, scorri fino a **All Services** e fai clic su **API Connect**.
 3. Fai clic su **API Connect** per avviare il servizio {{site.data.keyword.apiconnect_short}}.
 
 ## Esplorazione del piano predefinito
 1. Nel pannello di navigazione {{site.data.keyword.apiconnect_short}}, seleziona **Drafts**. (Se il pannello di navigazione non è aperto, fai clic su **>>** per aprirlo.)
-2. Seleziona **Products tab** per visualizzare elencato il prodotto API Weather Provider.
+2. Seleziona la **scheda Products** per visualizzare elencato il prodotto API Weather Provider.
 
    ![](./images/draftproducts.png)      
 
@@ -65,7 +65,7 @@ Ora che hai visto a cosa assomiglia un piano predefinito, creiamo un nuovo piano
  
     ![](./images/newplanbutton.png) 
     
-    È stato creato un nuovo piano per te e per impostazione predefinita, è configurato per consentire l'utilizzo illimitato (che significa, nessun limite di frequenza). Forniamogli un nome più significativo e imposta un limite più restrittivo.
+    È stato creato un nuovo piano per te e per impostazione predefinita, è configurato per consentire l'utilizzo illimitato (che significa, nessun limite di frequenza). Forniamogli un nome più significativo e imposta un limite più restrittivo. 
 2. Fai clic sul nuovo piano (`New Plan 1`) per espanderne i dettagli.
 3. Fai clic sul campo del titolo e impostalo su: `Demo`.
 4. Fai clic sul campo del nome e impostalo su `demo-plan`.
@@ -83,8 +83,7 @@ Nei precedenti esempi, potresti aver pubblicato il tuo prodotto utilizzando lo s
 
 1. Fai clic sull'icona di pubblicazione per *preparare* il prodotto nel catalogo **Sandbox**. Questa azione aggiunge le tue modifiche del prodotto della bozza al catalogo selezionato. Abbiamo bisogno di *pubblicare* le modifiche del prodotto successivamente, per renderle disponibili ai clienti tramite il portale sviluppatori.
    ![](./images/stageproduct.png) 
-2. Fai clic sul pulsante >> per aprire il menu di navigazione.
-   ![](./images/navigate.png) 
+2. Fai clic sul pulsante >> per aprire il menu di navigazione. 
 3. Seleziona il dashboard, quindi apri il catalogo **Sandbox**. Il prodotto API Weather Provider viene elencato come **Staged**.
 4. Fai clic sulle ellissi e seleziona **Publish** dal menu.
    ![](./images/publish.png) 
@@ -98,31 +97,29 @@ Se questa è la prima volta che utilizzi il portale sviluppatori, dovrai eseguir
 
 Le seguenti istruzioni ti guideranno attraverso questi passi.
 
-1. Avvia il portale sviluppatori. Se non conosci l'URL, puoi trovarlo nella scheda delle impostazioni del catalogo Sandbox.
-
-   ![](./images/devportalurl.png)
-    - Per eseguire il provisioning del portale sviluppatori per la prima volta, seleziona **IBM Developer Portal** dall'elenco a discesa.
+1. Avvia il portale sviluppatori. Se non conosci l'URL, puoi trovarlo nella scheda delle impostazioni del catalogo Sandbox. Per eseguire il provisioning del portale sviluppatori per la prima volta, consulta [consulta impostazione e configurazione del portale sviluppatori](tut_config_dev_portal.html).
     - Questa operazione potrebbe richiedere fino a un'ora per completarsi. Come il portale sviluppatori Sandbox è pronto, riceverai un'email
-con un link al tuo nuovo sito del portale sviluppatori. Il link è un link a utilizzo singolo per l'account amministratore. 
+con un link al tuo nuovo sito del portale sviluppatori. Il link è un link a utilizzo singolo per l'account amministratore.
 2. Accedi al portale utilizzando le tue credenziali di sviluppatore dell'applicazione (**non** il tuo ID IBM). ***(Crea un nuovo account sviluppatore se necessario, utilizzando un indirizzo differente da quello del tuo ID IBM.)***
 3. Fai clic sul link **Apps** nella barra degli strumenti e sul pulsante **Create new App**.
 
-   ![](./images/createnewapp.png)
 4. Fornisci all'applicazione un titolo e fai clic su **Submit**.
 
    ![](./images/mymobileapp.png)
 5. Salva il segreto e l'ID client visualizzati. Sarà l'unica volta in cui è possibile copiare il tuo segreto client!
 
    ![](./images/clientidandsecret.png)
+   
+   ![](./images/clientsecret.png)
 
 
 
 ## Sottoscrizione a un prodotto API
 
-1. Fai clic sul link **API Products** nella barra degli strumenti. Il prodotto API Weather Provider viene elencato!  
+1. Fai clic sul link **API Products** nella barra degli strumenti. Il prodotto API Weather Provider viene elencato! 
 
    ![](./images/apiproducts.png)
-2. Fai clic sul link per visualizzare i dettagli e le opzioni. Dovresti vedere due piani disponibili: il piano predefinito originale e il tuo nuovo piano demo. (Se visualizzi solo un piano, ritorna a API Connect e assicurati che le modifiche al tuo piano siano state salvate, preparate e pubblicate nel catalogo Sandbox.) 
+2. Fai clic sul link per visualizzare i dettagli e le opzioni. Dovresti vedere due piani disponibili: il piano predefinito originale e il tuo nuovo piano demo. (Se visualizzi solo un piano, ritorna a {{site.data.keyword.apiconnect_short}} e assicurati che le modifiche al tuo piano siano state salvate, preparate e pubblicate nel catalogo Sandbox.) 
 
    ![](./images/plans.png)
 3. Fai clic su **Subscribe** al piano demo e seleziona l'applicazione che hai appena registrato. Ora, la tua applicazione può richiamare le API associate a questo piano, a una frequenza di *una* chiamata API ogni minuto. 

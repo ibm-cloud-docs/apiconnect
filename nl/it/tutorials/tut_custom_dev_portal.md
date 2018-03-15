@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,13 +10,13 @@ lastupdated: "2017-09-12"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Personalizzazione del portale sviluppatori e selezione di un tema 
+# Personalizzazione del portale sviluppatori e selezione di un tema
 **Durata**: 30 minuti  
 **Livello di competenza**: Principiante  
 
 
 ## Obiettivo
-Questa esercitazione ti aiuterà a personalizzare velocemente il tuo portale sviluppatori {{site.data.keyword.apiconnect_short}} e a selezionare un tema che soddisfi i tuoi bisogni.
+Questa esercitazione ti aiuterà a personalizzare velocemente il tuo portale sviluppatori {{site.data.keyword.apiconnect_full}} e a selezionare un tema che soddisfi i tuoi bisogni.
 
 ---
 
@@ -91,7 +91,7 @@ Il portale sviluppatori viene fornito con temi aggiuntivi che puoi scegliere e p
 
 ---
 
-## Installa un nuovo tema per il tuo portale sviluppatori
+## Installare un nuovo tema nel tuo portale sviluppatori
 Se modificando un tema non soddisfi i tuoi bisogni, il portale sviluppatori ti consente inoltre di installare un tema per modificarne l'aspetto.
 
 1. Puoi utilizzare i moduli o i temi scaricati da [drupal.org ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://drupal.org){:new_window} per personalizzare il tuo portale sviluppatori o puoi crearne di tuoi.
@@ -112,11 +112,11 @@ Se modificando un tema non soddisfi i tuoi bisogni, il portale sviluppatori ti c
 
 ---
 
-## Riepilogo  
+## Riepilogo
 Congratulazioni, hai completato questa esercitazione. In questa esercitazione hai imparato come:
 
 * Personalizzare la pagina di benvenuto del tuo portale sviluppatori
-* Personalizzare il tema utilizzato dal tuo portale sviluppatori  
+* Personalizzare il tema utilizzato dal tuo portale sviluppatori 
 * Selezionare un tema differente da utilizzare con il tuo portale sviluppatori
 * Installare un nuovo tema nel tuo portale sviluppatori
 

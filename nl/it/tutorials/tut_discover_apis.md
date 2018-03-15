@@ -1,10 +1,8 @@
 ---
-
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
-
-
+lastupdated: "2017-11-20"
+---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
@@ -17,18 +15,18 @@ lastupdated: "2017-10-10"
 **Livello di competenza**: Principiante  
 
 
-## Prerequisiti
-Nessun prerequisito per questa esercitazione. Come amministratore del portale, puoi anche completare questa esercitazione mentre navighi nel tuo portale sviluppatori per provare come navigano i tuoi utenti del portale. Tieni presente che tutti i portali sviluppatori hanno diverse interfacce.
+## Prerequisito
+Nessun prerequisito per questa esercitazione. Come amministratore del portale, puoi anche completare questa esercitazione mentre navighi nel tuo portale sviluppatori per provare come navigano i tuoi utenti del portale. Tieni presente che tutti i portali sviluppatori hanno diverse interfacce. 
 
 Se non disponi di un portale sviluppatori esistente, puoi configurarne uno in {{site.data.keyword.Bluemix_short}} prima di procedere con questa esercitazione.
 
 ## Obiettivo
-In questa esercitazione, imparerai come un utente del portale può utilizzare le API nel portale sviluppatori {{site.data.keyword.apiconnect_short}}. Imparerai come un utente del portale esplora i prodotti e le API, visualizza le API di test e si sottoscrive ad esse.
+In questa esercitazione, imparerai come un utente del portale può utilizzare le API nel portale sviluppatori {{site.data.keyword.apiconnect_full}}. Imparerai come un utente del portale esplora i prodotti e le API, visualizza le API di test e si sottoscrive ad esse. 
 
-## Esplora i prodotti e le API
+## Esplora prodotti e API 
 Questa sezione illustra come un utente del portale esplorerà i prodotti e le API nel portale sviluppatori.
 
-1. In un browser, passa a **API Connect Developer Portal**.
+1. In un browser, passa a **Portale sviluppatori API Connect**.
 ![Portale sviluppatori API Connect](images/11-developer-portal.png)
 
 2. Nel portale sviluppatori {{site.data.keyword.apiconnect_short}}, seleziona la scheda dei prodotti API.
@@ -40,11 +38,11 @@ Questa sezione illustra come un utente del portale esplorerà i prodotti e le AP
 4. Seleziona un'API per visualizzare i dettagli delle API disponibili.  
   ![API prodotti](images/14-api.png)
 
-5. Nella pagina dei dettagli di un'API, puoi visualizzare le operazioni disponibili con i rispettivi parametri e risposte restituiti. Alla fine della pagina, puoi visualizzare le definizioni utilizzate dall'API.  
-  ![Dettagli API](images/15-details.png)
+5. Nella pagina dei dettagli di un'API, puoi visualizzare le operazioni disponibili con i rispettivi parametri e le risposte restituite. Alla fine della pagina, puoi visualizzare le definizioni utilizzate dall'API.  
+  ![Dettagli API](images/15-details.png) 
 
 6. Nel pannello degli esempi di codice, puoi visualizzare gli esempi in diversi linguaggi di codifica di come richiamare le richieste e le relative risposte. Seleziona uno degli esempi, come ad esempio **Node**, per visualizzare un esempio in tale linguaggio di codifica.  
-  ![Dettagli API](images/16-examples.png)
+  ![Dettagli API](images/16-examples.png) 
 
 ---
 
@@ -75,7 +73,7 @@ Questa sezione illustra come un utente del portale si sottoscriverà alle API ne
 1. Seleziona **Create an account**.
 ![Prodotti API](images/31-create-account.png)
 
-2. Compila i campi obbligatori e seleziona **Create new account** in fondo alla pagina.
+2. Compila i campi obbligatori e seleziona **Create new account** in fondo alla pagina. 
 **Nota:** utilizza un indirizzo email diverso di quello utilizzato per creare il tuo portale sviluppatori nell'esercitazione precedente.
 ![Prodotti API](images/32-create-new-account.png)
 

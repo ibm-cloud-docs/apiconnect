@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Proteggi la tua API con il segreto e l'ID client utilizzando IBM Bluemix
+# Proteggi la tua API con il segreto e l'ID client utilizzando {{site.data.keyword.Bluemix_notm}}
 
 **Durata:** 10 minuti  
 **Livello di competenza:** Principiante
@@ -33,7 +33,7 @@ Prima di iniziare, devi aver completato una delle seguenti esercitazioni:
 
 1. Passa alla vista di progettazione della tua API:  
    a. Fai clic su **Drafts** nel pannello di navigazione di sinistra  
-   b. Poi fai clic sulla scheda **APIs**   
+   b. Poi fai clic sulla scheda **APIs**  
    c. Fai clic su _Weather Provider API_ che hai creato nella precedente esercitazione. Viene aperta la vista **Design** dell'API.  
    ![](images/1_goto_drafts_api.png)  
 

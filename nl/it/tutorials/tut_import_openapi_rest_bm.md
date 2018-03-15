@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -10,9 +10,9 @@ lastupdated: "2017-10-19"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Importa la tua specifica API e collegati tramite proxy a un servizio REST esistente con IBM Bluemix
+# Importa la tua specifica API e collegati tramite proxy a un servizio REST esistente con {{site.data.keyword.Bluemix_notm}}
 Durata: 5 minuti  
-Livello di competenza: Principiante   
+Livello di competenza: Principiante  
 
 ## Obiettivo
 Questa esercitazione ti aiuta ad iniziare ad utilizzare velocemente {{site.data.keyword.apiconnect_full}} illustrando come puoi portare la tua API esistente nel controllo di gestione. Inizieremo importando una specifica OpenAPI e poi creando un proxy API passthrough per un servizio REST esistente.
@@ -25,7 +25,7 @@ Prima di iniziare, dovrai [configurare la tua istanza {{site.data.keyword.apicon
 
 ## Esplora l'applicazione di esempio e verifica gli endpoint di destinazione
 
-È stata creata un'applicazione _weather provider_ di esempio per questa esercitazione. La specifica API corrispondente (Swagger 2.0) è nel file [weather-provider-api_1.0.0.yaml ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/toolkit/1a-import/weather-provider-api_1.0.0.yaml){:new_window}.
+È stata creata un'applicazione _weather provider_ di esempio per questa esercitazione. La specifica API corrispondente (Swagger 2.0) è nel file [weather-provider-api_1.yaml ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}.
 
 1. Per esplorare l'applicazione, vai a [http://gettingstartedweatherapp.mybluemix.net/ ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}.  
 2. Immetti un codice postale U.S. valido per ottenere il tuo _**meteo corrente**_ e le _**previsioni di oggi**_.  
@@ -42,23 +42,21 @@ Prima di iniziare, dovrai [configurare la tua istanza {{site.data.keyword.apicon
 
 ---
 
-## Importa la specifica OpenAPI dell'applicazione di esempio per creare un proxy API REST 
+## Importa la specifica OpenAPI dell'applicazione di esempio per creare un proxy API REST
 1. Accedi a {{site.data.keyword.Bluemix_short}}: https://new-console.ng.bluemix.net/login.
-2. Nel pannello di navigazione {{site.data.keyword.Bluemix_short}}, seleziona **Services** e **Dashboard**. Avvia il servizio API Connect.  
-   ![](images/login-1.png)   ![](images/login-2.png)  
-
+2. Nel pannello di navigazione {{site.data.keyword.Bluemix_notm}}, seleziona **Services** e **Dashboard**. Avvia il servizio {{site.data.keyword.apiconnect_short}}. 
 3. In {{site.data.keyword.apiconnect_short}}, assicurati che il pannello di navigazione nel lato sinistro sia aperto. Se non lo è, fai clic su **>>** per aprirlo.  
 4. Seleziona **Drafts** nel pannello di navigazione.   
 5. Nella scheda **APIs**, fai clic su **Add**. Dal menu a discesa, seleziona **Import API from a file or URL**.  
      ![](images/import-1.png)
 
 6. Ora importeremo la definizione meteo OpenAPI. Nella finestra di dialogo "Import OpenAPI (Swagger)" che viene aperta, immetti il seguente URL:
-`https://raw.githubusercontent.com/ibm-apiconnect/getting-started/master/bluemix/1a/weather-provider-api_1.0.0.yaml`. Lascia le altre opzioni con i rispettivi valori predefiniti e fai clic su **Import**.  
+`https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml`. Lascia le altre opzioni con i rispettivi valori predefiniti e fai clic su **Import**.  
     ![](images/import-2.png)  
 
 7. Dopo aver importato la specifica OpenAPI, viene visualizzata la vista **Design** dell'API. Qui puoi visualizzare varie sezioni della definizione OpenAPI. Scorri per esplorare e prendi nota del valore **Host**. Puoi anche visualizzare OpenAPI nella scheda **Source**.
   _Nota: noterai che il valore host è impostato su _ `$(catalog.host)` _. Questo è l'URL di base del tuo proxy dell'API._
-8. Salva la tua API.
+8. La tua API è stata salvata. 
 
 
 ## Verifica il tuo proxy API
@@ -72,12 +70,12 @@ Prima di iniziare, dovrai [configurare la tua istanza {{site.data.keyword.apicon
 
   ![](images/generate-default-product-3.png)
 
-  _In API Connect, **Products** fornisce un modo per raggruppare le API intese per un utilizzo particolare. I prodotti sono pubblicati in un **Catalog**.  [Glossario {{site.data.keyword.apiconnect_short}}](../apic_glossary.html)_
+  _In {{site.data.keyword.apiconnect_short}}, **Products** fornisce un modo per raggruppare le API intese per un utilizzo particolare. I prodotti sono pubblicati in un **Catalog**.  [Glossario {{site.data.keyword.apiconnect_short}}](../apic_glossary.html)_
 
 3. Nella scheda Assemble, fai clic sull'icona di riproduzione per verificare il richiamo della destinazione del proxy dell'API.
 
 4. Nel pannello di verifica, seleziona l'operazione **get /current**.  
-    a. Codice postale è un parametro obbligatorio per questa operazione, per cui immetti un codice postale U.S. valido (ad esempio, 90210).   
+    a. Codice postale è un parametro obbligatorio per questa operazione, per cui immetti un codice postale U.S. valido (ad esempio, 90210).  
     b. Fai clic su **invoke** e verifica di visualizzare:  
     ```
     - 200 OK response
@@ -103,7 +101,7 @@ _Lo strumento Explore consente agli utenti di verificare l'operazione corrente d
 
 
 ### Conclusioni
-In questa esercitazione hai visto come può essere richiamato un servizio REST esistente tramite un proxy passthrough dell'API. Hai iniziato verificando la disponibilità del servizio di esempio tramite il browser web. Poi hai creato un proxy API in API Connect e collegato il proxy al servizio di esempio da richiamare. Hai impacchettato la tua API in un prodotto, pubblicato il prodotto nel catalogo e verificato il proxy.
+In questa esercitazione hai visto come può essere richiamato un servizio REST esistente tramite un proxy passthrough dell'API. Hai iniziato verificando la disponibilità del servizio di esempio tramite il browser web. Poi hai creato un proxy API in {{site.data.keyword.apiconnect_short}} e collegato il proxy al servizio di esempio da richiamare. Hai impacchettato la tua API in un prodotto, pubblicato il prodotto nel catalogo e verificato il proxy.
 
 ---
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -20,17 +20,17 @@ lastupdated: "2017-10-10"
 
 1. [Configura la tua istanza {{site.data.keyword.apiconnect_full}}](tut_prereq_set_up_apic_instance.html).
 
-2. Completa la [Esercitazione sulla sostituzione di un prodotto API](tut_manage_replace.html). 
+2. Completa la [Esercitazione sulla sostituzione di un prodotto API](tut_manage_replace.html).
 
 ---
 ## Obiettivo
-In questa esercitazione, rimpiazzerai un prodotto API esistente con uno nuovo. 
+In questa esercitazione, rimpiazzerai un prodotto API esistente con uno nuovo.
 
 ---
 ## Sostituzione di un prodotto API
 1. Accedi a {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://console.ng.bluemix.net/login){:new_window}.
 
-2. Nel dashboard {{site.data.keyword.Bluemix_short}}, avvia il servizio {{site.data.keyword.apiconnect_short}}.
+2. Nel dashboard {{site.data.keyword.Bluemix_notm}}, avvia il servizio {{site.data.keyword.apiconnect_short}}.
 ![](images/Bluemix.png)
 
 3. In API Manager, se non hai precedentemente bloccato il riquadro di navigazione della IU fai clic sull'icona **Navigate to** ![](images/navigate-to.png). Viene aperto il pannello di navigazione della IU API Manager. Per bloccare il pannello di navigazione della IU, fai clic sull'icona **Pin menu** ![](images/pinned.png).
@@ -43,7 +43,7 @@ In questa esercitazione, rimpiazzerai un prodotto API esistente con uno nuovo.
 5. Nel pannello delle API, fai clic su **Weather Provider API** per aprire l'API proxy REST.  
 ![](images/rep-api-list.png)
 
-6. Modifica **Version** con 3.0.0. 
+6. Modifica **Version** con 3.0.0.
 
 7. Fare clic sull'icona disco per salvare le modifiche all'API.  
 ![](images/sup-change-version.png)
@@ -105,8 +105,8 @@ In questa esercitazione, rimpiazzerai un prodotto API esistente con uno nuovo.
 In questa esercitazione, hai completato le seguenti attività:
 
 1. Aggiornato un prodotto API.
-2. Sostituito un prodotto API esistente con uno aggiornato.
-3. Migrato la sottoscrizione di un prodotto API esistente al prodotto API aggiornato.
+2. Sostituito un prodotto API esistente con uno aggiornato. 
+3. Migrata la sottoscrizione a un prodotto API esistente al prodotto API aggiornato. 
 
 ---
 

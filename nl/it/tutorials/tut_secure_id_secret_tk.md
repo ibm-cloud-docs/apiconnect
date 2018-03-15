@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-30"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-30"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Proteggi la tua API con il segreto e l'ID client utilizzando il toolkit 
+# Proteggi la tua API con il segreto e l'ID client utilizzando il toolkit sviluppatori 
 
 
 **Durata:** 10 minuti  
@@ -34,7 +34,7 @@ Prima di iniziare, devi aver completato una delle seguenti esercitazioni:
 1. Avvia API Designer (se non è già aperto):  
    a. Apri il tuo terminale.  
    b. Immetti `apic edit` nella riga di comando. _API Designer viene avviato nel tuo browser_    
-   c. Fai clic su **Sign in with Bluemix**.  
+   c. Fai clic su **Sign in with {{site.data.keyword.Bluemix_notm}}**.  
    d. Immetti le tue informazioni di accesso {{site.data.keyword.Bluemix_short}}.  
 
 2. Passa alla vista di progettazione della tua API:
@@ -80,8 +80,8 @@ Prima di iniziare, devi aver completato una delle seguenti esercitazioni:
 Le impostazioni di sicurezza possono inoltre essere verificate utilizzando lo strumento Explore che richiama esplicitamente l'endpoint proxy e passa le chiavi segreto e ID client come valori di intestazione.
 
 
-1. Fai clic su **Explore** e su **Sandbox**.  
-    ![](images/explore_1.png)
+1. Fai clic su **Explore**.
+![](images/explore_1.png)
 
 2. Fai clic sull'operazione **GET /current** dall'elenco.  
 
@@ -91,7 +91,7 @@ Le impostazioni di sicurezza possono inoltre essere verificate utilizzando lo st
 ---
 
 ### Conclusioni
-In questa esercitazione, hai imparato come configurare il meccanismo di identificazione, verificare le modifiche apportate alla tua API e richiamato la tua API utilizzando il segreto e l'ID client.  
+In questa esercitazione, hai imparato come configurare il meccanismo di identificazione, verificare le modifiche apportate alla tua API e richiamato la tua API utilizzando il segreto e l'ID client. 
 
 ---
 

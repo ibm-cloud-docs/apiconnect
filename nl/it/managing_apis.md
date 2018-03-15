@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-12-15"
 
 ---
 
@@ -16,18 +16,17 @@ lastupdated: "2017-10-19"
 # Gestione delle API
 {: #managing_apis}
 
-Puoi utilizzare API Connect per gestire le API in {{site.data.keyword.Bluemix}}, anche se sono in {{site.data.keyword.Bluemix_notm}} o conservate al di fuori di {{site.data.keyword.Bluemix_notm}}. La gestione delle API ti consente di controllare l'utilizzo, aumentare l'adozione e tenere traccia delle statistiche. 
+Puoi utilizzare API Connect per gestire le API in {{site.data.keyword.Bluemix}}, anche se sono in {{site.data.keyword.Bluemix_notm}} o conservate al di fuori di {{site.data.keyword.Bluemix_notm}}. La gestione delle API ti consente di controllare l'utilizzo, aumentare l'adozione e tenere traccia delle statistiche.
 
 Se sei un cliente, puoi gestire come
-viene utilizzato nell'interfaccia utente API Manager dopo che uno sviluppatore ha creato un'API e ha eseguito il push del prodotto a {{site.data.keyword.Bluemix_short}}. I seguenti argomenti descrivono come creare e gestire i prodotti all'interno di {{site.data.keyword.apiconnect_short}}.
-Designer.
+viene utilizzato nell'interfaccia utente API Manager dopo che uno sviluppatore ha creato un'API e ha eseguito il push del prodotto a {{site.data.keyword.Bluemix_notm}}. I seguenti argomenti descrivono come creare e gestire i prodotti all'interno di {{site.data.keyword.apiconnect_short}}.
 
-## Esposizione di API installate in loco tramite un gateway sicuro 
+## Esposizione di API installate in loco tramite un gateway sicuro
 {: #expose_apis_sec_gate}
 
 Puoi creare un gateway sicuro per esporre in sicurezza le API installate in loco in  {{site.data.keyword.apiconnect_full}}.
 
-Quando crei un gateway sicuro, integri le funzioni del servizio {{site.data.keyword.Bluemix_short}}
+Quando crei un gateway sicuro, integri le funzioni del servizio {{site.data.keyword.Bluemix_notm}}
 {{site.data.keyword.SecureGateway}} con {{site.data.keyword.apiconnect_short}}. Ciò significa che disponi di un metodo
 sicuro per accedere alle tue API installate in loco da {{site.data.keyword.apiconnect_short}} attraverso un passaggio protetto
 senza la necessità di effettuare il provisioning di un'istanza separata del servizio {{site.data.keyword.SecureGateway}}. Crei effettivamente un tunnel
@@ -60,8 +59,7 @@ Viene visualizzata la finestra di
 dialogo `Crea gateway sicuro`.
 
 4. Fornisci un nome per il gateway.
-
-**Nota:** sono consentiti solo caratteri alfanumerici e di sottolineatura.
+    **Nota:** sono consentiti solo caratteri alfanumerici e di sottolineatura.
 
 5. Fai clic su **Salva**.
 Il gateway viene visualizzato con l'ID gateway e il token di sicurezza.
@@ -80,7 +78,6 @@ del gateway sicuro`.
     - IBM DataPower&reg;
 
 8. Segui le istruzioni su schermo per installare ed eseguire il client selezionato.
-
 Per ulteriori informazioni sulla configurazione di un client del gateway sicuro, consulta
 [Impostazione di un client](../../services/SecureGateway/sg_021.html#sg_021).
 
@@ -148,7 +145,7 @@ non puoi modificare alcuna destinazione {{site.data.keyword.apiconnect_short}} c
 {{site.data.keyword.apiconnect_short}}.
 Successivamente, verifica la tua API {{site.data.keyword.SecureGateway}}.
 
-### Verifica la tua API del gateway sicuro 
+### Verifica la tua API del gateway sicuro
 {: test_sec_gate notoc}
 
 Dopo aver collegato il gateway a un'API, puoi verificare l'API per essere sicuro che il gateway
@@ -182,7 +179,7 @@ pubblica**.
 
 Vengono visualizzati i risultati della verifica.
 
-## Preparazione e pubblicazione di un'applicazione Loopback
+## Preparazione e pubblicazione di un'applicazione LoopBack
 {: #stage_publish_lb_app}
 
 1. Nel riquadro di navigazione dell'API Designer, fai clic su **Prodotti**.
@@ -190,20 +187,20 @@ Viene aperta la scheda Prodotti.
 
 2. Seleziona la versione del prodotto, accertati di fare clic sulla versione con cui vuoi lavorare.
 
-3. Per pubblicare il runtime in {{site.data.keyword.Bluemix_short}}, fai clic su **Pubblica**.
+3. Per pubblicare il runtime in {{site.data.keyword.Bluemix_notm}}, fai clic su **Pubblica**.
 
-4. Fai clic su **Aggiungi e gestisci destinazioni** > **Aggiungi destinazione IBM Bluemix**.
+4. Fai clic su **Aggiungi e gestisci destinazioni** > **Aggiungi destinazione IBM Cloud**.
 
-5. Seleziona la **Regione** {{site.data.keyword.Bluemix_short}} in cui vuoi eseguire la pubblicazione e accedi.
+5. Seleziona la **Regione** {{site.data.keyword.Bluemix_notm}} in cui vuoi eseguire la pubblicazione e accedi.
 
-6. Seleziona l'**Organizzazione** {{site.data.keyword.Bluemix_short}} in cui vuoi eseguire la pubblicazione.
+6. Seleziona l'**Organizzazione** {{site.data.keyword.Bluemix_notm}} in cui vuoi eseguire la pubblicazione.
 
 7.  Viene visualizzato un elenco di cataloghi. Seleziona il catalogo in cui vuoi eseguire la pubblicazione.
 
 8.  Fai clic su **Avanti**.
 
 9. Seleziona l'applicazione LoopBack che vuoi pubblicare.
-Se questa è la prima volta che stai distribuendo il runtime a {{site.data.keyword.Bluemix_short}}, aggiungi un nome e fai
+Se questa è la prima volta che stai distribuendo il runtime a {{site.data.keyword.Bluemix_notm}}, aggiungi un nome e fai
 clic sull'icona **Aggiungi**.
 
 10.  Fai clic su **Salva**.
@@ -248,9 +245,9 @@ Annota queste informazioni. Il profilo TLS (tls-profile) di richiamo API è semp
  
     3. Fai clic su **Pubblica**.
 
-Per verificare che la pubblicazione abbia funzionato, completa la seguente procedura: 
+Per verificare che la pubblicazione abbia funzionato, completa la seguente procedura:
 
-1. Accertati che l'applicazione {{site.data.keyword.Bluemix_short}} sia in esecuzione.
+1. Accertati che l'applicazione {{site.data.keyword.Bluemix_notm}} sia in esecuzione.
 
 2. Apri una finestra del browser e passa all'URL di destinazione API.
 L'applicazione viene protetta con la convalida client. Se non fornisci il certificato client corretto, si verificherà una condizione di errore (ciò è previsto).

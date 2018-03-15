@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-25"
+lastupdated: "2017-12-15"
 ---
 
 {:new_window: target="blank"}
@@ -55,12 +55,12 @@ sono attualmente sottoscritte. Non sono possibili nuove sottoscrizioni del prodo
 <td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">Ritirato</td>
 <td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">La versione del prodotto non può essere visualizzata o sottoscritta, e tutte le API
 associate vengono arrestate. Una versione del prodotto ritirata viene visualizzata per impostazione predefinita
-nella pagina Prodotti nell'interfaccia utente API Manager. </td>
+nella pagina Prodotti nell'interfaccia utente API Manager.</td>
 </tr>
 <tr class="style-scope doc-content doc-tr-even"><td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">Archiviato</td>
 <td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">La versione del prodotto non può essere visualizzata o sottoscritta, e tutte le API
 associate vengono arrestate. La versione del prodotto non viene visualizzata per impostazione predefinita
-nella pagina Prodotti nell'interfaccia utente API Manager. </td>
+nella pagina Prodotti nell'interfaccia utente API Manager.</td>
 </tr>
 </tbody>
 </table>
@@ -121,7 +121,7 @@ sviluppatori per cui desideri che siano visibili i piani nel prodotto.
     per cercare organizzazioni o community di sviluppatori, il nome prodotto deve essere nello stato
 di preparato, pubblicato od obsoleto. Se il catalogo in cui è preparato, pubblicato od obsoleto
 non è un catalogo sandbox, non puoi apportare altre modifiche al prodotto mentre è in uno di
-questi stati. Per ulteriori informazioni, consulta [Ciclo di vita del prodotto](#prod_lifecycle}).
+questi stati. Per ulteriori informazioni, consulta [Ciclo di vita del prodotto](#prod_lifecycle).
 
 8. Specifica gli utenti che possono sottoscrivere il prodotto. Puoi scegliere **Utenti
 autenticati ** o **Personalizzato**. Se selezioni **Personalizzato**,
@@ -205,15 +205,15 @@ versione del prodotto, accertati di fare clic sulla versione con cui vuoi lavora
 3. Fai clic sull'icona **Pubblica**.
 
 4. Se il catalogo in cui vuoi preparare il prodotto viene visualizzato nell'elenco:
-    1. Seleziona il catalogo di cui hai bisogno.  
+    1. Seleziona il catalogo di cui hai bisogno. 
     2. Seleziona **Prepara solamente (i prodotti non verranno pubblicati)**, seguito da **Pubblica**. Il tuo prodotto è stato preparato.
 
 5. Se il catalogo in cui vuoi preparare il prodotto non è visualizzato nell'elenco:
     1. Fai clic su **Aggiungi e gestisci destinazioni**.
-    2. Fai clic su **Aggiungi destinazione IBM Bluemix**.
+    2. Fai clic su **Aggiungi destinazione {{site.data.keyword.Bluemix_notm}}**.
     3. Seleziona la **Regione** {{site.data.keyword.Bluemix_short}}
 in cui vuoi eseguire la pubblicazione.
-    4. Seleziona l'**Organizzazione** {{site.data.keyword.Bluemix_short}} in cui vuoi eseguire la pubblicazione.
+    4. Seleziona l'**Organizzazione** {{site.data.keyword.Bluemix_notm}} in cui vuoi eseguire la pubblicazione.
     5. Viene visualizzato un elenco di cataloghi. Seleziona il catalogo in cui vuoi eseguire la pubblicazione.
     6. Fai clic su **Avanti**.
     7. Se hai un'applicazione LoopBack che vuoi pubblicare, seleziona l'applicazione in cui eseguire la pubblicazione.
@@ -228,7 +228,7 @@ Il tuo prodotto è stato preparato in un catalogo. Per visualizzare lo stato del
 l'interfaccia utente API Manager, seleziona la sezione Dashboard nel riquadro di navigazione e fai clic sul catalogo
 richiesto. Il prodotto viene visualizzato con uno stato di Preparato.
 
-- Apri il **Dashboard** {{site.data.keyword.Bluemix_short}}. Nella sezione Applicazioni vedrai il tile dell'applicazione.
+- Apri il **Dashboard** {{site.data.keyword.Bluemix_notm}}. Nella sezione Applicazioni vedrai il tile dell'applicazione.
 
 Apri l'API Manager per pubblicare il tuo prodotto in una community per consentire agli sviluppatori di applicazioni di accedervi nel portale sviluppatori. Per ulteriori informazioni, consulta [Pubblicazione di un prodotto](#publish_proj}).
 
@@ -269,9 +269,9 @@ inviata una richiesta di approvazione e il prodotto passa allo stato In sospeso;
 quando la richiesta viene approvata. Se non è richiesta l'approvazione, la versione del prodotto viene pubblicata
 immediatamente e passa allo stato Pubblicato.
 
-Il tuo prodotto è nello stato Pubblicato.Il tuo prodotto viene pubblicato nel tuo catalogo ed è
-disponibile per le organizzazioni o le community da te specificate. Gli sviluppatori delle applicazioni nei gruppi da te selezionati
-possono vedere e utilizzare le API contenute nel prodotto.Tutte le richieste di sviluppatori
+Il tuo prodotto è nello stato Pubblicato. Il tuo prodotto viene pubblicato nel tuo catalogo ed è
+disponibile per le organizzazioni o le community da te specificate. Gli sviluppatori delle applicazioni nei
+gruppi da te selezionati possono vedere e utilizzare le API contenute nel prodotto. Tutte le richieste di sviluppatori
 di applicazioni di utilizzare il tuo prodotto sono visualizzate nella scheda Approvazioni nel catalogo contenitore, dove puoi
 rifiutarle o accettarle.
 
@@ -294,7 +294,7 @@ che punta alla nuova applicazione. Per ulteriori informazioni su come eseguire t
     - Nome visualizzazione
     - Nome
 	
-3. Seleziona il catalogo da te creato. 
+3. Seleziona il catalogo da te creato.
 
 4. Fai clic sull'icona **Impostazioni**.
 
@@ -309,16 +309,16 @@ e seleziona **SAML**.
 
 7. Nel riquadro di navigazione, fai clic sull'icona **Sviluppatori**.
 
-8. Fai clic su **Aggiungi organizzazione Bluemix**.
+8. Fai clic su **Aggiungi organizzazione IBM Cloud**.
 
 9. Aggiungi il tuo indirizzo email di utente {{site.data.keyword.Bluemix_short}} e fai clic su **Aggiungi**.
 
-10. Viene inviato un invito al tuo indirizzo email. 
+10. Viene inviato un invito al tuo indirizzo email.
 
 11. Fai clic sul link nell'email per accettare l'invito.
-Viene aperta l'interfaccia utente {{site.data.keyword.Bluemix_short}}.
+Viene aperta l'interfaccia utente {{site.data.keyword.Bluemix_notm}}.
 
-12. Seleziona la tua organizzazione {{site.data.keyword.Bluemix_short}} e fai clic su **Conferma**.
+12. Seleziona la tua organizzazione {{site.data.keyword.Bluemix_notm}} e fai clic su **Conferma**.
 
 13. Nell'interfaccia utente API Manager, fai clic sull'icona **Prodotti**.
 

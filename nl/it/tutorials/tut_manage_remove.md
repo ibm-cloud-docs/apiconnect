@@ -12,7 +12,7 @@ lastupdated: "2017-10-10"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Archiviazione ed eliminazione dei prodotti API 
+# Archiviazione ed eliminazione dei prodotti API
 **Durata**: 15 minuti  
 **Livello di competenza**: Principiante 
 
@@ -27,7 +27,7 @@ lastupdated: "2017-10-10"
 In questa esercitazione, eliminerai, archivierai e ritirerai un'API.
 
 ---
-## Eliminazione di un prodotto API 
+## Eliminazione di un prodotto API
 1. Accedi a {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://console.ng.bluemix.net/login){:new_window}.
 
 2. Nel dashboard {{site.data.keyword.Bluemix_short}}, avvia il servizio {{site.data.keyword.apiconnect_short}}.
@@ -88,7 +88,7 @@ In questa esercitazione, eliminerai, archivierai e ritirerai un'API.
 ## Cosa hai fatto in questa esercitazione
 In questa esercitazione, hai completato le seguenti attività:
 
-1. Eliminato un prodotto API
+1. Eliminato un prodotto API 
 2. Ritirato un prodotto API
 3. Archiviato un prodotto API
 4. Annullata l'archiviazione di un prodotto API

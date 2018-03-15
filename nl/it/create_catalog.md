@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-07-07"
+lastupdated: "2017-10-24"
 ---
 
 {:new_window: target="blank"}
@@ -28,7 +28,7 @@ Viene visualizzata la finestra **Aggiungi catalogo**.
 
 4. Immetti il testo che desideri formi il segmento del catalogo dell'URL, nel campo
 **Nome**.
-**NOTA:** Il campo **Nome** può contenere solo caratteri alfanumerici minuscoli (a-z
+	**NOTA:** Il campo **Nome** può contenere solo caratteri alfanumerici minuscoli (a-z
 e 0-9) o i caratteri trattino (-). Un trattino non può essere utilizzato come primo o ultimo carattere nel nome.
 
 5. Fai clic su **Aggiungi**. Il tuo catalogo è stato creato e viene visualizzato nel tuo dashboard.
@@ -38,16 +38,17 @@ e 0-9) o i caratteri trattino (-). Un trattino non può essere utilizzato come p
 Se selezioni la modalità di sviluppo, le azioni di preparazione e pubblicazione vengono forzate, il che significa
 che se ripubblichi un prodotto precedentemente pubblicato, viene sovrascritto senza alcun avvertimento. Se vengono trovati dei conflitti,
 vengono automaticamente risolti dal sistema. L'azione di annullamento della pubblicazione si verifica automaticamente.
-**Nota:** le caselle di approvazione non vengono visualizzate per i cataloghi di sviluppo. Non puoi abilitare il processo di approvazione
+	**Nota:** le caselle di approvazione non vengono visualizzate per i cataloghi di sviluppo. Non puoi abilitare il processo di approvazione
 per i cicli di vita.
   2. Se desideri abilitare la sottoscrizione automatica per il catalogo, seleziona **Sottoscrizione automatica**.
-L'abilitazione della sottoscrizione automatica rende la verifica delle tue API più semplice perché viene utilizzata un'applicazione di verifica,
-con un segreto e un ID client preforniti, che vengono automaticamente sottoscritti a tutti i piani nel catalogo,
-in questo modo non devi specificare un piano o un'applicazione quando esegui la
-verifica.**Nota:** la sottoscrizione automatica è disponibile solo per un catalogo di sviluppo.
+L'abilitazione della sottoscrizione automatica rende più semplice l'esecuzione
+dei test delle tue API in quanto viene utilizzata un'applicazione di test
+con un segreto e un ID client preforniti. L'applicazione di test viene automaticamente sottoscritta a tutti i piani nel catalogo,
+in questo modo non devi specificare un piano o un'applicazione quando esegui la verifica.
+    **Nota:** la sottoscrizione automatica è disponibile solo per un catalogo di sviluppo.
   3. Se il catalogo è il catalogo di preparazione predefinito, seleziona **Predefinito**. Quindi,
-il richiamo delle API pubblicate nel catalogo può utilizzare un URL più breve che non include il nome del catalogo
-    **Nota:** Puoi selezionare **Predefinito** solo per un catalogo.
+il richiamo delle API pubblicate nel catalogo può utilizzare un URL più breve che non include il nome del catalogo.
+    **Nota:** puoi selezionare **Predefinito** solo per un catalogo.
   4. **Facoltativo**: fai clic su **Endpoint** e riempi i seguenti campi:
         - **URL gateway personalizzato**: nel campo di testo URL gateway personalizzato immetti un URL. Utilizza l'URL gateway personalizzato se desideri
 archiviare il branding personalizzato degli URL per le API distribuite a {{site.data.keyword.apiconnect_short}},
@@ -61,13 +62,13 @@ ha il seguente formato:
 puoi sovrascrivere il valore predefinito specificando un URL più appropriato per la tua azienda;
 ad esempio, `https://api.mycompany.com`. Ogni endpoint API visualizzato nel portale sviluppatori
 rifletterà quindi l'URL specificato.
-        **Note:**
+			**Note:**
 		    - Devi configurare una voce DNS che associa i tuoi nome host e dominio personalizzati all'URL gateway predefinito.
 		    - In modo che gli endpoint di un'API riflettano il tuo URL gateway personalizzato, devi configurare l'API
-in modo che venga forzata dal gateway di API Connect. Per ulteriori informazioni, vedi [Specifying an alternative host for an API](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step).
+in modo che venga forzata dal gateway di API Connect. Per ulteriori informazioni, vedi [Specifying an alternative host for an API ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
 		    - Assicurati che lo stesso URL gateway personalizzato non sia applicato a più cataloghi poiché il comportamento
 in tale caso non è definito.
-	        **SUGGERIMENTO**: quando chiami l'API, puoi anche impostare l'intestazione host HTTP della richiesta API
+				**SUGGERIMENTO**: quando chiami l'API, puoi anche impostare l'intestazione host HTTP della richiesta API
 sul valore che hai specificato nel campo URL gateway personalizzato.
 
 	    - **URL API personalizzato**
@@ -86,7 +87,7 @@ sul gateway. Gli endpoint derivati dall'URL API personalizzato sono normalmente 
 sviluppatori di produzione per annunciare l'indirizzo dell'API.
 
 	    **Nota:** se specifici un URL API personalizzato per un catalogo, ha la precedenza su tutti i nomi host che specifichi
-quando configuri l'API. Per ulteriori informazioni, vedi [specifying an alternative host for an API](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step).
+quando configuri l'API. Per ulteriori informazioni, vedi [Specifying an alternative host for an API ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
 
 	    - **Nome host per le chiamate API del portale sviluppatori**:
 	    nell'area della finestra dell'endpoint API della porta, immetti un nome host per le chiamate API del portale sviluppatori. Il nome host
@@ -117,4 +118,4 @@ navigazione. Puoi gestire i tuoi spazi facendo clic su questi link.
 
 Gli spazi vengono abilitati per il tuo catalogo e viene creato un spazio predefinito denominato nuovo spazio.
 
-Per ulteriori informazioni sull'utilizzo della diffusione, consulta gli argomenti del Knowledge Center, [Using syndication in IBM API Connect](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html).
+Per ulteriori informazioni sull'utilizzo della diffusione, consulta gli argomenti del Knowledge Center, [Using syndication in IBM API Connect ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}.

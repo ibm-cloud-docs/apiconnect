@@ -10,7 +10,7 @@ lastupdated: "2017-07-11"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Esplorazione di API e prodotti 
+# Esplorazione di API e prodotti
 {: #explore_prods_apis}
 
 1. Per visualizzare le API che sono state condivise con la tua organizzazione {{site.data.keyword.Bluemix_short}} vai alla schermata di destinazione delle API e fai clic su
@@ -37,13 +37,13 @@ l'API richiesta e fai quindi clic sull'API.
     - Nella sezione Operazioni API, fai clic su **Percorsi** e fai clic sull'operazione per
 cui vuoi visualizzare il codice di esempio.
     - Fai clic sulla scheda dell'operazione per espandere e visualizzare i dettagli a essa relativi, compresi gli esempi di codice. Puoi
-visualizzare il codice di esempio per la tua operazione in diversi linguaggi. 
+visualizzare il codice di esempio per la tua operazione in diversi linguaggi.
 
 Per verificare un'API, completa la seguente procedura.
 1. Fai clic su **API**.
 Vengono visualizzate tutte le API che possono essere utilizzate dagli sviluppatori di applicazioni.
 
-2. fai clic sul nome dell'API che vuoi verificare.
+2. Fai clic sul nome dell'API che vuoi verificare.
 
 3. Trova l'operazione con cui vuoi lavorare sotto l'intestazione `Operazioni API`.
 

@@ -65,7 +65,7 @@ l'applicazione LoopBack viene distribuita al runtime {{site.data.keyword.Bluemix
 
 Per ulteriori informazioni sulle attività necessarie per creare le API, consulta [Creazione di API](creating_apis.html).
 
-## Panoramica della gestione delle API  
+## Panoramica della gestione delle API
 
 Dopo che un prodotto è stato preparato e pubblicato, puoi aprire l'API Manager per gestire la sicurezza, i limiti di frequenza e le politiche e pubblicare quindi il prodotto in un portale sviluppatori.
 

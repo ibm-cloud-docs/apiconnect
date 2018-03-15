@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-28"
 
 ---
 
@@ -24,13 +24,16 @@ lastupdated: "2017-10-19"
 
 Questa esercitazione di guida nella creazione di un'API in Node.js utilizzando il framework LoopBack. L'esercitazione descrive come:
 1. Creare un nuovo progetto LoopBack.
-2. Aggiungere un nuovo modello e una nuova origine dati a un progetto LoopBack utilizzando API Designer nel toolkit {{site.data.keyword.apiconnect_short}}.
+2. Aggiungere un nuovo modello e una nuova origine dati a un progetto LoopBack utilizzando API Designer nel toolkit {{site.data.keyword.apiconnect_full}}.
 3. Verificare i tuoi endpoint API utilizzando lo strumento API Designer Explore.
 
 ---
 ## Prerequisiti
 
-Prima di iniziare, [installa il toolkit {{site.data.keyword.apiconnect_short}}](tut_prereq_install_toolkit.html).
+Prima di iniziare, [installa il toolkit {{site.data.keyword.apiconnect_short}}](tut_prereq_install_toolkit.html). Se il toolkit è già installato, assicurati che stai eseguendo la versione 5.0.8.1 o successiva. Puoi verificarlo immettendo il seguente comando nella riga di comando:
+	```
+	apic -v
+	```
 
 ---
 ## Crea progetto LoopBack.
@@ -88,7 +91,7 @@ Per creare un LoopBack utilizzando API Designer, completa la seguente procedura:
 	```
 	![](images/api-designer-1.png)
 	>![info]
-	>Il precedente comando inizializza il toolkit dell'API e avvia API Designer nel browser predefinito quando eseguito.
+	>Il precedente comando inizializza il toolkit {{site.data.keyword.apiconnect_short}} e avvia API Designer nel browser predefinito quando eseguito.
 	>![info]
 	>In questa esercitazione, creerai un progetto denominato weather-data.
 2.  Se non hai precedentemente bloccato il riquadro di navigazione della IU, fai clic sull'icona Navigate to ![](images/navigate-to.png). Viene aperto il pannello di navigazione della IU API Manager. Per bloccare il pannello di navigazione della IU, fai clic sull'icona del menu Pin ![](images/pinned.png).
@@ -132,7 +135,7 @@ Per aggiungere una nuova origine dati a un progetto LoopBack utilizzando API Des
 	```
 	API Designer viene aperto nel browser web predefinito, visualizzando inizialmente la pagina di accesso se non hai eseguito il login di recente.  
 	>![info]
-	>Puoi accedere utilizzando il tuo account Bluemix o crearne uno.
+	>Puoi accedere utilizzando il tuo account {{site.data.keyword.Bluemix}} o crearne uno.
 3. Fai clic sull'icona **Data Sources** ![](images/datasource-icon.png).
 4. Fai clic su **Add**. Viene visualizzata la finestra New LoopBack Data Source.
 5. Immetti `weatherDS` nel campo di testo **Name**.
@@ -156,9 +159,9 @@ Per aggiungere un nuovo modello a un progetto LoopBack utilizzando API Designer,
 5. In **Properties**, fai clic sull'icona **Add property** ![](images/add-icon.png).
 6. Nel campo di testo **Property Name**, immetti `zip_code`.
 7. Per **Type**, seleziona **number**.
-8. Seleziona **Required** per rendere la proprietà obbligatoria. Questo significa che deve avere un valore quando aggiungi o aggiorni l'istanza del modello. Per ora, mantieni i valori predefiniti per le altre impostazioni:
+8. Seleziona **Required** per rendere la proprietà obbligatoria. Questo significa che deve avere un valore quando aggiungi o aggiorni l'istanza del modello. 
+9. Seleziona **ID** per assicurarti che la proprietà abbia un identificativo univoco. Per ora, mantieni i valori predefiniti per le altre impostazioni:
 	- **Is Array**: se la proprietà è un array JavaScript con elementi del tipo specificato.
-	- **ID**: se la proprietà è un identificativo univoco.
 	- **Index**: se la proprietà rappresenta una colonna (campo) che è un indice del database.
 	- **Description**: descrizione del testo della proprietà.
 9. Fai nuovamente clic sull'icona **Add property** ![](images/add-icon.png) per aggiungere un'altra proprietà.  Fai riferimento alla seguente tabella per completare le proprietà rimanenti:
@@ -205,14 +208,20 @@ Per verificare i tuoi endpoint API utilizzando lo strumento API Designer Explore
 	>Per riavviarlo, fai clic sull'icona **Restart the servers** ![](images/restart-icon.png):
 	>![](images/restart-server-1.png)
 	
-4. Fai clic sull'icona **Explore** ![](images/explore-icon.png) per visualizzare lo strumento API Designer Explore. La barra laterale mostra tutte le operazioni REST per i modelli LoopBack nell'API. I modelli che sono basati su PersistedModel dispongono di [standard set of create, read, update, and delete operations ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){:new_window}.
+4. Fai clic sull'icona **Explore** ![](images/explore-icon.png) per visualizzare lo strumento API Designer Explore. La barra laterale mostra tutte le operazioni REST per i modelli LoopBack nell'API. I modelli che sono basati su PersistedModel dispongono di una [serie standard di operazioni di creazione, lettura, aggiornamento ed eliminazione ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){:new_window}.
 
 5. Fai clic sull'operazione **weather.create** nel pannello di sinistra per visualizzare l'endpoint.
 ![](images/explore-test-1.png)
 Il pannello centrale visualizza le informazioni di riepilogo sull'endpoint, inclusi i parametri, la sicurezza, i dati dell'istanza del modello e i codici di risposta. Il pannello di destra fornisce il codice del template per richiamare l'endpoint utilizzando il comando curl e i linguaggi come Ruby, Python, Java e Node.
 
-6. Per verificare gli endpoint REST nello strumento API Designer Explore, nel pannello di destra fai clic su **Try it**. Scorri fino a **Parameters** e fai clic su **Generate** per generare alcuni dati fittizi. Per impostazione predefinita, i dati generati includono le proprietà `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low`, `tonight_humidity_high` e `id`. La proprietà `id` viene creata da LoopBack per un modello fornito e il valore viene generato automaticamente. Rimuovi la proprietà `id` dai dati di esempio, aggiorna i dati generati come richiesto e fai clic su **Call operation**.
-![](images/explore-test-2.png)
+6. Per verificare gli endpoint REST nello strumento API Designer Explore, completa la seguente procedura:
+    1. Nel pannello di destra, fai clic su **Try it**. 
+	
+	2. Scorri fino a **Parameters** e fai clic su **Generate** per generare alcuni dati fittizi. Per impostazione predefinita, i dati generati includono le proprietà `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low` e `tonight_humidity_high`.
+	
+	3. Fai clic su **Call operation**.
+	![](images/explore-test-2.png)
+	
 >![troubleshooting]
 >Se visualizzi un messaggio di errore dovuto a un certificato non attendibile per l'host locale, fai clic sul link fornito nel messaggio di errore nello strumento API Designer Explore per accettare il certificato e procedi con il richiamo delle operazioni nel tuo browser web. La procedura esatta dipende da quale browser web stai utilizzando. Se carichi gli endpoint REST direttamente nel tuo browser, visualizzerai il messaggio: {"name":"PreFlowError","message":"unable to process the request"}. Devi utilizzare lo strumento API Designer Explore per verificare gli endpoint REST nel tuo browser perché include le intestazioni necessarie e altri parametri obblgiatori.
 >
@@ -220,7 +229,7 @@ Il pannello centrale visualizza le informazioni di riepilogo sull'endpoint, incl
 >Se ricevi un codice di risposta di **422 - Unprocessable Entity** con il seguente payload:
 >![](images/explore-test-3.png)
 >
->l'elemento dati `id` non è stato rimosso dai dati generati. Rimuovi l'elemento dati `id` e riesegui il test.
+>assicurati che non sia presente un elemento dati `id` che non è stato rimosso dai dati generati. Se è presente un elemento ID, rimuovilo e riesegui la verifica.
 >![troubleshooting]
 >Se ricevi un errore **failed to parse request body**, devi rimuovere la virgola che segue l'ultimo numero `humidity_high`.
 7. Modifica i valori nel JSON mostrati nella sezione **data**. Tenta di modificare i dati fittizi generati e fai clic nuovamente su **Call operation**. Dovresti visualizzare i parametri di richiesta e risposta, insieme ai dati dell'istanza JSON che hai immesso.

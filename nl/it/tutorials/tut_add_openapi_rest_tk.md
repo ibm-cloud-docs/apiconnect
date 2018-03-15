@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-11-02"
 ---
 
 {:new_window: target="blank"}
@@ -15,7 +15,7 @@ lastupdated: "2017-10-19"
 **Livello di competenza**: Principiante  
 
 ## Obiettivo
-Questa esercitazione ti aiuta ad iniziare ad utilizzare velocemente {{site.data.keyword.apiconnect_short}} illustrando come puoi portare la tua API esistente nel controllo di gestione. Inizierai creando una nuova specifica OpenAPI e poi creando un proxy API passthrough per un servizio REST esistente. 
+Questa esercitazione ti aiuta ad iniziare ad utilizzare velocemente {{site.data.keyword.apiconnect_full}} illustrando come puoi portare la tua API esistente nel controllo di gestione. Inizierai creando una nuova specifica OpenAPI e poi creando un proxy API passthrough per un servizio REST esistente.
 
 ## Prerequisito
 Prima di iniziare, dovrai [configurare la tua istanza API Connect](tut_prereq_set_up_apic_instance.html) e [installare il toolkit API Connect](tut_prereq_install_toolkit.html).
@@ -39,7 +39,7 @@ Prima di iniziare, dovrai [configurare la tua istanza API Connect](tut_prereq_se
 
 ---
 
-## Aggiungi una nuova specifica OpenAPI e richiama un servizio REST esistente 
+## Aggiungi una nuova specifica OpenAPI e richiama un servizio REST esistente
 1. Avvia **API Designer**. Nel tuo terminale, immetti `apic edit`.
 2. Accedi utilizzando il tuo ID IBM.
     ![](images/screenshot_apic-edit_login.png)
@@ -53,7 +53,7 @@ Prima di iniziare, dovrai [configurare la tua istanza API Connect](tut_prereq_se
 
 8. Scorri fino al pannello **Host**. Immetti `$(catalog.host)` come valore se il campo non viene compilato automaticamente.
 
-9. Scorri fino alla scheda **Security** e elimina il valore "clientIDHeader (API Key)" che è stato generato automaticamente.   
+9. Scorri fino alla scheda **Security** e elimina il valore "clientIDHeader (API Key)" che è stato generato automaticamente.  
 _(Visiteremo la sicurezza con le chiavi API nella prossima esercitazione.)_  
 
 10. Nel pannello **Paths** crea un nuovo percorso facendo clic su **+**.
@@ -71,7 +71,7 @@ _(Visiteremo la sicurezza con le chiavi API nella prossima esercitazione.)_
 
   1. Aggiungi una nuova definizione. 
   2. Denomina la nuova definizione con _Current_.
-  3. Imposta il tipo di _Object_. 
+  3. Imposta il tipo di _Object_.
   4. Aggiungi nuove proprietà per la definizione **Current**.
     - Nome: codice postale         /  Tipo: stringa
     - Nome: temperatura /  Tipo: numero intero
@@ -117,12 +117,12 @@ _(Visiteremo la sicurezza con le chiavi API nella prossima esercitazione.)_
       - Aggiungi un nuovo caso: **case 1**.
       - Assegna l'operazione **get /today** a **case 1**.
       ![](images/assemble-1.png)
-    **Operation Switch** fornisce un punto di decisione. In base alla coppia verbo/percorso, deve essere richiamata l'operazione appropriata.   
-    c. Trascina la politica **invoke** dalla tavolozza e rilasciala nel canvas. Rilascia un'azione di richiamo nel percorso **/get current** e una in **/get today**. 
+    **Operation Switch** fornisce un punto di decisione. In base alla coppia verbo/percorso, deve essere richiamata l'operazione appropriata.  
+    c. Trascina la politica **invoke** dalla tavolozza e rilasciala nel canvas. Rilascia un'azione di richiamo nel percorso **/get current** e una in **/get today**.
     d. Seleziona la politica **invoke** nel percorso **/get current** e aggiornane il titolo con "**invoke-current**".  
-    e. Aggiorna il campo URL con: `https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`.
+    e. Aggiorna il campo URL con: `https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`.
     f. Seleziona la politica **invoke** nel percorso **/get today** e aggiornane il titolo con "**invoke-today**".  
-    g. Aggiorna il campo URL con: `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`.  
+    g. Aggiorna il campo URL con: `https://myweatherprovider.mybluemix.net/today?zipcode=$(request.parameters.zipcode)`.  
 
 20. Salva la tua API.
 
@@ -140,7 +140,7 @@ _(Visiteremo la sicurezza con le chiavi API nella prossima esercitazione.)_
     ![](images/screenshot_test-0.png)
 
 3. Nel pannello di verifica, seleziona l'operazione **get /current**.  
-  a. Codice postale è un parametro obbligatorio per questa operazione, per cui immetti un codice postale U.S. valido (ad esempio, 90210).   
+  a. Codice postale è un parametro obbligatorio per questa operazione, per cui immetti un codice postale U.S. valido (ad esempio, 90210).  
   b. Fai clic su **invoke** e verifica di visualizzare:
   ```
   200 OK response

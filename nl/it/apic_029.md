@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-28"
+lastupdated: "2018-02-12"
 
 ---
 
@@ -15,6 +15,11 @@ lastupdated: "2017-09-28"
 # Novità
 
 {{site.data.keyword.apiconnect_full}} include i seguenti miglioramenti:
+
+- **Elimina gli account utente e le organizzazioni di sviluppatori nel portale sviluppatori**: puoi eliminare il tuo account utente e le tue organizzazioni di sviluppatori nel portale sviluppatori. Puoi anche modificare la proprietà delle tue organizzazioni di sviluppatori. Per ulteriori informazioni, vedi [Deleting your Developer account ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_account.html){:new_window}, [Deleting a Developer organization ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_delete_dev_org.html){:new_window} e [Changing the ownership of a Developer organization ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/tapic_portal_dev_org_ownership.dita){:new_window}.
+
+- __Aggiunto il campo evento API *endpoint_url*__: il campo record eventi *endpoint_url* identifica il proxy o l'URL
+di destinazione di richiamo per cui la richiesta ha avuto esito negativo. Consulta [Deleting your Developer account ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/rapim_analytics_apieventrecordfields.html){:new_window} per ulteriori informazioni.</dd>
 
 - **Aggiunto il supporto e un riferimento per le API REST del portale sviluppatori per le analisi**: le API REST del portale sviluppatori ti aiutano nell'analisi delle tue API del catalogo. Per ulteriori informazioni, consulta [Analytics ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apirest.doc/analytics.html){:new_window}.
 

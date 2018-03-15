@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-09-12"
+lastupdated: "2017-10-31"
 ---
 
 {:new_window: target="blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-09-12"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Impostazione e configurazione del portale sviluppatori 
+# Impostazione e configurazione del portale sviluppatori
 **Durata**: 30 minuti  
 **Livello di competenza**: Principiante  
 
@@ -22,15 +22,15 @@ Questa esercitazione di aiuterà ad iniziare a configurare velocemente il tuo **
 
 ---
 
-## Crea il tuo portale sviluppatori 
+## Crea il tuo portale sviluppatori
 In questa sezione, creerai un portale sviluppatori per un catalogo.
 
 *Cataloghi* è un termine di IBM per ambienti diversi. Ad esempio, puoi creare diversi cataloghi per gli ambienti di test, preparazione e produzione. Dovresti avere un catalogo denominato Sandbox. Sentiti libero di utilizzare questo catalogo per creare il tuo portale sviluppatori o crea un nuovo catalogo e denominalo come preferisci.
 
-1. Nel tuo dashboard Bluemix, seleziona il tuo servizio **API Connect** per avviare il dashboard API.
+1. Nel tuo dashboard {{site.data.keyword.Bluemix_short}}, seleziona il tuo servizio **API Connect** per avviare il dashboard {{site.data.keyword.apiconnect_short}}.
 ![Servizio API Connect](images/11-Bluemix-Dashboard.png)
 
-2. Nel dashboard API Connect, seleziona il catalogo da cui desideri creare un portale sviluppatori. Ad esempio, **Sandbox**.
+2. Nel dashboard {{site.data.keyword.apiconnect_short}}, seleziona il catalogo per cui desideri creare un portale sviluppatori. Ad esempio, **Sandbox**.
 ![Catalogo](images/12-APIC-Dashboard.png)
 
 3. Nel catalogo, seleziona la scheda **Settings**.  
@@ -50,7 +50,7 @@ In questa sezione, creerai un portale sviluppatori per un catalogo.
 
 ---
 
-## Esplora il tuo portale sviluppatori 
+## Esplora il tuo portale sviluppatori
 In questa sezione, prenderai familiarità con il portale sviluppatori che hai creato nei passi precedenti.
 
 1. Dopo aver configurato il portale sviluppatori per il tuo catalogo, riceverai un'email con un link per un accesso monouso. Seleziona il link per avviare il portale sviluppatori.
@@ -79,7 +79,7 @@ Nota: nella pagina API Products, puoi selezionare uno dei prodotti per visualizz
   ![Prodotti API](images/27-api-products.png)
 
 ### Conclusioni
-In questa esercitazione hai imparato come configurare il tuo portale sviluppatori API Connect. Hai anche esplorato il portale sviluppatori.
+In questa esercitazione hai imparato come configurare il tuo portale sviluppatori {{site.data.keyword.apiconnect_short}}. Hai anche esplorato il portale sviluppatori.
 
 ---
 

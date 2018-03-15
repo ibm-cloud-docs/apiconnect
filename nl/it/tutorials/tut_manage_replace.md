@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-19"
+lastupdated: "2017-10-31"
 
 ---
 
@@ -39,7 +39,7 @@ In questa esercitazione, aggiornerai un prodotto API esistente sostituendolo con
 
 1. Accedi a {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://console.ng.bluemix.net/login){:new_window}.
 
-2. Nel dashboard {{site.data.keyword.Bluemix_short}}, avvia il servizio {{site.data.keyword.apiconnect_short}}.
+2. Nel dashboard {{site.data.keyword.Bluemix_notm}}, avvia il servizio {{site.data.keyword.apiconnect_short}}.
 ![](images/Bluemix.png)
 
 3. In API Manager, se non hai precedentemente bloccato il riquadro di navigazione della IU fai clic sull'icona **Navigate to** ![](images/navigate-to.png). Viene aperto il pannello di navigazione della IU API Manager. Per bloccare il pannello di navigazione della IU, fai clic sull'icona **Pin menu** ![](images/pinned.png).
@@ -63,7 +63,7 @@ In questa esercitazione, aggiornerai un prodotto API esistente sostituendolo con
 10.	Seleziona **Weather Provider API Product**.  
 ![](images/rep-draft-prod-list.png)
 
-11.	Modifica **Version** con 2.0.0. Immetti `Updated API` nel campo **Description**. Fai clic sull'icona disco per salvare le modifiche.   
+11.	Modifica **Version** con 2.0.0. Immetti `Updated API` nel campo **Description**. Fai clic sull'icona disco per salvare le modifiche.  
 ![](images/rep-update-prod.png)
 
 12.	Fai clic sull'icona **Stage** per caricare la nuova versione. Seleziona il catalogo **Sandbox** se non lo è già.
@@ -88,8 +88,8 @@ In questa esercitazione, aggiornerai un prodotto API esistente sostituendolo con
 ![](images/rep-replace-dialog-2.png)
 
     Come risultato di questa sostituzione, il prodotto API Weather Provider 1.0.0 viene ritirato e viene pubblicato il prodotto API Weather Provider 2.0.0. **Nota**: è possibile modificare il piano associato a questo prodotto durante il processo di sostituzione. Questo è un modo veloce di modificare il piano di un prodotto API.
- ![](images/rep-prod-retired.png)
-
+ ![](images/rep-prod-retired.png) 
+ 
 
 ## Cosa hai fatto in questa esercitazione
 
