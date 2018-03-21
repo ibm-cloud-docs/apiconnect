@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-31"
+lastupdated: "2018-03-15"
 
 ---
 
@@ -28,9 +28,9 @@ Selecione uma das caixas a seguir para visualizar o tutorial para esse tópico. 
 
 | Criar uma API | Gerenciar uma API existente | Descobrir APIs | Configurar um Portal do Desenvolvedor | 
 |---------------|------------------------|---------------|-----------------|
-| <a href="tutorials/tut_create_api_node.html"> <img src="/images/art_create_api_node.png" width="200" alt="Criando uma API com Node.js" /></a> | <a href="tutorials/tut_rest_landing.html"> <img src="/images/art_manage_rest_service.png" width="200" alt="Manage a REST service" /></a> | <a href="tutorials/tut_discover_apis.html"> <img src="/images/art_discover_apis.png" width="200" alt="Discovering APIs" /></a> | <a href="tutorials/tut_config_dev_portal.html">
-<img src="/images/art_configure_dev_portal.png" width="200" alt="Configurando seu Portal do Desenvolvedor" /></a> | 
+| <a href="tutorials/tut_create_api_node.html"> <img src="/images/art_create_api_node.png" width="200" alt="Criando uma API com Node.js" /></a> | <a href="tutorials/tut_rest_landing.html"> <img src="/images/art_manage_rest_service.png" width="200" alt="Manage a REST service" /></a> | <a href="tutorials/tut_discover_apis.html"> <img src="/images/art_discover_apis.png" width="200" alt="Discovering APIs" /></a> | <a href="tutorials/tut_config_dev_portal.html"> <img src="/images/art_configure_dev_portal.png" width="200" alt="Configurando seu Portal do Desenvolvedor" /></a> |
 | | <a href="tutorials/tut_manage_soap_api.html"> <img src="/images/art_manage_soap_service.png" width="200" alt="Manage a SOAP service" /></a> | | |
+
 {: caption="Tutoriais de introdução do serviço IBM Cloud API Connect" caption-side="top"}
 
 ## Visão geral do API Connect
