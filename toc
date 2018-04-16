@@ -46,6 +46,8 @@ API Connect
 	create_catalog.md
 	
 	explore_apis.md
+	
+	try_next.md
 						
 	apic_troubleshoot.md
 		
@@ -57,4 +59,5 @@ API Connect
 	    [IBM Knowledge Center: IBM API Connect Version 5.0 landing page](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/mapfiles/getting_started.html){: new_window}
 		[IBM Knowledge Center: IBM API Connect for IBM Cloud components](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.overview.doc/capim_overview_apiconnectcomponents.html){: new_window}
 		[IBM Knowledge Center: IBM API Connect for IBM Cloud concepts](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.overview.doc/capim_overview_apiconnectconcepts.html){: new_window}
+		[IBM Knowledge Center: IBM API Connect Version 2018 landing page](https://www.ibm.com/support/knowledgecenter/SSMNED_2018/mapfiles/getting_started.html){: new_window}
 			
