@@ -24,7 +24,7 @@ API Manager で、既存の SOAP サービスにアクセスしてそのサー�
 ## 前提条件
 1. 始める前に、[{{site.data.keyword.apiconnect_full}} インスタンスのセットアップ](tut_prereq_set_up_apic_instance.html)が必要です。
 2. 始める前に、[weatherprovider.wsdl テスト ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} ファイルをローカル・ファイル・システムにコピーしてください。
-	>![images/info.png]
+>![images/info.png]
 	>**「未加工 (Raw)」**をクリックし、結果のページを `.wsdl` ファイルとしてローカル・システムに保存することもできます。
 
 ---

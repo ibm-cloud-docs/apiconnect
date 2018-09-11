@@ -218,7 +218,7 @@ beschrieben abrufen.
     1. Klicken Sie auf **APIs**.
     2. Wählen Sie Ihre API aus.
     3. Klicken Sie auf **Assemblieren**.
-    4. Klicken Sie im Assemblierungseditor auf das Symbol **Filterrichtlinien**.
+    4. Klicken Sie im Assembly-Editor auf das Symbol **Filterrichtlinien**.
     5. Wählen Sie **DataPower-Gateway-Richtlinien** aus.
     6. Klicken Sie auf **Speichern**, um die API zu speichern.
 

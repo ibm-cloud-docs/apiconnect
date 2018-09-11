@@ -180,7 +180,7 @@ API にゲートウェイを添付した後、API をテストして、ゲート
 
 13. コマンド・ラインに、その API の「API ターゲット URL (API Target URL)」と「API 呼び出し TLS プロファイル (API invoke tls-profile)」が指定されます。
 この情報をメモしてください。 「API 呼び出し TLS プロファイル」は常に `client:Loopback-client` ですが、「API ターゲット URL」は、以下のステップで説明する方法で取得できます。
-    ```
+```
     Deploying to Bluemix
     ...preparing project
     ...building package for deploy
@@ -260,7 +260,7 @@ API Manager に用意されているデフォルトの API URL を使用せず�
   4. **オプション**: **「エンドポイント」**をクリックして、以下のフィールドにデータを追加します。
         - **カスタム・ゲートウェイ URL**: 「カスタム・ゲートウェイ URL (Custom Gateway URL)」テキスト・フィールドに URL を入力します。 API Manager が生成したデフォルトの URL を使用せずに、{{site.data.keyword.apiconnect_short}} にデプロイされている API の URL のカスタム・ブランドを行う場合は、カスタム・ゲートウェイ URL を使用します。
         デフォルトでは、{{site.data.keyword.apiconnect_short}} ゲートウェイ URL は以下の形式です。
-        ```
+```
         https://gateway_cluster_hostname/organization_name/Catalog_name
         ```
         しかし、自社に適した URL (例えば `https://api.mycompany.com`) を指定してデフォルトをオーバーライドできます。 そうすると、開発者ポータルに表示されるすべての API エンドポイントに、指定した URL が反映されます。

@@ -164,7 +164,7 @@ en la que desea efectuar la publicación.
     4. Seleccione la **Organización** de {{site.data.keyword.Bluemix_notm}} en la que desea publicar.
     5. Se muestra una lista de catálogos. Seleccione el catálogo en el que desea efectuar la publicación.
     6. Pulse **Siguiente**.
-    7. Si tiene una aplicación de LoopBack que desea publicar, selecciónela.
+    7. Si tiene una aplicación de LoopBack que desea publicar, seleccione la app en la que desea publicar.
 De lo contrario, seleccione **Ninguno**.
     8. Pulse **Guardar**.
     9. Vuelva a pulsar **Publicar** y seleccione el destino que acaba de añadir.
@@ -209,7 +209,7 @@ organizaciones o comunidades en las que desea que esté visible el producto.
 4. Pulse **Publicar**.
     Si se necesita la aprobación para publicar productos en este catálogo, se envía una solicitud de aprobación y el producto pasa a estar en estado Pendiente; el producto se publica una vez aprobada la solicitud. Si no es necesaria la aprobación, la versión del producto se publica de inmediato y pasa a tener el estado Publicado.
 
-Su producto tiene el estado Publicado.El producto se publica en el catálogo y está disponible para las organizaciones o comunidades especificadas. Los desarrolladores de aplicaciones que están dentro de los grupos seleccionados pueden ver y utilizar las API en el producto.Las solicitudes de desarrollador de aplicaciones para utilizar su producto se visualizan en el separador Aprobaciones del catálogo que lo contiene, donde puede rechazar o aceptar la solicitud.
+Su producto tiene el estado Publicado. El producto se publica en el catálogo y está disponible para las organizaciones o comunidades especificadas. Los desarrolladores de aplicaciones que están dentro de los grupos seleccionados pueden ver y utilizar las API en el producto. Las solicitudes de desarrollador de aplicaciones para utilizar su producto se visualizan en el separador Aprobaciones del catálogo que lo contiene, donde puede rechazar o aceptar la solicitud.
 
 
 ## Publicación de un producto en Bluemix

@@ -87,8 +87,8 @@ En esta guía de aprendizaje, actualizará un producto de API existente sustituy
 18.	Seleccione **Plan predeterminado**. Pulse **Sustituir**.  
 ![](images/rep-replace-dialog-2.png)
 
-    Como consecuencia de esta sustitución, se ha retirado el Weather Provider API Product 1.0.0, y se ha publicado el Weather Provider API Product 2.0.0. **Nota**: Es posible cambiar el plan asociado con este producto durante el proceso de sustitución. Esta es una forma sencilla de alterar el plan para un producto de API. ![](images/rep-prod-retired.png)
-
+    Como consecuencia de esta sustitución, se ha retirado el Weather Provider API Product 1.0.0, y se ha publicado el Weather Provider API Product 2.0.0. **Nota**: Es posible cambiar el plan asociado con este producto durante el proceso de sustitución. Esta es una forma sencilla de alterar el plan para un producto de API. ![](images/rep-prod-retired.png) 
+ 
 
 ## Qué ha hecho en esta guía de aprendizaje
 

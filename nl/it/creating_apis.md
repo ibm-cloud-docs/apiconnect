@@ -522,15 +522,13 @@ Viene restituito il seguente output:
     5. Seleziona **Politiche DataPower Gateway**.
     6. Fai doppio clic su **richiama**.
     7. Aggiorna i seguenti campi con i valori che hai richiamato nel passo 7.
-        - **Richiama l'URL**: inserisci l'URL di destinazione API. Devi specificare il protocollo sicuro HTTPS. Ad
-esempio:
+        - **Richiama l'URL**: inserisci l'URL di destinazione API. Devi specificare il protocollo sicuro HTTPS. Ad esempio:
         ```
         https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<organizzazione Bluemix>-<spazio Bluemix>.apic.<nome dominio>$(request.path)
         ```
         Se non hai annotato questo valore, puoi richiamarlo andando all'URL di gestione restituito nel
 passo 7. Puoi anche richiamarlo accedendo a {{site.data.keyword.Bluemix_notm}} e visualizzando le informazioni sulla tua applicazione.
-        - **Profilo TLS**: inserisci profilo TLS (tls-profile) di richiamo API. Ad
-esempio:
+        - **Profilo TLS**: inserisci profilo TLS (tls-profile) di richiamo API. Ad esempio:
         ```
         client:Loopback-client
         ```

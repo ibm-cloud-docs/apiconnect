@@ -83,7 +83,7 @@ Nei precedenti esempi, potresti aver pubblicato il tuo prodotto utilizzando lo s
 
 1. Fai clic sull'icona di pubblicazione per *preparare* il prodotto nel catalogo **Sandbox**. Questa azione aggiunge le tue modifiche del prodotto della bozza al catalogo selezionato. Abbiamo bisogno di *pubblicare* le modifiche del prodotto successivamente, per renderle disponibili ai clienti tramite il portale sviluppatori.
    ![](./images/stageproduct.png) 
-2. Fai clic sul pulsante >> per aprire il menu di navigazione. 
+2. Fai clic sul pulsante >> per aprire il menu di navigazione.
 3. Seleziona il dashboard, quindi apri il catalogo **Sandbox**. Il prodotto API Weather Provider viene elencato come **Staged**.
 4. Fai clic sulle ellissi e seleziona **Publish** dal menu.
    ![](./images/publish.png) 

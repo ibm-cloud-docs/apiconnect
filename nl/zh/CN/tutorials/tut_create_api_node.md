@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-11-28"
+  years: 2018
+lastupdated: "2018-02-22"
 
 ---
 
@@ -91,7 +91,7 @@ lastupdated: "2017-11-28"
 	apic edit
 	```
 	![](images/api-designer-1.png)
-	>![参考信息]
+>![参考信息]
 	>以上命令会初始化 {{site.data.keyword.apiconnect_short}} 工具箱，并在完成后在缺省浏览器中启动 API Designer。
 	>![参考信息]
 	>在本教程中，将创建名为 weather-data 的项目。
@@ -130,7 +130,7 @@ lastupdated: "2017-11-28"
 	apic edit
 	```
 	在短暂停顿后，控制台将显示以下消息：
-```bash
+	```bash
 	Express server listening on http://127.0.0.1:9000
 	```
 	API Designer 将在缺省 Web 浏览器中打开，如果您最近未登录过，那么初始会显示登录页面。  
@@ -175,6 +175,7 @@ lastupdated: "2017-11-28"
 ## 测试 LoopBack 项目
 
 >![参考信息]
+
 	>如果完成“添加新的模型和数据源”部分后未退出 {{site.data.keyword.apiconnect_short}} Designer，那么可以直接转至下面的步骤 2。
 	
 要使用 API Designer 浏览工具测试 API 端点，请完成以下步骤：
@@ -183,7 +184,7 @@ lastupdated: "2017-11-28"
 	apic edit
 	```
 	在短暂停顿后，控制台将显示以下消息：
-```bash
+	```bash
 	Express server listening on http://127.0.0.1:9000
 	```
 	API Designer 将在缺省 Web 浏览器中打开，如果您最近未登录过，那么初始会显示登录页面。
@@ -204,7 +205,7 @@ lastupdated: "2017-11-28"
 	>要停止项目，请单击**停止服务器**图标 ![](images/stop-icon.png)：
 	>![](images/stop-server-1.png)
 	
-	>要将其重新启动，请单击**重新启动服务器** icon ![](images/restart-icon.png)：
+	>要将其重新启动，请单击**重新启动服务器**图标 ![](images/restart-icon.png)：
 	>![](images/restart-server-1.png)
 	
 4. 单击**浏览**图标 ![](images/explore-icon.png) 以查看 API Designer 浏览工具。侧边栏将显示 API 中 LoopBack 模型的所有 REST 操作。缺省情况下，基于 PersistedModel 的模型有[一组标准的创建、读取、更新和删除操作 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){:new_window}。
@@ -214,12 +215,12 @@ lastupdated: "2017-11-28"
 中间窗格显示有关端点的摘要信息，包括其参数、安全性、模型实例数据和响应代码。右侧窗格提供使用 curl 命令以及 Ruby、Python、Java 和 Node 等语言调用端点的模板代码。
 
 6. 要在 API Designer 浏览工具中测试 REST 端点，请完成以下步骤：
-    1. 在右侧窗格中，单击**试用**。 
+    1. 在右侧窗格中，单击**试用**。如果有 `id` 数据元素，请先将其从生成的数据中除去，然后运行测试。 
 	
 	2. 向下滚动到**参数**，然后单击**生成**以生成一些哑元数据。缺省情况下，生成的数据包括 `zip_code`、`current_temperature`、`current_humidity`、`tonight_temperature_low`、`tonight_temperature_high`、`tonight_humidity_low` 和 `tonight_humidity_high` 属性。
 	
 	3. 单击**调用操作**。
-![](images/explore-test-2.png)
+	![](images/explore-test-2.png)
 	
 >![故障诊断]
 >如果看到由于本地主机的证书不可信而生成的错误消息，请单击 API Designer 浏览工具中的错误消息内提供的链接以接受证书，然后继续在 Web 浏览器中调用操作。具体过程取决于您使用的 Web 浏览器。如果在浏览器中直接装入 REST 端点，那么将看到以下消息：{"name":"PreFlowError","message":"unable to process the request"}。必须使用 API Designer 浏览工具在浏览器中测试 REST 端点，因为该端点包含必需的头和其他请求参数。
@@ -228,7 +229,7 @@ lastupdated: "2017-11-28"
 >如果获得响应代码 **422 - 无法处理的实体**，其中包含以下有效内容：
 >![](images/explore-test-3.png)
 >
->确保生成的数据中不具有未除去的 `id` 数据元素。如果具有标识元素，请将其除去，并重新运行测试。
+>确保不存在未从生成的数据中除去的 `id` 数据元素。如果有 ID 元素，请将其除去，并重新运行测试。
 >![故障诊断]
 >如果收到错误称**未能解析请求主体**，那么必须除去最后一个 `humidity_high` 数字后的逗号。
 7. 编辑 **data** 部分中显示的 JSON 格式的值。尝试更改生成的哑元数据，然后再次单击**调用操作**。您应该会看到请求和响应参数以及您输入的 JSON 实例数据。

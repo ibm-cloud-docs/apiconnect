@@ -44,7 +44,7 @@ per i cicli di vita.
 L'abilitazione della sottoscrizione automatica rende più semplice l'esecuzione
 dei test delle tue API in quanto viene utilizzata un'applicazione di test
 con un segreto e un ID client preforniti. L'applicazione di test viene automaticamente sottoscritta a tutti i piani nel catalogo,
-in questo modo non devi specificare un piano o un'applicazione quando esegui la verifica.
+in questo modo non devi specificare un piano o un'applicazione quando esegui la verifica. 
     **Nota:** la sottoscrizione automatica è disponibile solo per un catalogo di sviluppo.
   3. Se il catalogo è il catalogo di preparazione predefinito, seleziona **Predefinito**. Quindi,
 il richiamo delle API pubblicate nel catalogo può utilizzare un URL più breve che non include il nome del catalogo.

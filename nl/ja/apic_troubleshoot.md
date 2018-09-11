@@ -13,7 +13,8 @@ lastupdated: "2017-12-15"
 # トラブルシューティング
 {: #troubleshoot}
 
-{{site.data.keyword.Bluemix_notm}} 上での {{site.data.keyword.apiconnect_long}} の使用についての一般的なトラブルシューティングに関する質問の答えを以下に示します。{:shortdesc}
+{{site.data.keyword.Bluemix_notm}} 上での {{site.data.keyword.apiconnect_long}} の使用についての一般的なトラブルシューティングに関する質問の答えを以下に示します。
+{:shortdesc}
 
 ## API Connect {{site.data.keyword.Bluemix_notm}} サービスを追加する場合はユーザー名とパスワードが必要
 

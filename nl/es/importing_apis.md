@@ -48,7 +48,7 @@ Después puede editar la definición de API como lo haría con cualquier otra de
 {: #tut_import_iib_apic}
 
 Con esta guía de aprendizaje, puede importar API REST que haya creado con IBM Integration Bus en {{site.data.keyword.apiconnect_full}}, lo que facilita su gestión y
-publicación.
+publicación. 
 {: shortdesc}
 
 Antes de empezar, asegúrese de que el archivo API REST se ajusta a la versión 2.0 de la especificación de Swagger. El formato del archivo puede ser JSON o YAML.

@@ -48,7 +48,7 @@ Antes de empezar, debe haber completado una de las siguientes guías de aprendiz
 3. Desplácese hasta el panel **Seguridad** y añada una nueva opción de seguridad.  
     a. Seleccione las claves ID de cliente y Secreto de cliente recién creadas.  
     b. Guarde la API.  
-    c. Conmute al separador **Ensamblar**.   
+    c. Conmute al separador **Ensamblar**.  
     ![](images/3_security_option.png)  
 
 

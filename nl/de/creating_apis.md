@@ -537,7 +537,7 @@ Die folgende Ausgabe wird zurückgegeben:
     1. Klicken Sie in der Benutzerschnittstelle von API Designer auf **APIs**.
     2. Wählen Sie Ihre API aus.
     3. Klicken Sie auf **Assemblieren**.
-    4. Klicken Sie im Assemblierungseditor auf das Symbol **Filterrichtlinien**.
+    4. Klicken Sie im Assembly-Editor auf das Symbol **Filterrichtlinien**.
     5. Wählen Sie **DataPower-Gateway-Richtlinien** aus.
     6. Doppelklicken Sie auf **Aufrufen**.
     7. Aktualisieren Sie die folgenden Felder mit den in Schritt 7 abgerufenen Werten.

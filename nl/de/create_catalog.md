@@ -43,7 +43,7 @@ werden diese automatisch vom System aufgelöst. Aktionen zum Rückgängigmachen 
 für Lebenszyklen kann nicht aktiviert werden.
   2. Wenn Sie das automatische Abonnement für den Katalog aktivieren wollen,
 wählen Sie **Automatisches Abonnement** aus.
-Die Aktivierung des automatischen Abonnements vereinfacht das Testen Ihrer APIs, denn es wird eine Testanwendung mit einer vorab bereitgestellten Client-ID und einem ebensolchen geheimen Clientschlüssel verwendet. Diese Testanwendung ist automatisch bei allen Plänen im Katalog abonniert, sodass Sie beim Testen keinen bestimmten Plan bzw. keine bestimmte Anwendung angeben müssen.
+Die Aktivierung des automatischen Abonnements vereinfacht das Testen Ihrer APIs, denn es wird eine Testanwendung mit einer vorab bereitgestellten Client-ID und einem ebensolchen geheimen Clientschlüssel verwendet. Diese Testanwendung ist automatisch bei allen Plänen im Katalog abonniert, sodass Sie beim Testen keinen bestimmten Plan bzw. keine bestimmte Anwendung angeben müssen. 
     **Hinweis:** Das automatische Abonnement ist nur für Entwicklungskataloge verfügbar.
   3. Wenn es sich bei dem Katalog um den Standardbereitstellungskatalog handelt, wählen Sie **Standard** aus. Dann können Aufrufe
 an die APIs, die im Katalog veröffentlicht sind, eine kürzere URL verwenden, die nicht den

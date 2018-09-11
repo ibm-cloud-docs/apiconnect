@@ -13,7 +13,7 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # API 제품 대체
-**기간**: 15분  
+**소요 시간**: 15분  
 **스킬 레벨**: 초보자  
 
 ## 전제조건
@@ -28,7 +28,7 @@ lastupdated: "2017-10-31"
 
 ---
 ## API 제품 대체
-1. {{site.data.keyword.Bluemix_short}}에 로그인: [https://console.ng.bluemix.net/login ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.ng.bluemix.net/login){:new_window}.
+1. {{site.data.keyword.Bluemix_short}}에 로그인하십시오. [https://console.ng.bluemix.net/login ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.ng.bluemix.net/login){:new_window}.
 
 2. {{site.data.keyword.Bluemix_notm}} 대시보드에서 {{site.data.keyword.apiconnect_short}} 서비스를 실행하십시오.
 ![](images/Bluemix.png)

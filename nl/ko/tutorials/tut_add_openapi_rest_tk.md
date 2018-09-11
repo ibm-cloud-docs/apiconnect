@@ -11,7 +11,7 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # 개발자 툴킷으로 새 API 스펙 추가 및 기존 REST 서비스 호출
-**기간**: 15분  
+**소요 시간**: 15분  
 **스킬 레벨**: 초보자  
 
 ## 목표
@@ -94,16 +94,16 @@ _(다음 튜토리얼에서 API 키로 보안을 확인합니다.)_
     - 필수: Yes  
     - 유형: string  
 
-15. 새 정의 작성: **Today**.
+15. 새 정의를 작성하십시오. **Today**.
 
 16. **Today** 정의의 새 특성을 추가하십시오.
-  - 이름: zip         /  유형: string
+  - 이름: zip / 유형: string
   - 이름: hi / 유형: integer
   - 이름: lo / 유형: integer
   - 이름: nightHumidity / 유형: integer
   - 이름: dayHumidity / 유형: integer
-  - 이름: city        /  유형: string
-  - 이름: state       /  유형: string
+  - 이름: city / 유형: string
+  - 이름: state / 유형: string
 
 17. **GET /today** 섹션에서 응답 스키마를 "Today"로 업데이트하십시오.
 

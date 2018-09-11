@@ -149,6 +149,6 @@ In questa esercitazione, abbiamo eseguito diverse attività per aiutarti a crear
 
 ## Passo successivo
 
-Impara [come gestire le tue API e le versioni](tut_manage_version_landing.html). 
+Impara [come gestire le tue API e le versioni](tut_manage_version_landing.html).
 
 Create > Manage > Secure > Socialize > **Analyze**  

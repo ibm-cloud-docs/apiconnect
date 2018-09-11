@@ -24,7 +24,7 @@ viene utilizzato nell'interfaccia utente API Manager dopo che uno sviluppatore h
 ## Esposizione di API installate in loco tramite un gateway sicuro
 {: #expose_apis_sec_gate}
 
-Puoi creare un gateway sicuro per esporre in sicurezza le API installate in loco in  {{site.data.keyword.apiconnect_full}}.
+Puoi creare un gateway sicuro per esporre in sicurezza le API installate in loco in {{site.data.keyword.apiconnect_full}}.
 
 Quando crei un gateway sicuro, integri le funzioni del servizio {{site.data.keyword.Bluemix_notm}}
 {{site.data.keyword.SecureGateway}} con {{site.data.keyword.apiconnect_short}}. Ciò significa che disponi di un metodo
@@ -139,7 +139,7 @@ Hai esposto in modo sicuro la tua API installata in loco in {{site.data.keyword.
 associati a una destinazione. Per controllare i profili TLS,
 fai clic su **Passa a** <img src="images/navigate_to_icon.png" alt="Passa all'icona" /> > **Ammin** > **Sicurezza** > **Profili TLS**.
 Puoi disporre di più gateway per ciascuna API. Decidi tu quale gateway utilizzare quando pubblichi
-l'API.Se disponi già del servizio  {{site.data.keyword.SecureGateway}} con provisioning, sarai in grado di
+l'API.Se disponi già del servizio {{site.data.keyword.SecureGateway}} con provisioning, sarai in grado di
 monitorare le tue destinazioni nel dashboard {{site.data.keyword.SecureGateway}}. Tuttavia,
 non puoi modificare alcuna destinazione {{site.data.keyword.apiconnect_short}} creata dal servizio
 {{site.data.keyword.apiconnect_short}}.

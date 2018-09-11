@@ -13,7 +13,7 @@ lastupdated: "2017-12-15"
 
 
 # SOAP 서비스 관리
-**기간**: 15분
+**소요 시간**: 15분
 **스킬 레벨**: 초보자
 
 ---
@@ -27,7 +27,7 @@ lastupdated: "2017-12-15"
 
 ---
 ## SOAP API 정의 설정
-1. {{site.data.keyword.Bluemix_short}}에 로그인: [https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}.
+1. {{site.data.keyword.Bluemix_short}}에 로그인하십시오. [https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}.
 
 2. {{site.data.keyword.Bluemix_notm}} **대시보드**에서 아래로 스크롤하여 **모든 서비스**로 이동하십시오.
 
@@ -61,7 +61,7 @@ lastupdated: "2017-12-15"
 12. ![저장](images/save.png) 아이콘을 클릭하여 변경사항을 저장하십시오. "API가 저장됨" 확인 알림이 잠시 표시됩니다.
 
 13. 저장 아이콘이 있는 메뉴 표시줄에서 **디자인** 탭에 현재 위치가 표시됩니다. 다음에는 API를 나타내는 Swagger(2.0) 파일을 직접 볼 수 있는 **소스** 탭이 있고, 그 다음에는 API 처리에 사용할 수 있는 끌어서 놓기 인터페이스가 있는 **어셈블** 탭이 있습니다. **어셈블**을 클릭하십시오.
-  ![Assemble tab](images/assemble-clean.png)  
+  ![어셈블 탭](images/assemble-clean.png)  
 
 ## SOAP API 정의 테스트
 

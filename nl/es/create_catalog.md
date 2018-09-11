@@ -28,7 +28,7 @@ Aparece la ventana **Añadir catálogo**.
 
 4. Especifique el texto que quiere que forme el segmento del catálogo del URL, en el campo
 **Nombre**.
-**NOTA:** El campo **Nombre** puede contener sólo caracteres alfanuméricos en minúscula (a-z y 0-9) o
+	**NOTA:** El campo **Nombre** puede contener sólo caracteres alfanuméricos en minúscula (a-z y 0-9) o
 guiones (-). Un guión no se puede utilizar ni como primer ni como último carácter en el nombre.
 
 5. Pulse **Añadir**. Se ha creado el catálogo y se muestra en el panel de control.
@@ -39,11 +39,12 @@ Si selecciona la modalidad de desarrollo, las acciones de transferencia y public
 es decir, si vuelve a publicar un producto publicado anteriormente, se sobrescribe sin aviso. Si se encuentra
 algún conflicto, el sistema lo resuelve automáticamente. Las acciones de anulación de publicación se producen
 de forma automática.
-**Nota:** Los recuadros de aprobación no se muestran para los catálogos de desarrollo. No puede habilitar el proceso de aprobación para los ciclos de vida.
+	**Nota:** Los recuadros de aprobación no se muestran para los catálogos de desarrollo. No puede habilitar el proceso de aprobación para los ciclos de vida.
   2. Si quiere habilitar la suscripción automática para el catálogo, seleccione **Suscripción
 automática**.
 Al habilitar la suscripción automática, hace que las pruebas a las API sean más fáciles, porque se
-utiliza una aplicación de pruebas, con un ID de cliente y un secreto de cliente suministrado anteriormente. La aplicación de pruebas se suscribe automáticamente a todas las planificaciones en el catálogo, por lo que no tiene que especificar una planificación o aplicación al realizar pruebas. **Nota:** La suscripción automática sólo está disponible para un catálogo de desarrollo.
+utiliza una aplicación de pruebas, con un ID de cliente y un secreto de cliente suministrado anteriormente. La aplicación de pruebas se suscribe automáticamente a todas las planificaciones en el catálogo, por lo que no tiene que especificar una planificación o aplicación al realizar pruebas. 
+    **Nota:** La suscripción automática sólo está disponible para un catálogo de desarrollo.
   3. Si el catálogo es el catálogo de transferencia predeterminado, seleccione **Predeterminado**. A continuación, las llamadas a las API publicadas en el catálogo, pueden utilizar un URL más corto que no incluye
 el nombre del catálogo.
     **Nota:** Solo puede seleccionar **Predeterminado** para un catálogo.
@@ -60,14 +61,14 @@ URL predeterminado que genera API Manager.
         No obstante, puede sobrescribir el predeterminado especificando un URL más adecuado a su empresa, por
 ejemplo, `https://api.mycompany.com`. Cualquier punto final de la API que se muestre en el
 Portal del desarrollador reflejará entonces el URL especificado.
-        **Notas:**
+			**Notas:**
 		    - Debe configurar una entrada DNS que correlacione el dominio y nombre de host personalizado con el
 URL de la pasarela predeterminado.
 		    - Para que los puntos finales de una API reflejen el URL de la pasarela personalizada, debe
 configurar la API para que la pasarela de API Connect la imponga. Para obtener más información, consulte [Cómo especificar un host alternativo para una API ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
 		    - Asegúrese de que el mismo URL de la pasarela personalizada no se aplique a varios catálogos ya que
 el comportamiento en ese caso no estará definido.
-	        **SUGERENCIA**: Cuando invoque la API, también puede establecer la cabecera de host HTTP en la solicitud de la API
+				**SUGERENCIA**: Cuando invoque la API, también puede establecer la cabecera de host HTTP en la solicitud de la API
 en el valor que haya especificado en el campo URL de Custom Gateway.
 
 	    - **URL de API personalizado**

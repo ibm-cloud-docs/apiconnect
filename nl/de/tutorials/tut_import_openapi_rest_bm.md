@@ -87,7 +87,7 @@ _Falls ein CORS-Fehler auftritt, gehen Sie gemäß den Anweisungen in der Fehler
 
 
 ### Mit _Explore-Tool_ testen
-_Mit dem Tool Explore können Benutzer die korrekte Operation der API durch erzwingen aller Parameteranforderungen testen, die in der OpenAPI-Definition festgelegt sind. Da diese Durchsetzung im API-Testtool in der Registerkarte 'Assemblierung' nicht durchgeführt wird, kann der Benutzer das API-Verhalten überprüfen, wenn der Parameter fehlt._
+_Mit dem Tool Explore können Benutzer die korrekte Operation der API durch erzwingen aller Parameteranforderungen testen, die in der OpenAPI-Definition festgelegt sind. Da diese Durchsetzung im API-Testtool in der Registerkarte für die Assemblierung nicht durchgeführt wird, kann der Benutzer das API-Verhalten überprüfen, wenn der Parameter fehlt._
 
 1. Wählen Sie zum Testen der API-Proxy-Endpunkte **Explore** und anschließend **Sandbox** aus.
     ![](images/test-explore-1.png)

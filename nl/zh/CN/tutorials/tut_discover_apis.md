@@ -25,7 +25,7 @@ lastupdated: "2017-11-20"
 
 
 ## 目标
-在本教程中，您将学习门户网站用户如何在 {{site.data.keyword.apiconnect_full}} 开发者门户网站中使用 API。您将了解门户网站用户如何浏览产品和 API，查看和测试 API 以及预订 API。
+在本教程中，您将学习门户网站用户可以如何在 {{site.data.keyword.apiconnect_full}} 开发者门户网站中使用 API。您将了解门户网站用户如何浏览产品和 API，查看和测试 API 以及预订 API。
 
  
 

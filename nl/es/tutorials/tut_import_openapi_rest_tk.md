@@ -58,7 +58,7 @@ Se ha creado una app _weather provider_ de ejemplo para esta guía de aprendizaj
 9. Deje la opción _Añadir un producto_ desmarcada y pulse **Importar**.  
     ![](images/screenshot_import-url.png)  
 
-Después de importar la especificación de OpenAPI, se le dirigirá a la vista Diseño de la API. Aquí puede ver varias secciones de la definición de OpenAPI. Desplácese para explorar, y anote especialmente el valor Host. También puede ver el OpenAPI debajo del separador Origen.
+Después de importar la especificación de OpenAPI, se le dirigirá a la vista Diseño de la API. Aquí puede ver varias secciones de la definición de OpenAPI. Desplácese para explorar, y anote especialmente el valor Host. También puede ver el OpenAPI debajo del separador Origen. 
 _Verá que el valor de Host está establecido en _ `$(catalog.host)` _. Este es el URL base para el proxy de la API._
  
 

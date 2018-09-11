@@ -23,7 +23,7 @@ Sie erstellen in API Manager eine REST-API, die auf einen vorhandenen SOAP-Servi
 
 ## Voraussetzungen
 1. Bevor Sie beginnen, müssen Sie [eine Instanz von {{site.data.keyword.apiconnect_full}} einrichten](tut_prereq_set_up_apic_instance.html).
-2. Bevor Sie beginnen, müssen Sie die Testdatei [weatherprovider.wsdl![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} in Ihr lokales Dateisystem kopieren.
+2. Bevor Sie beginnen, müssen Sie die Testdatei [weatherprovider.wsdl ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} in Ihr lokales Dateisystem kopieren.
 	>![images/info.png]
 	>Sie können auf **Unbearbeitet** klicken und anschließend die resultierende Seite im lokalen System als `.wsdl`-Datei speichern.
 
@@ -58,7 +58,7 @@ Es kann ein Alert angezeigt werden, in dem beschrieben wird, was neu ist, oder d
 10. Nehmen Sie die Auswahl der Option **Client-ID** zurück.
 ![](images/api-security-2.png)
 	>![](images/info.png)
-	>Gegebenenfalls wird ein gelbes Dreiecksymbol neben dem Symbol für das Speichern auf der Platte angezeigt. Hierbei handelt es sich um eine Warnung, die besagt, dass bereits eine Definition vorhanden sein kann, die zwar definiert, aber noch nicht verwendet wurde. (Dies hat keinen Einfluss auf die API-Definition).
+	>Gegebenenfalls wird ein gelbes Dreiecksymbol neben dem Symbol für das Speichern auf der Platte angezeigt.  Hierbei handelt es sich um eine Warnung, die besagt, dass bereits eine Definition vorhanden sein kann, die zwar definiert, aber noch nicht verwendet wurde. (Dies hat keinen Einfluss auf die API-Definition).
 11. Klicken Sie im Abschnitt **Definitionen** auf das Symbol **Definition hinzufügen** ![](images/add-icon.png) und erweitern Sie die neue Definition anschließend durch Klicken auf die Definition.
 12. Legen Sie für die Definition den Namen `Weather Data Output` fest.
 13. Die Definition besteht aus fünf Eigenschaften. Klicken Sie vier Mal auf **Eigenschaft hinzufügen**, um die zusätzlichen Eigenschaften hinzuzufügen. Benennen Sie die Angabe unter `Property Name` gemäß der nachfolgenden Vorgehensweise um und verwenden Sie den Standard für `Description`, `Type` und `Example`:
@@ -87,7 +87,7 @@ Führen Sie die nachfolgenden Schritte aus, um den Aufruf hinzuzufügen und zu k
 5. Navigieren Sie zur Registerkarte **Assemblieren** und stellen Sie sicher, dass **DataPower-Gateway-Richtlinien** ausgewählt ist.
 6. Löschen Sie die vorhandene Richtlinie **invoke** im Erstellungsbereich; bewegen Sie hierzu den Cursor über die Richtlinie und klicken Sie anschließend auf das Symbol **Richtlinie löschen** ![](images/delete-icon.png).
 	![](images/delete-invoke-1.png)	
-7. Ziehen Sie den Web-Service **weatherRequest** aus der Palette in das gestrichelte Feld, das im Erstellungsbereich angezeigt wird. In der Assemblierung befinden sich eine Aufrufrichtlinie (invoke) und zwei Zuordnungsrichtlinien. Von der ersten Zuordnungsrichtlinie werden Variablen der Eingabe des Web-Service-Aufrufs zugeordnet, von der zweiten Richtlinie werden die Ausgaben des Web-Service-Aufrufs den Variablen zu zugewiesen. Die Ausgaben der ersten Zuordnung und die Eingaben der zweiten Zuordnung werden aus der WSDL-Datei generiert, die in Schritt 4 bereitgestellt wurde.
+7. Ziehen Sie den Web-Service **weatherRequest** aus der Palette in das gestrichelte Feld, das im Erstellungsbereich angezeigt wird. In der Assembly befinden sich eine Aufrufrichtlinie (invoke) und zwei Zuordnungsrichtlinien. Von der ersten Zuordnungsrichtlinie werden Variablen der Eingabe des Web-Service-Aufrufs zugeordnet, von der zweiten Richtlinie werden die Ausgaben des Web-Service-Aufrufs den Variablen zu zugewiesen. Die Ausgaben der ersten Zuordnung und die Eingaben der zweiten Zuordnung werden aus der WSDL-Datei generiert, die in Schritt 4 bereitgestellt wurde.
 	![](images/services-add-2.png)	
 8. Klicken Sie auf die Zuordnungsrichtlinie **weatherRequest: input** und klicken Sie anschließend auf das Symbol **Eingaben bearbeiten** ![](images/edit-icon.png) in der Eingabespalte der Eigenschaftsseite.
 	![](images/services-add-3.png)	
@@ -105,12 +105,12 @@ Führen Sie die nachfolgenden Schritte aus, um den Aufruf hinzuzufügen und zu k
 	![](images/webservice-output-2.png)
 17. Klicken Sie auf das Symbol **Speichern** ![](images/save-icon.png), um Ihre Änderungen zu speichern.
 
-Sie haben den Web-Service-Aufruf in die Assemblierung eingeschlossen und einen Eingabeparameter zum entsprechenden Teil der SOAP-Anforderung zugeordnet und den entsprechenden Teil der SOAP-Antwort einer JSON-Ausgabe zugeordnet.
+Sie haben den Web-Service-Aufruf in die Assembly eingeschlossen und einen Eingabeparameter zum entsprechenden Teil der SOAP-Anforderung zugeordnet und den entsprechenden Teil der SOAP-Antwort einer JSON-Ausgabe zugeordnet.
 
 ---
 ## API-Definition testen
 Führen Sie die nachfolgenden Schritte aus, um die API-Definition mithilfe des Testtools von API Manager zu testen.
-1. Klicken Sie auf das Symbol **Testen** ![](images/test-icon.png) unter der Registerkarte **Assemblierung**, um das Testfenster anzuzeigen.
+1. Klicken Sie auf das Symbol **Testen** ![](images/test-icon.png) unter der Registerkarte **Assembly**, um das Testfenster anzuzeigen.
 	![](images/test-pane-1.png)
 2. Falls Sie das Testtool bereits vorher verwendet haben, klicken Sie auf **Konfiguration ändern**.
 3. Wählen Sie in der Liste der Produkte `Weather Data product 1.0.0` aus.

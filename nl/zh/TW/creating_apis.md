@@ -234,7 +234,7 @@ npm install --save <connector-package>
   ```
     
     此工具會提示您輸入要在其中建立專案的目錄名稱。
-    ```
+```
     ? Enter name of the directory to contain the project: (<project directory name>)
     ```
     
@@ -283,8 +283,6 @@ npm install --save <connector-package>
     (Move up and down to reveal more choices)
     ```
     如需每一個選項的相關資訊，請參閱[使用內建模型 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){:new_window}。
-
-
 
 9. 選取基礎類別，然後按 **Enter** 鍵。此工具會詢問您是否要公開模型的 REST API。
 ```
@@ -343,7 +341,6 @@ apic create --type datasource
 ```
 {: codeblock}
 此工具會提示您輸入資料來源名稱。
-
 ```
 ? Enter the data-source name:
 ```
@@ -364,7 +361,6 @@ apic create --type datasource
 3. 使用方向鍵來選取您要使用的連接器，然後按 **Enter** 鍵。此工具接著會將資料來源新增至專案。
 
 4. 輸入您的主機、埠、使用者、密碼及資料庫認證。此工具會提示您安裝 LoopBack 連接器。
-
 ```
 Install loopback-connector-<connector>?
 ```
@@ -432,8 +428,7 @@ cd <loopback-project-dir>
 ```
 apic login --server  <region>.apiconnect.ibmcloud.com -u <username> -p <password>
 ```
-    其中：
-
+其中：
   * `<username>` 是您的 {{site.data.keyword.apiconnect_short}} 組織 ID。
   * `<password>` 是您的 {{site.data.keyword.apiconnect_short}} 密碼。
 3. 按空格鍵，以自動開啟「**一次性密碼**」瀏覽器頁面。
@@ -446,8 +441,7 @@ Logged into <region>.apiconnect.ibmcloud.com successfully
 ```
 apic organizations -s <region>.apiconnect.ibmcloud.com
 ```
-    其中：
-
+其中：
   * `<region>` 是 {{site.data.keyword.Bluemix_notm}} 地區。例如：
   * 如果您是使用 {{site.data.keyword.Bluemix_notm}} 倫敦，則為 `eu`。
   * 如果您是使用 {{site.data.keyword.Bluemix_notm}} 達拉斯，則為 `us`。
@@ -458,8 +452,7 @@ apic organizations -s <region>.apiconnect.ibmcloud.com
 ```
 apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
 ```
-    其中：
-
+其中：
   * `<app>` 是您的應用程式名稱
   * `<org>` 是您的 {{site.data.keyword.Bluemix_notm}} 組織名稱
   * `<region>` 是 {{site.data.keyword.Bluemix_notm}} 地區。傳回下列輸出：
@@ -486,7 +479,7 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
         ```
         https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<Bluemix org>-<Bluemix space>.apic.<domain name>$(request.path)
         ```
-如果您未記下這個值，可以移至步驟 7 所傳回的管理 URL 來進行擷取。您也可以透過登入 {{site.data.keyword.Bluemix_notm}} 並檢視應用程式資訊來進行擷取。
+        如果您未記下這個值，可以移至步驟 7 所傳回的管理 URL 來進行擷取。您也可以透過登入 {{site.data.keyword.Bluemix_notm}} 並檢視應用程式資訊來進行擷取。
         - **TLS 設定檔**：插入 API invoke tls-profile。例如：
         ```
         client:Loopback-client
@@ -496,7 +489,8 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
 ## 使用 API Designer 建立 LoopBack API
 {: #create_lb_api_design}
 
-下列程序說明如何使用 API Designer 來建立 LoopBack API。{:shortdesc}
+下列程序說明如何使用 API Designer 來建立 LoopBack API。
+{:shortdesc}
 
 ### 必要條件
 {: #prereq_create_lb_api_design}
@@ -544,11 +538,9 @@ apic edit
 ```
     短暫暫停之後，會顯示下列訊息。
     ```
-    Express server listening on http://127.0.0.1:9000
+        Express server listening on http://127.0.0.1:9000
     ```
     即會在預設 Web 瀏覽器中開啟 API Designer。
-
-
 
 2. 在登入頁面中，輸入您的 {{site.data.keyword.Bluemix_notm}} ID 及密碼。按一下**登入**。
 

@@ -11,7 +11,7 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # 비율 한계 설정
-**기간**: 15분  
+**소요 시간**: 15분  
 **스킬 레벨**: 초보자  
 
 
@@ -39,7 +39,7 @@ lastupdated: "2017-11-02"
 ---
 ## API Connect 실행
 
-1. {{site.data.keyword.Bluemix_notm}}에 로그인: [https://console.ng.bluemix.net/login ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.ng.bluemix.net/login){:new_window}.
+1. {{site.data.keyword.Bluemix_notm}}에 로그인하십시오. [https://console.ng.bluemix.net/login ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.ng.bluemix.net/login){:new_window}.
 2. {{site.data.keyword.Bluemix_notm}}에 로그인하고 나면 아래로 스크롤하여 **모든 서비스**로 이동한 다음 **API Connect**를 클릭하십시오.
 3. **API Connect**를 클릭하여 {{site.data.keyword.apiconnect_short}} 서비스를 실행하십시오.
 
@@ -79,11 +79,11 @@ lastupdated: "2017-11-02"
 
 ## 업데이트된 제품을 샌드박스 카탈로그에 스테이징 및 공개
 
-이전 예에서 테스트 도구를 사용하여 제품을 공개했습니다. 그러면 이 도구에서 사전 제공된 테스트 애플리케이션 신임 정보를 사용하여 API를 호출합니다. 그러나 이 테스트 애플리케이션에는 비율 한계가 적용되지 않으므로, 여기서는 비율 한계 용도로 새 애플리케이션을 작성하지 않습니다. 자세한 정보는 [API Connect에 대한 IBM Knowledge Center 컨텐츠![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){:new_window}을 참조하십시오.
+이전 예에서 테스트 도구를 사용하여 제품을 공개했습니다. 그러면 이 도구에서 사전 제공된 테스트 애플리케이션 신임 정보를 사용하여 API를 호출합니다. 그러나 이 테스트 애플리케이션에는 비율 한계가 적용되지 않으므로, 여기서는 비율 한계 용도로 새 애플리케이션을 작성하지 않습니다. 자세한 정보는 [API Connect에 대한 IBM Knowledge Center 컨텐츠 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){:new_window}을 참조하십시오.
 
 1. 공개 아이콘을 클릭하여 제품을 **샌드박스** 카탈로그로 *스테이징*하십시오. 이 조치를 수행하면 선택한 카탈로그에 드래프트 제품 변경사항을 추가합니다. 다음으로, 개발자 포털을 통해 이용자가 사용할 수 있도록 제품 변경사항을 *공개*해야 합니다.
    ![](./images/stageproduct.png) 
-2. >> 단추를 클릭하여 탐색 메뉴를 여십시오.
+2. 다음 단추를 클릭하여 탐색 메뉴를 여십시오.  >> 
 3. 대시보드를 선택한 다음 **샌드박스** 카탈로그를 여십시오. Weather Provider API 제품이 **스테이징됨**으로 나열됩니다.
 4. 생략 기호를 클릭하고 메뉴에서 **공개**를 선택하십시오.
    ![](./images/publish.png) 

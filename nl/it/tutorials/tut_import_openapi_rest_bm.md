@@ -28,7 +28,7 @@ Prima di iniziare, dovrai [configurare la tua istanza {{site.data.keyword.apicon
 È stata creata un'applicazione _weather provider_ di esempio per questa esercitazione. La specifica API corrispondente (Swagger 2.0) è nel file [weather-provider-api_1.yaml ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}.
 
 1. Per esplorare l'applicazione, vai a [http://gettingstartedweatherapp.mybluemix.net/ ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}.  
-2. Immetti un codice postale U.S. valido per ottenere il tuo _**meteo corrente**_ e le _**previsioni di oggi**_.  
+2. Immetti un codice postale U.S. di 5 cifre valido per ottenere il tuo _**meteo corrente**_ e le _**previsioni di oggi**_.  
 ![](images/explore-weatherapp-1.png)
 
 3. La precedente applicazione di esempio meteo è stata creata utilizzando API che forniscono dati meteo. L'endpoint per ottenere i dati meteo **correnti** è `https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}`. Verifica visitando [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  

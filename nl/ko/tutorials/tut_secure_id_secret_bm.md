@@ -12,7 +12,7 @@ lastupdated: "2017-10-31"
 
 # {{site.data.keyword.Bluemix_notm}}를 사용하여 클라이언트 ID와 클라이언트 시크릿으로 API 보호
 
-**기간:** 10분  
+**소요 시간:** 10분  
 **스킬 레벨:** 초보자
 
 

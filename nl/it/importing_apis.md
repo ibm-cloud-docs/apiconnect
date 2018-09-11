@@ -182,10 +182,10 @@ Di seguito sono elencati alcuni vantaggi della gestione delle tue API in {{site.
 Per ulteriori vantaggi, vedi [Gestione delle API](managing_apis.html).
 Per creare un'API REST in IBM App Connect Professional e pubblicarla in
 {{site.data.keyword.apiconnect_short}}, completa la seguente
-procedura: 
+procedura:
 
 1. Crea l'API REST utilizzando IBM App Connect
-Professional. 
+Professional.
   - Accedi alla [App Connect Professional Web Management Console ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://appconnect.ibmcloud.com/professional/){:new_window} con il tuo ID IBM. Per ulteriori informazioni su come completare le attività per la creazione di un'API REST con IBM App Connect Professional Web Management Console, consulta [About management console settings ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window} nel IBM Knowledge Center.
   - Seleziona la scheda Production, se non lo è già.
   - Seleziona **Repository** > **Configurazioni** nel pannello di navigazione.
@@ -235,7 +235,7 @@ disponibili.
 5. Seleziona **Close** per chiudere la finestra.
 Si apre una nuova finestra nel tuo browser predefinito e viene visualizzata la tua API.
 
-Associa l'API IBM App Connect a {{site.data.keyword.apiconnect_short}}. 
+Associa l'API IBM App Connect a {{site.data.keyword.apiconnect_short}}.
 
 #### Importa la definizione Swagger API
 

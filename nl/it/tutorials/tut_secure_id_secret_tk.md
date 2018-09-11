@@ -10,7 +10,7 @@ lastupdated: "2017-10-31"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Proteggi la tua API con il segreto e l'ID client utilizzando il toolkit sviluppatori 
+# Proteggi la tua API con il segreto e l'ID client utilizzando il toolkit sviluppatori
 
 
 **Durata:** 10 minuti  

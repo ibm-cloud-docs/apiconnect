@@ -58,8 +58,7 @@ Puede ver una alerta que describe las novedades, o la página de bienvenida info
 10. Desmarque la opción **ClientID**.
 ![](images/api-security-2.png)
 	>![](images/info.png)
-	
->Puede observar que hay un icono triangular amarillo que aparece junto al icono de guardar disco. Este es un aviso de que hay una definición que puede haber sido definida pero no utilizada aún. (Esto no afectará a la definición de la API).
+	>Puede observar que hay un icono triangular amarillo que aparece junto al icono de guardar disco.  Este es un aviso de que hay una definición que puede haber sido definida pero no utilizada aún. (Esto no afectará a la definición de la API).
 11. En la sección **Definiciones**, pulse el icono **Añadir definición** ![](images/add-icon.png) y, a continuación, expanda la nueva definición pulsándola.
 12. Asigne un nombre a la definición `Salida de Weather Data`.
 13. La definición tendrá cinco propiedades. Pulse **Añadir propiedad** cuatro veces para añadir las propiedades adicionales. Cambie el nombre de `Nombre de propiedad` utilizando lo siguiente como guía y utilice el valor predeterminado para la `Descripción`, el `Tipo` y el `Ejemplo`:

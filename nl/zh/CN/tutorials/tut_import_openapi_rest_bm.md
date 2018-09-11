@@ -77,9 +77,10 @@ lastupdated: "2017-11-02"
     b. 单击**调用**，并验证是否看到以下内容：  
     ```
     - 200 OK response
-    - Current weather data for 90210
+    - Current weather data for 90210  
     ```
 _如果遇到 CORS 错误，请按照错误消息中的指示信息进行操作。单击错误中的链接以将例外添加到浏览器，然后重新点击“调用”按钮。_
+
     ![](images/test-invoke-1.png)
 
 

@@ -55,10 +55,10 @@ Você pode ver um alerta que descreve o que há de novo ou a página de abertura
 	- Clique em **Criar API**. A guia **Design** para o rascunho de sua definição de API é aberta.
 9. Sua API está agora criada. A página Design é exibida. Clique em **Segurança** na barra de navegação.
 ![](images/api-security-1.png)
-10. Desmarque a opção **ClientID**.
+10. Desmarque a opção  ** ClientID ** .
 ![](images/api-security-2.png)
 	>![](images/info.png)
-	>Você pode observar que há um ícone triangular amarelo que aparece próximo ao ícone de salvamento do disco. Este é um aviso de que há definição que pode ter sido definida, mas ainda não usada. (Isso não afetará a definição de API.)
+	>Você pode observar que há um ícone triangular amarelo que aparece próximo ao ícone de salvamento do disco.  Este é um aviso de que há definição que pode ter sido definida, mas ainda não usada. (Isso não afetará a definição de API.)
 11. Na seção **Definições**, clique no ícone **Incluir definição** ![](images/add-icon.png) e, em seguida, expanda a nova definição clicando nela.
 12. Nomeie a definição `Weather Data Output`.
 13. A definição terá cinco propriedades. Clique em **Incluir propriedade** quatro vezes para incluir as propriedades adicionais. Renomeie o `Property Name` usando o seguinte como guia e use o padrão para `Description`, `Type` e `Example`:

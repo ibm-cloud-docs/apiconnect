@@ -22,7 +22,8 @@ En esta guía de aprendizaje, utilizará la API Manager para crear una API SOAP 
 
 ## Requisitos previos
 - Antes de empezar, deberá [configurar la instancia de {{site.data.keyword.apiconnect_short}}](tut_prereq_set_up_apic_instance.html).
-- Antes de empezar, copie el archivo de [prueba weatherprovider.wsdl ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} en el sistema de archivos local. Nota: Puede pulsar **Sin procesar** y, a continuación, guardar la página resultante en el sistema local como un archivo `.wsdl`. Como el nombre sugiere, este servicio SOAP devuelve datos meteorológicos cuando se proporciona un código postal.
+- Antes de empezar, copie el archivo de [prueba weatherprovider.wsdl ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} en el sistema de archivos local.
+Nota: Puede pulsar **Sin procesar** y, a continuación, guardar la página resultante en el sistema local como un archivo `.wsdl`. Como el nombre sugiere, este servicio SOAP devuelve datos meteorológicos cuando se proporciona un código postal.
 
 ---
 ## Configuración de una definición de API SOAP
@@ -33,7 +34,7 @@ En esta guía de aprendizaje, utilizará la API Manager para crear una API SOAP 
 3. Seleccione **API Connect** para iniciar el servicio de {{site.data.keyword.apiconnect_short}}. 
   
 4. Vaya a la página Borradores, si no está aún allí:  
-    a. En la interfaz de {{site.data.keyword.apiconnect_short}}, pulse >> para abrir el panel de navegación. 
+    a. En la interfaz de {{site.data.keyword.apiconnect_short}}, pulse >> para abrir el panel de navegación.
     b. Pulse **Borradores** en el panel de navegación.
     c. Vaya al separador **API**.
 

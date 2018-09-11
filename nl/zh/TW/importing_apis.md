@@ -12,7 +12,8 @@ lastupdated: "2017-12-15"
 
 # 匯入 API
 
-您可以使用 Swagger 定義檔來新增 REST API。{:shortdesc}
+您可以使用 Swagger 定義檔來新增 REST API。
+{:shortdesc}
 
 ## 必要條件
 {: #prereq_import_swagger}

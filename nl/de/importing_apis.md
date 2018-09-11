@@ -121,13 +121,13 @@ Ihrem Integrationsablauf zugewiesen hat. Wählen Sie **Vollständige URL anzeige
 	1. Rufen Sie das Dashboard von {{site.data.keyword.apiconnect_short}} auf.
 	2. Wählen Sie **Entwürfe** > **APIs** aus.
 	3. Klicken Sie auf die von Ihnen importierte REST-API.
-	4. Wählen Sie die Registerkarte für die Assemblierung und die Option **Assemblierung erstellen** aus, um die Proxy-Richtlinie hinzuzufügen.
+	4. Wählen Sie die Registerkarte für die Assemblierung und die Option **Assembly erstellen** aus, um die Proxy-Richtlinie hinzuzufügen.
 	5. Ziehen Sie die Richtlinie **Proxy** in die neue leere Richtlinie, um sie zu aktivieren.
 	6. Fügen Sie die URL für Ihre API ein, die Sie aus dem Abschnitt mit den öffentlichen Endpunkten von IBM Integration Bus on Cloud kopiert haben.
 	7. Wenn Sie die Basisauthentifizierung für Ihre REST-API aktiviert haben, geben Sie den Benutzernamen und das Kennwort ein, die in IBM Integration Bus on Cloud generiert wurden.
 	8. Speichern Sie die API-Einstellungen.
 3. Testen Sie die API.
-	1. Wählen Sie in der Registerkarte 'Assemblierung' der API die Schaltfläche für Tests ![Schaltfläche für Tests](images/a_play_button.jpg "Screenshot mit dem Schaltflächensymbol für Tests") aus.
+	1. Wählen Sie auf der Registerkarte für die Assemblierung der API die Schaltfläche für Tests ![Schaltfläche für Tests](images/a_play_button.jpg "Screenshot mit dem Schaltflächensymbol für Tests") aus.
 	2. Wählen Sie **Produkt erneut veröffentlichen** aus.
 	3. Wählen Sie die Operation aus.
 	4. Geben Sie die erforderlichen Parameter ein.
@@ -228,9 +228,9 @@ Die Registerkarte 'APIs' wird geöffnet.
 4. Wählen Sie **Assemblieren** im Navigationsfenster aus.
 Im Navigationsfenster wird eine Liste mit Richtlinien angezeigt.
 
-5. Wählen Sie **Assemblierung erstellen** aus, falls erforderlich.
+5. Wählen Sie **Assembly erstellen** aus, falls erforderlich.
 
-6. Fügen Sie die Richtlinie **Invoke** hinzu, indem Sie sie zur Assemblierung
+6. Fügen Sie die Richtlinie **Invoke** hinzu, indem Sie sie zur Assembly
 im Hauptfenster ziehen.
 
 7. Wählen Sie die Richtlinie **Invoke** im Hauptfenster aus, um die zugehörigen
@@ -250,7 +250,7 @@ die Sie für App Connect Professional verwenden, hinzu und speichern Sie sie.
 
 Führen Sie die folgenden Schritte aus, um die API zu testen:
 
-1. Wählen Sie auf der Registerkarte 'Assemblierung' der API die Schaltfläche für Tests aus <img alt="Screenshot mit dem Schaltflächensymbol für Tests" src="images/a_play_button.jpg" />.
+1. Wählen Sie auf der Registerkarte für die Assemblierung der API die Schaltfläche für Tests aus <img alt="Screenshot mit dem Schaltflächensymbol für Tests" src="images/a_play_button.jpg" />.
 2. Wählen Sie **Produkt erneut veröffentlichen** aus.
 3. Wählen Sie die Operation aus.
 4.  Geben Sie die erforderlichen Parameter ein.

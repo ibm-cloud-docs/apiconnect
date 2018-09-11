@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-11-28"
+  years: 2018
+lastupdated: "2018-02-22"
 
 ---
 
@@ -137,7 +137,7 @@ Per aggiungere una nuova origine dati a un progetto LoopBack utilizzando API Des
 	>![info]
 	>Puoi accedere utilizzando il tuo account {{site.data.keyword.Bluemix}} o crearne uno.
 3. Fai clic sull'icona **Data Sources** ![](images/datasource-icon.png).
-4. Fai clic su **Add**. Viene visualizzata la finestra New LoopBack Data Source.
+4. Fai clic su **Aggiungi**. Viene visualizzata la finestra New LoopBack Data Source.
 5. Immetti `weatherDS` nel campo di testo **Name**.
 	>![info]
 	>In un nome di origine dati puoi usare qualsiasi carattere alfanumerico, più i trattini e i segni di sottolineatura.
@@ -152,7 +152,7 @@ Per aggiungere una nuova origine dati a un progetto LoopBack utilizzando API Des
 
 Per aggiungere un nuovo modello a un progetto LoopBack utilizzando API Designer, completa la seguente procedura:
 1. Fai clic sull'icona **Models** ![](images/models-icon.png).
-2. Fai clic su **Add**. Viene visualizzata la finestra Nuovo modello LoopBack.
+2. Fai clic su **Aggiungi**. Viene visualizzata la finestra Nuovo modello LoopBack.
 3. Immetti `weather` nel campo di testo **Name** e fai clic su **New**.
 4. Nel campo **Data Source**, seleziona **weatherDS**.
 	![](images/new-model-1.png)
@@ -215,7 +215,7 @@ Per verificare i tuoi endpoint API utilizzando lo strumento API Designer Explore
 Il pannello centrale visualizza le informazioni di riepilogo sull'endpoint, inclusi i parametri, la sicurezza, i dati dell'istanza del modello e i codici di risposta. Il pannello di destra fornisce il codice del template per richiamare l'endpoint utilizzando il comando curl e i linguaggi come Ruby, Python, Java e Node.
 
 6. Per verificare gli endpoint REST nello strumento API Designer Explore, completa la seguente procedura:
-    1. Nel pannello di destra, fai clic su **Try it**. 
+    1. Nel pannello di destra, fai clic su **Try it**. Se è presente un elemento dati `id`, rimuovilo dai dati generati prima di eseguire il test. 
 	
 	2. Scorri fino a **Parameters** e fai clic su **Generate** per generare alcuni dati fittizi. Per impostazione predefinita, i dati generati includono le proprietà `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low` e `tonight_humidity_high`.
 	
@@ -223,7 +223,7 @@ Il pannello centrale visualizza le informazioni di riepilogo sull'endpoint, incl
 	![](images/explore-test-2.png)
 	
 >![troubleshooting]
->Se visualizzi un messaggio di errore dovuto a un certificato non attendibile per l'host locale, fai clic sul link fornito nel messaggio di errore nello strumento API Designer Explore per accettare il certificato e procedi con il richiamo delle operazioni nel tuo browser web. La procedura esatta dipende da quale browser web stai utilizzando. Se carichi gli endpoint REST direttamente nel tuo browser, visualizzerai il messaggio: {"name":"PreFlowError","message":"unable to process the request"}. Devi utilizzare lo strumento API Designer Explore per verificare gli endpoint REST nel tuo browser perché include le intestazioni necessarie e altri parametri obblgiatori.
+>Se visualizzi un messaggio di errore dovuto a un certificato non attendibile per l'host locale, fai clic sul link fornito nel messaggio di errore nello strumento API Designer Explore per accettare il certificato e procedi con il richiamo delle operazioni nel tuo browser web. La procedura esatta dipende da quale browser web stai utilizzando. Se carichi gli endpoint REST direttamente nel tuo browser, visualizzerai il messaggio: {"name":"PreFlowError","message":"unable to process the request"}. Devi utilizzare lo strumento API Designer Explore per verificare gli endpoint REST nel tuo browser perché include le intestazioni necessarie e altri parametri obbligatori.
 >
 >![troubleshooting]
 >Se ricevi un codice di risposta di **422 - Unprocessable Entity** con il seguente payload:

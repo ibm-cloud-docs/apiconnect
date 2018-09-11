@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-11-28"
+  years: 2018
+lastupdated: "2018-02-22"
 
 ---
 
@@ -48,7 +48,7 @@ Führen Sie zum Erstellen eines LoopBack-Projekts in der Befehlszeile des {{site
 	apic loopback
 	```
 	>![info]
-	>In diesem Lernprogramm erstellen Sie ein Projekt mit der Bezeichnung weather-data.
+	>In diesem Lernprogramm erstellen Sie ein Projekt mit der Bezeichnung 'weather-data'.
 2.  Geben Sie in der Eingabeaufforderung `weather-data` als Name für das Projekt ein und drücken Sie die **Eingabetaste**.
 	```bash
 	? Wie lautet der Name für Ihre Anwendung? weather-data
@@ -93,7 +93,7 @@ Führen Sie die folgenden Schritte aus, um mit API Designer ein LoopBack-Projekt
 	>![info]
 	>Mit dem obigen Befehl wird das {{site.data.keyword.apiconnect_short}}-Toolkit initialisiert und API Designer im Standardbrowser gestartet.
 	>![info]
-	>In diesem Lernprogramm erstellen Sie ein Projekt mit der Bezeichnung weather-data.
+	>In diesem Lernprogramm erstellen Sie ein Projekt mit der Bezeichnung 'weather-data'.
 2.  Falls Sie den Navigationsbereich der Benutzerschnittstelle vorher nicht fixiert haben, klicken Sie auf das Navigationssymbol ![](images/navigate-to.png). Der Navigationsbereich der Benutzerschnittstelle von API Manager wird geöffnet. Klicken Sie zum Fixieren des Navigationsbereichs der Benutzerschnittstelle auf das Symbol für das Fixiermenü ![](images/pinned.png).
 3.  Klicken Sie in der Seitenleiste auf das Pluszeichen für Projekte ![](images/add-icon.png).
 4.  Klicken Sie auf **LoopBack-Projekt erstellen**. Der Dialog **Neues LoopBack-Projekt hinzufügen** wird angezeigt.
@@ -215,7 +215,7 @@ Führen Sie die folgenden Schritte aus, um mit API Designer Explore die API-Endp
 Im mittleren Teilfenster werden Übersichtsinformationen zum Endpunkt angezeigt, unter anderem zu Parametern, Sicherheit, Modellinstanzdaten und Antwortcodes. Im rechten Teilfenster werden ein Vorlagencode zum Aufrufen des Endpunkts mithilfe des curl-Befehls sowie Sprachen wie Ruby, Python, Java und Node bereitgestellt.
 
 6. Führen Sie die folgenden Schritte aus, um die REST-Endpunkte im API Designer Explore-Tool zu testen:
-    1. Klicken Sie im rechten Fensterbereich auf **Ausprobieren**. 
+    1. Klicken Sie im rechten Fensterbereich auf **Ausprobieren**. Wenn ein Datenelement `id` vorhanden ist, entfernen Sie es aus den generierten Daten, bevor Sie den Test durchführen. 
 	
 	2. Blättern Sie abwärts zu **Parameter** und klicken Sie auf **Generieren**, um Testdaten zu generieren. Standardmäßig enthalten die generierten Daten die Eigenschaften `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low` und `tonight_humidity_high`.
 	

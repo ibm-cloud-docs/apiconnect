@@ -529,7 +529,7 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
   API invoke tls-profile: client:Loopback-client
   ```
 
-8. 그다음, 공개 시간 중에 리턴된 값으로 제품 정의를 수정해야 합니다. 이를 수행하려면 다음 단계를 완료하십시오.
+8. 그런 다음, 공개 시간 중에 리턴된 값으로 제품 정의를 수정해야 합니다. 이를 수행하려면 다음 단계를 완료하십시오.
 
     1. API Designer UI에서 **API**를 클릭하십시오.
     2. API를 선택하십시오.
@@ -614,9 +614,9 @@ apic edit
 ```
     잠시 후에 다음 메시지가 표시됩니다.
     ```
-    Express server listening on http://127.0.0.1:9000
+        Express server listening on http://127.0.0.1:9000
     ```
-    API Designer가 기본 웹 브라우저에서 열립니다.
+        API Designer가 기본 웹 브라우저에서 열립니다.
 
 2. 로그인 페이지에서 {{site.data.keyword.Bluemix_notm}} ID 및 비밀번호를 입력하십시오. **로그인**을 클릭하십시오.
 

@@ -16,16 +16,12 @@ lastupdated: "2017-11-20"
 
 
 ## Requisito previo
-No hay ningún requisito previo para esta guía de aprendizaje. Como administrador del portal, también puede completar esta guía de aprendizaje mientras navega por el portal del desarrollador para experimentar cómo navegan los usuarios del portal por el portal del desarrollador. Tenga en cuenta que todos los portales de desarrolladores tienen diferentes texturas.  
+No hay ningún requisito previo para esta guía de aprendizaje. Como administrador del portal, también puede completar esta guía de aprendizaje mientras navega por el portal del desarrollador para experimentar cómo navegan los usuarios del portal por el portal del desarrollador. Tenga en cuenta que todos los portales de desarrolladores tienen diferentes texturas. 
 
 Si no tiene un portal del desarrollador existente, puede establecer y configurar un portal del desarrollador en {{site.data.keyword.Bluemix_short}} antes de continuar con esta guía de aprendizaje.
 
-
-
 ## Objetivo
-En esta guía de aprendizaje, aprenderá cómo un usuario del portal puede consumir las API en el Portal del desarrollador de {{site.data.keyword.apiconnect_full}}. Comprenderá cómo un usuario del portal puede explorar productos y API, ver y probar API, y suscribirse a las API.
-
- 
+En esta guía de aprendizaje, aprenderá cómo un usuario del portal puede consumir las API en el Portal del desarrollador de {{site.data.keyword.apiconnect_full}}. Comprenderá cómo un usuario del portal puede explorar productos y API, ver y probar API, y suscribirse a las API. 
 
 ## Explorar los productos y las API
 Esta sección muestra cómo un usuario del portal exploraría los productos y las API en el portal del desarrollador.
@@ -76,7 +72,7 @@ Esta sección muestra cómo se puede suscribir un usuario del portal a las API e
 1. Seleccione **Crear una cuenta**.
 ![Productos de la API](images/31-create-account.png)
 
-2. Complete los campos necesarios y seleccione **Crear cuenta nueva** en la parte inferior de la página.
+2. Complete los campos necesarios y seleccione **Crear cuenta nueva** en la parte inferior de la página. 
 **Nota:** Utilice una dirección de correo electrónico diferente a la que ha utilizado para crear el portal del desarrollador en la guía de aprendizaje anterior.
 ![Productos de la API](images/32-create-new-account.png)
 

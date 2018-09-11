@@ -26,7 +26,7 @@ lastupdated: "2017-12-15"
 <table summary="" id="apic_004__table_lym_rxj_gv" class="defaultstyle"><caption class="style-scope doc-content">표 1. API Management 제품 라이프사이클 상태</caption>
 <thead class="style-scope doc-content">
 <tr class="style-scope doc-content doc-tr-even">
-<th style="width: 11.25%" id="d3569e1968" class="thleft thbot style-scope doc-content">시/도</th>
+<th style="width: 11.25%" id="d3569e1968" class="thleft thbot style-scope doc-content">상태</th>
 <th style="width: 88.75%" id="d3569e1970" class="thleft thbot style-scope doc-content">설명</th>
 </tr>
 </thead>
@@ -190,7 +190,7 @@ API 위에 마우스 커서를 올려 놓으십시오.
 
 제품이 작성되었으며, 이제 개발자가 사용할 수 있는 하나의 오퍼링으로 API 및 플랜 세트가
 지정되었습니다.
-그다음, 제품을 카탈로그로 스테이징하십시오. 자세한 정보는 [제품 스테이징](#stage_product})을 참조하십시오.
+그런 다음, 제품을 카탈로그로 스테이징하십시오. 자세한 정보는 [제품 스테이징](#stage_product})을 참조하십시오.
 
 
 ## 제품 스테이징

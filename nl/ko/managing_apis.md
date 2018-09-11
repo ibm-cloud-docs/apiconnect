@@ -79,7 +79,7 @@ Secure Gateway 클라이언트 설정에 관한 자세한 정보는 [클라이�
 
 클라이언트가 연결되고 게이트웨이 ID 및 상태가 표시됩니다. 게이트웨이 구성이
 완료되고 Secure Gateway가 작성되었습니다.
-그다음, Secure Gateway를 사용하여 온프레미스 API에 액세스하십시오.
+그런 다음, Secure Gateway를 사용하여 온프레미스 API에 액세스하십시오.
 
 ### 사용자 API로 Secure Gateway 사용
 {: #using_sec_gate_apis notoc}
@@ -129,7 +129,7 @@ target-url: http://onpremdb2.rtp.raleigh.ibm.com:3055$(request.path)$(request.se
 게이트웨이를 결정합니다. {{site.data.keyword.SecureGateway}} 서비스가 이미 프로비저닝된 경우
 {{site.data.keyword.SecureGateway}} 대시보드에서 대상을 모니터할 수 있습니다. 그러나 {{site.data.keyword.apiconnect_short}} 서비스에서 작성한
 {{site.data.keyword.apiconnect_short}} 대상은 편집할 수 없습니다.
-그다음, {{site.data.keyword.SecureGateway}} API를 테스트하십시오.
+그런 다음, {{site.data.keyword.SecureGateway}} API를 테스트하십시오.
 
 ### Secure Gateway API 테스트
 {: test_sec_gate notoc}
@@ -413,7 +413,7 @@ API Manager에서 역할의 권한을 구성하려면 다음 단계를
 다음 목록에는 사용 가능한 기본 역할이 표시됩니다.
   - 관리자
   - 제품 관리자
-  - API 개발자(API Developer)
+  - API 개발자
   - 공개자
 소유자 역할에는 모든 권한이 있습니다.
 

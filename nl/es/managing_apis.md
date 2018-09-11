@@ -51,7 +51,8 @@ Pulse en cada paso de la visita guiada para completar la configuración de la pa
 3. Pulse **Añadir**.
 Se mostrará el recuadro de diálogo `Crear Secure Gateway`.
 
-4. Especifique un nombre para la pasarela.**Nota:** Sólo se permiten caracteres alfanuméricos y de subrayado.
+4. Especifique un nombre para la pasarela.
+    **Nota:** Sólo se permiten caracteres alfanuméricos y de subrayado.
 
 5. Pulse **Guardar**.
 La pasarela se muestra junto con el ID de pasarela y la señal de seguridad.
@@ -68,7 +69,8 @@ para conectar una red remota a una pasarela segura en la red de Bluemix&reg;.
     - Docker
     - IBM DataPower&reg;
 
-8. Siga las direcciones en pantalla para instalar y ejecutar el cliente que ha seleccionado.Para obtener más información sobre cómo configurar un cliente de pasarela segura, consulte [Configuración de un cliente](../../services/SecureGateway/sg_021.html#sg_021).
+8. Siga las direcciones en pantalla para instalar y ejecutar el cliente que ha seleccionado.
+Para obtener más información sobre cómo configurar un cliente de pasarela segura, consulte [Configuración de un cliente](../../services/SecureGateway/sg_021.html#sg_021).
 
 9. Cuando haya terminado de instalar el cliente, cierre la ventana **Configurar clientes de Secure Gateway**.
 

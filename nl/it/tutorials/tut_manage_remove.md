@@ -88,7 +88,7 @@ In questa esercitazione, eliminerai, archivierai e ritirerai un'API.
 ## Cosa hai fatto in questa esercitazione
 In questa esercitazione, hai completato le seguenti attività:
 
-1. Eliminato un prodotto API 
+1. Eliminato un prodotto API
 2. Ritirato un prodotto API
 3. Archiviato un prodotto API
 4. Annullata l'archiviazione di un prodotto API

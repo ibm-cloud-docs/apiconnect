@@ -13,9 +13,7 @@ lastupdated: "2017-12-15"
 # 문제점 해결
 {: #troubleshoot}
 
-{{site.data.keyword.Bluemix_notm}}의
-{{site.data.keyword.apiconnect_long}} 사용과 관련된
-공통 문제점 해결 질문에 대한 답변입니다.
+{{site.data.keyword.Bluemix_notm}}의 {{site.data.keyword.apiconnect_long}} 사용과 관련된 공통 문제점 해결 질문에 대한 답변입니다.
 {:shortdesc}
 
 ## API Connect {{site.data.keyword.Bluemix_notm}} 서비스를 추가할 때 필요한 사용자 이름과 비밀번호
@@ -190,7 +188,7 @@ npm 설치가 디버그를 위한 유용한 정보를 제공하지 않고
 ### 해결
 {: #ts_res_npmfail}
 
-설치가 실패하면 npm이  `npm-debug.log</filepath>` 파일에 행을 작성하여
+설치가 실패하면 npm이 `npm-debug.log</filepath>` 파일에 행을 작성하여
 오류가 있는 위치를 보여줍니다. `npm-debug.log` 파일을 사용하여
 원인을 판별하십시오.
 
@@ -247,7 +245,7 @@ Terminate Batch job (Y/N)?
 
 비용 청구 정보를 사용하려면 올바른 {{site.data.keyword.apiconnect_short}} 계정과 권한이 있어야 합니다.
 
-## 제품으로 비용 청구 플랜에 등록할 수 없습니다.
+## 제품으로 비용 청구 플랜에 등록할 수 없음
 
 스트라이프는 각 고객을 최대 25개의 등록으로 제한합니다. 이 한계를 초과하지
 않도록 하십시오. 초과하는 경우 다른 등록을 제거해야만 이 등록을 추가할 수 있습니다.

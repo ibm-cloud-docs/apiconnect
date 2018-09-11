@@ -26,7 +26,7 @@ lastupdated: "2017-12-13"
 または
 - [クライアント ID とクライアント秘密鍵による API の保護 (ツールキットを使用する場合)](tut_secure_id_secret_tk.html)
 
-注: このチュートリアルでは、{{site.data.keyword.Bluemix}} UI 内でタスクを実行する手順とスクリーン・ショットを紹介します。コマンド・ラインでも同じ手順を行うことができます。その手順については、[IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tutorial_apionprem_security_OAuth_v506.html) を参照してください。 
+注: このチュートリアルでは、{{site.data.keyword.Bluemix}} UI 内でタスクを実行する手順とスクリーン・ショットを紹介します。 コマンド・ラインでも同じ手順を行うことができます。 その手順については、[IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tutorial_apionprem_security_OAuth_v506.html) を参照してください。 
 
 ## 手順
 

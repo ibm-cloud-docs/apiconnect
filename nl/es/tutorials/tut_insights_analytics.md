@@ -85,9 +85,7 @@ Ahora, vamos a crear un nuevo panel de control que proporcionará la vista de pa
    ![](./images/newdashboard.png) 
     Se mostrará una lista de visualizaciones disponibles.
 
-
-
-2. Seleccione algunas visualizaciones que añadir a su panel de control. Por ejemplo:
+2. Seleccione algunas visualizaciones que añadir a su panel de control.  Por ejemplo:
   * Apps suscritas
   * Apps por plan 
   * Tasa de éxito
@@ -128,7 +126,7 @@ Este gráfico (hasta ahora) muestra una serie de tiempo de llamadas de API. Quer
 	* Etiqueta personalizada: **App**
 	
    ![](./images/subbucket.png)
-8. Pulse **Ejecutar** para ver el gráfico. 
+8. Pulse **Ejecutar** para ver el gráfico.
 9. Pulse **Guardar** y dé un nombre a su gráfico `Llamadas de API por app`.
 10. Para ver la visualización en contexto, añádala al Panel de control del suscriptor.
 

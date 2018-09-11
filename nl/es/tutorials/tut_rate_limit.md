@@ -65,7 +65,7 @@ Ahora que hemos visto qué aspecto tiene el Plan predeterminado, vamos a crear u
  
     ![](./images/newplanbutton.png) 
     
-    Se ha creado un nuevo Plan, y de forma predeterminada, se establece para permitir un uso ilimitado (es decir, ningún límite de velocidad). Vamos a darle un nombre más significativo, y a establecer un límite más restrictivo.
+    Se ha creado un nuevo Plan, y de forma predeterminada, se establece para permitir un uso ilimitado (es decir, ningún límite de velocidad). Vamos a darle un nombre más significativo, y a establecer un límite más restrictivo. 
 2. Pulse el Plan nuevo (`Plan nuevo 1`) para expandir los detalles.
 3. Pulse el campo Título y establezca el mosaico del Plan en: `Demo`.
 4. Pulse el campo Nombre y establezca el nombre del Plan en `demo-plan`.
@@ -97,9 +97,9 @@ Si esta es la primera vez que trabaja con el Portal del desarrollador, deberá s
 
 Las siguientes instrucciones le guiarán a través de estos pasos.
 
-1. Inicie el Portal del desarrollador. Si no conoce el URL, puede encontrarlo en el separador Configuración del Catálogo del recinto de pruebas.Para suministrar el Portal del desarrollador por primera vez, consulte [Establecimiento y configuración del Portal del desarrollador](tut_config_dev_portal.html).
+1. Inicie el Portal del desarrollador. Si no conoce el URL, puede encontrarlo en el separador Configuración del Catálogo del recinto de pruebas. Para suministrar el Portal del desarrollador por primera vez, consulte [Establecimiento y configuración del Portal del desarrollador](tut_config_dev_portal.html).
     - Esto puede tardar hasta una hora en completarse. Cuando el Portal del desarrollador del recinto de pruebas esté listo, recibirá un correo electrónico
-con un enlace a su nuevo sitio de Portal del desarrollador. El enlace es un enlace de un solo uso para la cuenta de administrador. 
+con un enlace a su nuevo sitio de Portal del desarrollador. El enlace es un enlace de un solo uso para la cuenta de administrador.
 2. Inicie sesión en el Portal utilizando las credenciales de desarrollador de apps (**no** su ID de IBM). ***(Cree una nueva cuenta de desarrollador si es necesario, utilizando una dirección distinta de su ID de IBM).***
 3. Pulse el enlace **Apps** en la barra de herramientas, y pulse el botón **Crear nueva app**.
 

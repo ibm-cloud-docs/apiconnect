@@ -77,8 +77,8 @@ Um app de _provedor de clima_ de amostra foi criado para este tutorial. A especi
     a. Zipcode é um parâmetro necessário para esta operação, então insira um CEP dos EUA válido (por exemplo, 90210).  
     b. Clique em **chamar** e verifique se vê:  
     ```
-    - 200 OK response
-    - Current weather data for 90210  
+    - 200 OK resposta
+    - Dados climáticos atuais para 90210  
     ```
 _Se você obtiver um erro CORS, siga as instruções na mensagem de erro. Clique no link com erro para incluir a exceção em seu navegador e, em seguida, pressione o botão "chamar" novamente._
 

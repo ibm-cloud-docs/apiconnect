@@ -12,7 +12,7 @@ lastupdated: "2017-12-13"
 
 # 2LO(Two-Legged OAuth)로 API 보호
 
-기간: 10분  
+소요 시간: 10분  
 스킬 레벨: 초보자
 
 ## 목표

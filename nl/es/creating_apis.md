@@ -139,9 +139,6 @@ x64&amp;x86 redistribuible que haya instalado en primer lugar. Si se producen er
 `C:\Users\username\AppData\Roaming\npm` sustituye a cualquier otra entrada.
 
 
-
-
-
 1. **Opcional**:
 Si utiliza API Designer, abra una nueva ventana de shell.
 
@@ -152,8 +149,6 @@ npm install --save <connector-package>
 ```
 {: codeblock}
 donde `<connector-package>` es el nombre del paquete npm del conector de LoopBack seleccionado.
-
-
 
 <table summary="" id="apic_connectors_table_pre_reqs" class="defaultstyle style-scope doc-content">
 <caption>Tabla 3. Conectores LoopBack</caption>
@@ -221,7 +216,7 @@ Antes de empezar, debe tener a mano el identificador del catálogo que desee uti
   apic config:set catalog=apic-catalog://<region>.apiconnect.ibmcloud.com/orgs/<username_string>-dev/catalogs/<catalog>
   ```
   {: codeblock}
-donde:
+    donde:
 
     - `<region>` es la región de {{site.data.keyword.Bluemix_notm}}.
 
@@ -299,8 +294,6 @@ Este proceso puede tardar un poco.
     ```
     Para obtener más información sobre cada opción, consulte [Utilización de modelos incorporados ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){:new_window}.
 
-
-
 9. Seleccione una clase base y pulse **Intro**. La herramienta le pregunta si desea exponer la API REST del modelo.
 ```
 ? Expose branch via the REST API? (Y/n)
@@ -370,7 +363,7 @@ La herramienta le solicita el nombre del origen de datos.
 ? Enter the data-source name:
 ```
 
-2. Escriba un nombre para el origen de datos. En el nombre de un origen de datos se puede utilizar cualquier carácter alfanumérico, guiones y subrayado. La herramienta le solicita que seleccione el conector que utilizará para el origen de datos:
+2. Escriba un nombre para el origen de datos.  En el nombre de un origen de datos se puede utilizar cualquier carácter alfanumérico, guiones y subrayado. La herramienta le solicita que seleccione el conector que utilizará para el origen de datos:
 ```
 ? Select the connector for myds: (Use arrow keys)
 > In-memory db (supported by StrongLoop)
@@ -388,7 +381,6 @@ La herramienta añade el origen de datos al proyecto.
 
 4. Indique el host, el puerto, el usuario, la contraseña y las credenciales de la base de datos.
 La herramienta le solicita que instale el conector de LoopBack.
-
 ```
 Install loopback-connector-<connector>?
 ```
@@ -439,10 +431,8 @@ Service loopback-project-gw (id 2) started on port 4002
 ```
 donde: `<loopback-project>` es el nombre del directorio que contiene el proyecto.
 
-
 Puede probar cualquier punto final de la API mediante `curl`, por ejemplo.
 Si desea cargar la API utilizando un navegador web, abra `http://localhost:4001` en el navegador. En cuanto al proyecto predeterminado de LoopBack (vacío o "Hello world"), verá algo parecido a esto:
-
 ```
 {"started":"2016-03-07T22:24:55.322Z","uptime":35.839}
 ```
@@ -479,7 +469,7 @@ donde:
   * `<region>` es la región de {{site.data.keyword.Bluemix_notm}}. Por ejemplo:
   * `eu` si está utilizando {{site.data.keyword.Bluemix_notm}} Londres.
   * `us` si está utilizando {{site.data.keyword.Bluemix_notm}} Dallas.
-  * `au` si está utilizando {{site.data.keyword.Bluemix_notm}} Sydney.
+  * `au` si está utilizando {{site.data.keyword.Bluemix_notm}} Sídney.
 
   Si no está seguro, puede localizar la región pulsando el icono {{site.data.keyword.avatar}} <img src="images/i-avatar-icon.svg" alt="icono de avatar"/> en la barra de menús para abrir
 el widget Cuenta y soporte y comprobar el campo región.
@@ -516,7 +506,7 @@ durante la publicación. Para ello, lleve a cabo los siguientes pasos:
         ```
         https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<Organización_Bluemix>-<Espacio_Bluemix>.apic.<Nombre_dominio>$(request.path)
         ```
-Si no ha anotado
+        Si no ha anotado
 este valor, puede recuperarlo yendo al URL de gestión devuelto en el
 paso 7. También puede recuperarlo iniciando sesión
 en {{site.data.keyword.Bluemix_notm}} y visualizando la información de la app.
@@ -529,7 +519,8 @@ en {{site.data.keyword.Bluemix_notm}} y visualizando la información de la app.
 ## Creación de una API de LoopBack con API Designer
 {: #create_lb_api_design}
 
-En el procedimiento siguiente se describe cómo crear una API de LoopBack con API Designer.{:shortdesc}
+En el procedimiento siguiente se describe cómo crear una API de LoopBack con API Designer.
+{:shortdesc}
 
 ### Requisitos previos
 {: #prereq_create_lb_api_design}
@@ -584,7 +575,7 @@ apic edit
     ```
     Express server listening on http://127.0.0.1:9000
     ```
-API Designer se abre en su explorador web predeterminado. 
+    API Designer se abre en su explorador web predeterminado.
 
 2. En la página de inicio de sesión, escriba su ID y contraseña de {{site.data.keyword.Bluemix_notm}}. Pulse **Iniciar sesión**.
 
@@ -623,7 +614,7 @@ El origen de datos aparece en la lista de orígenes de datos y el editor actuali
 ```
 npm install --save <connector-package>
 ```
-    donde `<connector-package>` es el nombre del paquete npm del conector de LoopBack seleccionado. Consulte la tabla siguiente para obtener una lista de paquetes de conectores. 
+    donde `<connector-package>` es el nombre del paquete npm del conector de LoopBack seleccionado. Consulte la tabla siguiente para obtener una lista de paquetes de conectores.
 
 **Nota:** Los conectores en memoria y de correo electrónico están integrados en LoopBack, por lo que no es necesario instalarlos.
 
@@ -703,7 +694,6 @@ http://localhost:<4001/>Running
 En función de la configuración del proyecto y de si hay otros procesos en ejecución, puede aparecer un número de puerto distinto.
 
 2. Pulse **localhost:4001** para visualizar el punto final raíz de la API. En cuanto al proyecto predeterminado de LoopBack (vacío o "Hello world"), verá algo parecido a esto:
-
 ```
 {"started":"2017-03-07T22:24:55.322Z","uptime":35.839}
 ```

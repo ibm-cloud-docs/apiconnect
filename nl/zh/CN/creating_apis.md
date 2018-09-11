@@ -235,8 +235,7 @@ npm install --save <connector-package>
   ```
     
     工具将提示您输入要在其中创建项目的目录的名称。
-
-    ```
+```
     ? Enter name of the directory to contain the project: (<project directory name>)
     ```
     
@@ -270,14 +269,12 @@ npm install --save <connector-package>
     ```
 
 7. 输入模型的名称。通常，可以在模型名称中使用任何字母数字字符以及连字符和下划线。这将列出您添加到项目的所有数据源，并且工具将提示您选择要使用的数据源：
-
-    ```
+```
     ? Select the data-source to attach item to: (Use arrow keys)
     ```
 
 8. 选择要使用的数据源，然后按 **Enter** 键。工具将提示您选择模型的基类：
-
-    ```
+```
     ? Select model's base class (Use arrow keys)
        Model
     < PersistedModel
@@ -498,6 +495,7 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
         https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<Bluemix org>-<Bluemix space>.apic.<domain name>$(request.path)
         ```
 如果您未记下此值，那么可以通过转至步骤 7 中返回的管理 URL 来进行检索。您还可以通过登录到 {{site.data.keyword.Bluemix_notm}} 并查看应用程序信息来检索此值。
+
         - **TLS 概要文件**：插入 API 调用 tls-profile。例如：
         ```
         client:Loopback-client
@@ -529,8 +527,7 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
   ```
     
     工具将提示您输入要在其中创建项目的目录的名称。
-
-    ```
+```
     ? Enter name of the directory to contain the project: (<project directory name>)
     ```
     
@@ -558,9 +555,9 @@ apic edit
 ```
 在短暂停顿后，将显示以下消息。
 ```
-    Express server listening on http://127.0.0.1:9000
+        Express server listening on http://127.0.0.1:9000
     ```
-    API Designer 将在缺省 Web 浏览器中打开。
+        API Designer 将在缺省 Web 浏览器中打开。
 
 
 

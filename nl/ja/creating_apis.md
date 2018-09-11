@@ -234,7 +234,7 @@ CLI で LoopBack API を作成する場合は、以下の手順を実行しま�
   ```
     
     ツールで、プロジェクトを作成するディレクトリーの名前を入力するように求めるプロンプトが出されます。
-    ```
+```
     ? Enter name of the directory to contain the project: (<project directory name>)
     ```
     
@@ -251,13 +251,13 @@ CLI で LoopBack API を作成する場合は、以下の手順を実行しま�
 この処理にはある程度時間がかかることがあります。
 
 5. モデルを作成するには、その前に、現行作業ディレクトリーがプロジェクトの最上位ディレクトリーになっていることを確認する必要があります。 これを行うには、以下のコマンドを入力します。
-    ```
+```
     cd <project directory name>
     ```
     {: codeblock}
 
 6. モデルを作成するには、以下のコマンドを入力します。
-    ```
+```
     apic create --type model
     ```
     {: codeblock}
@@ -270,13 +270,13 @@ CLI で LoopBack API を作成する場合は、以下の手順を実行しま�
 
 7. モデルの名前を入力します。
     一般的に、モデル名では任意の英数字、ダッシュ、および下線を使用できます。
-    プロジェクトに追加したすべてのデータ・ソースがリストされており、ツールにより、使用するデータ・ソースを選択するように求める以下のようなプロンプトが出されます。
-    ```
+    プロジェクトに追加したすべてのデータ・ソースがリストされ、ツールにより、使用するデータ・ソースを選択するように求める以下のようなプロンプトが出されます。
+```
     ? Select the data-source to attach item to: (Use arrow keys)
     ```
 
 8. 使用するデータ・ソースを選択して、**「Enter」**キーを押します。 以下のように、ツールで、モデルの基本クラスを選択するように求めるプロンプトが出されます。
-    ```
+```
     ? Select model's base class (Use arrow keys)
        Model
     < PersistedModel
@@ -422,7 +422,6 @@ Service loopback-project-gw (id 2) started on port 4002
 ```
 ここで、`<loopback-project>` は、プロジェクトが入っているディレクトリーの名前です。
 
-
 その後、例えば `curl` を使用して、任意の API エンドポイントをテストできます。
 Web ブラウザーを使用して API をロードする場合、ブラウザーで `http://localhost:4001` を開きます。 デフォルトの LoopBack (空または hello-world) プロジェクトの場合、以下のように表示されます。
 ```
@@ -490,13 +489,14 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
     5. **「DataPower Gateway ポリシー」**を選択します。
     6. **「呼び出し」**をダブルクリックします。
     7. ステップ 7 で取得した値を使用して、以下のフィールドを更新します。
-        - **呼び出し URL**: API ターゲット URL を挿入します。 セキュア・プロトコル HTTPS を指定する必要があります。 以下に例を示します。
-        ```
+        - **呼び出し URL**: API ターゲット URL を挿入します。 セキュア・プロトコル HTTPS を指定する必要があります。 例えば、次のようになります。
+```
         https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<Bluemix org>-<Bluemix space>.apic.<domain name>$(request.path)
         ```
         この値をメモしていなかった場合は、ステップ 7 で返された管理 URL にアクセスして取得できます。また、{{site.data.keyword.Bluemix_notm}} にログインし、アプリ情報を確認して取得することもできます。
-        - **TLS プロファイル**: 「API 呼び出し TLS プロファイル」を挿入します。 以下に例を示します。
-        ```
+
+        - **TLS プロファイル**: 「API 呼び出し TLS プロファイル」を挿入します。 例えば、次のようになります。
+```
         client:Loopback-client
         ```
     8. **「保存」**をクリックして API を保存します。
@@ -526,7 +526,7 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
   ```
     
     ツールで、プロジェクトを作成するディレクトリーの名前を入力するように求めるプロンプトが出されます。
-    ```
+```
     ? Enter name of the directory to contain the project: (<project directory name>)
     ```
     
@@ -556,9 +556,9 @@ apic edit
 ```
     しばらくしてから、以下のメッセージが表示されます。
     ```
-    Express server listening on http://127.0.0.1:9000
+        Express server listening on http://127.0.0.1:9000
     ```
-    API Designer がデフォルトの Web ブラウザーで開きます。
+        API Designer がデフォルトの Web ブラウザーで開きます。
 
 2. ログイン・ページで、{{site.data.keyword.Bluemix_notm}} ID とパスワードを入力します。 **「サインイン」**をクリックします。
 
@@ -678,7 +678,8 @@ http://localhost:<4001/>Running
 {"started":"2017-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-次に、製品を作成する必要があります。 詳しくは、[製品の作成](managing_products.html#create_product)を参照してください。**ヒント**: 新しいコマンド・プロンプトを開始する際には、必ず、現行作業ディレクトリーがプロジェクトの最上位ディレクトリーになっていることを確認する必要があります。 これを行うには、以下のコマンドを入力します。
+次に、製品を作成する必要があります。 詳しくは、[製品の作成](managing_products.html#create_product)を参照してください。
+**ヒント**: 新しいコマンド・プロンプトを開始する際には、必ず、現行作業ディレクトリーがプロジェクトの最上位ディレクトリーになっていることを確認する必要があります。 これを行うには、以下のコマンドを入力します。
 ```
 cd <project directory name>
 ```

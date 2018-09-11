@@ -33,7 +33,7 @@ Nota: questa esercitazione mostra i passi e le schermate per eseguire l'attivitÃ
 1. Crea un'API provider OAuth e seleziona il tuo schema OAuth.  
 	a. Apri **Drafts**, seleziona **APIs** e fai clic su **Add** > **OAuth 2.0 Provider API**.  
     ![](images/oauth_provider_1.png)
-	b. Denominala "OAuth Endpoint API". Il nome e il percorso di base dovrebbe venire popolati automaticamente.   
+	b. Denominala "OAuth Endpoint API". Il nome e il percorso di base dovrebbe venire popolati automaticamente.  
 	c. Seleziona **Create API**.  
 	d. Nell'API endpoint OAuth appena creata, passa al pannello **OAuth 2** (o scorri fino ad esso) e seleziona "Confidential" come tipo di client.  
 	e. In Scopes, ridenomina _scope1_ con _view_current_. Elimina _scope2_ e _scope3_.  

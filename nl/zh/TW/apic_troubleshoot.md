@@ -13,7 +13,8 @@ lastupdated: "2017-12-15"
 # 疑難排解
 {: #troubleshoot}
 
-以下是有關在 {{site.data.keyword.Bluemix_notm}} 上使用 {{site.data.keyword.apiconnect_long}} 的常見疑難排解問題的答案。{:shortdesc}
+以下是有關在 {{site.data.keyword.Bluemix_notm}} 上使用 {{site.data.keyword.apiconnect_long}} 的常見疑難排解問題的答案。
+{:shortdesc}
 
 ## 新增 API Connect {{site.data.keyword.Bluemix_notm}} 服務時所需的使用者名稱及密碼
 

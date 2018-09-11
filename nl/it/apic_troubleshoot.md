@@ -16,7 +16,7 @@ lastupdated: "2017-12-15"
 Qui troverai le risposte alle domande per la risoluzione dei problemi comuni relativi all'utilizzo di {{site.data.keyword.apiconnect_long}} su {{site.data.keyword.Bluemix_notm}}.
 {:shortdesc}
 
-## Nome utente e password obbligatori quando aggiungi il servizio API Connect {{site.data.keyword.Bluemix_notm}} 
+## Nome utente e password obbligatori quando aggiungi il servizio API Connect {{site.data.keyword.Bluemix_notm}}
 
 Dopo aver aggiunto il servizio al tuo dashboard {{site.data.keyword.Bluemix_notm}}, ti viene richiesto di inserire un nome utente e una password quando tenti di aprirlo. 
 
@@ -38,7 +38,7 @@ Abilita o aumenta il livello di cookie nelle tue impostazioni del browser finch√
 
 ## Impossibile installare il toolkit sviluppatori
 
-Dopo che hai eseguito il provisioning del servizio  API Connect, provi a installare il toolkit sviluppatori e
+Dopo che hai eseguito il provisioning del servizio API Connect, provi a installare il toolkit sviluppatori e
 l'installazione non riesce.
 
 ### Sintomi

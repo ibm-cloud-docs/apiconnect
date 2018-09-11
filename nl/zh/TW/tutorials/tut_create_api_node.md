@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-11-28"
+  years: 2018
+lastupdated: "2018-02-22"
 
 ---
 
@@ -14,7 +14,7 @@ lastupdated: "2017-11-28"
 {:pre: .pre}
 
 
-# 在 Node.js 中建立 API
+# 以 Node.js 建立 API
 
 **持續時間**：20 分鐘  
 **技能水準**：初學者  
@@ -22,7 +22,7 @@ lastupdated: "2017-11-28"
 ---
 ## 目標
 
-本指導教學會引導您使用 LoopBack 架構在 Node.js 中建立 API。本指導教學說明如何進行下列作業：
+本指導教學會引導您使用 LoopBack 架構以 Node.js 建立 API。本指導教學說明如何進行下列作業：
 1. 建立新的 LoopBack 專案。
 2. 使用 {{site.data.keyword.apiconnect_full}} Toolkit 中的 API Designer，將新的資料來源及模型新增至 LoopBack 專案。
 3. 使用 API Designer「探索」工具來測試 API 端點。
@@ -44,7 +44,7 @@ lastupdated: "2017-11-28"
 
 若要使用 {{site.data.keyword.apiconnect_short}} Toolkit 指令行來建立 LoopBack 專案，請完成下列步驟：
 1.  從指令行介面中，輸入下列指令。它用來建立及管理 LoopBack 應用程式。
-	```bash 
+	```bash
 	apic loopback
 	```
 	>![info]
@@ -61,7 +61,7 @@ lastupdated: "2017-11-28"
 	```
 4.  選取要使用的 LoopBack 版本。選擇現行正式作業版本：3.x。
 	```bash
-	? Which version of LoopBack would you like to use? 
+	? Which version of LoopBack would you like to use?
   	2.x (long term support) 
 	? 3.x (current) 
 	```
@@ -90,7 +90,7 @@ lastupdated: "2017-11-28"
 	apic edit
 	```
 	![](images/api-designer-1.png)
-	>![info]
+>![info]
 	>上述指令會起始設定 {{site.data.keyword.apiconnect_short}} 工具箱，並在完成時使用預設瀏覽器啟動 API Designer。
 	>![info]
 	>在本指導教學中，您將建立稱為 weather-data 的專案。
@@ -213,7 +213,7 @@ lastupdated: "2017-11-28"
 中心窗格會顯示有關端點的摘要資訊，其中包括其參數、安全、模型實例資料及回應碼。右窗格提供使用 curl 指令呼叫端點的範本程式碼，以及 Ruby、Python、Java 及 Node 這類語言。
 
 6. 若要在 API Designer「探索」工具中測試 REST 端點，請完成下列步驟：
-    1. 在右窗格上，按一下**試用**。 
+    1. 在右窗格上，按一下**試用**。如果有 `id` 資料元素，請從產生的資料移除該元素，然後才重新執行測試。 
 	
 	2. 向下捲動至**參數**，然後按一下**產生**以產生一些虛擬資料。依預設，產生的資料包括 `zip_code`、`current_temperature`、`current_humidity`、`tonight_temperature_low`、`tonight_temperature_high`、`tonight_humidity_low`，以及 `tonight_humidity_high` 內容。
 	

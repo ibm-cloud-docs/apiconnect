@@ -50,7 +50,7 @@ Swagger 정의가 포함되어 있는 `.json`, `.yml` 및 `.yaml`
 
 API 정의를 가져온 경우, 이는 **드래프트** 페이지의
 **API** 탭에서 API 정의의 목록에 표시됩니다.
-그다음, 기타 REST API 정의에서와 같이 API 정의를 편집할 수 있습니다.
+그런 다음, 기타 REST API 정의에서와 같이 API 정의를 편집할 수 있습니다.
 
 ## IBM Integration Bus에서 API 가져오기
 {: #tut_import_iib_apic}
@@ -75,13 +75,11 @@ IBM Integration Bus에서 REST API를 작성하여
 {{site.data.keyword.apiconnect_short}}에 가져오려면
 다음 단계를 완료하십시오.
 1. IBM Integration Bus를 사용하여 REST API를 작성하십시오. 제한사항: IBM Integration Bus의 설치된 버전에서 제공되는 IBM Integration Toolkit에서만 REST API를 작성할 수 있습니다.
-	1. IBM Integration Toolkit을 사용하여 REST API를
-    작성하십시오. IBM Integration Bus에서 REST API 작성 태스크를 완료하는 방법에 대한 자세한 정보는 IBM Knowledge Center에서 [REST API를 사용하여 통합 솔루션 개발 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bi12016_.htm){: new_window}을 참조하십시오.
+	1. IBM Integration Toolkit을 사용하여 REST API를 작성하십시오. IBM Integration Bus에서 REST API 작성 태스크를 완료하는 방법에 대한 자세한 정보는 IBM Knowledge Center에서 [REST API를 사용하여 통합 솔루션 개발 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bi12016_.htm){: new_window}을 참조하십시오.
 		
 	2. **파일** > **새로 작성** > **REST API**를 선택하여 REST API 마법사 작성을 여십시오.
 		
-	3. REST API의 이름을 입력하십시오. 지정하는 이름은 IBM Integration Toolkit에서
-    프로젝트의 이름으로 사용됩니다.
+	3. REST API의 이름을 입력하십시오. 지정하는 이름은 IBM Integration Toolkit에서 프로젝트의 이름으로 사용됩니다.
 		
 	4. 다음의 REST API 작성 방법 중 하나를 선택하고 해당 프로시저를 완료하십시오.
 		

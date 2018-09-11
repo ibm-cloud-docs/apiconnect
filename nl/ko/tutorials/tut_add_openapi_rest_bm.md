@@ -11,7 +11,7 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # {{site.data.keyword.Bluemix_notm}}로 새 API 스펙 가져오기 및 기존 REST 서비스 호출
-**기간**: 15분  
+**소요 시간**: 15분  
 **스킬 레벨**: 초보자  
 
 ## 목표
@@ -40,7 +40,7 @@ lastupdated: "2017-11-02"
 ---
 
 ### 새 OpenAPI 스펙을 추가하여 REST API 프록시 작성  
-1. {{site.data.keyword.Bluemix_notm}}에 로그인: https://new-console.ng.bluemix.net/login.
+1. {{site.data.keyword.Bluemix_notm}}에 로그인하십시오. https://new-console.ng.bluemix.net/login.
 2. {{site.data.keyword.Bluemix_notm}} 탐색 패널에서 **서비스**를 선택한 다음 **대시보드**를 선택하십시오. {{site.data.keyword.apiconnect_short}} 서비스를 시작하십시오.
 3. {{site.data.keyword.apiconnect_short}}에서 탐색 패널이 열려 있는지 확인하십시오. 열려 있지 않으면 **>>**를 클릭하여 여십시오.  
 4. 탐색 패널에서 **드래프트**를 선택하십시오.
@@ -94,16 +94,16 @@ _(다음 튜토리얼에서 API 키로 보안을 확인합니다.)_
     - 필수: Yes  
     - 유형: string  
 
-17. 새 정의 작성: **Today**.
+17. 새 정의를 작성하십시오. **Today**.
 
 18. **Today** 정의의 새 특성을 추가하십시오.
-    - 이름: zip         /  유형: string
+    - 이름: zip / 유형: string
     - 이름: hi / 유형: integer
     - 이름: lo / 유형: integer
     - 이름: nightHumidity / 유형: integer
     - 이름: dayHumidity / 유형: integer
-    - 이름: city        /  유형: string
-    - 이름: state       /  유형: string
+    - 이름: city / 유형: string
+    - 이름: state / 유형: string
 19. **GET /today** 섹션에서 응답 스키마를 "Today"로 업데이트하십시오.
 20. API를 저장하십시오.
 

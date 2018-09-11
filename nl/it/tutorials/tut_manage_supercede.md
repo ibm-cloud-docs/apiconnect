@@ -105,8 +105,8 @@ In questa esercitazione, rimpiazzerai un prodotto API esistente con uno nuovo.
 In questa esercitazione, hai completato le seguenti attività:
 
 1. Aggiornato un prodotto API.
-2. Sostituito un prodotto API esistente con uno aggiornato. 
-3. Migrata la sottoscrizione a un prodotto API esistente al prodotto API aggiornato. 
+2. Sostituito un prodotto API esistente con uno aggiornato.
+3. Migrata la sottoscrizione a un prodotto API esistente al prodotto API aggiornato.
 
 ---
 

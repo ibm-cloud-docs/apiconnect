@@ -11,7 +11,7 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # {{site.data.keyword.Bluemix_notm}}로 API 스펙 가져오기 및 기존 REST 서비스 프록시
-기간: 5분  
+소요 시간: 5분  
 스킬 레벨: 초보자  
 
 ## 목표
@@ -43,7 +43,7 @@ lastupdated: "2017-11-02"
 ---
 
 ## 샘플 앱의 OpenAPI 스펙을 가져와 REST API 프록시 작성
-1. {{site.data.keyword.Bluemix_short}}에 로그인: https://new-console.ng.bluemix.net/login.
+1. {{site.data.keyword.Bluemix_short}}에 로그인하십시오. https://new-console.ng.bluemix.net/login.
 2. {{site.data.keyword.Bluemix_notm}} 탐색 패널에서 **서비스**를 선택한 다음 **대시보드**를 선택하십시오. {{site.data.keyword.apiconnect_short}} 서비스를 시작하십시오. 
 3. {{site.data.keyword.apiconnect_short}}에서 왼쪽에 탐색 패널이 열려 있는지 확인하십시오. 열려 있지 않으면 **>>**를 클릭하여 여십시오.  
 4. 탐색 패널에서 **드래프트**를 선택하십시오.   
@@ -56,7 +56,7 @@ lastupdated: "2017-11-02"
 
 7. OpenAPI 스펙을 가져오고 나면 API의 **디자인** 보기로 이동합니다. 여기서 OpenAPI 정의의 다양한 섹션을 볼 수 있습니다. 스크롤하여 탐색하고 **호스트** 값을 기록하십시오. **소스** 탭에서 OpenAPI도 볼 수 있습니다.
   _참고: 호스트 값이 다음으로 설정됩니다._ `$(catalog.host)` _. 이 값은 API 프록시의 기본 URL입니다._
-8. API가 저장됩니다.  
+8. API가 저장됩니다. 
 
 
 ## API 프록시 테스트

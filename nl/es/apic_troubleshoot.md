@@ -69,9 +69,8 @@ sudo chown -R $USER /usr/local
 
 Este mandato convierte a la cuenta de usuario
 en la propietaria del directorio `/usr/local`. A continuación, no necesitará utilizar sudo para
-instalar el Nodo ni instalar paquetes de forma global con npm.  
-    **Nota:** La modificación de la propiedad de directorios es apropiada solo en un sistema de desarrollo local.
-No haga nunca esto en un sistema servidor.
+instalar el Nodo ni instalar paquetes de forma global con npm. 
+    **Nota:** La modificación de la propiedad de directorios es apropiada solo en un sistema de desarrollo local. No haga nunca esto en un sistema servidor.
 
 Igualmente, no utilice el mandato
 `chown` anterior en el directorio `/usr/bin`;

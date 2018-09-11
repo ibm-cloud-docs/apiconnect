@@ -30,7 +30,7 @@ Dieses Glossar enthält die in {{site.data.keyword.apiconnect_short}} verwendete
 
 - **API Manager**: Die Benutzerschnittstelle (UI) zum Verwalten von APIs, Plänen und Produkten.
 
-- **Assemblierung**: Anwendungsprogrammierschnittstelle (API), die umfassende Funktionen zur Interaktion mit einer Anwendung zur Verfügung stellt: Sie führt Seitenaufrufe für externe Services durch und setzt anschließend die Antwort um bzw. kumuliert sie, bevor die Antwort an die aufrufende Anwendung weitergeleitet wird.
+- **Assembly**: Anwendungsprogrammierschnittstelle (API), die umfassende Funktionen zur Interaktion mit einer Anwendung zur Verfügung stellt: Sie führt Seitenaufrufe für externe Services durch und setzt anschließend die Antwort um bzw. kumuliert sie, bevor die Antwort an die aufrufende Anwendung weitergeleitet wird.
 
 - **Benutzerregistry**: Eine Benutzerregistry ist eine Methode zum Sichern des Zugriffs auf Kataloge und APIs. Der Benutzer kann APIs mit einer Benutzerregistry sichern, sodass beim Aufruf einer API Benutzerberechtigungsnachweise angegeben werden müssen.
 
@@ -56,7 +56,7 @@ Dieses Glossar enthält die in {{site.data.keyword.apiconnect_short}} verwendete
 
 - **Proxy**: Eine Anwendungsprogrammierschnittstelle (API), die Anforderungen an eine benutzerdefinierte Back-End-Ressource weiterleitet und die Antworten zurück zur aufrufenden Anwendung leitet.
 
-- **Richtlinie**: Eine Richtlinie ist ein Konfigurationselement, das während der Behandlung eines API-Aufrufs zur Laufzeit einen bestimmten Aspekts der Verarbeitung im Gateway-Server steuert. Richtlinien sind die Bausteine von Assemblierungsabläufen. Richtlinien stellen das Mittel zur Konfiguration der Funktionalität, wie zum Beispiel Sicherheit, Protokollierung, Routing (Weiterleitung) von Anforderungen zu Zielservices und Umsetzung von Daten aus einem Format in ein anderes. Richtlinien können im Kontext einer API oder im Kontext eines Plans konfiguriert werden.
+- **Richtlinie**: Eine Richtlinie ist ein Konfigurationselement, das während der Behandlung eines API-Aufrufs zur Laufzeit einen bestimmten Aspekts der Verarbeitung im Gateway-Server steuert. Richtlinien sind die Bausteine von Assembly-Abläufen. Richtlinien stellen das Mittel zur Konfiguration der Funktionalität, wie zum Beispiel Sicherheit, Protokollierung, Routing (Weiterleitung) von Anforderungen zu Zielservices und Umsetzung von Daten aus einem Format in ein anderes. Richtlinien können im Kontext einer API oder im Kontext eines Plans konfiguriert werden.
 
 - **Rolle**: Eine Rolle definiert Berechtigungen, mit denen Benutzern gegenüber Funktionalität aktiviert wird. Jede Rolle verfügt über eine andere Gruppe an Berechtigungen.
 

@@ -11,14 +11,14 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # API Connect 인스턴스 설정
-**기간**: 15분  
+**소요 시간**: 15분  
 **스킬 레벨**: 초보자  
 
 
 ## 필요한 항목:
 1. IBM ID
 2. {{site.data.keyword.Bluemix_short}} 계정
-3. _Lite_ 플랜 이상의 {{site.data.keyword.apiconnect_full}} 인스턴스
+3. _라이트_ 플랜 이상의 {{site.data.keyword.apiconnect_full}} 인스턴스
 
 
 <table>
@@ -37,7 +37,7 @@ lastupdated: "2017-10-31"
 	이미 IBM ID가 있습니까? 그러면 등록을 건너뛰고 다음 URL에서 무료 {{site.data.keyword.Bluemix_short}} 계정을 작성하십시오. [https://console.ng.bluemix.net/ ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.ng.bluemix.net/){:new_window}.  
 
 2. IBM ID와 {{site.data.keyword.Bluemix_notm}} 계정이 있으면 {{site.data.keyword.apiconnect_short}} 인스턴스를 작성하십시오.  
-  a. {{site.data.keyword.Bluemix_notm}}에 로그인: [https://new-console.ng.bluemix.net/login ![외부 랑크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://new-console.ng.bluemix.net/login){:new_window}.  
+  a. {{site.data.keyword.Bluemix_notm}}에 로그인하십시오. [https://new-console.ng.bluemix.net/login ![외부 랑크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://new-console.ng.bluemix.net/login){:new_window}.  
   ![](images/prereqs-1.png)  
   b. {{site.data.keyword.Bluemix_notm}}에 _조직_을 작성하십시오. 처음 로그인할 때 이 작업을 수행하도록 프롬프트가 표시됩니다.  
   ![](images/prereqs-2.png)
@@ -45,5 +45,5 @@ lastupdated: "2017-10-31"
   ![](images/prereqs-3.png)
   d. [https://console.ng.bluemix.net/catalog/services/api-connect ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.ng.bluemix.net/catalog/services/api-connect){:new_window}로 이동하십시오.  
   ![](images/prereqs-4.png)  
-  e. _Lite_ 가격 책정 플랜(무료)을 선택하고 **작성**을 클릭하여 시작하십시오.  
+  e. _라이트_ 가격 책정 플랜(무료)을 선택하고 **작성**을 클릭하여 시작하십시오.  
   ![](images/lite-plan.png)  

@@ -115,7 +115,7 @@ _(Visitaremos la seguridad con las Claves de API en la siguiente guía de aprend
       - Asigne la operación **get /today** a **caso 1**.
       ![](images/assemble-1.png)
 El **Conmutador de funcionamiento** proporciona un punto de decisión. Basándose en el par verbo/vía de acceso, deberá invocarse la operación apropiada.
-    c. Arrastre la política de **invocación** desde la paleta y suéltela en el lienzo. _La acción de invocación se utiliza para llamar un servicio anterior desde dentro de una operación_. Suelte una acción de invocación en la vía de acceso **/get current**, y otra en la vía de acceso **/get today**.   
+    c. Arrastre la política de **invocación** desde la paleta y suéltela en el lienzo. _La acción de invocación se utiliza para llamar un servicio anterior desde dentro de una operación_.  Suelte una acción de invocación en la vía de acceso **/get current**, y otra en la vía de acceso **/get today**.   
     d. Seleccione la política de **invocación** en la vía de acceso **/get current**, y actualice su título a "**invoke-current**".  
     e. Actualice el campo URL con `https://myweatherprovider.mybluemix.net/current?zipcode=$(request.parameters.zipcode)`.  
     f. Seleccione la política de **invocación** en la vía de acceso **/get today**, y actualice su título a "**invoke-today**".  

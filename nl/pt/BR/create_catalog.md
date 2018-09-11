@@ -43,7 +43,7 @@ conflitos, eles serão resolvidos automaticamente pelo sistema. Ações de cance
 aprovação para ciclos de vida.
   2. Se você desejar ativar a assinatura automática para o Catálogo, selecione
 **Assinatura automática**.
-A ativação da assinatura automática facilita o teste de suas APIs porque um aplicativo de teste é usado com um ID de cliente e um segredo do cliente fornecidos previamente. O aplicativo de teste é automaticamente inscrito em todos os Planos no Catálogo, portanto, não é necessário especificar um plano ou um aplicativo durante o teste.
+A ativação da assinatura automática facilita o teste de suas APIs porque um aplicativo de teste é usado com um ID de cliente e um segredo do cliente fornecidos previamente. O aplicativo de teste é automaticamente inscrito em todos os Planos no Catálogo, portanto, não é necessário especificar um plano ou um aplicativo durante o teste. 
     **Nota:** a assinatura automática está disponível somente para um catálogo de desenvolvimento.
   3. Se o Catálogo for o de preparação padrão, selecione **Padrão**. Em seguida,
 as chamadas para APIs que foram publicadas no Catálogo poderão usar uma URL mais curta que não inclua

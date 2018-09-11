@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-11-28"
+  years: 2018
+lastupdated: "2018-02-22"
 
 ---
 
@@ -48,13 +48,13 @@ Para criar um projeto LoopBack usando a linha de comandos do kit de ferramentas 
 	apic loopback
 	```
 	>![informações]
-	>Para este tutorial, você criará um projeto chamado weather-data.
+	>Neste tutorial, você criará um projeto chamado weather-data.
 2.  No prompt, insira `weather-data` como o nome do projeto e pressione **Enter**.
 	```bash
 	? What's the name of your application? weather-data
 	```
   	>![importante]
-  	>No geral, um nome de projeto pode conter quaisquer caracteres, exceto espaço em branco (" "), barra ("/"), e comercial (símbolo "&"), arroba ("@"), mais ("+"), percentual ("%") e dois-pontos (":").
+  	>Em geral, um nome de projeto pode conter quaisquer caracteres, exceto espaço em branco (" "), barra ("/"), e comercial ("&"), arroba ("@"), mais ("+"), percentual ("%"), e dois pontos (":").
 3.  Insira o nome do diretório no qual criará o projeto. Pressione **Enter** para usar um diretório com o mesmo nome que o projeto ou digite um novo nome e pressione **Enter**.
 	```bash
 	? Enter name of the directory to contain the project: weather-data
@@ -93,7 +93,7 @@ Para criar um projeto LoopBack usando o API Designer, conclua as etapas a seguir
 	>![informações]
 	>O comando acima inicializa o kit de ferramentas do {{site.data.keyword.apiconnect_short}} e ativa o API Designer no navegador padrão quando ele é concluído.
 	>![informações]
-	>Neste tutorial, você criará um projeto chamado weather-data.
+	>Nesse tutorial, você criará um projeto chamado weather-data.
 2.  Se você não tiver fixado anteriormente a área de janela de navegação da UI, clique no ícone Navegar para ![](images/navigate-to.png). A área de janela de navegação da UI do API Manager é aberta. Para fixar a área de janela de navegação da UI, clique no ícone de menu Fixar ![](images/pinned.png).
 3.  Na barra lateral, clique no ícone Mais projetos ![](images/add-icon.png).
 4.  Clique em **Criar projeto LoopBack**. Você verá o diálogo **Incluir novo projeto LoopBack**.
@@ -176,7 +176,7 @@ Isso conclui a inclusão de uma nova origem de dados e um modelo no projeto Loop
 ## Testar seu projeto LoopBack
 
 >![informações]
- >É possível acessar diretamente a etapa 2 abaixo se você não saiu do designer do {{site.data.keyword.apiconnect_short}} após a conclusão da seção "Incluir um novo modelo e origem de dados".
+	>É possível ir diretamente para a etapa 2 abaixo se você não sair do {{site.data.keyword.apiconnect_short}} Designer depois de concluir a seção "Incluir um novo modelo e origem de dados".
 	
 Para testar seus terminais de API usando a ferramenta API Designer Explore, conclua as etapas a seguir:
 1. Na linha de comandos, insira o comando a seguir:
@@ -198,15 +198,14 @@ Para testar seus terminais de API usando a ferramenta API Designer Explore, conc
 	>![informações]
  >Dependendo de sua configuração do projeto e se outros processos estão em execução, números de porta diferentes podem ser exibidos.
 3. Clique em **http://127.0.0.1:port_number** para exibir o terminal raiz da API. Para o projeto LoopBack padrão (vazio ou hello-world), você verá algo como:
-	```bash
-	{"started":"2017-05-24T19:21:47.807Z","uptime":80.876}
+	```bash {2}{0}{1}{7}-05-24T19:21:47.807Z", "uptime": 80.876 }
 	```
 	>![informações]
-	>Para parar seu projeto, clique no ícone **Parar os servidores** ![](images/stop-icon.png):
+	>Para parar o seu projeto, clique no ícone **Parar os servidores** ![](images/stop-icon.png):
 	>![](images/stop-server-1.png)
 	
 	>Para reiniciá-lo, clique no ícone **Reiniciar os servidores** ![](images/restart-icon.png):
- >![](images/restart-server-1.png)
+	>![](images/restart-server-1.png)
 	
 4. Clique no ícone **Explorar** ![](images/explore-icon.png) para ver a ferramenta API Designer Explore. A barra lateral mostra todas as operações REST para os modelos LoopBack na API. Os modelos que são baseados em PersistedModel têm, por padrão, um [conjunto padrão de operações de criação, leitura, atualização e exclusão ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){:new_window}.
 
@@ -215,17 +214,17 @@ Para testar seus terminais de API usando a ferramenta API Designer Explore, conc
 A área de janela central exibe informações de resumo sobre o terminal, incluindo seus parâmetros, segurança, dados de instância do modelo e códigos de resposta. A área de janela direita fornece o código de modelo para chamar o terminal usando o comando curl e linguagens como Ruby, Python, Java e Node.
 
 6. Para testar os terminais REST na ferramenta API Designer Explore, conclua as etapas a seguir:
-    1. Na área de janela direita, clique em **Experimente**. 
+    1. Na área de janela direita, clique em **Experimente**. Se houver um elemento de dados `id`, remova-o dos dados gerados antes de executar o teste. 
 	
 	2. Role para baixo até **Parâmetros** e clique em **Gerar** para gerar alguns dados simulados. Por padrão, os dados gerados incluem as propriedades `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low` e `tonight_humidity_high`.
 	
 	3. Clique em **Chamar operação**.
 ![](images/explore-test-2.png)
 	
->![resolução de problemas]
+>![: resolução de problemas]
 >Se você vir uma mensagem de erro devido a um certificado não confiável para o host local, clique no link fornecido na mensagem de erro na ferramenta API Designer Explore para aceitar o certificado, em seguida, continue para chamar as operações em seu navegador da web. O procedimento exato depende do navegador da web que você está usando. Se você carregar os terminais REST diretamente em seu navegador, você verá a mensagem: {"name":"PreFlowError","message":"unable to process the request"}. Deve-se usar a ferramenta API Designer Explore para testar terminais REST em seu navegador porque ela inclui os cabeçalhos de requisito e outros parâmetros de solicitação.
 >
->![resolução de problemas]
+>![: resolução de problemas]
 >Se você obtém um código de resposta de **422 - Entidade não processável** com a carga útil a seguir:
 >![](images/explore-test-3.png)
 >

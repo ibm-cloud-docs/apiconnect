@@ -69,7 +69,7 @@ Se ha creado una app _weather provider_ de ejemplo para esta guía de aprendizaj
 
   ![](images/generate-default-product-3.png)
 
-  _En {{site.data.keyword.apiconnect_short}}, **Productos** proporcione una forma para agrupar API pensadas para un uso concreto. Los productos se publican en un **Catálogo**. [Glosario de {{site.data.keyword.apiconnect_short}}](../apic_glossary.html)_
+  _En {{site.data.keyword.apiconnect_short}}, **Productos** proporcione una forma para agrupar API pensadas para un uso concreto. Los productos se publican en un **Catálogo**.  [Glosario de {{site.data.keyword.apiconnect_short}}](../apic_glossary.html)_
 
 3. En el separador Ensamblar, pulse el icono de reproducción para probar la invocación de destino del proxy de la API.
 

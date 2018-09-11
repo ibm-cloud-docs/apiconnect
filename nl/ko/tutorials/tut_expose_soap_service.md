@@ -14,7 +14,7 @@ lastupdated: "2017-11-14"
  
 
 # SOAP 서비스를 REST API로 노출
-**기간**: 20분  
+**소요 시간**: 20분  
 **스킬 레벨**: 초보자  
 
 ---
@@ -29,7 +29,7 @@ API Manager에서 기존 SOAP 서비스에 액세스할 REST API를 작성하여
 
 ---
 ## REST API 정의 설정
-1. {{site.data.keyword.Bluemix_short}}에 로그인: [https://new-console.ng.bluemix.net/login ![외부 랑크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://new-console.ng.bluemix.net/login){:new_window}.
+1. {{site.data.keyword.Bluemix_short}}에 로그인하십시오. [https://new-console.ng.bluemix.net/login ![외부 랑크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://new-console.ng.bluemix.net/login){:new_window}.
 2. {{site.data.keyword.Bluemix_notm}} **대시보드**에서 아래로 스크롤하고 {{site.data.keyword.apiconnect_short}}를 선택하십시오. 또는 메뉴 아이콘에서 **서비스**와 **API**를 순서대로 선택하여 **API에 대한 작업** 창으로 이동하고 **API Connect**를 선택하십시오. **API Connect** 페이지에서 간단히 `Create`를 누르거나 기본 설정을 조정할 수 있습니다. 이 연습에서는 인스턴스를 바인드되지 않은 상태로 두고, 나중에 더 쉽게 인식할 수 있도록 서비스 이름을 조정하십시오. 예를 들어 `API Connect-weather-exercise`입니다.
 `Create` 단추를 클릭하여 {{site.data.keyword.apiconnect_short}} 서비스를 실행하십시오.  
 새로운 기능을 설명하는 경보 또는 **드래프트 API** 정보 스플래시 페이지가 표시될 수 있습니다. 이 정보를 읽은 후에 **"이해했습니다."** 아이콘을 클릭하여 API Manager를 보십시오.
@@ -58,7 +58,7 @@ API Manager에서 기존 SOAP 서비스에 액세스할 REST API를 작성하여
 10. **ClientID** 옵션을 선택 취소하십시오.
 ![](images/api-security-2.png)
 	>![](images/info.png)
-	>디스크 저장 아이콘 옆에 표시되는 노란색 삼각형 아이콘이 있음을 알 수 있습니다. 이 아이콘은 정의되었지만 아직 사용되지 않은 정의가 있음을 알리는 경고입니다. (이 경고는 API 정의에 영향을 미치지 않습니다.)
+	>디스크 저장 아이콘 옆에 표시되는 노란색 삼각형 아이콘이 있음을 알 수 있습니다.  이 아이콘은 정의되었지만 아직 사용되지 않은 정의가 있음을 알리는 경고입니다. (이 경고는 API 정의에 영향을 미치지 않습니다.)
 11. **정의** 섹션에서 **정의 추가** 아이콘 ![](images/add-icon.png)을 클릭한 다음 새 정의를 클릭하여 펼치십시오.
 12. 정의의 이름을 `Weather Data Output`으로 지정하십시오.
 13. 정의에 5가지 특성이 있습니다. **특성 추가**를 4번 클릭하여 특성을 추가하십시오. 다음을 안내서로 사용하여 `Property Name`의 이름을 바꾸고 `Description`, `Type` 및 `Example`의 기본값을 사용하십시오.

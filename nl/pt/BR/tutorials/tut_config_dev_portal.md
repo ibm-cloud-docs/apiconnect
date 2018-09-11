@@ -72,7 +72,7 @@ Nesta seção, você ficará familiarizado com o portal do desenvolvedor criado 
 | _Apps_ | A página Apps exibe os aplicativos que estão usando suas APIs. | 
 | _Blogs_ | A página Blogs é onde as postagens do blog sobre suas APIs podem ser criadas e exibidas. | 
 | _Fóruns_ | A página Fóruns é onde os desenvolvedores podem ter discussões e postar perguntas sobre suas APIs. | 
-| _Suporte_ | Na página Suporte, é possível instruir os desenvolvedores sobre como eles podem receber suporte sobre suas APIs. Por exemplo, é possível referir-se a seus fóruns e FAQs. Também é possível fornecer um link que permite que eles abram um chamado de suporte, se necessário. | 
+| _Suporte_ | Na página Suporte, é possível instruir os desenvolvedores sobre como eles podem receber suporte sobre suas APIs. Por exemplo, é possível referir-se a seus fóruns e Perguntas mais frequentes. Também é possível fornecer um link que permite que eles abram um chamado de suporte, se necessário. | 
 
 Nota: na página Produtos de API, é possível selecionar um dos produtos para visualizar a página Produto para uma API e os planos disponíveis. Isso permite que os desenvolvedores assinem e visualizem os detalhes da API. 
 

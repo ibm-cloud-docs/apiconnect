@@ -23,7 +23,7 @@ Se non disponi di un portale sviluppatori esistente, puoi configurarne uno in {{
 ## Obiettivo
 In questa esercitazione, imparerai come un utente del portale può utilizzare le API nel portale sviluppatori {{site.data.keyword.apiconnect_full}}. Imparerai come un utente del portale esplora i prodotti e le API, visualizza le API di test e si sottoscrive ad esse. 
 
-## Esplora prodotti e API 
+## Esplora prodotti e API
 Questa sezione illustra come un utente del portale esplorerà i prodotti e le API nel portale sviluppatori.
 
 1. In un browser, passa a **Portale sviluppatori API Connect**.
