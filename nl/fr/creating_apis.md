@@ -548,7 +548,7 @@ La procédure ci-après explique comment créer une API LoopBack à l'aide du co
 ### Prérequis
 {: #prereq_create_lb_api_design}
 
-**Remarque** : Les instructions qui suivent  partent du principe que vous utilisez la dernière version du
+**Remarque** : Les instructions qui suivent partent du principe que vous utilisez la dernière version du
 kit d'outils de développement. Pour savoir quelle est la dernière version, voir la page du package [npm ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.npmjs.com/package/apiconnect){:new_window}.
 
 Vous devez commencer par créer un projet LoopBack à l'aide de l'interface de ligne de commande. Pour ce faire, procédez comme suit :
@@ -730,7 +730,8 @@ En fonction de la configuration de votre projet et selon que d'autres processus 
 {"started":"2017-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-A présent, vous devez créer un produit. Pour plus d'informations, voir [Création d'un produit](managing_products.html#create_product). **Conseil** : Chaque fois que vous ouvrez une nouvelle invite de commande, vérifiez que le répertoire de travail en cours
+A présent, vous devez créer un produit. Pour plus d'informations, voir [Création d'un produit](managing_products.html#create_product).
+**Conseil** : Chaque fois que vous ouvrez une nouvelle invite de commande, vérifiez que le répertoire de travail en cours
 est le répertoire de niveau supérieur du projet. Pour ce faire, entrez la commande suivante :
 ```
 cd <project directory name>

@@ -89,8 +89,7 @@ _Vous voyez que la zone Hôte est définie sur `$(catalog.host)` _. Il s'agit de
 
 ## Conclusion
 
-Dans ce tutoriel, vous avez vu comment appeler un service REST existant à l'aide d'un proxy passe-système d'API. Vous avez commencé par vérifier la disponibilité de l'exemple de service via le navigateur Web. 
-Ensuite, vous avez créé dans {{site.data.keyword.apiconnect_short}} un proxy d'API que vous avez lié à l'exemple de service à appeler. Enfin, vous avez testé ce service à l'aide des outils de test internes d'{{site.data.keyword.apiconnect_short}}.
+Dans ce tutoriel, vous avez vu comment appeler un service REST existant à l'aide d'un proxy passe-système d'API. Vous avez commencé par vérifier la disponibilité de l'exemple de service via le navigateur Web. Ensuite, vous avez créé dans {{site.data.keyword.apiconnect_short}} un proxy d'API que vous avez lié à l'exemple de service à appeler. Enfin, vous avez testé ce service à l'aide des outils de test internes d'{{site.data.keyword.apiconnect_short}}.
 
 ---
 

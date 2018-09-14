@@ -51,7 +51,7 @@ Une fois votre portail de développeur créé, vous devez personnaliser sa prés
 ## Personnalisation du thème de votre portail de développeur
 Le portail de développeur vous permet de modifier le thème afin de changer sa présentation.
 
-1. Pour modifier le thème, sélectionnez **Apparence** dans le menu du haut, puis sélectionnez **Paramètres** et ensuite **Thème IBM API Connect**. Il s'agit du thème par défaut défini lorsque vous aveez créé votre portail de développeur.
+1. Pour modifier le thème, sélectionnez **Apparence** dans le menu du haut, puis sélectionnez **Paramètres** et ensuite **Thème IBM API Connect**. Il s'agit du thème par défaut défini lorsque vous avez créé votre portail de développeur.
   ![Thème IBM API Connect](images/41-APIC-theme.png) 
 
 

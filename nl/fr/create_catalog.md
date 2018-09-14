@@ -48,7 +48,7 @@ automatiquement.
   2. Si vous souhaitez activer un abonnement automatique pour le catalogue,
 sélectionnez **Abonnement automatique**.
 L'activation d'un abonnement automatique facilite le test de vos API car une application de test est utilisée avec un ID client et une valeur confidentielle du client préfournis. Cette application de test est automatiquement abonnée à tous les plans du catalogue. Par conséquent, vous n'avez pas à spécifier de plan ni d'application lors des tests. 
-**Remarque :** La fonction d'abonnement automatique est disponible uniquement pour un catalogue de développement.
+    **Remarque :** La fonction d'abonnement automatique est disponible uniquement pour un catalogue de développement.
   3. Si le catalogue est le catalogue de transfert par défaut,
 cliquez sur **Par défaut**. Dans ce cas, les appels API qui sont publiés dans le
 catalogue peuvent utiliser une adresse URL plus courte qui ne comporte pas le nom de
@@ -67,8 +67,7 @@ catalogue.
 		    - Assurez-vous que la même URL de passerelle personnalisée n'est pas
 appliquée à plusieurs catalogues car le comportement dans ce scénario n'est pas
 défini.
-				**CONSEIL** : Lorsque vous appelez l'API, vous pouvez également définir l'en-tête de l'hôte HTTP de la demande d'API
-		    sur la valeur que vous avez spécifiée dans la zone URL de la passerelle personnalisée.
+				**CONSEIL** : Lorsque vous appelez l'API, vous pouvez également définir l'en-tête de l'hôte HTTP de la demande d'API sur la valeur que vous avez spécifiée dans la zone URL de la passerelle personnalisée.
 
 	    - **URL de l'API personnalisée**
 	    Dans la zone de texte URL de l'API personnalisée, entrez une adresse URL. Vous utilisez cette zone pour spécifier l'URL des API qui sont déployées sur une passerelle tierce.

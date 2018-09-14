@@ -49,7 +49,7 @@ Avant de commencer, vous devez avoir terminé l'un des tutoriels suivants :
 
    b. Cliquez sur l'icône d'**ajout de définitions de sécurité** (+), puis sur **Clé d'API**.  
       - Nom : ID client ; Nom du paramètre : X-IBM-Client-ID  
-      - Nom : Valeur confidentielle du client ;  Nom du paramètre : X-IBM-Client-Secret  
+      - Nom : Valeur confidentielle du client ; Nom du paramètre : X-IBM-Client-Secret  
       - Assurez-vous pour les deux clés que la zone **Situé dans** est définie sur "En-tête".  
       ![](images/2a.png)    
 

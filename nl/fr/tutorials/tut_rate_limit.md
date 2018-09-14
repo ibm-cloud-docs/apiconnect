@@ -114,7 +114,7 @@ Les instructions suivantes vous guident tout au long de cette procédure.
 
 ## Abonnement à un produit d'API
 
-1. Cliquez sur le lien **Produits d'API** de la barre d'outils. Votre produit API Weather Provider est réperetorié. 
+1. Cliquez sur le lien **Produits d'API** de la barre d'outils. Votre produit API Weather Provider est répertorié. 
 
    ![](./images/apiproducts.png)
 2. Cliquez sur le lien pour afficher les détails et options. Deux plans doivent être disponibles : le plan par défaut d'origine et votre nouveau plan Démo. (Si vous ne voyez qu'un seul plan, revenez dans {{site.data.keyword.apiconnect_short}} et vérifiez que vos modifications apportées au produit ont été sauvegardées, transférées et publiées dans le catalogue de bac à sable.) 

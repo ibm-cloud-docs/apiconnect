@@ -58,7 +58,7 @@ _Les zones Nom et Chemin de base sont automatiquement renseignées_.
 _(Nous traiterons de la sécurité avec les clés d'API dans le prochain tutoriel.)_  
 
 12. Dans le panneau de navigation, faites défiler vers le bas jusqu'au panneau **Chemins** et créez un nouveau chemin en cliquant sur **+**.     
-    a. Nommez le nouveau chemin **/current**".  
+    a. Nommez le nouveau chemin "**/current**".  
     b. Dans le même panneau *Chemins*, sélectionnez la section **GET /current**.    
     c. Dans la section **GET /current**, ajoutez un nouveau **paramètre**. Comme vous l'avez remarqué lors de l'étude du modèle d'application, le service météo nécessite un paramètre code postal.   
       - Nom : code postal  

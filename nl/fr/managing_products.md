@@ -148,7 +148,7 @@ Ajoutez une limite de débit à une opération.
     3. Assurez-vous que la case à cocher **Illimité** n'est pas sélectionnée, puis spécifiez la limite de débit que vous souhaitez appliquer. Si la case **Appliquer la limite absolue** est cochée, le plan
 empêchera les applications d'appeler l'API une fois la limite atteinte. Sinon, un avertissement sera envoyé.
 
-- Cliquez sur l'icône **Enregistrer** pour enregistrer vos modifications.
+- Cliquez sur l'icône **Sauvegarder** pour enregistrer vos modifications.
 
 Vous venez de créer un produit et de spécifier un ensemble d'API et de plans dans une offre que vous pouvez à présent mettre à la disposition de vos développeurs.
 A présent, transférez votre produit dans un catalogue. Pour plus d'informations, voir [Transfert d'un produit](#stage_product}).

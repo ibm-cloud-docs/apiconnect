@@ -21,8 +21,7 @@ Ce tutoriel ne nécessite aucun prérequis. En tant qu'administrateur du portail
 Si vous ne disposez pas d'un portail de développeur existant, vous pouvez en installer et en configurer un dans {{site.data.keyword.Bluemix_short}} avant de lancer ce tutoriel.
 
 ## Objectif
-Dans ce tutoriel, vous apprendrez comment un utilisateur de portail peut consommer les API dans le portail de développeur {{site.data.keyword.apiconnect_full}}. 
-Vous comprendrez comment un utilisateur de portail explore des produits et des API, affiche et teste des API et s'abonne à des
+Dans ce tutoriel, vous apprendrez comment un utilisateur de portail peut consommer les API dans le portail de développeur {{site.data.keyword.apiconnect_full}}. Vous comprendrez comment un utilisateur de portail explore des produits et des API, affiche et teste des API et s'abonne à des
 API. 
 
 ## Exploration des produits & des API

@@ -253,7 +253,7 @@ Si vous utilisez les forums pour poser une question, libellez votre question de 
 - Si vous avez des questions techniques sur le développement ou le déploiement d'une application avec {{site.data.keyword.apiconnect_short}}, publiez votre question sur Stack Overflow et marquez-la avec les étiquettes "ibm-cloud" et "api connect."
 
 - Pour des questions relatives au service et aux instructions de mise en route, utilisez le forum IBM DeveloperWorks - dW Answers. Incluez les étiquettes "ibm cloud" et "api connect".
-Voir Obtenir de l'aide pour plus de détails sur l'utilisation des forums.  
+Voir Obtenir de l'aide pour plus de détails sur l'utilisation des forums. 
 
 Pour obtenir des informations sur l'ouverture d'un ticket de demande de service IBM ou sur les niveaux de service disponibles et les degrés de gravité des tickets, voir la rubrique Contacter le service de support.
 

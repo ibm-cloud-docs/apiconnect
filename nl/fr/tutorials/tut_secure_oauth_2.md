@@ -22,11 +22,10 @@ Ce tutoriel vous guidera tout au long du processus de sécurisation de votre API
 ## Prérequis
 
 Avant de commencer, vous devez avoir terminé l'un des tutoriels suivants :  
-- [Sécurisation de votre API avec un ID client et une valeur confidentielle du client à l'aide d'{{site.data.keyword.Bluemix}}](tut_secure_id_secret_bm.html) ou 
+- [Sécurisation de votre API avec un ID client et une valeur confidentielle du client à l'aide d'{{site.data.keyword.Bluemix}}](tut_secure_id_secret_bm.html) ou
 - [Sécurisation de votre API avec un ID client et une valeur confidentielle du client à l'aide du kit d'outils](tut_secure_id_secret_tk.html)
 
-Remarque : Ce tutoriel montre les étapes et les captures d'écran permettant de réaliser la tâche dans l'interface utilisateur d'{{site.data.keyword.Bluemix}}. 
-Vous pouvez également effectuer la même procédure à partir de la ligne de commande. Vous pouvez afficher cette procédure dans l'[IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tutorial_apionprem_security_OAuth_v506.html). 
+Remarque : Ce tutoriel montre les étapes et les captures d'écran permettant de réaliser la tâche dans l'interface utilisateur d'{{site.data.keyword.Bluemix}}. Vous pouvez également effectuer la même procédure à partir de la ligne de commande. Vous pouvez afficher cette procédure dans l'[IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tutorial_apionprem_security_OAuth_v506.html). 
 
 ## Procédure
 

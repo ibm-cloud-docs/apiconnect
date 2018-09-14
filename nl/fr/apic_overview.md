@@ -13,7 +13,7 @@ lastupdated: "2017-07-18"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# A propos d'IBM API Connect
+# Présentation d'IBM API Connect
 
 Utilisez le service {{site.data.keyword.apiconnect_full}} pour créer rapidement des API et des microservices à partir des environnements d'exécution Node.js et Java. Une fois ces éléments créés, vous pouvez gérer vos API avec des contrôles de niveau métier en définissant différents niveaux de sécurité et de visibilité et des limites de débit tout en partageant ces API avec des développeurs d'applications. Le service {{site.data.keyword.apiconnect_short}} fournit également les outils vous permettant de transformer et renforcer votre activité au moyen de connaissances obtenues via des analyses détaillées et des recherches filtrées structurées.
 

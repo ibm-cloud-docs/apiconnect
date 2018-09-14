@@ -18,8 +18,7 @@ lastupdated: "2017-12-15"
 
 Vous pouvez utiliser API Connect pour gérer des API dans {{site.data.keyword.Bluemix}}, qu'elles se trouvent dans {{site.data.keyword.Bluemix_notm}} ou hors de {{site.data.keyword.Bluemix_notm}}. La gestion des API vous permet de contrôler l'utilisation, d'accroître l'adoption et d'assurer le suivi des statistiques.
 
-Si vous êtes un client, vous pouvez gérer comment une API est utilisée dans l'interface utilisateur du gestionnaire d'API une fois qu'un développeur l'a créée et qu'il a envoyé le produit à {{site.data.keyword.Bluemix_notm}}. 
-Les rubriques ci-après expliquent comment créer et gérer des produits dans {{site.data.keyword.apiconnect_short}}.
+Si vous êtes un client, vous pouvez gérer comment une API est utilisée dans l'interface utilisateur du gestionnaire d'API une fois qu'un développeur l'a créée et qu'il a envoyé le produit à {{site.data.keyword.Bluemix_notm}}. Les rubriques ci-après expliquent comment créer et gérer des produits dans {{site.data.keyword.apiconnect_short}}.
 
 ## Exposition d'API sur site via une passerelle sécurisée
 {: #expose_apis_sec_gate}
@@ -197,7 +196,7 @@ L'onglet Produits s'ouvre.
 
 4. Cliquez sur **Ajouter et gérer des cibles** > **Ajouter une cible IBM Cloud**.
 
-5. Sélectionnez la **Région** {{site.data.keyword.Bluemix_notm}} cible pour la publication et connectez-vous. 
+5. Sélectionnez la **Région** {{site.data.keyword.Bluemix_notm}} cible pour la publication et connectez-vous.
 
 6. Sélectionnez l'**Organisation** {{site.data.keyword.Bluemix_notm}} cible pour la publication.
 

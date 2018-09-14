@@ -45,5 +45,5 @@ lastupdated: "2017-10-31"
   ![](images/prereqs-3.png)
   d. Accédez à [https://console.ng.bluemix.net/catalog/services/api-connect ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://console.ng.bluemix.net/catalog/services/api-connect){:new_window}.  
   ![](images/prereqs-4.png)  
-  e. Sélectionnez le plan de tarification (gratuit) _Lite_, puis cliquez sur **Créer** pour démarer.  
+  e. Sélectionnez le plan de tarification (gratuit) _Lite_, puis cliquez sur **Créer** pour démarrer.  
   ![](images/lite-plan.png)  

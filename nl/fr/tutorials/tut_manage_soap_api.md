@@ -27,7 +27,7 @@ Remarque : Vous pouvez cliquer sur **Brut** puis sauvegarder la page résultante
 
 ---
 ## Configuration d'une définition d'API SOAP
-1. Connectez-vous à {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}.
+1. Connectez-vous à {{site.data.keyword.Bluemix_short}} : [https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}.
 
 2. Dans le **tableau de bord** {{site.data.keyword.Bluemix_notm}}, faites défiler vers le bas jusqu'à **Tous les services**.
 

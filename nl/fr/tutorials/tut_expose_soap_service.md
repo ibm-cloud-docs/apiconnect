@@ -58,7 +58,7 @@ Il est possible qu'une alerte décrivant les nouveautés ou la page d'accueil d'
 10. Désélectionnez l'option **ID client**.
 ![](images/api-security-2.png)
 	>![](images/info.png)
-	>Vous pouvez remarquer qu'une icône de triangle jaune s'affiche en regard de l'icône de sauvegarde disque. Ce triangle vous avertit que des définitions qui ont été définies n'ont pas encore été utilisées. (Ceci n'affectera pas la définition de l'API.)
+	>Vous pouvez remarquer qu'une icône de triangle jaune s'affiche en regard de l'icône de sauvegarde disque.  Ce triangle vous avertit que des définitions qui ont été définies n'ont pas encore été utilisées. (Ceci n'affectera pas la définition de l'API.)
 11. Dans la section **Définitions**, cliquez sur l'icône **Ajouter une définition**, ![](images/add-icon.png) puis développez la nouvelle définition en cliquant dessus.
 12. Nommez la définition `Weather Data Output`.
 13. La définition aura cinq propriétés. Clique quatre fois sur **Ajouter une propriété** pour ajouter les propriétés supplémentaires. Modifiez le `Nom de propriété` en vous aidant des informations suivantes et utilisez la valeur par défaut pour les zones `Description`, `Type` et `Exemple`:

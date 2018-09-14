@@ -57,7 +57,7 @@ Un modèle d'application _weather provider_ a été créé pour ce tutoriel.
 _(Nous traiterons de la sécurité avec les clés d'API dans le prochain tutoriel.)_  
 
 10. Dans le panneau **Chemins**, créez un nouveau chemin en cliquant sur **+**.
-  a. Nommez le nouveau chemin **/current**".  
+  a. Nommez le nouveau chemin "**/current**".  
   b. Dans le même panneau **Chemins**, sélectionnez la section **GET /current**.  
   c. Dans la section **GET /current**, ajoutez un nouveau **paramètre**. Comme vous l'avez remarqué lors de l'étude du modèle d'application, le service météo nécessite un paramètre code postal.
       - Nom : code postal  

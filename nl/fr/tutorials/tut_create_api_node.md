@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-11-28"
+  years: 2018
+lastupdated: "2018-02-22"
 
 ---
 
@@ -93,7 +93,7 @@ Pour créer un projet LoopBack à l'aide de l'interface du concepteur d'API, pro
 	![](images/api-designer-1.png)
 	>![info]
 	>La commande ci-dessus initialise le kit d'outils {{site.data.keyword.apiconnect_short}} et lance le concepteur d'API (API Designer) dans le navigateur par défaut une fois démarré.
-	>![info]
+ >![info]
 	>Dans ce tutoriel, vous créerez un projet nommé weather-data.
 2.  Si vous n'avez pas encore épinglé le panneau de navigation de l'interface utilisateur, cliquez sur l'icône Accéder à ![](images/navigate-to.png). Le panneau de navigation de l'interface utilisateur du gestionnaire d'API s'ouvre. Pour épingler le panneau de navigation de l'interface utilisateur, cliquez sur l'icône Epingler le menu ![](images/pinned.png).
 3.  Dans la barre de navigation, cliquez sur l'icône Plus en regard de Projets ![](images/add-icon.png).
@@ -167,7 +167,7 @@ ou mettez à jour une instance de modèle.
 	- **Est un tableau** : indique que la propriété est un tableau JavaScript comportant des éléments du type spécifié.
 	- **Index** : indique que la propriété représente une colonne (zone) qui est un index de base de données.
 	- **Description** : description de la propriété.
-9. Cliquez sur l'icône **Ajouter une propriété** ![](images/add-icon.png) again to add another property.  Reportez-vous au tableau suivant pour renseigner les propriétés restantes : 	![](images/new-model-property-1.png)
+9. Cliquez de nouveau sur l'icône **Ajouter une propriété** ![](images/add-icon.png) pour ajouter une autre propriété. Reportez-vous au tableau suivant pour renseigner les propriétés restantes : 	![](images/new-model-property-1.png)
 10. Cliquez sur l'icône **Sauvegarder** ![](images/save-icon.png) pour sauvegarder vos modifications.
 11. Cliquez sur **Tous les modèles** pour terminer l'édition du modèle.
 
@@ -178,7 +178,7 @@ Une nouvelle source de données et un nouveau modèle ont été ajoutés au proj
 ## Test du projet LoopBack
 
 >![info]
-	>Vous pouvez passer directement à l'étape 2 ci-dessous si vous n'avez pas quitté le concepteur {{site.data.keyword.apiconnect_short}} après avoir effectuées les étapes de la section "Ajout d'une nouvelle source de données et d'un nouveau modèle".
+	>Vous pouvez passer directement à l'étape 2 ci-dessous si vous n'avez pas quitté le concepteur {{site.data.keyword.apiconnect_short}} après avoir effectué les étapes de la section "Ajout d'une nouvelle source de données et d'un nouveau modèle".
 	
 Pour tester vos noeuds finaux d'API à l'aide de l'outil Explorer du concepteur d'API, procédez comme suit :
 1. Sur la ligne de commande, entrez la commande suivante :
@@ -217,7 +217,7 @@ Pour tester vos noeuds finaux d'API à l'aide de l'outil Explorer du concepteur 
 Le panneau central affiche des informations récapitulatives sur le noeud final, y compris ses paramètres, la sécurité, les données d'instance de modèle et les codes de réponse. Le panneau de droite fournit le code du modèle permettant d'appeler le noeud final à l'aide de la commande curl ainsi que les langages tels que Ruby, Python, Java et Node.
 
 6. Pour tester les noeuds finaux REST à l'aide de l'outil Explorer du concepteur d'API (API Designer), procédez comme suit :
-    1. Dans le panneau de droite, cliquez sur **Essayer**. 
+    1. Dans le panneau de droite, cliquez sur **Essayer**. S'il existe un élément de données `id`, supprimez-le des données générées avant d'exécuter le test. 
 	
 	2. Faites défiler jusqu'à **Paramètres** et cliquez sur **Générer** pour générer des données factices. Par défaut, les données générées incluent les propriétés `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low` et `tonight_humidity_high`.
 	
@@ -231,7 +231,7 @@ Le panneau central affiche des informations récapitulatives sur le noeud final,
 >Si vous obtenez un code de réponse **422 - Unprocessable Entity** avec le contenu suivant :
 >![](images/explore-test-3.png)
 >
->assurez-vous que tous les éléments de données `id` ont été supprimés des données générées. S'il existe un élément ID, supprimez-le et réexécutez le test. 
+>assurez-vous que tous les éléments de données `id` ont été supprimés des données générées. S'il existe un élément ID, supprimez-le et réexécutez le test.
 >![traitement des incidents]
 >Si vous obtenez l'erreur **failed to parse request body**, vous devez supprimer la virgule qui suit le dernier nombre `humidity_high`.
 7. Editez les valeurs dans le JSON de la section **data**. Essayez de modifier les données factices générées, puis cliquez de nouveau sur **Appeler une opération**. Vous devez voir les paramètres de demande et de réponse accompagnés des données d'instance JSON que vous avez entrées.
