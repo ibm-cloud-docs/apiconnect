@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-15"
+  years: 2018
+lastupdated: "2018-12-03"
 
 ---
 
@@ -516,7 +516,7 @@ where:
   If you are unsure, you can locate your region by clicking the {{site.data.keyword.avatar}} icon <img src="images/i-avatar-icon.svg" alt="avatar icon"/> in the menu bar to open the Account and Support widget and check the region field.
 7. Enter the following command to publish your application to {{site.data.keyword.Bluemix_notm}}.
 ```
-apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
+apic apps:publish –app <app> -o <org> -s <region>.apiconnect.ibmcloud.com
 ```
 where:
   * `<app>` is the name of your app
