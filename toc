@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="apiconnect" audience="service" arm="327" href="/docs/services/apiconnect/getting-started.html"}
+{: .toc subcollection="apiconnect" audience="service" arm="327" href="/docs/services/apiconnect/getting-started.html" path="services/apiconnect"}
 API Connect
 
     
