@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-15"
+  years: 2018
+lastupdated: "2019-01-17"
 
 ---
 
@@ -23,65 +23,11 @@ If you are a customer, you can manage how it is used within the API Manager UI a
 ## Exposing on-premises APIs through a Secure Gateway
 {: #expose_apis_sec_gate}
 
-You can create a secure gateway to safely expose on-premises APIs to {{site.data.keyword.apiconnect_full}}.
+You can create a secure gateway to securely expose on-premises APIs to {{site.data.keyword.apiconnect_full}}.
 
-When you create a secure gateway, you integrate the features of the {{site.data.keyword.Bluemix_notm}}
-{{site.data.keyword.SecureGateway}} service with {{site.data.keyword.apiconnect_short}}. This means that you have a secure
-way to access your on-premises APIs from {{site.data.keyword.apiconnect_short}} through a secure passage without the
-need to provision a separate instance of the {{site.data.keyword.SecureGateway}} service. Effectively you create a tunnel
-to {{site.data.keyword.apiconnect_short}} on a public environment
-without exposing your on-premises data. All that you need to do is, create the gateway and attach it
-to an API. The creation of a destination, SSL profile, and certificates are all completed for you.
-For more information about the {{site.data.keyword.SecureGateway}} service, see [About {{site.data.keyword.SecureGateway}}](../../services/SecureGateway/sg_overview.html#sg_overview).
-To create a secure gateway, complete the steps in the following topics.
+When you create a secure gateway and then target its client or Cloud `<host>:<port>`, you integrate the features of the {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.SecureGateway}} service with {{site.data.keyword.apiconnect_short}}. This means that you have a secure way to access your on-premises APIs from {{site.data.keyword.apiconnect_short}} through a secure passage. Effectively you create a tunnel to {{site.data.keyword.apiconnect_short}} on a public environment without exposing your on-premises data. All that you need to do is create and configure the secure gateway service on IBM Cloud and target it in an API.
 
-### Creating a secure gateway
-{: #create_sec_gate notoc}
-
-When you create a secure gateway, a gateway ID and security token is generated for you.
-You also set up a secure gateway client on your on-premises environment for {{site.data.keyword.apiconnect_short}} to connect with. After the client is set up, you use the gateway ID and security token to connect to the client so that you can access
-your on-premises APIs.
-
-To create a gateway, complete the following steps:
-
-1. Click **Navigate to** <img alt="Navigate to icon" src="images/navigate_to_icon.png"> > **Admin** > **Secure Gateways**.
-The `Secure Gateways` page is displayed and a Secure Gateways
-guided tour is displayed in the corner of the UI.
-
-2. **Optional**:
-Click through each step of the guided tour to complete your gateway setup.
-
-3. Click **Add**.
-The `Create Secure Gateway` dialog box is displayed.
-
-4. Provide a name for your gateway.
-    **Note:** Only alphanumeric characters and underscores are permitted.
-
-5. Click **Save**.
-The gateway is displayed along with the gateway ID and security token.
-
-6. Click **Set Up**.
-Clicking **Set Up** enables you to download and install a secure gateway
-client on your on-premises workstation to connect a remote network to a secure gateway in the Bluemix&reg; network.
-
-    The `Set Up Secure Gateway Clients` window is displayed.
-
-7. Click the client that you want to use from the following options:
-
-    - IBM&reg; Installers
-    - Docker
-    - IBM DataPower&reg;
-
-8. Follow the on-screen directions to install and run the client that you selected.
-For more information about setting up a secure gateway client, see [Setting up a client](../../services/SecureGateway/sg_021.html#sg_021).
-
-9. When you finish installing the client, close the **Set Up Secure Gateway Clients** window.
-
-10. Refresh the page.
-
-The client is connected and the gateway ID and status is displayed. You have completed your
-gateway configuration and created a secure gateway.
-Next, use the secure gateway to access your on-premises APIs.
+For more information about the {{site.data.keyword.SecureGateway}} service, and how to set it up, see [About {{site.data.keyword.SecureGateway}}](../../services/SecureGateway/index.html#getting-started-with-sg).
 
 ### Using the secure gateway with your APIs
 {: #using_sec_gate_apis notoc}
@@ -89,7 +35,7 @@ Next, use the secure gateway to access your on-premises APIs.
 When you have configured the gateway, you can use it with your APIs.
 {:shortdesc}
 
-To use your secure gateway with APIs, complete the following steps:
+To use your secure gateway with APIs, complete the following steps.
 1. Create your API and Product as described in the following steps.
   - Click **Navigate to** <img src="images/navigate_to_icon.png" alt="Navigate to icon" /> > **Drafts** > **APIs** > **Add**.
   - Select the type of API that you want to create.
@@ -103,42 +49,32 @@ To use your secure gateway with APIs, complete the following steps:
 **RESTRICTION**: Logic switches, for instance `Switch`, `Operation Switch`, and
 `If`, cannot be used with APIs that use a secure gateway.
 
-4. Select **Access URL through Secure Gateway**.
+4. **Do not** select the **Access URL through Secure Gateway** check box.
+**IMPORTANT**: This check box is for a deprecated feature that is not supported for production and is subject to removal at any time. Instead, you will target the Secure Gateway URL directly, without selecting this check box.
 
-5. In the URL field, update the `target-url` with the on-premises host name and
-port number. For example,
+5. In the URL field, update the `target-url` with the cloud host name and port number, for example:
 ```
-target-url: http://onpremdb2.rtp.raleigh.ibm.com:3055$(request.path)$(request.search)
+target-url: cap-sg-prd-5.securegateway.appdomain.cloud:18579
 ```
 
 6. Click **Save** <img src="images/icon_save.png" alt="Save icon" />.
 
-7. Click the **Source** tab.  Notice the `secure-gateway` field with a `true` value.
+7. Click **All APIs** > **Products** and select the Product that you created earlier.
 
-8. Click **All APIs** > **Products** and select the Product that you created earlier.
+8. Click **Publish** to stage the Product to a selected Catalog.
 
-9. Click the **Publish** icon to stage the Product to a chosen Catalog.
+9. Select the Catalog that you want to use.
 
-10. Select the Catalog that you want to use.
+10. Select the staged Product.
 
-11. Select the staged Product.
+11. Click **Publish**.
 
-12. Click **Publish** and select **Secure Gateway Assignments**.
-
-You have securely exposed your on-premises API to {{site.data.keyword.apiconnect_short}}. Any TLS profiles that are associated
-with a destination are added. To check the TLS profiles,
-click **Navigate to** <img src="images/navigate_to_icon.png" alt="Navigate to icon" /> > **Admin** > **Security** > **TLS Profiles**.
-You can have multiple gateways for each API. You decide which gateway to use when
-you publish the API.If you already have the {{site.data.keyword.SecureGateway}} service provisioned, you will be able to
-monitor your destinations in the {{site.data.keyword.SecureGateway}} Dashboard. However, you cannot edit any {{site.data.keyword.apiconnect_short}} destinations that are created by the
-{{site.data.keyword.apiconnect_short}} service.
-Next, test your {{site.data.keyword.SecureGateway}} API.
+You have securely exposed your on-premises API to {{site.data.keyword.apiconnect_short}}. Next, test your {{site.data.keyword.SecureGateway}} API.
 
 ### Testing your secure gateway API
 {: test_sec_gate notoc}
 
-After you have attached the gateway to an API, you can test the API to ensure that the
-gateway is working and that it produces the correct response.
+After you have targeted the {{site.data.keyword.SecureGateway}} in an API, you can test the API to ensure that the gateway is working and that it produces the correct response.
 
 To test an API using the secure gateway, complete the following steps:
 
@@ -149,7 +85,7 @@ To test an API using the secure gateway, complete the following steps:
 
 3. Select a Catalog to test within from the list provided.
 
-4. Select a secure gateway to test with from the list provided.
+4. Ensure the target URL is targeting the correct Secure Gateway `<cloud_host>:<port>` and that the secure gateway service desitination has been correctly configured as described in the [{{site.data.keyword.SecureGateway}} service documentation](../../services/SecureGateway/index.html#getting-started-with-sg).
 
 5. Choose an existing Product from the list that is provided then click **Republish
 product**.
