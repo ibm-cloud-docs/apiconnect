@@ -11,20 +11,28 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # Gaining insights from basic analytics
+{: #tut_insights_analytics}
+
 Duration: 30 mins  
 Skill level: Beginner
 
 ## Objective
+{: #object_tut_insights_analytics}
+
 This is a basic introduction to API analytics in {{site.data.keyword.apiconnect_full}}. We'll tour the available analytics dashboards, and you can follow along with your own APIs.
 
 
 ## Prerequisites
+{: #prereq_tut_insights_analytics}
+
 In order to view your own API analytics, you must have an API Product created and published. Additionally, you'll need to call your API several times to generate some analytics data, preferably using a client ID from a registered application (not the pre-provisioned test app).
 
 To generate the data in this tutorial, we used Postman's *Collection Runner* to call an API several times, with different data and client IDs. You can use a similar tool (like HttpRequester for Firefox), or just use cURL to call your API multiple times from the command line. You can obtain sample requests for your API by clicking the **Explore** link in {{site.data.keyword.apiconnect_short}}.
 
 ## Introduction to catalog analytics
-As an API owner, you need a way to assess the success and performance of the APIs you offer. The main place you'll look for analytics is at the catalog level. If you have not been introduced to catalogs, see [Working with Catalogs ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){:new_window} in the IBM Knowledge Center for an introduction. 
+{: #intro_tut_insights_analytics}
+
+As an API owner, you need a way to assess the success and performance of the APIs you offer. The main place you'll look for analytics is at the catalog level. If you have not been introduced to catalogs, see [Working with Catalogs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){: #new_window} in the IBM Knowledge Center for an introduction. 
 
 You and your App developers can also access app-specific analytics in the Developer Portal, but we'll focus on Catalog Analytics in this tutorial.
 
@@ -38,6 +46,8 @@ This tutorial consists of four activities that show you how to complete the foll
 
 
 ## Activity 1: Viewing out of the box analytics
+{: #act1_tut_insights_analytics}
+
 1. In your {{site.data.keyword.apiconnect_short}} service on {{site.data.keyword.Bluemix_short}}, launch your Dashboard and select the Catalog that you want to open. 
 2. Click the *Analytics* tab.
 
@@ -65,6 +75,7 @@ This dashboard has a different set of visualizations that display API status, er
 
 
 ## Activity 2: Viewing event details
+{: #act2_tut_insights_analytics}
 
 Visualizations are a great way to get a useful overview of data, but you also need a way to navigate into the event records that populate the charts.
 
@@ -77,6 +88,7 @@ Visualizations are a great way to get a useful overview of data, but you also ne
 You can edit, move, and delete visualizations on your dashboard.
 
 ## Activity 3: Building new dashboards
+{: #act3_tut_insights_analytics}
 
 Now, let's create a new dashboard that will provide view of API traffic patterns. These are all available using built-in visualizations. 
 
@@ -101,6 +113,8 @@ Now, let's create a new dashboard that will provide view of API traffic patterns
 
 
 ## Activity 4: Creating new visualizations
+{: #act4_tut_insights_analytics}
+
 On the Subscriber Dashboard that we created, we included the built-in visualization that shows API Calls per Day. When we look at all of that information presented together, we'd really like to see the usage by App. Let's create a new visualization that shows this information.
 
 1. Click **New Visualization** and select the **Create Visualizations** link.
@@ -135,6 +149,7 @@ This chart (so far) shows a time series of API calls. We want to see API calls b
 There is other information available for visualizing details about API calls, callers, and so on. A full list of API events is available in the API Connect Knowledge Center, or in the list of Terms when you create visualizations.
 
 ## Conclusion
+{: #conclusion_tut_insights_analytics}
 
 The ability to visualize API analytics in different styles and combinations gives you an opportunity to draw conclusions or go deeper into your API data. You can use this insight to make decisions about which APIs to offer, when to replace or retire an API, who is consuming your APIs, and so on.
 
@@ -147,7 +162,7 @@ In this tutorial, we walked through a number of activities to help you create us
 ---
 
 ## Next step
-
-Learn [how to manage your APIs and versioning](tut_manage_version_landing.html).
+{: #next_tut_insights_analytics}
+Learn [how to manage your APIs and versioning](/docs/services/apiconnect/tutorials/tut_manage_version_landing.html).
 
 Create > Manage > Secure > Socialize > **Analyze**  

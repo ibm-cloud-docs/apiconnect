@@ -11,22 +11,29 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Customizing your Developer Portal and selecting a theme
+{: #tut_custom_dev_portal}
+
 **Duration**: 30 mins  
 **Skill level**: Beginner  
 
 
 ## Objective
+{: #object_tut_custom_dev_portal}
+
 This tutorial will help you quickly customize your {{site.data.keyword.apiconnect_full}} Developer Portal and select a theme that suits your needs.
 
 ---
 
 ## Prerequisites
+{: #prereq_tut_custom_dev_portal}
 
-Before starting this tutorial, you should have completed the [Setting up and configuring your Developer Portal](tut_config_dev_portal.html) tutorial and be logged in as the portal administrator.
+Before starting this tutorial, you should have completed the [Setting up and configuring your Developer Portal](/docs/services/apiconnect/tut_config_dev_portal.html) tutorial and be logged in as the portal administrator.
 
 ---
 
 ## Customize your developer portal
+{: #cust_tut_custom_dev_portal}
+
 After you have created your developer portal, you can customize its look and feel.
 
 1. Let's begin by modifying the Welcome Banner. In the top menu select **Content**, then select **Blocks**.  
@@ -49,6 +56,8 @@ After you have created your developer portal, you can customize its look and fee
 ---
 
 ## Customize the theme for your developer portal
+{: #cust_theme_tut_custom_dev_portal}
+
 The developer portal allows you to modify the theme to change its look and feel.
 
 1. To modify the theme, select **Appearance** from the top menu, then select **Settings** and then **IBM API Connect Theme**. This is the default theme when you created your developer portal.
@@ -72,6 +81,8 @@ The developer portal allows you to modify the theme to change its look and feel.
 ---
 
 ## Select a different theme for your developer portal
+{: #diff_theme_tut_custom_dev_portal}
+
 The developer portal comes with additional themes for you to choose from and customize to change its look and feel.
 
 1. To enable a different theme, select the **List** tab at the top of the Appearance settings.
@@ -92,14 +103,16 @@ The developer portal comes with additional themes for you to choose from and cus
 ---
 
 ## Install a new theme for your developer portal
+{: #new_theme_tut_custom_dev_portal}
+
 If modifying an existing theme doesn't suit your needs, the Developer portal also allows you to install a theme to change its look and feel.
 
-1. You can use modules or themes downloaded from [drupal.org ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://drupal.org){:new_window} to customize your developer portal or you can create your own.
+1. You can use modules or themes downloaded from [drupal.org ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://drupal.org){: #new_window} to customize your developer portal or you can create your own.
 
 2. To install a theme into the developer portal, select **Appearance** from the top menu, then select **Install new theme**.  
   ![Install new theme](images/62-install-new.png)
 
-3. You can install themes directly from [drupal.org ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://drupal.org){:new_window} using a URL, or you can upload a theme you downloaded or created by clicking **Choose File**, then **Install**.  
+3. You can install themes directly from [drupal.org ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://drupal.org){: #new_window} using a URL, or you can upload a theme you downloaded or created by clicking **Choose File**, then **Install**.  
   ![Install](images/63-install.png) 
 
 4. When the upload completes, you need to enable the theme. Select **Enable newly added themes**.  
@@ -112,7 +125,8 @@ If modifying an existing theme doesn't suit your needs, the Developer portal als
 
 ---
 
-## Summary
+## Conclusion
+{: #conclusion_tut_custom_dev_portal}
 Congratulations, you have completed this tutorial. In this tutorial you learned how to:
 
 * Customize your developer portal welcome page
@@ -123,8 +137,9 @@ Congratulations, you have completed this tutorial. In this tutorial you learned 
 ---
 
 ## Next step
+{: #next_tut_custom_dev_portal}
 
-Learn [how a user navigates through a Developer Portal](tut_discover_apis.html) or [how to gain insights from basic analytics](tut_insights_analytics.html).
+Learn [how a user navigates through a Developer Portal](/docs/services/apiconnect/tutorials/tut_discover_apis.html) or [how to gain insights from basic analytics](/docs/services/apiconnect/tutorials/tut_insights_analytics.html).
 
 Create > Manage > Secure > **Socialize** > Analyze  
 

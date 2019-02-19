@@ -13,21 +13,29 @@ lastupdated: "2017-12-15"
 
 
 # Managing a SOAP service
+{: #tut_manage_soap_api}
+
 **Duration**: 15 mins
 **Skill level**: Beginner
 
 ---
 ## Objective
+{: #object_tut_manage_soap_api}
+
 In this tutorial, you will use API Manager to create a SOAP API that is a proxy for a SOAP-based weather service.
 
 ## Prerequisites
-- Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_short}} instance](tut_prereq_set_up_apic_instance.html).
-- Before you begin, copy the [weatherprovider.wsdl test ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} file to your local filesystem.
+{: #prereq_tut_manage_soap_api}
+
+- Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_short}} instance](/docs/services/apiconnect/tutorials/tut_prereq_set_up_apic_instance.html).
+- Before you begin, copy the [weatherprovider.wsdl test ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: #new_window} file to your local filesystem.
 Note: You can click **Raw** and then save the resulting page on your local system as a `.wsdl` file. As the name suggests, this SOAP service returns weather data when given a zip code.
 
 ---
 ## Setting up a SOAP API definition
-1. Log in to {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}.
+{: #setup_tut_manage_soap_api}}
+
+1. Log in to {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://new-console.ng.bluemix.net/login){: #new_window}.
 
 2. In the {{site.data.keyword.Bluemix_notm}} **Dashboard**, scroll down to **All Services**.
 
@@ -64,6 +72,7 @@ Note: You can click **Raw** and then save the resulting page on your local syste
   ![Assemble tab](images/assemble-clean.png)  
 
 ## Testing the SOAP API definition
+{: #test_tut_manage_soap_api}}
 
 1. In the **Assemble** tab, click the **More actions** (three dots) icon, and select **Generate a default product** from the menu.  
    ![More actions menu, open](images/gen-default-prod.png)
@@ -71,7 +80,7 @@ Note: You can click **Raw** and then save the resulting page on your local syste
 2. Accept the default options in the **New Product** dialog pop-up, and select **Create Product**. The **weatherService product 1.0.0** is created and published to the Sandbox catalog.  
   ![create a new product](images/12a-chooseproduct.png)
  
-  _In {{site.data.keyword.apiconnect_short}}, **Products** provides a mechanism to group APIs that are intended for a particular use. Products are published to a **Catalog**. Reference: [{{site.data.keyword.apiconnect_short}} glossary](../apic_glossary.html)_
+  _In {{site.data.keyword.apiconnect_short}}, **Products** provides a mechanism to group APIs that are intended for a particular use. Products are published to a **Catalog**. Reference: [{{site.data.keyword.apiconnect_short}} glossary](docs/services/apiconnect/tutorials/tut_expose_soap_service/apic_glossary.html)_
 
 3. Save your changes.  
 
@@ -103,7 +112,9 @@ Note: You can click **Raw** and then save the resulting page on your local syste
 The API returns a Response **body** consisting of the current weather.  
   ![](images/15-success.png)
 
-## What you did in this tutorial
+## Conclusion
+{: #conclusion_tut_manage_soap_api}
+
 In this tutorial, you completed the following:
 1. Set up a SOAP API definition
 2. Tested your API definition
@@ -112,7 +123,8 @@ In this tutorial, you completed the following:
 ---
 
 ## Next step
+{: #next_tut_manage_soap_api}
 
-[Expose your service as a REST API](tut_expose_soap_service.html) or secure your API using [rate limiting](tut_rate_limit.html), [client ID and secret](tut_secure_landing.html), or [securing using OAuth 2.0](tut_secure_oauth_2.html).
+[Expose your service as a REST API](/docs/services/apiconnect/tutorials/tut_expose_soap_service.html) or secure your API using [rate limiting](/docs/services/apiconnect/tutorials/tut_rate_limit.html), [client ID and secret](/docs/services/apiconnect/tutorials/tut_secure_landing.html), or [securing using OAuth 2.0](/docs/services/apiconnect/tutorials/tut_secure_oauth_2.html).
 
 Create > **Manage** > Secure > Socialize > Analyze

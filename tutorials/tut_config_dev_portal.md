@@ -11,18 +11,26 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Setting up and configuring your Developer Portal
+{: #tut_config_dev_portal}
+
 **Duration**: 30 mins  
 **Skill level**: Beginner  
 
-## Prerequisites
-Before you begin, you will need to [import your API spec and proxy an existing REST service](tut_rest_landing.html).
-
 ## Objective
+{: #object_tut_config_dev_portal}
+
 This tutorial will help you quickly get started with configuring your **API Connect Developer Portal**. 
+
+## Prerequisites
+{: #prereq_tut_config_dev_portal}
+
+Before you begin, you will need to [import your API spec and proxy an existing REST service](/docs/services/apiconnect/tutorials/tut_rest_landing.html).
 
 ---
 
 ## Create your developer portal
+{: #create_prereq_tut_config_dev_portal}
+
 In this section, you will create a developer portal for a catalog.
 
 *Catalogs* are an IBM term for different environments. For example, you would create different catalogs for your testing, staging, and production enviornments. You should have a catalog called Sandbox. Feel free to use this catalog to create your developer portal, or create a new catalog and name it whatever you want.
@@ -51,6 +59,8 @@ In this section, you will create a developer portal for a catalog.
 ---
 
 ## Explore your developer portal
+{: #explore_prereq_tut_config_dev_portal}
+
 In this section, you will get acquainted with the developer portal you created in the previous steps.
 
 1. After you have configured the developer portal for your catalog, you will receive an email with a link to a one-time login. Select the link to launch the developer portal.
@@ -66,7 +76,7 @@ In this section, you will get acquainted with the developer portal you created i
   
 | Tab              | Description          | 
 |:---------------- | -------------------- | 
-| _Home_       | The Home page is the welcome page to your developer portal. You can [customize the page](tut_custom_dev_portal.html) to suit your needs. | 
+| _Home_       | The Home page is the welcome page to your developer portal. You can [customize the page](/docs/service/apiconnect/tutorials/tut_custom_dev_portal.html) to suit your needs. | 
 | _Getting Started_       | The Getting started page is used to instruct developers how to get started using your developer portal. |
 | _API Products_ | The API Products page is used by developers to explore and subscribe to the APIs that are available on your portal. | 
 | _Apps_ | The Apps page displays the applications that are using your APIs. | 
@@ -79,12 +89,15 @@ Note: On the API Products page, you can select one of the products to view the P
   ![API Products](images/27-api-products.png)
 
 ### Conclusion
+{: #conclusion_prereq_tut_config_dev_portal}
+
 In this tutorial, you learned how to set up and configure your {{site.data.keyword.apiconnect_short}} Developer Portal. You also explored the developer portal.
 
 ---
 
 ## Next step
+{: #next_prereq_tut_config_dev_portal}
 
-[Customize your Developer Portal and select a theme](tut_custom_dev_portal.html).
+[Customize your Developer Portal and select a theme](/docs/services/apiconnect/tutorials/tut_custom_dev_portal.html).
 
 Create > Manage > Secure > **Socialize** > Analyze

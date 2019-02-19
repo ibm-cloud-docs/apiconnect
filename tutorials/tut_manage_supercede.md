@@ -13,22 +13,30 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Superseding API Products
+{: #tut_manage_supercede}
+
 **Duration**: 15 mins  
 **Skill level**: Beginner  
 
-## Prerequisites
-
-1. [Set up your {{site.data.keyword.apiconnect_full}} instance](tut_prereq_set_up_apic_instance.html).
-
-2. Complete the [Replace an API product tutorial](tut_manage_replace.html).
-
----
 ## Objective
+{: #object_tut_manage_supercede}
+
 In this tutorial, you will supersede an existing API with a new one.
 
 ---
+## Prerequisites
+{: #prereq_tut_manage_supercede}
+
+1. [Set up your {{site.data.keyword.apiconnect_full}} instance](/docs/services/apiconnect/tutorials/tut_prereq_set_up_apic_instance.html).
+
+2. Complete the [Replace an API product tutorial](/docs/services/apiconnect/tutorials/tut_manage_replace.html).
+
+---
+
 ## Superceding an API Product
-1. Log in to {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/login){:new_window}.
+{: #super_tut_manage_supercede}
+
+1. Log in to {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/login){: #new_window}.
 
 2. In the {{site.data.keyword.Bluemix_notm}} Dashboard, launch the {{site.data.keyword.apiconnect_short}} service.
 ![](images/Bluemix.png)
@@ -101,7 +109,9 @@ In this tutorial, you will supersede an existing API with a new one.
  
 
  
-## What you accomplished in this tutorial
+## Conclusion
+{: #conclusion_tut_manage_supercede}
+
 In this tutorial, you completed the following activities:
 
 1. Updated an API product.

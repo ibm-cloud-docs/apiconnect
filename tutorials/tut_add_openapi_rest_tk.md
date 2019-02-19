@@ -11,35 +11,45 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # Add a new API spec and invoke an existing REST service using the Developer Toolkit
+{: #tut_add_openapi_rest_tk}
+
 **Duration**: 15 mins  
 **Skill level**: Beginner  
 
 ## Objective
+{: #object_tut_add_openapi_rest_tk}
+
 This tutorial helps you get started quickly with {{site.data.keyword.apiconnect_full}} by illustrating how you can bring your existing API under management control. You'll start by creating a new OpenAPI spec, and then create a passthrough API proxy for an existing REST service.
 
 ## Prerequisite
-Before you begin, you will need to [set up your API Connect Instance](tut_prereq_set_up_apic_instance.html) and [install the API Connect toolkit](tut_prereq_install_toolkit.html).
+{: #prereq_tut_add_openapi_rest_tk}
+
+Before you begin, you will need to [set up your API Connect Instance](/docs/services/apiconnect/tutorials/tut_prereq_set_up_apic_instance.html) and [install the API Connect toolkit](/docs/services/apiconnect/tutorials/tut_prereq_install_toolkit.html).
 
 ---
 
 
 ## Explore the sample app and test the target endpoints
+{: #expl_test_tut_add_openapi_rest_tk}
+
 A sample _weather provider_ app was created for this tutorial.
-1. To explore the app, go to [http://gettingstartedweatherapp.mybluemix.net/ ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}.  
+1. To explore the app, go to [http://gettingstartedweatherapp.mybluemix.net/ ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://gettingstartedweatherapp.mybluemix.net/){: #new_window}.  
 2. Enter a valid 5-digit U.S. zipcode to get the _**current weather**_ and _**today's forecast**_.  
 ![](images/explore-weatherapp-1.png)
 
-3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
+3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: #new_window}.  
 
   ![](images/explore-weatherapp-2.png)
 
-4. Similarly, the Endpoint to get **today's** forecast data is `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`. Test it out by going to [https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){:new_window}.  
+4. Similarly, the Endpoint to get **today's** forecast data is `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`. Test it out by going to [https://myweatherprovider.mybluemix.net/today?zipcode=90210](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: #new_window}.  
 
   ![](images/explore-weatherapp-3.png)
 
 ---
 
 ## Add a new OpenAPI spec and invoke an existing REST service
+{: #add_spec_tut_add_openapi_rest_tk}
+
 1. Launch the **API Designer**. In your terminal, enter `apic edit`.
 2. Log in using your IBMid.
     ![](images/screenshot_apic-edit_login.png)
@@ -129,8 +139,11 @@ _(We'll visit security with API Keys in the next tutorial.)_
 ---
 
 ## Test your API proxy
+{: #test_tut_add_openapi_rest_tk}
 
-### Test with the _API Manager test tool_.
+### Test with the _API Manager test tool_
+{: #test_apimgr_tut_add_openapi_rest_tk}
+
 1. Start the local test server by clicking the start servers icon (>) on the bottom left of the designer. Once the Gateway is started, you will see the status automatically update to Running.
 
     ![](images/screenshot_start-server-1.png)
@@ -150,7 +163,9 @@ _(We'll visit security with API Keys in the next tutorial.)_
 
 _If you run into a CORS error, follow the instructions in the error message. Click the link in the error to add the exception to your browser, and then hit the "invoke" button again._
 
-### Test with the _Explore tool_.  
+### Test with the _Explore tool_
+{: #test_explore_tut_add_openapi_rest_tk}
+
 1. To test your API proxy endpoints, select _Explore_.
 2. Select the **GET /current** operation from the palette.
 3. Enter a valid U.S. zipcode (e.g. 90210) in the test box.
@@ -160,13 +175,16 @@ _If you run into a CORS error, follow the instructions in the error message. Cli
 ---
 
 ## Conclusion
+{: #conclusion_tut_add_openapi_rest_tk}
+
 In this tutorial, you saw how an existing REST service can be invoked through an API passthrough proxy. You started by checking the availability of the sample service through the web browser. Then you created a new OpenAPI spec in {{site.data.keyword.apiconnect_short}}, and linked it to the sample service to be invoked. Finally, you tested the API proxy with the built-in testing tool.
 
 ---
 
 ## Next step
+{: #next_tut_add_openapi_rest_tk}
 
-Secure your API using [rate limiting](tut_rate_limit.html), [client ID and secret](tut_secure_landing.html), or [securing using OAuth 2.0](tut_secure_oauth_2.html).
+Secure your API using [rate limiting](/docs/services/apiconnect/tutorials/tut_rate_limit.html), [client ID and secret](/docs/services/apiconnect/tutorials/tut_secure_landing.html), or [securing using OAuth 2.0](/docs/services/apiconnect/tutorials/tut_secure_oauth_2.html).
 
 Create > **Manage** > Secure > Socialize > Analyze
 

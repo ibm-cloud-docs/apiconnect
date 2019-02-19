@@ -11,19 +11,26 @@ lastupdated: "2017-11-20"
 {:pre: .pre}
 
 # Discovering APIs
+{: #tut_discover_apis}
+
 **Duration**: 25 mins  
 **Skill level**: Beginner  
 
+## Objective
+{: #object_tut_discover_apis}
+
+In this tutorial, you will learn how a portal user might consume the APIs in the {{site.data.keyword.apiconnect_full}} Developer Portal. You will gain an understanding of how a portal user would explore products and APIs, view and test APIs, and subscribe to APIs. 
 
 ## Prerequisite
+{: #prereq_tut_discover_apis}
+
 There is no prerequisite for this tutorial. As a portal administrator, you can also complete this tutorial while you navigate your developer portal to experience how your portal users navigate your developer portal. Keep in mind that all developer portals have different skins. 
 
 If you do not have an existing developer portal, you can set up and configure a developer portal in {{site.data.keyword.Bluemix_short}} before proceeding with this tutorial.
 
-## Objective
-In this tutorial, you will learn how a portal user might consume the APIs in the {{site.data.keyword.apiconnect_full}} Developer Portal. You will gain an understanding of how a portal user would explore products and APIs, view and test APIs, and subscribe to APIs. 
-
 ## Explore Products & APIs
+{: #explore_tut_discover_apis}
+
 This section shows how a portal user would explore the products and APIs in the developer portal.
 
 1. In a browser, navigate to your **API Connect Developer Portal**.
@@ -47,6 +54,8 @@ This section shows how a portal user would explore the products and APIs in the 
 ---
 
 ## View and test the APIs
+{: #view_tut_discover_apis}
+
 This section shows how a portal user would view and test the available APIs for a product. 
 
 1. Navigate to the API details in the {{site.data.keyword.apiconnect_short}} Developer Portal as outlined in the previous section.  
@@ -67,6 +76,8 @@ This section shows how a portal user would view and test the available APIs for 
 ---
 
 ## Subscribe to APIs
+{: #subscr_tut_discover_apis}
+
 This section shows how a portal user would subscribe to APIs in the developer portal. 
 
 1. Select **Create an account**. 
@@ -101,14 +112,16 @@ This section shows how a portal user would subscribe to APIs in the developer po
   ![App Subscribe Success](images/310-subscribe-success.png) 
 
 ## Conclusion
+{: #conclusion_tut_discover_apis}
 
 In this tutorial, you learned how your portal users would explore products and APIs, view and test APIs, and subscribe to APIs. 
 
 ---
 
 ## Next step
+{: #next_tut_discover_apis}
 
-Learn [how to gain insights from basic analytics](tut_insights_analytics.html).
+Learn [how to gain insights from basic analytics](/docs/services/apiconnect/tutorials/tut_insights_analytics.html).
 
 Create > Manage > Secure > **Socialize** > Analyze  
 

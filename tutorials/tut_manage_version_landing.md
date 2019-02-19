@@ -14,6 +14,7 @@ lastupdated: "2017-10-10"
 {:pre: .pre}
 
 # Managing API and Product versions
+{: #tut_manage_version_landing}
 
 After publishing an API and the product that contains it, API providers typically want or need to update those products and APIs. Updating an API product can happen in different ways.  
 
@@ -29,9 +30,9 @@ After replacing an API, you can then take an API product out of service and remo
 
 In this series of tutorials, you will move API products through all of these states. Complete the tutorials in the following order:
 
-1. [Replace an API product](tut_manage_replace.html)
-2. [Supersede an API product](tut_manage_supercede.html)
-3. [Archive and delete an API product](tut_manage_remove.html)
+1. [Replace an API product](/docs/services/apiconnect/tutorials/tut_manage_replace.html)
+2. [Supersede an API product](/docs/services/apiconnect/tutorials/tut_manage_supercede.html)
+3. [Archive and delete an API product](/docs/services/apiconnect/tutorials/tut_manage_remove.html)
 
 
 

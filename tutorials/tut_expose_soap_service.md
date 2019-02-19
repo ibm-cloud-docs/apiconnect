@@ -14,22 +14,30 @@ lastupdated: "2017-11-14"
  
 
 # Exposing a SOAP service as a REST API
+{: #tut_expose_soap_service}
+
 **Duration**: 20 mins  
 **Skill level**: Beginner  
 
 ---
 ## Objective
+{: #object_tut_expose_soap_service}
+
 In API Manager, you will create a REST API that will accesses a existing SOAP Service and expose it as a REST API.
 
 ## Prerequisites
-1. Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_full}} instance](tut_prereq_set_up_apic_instance.html).
-2. Before you begin, copy the [weatherprovider.wsdl test ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} file to your local filesystem.
+{: #prereq_tut_expose_soap_service}
+
+1. Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_full}} instance]/docs/services/apiconnect/(tut_prereq_set_up_apic_instance.html).
+2. Before you begin, copy the [weatherprovider.wsdl test ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: #new_window} file to your local filesystem.
 	>![images/info.png]
 	>You can click **Raw** and then save the resulting page on your local system as a `.wsdl` file.
 
 ---
 ## Setting up a REST API definition
-1. Log in to {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://new-console.ng.bluemix.net/login){:new_window}.
+{: #setup_tut_expose_soap_service}
+
+1. Log in to {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://new-console.ng.bluemix.net/login){: #new_window}.
 2. In the {{site.data.keyword.Bluemix_notm}} **Dashboard** scroll down and select {{site.data.keyword.apiconnect_short}}. Alternately, from the menu icon, choose **Services** and then **APIs** to reach the **Work with APIs** window, and select **API Connect**. From the **API Connect** page, you can simply press `Create`, or you can adjust the default settings. For the purposes of this exercise, leave the instance unbound, and adjust the Service name for easier recognition later. One example would be `API Connect-weather-exercise`.
 Press the `Create` button to launch the {{site.data.keyword.apiconnect_short}} service.  
 You may see an alert describing what's new, or the **Draft APIs** informational splash page. After reading the information click the **"Got it"** icon to view the API Manager.
@@ -75,6 +83,8 @@ You may see an alert describing what's new, or the **Draft APIs** informational 
 
 ---
 ## Adding and configuring your web service invocation
+{: #add_web_tut_expose_soap_service}
+
 To add and configure the invoke and map policies that integrate your web service into your API definition, complete the steps below.
 1. In the **Services** section, click the **Add service** icon ![](images/add-icon.png). The `Import web service from WSDL` window opens.
 	![](images/upload-file-1.png)
@@ -109,6 +119,8 @@ You have included the web service invocation in your assembly and mapped an inpu
 
 ---
 ## Testing your API definition
+{: #test_tut_expose_soap_service}
+
 To test your API definition by using the API Manager test tool, complete the steps below.
 1. Click the **Test** icon ![](images/test-icon.png) under the **Assembly** tab to reveal the test pane.
 	![](images/test-pane-1.png)
@@ -125,7 +137,9 @@ To test your API definition by using the API Manager test tool, complete the ste
 	![](images/test-api-2.png)
 
 ---
-## What you did in this tutorial
+## Conclusion
+{: #conclusion_tut_expose_soap_service}
+
 In this tutorial, you completed the following activities:
 1. Set up a REST API definition
 2. Configured an API to invoke an existing web service and return its output
@@ -134,8 +148,9 @@ In this tutorial, you completed the following activities:
 ---
 
 ## Next step
+{: #next_tut_expose_soap_service}
 
-Secure your API using [rate limiting](tut_rate_limit.html), [client ID and secret](tut_secure_landing.html), or [securing using OAuth 2.0](tut_secure_oauth_2.html).
+Secure your API using [rate limiting](/docs/services/apiconnect/tutorials/tut_rate_limit.html), [client ID and secret](/docs/services/apiconnect/tutorials/tut_secure_landing.html), or [securing using OAuth 2.0](/docs/services/apiconnect/tutorials/tut_secure_oauth_2.html).
 
 Create > **Manage** > Secure > Socialize > Analyze
 

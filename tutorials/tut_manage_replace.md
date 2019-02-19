@@ -14,30 +14,33 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Replacing an API Product
+{: #tut_manage_replace}
+
 **Duration**: 15 mins  
 **Skill level**: Beginner  
 
+## Objective
+{: #object_tut_manage_replace}
+In this tutorial, you will update an existing API product by replacing it with a newer one. When an API product is replaced, the changes take effect immediately and all application subscriptions are updated automatically.  
 
+---
 ## Prerequisites
+{: #prereq_tut_manage_replace}
 
-1. [Set up your {{site.data.keyword.apiconnect_full}} instance](tut_prereq_set_up_apic_instance.html).
+1. [Set up your {{site.data.keyword.apiconnect_full}} instance](/docs/services/apiconnect/tutorials/tut_prereq_set_up_apic_instance.html).
 
 2. Complete one of the following tutorials:
  
-    - [Import an OpenAPI2.0 spec and proxy an existing REST service](tut_rest_landing.html)
+    - [Import an OpenAPI2.0 spec and proxy an existing REST service](/docs/services/apiconnect/tutorials/tut_rest_landing.html)
        **or**  
-    - [Add a New API Spec and Invoke an Existing REST Service](tut_rest_landing.html).
+    - [Add a New API Spec and Invoke an Existing REST Service](/docs/services/apiconnect/tutorials/tut_rest_landing.html).
 
 ---
-## Objective
-In this tutorial, you will update an existing API product by replacing it with a newer one. When an API product is replaced, the changes take effect immediately and all application subscriptions are updated automatically.  
 
-
----
 ## Replacing an API Product
-{: #repl_api_prod}
+{: #repl_api_prod_tut_manage_replace}}
 
-1. Log in to {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/login){:new_window}.
+1. Log in to {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/login){: #new_window}.
 
 2. In the {{site.data.keyword.Bluemix_notm}} Dashboard, launch the {{site.data.keyword.apiconnect_short}} service.
 ![](images/Bluemix.png)
@@ -91,7 +94,8 @@ In this tutorial, you will update an existing API product by replacing it with a
  ![](images/rep-prod-retired.png) 
  
 
-## What you accomplished in this tutorial
+## Conclusion
+{: #conclusion_tut_manage_replace}
 
 In this tutorial, you completed the following activities:
 1. Updated an API product.
