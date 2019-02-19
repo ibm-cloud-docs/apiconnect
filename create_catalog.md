@@ -11,6 +11,7 @@ lastupdated: "2017-10-24"
 {:pre: .pre}
 
 # Configuring a Catalog
+{: #create_catalog}
 
 You can create and configure your API Manager Catalogs. Catalogs are useful for
 separating Products and APIs for testing before you make them available to Developer organizations.
@@ -63,7 +64,7 @@ Catalog name.
 		    - You must configure a DNS entry that maps your custom host name and domain to the default gateway
 		    URL.
 		    - For the endpoints of an API to reflect your custom gateway URL, you must configure the API to be
-		    enforced by the API Connect gateway. For more information, see [Specifying an alternative host for an API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+		    enforced by the API Connect gateway. For more information, see [Specifying an alternative host for an API ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 		    - Ensure that the same custom gateway URL is not applied to multiple Catalogs as the behavior in
 		    that scenario is undefined.
 				**TIP**: When you call the API, you can also set the HTTP host header on the API request to the value that you specified in the Custom Gateway URL field.
@@ -84,7 +85,7 @@ Catalog name.
 	    production developer portals to advertise the address of the API.
 
 	    **Note:** If you specify a custom API URL for a Catalog, it takes precedence over any host name that you
-	    specify when you configure the API. For more information, see [Specifying an alternative host for an API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+	    specify when you configure the API. For more information, see [Specifying an alternative host for an API ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 
 	    - **Hostname for Developer Portal API Calls**:
 	    In the Port API Endpoint window area, enter a host name for Developer Portal API calls. The host
@@ -97,7 +98,7 @@ Catalog name.
 7. Click the **Save** icon.
 
 ## Partitioning a Catalog
-{: #apic_spaces}
+{: #apic_spaces_create_catalog}
 
 To use the syndication feature in {{site.data.keyword.apiconnect_short}}, you must enable Spaces in any
 Catalog in which you require syndication capabilities.
@@ -114,4 +115,4 @@ the navigation pane. You can manage your Spaces by clicking either of these link
 Spaces are enabled for your Catalog, and a default Space, called New Space is
 created.
 
-For more information about using syndication, see the Knowledge Center topics, [Using syndication in IBM API Connect ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}.
+For more information about using syndication, see the Knowledge Center topics, [Using syndication in IBM API Connect ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){: #new_window}.

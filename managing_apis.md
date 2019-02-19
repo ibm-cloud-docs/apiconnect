@@ -21,16 +21,16 @@ You can use API Connect to manage APIs in {{site.data.keyword.Bluemix}}, whether
 If you are a customer, you can manage how it is used within the API Manager UI after a developer creates an API and pushes the product to {{site.data.keyword.Bluemix_notm}}. The following topics describe how to create and manage products within {{site.data.keyword.apiconnect_short}}.
 
 ## Exposing on-premises APIs through a Secure Gateway
-{: #expose_apis_sec_gate}
+{: #expose_apis_sec_gate_managing_apis}
 
 You can create a secure gateway to securely expose on-premises APIs to {{site.data.keyword.apiconnect_full}}.
 
 When you create a secure gateway and then target its client or Cloud `<host>:<port>`, you integrate the features of the {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.SecureGateway}} service with {{site.data.keyword.apiconnect_short}}. This means that you have a secure way to access your on-premises APIs from {{site.data.keyword.apiconnect_short}} through a secure passage. Effectively you create a tunnel to {{site.data.keyword.apiconnect_short}} on a public environment without exposing your on-premises data. All that you need to do is create and configure the secure gateway service on IBM Cloud and target it in an API.
 
-For more information about the {{site.data.keyword.SecureGateway}} service, and how to set it up, see [About {{site.data.keyword.SecureGateway}}](../../services/SecureGateway/index.html#getting-started-with-sg).
+For more information about the {{site.data.keyword.SecureGateway}} service, and how to set it up, see [About {{site.data.keyword.SecureGateway}}![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs/services/SecureGateway/index.html#getting-started-with-sg){: #new_window}.
 
 ### Using the secure gateway with your APIs
-{: #using_sec_gate_apis notoc}
+{: #using_sec_gate_apis_managing_apis notoc}
 
 When you have configured the gateway, you can use it with your APIs.
 {:shortdesc}
@@ -72,7 +72,7 @@ target-url: cap-sg-prd-5.securegateway.appdomain.cloud:18579
 You have securely exposed your on-premises API to {{site.data.keyword.apiconnect_short}}. Next, test your {{site.data.keyword.SecureGateway}} API.
 
 ### Testing your secure gateway API
-{: test_sec_gate notoc}
+{: test_sec_gate_managing_apis notoc}
 
 After you have targeted the {{site.data.keyword.SecureGateway}} in an API, you can test the API to ensure that the gateway is working and that it produces the correct response.
 
@@ -85,7 +85,7 @@ To test an API using the secure gateway, complete the following steps:
 
 3. Select a Catalog to test within from the list provided.
 
-4. Ensure the target URL is targeting the correct Secure Gateway `<cloud_host>:<port>` and that the secure gateway service desitination has been correctly configured as described in the [{{site.data.keyword.SecureGateway}} service documentation](../../services/SecureGateway/index.html#getting-started-with-sg).
+4. Ensure the target URL is targeting the correct Secure Gateway `<cloud_host>:<port>` and that the secure gateway service desitination has been correctly configured as described in the [{{site.data.keyword.SecureGateway}}![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs/services/SecureGateway/index.html#getting-started-with-sg){: #new_window}documentation.
 
 5. Choose an existing Product from the list that is provided then click **Republish
 product**.
@@ -105,7 +105,7 @@ publish**.
 The test results are displayed.
 
 ## Staging and publishing a LoopBack application
-{: #stage_publish_lb_app}
+{: #stage_publish_lb_app_managing_apis}
 
 1. In the navigation pane of the API Designer, click **Products**.
 The Products tab opens.
@@ -188,6 +188,7 @@ https://<domain>/<Bluemix org>-<Bluemix space>/<Catalog identifier>/api/notes
 A 200 response is displayed.
 
 ## Configuring a Catalog
+{: #config_cat_managing_apis}
 
 You can create and configure your API Manager Catalogs. Catalogs are useful for
 separating Products and APIs for testing before you make them available to Developer organizations.
@@ -244,7 +245,7 @@ Catalog name
 		    - You must configure a DNS entry that maps your custom host name and domain to the default gateway
 		    URL.
 		    - For the endpoints of an API to reflect your custom gateway URL, you must configure the API to be
-		    enforced by the API Connect gateway. For more information, see [Specifying an alternative host for an API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+		    enforced by the API Connect gateway. For more information, see [Specifying an alternative host for an API ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 		    - Ensure that the same custom gateway URL is not applied to multiple Catalogs as the behavior in
 		    that scenario is undefined.
 	        **TIP**: When you call the API, you can also set the HTTP host header on the API
@@ -266,7 +267,7 @@ Catalog name
 	    production developer portals to advertise the address of the API.
 
 	    **Note:** If you specify a custom API URL for a Catalog, it takes precedence over any host name that you
-	    specify when you configure the API. For more information, see [Specifying an alternative host for an API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+	    specify when you configure the API. For more information, see [Specifying an alternative host for an API ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 
 	    - **Hostname for Developer Portal API Calls**:
 	    In the Port API Endpoint window area, enter a host name for Developer Portal API calls. The host
@@ -279,6 +280,7 @@ Catalog name
 7. Click the **Save** icon.
 
 ## Partitioning a Catalog
+{: #part_cat_managing_apis}
 
 To use the syndication feature in {{site.data.keyword.apiconnect_short}}, you must enable Spaces in any
 Catalog in which you require syndication capabilities.
@@ -295,10 +297,10 @@ the navigation pane. You can manage your Spaces by clicking either of these link
 Spaces are enabled for your Catalog, and a default Space, called New Space is
 created.
 
-For more information about using syndication, see the Knowledge Center topics, [Using syndication in IBM API Connect ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}.
+For more information about using syndication, see the Knowledge Center topics, [Using syndication in IBM API Connect ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){: #new_window}.
 
 ## Configuring a Developer Portal
-{: #config_dev_portal}
+{: #config_dev_portal_managing_apis}
 
 A Developer Portal is the place where your plans are published for application developers
 to access and use.
@@ -329,10 +331,10 @@ subject line of the email that you received. You can also find the URL in the AP
 clicking **Portal** > **Settings**.
 
 For more information about the tasks that you can complete in the Developer Portal, see the IBM
-Knowledge Center topics about the [Developer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.html){:new_window}.
+Knowledge Center topics about the [Developer Portal ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.html){: #new_window}.
 
 ## Configuring permissions for roles
-{: #config_permissions_roles}
+{: #config_permissions_roles_managing_apis}
 
 To configure the Permissions for the roles in API Manager, complete the following
 steps.

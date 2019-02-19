@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017
-lastupdated: "2017-07-11"
+lastupdated: "2017-09-05"
 ---
 
 {:new_window: target="blank"}
@@ -22,7 +22,9 @@ click **Explore APIs**.
 
 3. To subscribe to an API, click an API product.
 The Developer Portal opens and you can subscribe to a Plan to access an
-API.
+API. 
+
+  **Note**: If the Plan that you select has billing, you must provide a credit card number for your organization. That requires that you have owner privileges.
 
 ## Viewing and testing APIs in the Developer Portal
 {: #view_test_apis_dev_port}
@@ -76,6 +78,8 @@ The Use this Plan dialog box is displayed.
 5. Select the application that you want to use with this Plan, and click
 **Save**.
 The application details are displayed.
+
+  **Note**: If the Plan that you select has billing, you must provide a credit card number for your organization. That requires that you have owner privileges.
 
 6. To view the operations for the APIs that are included in the Plans to which the application is
 subscribed, click the name of the API.

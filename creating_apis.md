@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-12-03"
+  years: 2017
+lastupdated: "2017-12-15"
 
 ---
 
@@ -20,7 +20,7 @@ You can create APIs by downloading the developer toolkit and by using the comman
 interface (CLI) or API Designer.
 
 ## The developer toolkit CLI
-{: #dev_tk_cli notoc}
+{: #dev_tk_cli_creating_apis notoc}
 
 The developer toolkit provides a command line interface that you can use to publish APIs to
 {{site.data.keyword.apiconnect_long}}.
@@ -30,7 +30,7 @@ can then interact with {{site.data.keyword.apiconnect_long}} by
 using the toolkit commands.
 
 ## API Designer
-{: #designer notoc}
+{: #designer_creating_apis notoc}
 
 The API Designer is an offline graphical user interface within the developer toolkit and provides
 functions for the creation and configuration of APIs.
@@ -39,12 +39,12 @@ command is used, the API Designer opens in your default browser or can be access
 host port that is displayed when you run the command.
 
 ## Installing the developer toolkit
-{: #install_dev_tk}
+{: #install_dev_tk_creating_apis}
 
 ### Prerequisites
-{: #prereq_install_dev_tk}
+{: #prereq_install_dev_tk_creating_apis}
 
-Before you begin, You must install [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://nodejs.org/en/){:new_window} on the machine on which
+Before you begin, You must install [Node.js ![External link icon](../icons/launch-glyph.svg "External link icon")](https://nodejs.org/en/){: #new_window} on the machine on which
 you want to use the toolkit, and ensure that `node` is in your `PATH`.
 
 The following items are installed when you install the developer toolkit.
@@ -81,67 +81,54 @@ command.
 	{: codeblock}
 	
 ## Installing LoopBack connectors
-{: #install_lb_conn}
+{: #install_lb_conn_creating_apis}
 
 Before you can use a LoopBack data source to access data in a backend system such as a
 database, you must install the data source connector. The In-memory and email connectors are built
 in to LoopBack, so you don't need to install them.
 
 ### Prerequisites
-{: #prereq_install_lb_conn}
+{: #prereq_install_lb_conn_creating_apis}
 
 The Oracle, DB2, and SQLLite connectors require C compiler tools to build and install binary
 extensions. The exact requirements depend on your operating system as described in the following
-table.
+list.
 
-<table summary="" id="apic_028__table_pre_reqs" class="defaultstyle style-scope doc-content">
-<caption>Table 1. Operating system-specific installation requirements</caption>
-<thead>
-<tr>
-<th style="width: 33.3%" id="th_d70e208" class="thleft style-scope doc-content">Windows</th>
-<th style="width: 33.3%" id="th_d70e210" class="thleft style-scope doc-content">Linux</th>
-<th style="width: 33.3%" id="th_d70e212" class="thleft style-scope doc-content">MAC OS X</th>
-</tr>
-</thead>
-<tbody >
-<tr class="style-scope doc-content doc-tr-odd">
-<td style="width: 33.3%" > [Microsoft .NET Framework 4 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.microsoft.com/en-us/download/details.aspx?id=17851)</td>
-<td style="width: 33.3%">Python v2.7 (v3.x is not supported)</td>
-<td style="width: 33.3%" > [Python Releases for Mac OS X ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.python.org/downloads/mac-osx/)</td>
-</tr>
-<tr><td style="width: 33.3%" > [Visual Studio ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.visualstudio.com/downloads/download-visual-studio-vs)</td>
-<td style="width: 33.3%">
-<code>make</code>
-</td>
-<td style="width: 33.3%" > [Xcode ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716)</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" > [Python v2.7.10 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.python.org/downloads/release/python-2710/)</td>
-<td style="width: 33.3%">A C/C++ compiler toolchain, for example GCC version 4.2 or later. </td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-<tr><td style="width: 33.3%" > [Microsoft Windows SDK for Windows 7 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279)</td>
-<td style="width: 33.3%">On Debian and Debian-derived distributions (Ubuntu, Mint etc), use the command:
+**Linux**
+- Python v2.7 (v3.x is not supported)
+
+- <code>make</code>
+
+- A C/C++ compiler toolchain, for example GCC version 4.2 or later.
+
+- On Debian and Debian-derived distributions (Ubuntu, Mint etc), use the command:
 <pre class="codeblock style-scope doc-content"><code>apt-get install build-essential</code></pre>
-</td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" >npm version 3. See the following note.</td>
-<td style="width: 33.3%">&nbsp;</td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-</tbody>
-</table>
 
-**Note:** For Windows installations:
+**Mac OS X**
+- [Python Releases for Mac OS X ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.python.org/downloads/mac-osx/){: #new_window}
 
-- Use Visual Studio Community unless you want to purchase Visual Studio Enterprise. Run the
+- [Xcode ![External link icon](../icons/launch-glyph.svg "External link icon")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716){: #new_window}
+
+**Windows**
+- [Microsoft .NET Framework 4 ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.microsoft.com/en-us/download/details.aspx?id=17851){: #new_window}
+
+- [Visual Studio ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.visualstudio.com/downloads/download-visual-studio-vs){: #new_window}
+
+- [Python v2.7.10 ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.python.org/downloads/release/python-2710/){: #new_window}
+
+- [Microsoft Windows SDK for Windows 7 ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279){: #new_window}
+
+- npm version 3: See the following note.
+
+**Note**: Use Visual Studio Community unless you want to purchase Visual Studio Enterprise. Run the
 installer, check "Visual C++" under "Programming Languages", and accept the default installation
 location.
 
-- For 64-bit builds of Node.js and native modules, you also need the Windows&trade; 7 64-bit SDK. If the installation fails, try uninstalling any C++ 2010
+For 64-bit builds of Node.js and native modules, you also need the Windows&trade; 7 64-bit SDK. If the installation fails, try uninstalling any C++ 2010
 x64&amp;x86 redistributable that you have installed first. If you get errors that the 64-bit
 compilers are not installed, you might also need the compiler update for the Windows&trade; SDK 7.1.
-- Enter the following command to install npm version 3:
+
+Enter the following command to install npm version 3:
   ```
   npm install -g npm
   ```
@@ -164,10 +151,10 @@ the connector by entering the following command in the project root directory.
 npm install --save <connector-package>
 ```
 {: codeblock}
-where `<connector-package>` is the name of the npm package for the LoopBack connector, as shown in the table.
+where `<connector-package>` is the name of the npm package for the LoopBack connector, as shown in the Table 1:
 
 <table summary="" id="apic_connectors_table_pre_reqs" class="defaultstyle style-scope doc-content">
-<caption>Table 3. LoopBack Connectors</caption>
+<caption>Table 1. LoopBack Connectors</caption>
 <thead>
 <tr class="style-scope doc-content doc-tr-even">
 <th style="width: 50%" id="th_new_d70e1489" class="thleft style-scope doc-content">Data source</th>
@@ -211,14 +198,15 @@ where `<connector-package>` is the name of the npm package for the LoopBack conn
 </tbody>
 </table>
 
+
 ## Creating a LoopBack API by using the CLI
-{: #create_lb_api}
+{: #create_lb_api_creating_apis}
 
 The following procedure describes how to create a LoopBack&reg; API by using the command line interface.
 
 
 ### Prerequisites
-{: #prereq_create_lb_api}
+{: #prereq_create_lb_api_creating_apis}
 
 Before you begin, have the catalog
 identifier for the catalog that you want to use to hand. To get the catalog identifier, complete the
@@ -319,7 +307,7 @@ class:
       Checkpoint
     (Move up and down to reveal more choices)
     ```
-    For more information about each option, see [Using built-in models ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){:new_window}.
+    For more information about each option, see [Using built-in models ![External link icon](../icons/launch-glyph.svg "External link icon")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){: #new_window}.
 
 9. Select a base class and press **Enter**. The tool asks whether you want to expose the model's REST
 API.
@@ -427,7 +415,7 @@ Install loopback-connector-<connector>?
 5. Type `Yes`.
 The tool installs the connector.
 
-NOTE: If you selected the Oracle connector, you must set an environment variable in
+**Note**: If you selected the Oracle connector, you must set an environment variable in
 {{site.data.keyword.Bluemix_notm}} for the Oracle app to start. To
 do this, complete the following steps:
 
@@ -450,7 +438,7 @@ do this, complete the following steps:
 8. Click **Save**.
 
 ### Testing a LoopBack project
-{: #test_lb_proj}
+{: #test_lb_proj_creating_apis}
 
 To test a LoopBack project, complete the following steps.
 
@@ -482,7 +470,7 @@ If you want to load the API by using a web browser, open
 ```
 
 ### Publishing a LoopBack application to {{site.data.keyword.Bluemix_notm}} from the CLI
-{: #pub_lb_app_cli}
+{: #pub_lb_app_cli_creating_apis}
 
 To publish a LoopBack application to {{site.data.keyword.Bluemix_short}} from the command line, complete the following steps:
 
@@ -556,16 +544,16 @@ The following output is returned:
     8. Click **Save** to save the API.
 
 ## Creating a LoopBack API by using the API Designer
-{: #create_lb_api_design}
+{: #create_lb_api_design_creating_apis}
 
 The following procedure describes how to create a LoopBack API by using the API Designer.
 {:shortdesc}
 
 ### Prerequisites
-{: #prereq_create_lb_api_design}
+{: #prereq_create_lb_api_design_creating_apis}
 
 **Note**: The following instructions assume that you are using the latest version of
-the developer toolkit. To check the latest version, see the [npm ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.npmjs.com/package/apiconnect){:new_window} package page.
+the developer toolkit. To check the latest version, see the [npm ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.npmjs.com/package/apiconnect){: #new_window} package page.
 
 First, you need to create a LoopBack project using the CLI. Complete the following steps to do this:
 
@@ -668,7 +656,7 @@ npm install --save <connector-package>
 **Note:** The in-memory and email connectors are built in to LoopBack, so you do not need to install them.
 
 <table>
-<caption>Table 3. LoopBack Connectors</caption>
+<caption>Table 2. LoopBack Connectors</caption>
 <thead>
 <tr class="style-scope doc-content doc-tr-even">
 <th style="width: 50%" id="3rd_d70e1489" class="thleft style-scope doc-content">Data source</th>
@@ -712,7 +700,7 @@ npm install --save <connector-package>
 </tbody>
 </table>
 
-For more information, see [LoopBack Documentation - Building a connector ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){:new_window}.
+For more information, see [LoopBack Documentation - Building a connector ![External link icon](../icons/launch-glyph.svg "External link icon")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){: #new_window}.
 
 **Note:** If you selected the Oracle connector, you must set an environment variable in
 {{site.data.keyword.Bluemix_notm}} for the Oracle app to start. To
@@ -753,7 +741,7 @@ something like this:
 {"started":"2017-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-Next, you need to create a Product. For more information, see [Creating a Product](managing_products.html#create_product).
+Next, you need to create a Product. For more information, see [Creating a Product(/docs/services/apiconnect/managing_products.html#create_product).
 **Tip**: Whenever you start a new command prompt, make sure that your current working
 directory is the project top-level directory. To do this, enter the following
 command:
@@ -762,10 +750,10 @@ cd <project directory name>
 ```
 
 ## Uninstalling the developer toolkit
-{: #uninstall_dev_tk}
+{: #uninstall_dev_tk_creating_apis}
 
 ### Prerequisites
-{: #prereq_uninstall_dev_tk}
+{: #prereq_uninstall_dev_tk_creating_apis}
 
 Before you begin, you must stop any apps that are running locally by entering the following
 command:

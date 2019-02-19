@@ -11,11 +11,12 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # Managing Products
+{: #managing_products}
 
-For details of the ways in which you can manage your Products, see the IBM&reg; Knowledge Center documentation [Managing your Products ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){:new_window}.
+For details of the ways in which you can manage your Products, see the IBM&reg; Knowledge Center documentation [Managing your Products ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){: #new_window}.
 
 ## Product lifecycle
-{: #prod_lifecycle}
+{: #prod_lifecycle_managing_products}
 
 When you manage your Product versions, you move them through a series of lifecycle
 states, from initially staging a draft Product version to an environment, through to publishing to
@@ -65,6 +66,7 @@ associated APIs are stopped. The Product version is not displayed by default in 
 </table>
 
 ### Product lifecycle flows
+{: #prod_lifecycle_flows_managing_products}
 
 The following diagram shows the possible lifecycle states for a Product version, and the Product management operations that move a Product version from
 one lifecycle state to another; for example, the Retire operation moves a Product version from the
@@ -74,7 +76,7 @@ Published to the Retired state.
 
 
 ## Creating a Product
-{: #create_product}
+{: #create_product_managing_products}
 
 Create a Product to collect a set of APIs and Plans into one offering that you make
 available to your developers. A Plan includes rate limit settings that can be applied to the Plan as
@@ -124,7 +126,7 @@ communities that you want the Plans in the Product to be visible to.
     To search for developer organizations or communities, the Product must be in the staged,
     published, or deprecated state. If the Catalog in which it is staged, published, or deprecated is
     not a sandbox Catalog, you cannot make other changes to the Product while it is in one of these
-    states. For more information, see [Product lifecycle](#prod_lifecycle).
+    states. For more information, see [Product lifecycle](#prod_lifecycle_managing_products).
 
 8. Specify the users that can subscribe to the Product. You can choose **Authenticated
 users** or **Custom**. If you select **Custom**, use
@@ -191,11 +193,11 @@ warning will be presented.
 
 You have created a Product, and specified a set of APIs and Plans into one offering that you
 can now make available to your developers.
-Next, Stage your Product to a Catalog. For more information, see [Staging a Product](#stage_product}).
+Next, stage your poduct to a catalog as explained in the next section, [Staging a Product](#stage_product_managing_products}).
 
 
 ## Staging a Product
-{: #stage_product}
+{: #stage_product_managing_products}
 
 Stage a Product to create a specific version of that Product in a Catalog, before
 publishing. When a Product is in the staged state, it is not yet visible to, or subscribable by, any
@@ -241,12 +243,11 @@ Catalog. The Product is shown with a state of Staged.
 
 - Open the {{site.data.keyword.Bluemix_notm}} **Dashboard**. You will see the application tile in the Applications section.
 
-Open the API Manager to publish your Product to a community for application developers to access
-it in the Developer Portal. For more information, see [Publishing a Product](#publish_proj}).
+Open the API Manager to publish your product to a community where application developers can access it through the Developer Portal as explained in the next section, [Publishing a Product](#publish_proj_managing_products}).
 
 
 ## Publishing a Product
-{: #publish_proj}
+{: #publish_proj_managing_products}
 
 APIs are made visible and accessible to application developers when a plan is published.
 Publishing a Product makes it visible in the {{site.data.keyword.Bluemix_short}}
@@ -254,10 +255,9 @@ Publishing a Product makes it visible in the {{site.data.keyword.Bluemix_short}}
 use.
 
 ### Prerequisites
-{: #prereq_publish_proj}
+{: #prereq_publish_proj_managing_products}
 
-You must stage a Product before it can be published. For more information about staging Products,
-see [Staging a Product](#stage_product).
+You must stage a Product before it can be published. For more information about staging Products, see [Staging a Product](#stage_product_managing_products).
 
 To publish a Product, complete the following steps:
 
@@ -291,14 +291,16 @@ decline or accept the request.
 
 
 ## Publishing a Product to Bluemix
+{: #pub_to_bm_managing_products}
 
 To see your Products in the **Explore APIs** section of the {{site.data.keyword.apiconnect_short}} Dashboard, complete the following steps.
 
 ### Prerequisites
+{: #prereq_pub_bm_managing_products}
 
 Before you begin, if you want to publish a REST API implemented with LoopBack, ensure that
 you have published your app run time, and staged your product with the invoke proxy pointing to the
-new app. For more information about how to do this, see [Staging and publishing a LoopBack Application](managing_apis.html#stage_publish_lb_app).
+new app. For more information about how to do this, see [Staging and publishing a LoopBack Application](/docs/services/apiconnect/managing_apis.html#stage_publish_lb_app_managing_apis).
 
 1. In the API Manager UI, click **Add** > **Catalog**. The **Add Catalog** window is displayed.
 
