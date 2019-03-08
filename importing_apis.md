@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -167,7 +173,7 @@ following steps:
 
 1. Create the REST API by using IBM App Connect
 Professional.
-  - Log in to the [App Connect Professional Web Management Console ![External link icon](../icons/launch-glyph.svg "External link icon")](https://appconnect.ibmcloud.com/professional/){:new_window} with your IBMid. For more information about how to complete the tasks for creating a REST API with IBM App Connect Professional Web Management Console, see [About management console settings ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window} in the IBM Knowledge Center.
+  - Log in to the [App Connect Professional Web Management Console ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/app-connect){:new_window} with your IBMid. For more information about how to complete the tasks for creating a REST API with IBM App Connect Professional Web Management Console, see [About management console settings ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window} in the IBM Knowledge Center.
   - Select the Production tab, if it is not already selected.
   - Select **Repository** > **Configurations** in the navigation panel.
   - On the Project Configurations screen, select the project that you are publishing to {{site.data.keyword.apiconnect_short}}.  The Configuration Details of the project that is being published are displayed.
@@ -243,7 +249,7 @@ settings.
 8. Configure the host/basePath to the URL field with the following information:
 
 - **hostname**: Setting that depends on your cloud instance. For more information about this setting, see
-[IBM App Connect Professional]![External link icon](../icons/launch-glyph.svg "External link icon"](https://provide.castiron.ibmcloud.com){:new_window}.
+[IBM App Connect Professional ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SS3LC4_7.5.2.0/mapfiles/ic_home.html){:new_window}.
 
 - **basepath**: Path that you specify on the httpReceive Request note in App Connect Professional orchestration.
 
@@ -263,6 +269,6 @@ To test the API, follow these steps:
 6. Verify that you receive the expected response from the API.
 
 When the API definition is imported and integrated, you can manage and govern the APIs as
-you would with any other REST API definition. For more information about the APIs, see [Managing APIs](/docs/services/apiconnect/managing_apis.html).
+you would with any other REST API definition. For more information about the APIs, see [Managing APIs](/docs/services/apiconnect?topic=managing_apis).
 
 

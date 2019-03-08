@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2019-01-17"
 
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 
@@ -25,9 +29,9 @@ If you are a customer, you can manage how it is used within the API Manager UI a
 
 You can create a secure gateway to securely expose on-premises APIs to {{site.data.keyword.apiconnect_full}}.
 
-When you create a secure gateway and then target its client or Cloud `<host>:<port>`, you integrate the features of the {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.SecureGateway}} service with {{site.data.keyword.apiconnect_short}}. This means that you have a secure way to access your on-premises APIs from {{site.data.keyword.apiconnect_short}} through a secure passage. Effectively you create a tunnel to {{site.data.keyword.apiconnect_short}} on a public environment without exposing your on-premises data. All that you need to do is create and configure the secure gateway service on IBM Cloud and target it in an API.
+When you create a secure gateway and then provide an address for its client or Cloud `<host>:<port>`, you integrate the features of the {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.SecureGateway}} service with {{site.data.keyword.apiconnect_short}}. This means that you have a secure way to access your on-premises APIs from {{site.data.keyword.apiconnect_short}} through a secure passage. Effectively you create a tunnel to {{site.data.keyword.apiconnect_short}} on a public environment without exposing your on-premises data. All that you need to do is create and configure the secure gateway service on IBM Cloud and provide an address for it in an API.
 
-For more information about the {{site.data.keyword.SecureGateway}} service, and how to set it up, see [About {{site.data.keyword.SecureGateway}}![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs/services/SecureGateway/index.html#getting-started-with-sg){: #new_window}.
+For more information about the {{site.data.keyword.SecureGateway}} service, and how to set it up, see [About {{site.data.keyword.SecureGateway}}![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs/services/SecureGateway?topic=index#getting-started-with-sg){: #new_window}.
 
 ### Using the secure gateway with your APIs
 {: #using_sec_gate_apis_managing_apis notoc}
@@ -50,7 +54,7 @@ To use your secure gateway with APIs, complete the following steps.
 `If`, cannot be used with APIs that use a secure gateway.
 
 4. **Do not** select the **Access URL through Secure Gateway** check box.
-**IMPORTANT**: This check box is for a deprecated feature that is not supported for production and is subject to removal at any time. Instead, you will target the Secure Gateway URL directly, without selecting this check box.
+**IMPORTANT**: This check box is for a deprecated feature that is not supported for production and is subject to removal at any time. Instead, you will provide an address for the Secure Gateway URL directly, without selecting this check box.
 
 5. In the URL field, update the `target-url` with the cloud host name and port number, for example:
 ```
@@ -74,7 +78,7 @@ You have securely exposed your on-premises API to {{site.data.keyword.apiconnect
 ### Testing your secure gateway API
 {: test_sec_gate_managing_apis notoc}
 
-After you have targeted the {{site.data.keyword.SecureGateway}} in an API, you can test the API to ensure that the gateway is working and that it produces the correct response.
+After you have provided an address for the {{site.data.keyword.SecureGateway}} in an API, you can test the API to ensure that the gateway is working and that it produces the correct response.
 
 To test an API using the secure gateway, complete the following steps:
 
@@ -85,7 +89,7 @@ To test an API using the secure gateway, complete the following steps:
 
 3. Select a Catalog to test within from the list provided.
 
-4. Ensure the target URL is targeting the correct Secure Gateway `<cloud_host>:<port>` and that the secure gateway service desitination has been correctly configured as described in the [{{site.data.keyword.SecureGateway}}![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs/services/SecureGateway/index.html#getting-started-with-sg){: #new_window}documentation.
+4. Ensure the URL provides an address for the correct Secure Gateway `<cloud_host>:<port>` and that the secure gateway service desitination has been correctly configured as described in the [{{site.data.keyword.SecureGateway}}![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs/services/SecureGateway?topic=index#getting-started-with-sg){: #new_window} documentation.
 
 5. Choose an existing Product from the list that is provided then click **Republish
 product**.
@@ -175,7 +179,7 @@ To test that the publish worked, complete the following steps:
 1. Ensure that the {{site.data.keyword.Bluemix_notm}} app is
 running.
 
-2. Open a browser window and navigate to the API target URL.
+2. Open a browser window and navigate to the API URL.
 The application is secure with client validation. If you don’t supply the correct client
 certificate, it will error out (this is expected).
 

@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2017-10-31"
 
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 
@@ -28,14 +32,14 @@ Select one of the following boxes to view the tutorial for that topic.  You can 
 
 | Create an API | Manage an API | Discover APIs | Configure a Developer Portal | 
 |---------------|------------------------|---------------|-----------------|
-| <a href="tutorials/tut_create_api_node.html"> <img src="/images/art_create_api_node.png" width="200" alt="Create an API with Node.js" /></a> | <a href="/docs/services/apiconnect/tutorials/tut_rest_landing.html"> <img src="/images/art_manage_rest_service.png" width="200" alt="Manage a REST service" /></a> | <a href="/docs/services/apiconnect/tutorials/tut_discover_apis.html"> <img src="/images/art_discover_apis.png" width="200" alt="Discover APIs" /></a> | <a href="/docs/services/apiconnect/tutorials/tut_config_dev_portal.html"> <img src="/images/art_configure_dev_portal.png" width="200" alt="Configure a Developer Portal" /></a> | 
-| | <a href="/docs/services/apiconnect/tutorials/tut_manage_soap_api.html"> <img src="/images/art_manage_soap_service.png" width="200" alt="Manage a SOAP service" /></a> | | |
+| <a href="/docs/services/apiconnect/tutorials?topic=tut_create_api_node"> <img src="/images/art_create_api_node.png" width="200" alt="Create an API with Node.js" /></a> | <a href="/docs/services/apiconnect/tutorials?topic=tut_rest_landing"> <img src="/images/art_manage_rest_service.png" width="200" alt="Manage a REST service" /></a> | <a href="/docs/services/apiconnect/tutorials?topic=tut_discover_apis"> <img src="/images/art_discover_apis.png" width="200" alt="Discover APIs" /></a> | <a href="/docs/services/apiconnect/tutorials?topic=tut_config_dev_portal"> <img src="/images/art_configure_dev_portal.png" width="200" alt="Configure a Developer Portal" /></a> | 
+| | <a href="/docs/services/apiconnect/tutorials?topic=tut_manage_soap_api"> <img src="/images/art_manage_soap_service.png" width="200" alt="Manage a SOAP service" /></a> | | |
 {: caption="IBM Cloud API Connect service getting started tutorials" caption-side="top"}
 
 ## API Connect overview
 {: #moregetstart_index}
 
-<a href="/docs/services/apiconnect/apic_overview.html"> <img src="/images/art_apic_overview.png" width="150" alt="Link to overview materials for API Connect."></a>
+<a href="/docs/services/apiconnect?topic=apic_overview"> <img src="/images/art_apic_overview.png" width="150" alt="Link to overview materials for API Connect."></a>
 
 
 

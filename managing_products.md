@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -300,7 +306,7 @@ To see your Products in the **Explore APIs** section of the {{site.data.keyword.
 
 Before you begin, if you want to publish a REST API implemented with LoopBack, ensure that
 you have published your app run time, and staged your product with the invoke proxy pointing to the
-new app. For more information about how to do this, see [Staging and publishing a LoopBack Application](/docs/services/apiconnect/managing_apis.html#stage_publish_lb_app_managing_apis).
+new app. For more information about how to do this, see [Staging and publishing a LoopBack Application](/docs/services/apiconnect?topic=managing_apis#stage_publish_lb_app).
 
 1. In the API Manager UI, click **Add** > **Catalog**. The **Add Catalog** window is displayed.
 

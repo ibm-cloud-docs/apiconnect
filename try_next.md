@@ -4,8 +4,11 @@ copyright:
   years: 2018
 lastupdated: "2018-04-13"
 
----
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
 
+subcollection: apiconnect
+
+---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
@@ -39,7 +42,7 @@ lastupdated: "2018-04-13"
 ## Where can I find more information?
 {: #info_try_next}
 
-For detailed instructions for major tasks, visit the IBM Knowledge Center for API Connect:
+For detailed instructions for major tasks, visit the IBM Knowledge Center for API Connect 2018.1:
 * [About IBM API Connect ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSMNED_2018/com.ibm.apic.overview.doc/api_management_overview.html){: #new_window}
 * [Developing your APIs and applications ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSMNED_2018/com.ibm.apic.toolkit.doc/capim_cli_overview.html){: #new_window}
 * [Managing your APIs ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSMNED_2018/com.ibm.apic.apionprem.doc/APIonPrem_gettingstarted.html){: #new_window}

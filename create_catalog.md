@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-24"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -29,7 +35,7 @@ The **Add Catalog** window is displayed.
 
 4. Enter the text that you want to form the Catalog segment of the URL, in the
 **Name** field.
-	**NOTE:** The **Name** field can contain only lowercase alphanumeric characters (a-z
+	**Note:** The **Name** field can contain only lowercase alphanumeric characters (a-z
 	and 0-9), or hyphen characters (-). A hyphen cannot be used as the first or last character in the name.
 
 5. Click **Add**. Your Catalog is created, and is displayed on your dashboard.
