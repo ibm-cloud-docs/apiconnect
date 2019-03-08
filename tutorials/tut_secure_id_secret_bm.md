@@ -1,7 +1,12 @@
----
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,25 +16,28 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Securing your API with Client ID and Client Secret using {{site.data.keyword.Bluemix_notm}}
+{: #tut_secure_id_secret_bm}
 
 **Duration:** 10 mins  
 **Skill level:** Beginner
 
 
 ## Objective
-
+{: #object_tut_secure_id_secret_bm}
 This tutorial will guide you through securing your API with Client ID and Client Secret. When applications are registered in your Developer Portal, a Client ID is generated to identify the application. Optionally, a Client Secret, which serves as a password, can also be generated. Applications would need to supply the generated Client ID and Client Secret keys in order to access your API.
 
 
 ## Prerequisites
+{: #prereq_tut_secure_id_secret_bm}
 
 Before you begin, you must have completed one of the following tutorials: 
-- [Import an OpenAPI2.0 spec and proxy an existing REST service](tut_rest_landing.html)  
+- [Import an OpenAPI2.0 spec and proxy an existing REST service](/docs/services/apiconnect/tutorials?topic=tut_rest_landing)  
 **or**  
-- [Add a New API Spec and Invoke an Existing REST Service](tut_rest_landing.html)
+- [Add a New API Spec and Invoke an Existing REST Service](/docs/services/apiconnect/tutorials?topic=tut_rest_landing)
 
 
 ## Set the identification mechanism of your API
+{: #set_id_tut_secure_id_secret_bm}
 
 1. Navigate to your API's Design view:  
    a. Click on **Drafts** in the left-navigation panel  
@@ -53,6 +61,7 @@ Before you begin, you must have completed one of the following tutorials:
 
 
 ## Test the changes made to your API
+{: #test_tut_secure_id_secret_bm}
 
 1. In the Assemble tab, click the ► button to test your changes.
 
@@ -76,6 +85,7 @@ Before you begin, you must have completed one of the following tutorials:
 
 
 ## Call your API using the Client ID and Client Secret
+{: #call_tut_secure_id_secret_bm}
 
 The security settings can also be tested using the Explore tool that explicitly calls the proxy endpoint, and passes the Client ID and Client Secret keys as header values.
 
@@ -90,12 +100,15 @@ The security settings can also be tested using the Explore tool that explicitly 
 ---
 
 ## Conclusion
+{: #conclusion_tut_secure_id_secret_bm}
+
 In this tutorial, you learned how to set the identification mechanism of your API, test changes made to your API, and call your API using the Client ID and Client Secret. 
 
 ---
 
 ## Next step
+{: #next_tut_secure_id_secret_bm}
 
-Start to socialize your API by [setting up and configuring a developer portal](tut_config_dev_portal.html).
+Start to socialize your API by [setting up and configuring a developer portal](/docs/services/apiconnect/tutorials?topic=tut_config_dev_portal).
 
 Create > Manage > **Secure** > Socialize > Analyze

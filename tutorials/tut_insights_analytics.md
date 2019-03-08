@@ -1,7 +1,12 @@
----
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -163,6 +168,6 @@ In this tutorial, we walked through a number of activities to help you create us
 
 ## Next step
 {: #next_tut_insights_analytics}
-Learn [how to manage your APIs and versioning](/docs/services/apiconnect/tutorials/tut_manage_version_landing.html).
+Learn [how to manage your APIs and versioning](/docs/services/apiconnect/tutorials?topic=tut_manage_version_landing).
 
 Create > Manage > Secure > Socialize > **Analyze**  

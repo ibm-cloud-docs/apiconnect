@@ -1,8 +1,11 @@
----
 
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
 
 ---
 
@@ -27,13 +30,13 @@ In this tutorial, you will update an existing API product by replacing it with a
 ## Prerequisites
 {: #prereq_tut_manage_replace}
 
-1. [Set up your {{site.data.keyword.apiconnect_full}} instance](/docs/services/apiconnect/tutorials/tut_prereq_set_up_apic_instance.html).
+1. [Set up your {{site.data.keyword.apiconnect_full}} instance](/docs/services/apiconnect/tutorials?topic=tut_prereq_set_up_apic_instance).
 
 2. Complete one of the following tutorials:
  
-    - [Import an OpenAPI2.0 spec and proxy an existing REST service](/docs/services/apiconnect/tutorials/tut_rest_landing.html)
+    - [Import an OpenAPI2.0 spec and proxy an existing REST service](/docs/services/apiconnect/tutorials?topic=tut_rest_landing)
        **or**  
-    - [Add a New API Spec and Invoke an Existing REST Service](/docs/services/apiconnect/tutorials/tut_rest_landing.html).
+    - [Add a New API Spec and Invoke an Existing REST Service](/docs/services/apiconnect/tutorials?topic=tut_rest_landing).
 
 ---
 

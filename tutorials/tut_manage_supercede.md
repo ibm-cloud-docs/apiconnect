@@ -1,8 +1,12 @@
----
 
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 
 ---
 
@@ -27,9 +31,9 @@ In this tutorial, you will supersede an existing API with a new one.
 ## Prerequisites
 {: #prereq_tut_manage_supercede}
 
-1. [Set up your {{site.data.keyword.apiconnect_full}} instance](/docs/services/apiconnect/tutorials/tut_prereq_set_up_apic_instance.html).
+1. [Set up your {{site.data.keyword.apiconnect_full}} instance](/docs/services/apiconnect/tutorials?topic=tut_prereq_set_up_apic_instance).
 
-2. Complete the [Replace an API product tutorial](/docs/services/apiconnect/tutorials/tut_manage_replace.html).
+2. Complete the [Replace an API product tutorial](/docs/services/apiconnect/tutorials?topic=tut_manage_replace).
 
 ---
 

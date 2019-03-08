@@ -1,7 +1,12 @@
----
+
 copyright:
   years: 2018
 lastupdated: "2018-02-22"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -29,7 +34,7 @@ This tutorial guides you through creating an API in Node.js using the LoopBack f
 ## Prerequisites
 {: #prereq_tut_create_api_node}
 
-Before you begin, [install the {{site.data.keyword.apiconnect_short}} toolkit](/docs/services/apiconnect/tutorials/tut_prereq_install_toolkit.html). If the toolkit is already installed, ensure that you are running version 5.0.8.1, or later. You can verify this by entering the following command on the command-line:
+Before you begin, [install the {{site.data.keyword.apiconnect_short}} toolkit](/docs/services/apiconnect/tutorials?topic=tut_prereq_install_toolkit). If the toolkit is already installed, ensure that you are running version 5.0.8.1, or later. You can verify this by entering the following command on the command-line:
 	```
 	apic -v
 	```
@@ -261,7 +266,7 @@ In this tutorial, you completed the following:
 ## Next step
 {: #next_tut_create_api_node}
 
-[Manage a REST service](/docs/services/apiconnect/tutorials/tut_rest_landing.html) or [Manage a SOAP service](/docs/services/apiconnect/tutorials/tut_manage_soap_api.html).
+[Manage a REST service](/docs/services/apiconnect/tutorials?topic=tut_rest_landing) or [Manage a SOAP service](/docs/services/apiconnect/tutorials?topic=tut_manage_soap_api).
 
 Create > **Manage** > Secure > Socialize > Analyze
 
