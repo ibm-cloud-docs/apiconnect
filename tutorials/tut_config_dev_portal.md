@@ -1,7 +1,12 @@
----
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -24,7 +29,7 @@ This tutorial will help you quickly get started with configuring your **API Conn
 ## Prerequisites
 {: #prereq_tut_config_dev_portal}
 
-Before you begin, you will need to [import your API spec and proxy an existing REST service](/docs/services/apiconnect/tutorials/tut_rest_landing.html).
+Before you begin, you will need to [import your API spec and proxy an existing REST service](/docs/services/apiconnect/tutorials?topic=tut_rest_landing).
 
 ---
 
@@ -98,6 +103,6 @@ In this tutorial, you learned how to set up and configure your {{site.data.keywo
 ## Next step
 {: #next_prereq_tut_config_dev_portal}
 
-[Customize your Developer Portal and select a theme](/docs/services/apiconnect/tutorials/tut_custom_dev_portal.html).
+[Customize your Developer Portal and select a theme](/docs/services/apiconnect/tutorials?topic=tut_custom_dev_portal).
 
 Create > Manage > Secure > **Socialize** > Analyze

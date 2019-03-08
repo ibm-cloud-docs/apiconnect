@@ -1,7 +1,12 @@
----
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,10 +16,14 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Installing the API Connect Toolkit
+{: #tut_prereq_install_toolkit}
+
 **Duration**: 15 mins  
 **Skill level**: Beginner  
 
-## What you'll need
+## Prerequisites
+{: #prereq_tut_prereq_install_toolkit}
+
 1. Node.js
 2. Node Product Manager (NPM)
 3. {{site.data.keyword.apiconnect_full}} _Lite_
@@ -28,10 +37,12 @@ lastupdated: "2017-10-31"
 
 
 ## Install node.js
+{: #nodejs_tut_prereq_install_toolkit}
+
 1. Download and install node.js from one of the two sources:
-   * [https://nodejs.org/en/download/ ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://nodejs.org/en/download/){:new_window} (Note: Download the LTS version for your platform, not the latest, or you might experience errors.)
+   * [https://nodejs.org/en/download/ ![External link icon](../icons/launch-glyph.svg "External link icon")](https://nodejs.org/en/download/){: #new_window} (Note: Download the LTS version for your platform, not the latest, or you might experience errors.)
       **OR**
-   * [https://developer.ibm.com/node/sdk/v6/ ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/node/sdk/v6/){:new_window}  
+   * [https://developer.ibm.com/node/sdk/v6/ ![External link icon](../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/node/sdk/v6/){: #new_window}  
 
     _Installing node.js also installs **npm** (Node Package Manager)_.
 
@@ -48,6 +59,8 @@ lastupdated: "2017-10-31"
 
 
 ## Install the API Connect toolkit and Microgateway
+{: #tk_micro_tut_prereq_install_toolkit}
+
 1. Update the npm config to allow use of untrusted certificates.  
    `npm config -g set strict-ssl false`  
 

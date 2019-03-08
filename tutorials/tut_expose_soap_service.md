@@ -1,8 +1,11 @@
----
 
 copyright:
 years: 2017
 lastupdated: "2017-11-14"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
 
 ---
 
@@ -28,7 +31,7 @@ In API Manager, you will create a REST API that will accesses a existing SOAP Se
 ## Prerequisites
 {: #prereq_tut_expose_soap_service}
 
-1. Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_full}} instance]/docs/services/apiconnect/(tut_prereq_set_up_apic_instance.html).
+1. Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_full}} instance](/docs/services/apiconnect?topic=tut_prereq_set_up_apic_instance).
 2. Before you begin, copy the [weatherprovider.wsdl test ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: #new_window} file to your local filesystem.
 	>![images/info.png]
 	>You can click **Raw** and then save the resulting page on your local system as a `.wsdl` file.
@@ -150,7 +153,7 @@ In this tutorial, you completed the following activities:
 ## Next step
 {: #next_tut_expose_soap_service}
 
-Secure your API using [rate limiting](/docs/services/apiconnect/tutorials/tut_rate_limit.html), [client ID and secret](/docs/services/apiconnect/tutorials/tut_secure_landing.html), or [securing using OAuth 2.0](/docs/services/apiconnect/tutorials/tut_secure_oauth_2.html).
+Secure your API using [rate limiting](/docs/services/apiconnect/tutorials?topic=tut_rate_limit), [client ID and secret](/docs/services/apiconnect/tutorials?topic=tut_secure_landing), or [securing using OAuth 2.0](/docs/services/apiconnect/tutorials?topic=tut_secure_oauth_2).
 
 Create > **Manage** > Secure > Socialize > Analyze
 

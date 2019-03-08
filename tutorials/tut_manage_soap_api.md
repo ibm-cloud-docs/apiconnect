@@ -1,7 +1,12 @@
----
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 
@@ -27,7 +32,7 @@ In this tutorial, you will use API Manager to create a SOAP API that is a proxy 
 ## Prerequisites
 {: #prereq_tut_manage_soap_api}
 
-- Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_short}} instance](/docs/services/apiconnect/tutorials/tut_prereq_set_up_apic_instance.html).
+- Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_short}} instance](/docs/services/apiconnect/tutorials?topic=tut_prereq_set_up_apic_instance).
 - Before you begin, copy the [weatherprovider.wsdl test ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: #new_window} file to your local filesystem.
 Note: You can click **Raw** and then save the resulting page on your local system as a `.wsdl` file. As the name suggests, this SOAP service returns weather data when given a zip code.
 
@@ -125,6 +130,6 @@ In this tutorial, you completed the following:
 ## Next step
 {: #next_tut_manage_soap_api}
 
-[Expose your service as a REST API](/docs/services/apiconnect/tutorials/tut_expose_soap_service.html) or secure your API using [rate limiting](/docs/services/apiconnect/tutorials/tut_rate_limit.html), [client ID and secret](/docs/services/apiconnect/tutorials/tut_secure_landing.html), or [securing using OAuth 2.0](/docs/services/apiconnect/tutorials/tut_secure_oauth_2.html).
+[Expose your service as a REST API](/docs/services/apiconnect/tutorials?topic=tut_expose_soap_service) or secure your API using [rate limiting](/docs/services/apiconnect/tutorials?topic=tut_rate_limit), [client ID and secret](/docs/services/apiconnect/tutorials?topic=tut_secure_landing), or [securing using OAuth 2.0](/docs/services/apiconnect/tutorials?topic=tut_secure_oauth_2).
 
 Create > **Manage** > Secure > Socialize > Analyze

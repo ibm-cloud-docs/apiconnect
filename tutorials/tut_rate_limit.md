@@ -1,7 +1,12 @@
----
+
 copyright:
   years: 2017
 lastupdated: "2017-11-02"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,11 +16,15 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # Setting up rate limits
+{: #tut_rate_limit}
+
 **Duration**: 15 mins  
 **Skill level**: Beginner  
 
 
 ## Objective
+{: #object_tut_rate_limit}
+
 This tutorial shows you how to rate limit your APIs. Setting rate limits enables you to manage the network traffic for your
 APIs and for specific operations within your APIs. A rate limit is the maximum number of calls you want to allow in a particular time interval.
 
@@ -29,21 +38,26 @@ In this tutorial, you will do the following:
 
 
 ## Prerequisites
-You must have already created an API in {{site.data.keyword.apiconnect_short}}, secured with at least an API Key. In the following instructions, our starting point is the [Weather Provider API example file ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}, secured using a [client ID and secret](tut_secure_landing.html).
+{: #prereq_tut_rate_limit}
+
+You must have already created an API in {{site.data.keyword.apiconnect_short}}, secured with at least an API Key. In the following instructions, our starting point is the [Weather Provider API example file ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){: #new_window}, secured using a [client ID and secret](/docs/services/apiconnect/tutorials?topic=tut_secure_landing).
 
 Complete the following tutorials before you start this tutorial:
-- [Import your API spec, and proxy an existing REST service](tut_rest_landing.html).
-- [Secure your API with a client ID and secret](tut_secure_landing.html).
+- [Import your API spec, and proxy an existing REST service](/docs/services/apiconnect/tutorials?topic=tut_rest_landing).
+- [Secure your API with a client ID and secret](/docs/services/apiconnect/tutorials?topic=tut_secure_landing).
 
 
 ---
 ## Launching API Connect
+{: #launch_tut_rate_limit}
 
-1. Log in to {{site.data.keyword.Bluemix_notm}}: [https://console.ng.bluemix.net/login ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/login){:new_window}.
+1. Log in to {{site.data.keyword.Bluemix_notm}}: [https://console.ng.bluemix.net/login ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/login){: #new_window}.
 2. Once logged in to {{site.data.keyword.Bluemix_notm}}, scroll down to **All Services**, and click on **API Connect**.
 3. Click on **API Connect** to launch the {{site.data.keyword.apiconnect_short}} service.
 
 ## Exploring the Default Plan
+{: #explore_tut_rate_limit}
+
 1. In the {{site.data.keyword.apiconnect_short}} navigation panel, select **Drafts**. (If the navigation panel is not open, click **>>** to open it.)
 2. Select the **Products tab**, and you should see Weather Provider API product listed.
 
@@ -59,6 +73,7 @@ Complete the following tutorials before you start this tutorial:
 
    
 ## Creating a new rate-limited Plan
+{: #create_tut_rate_limit}
 
 Now that we have seen what the default Plan looks like, let's create a new Plan with more restrictive rate limits, to demonstrate what happens when an API consumer exceeds a Plan's limits. 
 1. Click the button to add a new Plan.
@@ -78,8 +93,9 @@ Now that we have seen what the default Plan looks like, let's create a new Plan 
 
 
 ## Staging & publishing an updated Product to the Sandbox Catalog
+{: #stage_tut_rate_limit}
 
-In previous examples, you may have published your Product using the test tool, which calls your API with a pre-supplied test application's credentials. However, this test application is not subject to rate limits, so we will need to create a new application here for rate limiting purposes. See the [IBM Knowledge Center content for API Connect ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){:new_window} for more information.
+In previous examples, you may have published your Product using the test tool, which calls your API with a pre-supplied test application's credentials. However, this test application is not subject to rate limits, so we will need to create a new application here for rate limiting purposes. See the [IBM Knowledge Center content for API Connect ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){: #new_window} for more information.
 
 1. Click the Publish icon to *stage* the Product to the **Sandbox** Catalog. This action adds your draft Product changes to the selected Catalog. We need to *publish* the Product changes next, to make them available to consumers via the Developer Portal.
    ![](./images/stageproduct.png) 
@@ -91,13 +107,15 @@ In previous examples, you may have published your Product using the test tool, w
 
 
 ## Registering a new (consumer) application in the Developer Portal
-Application developers discover and use your APIs by using the Developer Portal. For more information on the Developer Portal, check out this [IBM Knowledge Center topic ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){:new_window}.
+{: #reg_tut_rate_limit}
+
+Application developers discover and use your APIs by using the Developer Portal. For more information on the Developer Portal, check out this [IBM Knowledge Center topic ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){: #new_window}.
 
 If this is your first time working with the Developer Portal, you will need to provision a Developer Portal for your Sandbox Catalog. The account you are logged in as when you provision the Portal will be the admin account for that Portal. Then, in order to explore and test APIs, you will need to create & login with a new developer account (using a different email address) than the admin account.
 
 The following instructions will guide you through these steps.
 
-1. Launch the Developer Portal. If you don't know the URL, you can find it in the Settings tab of the Sandbox Catalog. To provision the Developer Portal for the first time, see [see setting up and configuring your Developer Portal](tut_config_dev_portal.html).
+1. Launch the Developer Portal. If you don't know the URL, you can find it in the Settings tab of the Sandbox Catalog. To provision the Developer Portal for the first time, see [see setting up and configuring your Developer Portal](/docs/services/apiconnect/tutorials?topic=tut_config_dev_portal).
     - This may take up to an hour to complete. When your Sandbox Developer Portal is ready, you will receive an email
 with a link to your new Developer Portal site. The link is a single use only link for the administrator account.
 2. Log into the Portal using your app developer credentials (**not** your IBM id). ***(Create a new developer account if necessary, using a different address than your IBM id.)***
@@ -115,6 +133,7 @@ with a link to your new Developer Portal site. The link is a single use only lin
 
 
 ## Subscribing to an API Product
+{: #subscr_tut_rate_limit}
 
 1. Click the **API Products** link on the toolbar. Your Weather Provider API Product is listed! 
 
@@ -127,6 +146,7 @@ with a link to your new Developer Portal site. The link is a single use only lin
 We are ready to test this behavior and observe what happens when the application exceeds the specified rate.
 
 ## Calling a rate-limited API
+{: #call_tut_rate_limit}
 
 1. On the Weather Provider API Product page in the Developer Portal, click the API link.
 
@@ -147,13 +167,15 @@ We are ready to test this behavior and observe what happens when the application
 
 
 ## Conclusion
+{: #conclusion_tut_rate_limit}
 
 Congratulations! You have successfully created a rate-limiting Plan, associated it with your secure APIs, and verified that your API only responds to requests within the parameters you specified.
 
 ---
 
 ## Next step
+{: #next_tut_rate_limit}
 
-Start to socialize your API by [setting up and configuring a developer portal](tut_config_dev_portal.html).
+Start to socialize your API by [setting up and configuring a developer portal](/docs/services/apiconnect/tutorials?topic=tut_config_dev_portal).
 
 Create > Manage > **Secure** > Socialize > Analyze

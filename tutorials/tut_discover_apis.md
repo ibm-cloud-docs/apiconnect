@@ -1,7 +1,12 @@
----
+
 copyright:
   years: 2017
 lastupdated: "2017-11-20"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="_blank"}
@@ -121,7 +126,7 @@ In this tutorial, you learned how your portal users would explore products and A
 ## Next step
 {: #next_tut_discover_apis}
 
-Learn [how to gain insights from basic analytics](/docs/services/apiconnect/tutorials/tut_insights_analytics.html).
+Learn [how to gain insights from basic analytics](/docs/services/apiconnect/tutorials?topic=tut_insights_analytics).
 
 Create > Manage > Secure > **Socialize** > Analyze  
 

@@ -1,7 +1,12 @@
----
+
 copyright:
   years: 2017
 lastupdated: "2017-12-13"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -25,9 +30,9 @@ This tutorial will guide you through securing your API using a two-legged OAuth 
 {: #prereq_tut_secure_oauth_2}
 
 Before you begin, you must have completed the following tutorial.  
-- [Securing an API with Client-ID and Client-Secret Keys with {{site.data.keyword.Bluemix}}](/docs/services/apiconnect/tutorials/tut_secure_id_secret_bm.html)
+- [Securing an API with Client-ID and Client-Secret Keys with {{site.data.keyword.Bluemix}}](/docs/services/apiconnect/tutorials?topic=tut_secure_id_secret_bm)
 or
-- [Securing an API with Client-ID and Client-Secret Keys with the Toolkit](/docs/services/apiconnect/tutorials/tut_secure_id_secret_tk.html)
+- [Securing an API with Client-ID and Client-Secret Keys with the Toolkit](/docs/services/apiconnect/tutorials?topic=tut_secure_id_secret_tk)
 
 Note: This tutorial shows the steps and screenshots for accomplishing the task within the {{site.data.keyword.Bluemix}} UI. You can also complete the same procedure by using the command line. You can view that procedure in the [IBM Knowledge Center ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tutorial_apionprem_security_OAuth_v506.html){: #new_window}. 
 
@@ -88,6 +93,6 @@ In this tutorial, you learned how to create an OAuth Provider API, update the se
 ## Next step
 {: #next_tut_secure_oauth_2}
 
-Start to socialize your API by [setting up and configuring a developer portal](/docs/services/apiconnect/tutorials/tut_config_dev_portal.html).
+Start to socialize your API by [setting up and configuring a developer portal](/docs/services/apiconnect/tutorials?topic=tut_config_dev_portal).
 
 Create > Manage > **Secure** > Socialize > Analyze
