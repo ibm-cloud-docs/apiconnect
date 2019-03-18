@@ -41,11 +41,11 @@ In this tutorial, you will do the following:
 ## Prerequisites
 {: #prereq_tut_rate_limit}
 
-You must have already created an API in {{site.data.keyword.apiconnect_short}}, secured with at least an API Key. In the following instructions, our starting point is the [Weather Provider API example file ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){: #new_window}, secured using a [client ID and secret](/docs/services/apiconnect/tutorials?topic=tut_secure_landing).
+You must have already created an API in {{site.data.keyword.apiconnect_short}}, secured with at least an API Key. In the following instructions, our starting point is the [Weather Provider API example file ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){: #new_window}, secured using a [client ID and secret](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing).
 
 Complete the following tutorials before you start this tutorial:
-- [Import your API spec, and proxy an existing REST service](/docs/services/apiconnect/tutorials?topic=tut_rest_landing).
-- [Secure your API with a client ID and secret](/docs/services/apiconnect/tutorials?topic=tut_secure_landing).
+- [Import your API spec, and proxy an existing REST service](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
+- [Secure your API with a client ID and secret](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing).
 
 
 ---
@@ -116,7 +116,7 @@ If this is your first time working with the Developer Portal, you will need to p
 
 The following instructions will guide you through these steps.
 
-1. Launch the Developer Portal. If you don't know the URL, you can find it in the Settings tab of the Sandbox Catalog. To provision the Developer Portal for the first time, see [see setting up and configuring your Developer Portal](/docs/services/apiconnect/tutorials?topic=tut_config_dev_portal).
+1. Launch the Developer Portal. If you don't know the URL, you can find it in the Settings tab of the Sandbox Catalog. To provision the Developer Portal for the first time, see [see setting up and configuring your Developer Portal](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal).
     - This may take up to an hour to complete. When your Sandbox Developer Portal is ready, you will receive an email
 with a link to your new Developer Portal site. The link is a single use only link for the administrator account.
 2. Log into the Portal using your app developer credentials (**not** your IBM id). ***(Create a new developer account if necessary, using a different address than your IBM id.)***
@@ -177,6 +177,6 @@ Congratulations! You have successfully created a rate-limiting Plan, associated 
 ## Next step
 {: #next_tut_rate_limit}
 
-Start to socialize your API by [setting up and configuring a developer portal](/docs/services/apiconnect/tutorials?topic=tut_config_dev_portal).
+Start to socialize your API by [setting up and configuring a developer portal](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal).
 
 Create > Manage > **Secure** > Socialize > Analyze

@@ -32,9 +32,9 @@ This tutorial will guide you through securing your API with Client ID and Client
 {: #prereq_tut_secure_id_secret_bm}
 
 Before you begin, you must have completed one of the following tutorials: 
-- [Import an OpenAPI2.0 spec and proxy an existing REST service](/docs/services/apiconnect/tutorials?topic=tut_rest_landing)  
+- [Import an OpenAPI2.0 spec and proxy an existing REST service](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)  
 **or**  
-- [Add a New API Spec and Invoke an Existing REST Service](/docs/services/apiconnect/tutorials?topic=tut_rest_landing)
+- [Add a New API Spec and Invoke an Existing REST Service](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 
 
 ## Set the identification mechanism of your API
@@ -110,6 +110,6 @@ In this tutorial, you learned how to set the identification mechanism of your AP
 ## Next step
 {: #next_tut_secure_id_secret_bm}
 
-Start to socialize your API by [setting up and configuring a developer portal](/docs/services/apiconnect/tutorials?topic=tut_config_dev_portal).
+Start to socialize your API by [setting up and configuring a developer portal](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal).
 
 Create > Manage > **Secure** > Socialize > Analyze

@@ -34,9 +34,9 @@ After replacing an API, you can then take an API product out of service and remo
 
 In this series of tutorials, you will move API products through all of these states. Complete the tutorials in the following order:
 
-1. [Replace an API product](/docs/services/apiconnect/tutorials?topic=tut_manage_replace)
-2. [Supersede an API product](/docs/services/apiconnect/tutorials?topic=tut_manage_supercede)
-3. [Archive and delete an API product](/docs/services/apiconnect/tutorials?topic=tut_manage_remove)
+1. [Replace an API product](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_replace)
+2. [Supersede an API product](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede)
+3. [Archive and delete an API product](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_remove)
 
 
 

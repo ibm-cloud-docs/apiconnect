@@ -127,7 +127,7 @@ In this tutorial, you learned how your portal users would explore products and A
 ## Next step
 {: #next_tut_discover_apis}
 
-Learn [how to gain insights from basic analytics](/docs/services/apiconnect/tutorials?topic=tut_insights_analytics).
+Learn [how to gain insights from basic analytics](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics).
 
 Create > Manage > Secure > **Socialize** > Analyze  
 

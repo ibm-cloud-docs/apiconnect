@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-10"
+  years: 2019
+lastupdated: "2019-3-15"
 
 subcollection: apiconnect
 
@@ -31,21 +31,20 @@ In this tutorial, you will delete, archive, and retire an API.
 ## Prerequisites
 {: #prereq_tut_manage_remove}
 
-1. [Set up your {{site.data.keyword.apiconnect_full}} instance](/docs/services/apiconnect/tutorials?topic=tut_prereq_set_up_apic_instance).
+1. [Set up your {{site.data.keyword.apiconnect_full}} instance](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
 
-2. Complete the [Supercede an API product tutorial](/docs/services/apiconnect/tutorials?topic=tut_manage_supercede).
+2. Complete the [Supercede an API product tutorial](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede).
 
 ---
 
 ## Deleting an API Product
 {: #delete_tut_manage_remove}
 
-1. Log in to {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/login){: #new_window}.
+1. Log in to {{site.data.keyword.Bluemix_short}}: https://cloud.ibm.com.
+2. In the {{site.data.keyword.Bluemix_notm}} **Dashboard**, click **Cloud Foundary Services**. Launch the {{site.data.keyword.apiconnect_short}} service. 
+3. In {{site.data.keyword.apiconnect_short}}, make sure the navigation panel is open. If not, click **>>** to open it.  
 
-2. In the {{site.data.keyword.Bluemix_short}} Dashboard, launch the {{site.data.keyword.apiconnect_short}} service.
-![](images/Bluemix.png)
-
-3. In API Manager, if you have not previously pinned the UI navigation pane, click the **Navigate to** icon ![](images/navigate-to.png). The API Manager UI navigation pane opens. To pin the UI Navigation pane, click the **Pin menu** icon ![](images/pinned.png).
+  ![](images/cloud-apic-dashboard.png)
 
 4. Click **Sandbox** to open the Sandbox catalog. **Note**: You may need to return to the Dashboard to see the available catalogs. Also, your dashboard page may show catalogs as tiles rather than a list.
 ![](images/del-sandbox-list.png)

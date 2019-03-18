@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-11-02"
+  years: 2019
+lastupdated: "2019-3-8"
 
 subcollection: apiconnect
 
@@ -30,7 +30,7 @@ This tutorial helps you get started quickly with {{site.data.keyword.apiconnect_
 ## Prerequisites
 {: #prereq_tut_import_openapi_rest_bm}
 
-Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_short}} instance](/docs/services/apiconnect/tutorials?topic=tut_prereq_set_up_apic_instance).
+Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_short}} instance](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
 
 ---
 
@@ -58,8 +58,8 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 ## Import the sample app's OpenAPI spec to create a REST API proxy
 {: #import_tut_import_openapi_rest_bm}
 
-1. Log in to {{site.data.keyword.Bluemix_short}}: https://new-console.ng.bluemix.net/login.
-2. In the {{site.data.keyword.Bluemix_notm}} navigation panel, select **Services**, then **Dashboard**. Launch the {{site.data.keyword.apiconnect_short}} service. 
+1. Log in to {{site.data.keyword.Bluemix_short}}: https://cloud.ibm.com.
+2. In the {{site.data.keyword.Bluemix_notm}} **Dashboard**, click **Cloud Foundary Services**. Launch the {{site.data.keyword.apiconnect_short}} service. 
 3. In {{site.data.keyword.apiconnect_short}}, make sure the navigation panel on the left side is open. If not, click **>>** to open it.  
 4. Select **Drafts** in the navigation panel.   
 5. In the **APIs** tab, click **Add**. From the dropdown menu, select **Import API from a file or URL**.  
@@ -69,8 +69,8 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 `https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml`. Leave the other options with their default values and click **Import**.  
     ![](images/import-2.png)  
 
-7. After you import the OpenAPI spec, you are taken to the **Design** view of the API. Here you can view various sections of the OpenAPI definition. Scroll to explore, and note the **Host** value. You can also view the OpenAPI under the **Source** tab.
-  _Note: You'll notice that the Host value is set to_ `$(catalog.host)` _. This is the base URL for your API proxy._
+7. After you import the OpenAPI spec, you are taken to the **Design** view of the API. Here you can view various sections of the OpenAPI definition. You can also view the OpenAPI under the **Source** tab.
+
 8. Your API is saved. 
 
 
@@ -81,27 +81,22 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 {: #test_apimgr_tut_import_openapi_rest_bm}
 
 1. In the **Assemble** tab, click the icon for more actions, then select **Generate a default product**.  
-  ![](images/generate-default-product-1.png)   
+  ![](images/generate-default-product-3.png)   
 
 2. Accept the default options in the **New Product** dialog box, and click **Create Product**. The **Weather Provider API product** is created and published to the Sandbox catalog. A message indicating successful product generation is displayed.  
   ![](images/generate-default-product-2.png)  
 
-  ![](images/generate-default-product-3.png)
 
   _In {{site.data.keyword.apiconnect_short}}, **Products** provide a way to group APIs that are intended for a particular use. Products are published to a **Catalog**.  [{{site.data.keyword.apiconnect_short}} glossary](../apic_glossary.html)_
 
 3. In the Assemble tab, click the play icon to test your API proxy's target invocation.
 
 4. In the test panel, select the **get /current** operation.  
-    a. Zipcode is a required parameter for this operation, so enter a valid U.S. zip (for example, 90210).  
-    b. Click **invoke**, and verify that you see:  
-    ```
-    - 200 OK response
-    - Current weather data for 90210  
-    ```
-_If you run into a CORS error, follow the instructions in the error message. Click the link in the error to add the exception to your browser, and then hit the "invoke" button again._
+    a. Zipcode is a required parameter for this operation, so enter a valid U.S. zip (for example, 10504).  
+    b. Click **invoke**.  
 
-    ![](images/test-invoke-1.png)
+_If you run into a CORS error, follow the instructions in the error message. Click the link in the error to add the exception to your browser, and then hit the "invoke" button again._
+    ![](images/test-invoke-all.png)
 
 
 ### Test with the _Explore tool_
@@ -111,13 +106,14 @@ _The Explore Tool allows users to test the correct operation of the API by enfor
 
 1. To test your API proxy endpoints, select **Explore**, then select **Sandbox**.
     ![](images/test-explore-1.png)
-2. Select the **GET /current** operation from the palette.
-3. Select "Try it".  
-4. Enter a valid U.S. zipcode (e.g. 90210) in the test box.
-5. Click **Call operation** to see the response.
+2. Select the **Weather Provider API** from the list of available APIs.
+3. Select the **GET /current** operation from the palette.
+4. Select "Try it".  
+5. Enter a valid U.S. zipcode (e.g. 10504) in the test box.
   ![](images/test-explore-2.png)
+6. Click **Call operation** to see the response.
 
-    ![](images/test-explore-3.png)
+    ![](images/test-explore-3h.png)
 
 
 ### Conclusion
@@ -130,7 +126,7 @@ In this tutorial, you saw how an existing REST service can be invoked through an
 ## Next step
 {: #next_tut_import_openapi_rest_bm}
 
-Secure your API using [rate limiting](/docs/services/apiconnect/tutorials?topic=tut_rate_limit), [client ID and secret](/docs/services/apiconnect/tutorials?topic=tut_secure_landing), or [securing using OAuth 2.0](/docs/services/apiconnect/tutorials?topic=tut_secure_oauth_2).
+Secure your API using OAuth 2.0](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
 
 Create > **Manage** > Secure > Socialize > Analyze
 

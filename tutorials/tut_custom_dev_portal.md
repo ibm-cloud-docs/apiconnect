@@ -33,7 +33,7 @@ This tutorial will help you quickly customize your {{site.data.keyword.apiconnec
 ## Prerequisites
 {: #prereq_tut_custom_dev_portal}
 
-Before starting this tutorial, you should have completed the [Setting up and configuring your Developer Portal](/docs/services/apiconnect/tutorials?topic=tut_config_dev_portal) tutorial and be logged in as the portal administrator.
+Before starting this tutorial, you should have completed the [Setting up and configuring your Developer Portal](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal) tutorial and be logged in as the portal administrator.
 
 ---
 
@@ -145,7 +145,7 @@ Congratulations, you have completed this tutorial. In this tutorial you learned 
 ## Next step
 {: #next_tut_custom_dev_portal}
 
-Learn [how a user navigates through a Developer Portal](/docs/services/apiconnect/tutorials?topic=tut_discover_apis) or [how to gain insights from basic analytics](/docs/services/apiconnect/tutorials?topic=tut_insights_analytics).
+Learn [how a user navigates through a Developer Portal](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_discover_apis) or [how to gain insights from basic analytics](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics).
 
 Create > Manage > Secure > **Socialize** > Analyze  
 

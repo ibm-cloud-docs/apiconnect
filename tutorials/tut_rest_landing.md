@@ -27,14 +27,14 @@ To manage an existing API, you can start by importing or adding an OpenAPI file.
 ## {{site.data.keyword.Bluemix_notm}}
 {: #openapi_tut_rest_landing}
 
-- [Importing an OpenAPI file by using {{site.data.keyword.Bluemix_notm}}](/docs/services/apiconnect/tutorials?topic=tut_import_openapi_rest_bm)
-- [Creating an OpenAPI file by using {{site.data.keyword.Bluemix_notm}}](/docs/services/apiconnect/tutorials?topic=tut_add_openapi_rest_bm)
+- [Importing an OpenAPI file by using {{site.data.keyword.Bluemix_notm}}](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_import_openapi_rest_bm#tut_import_openapi_rest_bm)
+- [Creating an OpenAPI file by using {{site.data.keyword.Bluemix_notm}}](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_add_openapi_rest_bm)
 
 ## Developer Toolkit
 {: #tk_tut_rest_landing}
 
-- [Importing an OpenAPI file by using the Developer Toolkit](/docs/services/apiconnect/tutorials?topic=tut_import_openapi_rest_tk)
-- [Creating an OpenAPI file by using the Developer Toolkit](/docs/services/apiconnect/tutorials?topic=tut_add_openapi_rest_tk)
+- [Importing an OpenAPI file by using the Developer Toolkit](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_import_openapi_rest_tk)
+- [Creating an OpenAPI file by using the Developer Toolkit](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_add_openapi_rest_tk)
 
 
 

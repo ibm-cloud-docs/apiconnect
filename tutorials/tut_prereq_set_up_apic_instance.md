@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-31"
+  years: 2019
+lastupdated: "2019-3-14"
 
 keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
 
@@ -42,13 +42,13 @@ subcollection: apiconnect
 ---
 
 
-1. Sign up for your IBMid at the following URL: [https://console.ng.bluemix.net/registration/ ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/registration/){: #new_window}.
+1. Sign up for your IBM Cloud ID at the following URL: [https://cloud.ibm.com/registration/ ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/registration/){: #new_window}.
 
-	Already have an IBMid? Then skip the registration, and just create your free {{site.data.keyword.Bluemix_short}} account at the following URL: [https://console.ng.bluemix.net/ ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/){: #new_window}.  
+	Already have an IBMid? Then skip the registration, and just create your free {{site.data.keyword.Bluemix_short}} account at the following URL: [https://cloud.ibm.com/ ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: #new_window}.  
 
 2. When you have your IBMid and {{site.data.keyword.Bluemix_notm}} account, create your {{site.data.keyword.apiconnect_short}} instance.  
-  a. Log in to {{site.data.keyword.Bluemix_notm}}: [https://new-console.ng.bluemix.net/login ![External link icon](../icons/launch-glyph.svg "External link icon")](https://new-console.ng.bluemix.net/login){: #new_window}.  
-  ![](images/prereqs-1.png)  
+  a. Log in to {{site.data.keyword.Bluemix_notm}}: [https://cloud.ibm.com/login ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){: #new_window}.  
+  ![](images/cloud_login_page.png)  
   b. Create your _organization_ in {{site.data.keyword.Bluemix_notm}}. You will be prompted to do this the first time that you log in.  
   ![](images/prereqs-2.png)
   c. Create your _space_.  

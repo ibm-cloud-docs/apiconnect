@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-15"
+  years: 2019
+lastupdated: "2019-3-11"
 
 subcollection: apiconnect
 
@@ -33,26 +33,19 @@ In this tutorial, you will use API Manager to create a SOAP API that is a proxy 
 ## Prerequisites
 {: #prereq_tut_manage_soap_api}
 
-- Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_short}} instance](/docs/services/apiconnect/tutorials?topic=tut_prereq_set_up_apic_instance).
+- Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_short}} instance](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
 - Before you begin, copy the [weatherprovider.wsdl test ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: #new_window} file to your local filesystem.
 Note: You can click **Raw** and then save the resulting page on your local system as a `.wsdl` file. As the name suggests, this SOAP service returns weather data when given a zip code.
 
 ---
 ## Setting up a SOAP API definition
-{: #setup_tut_manage_soap_api}}
+{: #setup_tut_manage_soap_api}
 
-1. Log in to {{site.data.keyword.Bluemix_short}}: [https://new-console.ng.bluemix.net/login ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://new-console.ng.bluemix.net/login){: #new_window}.
-
-2. In the {{site.data.keyword.Bluemix_notm}} **Dashboard**, scroll down to **All Services**.
-
-3. Select **API Connect** to launch the {{site.data.keyword.apiconnect_short}} service. 
-  
-4. Navigate to the Drafts page, if you are not already there:  
-    a. In the {{site.data.keyword.apiconnect_short}} interface, click >> to open the navigation panel.
-    b. Click **Drafts** in the navigation panel.
-    c. Go to the **APIs** tab.
-
-5. In the APIs tab, click `Add +`.
+1. Log in to {{site.data.keyword.Bluemix_short}}: https://cloud.ibm.com.
+2. In the {{site.data.keyword.Bluemix_notm}} **Dashboard**, click **Cloud Foundary Services**. 
+3. Launch the {{site.data.keyword.apiconnect_short}} service. 
+4. In {{site.data.keyword.apiconnect_short}}, make sure the navigation panel on the left side is open. If not, click **>>** to open it.  
+5. Select **Drafts** in the navigation panel.   
 
 6. In the dropdown menu, select **API from a SOAP service**.
   ![New API](images/newapi-menu2.png)
@@ -69,16 +62,13 @@ Note: You can click **Raw** and then save the resulting page on your local syste
    _In the Source tab, you will see that the WSDL is wrapped inside the OpenAPI definition._ 
   ![API Editor page](images/designpage2.png)
 
-11. Scroll down to the **Security tab**, and click the delete icon to remove the `clientIDHeader (API Key)` that was automatically generated when you created the service.
-   _You will learn about security with API Keys in the next tutorial._
+11. Click the ![save](images/save.png) icon to save your changes. An "API Saved" confirmation notification appears momentarily.
 
-12. Click the ![save](images/save.png) icon to save your changes. An "API Saved" confirmation notification appears momentarily.
-
-13. In the menu bar with the save icon, the **Design** tab indicates your present location. Next to that, you find the **Source** tab where you can directly view the Swagger (2.0) file that represents your API, and next to that, you find the **Assemble** tab that takes you to a drag and drop interface for API processing. Click **Assemble**.
+12. In the menu bar with the save icon, the **Design** tab indicates your present location. Next to that, you find the **Source** tab where you can directly view the Swagger (2.0) file that represents your API, and next to that, you find the **Assemble** tab that takes you to a drag and drop interface for API processing. Click **Assemble**.
   ![Assemble tab](images/assemble-clean.png)  
 
 ## Testing the SOAP API definition
-{: #test_tut_manage_soap_api}}
+{: #test_tut_manage_soap_api}
 
 1. In the **Assemble** tab, click the **More actions** (three dots) icon, and select **Generate a default product** from the menu.  
    ![More actions menu, open](images/gen-default-prod.png)
@@ -111,7 +101,7 @@ Note: You can click **Raw** and then save the resulting page on your local syste
    </soap:Body>
   </soap:Envelope>
   ```
-  {: codeblock}  
+ 
   ![the request](images/14-enterrequest.png)
 
 9. Scroll down if needed, and click **Invoke**.
@@ -131,6 +121,6 @@ In this tutorial, you completed the following:
 ## Next step
 {: #next_tut_manage_soap_api}
 
-[Expose your service as a REST API](/docs/services/apiconnect/tutorials?topic=tut_expose_soap_service) or secure your API using [rate limiting](/docs/services/apiconnect/tutorials?topic=tut_rate_limit), [client ID and secret](/docs/services/apiconnect/tutorials?topic=tut_secure_landing), or [securing using OAuth 2.0](/docs/services/apiconnect/tutorials?topic=tut_secure_oauth_2).
+[Expose your service as a REST API](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_expose_soap_service) or secure your API using [securing using OAuth 2.0](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
 
 Create > **Manage** > Secure > Socialize > Analyze

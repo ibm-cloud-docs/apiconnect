@@ -35,7 +35,7 @@ This tutorial guides you through creating an API in Node.js using the LoopBack f
 ## Prerequisites
 {: #prereq_tut_create_api_node}
 
-Before you begin, [install the {{site.data.keyword.apiconnect_short}} toolkit](/docs/services/apiconnect/tutorials?topic=tut_prereq_install_toolkit). If the toolkit is already installed, ensure that you are running version 5.0.8.1, or later. You can verify this by entering the following command on the command-line:
+Before you begin, [install the {{site.data.keyword.apiconnect_short}} toolkit](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_install_toolkit). If the toolkit is already installed, ensure that you are running version 5.0.8.1, or later. You can verify this by entering the following command on the command-line:
 	```
 	apic -v
 	```
@@ -267,7 +267,7 @@ In this tutorial, you completed the following:
 ## Next step
 {: #next_tut_create_api_node}
 
-[Manage a REST service](/docs/services/apiconnect/tutorials?topic=tut_rest_landing) or [Manage a SOAP service](/docs/services/apiconnect/tutorials?topic=tut_manage_soap_api).
+[Manage a REST service](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing) or [Manage a SOAP service](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_soap_api).
 
 Create > **Manage** > Secure > Socialize > Analyze
 

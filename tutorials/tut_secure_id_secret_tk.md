@@ -33,9 +33,9 @@ This tutorial will guide you through securing your API with Client ID and Client
 {: #prereq_tut_secure_id_secret_tk}
 
 Before you begin, you must have completed one of the following tutorials:
-- [Import an OpenAPI2.0 spec and proxy an existing REST service](/docs/services/apiconnect/tutorials?topic=tut_rest_landing)
+- [Import an OpenAPI2.0 spec and proxy an existing REST service](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 **or**  
-- [Add a New API Spec and Invoke an Existing REST Service](/docs/services/apiconnect/tutorials?topic=tut_rest_landing)
+- [Add a New API Spec and Invoke an Existing REST Service](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 
 
 ## Set the identification mechanism of your API

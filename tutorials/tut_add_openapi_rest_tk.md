@@ -30,7 +30,7 @@ This tutorial helps you get started quickly with {{site.data.keyword.apiconnect_
 ## Prerequisite
 {: #prereq_tut_add_openapi_rest_tk}
 
-Before you begin, you will need to [set up your API Connect Instance](/docs/services/apiconnect/tutorials?topic=tut_prereq_set_up_apic_instance) and [install the API Connect toolkit](/docs/services/apiconnect/tutorials?topic=tut_prereq_install_toolkit).
+Before you begin, you will need to [set up your API Connect Instance](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance) and [install the API Connect toolkit](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_install_toolkit).
 
 ---
 
@@ -190,7 +190,7 @@ In this tutorial, you saw how an existing REST service can be invoked through an
 ## Next step
 {: #next_tut_add_openapi_rest_tk}
 
-Secure your API using [rate limiting](/docs/services/apiconnect/tutorials?topic=tut_rate_limit), [client ID and secret](/docs/services/apiconnect/tutorials?topic=tut_secure_landing), or [securing using OAuth 2.0](/docs/services/apiconnect/tutorials?topic=tut_secure_oauth_2).
+Secure your API using [rate limiting](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rate_limit), [client ID and secret](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing), or [securing using OAuth 2.0](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
 
 Create > **Manage** > Secure > Socialize > Analyze
 

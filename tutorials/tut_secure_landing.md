@@ -27,12 +27,12 @@ To secure an API with a Client ID and Client Secret, you must select a method fo
 ## {{site.data.keyword.Bluemix_notm}}
 {: #secure_tut_secure_landing}
 
-- [Securing your API with Client ID and Client Secret by using {{site.data.keyword.Bluemix_notm}}](/docs/services/apiconnect/tutorials?topic=tut_secure_id_secret_bm)
+- [Securing your API with Client ID and Client Secret by using {{site.data.keyword.Bluemix_notm}}](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_id_secret_bm)
 
 ## Developer Toolkit
 {: #tk_tut_secure_landing}
 
-- [Securing your API with Client ID and Client Secret by using the Developer Toolkit](/docs/services/apiconnect/tutorials?topic=tut_secure_id_secret_tk)
+- [Securing your API with Client ID and Client Secret by using the Developer Toolkit](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_id_secret_tk)
 
 
 
