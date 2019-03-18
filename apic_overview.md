@@ -74,7 +74,7 @@ The LoopBack app is deployed to the {{site.data.keyword.Bluemix_short}} run time
 
 <img src="images/Deployed.png" alt="Diagram to show where the LoopBack app, API, and product are deployed to."/>
 
-For more information about the tasks required to create APIs, see [Creating APIs](/docs/services/apiconnect?topic=creating_apis).
+For more information about the tasks required to create APIs, see [Creating APIs](/docs/services/apiconnect?topic=apiconnect-creating_apis).
 
 ## API management overview
 
@@ -111,7 +111,7 @@ IBM API Connect also supports the implementation of multiple versions of Product
 
 **Note:** The version for a Product is distinct from the version of any APIs that are contained in the associated Plans. Plans cannot themselves have their own version, they use the version of their parent Product.
 
-For more information about the tasks required to manage APIs, see [Managing APIs](/docs/services/apiconnect?topic=managing_apis).
+For more information about the tasks required to manage APIs, see [Managing APIs](/docs/services/apiconnect?topic=apiconnect-managing_apis).
 
 ### Catalogs
 {: #catalogs_apic_overview}
@@ -153,4 +153,4 @@ developer in the Flights team is able to stage APIs only to the Flights Space.
 **Note:** By default, Spaces are disabled in a Catalog. You enable Spaces by modifying the Catalog
 settings.
 
-To partition a catalog, see [Partitioning a catalog](/docs/services/apiconnect?topic=create_catalog#apic_spaces).
+To partition a catalog, see [Partitioning a catalog](/docs/services/apiconnect?topic=apiconnect-create_catalog#apic_spaces).

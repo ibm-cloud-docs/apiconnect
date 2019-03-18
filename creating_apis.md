@@ -745,7 +745,7 @@ something like this:
 {"started":"2017-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-Next, you need to create a Product. For more information, see [Creating a Product](/docs/services/apiconnect?topic=managing_products#create_product).
+Next, you need to create a Product. For more information, see [Creating a Product](/docs/services/apiconnect?topic=apiconnect-managing_products#create_product_managing_products).
 **Tip**: Whenever you start a new command prompt, make sure that your current working
 directory is the project top-level directory. To do this, enter the following
 command:

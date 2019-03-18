@@ -17,6 +17,7 @@ subcollection: apiconnect
 {:pre: .pre}
 
 # Glossary
+{: #glossary_apic_glossary}
 
 The {{site.data.keyword.apiconnect_short}} glossary of terms and definitions.
 

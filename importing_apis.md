@@ -76,7 +76,7 @@ The following list contains a few advantages of managing your APIs in {{site.dat
 * You can control the number of calls to your API.
 * You can maintain multiple versions of an API.
 
-For more benefits, see [Managing APIs](managing_apis.html).
+For more benefits, see [Managing APIs](/docs/services/apiconnect?topic=apiconnect-managing_apis).
 
 To create a REST API in IBM Integration Bus and import it
 into {{site.data.keyword.apiconnect_short}}, complete the following
@@ -141,7 +141,7 @@ to your integration flow. Select **Show full URL** to view the complete URL for 
 	5. Select **Invoke**.
 	6. Verify that you receive the expected response from the API. 
 	
-When the API definition is imported and integrated, you can manage and govern the APIs as you with any other REST API definition. For more information about the APIs, see [Managing APIs](managing_apis.html).
+When the API definition is imported and integrated, you can manage and govern the APIs as you with any other REST API definition. For more information about the APIs, see [Managing APIs](/docs/services/apiconnect?topic=apiconnect-managing_apis).
 
 ## Publishing APIs created with IBM App Connect Professional in IBM API Connect
 {: #publish_importing_apis}
@@ -166,7 +166,7 @@ The following list contains a few advantages of managing your APIs in {{site.dat
 - You can control the number of calls to your API.
 - You can maintain multiple versions of an API.
 
-For more benefits, see [Managing APIs](managing_apis.html).
+For more benefits, see [Managing APIs](/docs/services/apiconnect?topic=apiconnect-managing_apis).
 To create a REST API in IBM App Connect Professional and
 publish it to {{site.data.keyword.apiconnect_short}}, complete the
 following steps:
@@ -269,6 +269,6 @@ To test the API, follow these steps:
 6. Verify that you receive the expected response from the API.
 
 When the API definition is imported and integrated, you can manage and govern the APIs as
-you would with any other REST API definition. For more information about the APIs, see [Managing APIs](/docs/services/apiconnect?topic=managing_apis).
+you would with any other REST API definition. For more information about the APIs, see [Managing APIs](/docs/services/apiconnect?topic=apiconnect-managing_apis).
 
 

@@ -113,7 +113,7 @@ which is exceeded when you try to install all of the dependencies in a deep leve
 
 You can fix this problem in one of the following ways:
 
-- Ensure that you have installed the correct version of Node.js. For more information, see [Installing the Developer Toolkit](/docs/services/apiconnect?topic=creating_apis).
+- Ensure that you have installed the correct version of Node.js. For more information, see [Installing the Developer Toolkit](/docs/services/apiconnect?topic=apiconnect-creating_apis).
 
 - If you had to upgrade a program, try the installation again.
 

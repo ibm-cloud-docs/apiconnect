@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017-2018
+  years: 2017-2019
 lastupdated: "2018-05-23"
 
 keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal

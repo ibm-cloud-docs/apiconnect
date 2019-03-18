@@ -306,7 +306,7 @@ To see your Products in the **Explore APIs** section of the {{site.data.keyword.
 
 Before you begin, if you want to publish a REST API implemented with LoopBack, ensure that
 you have published your app run time, and staged your product with the invoke proxy pointing to the
-new app. For more information about how to do this, see [Staging and publishing a LoopBack Application](/docs/services/apiconnect?topic=managing_apis#stage_publish_lb_app).
+new app. For more information about how to do this, see [Staging and publishing a LoopBack Application](/docs/services/apiconnect?topic=apiconnect-managing_apis#stage_publish_lb_app_managing_apis).
 
 1. In the API Manager UI, click **Add** > **Catalog**. The **Add Catalog** window is displayed.
 
