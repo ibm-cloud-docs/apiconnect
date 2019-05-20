@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
-lastupdated: "2017-07-11"
+lastupdated: "2017-09-05"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -22,7 +28,10 @@ clique em **Explorar APIs**.
 
 3. Para assinar uma API, clique em um produto de API.
 O Portal do desenvolvedor é aberto e você pode assinar um Plano para acessar
-uma API.
+uma API. 
+
+  **Nota**: se o plano selecionado tiver faturamento, você deverá fornecer um
+número de cartão de crédito para a sua organização. Isso requer que você tenha privilégios de proprietário.
 
 ## Visualizando e testando APIs no Portal do Desenvolvedor
 {: #view_test_apis_dev_port}
@@ -79,6 +88,9 @@ A caixa de diálogo Usar este plano é exibida.
 5. Selecione o aplicativo que você deseja usar com este Plano e clique em
 **Salvar**.
 Os detalhes do aplicativo são exibidos.
+
+  **Nota**: se o plano selecionado tiver faturamento, você deverá fornecer um
+número de cartão de crédito para a sua organização. Isso requer que você tenha privilégios de proprietário.
 
 6. Para visualizar as operações para as APIs que são incluídas nos Planos nos quais o
 aplicativo está inscrito, clique no nome da API.

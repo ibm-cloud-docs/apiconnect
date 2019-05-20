@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,7 +17,7 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # Resolução de Problemas
-{: #troubleshoot}
+{: #apic_troubleshoot}
 
 Aqui estão as respostas às perguntas comuns de resolução de problemas sobre o
 uso do {{site.data.keyword.apiconnect_long}} no
@@ -19,31 +25,33 @@ uso do {{site.data.keyword.apiconnect_long}} no
 {:shortdesc}
 
 ## Nome do usuário e senha necessários ao incluir o serviço API Connect {{site.data.keyword.Bluemix_notm}}
+{: #user_pw_apic_troubleshoot}
 
 Depois de incluir o serviço em seu Painel do {{site.data.keyword.Bluemix_notm}}, um nome de usuário e uma senha são solicitados quando você tenta abri-lo. 
 
 ### Sintomas
-{: #ts_sym_usernamepw}
+{: #ts_sym_usernamepw_apic_troubleshoot}
 
 Em vez de acessar o serviço {{site.data.keyword.Bluemix_notm}} diretamente ao abrir um novo {{site.data.keyword.apiconnect_short}}, ele requer que você efetue login no API Manager.
 
 ### Causa
-{: #ts_cause_usernamepw}
+{: #ts_cause_usernamepw_apic_troubleshoot}
 
 Seu navegador está configurado para bloquear cookies ou o nível está configurado para um nível mais restrito do que o {{site.data.keyword.apiconnect_notm}} requer.
 
 ### Resolução
-{: #ts_res_usernamepw}
+{: #ts_res_usernamepw_apic_troubleshoot}
 
 Ative ou aumente o nível de permissão de cookies em suas configurações do navegador até que ele abra o serviço {{site.data.keyword.Bluemix_notm}}.
 
 ## Não é possível instalar o kit de ferramentas do desenvolvedor
+{: #unable_tk_apic_troubleshoot}
 
 Após a provisão do serviço API Connect, você tenta instalar o kit de ferramentas do desenvolvedor e
 a instalação falha.
 
 ### Sintomas
-{: #ts_sym_noinstalltk}
+{: #ts_sym_noinstalltk_apic_troubleshoot}
 
 Os erros a seguir são exibidos durante a instalação do kit de ferramentas do
 desenvolvedor:
@@ -55,12 +63,12 @@ npm ERR! Please try running this command again as root/Administrator
 ```
 
 ### Causa
-{: #ts_cause_noinstalltk}
+{: #ts_cause_noinstalltk_apic_troubleshoot}
 
 Você não tem os direitos necessários para criar arquivos ou diretórios.
 
 ### Resolução
-{: #ts_res_noinstalltk}
+{: #ts_res_noinstalltk_apic_troubleshoot}
 
 Mude os direitos para os diretórios especificados ou execute o comando usando
 `sudo`. Em um sistema de desenvolvimento local, é melhor corrigir os direitos do diretório como
@@ -87,28 +95,29 @@ sudo npm install -g --unsafe-perm install apiconnect
 {:codeblock}
 
 ## Não é possível instalar o kit de ferramentas do desenvolvedor no Windows
+{: #unable_tk_win_apic_troubleshoot}
 
 Após a provisão do serviço do
 {{site.data.keyword.apiconnect_short}}, você
 tenta instalar o kit de ferramentas do desenvolvedor e a instalação falha.
 
 ### Sintomas
-{: #ts_sym_noinstalltk_path}
+{: #ts_sym_noinstalltk_path_apic_troubleshoot}
 
 Você está tentando instalar o kit de ferramentas do desenvolvedor no Windows e recebe uma mensagem de erro que indica que o *caminho deve ter menos de 248 caracteres*.
 
 ### Causa
-{: #ts_cause_noinstalltk_path}
+{: #ts_cause_noinstalltk_path_apic_troubleshoot}
 
 Em sistemas Windows, há um comprimento máximo de caminho
 que é excedido quando você tenta instalar todas as dependências em uma pasta de nível profundo.
 
 ### Resolução
-{: #ts_res_noinstalltk_path}
+{: #ts_res_noinstalltk_path_apic_troubleshoot}
 
 É possível corrigir esse problema de uma das seguintes formas:
 
-- Assegure-se de que tenha instalado a versão correta de Node.js. Para obter mais informações, veja [Instalando o Developer Toolkit](creating_apis.html).
+- Assegure-se de que tenha instalado a versão correta de Node.js. Para obter mais informações, consulte [Instalando o kit de ferramentas do desenvolvedor](/docs/services/apiconnect?topic=apiconnect-creating_apis).
 
 - Se for necessário fazer upgrade de um programa, tente a instalação novamente.
 
@@ -117,13 +126,14 @@ maior do que a provável pasta `C:/program files/nodejs/bin/node_modules...`. Se
 superior, não verá esse erro.
 
 ## Não é possível instalar o kit de ferramentas do desenvolvedor no Mac OS X
+{: #unable_tk_mac_apic_troubleshoot}
 
 Após a provisão do serviço do
 {{site.data.keyword.apiconnect_short}}, você
 tenta instalar o kit de ferramentas do desenvolvedor e a instalação falha.
 
 ### Sintomas
-{: #ts_sym_noinstalltk_mac}
+{: #ts_sym_noinstalltk_mac_apic_troubleshoot}
 
 Os erros a seguir são exibidos durante a instalação do kit de ferramentas do
 desenvolvedor:
@@ -133,13 +143,13 @@ privileges, please re-run as root via sudo
 ```
 
 ### Causa
-{: #ts_cause_noinstalltk_mac}
+{: #ts_cause_noinstalltk_mac_apic_troubleshoot}
 
 Recentemente você fez upgrade ou instalou o Xcode e não concordou com a licença
 ainda.
 
 ### Resolução
-{: #ts_res_noinstalltk_mac}
+{: #ts_res_noinstalltk_mac_apic_troubleshoot}
 
 1. Insira o comando a seguir para validar sua licença do Xcode:
 ```
@@ -151,13 +161,14 @@ sudo xcode-select
 
 
 ## Não é possível instalar o kit de ferramentas do desenvolvedor no Ubuntu
+{: #unable_tk_ubu_apic_troubleshoot}
 
 Após a provisão do serviço do
 {{site.data.keyword.apiconnect_short}}, você
 tenta instalar o kit de ferramentas do desenvolvedor e a instalação falha.
 
 ### Sintomas
-{: #ts_sym_noinstalltk_ubu}
+{: #ts_sym_noinstalltk_ubu_apic_troubleshoot}
 
 Os erros a seguir são exibidos durante a instalação do kit de ferramentas do
 desenvolvedor:
@@ -172,7 +183,7 @@ npm ERR! not ok code 0
 ```
 
 ### Resolução
-{: #ts_res_noinstalltk_ubu}
+{: #ts_res_noinstalltk_ubu_apic_troubleshoot}
 
 Insira o comando a seguir para resolver o
 problema:
@@ -181,31 +192,33 @@ $ update-alternatives --install /usr/bin/node node /usr/bin/nodejs 99
 ```
 
 ## Não é possível depurar a falha de instalação de npm
+{: #unable_nmp_apic_troubleshoot}
 
 Ao seguir as etapas para instalar o kit de ferramentas do
 desenvolvedor, a instalação
 de npm falhará.
 
 ### Sintomas
-{: #ts_sym_npmfail}
+{: #ts_sym_npmfail_apic_troubleshoot}
 
 A instalação de npm falha sem fornecer informações úteis para
 depuração.
 
 ### Resolução
-{: #ts_res_npmfail}
+{: #ts_res_npmfail_apic_troubleshoot}
 
 Quando uma instalação falha, o npm grava uma linha no arquivo `npm-debug.log</filepath>`
 para mostrar onde o erro está localizado. Use o arquivo `npm-debug.log` para determinar
 a causa.
 
 ## Não é possível abrir o API Designer
+{: #unable_apid_apic_troubleshoot}
 
 Você insere o comando `apic edit` e a API
 Designer não é aberta.
 
 ### Sintomas
-{: #ts_sym_noopenapid}
+{: #ts_sym_noopenapid_apic_troubleshoot}
 
 Não é possível abrir uma instância do API Designer depois que você insere o comando:
 ```
@@ -217,13 +230,13 @@ e a mensagem a seguir é exibida:
 ```
 
 ### Causa
-{: #ts_cause_noopenapid}
+{: #ts_cause_noopenapid_apic_troubleshoot}
 
 Você já
 iniciou uma instância do API Designer em outra janela de comando.
 
 ### Resolução
-{: #ts_res_noopenapid}
+{: #ts_res_noopenapid_apic_troubleshoot}
 
 Para
 corrigir esse problema, é necessário fechar a outra janela de comando conforme
@@ -240,41 +253,44 @@ Terminate Batch job (Y/N)?
 3. Digite `Y` e pressione Enter.
 
 ## Não é possível configurar informações de faturamento de um Produto
+{: #cannot_bill_apic_troubleshoot}
 
 Algumas das informações de faturamento não estão disponíveis para configurar ou confirmar a produção. 
 
 ### Sintomas
-{: #ts_sym_nobill}
+{: #ts_sym_nobill_apic_troubleshoot}
 
   - Quando você olha para a seção Administração de seu Produto, a guia Faturamento não é exibida.
   - Quando tenta publicar um Produto com as informações de faturamento especificadas, você obtém um erro. 
 
 ### Causa
-{: #ts_cause_nobill}
+{: #ts_cause_nobill_apic_troubleshoot}
 
 Deve-se ter a conta e as permissões corretas do {{site.data.keyword.apiconnect_short}} para ativar informações de faturamento.
 
 ## Não é possível assinar um Plano de faturamento com um Produto
+{: #cannot_bill_plan_apic_troubleshoot}
 
 A faixa limita cada cliente a um máximo de 25 assinaturas. Assegure-se de que você não tenha excedido
 esse limite. Se sim, será possível incluir essa assinatura se você remover outra assinatura.
 
 ### Sintomas
-{: #ts_sym_nosubscribe}
+{: #ts_sym_nosubscribe_apic_troubleshoot}
 
 Você vê um erro quando tenta assinar um Plano com faturamento, embora tenha outros Planos configurados.
 
 ### Causa
-{: #ts_cause_nosubscribe}
+{: #ts_cause_nosubscribe_apic_troubleshoot}
 
 O serviço de processamento de cartão de crédito de Faixa permite um máximo de 25 assinaturas por conta.
 
 ### Resolução
-{: #ts_res_nosubscribe}
+{: #ts_res_nosubscribe_apic_troubleshoot}
 
 Assegure-se de que você tenha uma conta no nível Corporativo para seu serviço {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.apiconnect_short}} e que existam menos de 25 instâncias. Remova um serviço, se você tiver o número máximo de serviços.
 
 ## Obtendo ajuda e suporte para o API Connect
+{: #get_help_apic_troubleshoot}
 
 Se você tiver problemas ou perguntas ao usar o
 {{site.data.keyword.apiconnect_short}},

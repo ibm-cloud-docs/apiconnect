@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-24"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,6 +17,7 @@ lastupdated: "2017-10-24"
 {:pre: .pre}
 
 # Configurando um Catálogo
+{: #create_catalog}
 
 É possível criar e configurar seus Catálogos do API Manager. Os catálogos são úteis para
 separar Produtos e APIs para teste antes de torná-los disponíveis para Organizações do desenvolvedor.
@@ -28,11 +35,11 @@ A janela **Incluir catálogo** é exibida.
 
 4. Insira o texto desejado para formar o segmento do Catálogo da URL no campo
 **Nome**.
-	**NOTA:** o campo **Nome** pode conter somente caracteres alfanuméricos minúsculos (a-z
+	**Nota:** o campo **Nome** pode conter somente caracteres alfanuméricos minúsculos (a-z
 e 0-9) ou caracteres de hífen (-). Um hífen
 não pode ser usado como o primeiro ou último caractere no nome.
 
-5. Clique em **Incluir (Add)**. Seu Catálogo é criado e exibido no painel.
+5. Clique em **Incluir**. Seu Catálogo é criado e exibido no painel.
 
 6. Para configurar o Catálogo, clique no nome do Catálogo e, em seguida, clique em **Configurações** > **Informações** e continue com as etapas a seguir:
   1. Se o novo Catálogo for um de desenvolvimento, selecione **Modo de desenvolvimento**.
@@ -67,7 +74,7 @@ Portal do Desenvolvedor irão então refletir a URL especificada.
 		    - Deve-se configurar uma entrada DNS que mapeie seu nome de host e domínio customizados para a URL de gateway
 padrão.
 		    - Para que os terminais de uma API reflitam sua URL de gateway customizada, deve-se configurar a API para ser
-aplicada pelo gateway do API Connect. Para obter mais informações, veja [Especificando um host alternativo para uma API ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+aplicada pelo gateway do API Connect. Para obter mais informações, veja [Especificando um host alternativo para uma API ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 		    - Assegure-se de que a mesma URL de gateway customizada não seja aplicada a múltiplos
 Catálogos porque o comportamento nesse cenário é indefinido.
 				**DICA**: ao chamar a API, também é possível configurar o cabeçalho de host HTTP na solicitação de API para o valor especificado no campo URL de gateway customizada.
@@ -86,7 +93,7 @@ endereço virtual, exposto a consumidores de API, que é mapeado para os termina
 no gateway. Os terminais derivados da URL da API customizada são geralmente publicados nos
 portais do desenvolvedor de produção para anunciar o endereço da API.
 
-	    **Nota:** se você especificar uma URL de API customizada para um catálogo, ela terá precedência sobre qualquer nome de host que for especificado quando você configurar a API. Para obter mais informações, veja [Especificando um host alternativo para uma API ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+	    **Nota:** se você especificar uma URL de API customizada para um catálogo, ela terá precedência sobre qualquer nome de host que for especificado quando você configurar a API. Para obter mais informações, veja [Especificando um host alternativo para uma API ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 
 	    - **Nome do host para chamadas API do Portal do Desenvolvedor**: na área de janela	Terminal de API da porta, insira um nome de host para chamadas API do Portal do Desenvolvedor. O nome do
 host que for inserido pode ser o nome do host de seu serviço de gerenciamento. Para acessar a API do
@@ -98,7 +105,7 @@ Portal do Desenvolvedor, em vez de requerer que você consulte e o inclua em sua
 7. Clique no ícone **Salvar**.
 
 ## Particionando um Catálogo
-{: #apic_spaces}
+{: #apic_spaces_create_catalog}
 
 Para usar o recurso de organização no
 {{site.data.keyword.apiconnect_short}},
@@ -118,4 +125,4 @@ desses links.
 Os Espaços são ativados para seu catálogo e um Espaço padrão, chamado Novo Espaço
 é criado.
 
-Para obter mais informações sobre o uso de organização, veja os tópicos do Knowledge Center, [Usando a organização no IBM API Connect ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}.
+Para obter mais informações sobre o uso de organização, veja os tópicos do Knowledge Center, [Usando a organização no IBM API Connect ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){: #new_window}.

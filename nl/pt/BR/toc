@@ -1,12 +1,12 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="apiconnect" audience="service" arm="327" href="/docs/services/apiconnect/getting-started.html"}
+{: .toc subcollection="apiconnect" service-name="API Connect" audience="service" arm="327" href="/docs/services/apiconnect?topic=apiconnect-getting-started" path="services/apiconnect"}
 API Connect
 
     
     {: .navgroup id="learn"}
-    ficando-started.md
+    getting-started.md
     
     {: .topicgroup}
     Tutoriais de introdução

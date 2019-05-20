@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,11 +17,12 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # Gerenciando Produtos
+{: #managing_products}
 
-Para obter detalhes das maneiras nas quais é possível gerenciar seus Produtos, veja a documentação do IBM&reg; Knowledge Center [Gerenciando seus produtos ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){:new_window}.
+Para obter detalhes das maneiras nas quais é possível gerenciar seus Produtos, veja a documentação do IBM&reg; Knowledge Center [Gerenciando seus produtos ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){: #new_window}.
 
 ## Ciclo de vida do produto
-{: #prod_lifecycle}
+{: #prod_lifecycle_managing_products}
 
 Ao gerenciar suas versões do Produto, você as move por uma série de
 estados do ciclo de vida, inicialmente preparando uma versão rascunho do Produto para um
@@ -67,6 +74,7 @@ APIs associadas foram interrompidas. A versão do Produto não é exibida por pa
 </table>
 
 ### Fluxos do ciclo de vida do produto
+{: #prod_lifecycle_flows_managing_products}
 
 O diagrama a seguir mostra os
 estados possíveis do ciclo de vida para uma versão do Produto e as operações de
@@ -78,7 +86,7 @@ estado Publicado para o estado Obsoleto.
 
 
 ## Criando um produto
-{: #create_product}
+{: #create_product_managing_products}
 
 Crie um Produto para coletar um conjunto de APIs e Planos em uma oferta que você torna disponível aos seus desenvolvedores. Um Plano inclui configurações de limite de taxa que podem ser aplicadas no Plano como um todo, ou especificadas para cada operação em uma API. Por meio de Produtos e Planos, você tem maior controle sobre a quais APIs seus desenvolvedores têm acesso. Depois
 de criar um produto, ele deve ser preparado. A preparação de um produto o move para um
@@ -129,7 +137,7 @@ Para procurar organizações ou comunidades do desenvolvedor, o Produto deve est
 publicado ou descontinuado. Se
 o Catálogo no qual ele é montado, publicado ou descontinuado não for um Catálogo de
 ambiente de simulação, não será possível fazer outras mudanças no Produto enquanto ele
-estiver em um desses estados. Para obter mais informações, veja [Ciclo de vida do produto](#prod_lifecycle).
+estiver em um desses estados. Para obter mais informações, veja [Ciclo de vida do produto](#prod_lifecycle_managing_products).
 
 8. Especifique os usuários que podem assinar o Produto. É possível escolher **Usuários Autenticados** ou **Customizado**. Se
 você selecionar **Customizado**, use o campo **Tipo a ser
@@ -188,11 +196,12 @@ desmarcada e, em seguida, especifique o limite de taxa que você deseja aplicar.
 - Clique no ícone **Salvar** para salvar suas mudanças.
 
 Você criou um Produto e especificou um conjunto de APIs e Planos em uma oferta que agora pode tornar disponível aos seus desenvolvedores.
-Em seguida, monte seu Produto em um Catálogo. Para obter mais informações, veja [Montando um produto](#stage_product}).
+Em seguida, monte seu produto em um catálogo, conforme explicado na próxima seção,
+[Montando um produto](#stage_product_managing_products}).
 
 
 ## Colocando um produto em estágios
-{: #stage_product}
+{: #stage_product_managing_products}
 
 Antes da publicação, prepare um Produto para criar uma versão específica desse Produto em um Catálogo. Quando um produto está no estado em estágios, ele ainda não está visível, ou pode ser assinado, por quaisquer desenvolvedores.
 
@@ -240,12 +249,13 @@ de Em estágio.
 - Abra o **Painel** do {{site.data.keyword.Bluemix_notm}}. Você verá
 o tile do aplicativo na seção Aplicativos.
 
-Abra o API Manager para publicar seu produto em uma comunidade para
-desenvolvedores de aplicativos para acessá-lo no Portal do desenvolvedor. Para obter mais informações, veja [Publicando um produto](#publish_proj}).
+Abra o API Manager para publicar seu produto em uma comunidade na qual os desenvolvedores de aplicativos possam
+acessá-lo por meio do Portal do Desenvolvedor, conforme explicado na próxima seção,
+[Publicando um produto](#publish_proj_managing_products}).
 
 
 ## Publicando um Produto
-{: #publish_proj}
+{: #publish_proj_managing_products}
 
 As APIs ficam visíveis e acessíveis aos desenvolvedores de aplicativo quando um plano é publicado.
 Publicar um Produto o torna visível no **Catálogo** do {{site.data.keyword.Bluemix_short}}
@@ -253,10 +263,10 @@ e no Portal do Desenvolvedor integrado para os desenvolvedores de aplicativos
 usarem.
 
 ### Pré-requisito
-{: #prereq_publish_proj}
+{: #prereq_publish_proj_managing_products}
 
 Deve-se preparar um Produto para que ele possa ser publicado. Para obter mais informações sobre a montagem de Produtos,
-veja [Montando um produto](#stage_product).
+veja [Montando um produto](#stage_product_managing_products).
 
 Para publicar um Produto, conclua as etapas a seguir:
 
@@ -289,6 +299,7 @@ aceitar a solicitação.
 
 
 ## Publicando um Produto para Bluemix
+{: #pub_to_bm_managing_products}
 
 Para ver seus Produtos na seção **Explorar APIs** do
 Painel do
@@ -296,10 +307,11 @@ Painel do
 as etapas a seguir.
 
 ### Pré-requisito
+{: #prereq_pub_bm_managing_products}
 
 Antes de começar, se você deseja publicar uma API REST implementada com
 LoopBack, assegure-se de que tenha publicado o tempo de execução de seu app e de ter
-preparado seu produto com o proxy de chamada apontando para o novo app. Para obter mais informações sobre como fazer isso, veja [Montando e publicando um aplicativo LoopBack](managing_apis.html#stage_publish_lb_app).
+preparado seu produto com o proxy de chamada apontando para o novo app. Para obter mais informações sobre como fazer isso, veja [Montando e publicando um aplicativo LoopBack](/docs/services/apiconnect?topic=apiconnect-managing_apis#stage_publish_lb_app_managing_apis).
 
 1. Na UI do API Manager, clique em **Incluir** > **Catálogo**. A janela **Incluir catálogo** é exibida.
 

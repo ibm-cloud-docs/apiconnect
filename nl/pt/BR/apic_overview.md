@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-18"
+lastupdated: "2017-09-14"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
 
 ---
 
@@ -14,13 +18,13 @@ lastupdated: "2017-07-18"
 {:pre: .pre}
 
 # Sobre o IBM API Connect
+{: #about_apic_overview}
 
 Use o serviço do
 {{site.data.keyword.apiconnect_full}} para
-criar rapidamente APIs e microsserviços com base nos tempos de Node.js e Java. Depois de
-serem criados, é possível gerenciar suas APIs com controles de nível de negócios
-configurando níveis variados de segurança, visibilidade e limites de taxa durante o
-compartilhamento de APIs com desenvolvedores de aplicativos. O serviço do
+criar rapidamente APIs e microsserviços com base nos tempos de Node.js e Java. Depois que eles são criados, é possível
+gerenciar suas APIs com controles de nível de negócios configurando diferentes níveis de segurança, visibilidade,
+planos de faturamento e limites de taxa enquanto as APIs são compartilhadas com os desenvolvedores de aplicativos. O serviço do
 {{site.data.keyword.apiconnect_short}} também
 fornece a você as ferramentas para transformar e ampliar seus negócios com insights por
 meio de análises detalhadas com procuras filtradas estruturadas.
@@ -35,6 +39,7 @@ data="https://www.youtube.com/v/lmxyiNMER5Y?version=3&amp;hl=en_US">
 </object>
 
 ## Criação da API
+{: #creation_apic_overview}
 
 Com o
 {{site.data.keyword.apiconnect_short}}, é
@@ -75,26 +80,31 @@ o app LoopBack é implementado no tempo de execução do {{site.data.keyword.Blu
 
 <img src="images/Deployed.png" alt="Diagram to show where the LoopBack app, API, and product are deployed to."/>
 
-Para obter mais informações sobre as tarefas necessárias para criar APIs, veja [Criando APIs](creating_apis.html).
+Para obter mais informações sobre as tarefas necessárias para criar APIs, veja [Criando APIs](/docs/services/apiconnect?topic=apiconnect-creating_apis).
 
 ## Visão geral do gerenciamento de API
 
-Depois que um Produto foi preparado e publicado, é possível abrir o API
-Manager para gerenciar segurança, limites de taxa e políticas; em seguida, publicar o
-Produto em um Portal do desenvolvedor.
+Após a montagem e a publicação de um produto, é possível abrir o API Manager para gerenciar a segurança, os limites
+de taxa, as políticas e as informações de faturamento e, em seguida, publicar o produto em um Portal do Desenvolvedor.
 
-Conforme exibido no diagrama a seguir, um produto contém um plano, que contém uma API.
+Conforme exibido no diagrama a seguir, um produto contém um plano com uma ou mais APIs.
 
 <img src="images/Product.png" alt="diagram to show what is contained within a Product"/>
 
 ### Plans
+{: #plans_apic_overview}
 
 Para tornar uma API disponível para um cliente, ela deverá ser incluída em um Plano. Os
 planos são usados para diferenciar entre diferentes ofertas. Os planos podem compartilhar APIs mas, se a aprovação de assinatura é requerida, depende do Plano em si. Além
 disso, é possível impor limites de taxa por meio de Planos ou de operações nas APIs de um
 Plano que substituam o limite de taxa do Plano.
 
+Os planos também podem especificar os custos de faturamento para os clientes que usam os seus produtos. Por exemplo, é possível
+definir três planos diferentes para um único produto. Cada plano pode ter um custo de assinatura diferente e um limite
+de taxa diferente que se destinam a diferentes clientes.  
+
 ### Produtos
+{: #products_apic_overview}
 
 Planos e APIs são agrupados em Produtos. Por meio de Produtos, é possível gerenciar a disponibilidade e visibilidade de APIs e Planos. Use
 o API Designer para criar, editar e preparar seu Produto. Use o
@@ -110,13 +120,21 @@ são publicados em um Catálogo. Um
 gerenciador de ciclo de vida então pode controlar a disponibilidade e visibilidade de
 APIs e Planos por meio do API Manager. Com o Portal do desenvolvedor, o cliente é então
 capaz de assinar um dos Planos que está disponível para ele, conforme determinado no API
-Manager. O usuário pode assinar somente um Plano de um Produto específico. Planos múltiplos dentro de um único Produto são úteis para que eles possam cumprir propósitos semelhantes, mas com diferentes níveis de desempenho. Por
+Manager. Se for um plano com faturamento, o cliente deverá fornecer informações de cartão de crédito ao assiná-lo. O usuário pode assinar somente um Plano de um Produto específico. Múltiplos
+planos dentro de um único produto são úteis, pois eles podem cumprir propósitos semelhantes, mas com diferentes níveis
+de desempenho e custo. Por
 exemplo, você poderá ter um "Plano de demo", que torna uma única API disponível e um
 "Plano completo", que torna várias disponíveis.
 
 Assim como controlar quais APIs um cliente pode usar, Planos diferentes podem ser usados para implementar limites de taxa. Um limite de taxa pode ser implementado como uma taxa padrão em um Plano inteiro, ou para operações específicas de uma API nesse Plano, isentando-as do limite da taxa do Plano. Planos diferentes podem ter limites de taxa diferentes, entre as operações e para o limite geral. Isso é útil para fornecer diferentes níveis de serviço aos clientes. Por
 exemplo, um "Plano demo" pode impor um limite de taxa de 10 chamadas por minuto,
 enquanto um "Plano completo" pode permitir até 1000 chamadas por minuto.
+
+Finalmente, planos diferentes podem ser usados para designar um custo de faturamento. Um plano pode ser configurado como
+um plano grátis ou como um plano com faturamento. Planos com faturamento podem ser usados com limites de taxa para
+configurar diferentes níveis de serviço para os clientes. Por exemplo, um "plano demo" pode impor um limite de taxa
+de 10 chamadas por minuto por um custo de US$ 5 por mês, enquanto um "plano completo" pode permitir até 1.000 chamadas
+por minuto por um custo de US$ 20 por mês.
 
 **Nota:** a aplicação de um limite de taxa no nível de Plano cria um limite de taxa padrão que se aplica a cada operação no Plano. Se
 você precisar configurar limites de taxa específicos para operações específicas, deverá
@@ -127,9 +145,10 @@ O IBM API Connect também suporta a implementação de diversas versões de Prod
 
 **Nota:** a versão para um Produto é distinta da versão de quaisquer APIs que estejam contidas nos Planos associados. Planos em si não podem ter sua própria versão, eles usam a versão de seu Produto pai.
 
-Para obter mais informações sobre as tarefas necessárias para gerenciar APIs, veja [Gerenciando APIs](managing_apis.html).
+Para obter mais informações sobre as tarefas necessárias para gerenciar APIs, veja [Gerenciando APIs](/docs/services/apiconnect?topic=apiconnect-managing_apis).
 
 ### Catalogs
+{: #catalogs_apic_overview}
 
 Os produtos devem ser montados em um Catálogo e, em seguida, publicados nas
 organizações do desenvolvedor para se tornarem disponíveis aos desenvolvedores de
@@ -147,6 +166,7 @@ desenvolvimento, alguns Catálogos de teste e uma nuvem de produção que possa 
 próprio Catálogo de teste.
 
 #### Configurações do catálogo
+{: #cat_set_apic_overview}
 
 É possível aplicar as seguintes configurações a um catálogo:
 
@@ -168,10 +188,12 @@ automática está disponível somente para um Catálogo de desenvolvimento.
 chamadas das APIs que forem publicadas nesse Catálogo poderão usar uma URL mais curta que
 não inclua o nome do Catálogo
 
-Para obter mais informações sobre como usar o Portal do Desenvolvedor, consulte [Descobrindo
-e usando APIs](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.dita).
+Para obter mais informações sobre o uso do Portal do Desenvolvedor, consulte
+[Descobrindo
+e usando APIs ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.dita){: #new_window}.
 
 ### Sindicação
+{: #syn_apic_overview}
 
 Com o recurso de organização do
 {{site.data.keyword.apiconnect_full}}, é
@@ -194,4 +216,4 @@ Flights pode montar APIs somente no Espaço Flights.
 **Nota:** por padrão, os Espaços são desativados em um Catálogo. Você ativa Espaços
 modificando as configurações do Catálogo.
 
-Para particionar um catálogo, veja [Particionando um catálogo](create_catalog.html#apic_spaces).
+Para particionar um catálogo, consulte [Particionando um catálogo](/docs/services/apiconnect?topic=apiconnect-create_catalog#apic_spaces).
