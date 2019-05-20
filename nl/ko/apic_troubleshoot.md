@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,37 +17,39 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # 문제점 해결
-{: #troubleshoot}
+{: #apic_troubleshoot}
 
 {{site.data.keyword.Bluemix_notm}}의 {{site.data.keyword.apiconnect_long}} 사용과 관련된 공통 문제점 해결 질문에 대한 답변입니다.
 {:shortdesc}
 
 ## API Connect {{site.data.keyword.Bluemix_notm}} 서비스를 추가할 때 필요한 사용자 이름과 비밀번호
+{: #user_pw_apic_troubleshoot}
 
 {{site.data.keyword.Bluemix_notm}} 대시보드에 서비스를 추가한 후 열려고 하면 사용자 이름과 비밀번호를 입력하도록 프롬프트가 표시됩니다. 
 
 ### 증상
-{: #ts_sym_usernamepw}
+{: #ts_sym_usernamepw_apic_troubleshoot}
 
 {{site.data.keyword.apiconnect_short}}를 열 때 {{site.data.keyword.Bluemix_notm}} 서비스에 직접 액세스하는 것이 아니라 API Manager에 로그인해야 합니다.
 
 ### 원인
-{: #ts_cause_usernamepw}
+{: #ts_cause_usernamepw_apic_troubleshoot}
 
 브라우저에서 쿠키를 차단하도록 설정되어 있거나 레벨이 {{site.data.keyword.apiconnect_notm}}에 필요한 것보다 더 제한된 레벨로 설정되어 있습니다.
 
 ### 해결
-{: #ts_res_usernamepw}
+{: #ts_res_usernamepw_apic_troubleshoot}
 
 {{site.data.keyword.Bluemix_notm}} 서비스를 열 때까지 브라우저 설정에서 쿠키를 사용하거나 쿠키의 권한 레벨을 늘리십시오.
 
 ## 개발자 툴킷을 설치할 수 없음
+{: #unable_tk_apic_troubleshoot}
 
 API Connect 서비스를 프로비저닝한 후 개발자 툴킷의 설치를 시도하지만
 설치에 실패합니다.
 
 ### 증상
-{: #ts_sym_noinstalltk}
+{: #ts_sym_noinstalltk_apic_troubleshoot}
 
 개발자 툴킷 설치 동안 다음 오류가
 표시됩니다.
@@ -53,12 +61,12 @@ npm ERR! Please try running this command again as root/Administrator
 ```
 
 ### 원인
-{: #ts_cause_noinstalltk}
+{: #ts_cause_noinstalltk_apic_troubleshoot}
 
 사용자에게 파일 또는 디렉토리를 작성할 수 있는 필수 권한이 없습니다.
 
 ### 해결
-{: #ts_res_noinstalltk}
+{: #ts_res_noinstalltk_apic_troubleshoot}
 
 지정된 디렉토리에 대한 권한을 변경하거나 `sudo`를 사용하여
 명령을 실행하십시오. 로컬 개발 시스템에서는 다음과 같이 디렉토리 권한을 수정하는 것이
@@ -84,27 +92,28 @@ sudo npm install -g --unsafe-perm install apiconnect
 {:codeblock}
 
 ## Windows에 개발자 툴킷을 설치할 수 없음
+{: #unable_tk_win_apic_troubleshoot}
 
 {{site.data.keyword.apiconnect_short}}
 서비스를 프로비저닝한 이후 개발자 툴킷의 설치를 시도하지만 설치에 실패합니다.
 
 ### 증상
-{: #ts_sym_noinstalltk_path}
+{: #ts_sym_noinstalltk_path_apic_troubleshoot}
 
 Windows에서 개발자 툴킷의 설치를 시도 중이며 *경로는 248자 미만이어야 함*으로 기술된 오류 메시지를 수신합니다.
 
 ### 원인
-{: #ts_cause_noinstalltk_path}
+{: #ts_cause_noinstalltk_path_apic_troubleshoot}
 
 Windows 시스템에는 최대 경로 길이가 있으며, 딥 레벨 폴더에서
 모든 종속 항목의 설치를 시도하면 이 길이를 초과하게 됩니다.
 
 ### 해결
-{: #ts_res_noinstalltk_path}
+{: #ts_res_noinstalltk_path_apic_troubleshoot}
 
 다음 방법 중 하나로 이 문제점을 해결할 수 있습니다.
 
-- 올바른 버전의 Node.js를 설치했는지 확인하십시오. 자세한 정보는 [개발자 툴킷 설치](creating_apis.html)를 참조하십시오.
+- 올바른 버전의 Node.js를 설치했는지 확인하십시오. 자세한 정보는 [개발자 툴킷 설치](/docs/services/apiconnect?topic=apiconnect-creating_apis)를 참조하십시오.
 
 - 프로그램을 업그레이드해야 하는 경우에는 설치를 다시 시도하십시오.
 
@@ -113,12 +122,13 @@ Windows 시스템에는 최대 경로 길이가 있으며, 딥 레벨 폴더에�
 최상위 레벨 디렉토리에서 설치하면 이 오류가 나타나지 않습니다.
 
 ## Mac OS X에 개발자 툴킷을 설치할 수 없음
+{: #unable_tk_mac_apic_troubleshoot}
 
 {{site.data.keyword.apiconnect_short}}
 서비스를 프로비저닝한 이후 개발자 툴킷의 설치를 시도하지만 설치에 실패합니다.
 
 ### 증상
-{: #ts_sym_noinstalltk_mac}
+{: #ts_sym_noinstalltk_mac_apic_troubleshoot}
 
 개발자 툴킷 설치 동안 다음 오류가
 표시됩니다.
@@ -128,13 +138,13 @@ privileges, please re-run as root via sudo
 ```
 
 ### 원인
-{: #ts_cause_noinstalltk_mac}
+{: #ts_cause_noinstalltk_mac_apic_troubleshoot}
 
 사용자는 최근에 Xcode를 업그레이드하거나 설치했으며 아직 라이센스에 동의하지
 않았습니다.
 
 ### 해결
-{: #ts_res_noinstalltk_mac}
+{: #ts_res_noinstalltk_mac_apic_troubleshoot}
 
 1. 다음 명령을 입력하여 Xcode 라이센스의 유효성을 검증하십시오.
 ```
@@ -146,12 +156,13 @@ sudo xcode-select
 
 
 ## Ubuntu에 개발자 툴킷을 설치할 수 없음
+{: #unable_tk_ubu_apic_troubleshoot}
 
 {{site.data.keyword.apiconnect_short}}
 서비스를 프로비저닝한 이후 개발자 툴킷의 설치를 시도하지만 설치에 실패합니다.
 
 ### 증상
-{: #ts_sym_noinstalltk_ubu}
+{: #ts_sym_noinstalltk_ubu_apic_troubleshoot}
 
 개발자 툴킷 설치 동안 다음 오류가
 표시됩니다.
@@ -166,7 +177,7 @@ npm ERR! not ok code 0
 ```
 
 ### 해결
-{: #ts_res_noinstalltk_ubu}
+{: #ts_res_noinstalltk_ubu_apic_troubleshoot}
 
 다음 명령을 입력하여 문제점을
 해결하십시오.
@@ -175,30 +186,32 @@ $ update-alternatives --install /usr/bin/node node /usr/bin/nodejs 99
 ```
 
 ## npm 설치 실패를 디버그할 수 없음
+{: #unable_nmp_apic_troubleshoot}
 
 개발자 툴킷을 설치하기 위해 다음 단계를 따르면 npm 설치가
 실패합니다.
 
 ### 증상
-{: #ts_sym_npmfail}
+{: #ts_sym_npmfail_apic_troubleshoot}
 
 npm 설치가 디버그를 위한 유용한 정보를 제공하지 않고
 실패합니다.
 
 ### 해결
-{: #ts_res_npmfail}
+{: #ts_res_npmfail_apic_troubleshoot}
 
 설치가 실패하면 npm이 `npm-debug.log</filepath>` 파일에 행을 작성하여
 오류가 있는 위치를 보여줍니다. `npm-debug.log` 파일을 사용하여
 원인을 판별하십시오.
 
 ## API Designer를 열 수 없음
+{: #unable_apid_apic_troubleshoot}
 
 `apic edit` 명령을 입력해도 API Designer가
 열리지 않습니다.
 
 ### 증상
-{: #ts_sym_noopenapid}
+{: #ts_sym_noopenapid_apic_troubleshoot}
 
 명령을 입력한 후에 API Designer의 인스턴스를 열 수 없습니다.
 ```
@@ -210,13 +223,13 @@ and the following message is displayed:
 ```
 
 ### 원인
-{: #ts_cause_noopenapid}
+{: #ts_cause_noopenapid_apic_troubleshoot}
 
 다른 명령 창에서 사용자가 이미 API Designer의 인스턴스를
 시작했습니다.
 
 ### 해결
-{: #ts_res_noopenapid}
+{: #ts_res_noopenapid_apic_troubleshoot}
 
 이 문제점을 해결하려면 다음 단계에서 설명한 대로 다른 명령 창을
 닫아야 합니다.
@@ -231,41 +244,44 @@ Terminate Batch job (Y/N)?
 3. `Y`를 입력하고 Enter를 누르십시오.
 
 ## 제품의 비용 청구 정보를 구성할 수 없음
+{: #cannot_bill_apic_troubleshoot}
 
 일부 비용 청구 정보는 구성하거나 프로덕션을 커미트할 수 없습니다. 
 
 ### 증상
-{: #ts_sym_nobill}
+{: #ts_sym_nobill_apic_troubleshoot}
 
   - 제품의 관리 섹션에 비용 청구 탭이 표시되지 않습니다.
   - 비용 청구 정보가 지정된 제품을 공개하려고 하면 오류가 표시됩니다. 
 
 ### 원인
-{: #ts_cause_nobill}
+{: #ts_cause_nobill_apic_troubleshoot}
 
 비용 청구 정보를 사용하려면 올바른 {{site.data.keyword.apiconnect_short}} 계정과 권한이 있어야 합니다.
 
 ## 제품으로 비용 청구 플랜에 등록할 수 없음
+{: #cannot_bill_plan_apic_troubleshoot}
 
 스트라이프는 각 고객을 최대 25개의 등록으로 제한합니다. 이 한계를 초과하지
 않도록 하십시오. 초과하는 경우 다른 등록을 제거해야만 이 등록을 추가할 수 있습니다.
 
 ### 증상
-{: #ts_sym_nosubscribe}
+{: #ts_sym_nosubscribe_apic_troubleshoot}
 
 다른 플랜이 구성되어 있는 상태에서 비용 청구가 있는 플랜에 등록하려고 하면 오류가 표시됩니다.
 
 ### 원인
-{: #ts_cause_nosubscribe}
+{: #ts_cause_nosubscribe_apic_troubleshoot}
 
 스트라이프 신용카드 처리 서비스를 사용하면 계정당 최대 25개의 등록이 가능합니다.
 
 ### 해결
-{: #ts_res_nosubscribe}
+{: #ts_res_nosubscribe_apic_troubleshoot}
 
 {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.apiconnect_short}} 서비스의 엔터프라이즈 레벨 계정이 있으며 인스턴스가 25개 미만인지 확인하십시오. 최대수의 서비스가 있으면 서비스를 제거하십시오.
 
 ## API Connect에 대한 도움말 및 지원
+{: #get_help_apic_troubleshoot}
 
 {{site.data.keyword.apiconnect_short}} 사용과 관련된 문제점 또는 질문이 있는 경우, 정보를 검색하거나 포럼에 질문하여 도움을 받을 수 있습니다. 또한 지원 티켓을 열 수도 있습니다.
 

@@ -1,8 +1,12 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-15"
+  years: 2018
+lastupdated: "2019-01-17"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
 
 ---
 
@@ -21,68 +25,17 @@ lastupdated: "2017-12-15"
 고객인 경우 개발자가 API를 작성하고 {{site.data.keyword.Bluemix_notm}}에 제품을 푸시하고 나면 API Manager UI에서 API의 사용 방식을 관리할 수 있습니다. 다음 주제에서는 {{site.data.keyword.apiconnect_short}}에서 제품을 작성하고 관리하는 방법을 설명합니다.
 
 ## Secure Gateway를 통해 온프레미스 API 노출
-{: #expose_apis_sec_gate}
+{: #expose_apis_sec_gate_managing_apis}
 
 온프레미스 API를 {{site.data.keyword.apiconnect_full}}에 안전하게 노출하기 위해 Secure Gateway를 작성할 수 있습니다.
 
-Secure Gateway를 작성할 때 {{site.data.keyword.Bluemix_notm}}
-{{site.data.keyword.SecureGateway}} 서비스의 기능을 {{site.data.keyword.apiconnect_short}}와 통합합니다. 이는 {{site.data.keyword.SecureGateway}} 서비스의 개별 인스턴스를 프로비저닝할 필요 없이 보안 패시지를 통해
-{{site.data.keyword.apiconnect_short}}에서 온프레미스 API에 보안이 유지되는 방법으로 액세스할 수 있음을 의미합니다. 온프레미스 데이터를 노출하지 않고 공용 환경에서
-{{site.data.keyword.apiconnect_short}}에 대한 터널을 효과적으로 작성합니다. 이를 위해서는 게이트웨이를 작성하여 API에 연결하기만 하면 됩니다. 연결 대상, SSL 프로파일, 인증서가 모두 생성됩니다.
-{{site.data.keyword.SecureGateway}} 서비스에 대한 자세한 정보는
-[{{site.data.keyword.SecureGateway}} 정보](../../services/SecureGateway/sg_overview.html#sg_overview)를 참조하십시오.
-Secure Gateway를 작성하려면 다음 주제의 단계를 완료하십시오.
+Secure Gateway를 작성한 다음 해당 클라이언트 또는 Cloud에 대한 주소를 제공하십시오. `<host>:<port>`{{site.data.keyword.Bluemix_notm}} {{site.data.keyword.SecureGateway}} 서비스의 기능을 {{site.data.keyword.apiconnect_short}}와 통합합니다. 즉, 보안 패시지를 통해 {{site.data.keyword.apiconnect_short}}에서 안전하게 온프레미스 API에 액세스할 수 있습니다. 온프레미스 데이터를 노출하지 않고 공용 환경에서
+{{site.data.keyword.apiconnect_short}}에 대한 터널을 효과적으로 작성합니다. IBM Cloud에 Secure Gateway 서비스를 작성하고 구성한 다음 API에서 이에 대한 주소를 제공하기만 하면 됩니다.
 
-### Secure Gateway 작성
-{: #create_sec_gate notoc}
-
-Secure Gateway를 작성할 때 게이트웨이 ID와 보안 토큰이 생성됩니다.
-{{site.data.keyword.apiconnect_short}}에서 연결에 사용할 온프레미스 환경에도 Secure Gateway 클라이언트를 설정하십시오. 클라이언트가 설정되면 게이트웨이 ID와 보안 토큰을 사용하여 클라이언트에 연결해서
-온프레미스 API에 액세스할 수 있습니다.
-
-게이트웨이를 작성하려면 다음 단계를 완료하십시오.
-
-1. **이동 위치** <img alt="이동 위치 아이콘" src="images/navigate_to_icon.png"> > **관리** > **Secure Gateways**를 클릭하십시오.
-`Secure Gateway` 페이지가 표시되고 Secure Gateway 안내식 둘러보기가
-UI 모서리에 표시됩니다.
-
-2. **선택사항**:
-안내식 둘러보기의 각 단계를 클릭하여 게이트웨이 설정을 완료하십시오.
-
-3. **추가**를 클릭하십시오.
-`Secure Gateway 작성` 대화 상자가 표시됩니다.
-
-4. 게이트웨이 이름을 제공하십시오.
-    **참고사항:** 영숫자 문자 및 밑줄만 허용됩니다.
-
-5. **저장**을 클릭하십시오.
-게이트웨이 ID 및 보안 토큰과 함께 게이트웨이가 표시됩니다.
-
-6. **설정**을 클릭하십시오.
-**설정**을 클릭하면 Secure Gateway 클라이언트를 온프레미스 워크스테이션에 다운로드 및 설치할 수 있으며
-Bluemix&reg 네트워크의 Secure Gateway에 원격 네트워크를 연결할 수 있습니다.
-
-    `Secure Gateway 클라이언트 설정` 창이 표시됩니다.
-
-7. 다음 옵션에서 사용하려는 클라이언트를 클릭하십시오.
-
-    - IBM&reg; Installers
-    - Docker
-    - IBM DataPower&reg;
-
-8. 화면의 지시사항에 따라 선택한 클라이언트를 설치하고 실행하십시오.
-Secure Gateway 클라이언트 설정에 관한 자세한 정보는 [클라이언트 설정](../../services/SecureGateway/sg_021.html#sg_021)을 참조하십시오.
-
-9. 클라이언트 설치를 완료하면 **Secure Gateway 클라이언트 설정** 창을 닫으십시오.
-
-10. 페이지를 새로 고치십시오.
-
-클라이언트가 연결되고 게이트웨이 ID 및 상태가 표시됩니다. 게이트웨이 구성이
-완료되고 Secure Gateway가 작성되었습니다.
-그런 다음, Secure Gateway를 사용하여 온프레미스 API에 액세스하십시오.
+{{site.data.keyword.SecureGateway}} 서비스 및 해당 서비스 설정 방법에 관한 자세한 정보는 [{{site.data.keyword.SecureGateway}} 정보![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com/docs/services/SecureGateway?topic=index#getting-started-with-sg){: #new_window}를 참조하십시오.
 
 ### 사용자 API로 Secure Gateway 사용
-{: #using_sec_gate_apis notoc}
+{: #using_sec_gate_apis_managing_apis notoc}
 
 게이트웨이를 구성한 후에는 사용자 API와 함께 사용할 수 있습니다.
 {:shortdesc}
@@ -101,41 +54,32 @@ Secure Gateway에서 API를 사용하려면 다음 단계를 완료하십시오.
 **제한사항**: 논리 전환(예: `Switch`, `Operation Switch`, `If`)은
 Secure Gateway를 사용하는 API와 함께 사용할 수 없습니다.
 
-4. **Secure Gateway를 통해 URL 액세스**를 선택하십시오.
+4. **Secure Gateway를 통해 URL에 액세스** 선택란을 선택하지 **마십시오**.
+**중요**: 이 선택란은 프로덕션에 지원되지 않는 더 이상 사용되지 않는 기능용이므로 언제든 제거될 수 있습니다. 대신 이 선택란을 선택하지 않고 Secure Gateway URL에 대한 주소를 직접 제공하십시오. 
 
-5. URL 필드에서 온프레미스 호스트 이름 및 포트 번호로 `target-url`을
-업데이트하십시오. 예:
+5. URL 필드에서 클라우드 호스트 이름 및 포트 번호로 `target-url`을 업데이트하십시오. 예를 들어 다음과 같습니다.
 ```
-target-url: http://onpremdb2.rtp.raleigh.ibm.com:3055$(request.path)$(request.search)
+target-url: cap-sg-prd-5.securegateway.appdomain.cloud:18579
 ```
 
 6. **저장** <img src="images/icon_save.png" alt="저장 아이콘" />을 클릭하십시오.
 
-7. **소스** 탭을 클릭하십시오.  `secure-gateway` 필드에 `true` 값이 있음을 확인하십시오.
+7. **모든 API** > **제품**을 클릭하고 이전에 작성한 제품을 선택하십시오.
 
-8. **모든 API** > **제품**을 클릭하고 이전에 작성한 제품을 선택하십시오.
+8. 제품을 선택한 카탈로그에 스테이징하려면 **공개**를 클릭하십시오.
 
-9. 제품을 선택한 카탈로그에 스테이징하려면 **공개** 아이콘을 클릭하십시오.
+9. 사용할 카탈로그를 선택하십시오.
 
-10. 사용할 카탈로그를 선택하십시오.
+10. 스테이징된 제품을 선택하십시오.
 
-11. 스테이징된 제품을 선택하십시오.
+11. **공개**를 클릭하십시오.
 
-12. **공개**를 클릭하고 **Secure Gateway 지정**을 선택하십시오.
-
-온프레미스 API를 {{site.data.keyword.apiconnect_short}}에 안전하게 노출했습니다. 대상과 연관된 모든 TLS 프로파일이 추가됩니다. TLS 프로파일을 확인하려면
-**이동 위치** <img src="images/navigate_to_icon.png" alt="이동 위치 아이콘" /> > **관리자** > **보안** > **TLS 프로파일**을 클릭하십시오.
-각 API에 대해 다중 게이트웨이를 가질 수 있습니다. API를 공개할 때 사용할
-게이트웨이를 결정합니다. {{site.data.keyword.SecureGateway}} 서비스가 이미 프로비저닝된 경우
-{{site.data.keyword.SecureGateway}} 대시보드에서 대상을 모니터할 수 있습니다. 그러나 {{site.data.keyword.apiconnect_short}} 서비스에서 작성한
-{{site.data.keyword.apiconnect_short}} 대상은 편집할 수 없습니다.
-그런 다음, {{site.data.keyword.SecureGateway}} API를 테스트하십시오.
+온프레미스 API를 {{site.data.keyword.apiconnect_short}}에 안전하게 노출했습니다. 그런 다음, {{site.data.keyword.SecureGateway}} API를 테스트하십시오.
 
 ### Secure Gateway API 테스트
-{: test_sec_gate notoc}
+{: test_sec_gate_managing_apis notoc}
 
-API에 게이트웨이를 연결한 후에는 API를 테스트하여 게이트웨이가 작동하는지,
-정상적으로 응답하는지 확인할 수 있습니다.
+API에서 {{site.data.keyword.SecureGateway}}에 대한 주소를 제공한 다음 API를 테스트하여 게이트웨이가 작동하는지, 정상적으로 응답하는지 확인할 수 있습니다.
 
 Secure Gateway를 사용하여 API를 테스트하려면 다음 단계를 완료하십시오:
 
@@ -146,7 +90,7 @@ Secure Gateway를 사용하여 API를 테스트하려면 다음 단계를 완료
 
 3. 제공된 목록에서 테스트할 카탈로그를 선택하십시오.
 
-4. 제공된 목록에서 테스트할 Secure Gateway를 선택하십시오.
+4. URL이 올바른 Secure Gateway에 대한 주소를 제공하는지 확인하십시오. `<cloud_host>:<port>` Secure Gateway 서비스 대상이 [{{site.data.keyword.SecureGateway}}![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com/docs/services/SecureGateway?topic=index#getting-started-with-sg){: #new_window}문서에 설명된 대로 올바르게 구성되었는지 확인하십시오.
 
 5. 제공된 목록에서 기존 제품을 선택한 다음 **제품
 재공개**를 클릭하십시오.
@@ -166,7 +110,7 @@ Secure Gateway를 사용하여 API를 테스트하려면 다음 단계를 완료
 테스트 결과가 표시됩니다.
 
 ## LoopBack 애플리케이션 스테이징 및 공개
-{: #stage_publish_lb_app}
+{: #stage_publish_lb_app_managing_apis}
 
 1. API Designer의 탐색 분할창에서 **제품**을 클릭하십시오.
 제품 탭이 열립니다.
@@ -237,7 +181,7 @@ Secure Gateway를 사용하여 API를 테스트하려면 다음 단계를 완료
 1. {{site.data.keyword.Bluemix_notm}} 앱이 실행 중인지
 확인하십시오.
 
-2. 브라우저 창을 열고 API 대상 URL로 이동하십시오.
+2. 브라우저 창을 열고 API URL로 이동하십시오.
 애플리케이션은 클라이언트 유효성 검증으로 보호됩니다. 올바른 클라이언트 인증서를 제공하지 않으면
 오류가 발생합니다(이는 예상된 결과임).
 
@@ -250,6 +194,7 @@ https://<domain>/<Bluemix org>-<Bluemix space>/<Catalog identifier>/api/notes
 200 응답이 표시됩니다.
 
 ## 카탈로그 구성
+{: #config_cat_managing_apis}
 
 API Manager 카탈로그를 작성하고 구성할 수 있습니다. 카탈로그는
 개발자 조직에 사용 가능하도록 하기 전에 테스트할 제품 및 API를 분리하는 데 유용합니다.
@@ -265,11 +210,11 @@ API Manager 카탈로그를 작성하고 구성할 수 있습니다. 카탈로�
 
 3.  **표시 이름** 필드에서 새 카탈로그의 이름을 입력하십시오.
 
-4. **이름** 필드에서 URL의 카탈로그 세그먼트를 구성하는
-텍스트를 입력하십시오.
+4. **이름** 필드에서
+URL의 카탈로그 세그먼트를 구성하는 텍스트를 입력하십시오.
 **참고:** **이름** 필드에는 소문자 영숫자 문자(a-z
-및 0-9) 또는 하이픈 문자(-)만 사용할 수 있습니다. 하이픈은 이름에서 첫 번째 또는 마지막 문자로 사용할 수
-없습니다.
+및 0-9) 또는 하이픈 문자(-)만 사용할 수 있습니다. 하이픈은 이름에서 첫 번째 또는 마지막 문자로
+사용할 수 없습니다.
 
 5. **추가**를 클릭하십시오. 카탈로그가 작성되고 대시보드에 표시됩니다.
 
@@ -299,13 +244,14 @@ API Manager 카탈로그를 작성하고 구성할 수 있습니다. 카탈로�
         ```
         https://gateway_cluster_hostname/organization_name/Catalog_name
         ```
-        그러나 엔터프라이즈에 더 적합한 URL을 지정하여 기본값을 대체할 수 있습니다(예: `https://api.mycompany.com`). 그런 다음 개발자 포털에 표시되는 API 엔드포인트가
+        그러나 엔터프라이즈에 더 적합한 URL을 지정하여 기본값을 대체할 수
+        있습니다(예: `https://api.mycompany.com`). 그런 다음 개발자 포털에 표시되는 API 엔드포인트가
         지정된 URL을 반영합니다.
         **참고:**
 		    - 기본 게이트웨이 URL에 사용자 정의 호스트 이름 및 도메인을 맵핑하는 DNS 항목을 구성해야
 		    합니다.
-		    - API의 엔드포인트가 사용자 정의 게이트웨이 URL을 반영하려면 API Connect 게이트웨이에서 강제 실행되도록
-		    API를 구성해야 합니다. 자세한 정보는 [API의 대체 호스트 지정 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}을 참조하십시오.
+		    - API의 엔드포인트가 사용자 정의 게이트웨이 URL을 반영하려면 API Connect 게이트웨이에서
+		    강제 실행되도록 API를 구성해야 합니다. 자세한 정보는 [API의 대체 호스트 지정 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}을 참조하십시오.
 		    - 동일한 사용자 정의 게이트웨이 URL이 여러 카탈로그에 적용되지 않도록 하십시오. 해당 시나리오의
 		    동작이 정의되지 않습니다.
 	        **팁**: 또한, API를 호출할 때 API 요청에서 HTTP 호스트 헤더를
@@ -313,21 +259,21 @@ API Manager 카탈로그를 작성하고 구성할 수 있습니다. 카탈로�
 
 	    - **사용자 정의 API URL**
 	    사용자 정의 API URL 텍스트 필드에 URL을 입력하십시오. 사용자 정의 API URL을 사용하여
-	    써드파티 게이트웨이에 배치되는 API에 대해 URL을 지정합니다.
+	    서드파티 게이트웨이에 배치되는 API에 대해 URL을 지정합니다.
 
 	    사용자 정의 API URL은 외부적으로 API가 알려져 있는 엔드포인트를 나타냅니다. 즉,
 	    개발자 포털에 공개되고 애플리케이션 개발자가 API를 호출하거나 알리기 위해 사용하는
 	    엔드포인트입니다.
 
-	    이 카탈로그에서 써드파티 게이트웨이 또는 외부 로드 밸런서를 사용 중인 경우 이 필드에 URL을
-	    제공하십시오. 그런 다음 개발자 포털에 표시되는 API 엔드포인트가
-	    지정된 URL을 반영합니다. 이러한 엔드포인트는 써드파티 게이트웨이 또는 로드 밸런서에 존재하고
+	    이 카탈로그에서 서드파티 게이트웨이 또는 외부 로드 밸런서를 사용 중인 경우 이 필드에 URL을
+	    제공하십시오. 그런 다음 개발자 포털에 표시되는 API 엔드포인트가 지정된 URL을
+	    반영합니다. 이러한 엔드포인트는 서드파티 게이트웨이 또는 로드 밸런서에 존재하고
 	    게이트웨이의 API 프록시 또는 API 어셈블리 엔드포인트에 맵핑되며 API 이용자에게 노출되는 가상 주소를
 	    예상합니다. 사용자 정의 API URL에서 파생된 엔드포인트는 일반적으로
 	    API의 주소를 알리기 위해 프로덕션 개발자 포털에 공개됩니다.
 
 	    **참고:** 카탈로그에 대해 사용자 정의 API URL을 지정하는 경우,
-	    이는 API 구성 시 지정하는 호스트 이름보다 우선합니다. 자세한 정보는 [API의 대체 호스트 지정 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}을 참조하십시오.
+	    이는 API 구성 시 지정하는 호스트 이름보다 우선합니다. 자세한 정보는 [API의 대체 호스트 지정 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}을 참조하십시오.
 
 	    - **개발자 포털 API 호출의 호스트 이름**:
 	    포트 API 엔드포인트 창 영역에서 개발자 포털 API 호출의 호스트 이름을 입력하십시오. 입력하는 호스트 이름은
@@ -340,6 +286,7 @@ API Manager 카탈로그를 작성하고 구성할 수 있습니다. 카탈로�
 7. **저장** 아이콘을 클릭하십시오.
 
 ## 카탈로그 파티셔닝
+{: #part_cat_managing_apis}
 
 {{site.data.keyword.apiconnect_short}}의 신디케이션 기능을 사용하려면
 신디케이션 기능이 필요한 모든 카탈로그에서 영역을 설정해야 합니다.
@@ -350,16 +297,17 @@ API Manager 카탈로그를 작성하고 구성할 수 있습니다. 카탈로�
 2. **설정** > **개요**를 클릭하고 **영역** 슬라이더 제어를 클릭하십시오.
 
 3. **영역 사용** 창에서 **사용**을 클릭하고 **저장** 아이콘 <img src="images/icon_save.png" alt="저장 아이콘"/>을 클릭하십시오.
-**영역 관리** 링크가 **영역** 슬라이더 제어 아래에 표시되며 **영역** 링크가 탐색 분할창에
+**영역 관리** 링크가
+**영역** 슬라이더 제어 아래에 표시되며 **영역** 링크가 탐색 분할창에
 추가됩니다. 이러한 링크 중 하나를 클릭하여 영역을 관리할 수 있습니다.
 
 카탈로그의 영역이 설정되며 '새 영역'이라는 기본 영역이
 작성됩니다.
 
-신디케이션에 대한 자세한 정보는 Knowledge Center 주제, [IBM API Connect에서 신디케이션 사용 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}을 참조하십시오.
+신디케이션에 대한 자세한 정보는 Knowledge Center 주제, [IBM API Connect에서 신디케이션 사용 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){: #new_window}을 참조하십시오.
 
 ## 개발자 포털 구성
-{: #config_dev_portal}
+{: #config_dev_portal_managing_apis}
 
 개발자 포털은 애플리케이션 개발자가 액세스하고 사용할 수 있도록 플랜이
 공개되는 위치입니다.
@@ -390,10 +338,10 @@ API의 Swagger UI 및 포럼, 블로그, 주석, 등급과 같은 추가 기능�
 API Manager UI에서 URL을 찾을 수 있습니다.
 
 개발자 포털에서 완료할 수 있는 태스크에 대한 자세한 정보는 [개발자 포털
-![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.html){:new_window}에 대한 IBM Knowledge Center 주제를 참조하십시오.
+![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.html){: #new_window}에 대한 IBM Knowledge Center 주제를 참조하십시오.
 
 ## 역할의 권한 구성
-{: #config_permissions_roles}
+{: #config_permissions_roles_managing_apis}
 
 API Manager에서 역할의 권한을 구성하려면 다음 단계를
 완료하십시오.

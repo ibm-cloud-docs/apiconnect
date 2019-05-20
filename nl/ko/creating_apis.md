@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2017-12-15"
 
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 
@@ -20,7 +24,7 @@ lastupdated: "2017-12-15"
 API를 작성할 수 있습니다.
 
 ## 개발자 툴킷 CLI
-{: #dev_tk_cli notoc}
+{: #dev_tk_cli_creating_apis notoc}
 
 개발자 툴킷은 {{site.data.keyword.apiconnect_long}}에
 API를 공개하기 위해 사용할 수 있는 명령행 인터페이스를 제공합니다.
@@ -30,7 +34,7 @@ API 및 제품을 정의합니다. 그리고 툴킷 명령을 사용하여
 {{site.data.keyword.apiconnect_long}}와 상호작용할 수 있습니다.
 
 ## API Designer
-{: #designer notoc}
+{: #designer_creating_apis notoc}
 
 API Designer는 개발자 툴킷 내의 오프라인 그래픽 사용자 인터페이스이며,
 API를 작성하고 구성하는 기능을 제공합니다.
@@ -39,12 +43,12 @@ API Designer가 기본 브라우저에서 열립니다. 또는 명령을 실행�
 이에 액세스할 수 있습니다.
 
 ## 개발자 툴킷 설치
-{: #install_dev_tk}
+{: #install_dev_tk_creating_apis}
 
 ### 전제조건
-{: #prereq_install_dev_tk}
+{: #prereq_install_dev_tk_creating_apis}
 
-시작하기 전에 툴킷을 사용할 시스템에 [Node.js ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://nodejs.org/en/){:new_window}를
+시작하기 전에 툴킷을 사용할 시스템에 [Node.js ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://nodejs.org/en/){: #new_window}를
 설치하고 `node`가 `PATH`에 있는지 확인하십시오.
 
 개발자 툴킷을 설치하면 다음 항목이 설치됩니다.
@@ -81,67 +85,54 @@ API Designer가 기본 브라우저에서 열립니다. 또는 명령을 실행�
 	{: codeblock}
 	
 ## LoopBack 커넥터 설치
-{: #install_lb_conn}
+{: #install_lb_conn_creating_apis}
 
 LoopBack 데이터 소스를 사용하여 백엔드 시스템의 데이터(예: 데이터베이스)에 액세스하려면,
 우선 데이터 소스 커넥터를 설치해야 합니다. 인메모리 및 이메일 커넥터는 LoopBack에서 기본 제공되므로
 설치하지 않아도 됩니다.
 
 ### 전제조건
-{: #prereq_install_lb_conn}
+{: #prereq_install_lb_conn_creating_apis}
 
 Oracle, DB2 및 SQLLite 커넥터는 C 컴파일러가 있어야 2진 확장기능을
-빌드하고 설치할 수 있습니다. 정확한 요구사항은 다음 표에서 설명하는 대로
-운영 체제마다 다릅니다.
+빌드하고 설치할 수 있습니다. 정확한 요구사항은 다음 목록에서 설명하는 대로 운영 체제마다
+다릅니다.
 
-<table summary="" id="apic_028__table_pre_reqs" class="defaultstyle style-scope doc-content">
-<caption>표 1. 운영 체제별 설치 요구사항</caption>
-<thead>
-<tr>
-<th style="width: 33.3%" id="th_d70e208" class="thleft style-scope doc-content">Windows</th>
-<th style="width: 33.3%" id="th_d70e210" class="thleft style-scope doc-content">Linux</th>
-<th style="width: 33.3%" id="th_d70e212" class="thleft style-scope doc-content">MAC OS X</th>
-</tr>
-</thead>
-<tbody >
-<tr class="style-scope doc-content doc-tr-odd">
-<td style="width: 33.3%" > [Microsoft .NET Framework 4 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.microsoft.com/en-us/download/details.aspx?id=17851)</td>
-<td style="width: 33.3%">Python v2.7(v3.x는 지원되지 않음)</td>
-<td style="width: 33.3%" > [Python Releases for Mac OS X ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.python.org/downloads/mac-osx/)</td>
-</tr>
-<tr><td style="width: 33.3%" > [Visual Studio ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.visualstudio.com/downloads/download-visual-studio-vs)</td>
-<td style="width: 33.3%">
-<code>make</code>
-</td>
-<td style="width: 33.3%" > [Xcode ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716)</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" > [Python v2.7.10 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.python.org/downloads/release/python-2710/)</td>
-<td style="width: 33.3%">C/C++ 컴파일러 도구 체인(예: GCC 버전 4.2 이상). </td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-<tr><td style="width: 33.3%" > [Microsoft Windows SDK for Windows 7 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279)</td>
-<td style="width: 33.3%">Debian 및 Debian에서 파생된 배포(Ubuntu, Mint 등)에서는 다음 명령을 사용하십시오.
+**Linux**
+- Python v2.7(v3.x는 지원되지 않음)
+
+- <code>make</code>
+
+- C/C++ 컴파일러 도구 체인(예: GCC 버전 4.2 이상).
+
+- Debian 및 Debian에서 파생된 배포(Ubuntu, Mint 등)에서는 다음 명령을 사용하십시오.
 <pre class="codeblock style-scope doc-content"><code>apt-get install build-essential</code></pre>
-</td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" >npm 버전 3. 다음 참고 사항을 참조하십시오.</td>
-<td style="width: 33.3%">&nbsp;</td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-</tbody>
-</table>
 
-**참고:** Windows 설치의 경우:
+**Mac OS X**
+- [Python Releases for Mac OS X ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.python.org/downloads/mac-osx/){: #new_window}
 
-- Visual Studio Enterprise를 구매하고자 하는 경우가 아니라면 Visual Studio Community를 사용하십시오. 설치 프로그램을
+- [Xcode ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716){: #new_window}
+
+**Windows**
+- [Microsoft .NET Framework 4 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.microsoft.com/en-us/download/details.aspx?id=17851){: #new_window}
+
+- [Visual Studio ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.visualstudio.com/downloads/download-visual-studio-vs){: #new_window}
+
+- [Python v2.7.10 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.python.org/downloads/release/python-2710/){: #new_window}
+
+- [Microsoft Windows SDK for Windows 7 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279){: #new_window}
+
+- npm 버전 3: 다음 참고 사항을 참조하십시오.
+
+**참고**: Visual Studio Enterprise를 구매하고자 하는 경우가 아니라면 Visual Studio Community를 사용하십시오. 설치 프로그램을
 실행하고 "Programming Languages" 아래의 "Visual C++"를 선택한 후에 기본 설치 위치를
 승인하십시오.
 
-- Node.js 및 원시 모듈의 64비트 빌드인 경우에는 Windows&trade; 7 64비트 SDK도 필요합니다. 
+Node.js 및 원시 모듈의 64비트 빌드인 경우에는 Windows&trade; 7 64비트 SDK도 필요합니다. 
 설치에 실패한 경우에는 우선 설치된 C++ 2010 x64&amp;x86 Redistributable을 설치 제거해 보십시오. 64비트 컴파일러가 설치되지 않았다는 오류가 발생하면,
 Windows&trade; SDK 7.1에 대한 컴파일러 업데이트가 필요할 수도 있습니다.
-- 다음 명령을 입력하여 npm 버전 3을 설치하십시오.
+
+다음 명령을 입력하여 npm 버전 3을 설치하십시오.
   ```
   npm install -g npm
   ```
@@ -164,10 +155,10 @@ API Designer를 사용 중이면 새 쉘 창을 여십시오.
 npm install --save <connector-package>
 ```
 {: codeblock}
-여기서, `<connector-package>`은(는) 표에 표시된 대로 LoopBack 커넥터에 대한 npm 패키지의 이름입니다.
+여기서, `<connector-package>`은(는) 표 1에 표시된 대로 LoopBack 커넥터에 대한 npm 패키지의 이름입니다.
 
 <table summary="" id="apic_connectors_table_pre_reqs" class="defaultstyle style-scope doc-content">
-<caption>표 3. LoopBack 커넥터</caption>
+<caption>표 1. LoopBack 커넥터</caption>
 <thead>
 <tr class="style-scope doc-content doc-tr-even">
 <th style="width: 50%" id="th_new_d70e1489" class="thleft style-scope doc-content">데이터 소스</th>
@@ -211,14 +202,15 @@ npm install --save <connector-package>
 </tbody>
 </table>
 
+
 ## CLI를 사용하여 LoopBack API 작성
-{: #create_lb_api}
+{: #create_lb_api_creating_apis}
 
 다음 프로시저는 명령 인터페이스를 사용하여 LoopBack&reg; API를 작성하는 방법을 설명합니다.
 
 
 ### 전제조건
-{: #prereq_create_lb_api}
+{: #prereq_create_lb_api_creating_apis}
 
 시작하기 전에, 바로 사용하고자 하는
 카탈로그의 카탈로그 ID를 가져오십시오. 카탈로그 ID를 가져오려면 다음 단계를 완료하십시오.  
@@ -318,7 +310,7 @@ CLI를 사용하여 LoopBack API를 작성하려면 다음 단계를 완료하�
       Checkpoint
     (Move up and down to reveal more choices)
     ```
-    각 옵션에 대한 자세한 정보는 [기본 제공 모델 사용 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){:new_window}을 참조하십시오.
+각 옵션에 대한 자세한 정보는 [기본 제공 모델 사용 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){: #new_window}을 참조하십시오.
 
 9. 기본 클래스를 선택하고 **Enter**를 누르십시오. 도구에서 모델의 REST API를 노출하고자 하는지
 묻습니다.
@@ -415,7 +407,7 @@ apic create --type datasource
 누르십시오.
 그러면 도구에서 데이터 소스를 프로젝트에 추가합니다.
 
-4. 호스트, 포트, 사용자, 비밀번호 및 데이터베이스 신임 정보를 입력하십시오.
+4. 호스트, 포트, 사용자, 비밀번호 및 데이터베이스 인증 정보를 입력하십시오.
 도구에서 LoopBack 커넥터를 설치하도록 프롬프트를 표시합니다.
 ```
 Install loopback-connector-<connector>?
@@ -424,7 +416,7 @@ Install loopback-connector-<connector>?
 5. `Yes`를 입력하십시오.
 도구에서 커넥터를 설치합니다.
 
-참고: Oracle 커넥터를 선택한 경우에는 Oracle 앱이 시작할 수 있도록
+**참고**: Oracle 커넥터를 선택한 경우에는 Oracle 앱이 시작할 수 있도록
 {{site.data.keyword.Bluemix_notm}}에서 환경 변수를 설정해야 합니다. 
 이를 수행하려면 다음 단계를 완료하십시오.
 
@@ -447,7 +439,7 @@ Install loopback-connector-<connector>?
 8. **저장**을 클릭하십시오.
 
 ### LoopBack 프로젝트 테스트
-{: #test_lb_proj}
+{: #test_lb_proj_creating_apis}
 
 알림을 테스트하려면 다음 단계를 완료하십시오.
 
@@ -478,7 +470,7 @@ Service loopback-project-gw (id 2) started on port 4002
 ```
 
 ### CLI에서 {{site.data.keyword.Bluemix_notm}}로 LoopBack 애플리케이션 공개
-{: #pub_lb_app_cli}
+{: #pub_lb_app_cli_creating_apis}
 
 명령행에서 {{site.data.keyword.Bluemix_short}}에 LoopBack 애플리케이션을 공개하려면 다음 단계를 완료하십시오.
 
@@ -512,7 +504,7 @@ apic organizations -s <region>.apiconnect.ibmcloud.com
   확실하지 않은 경우 메뉴 표시줄의 {{site.data.keyword.avatar}} 아이콘 <img src="images/i-avatar-icon.svg" alt="avatar icon"/>을 클릭하여 계정 및 지원 위젯을 열고 지역 필드를 확인하여 지역을 알 수 있습니다.
 7. 다음 명령을 입력하여 애플리케이션을 {{site.data.keyword.Bluemix_notm}}에 공개하십시오.
 ```
-apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
+apic apps:publish –app <app> -o <org> -s <region>.apiconnect.ibmcloud.com
 ```
 여기서,
   * `<app>`은(는) 앱의 이름입니다.
@@ -551,16 +543,16 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
     8. **저장**을 클릭하여 API를 저장하십시오.
 
 ## API Designer를 사용하여 LoopBack API 작성
-{: #create_lb_api_design}
+{: #create_lb_api_design_creating_apis}
 
 다음 프로시저는 API Designer를 사용하여 LoopBack API를 작성하는 방법에 대해 설명합니다.
 {:shortdesc}
 
 ### 전제조건
-{: #prereq_create_lb_api_design}
+{: #prereq_create_lb_api_design_creating_apis}
 
 **참고**: 다음 지시사항에서는 최신 버전의 개발자 툴킷을
-사용한다고 가정합니다. 최신 버전을 확인하려면 [npm ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.npmjs.com/package/apiconnect){:new_window} 패키지 페이지를 참조하십시오.
+사용한다고 가정합니다. 최신 버전을 확인하려면 [npm ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.npmjs.com/package/apiconnect){: #new_window} 패키지 페이지를 참조하십시오.
 
 우선 CLI를 통해 LoopBack 프로젝트를 작성해야 합니다. 이 작업을 수행하려면 다음 단계를 완료하십시오.
 
@@ -663,7 +655,7 @@ npm install --save <connector-package>
 **참고:** 인메모리 및 이메일 커넥터는 LoopBack에서 기본 제공되므로 설치하지 않아도 됩니다.
 
 <table>
-<caption>표 3. LoopBack 커넥터</caption>
+<caption>표 2. LoopBack 커넥터</caption>
 <thead>
 <tr class="style-scope doc-content doc-tr-even">
 <th style="width: 50%" id="3rd_d70e1489" class="thleft style-scope doc-content">데이터 소스</th>
@@ -707,7 +699,7 @@ npm install --save <connector-package>
 </tbody>
 </table>
 
-자세한 정보는 [LoopBack 문서 - 커넥터 빌드 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){:new_window}을 참조하십시오.
+자세한 정보는 [LoopBack 문서 - 커넥터 빌드 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){: #new_window}을 참조하십시오.
 
 **참고:** Oracle 커넥터를 선택한 경우에는 Oracle 앱이 시작할 수 있도록
 {{site.data.keyword.Bluemix_notm}}에서 환경 변수를 설정해야 합니다. 
@@ -744,7 +736,7 @@ http://localhost:<4001/>Running
 {"started":"2017-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-다음으로 제품을 작성해야 합니다. 자세한 정보는 [제품 작성](managing_products.html#create_product)을 참조하십시오.
+다음으로 제품을 작성해야 합니다. 자세한 정보는 [제품 작성](/docs/services/apiconnect?topic=apiconnect-managing_products#create_product_managing_products)을 참조하십시오.
 **팁**: 새 명령 프롬프트를 시작할 때마다, 현재 작업 중인 디렉토리가
 프로젝트 최상위 레벨 디렉토리인지 확인하십시오. 이를 수행하려면 다음 명령을
 입력하십시오.
@@ -753,10 +745,10 @@ cd <project directory name>
 ```
 
 ## 개발자 툴킷 설치 제거
-{: #uninstall_dev_tk}
+{: #uninstall_dev_tk_creating_apis}
 
 ### 전제조건
-{: #prereq_uninstall_dev_tk}
+{: #prereq_uninstall_dev_tk_creating_apis}
 
 시작하기 전에, 다음 명령을 입력하여 로컬로 실행 중인 앱을 중지해야
 합니다.

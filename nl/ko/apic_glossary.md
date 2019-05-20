@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2017-06-05"
 
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -13,6 +17,7 @@ lastupdated: "2017-06-05"
 {:pre: .pre}
 
 # 용어집
+{: #glossary_apic_glossary}
 
 {{site.data.keyword.apiconnect_short}}의 용어 및 정의가 포함된 용어집입니다.
 
@@ -26,7 +31,7 @@ lastupdated: "2017-06-05"
 
 - **보안 정의(security definition)**: 보안 정의는 API 보안의 특정 측면에 대한 모든 설정을 지정합니다. 예를 들어, API에 대한 액세스를 인증하는 데 사용하는 사용자 레지스트리입니다.
 
-- **사용자 레지스트리(user registry)**: 사용자 레지스트리는 카탈로그 및 API에 대한 액세스 권한 보안 방식입니다. 사용자는 API가 호출될 때 사용자 신임 정보가 제공되어야 하도록 사용자 레지스트리로 API를 보호할 수 있습니다.
+- **사용자 레지스트리(user registry)**: 사용자 레지스트리는 카탈로그 및 API에 대한 액세스 권한 보안 방식입니다. 사용자는 API가 호출될 때 사용자 인증 정보가 제공되어야 하도록 사용자 레지스트리로 API를 보호할 수 있습니다.
 
 - **샌드박스 카탈로그(Sandbox catalog)**: 샌드박스 카탈로그에서 공개 및 라이프사이클 조치에 대해 승인이 우회됩니다. 보류 중인 승인은 비샌드박스 카탈로그가 샌드박스로 변환될 때 취소됩니다. 샌드박스 카탈로그는 개발 중인 API를 테스트하는 데 사용됩니다.
 
@@ -70,3 +75,5 @@ lastupdated: "2017-06-05"
 - **LoopBack 모델(LoopBack model)**: LoopBack 모델은 애플리케이션 데이터를 나타내고 유효성 검증 규칙, 데이터 액세스 기능 및 비즈니스 로직을 포함하는 JavaScript 오브젝트입니다. LoopBack 모델은 기본적으로 REST API를 제공하고 백엔드 데이터에 대한 액세스 권한을 위해 데이터 소스에 연결됩니다.
 
 - **SSL 프로파일(SSL Profile)**: SSL 프로파일은 웹 사이트를 통한 데이터 전송 보안에 사용됩니다. SSL 인증서는 웹 사이트에 제출하는 정보가 도난을 당하거나 변조되지 않도록 보장합니다.
+
+

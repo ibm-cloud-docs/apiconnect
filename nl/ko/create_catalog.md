@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-24"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,6 +17,7 @@ lastupdated: "2017-10-24"
 {:pre: .pre}
 
 # 카탈로그 구성
+{: #create_catalog}
 
 API Manager 카탈로그를 작성하고 구성할 수 있습니다. 카탈로그는
 개발자 조직에 사용 가능하도록 하기 전에 테스트할 제품 및 API를 분리하는 데 유용합니다.
@@ -64,28 +71,28 @@ URL의 카탈로그 세그먼트를 구성하는 텍스트를 입력하십시오
 		    - 기본 게이트웨이 URL에 사용자 정의 호스트 이름 및 도메인을 맵핑하는 DNS 항목을 구성해야
 		    합니다.
 		    - API의 엔드포인트가 사용자 정의 게이트웨이 URL을 반영하려면 API Connect 게이트웨이에서
-		    강제 실행되도록 API를 구성해야 합니다. 자세한 정보는 [API의 대체 호스트 지정 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}을 참조하십시오.
+		    강제 실행되도록 API를 구성해야 합니다. 자세한 정보는 [API의 대체 호스트 지정 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}을 참조하십시오.
 		    - 동일한 사용자 정의 게이트웨이 URL이 여러 카탈로그에 적용되지 않도록 하십시오. 해당 시나리오의
 		    동작이 정의되지 않습니다.
 				**팁**: 또한, API를 호출할 때 API 요청에서 HTTP 호스트 헤더를 사용자 정의 게이트웨이 URL 필드에 지정한 값으로 설정할 수 있습니다.
 
 	    - **사용자 정의 API URL**
 	    사용자 정의 API URL 텍스트 필드에 URL을 입력하십시오. 사용자 정의 API URL을 사용하여
-	    써드파티 게이트웨이에 배치되는 API에 대해 URL을 지정합니다.
+	    서드파티 게이트웨이에 배치되는 API에 대해 URL을 지정합니다.
 
 	    사용자 정의 API URL은 외부적으로 API가 알려져 있는 엔드포인트를 나타냅니다. 즉,
 	    개발자 포털에 공개되고 애플리케이션 개발자가 API를 호출하거나 알리기 위해 사용하는
 	    엔드포인트입니다.
 
-	    이 카탈로그에서 써드파티 게이트웨이 또는 외부 로드 밸런서를 사용 중인 경우 이 필드에 URL을
+	    이 카탈로그에서 서드파티 게이트웨이 또는 외부 로드 밸런서를 사용 중인 경우 이 필드에 URL을
 	    제공하십시오. 그런 다음 개발자 포털에 표시되는 API 엔드포인트가 지정된 URL을
-	    반영합니다. 이러한 엔드포인트는 써드파티 게이트웨이 또는 로드 밸런서에 존재하고
+	    반영합니다. 이러한 엔드포인트는 서드파티 게이트웨이 또는 로드 밸런서에 존재하고
 	    게이트웨이의 API 프록시 또는 API 어셈블리 엔드포인트에 맵핑되며 API 이용자에게 노출되는 가상 주소를
 	    예상합니다. 사용자 정의 API URL에서 파생된 엔드포인트는 일반적으로
 	    API의 주소를 알리기 위해 프로덕션 개발자 포털에 공개됩니다.
 
 	    **참고:** 카탈로그에 대해 사용자 정의 API URL을 지정하는 경우,
-	    이는 API 구성 시 지정하는 호스트 이름보다 우선합니다. 자세한 정보는 [API의 대체 호스트 지정 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}을 참조하십시오.
+	    이는 API 구성 시 지정하는 호스트 이름보다 우선합니다. 자세한 정보는 [API의 대체 호스트 지정 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}을 참조하십시오.
 
 	    - **개발자 포털 API 호출의 호스트 이름**:
 	    포트 API 엔드포인트 창 영역에서 개발자 포털 API 호출의 호스트 이름을 입력하십시오. 입력하는 호스트 이름은
@@ -98,7 +105,7 @@ URL의 카탈로그 세그먼트를 구성하는 텍스트를 입력하십시오
 7. **저장** 아이콘을 클릭하십시오.
 
 ## 카탈로그 파티셔닝
-{: #apic_spaces}
+{: #apic_spaces_create_catalog}
 
 {{site.data.keyword.apiconnect_short}}의 신디케이션 기능을 사용하려면
 신디케이션 기능이 필요한 모든 카탈로그에서 영역을 설정해야 합니다.
@@ -116,4 +123,4 @@ URL의 카탈로그 세그먼트를 구성하는 텍스트를 입력하십시오
 카탈로그의 영역이 설정되며 '새 영역'이라는 기본 영역이
 작성됩니다.
 
-신디케이션에 대한 자세한 정보는 Knowledge Center 주제, [IBM API Connect에서 신디케이션 사용 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}을 참조하십시오.
+신디케이션에 대한 자세한 정보는 Knowledge Center 주제, [IBM API Connect에서 신디케이션 사용 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){: #new_window}을 참조하십시오.

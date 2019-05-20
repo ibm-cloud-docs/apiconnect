@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,12 +17,13 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # API 가져오기
+{: #importing_apis}
 
 Swagger 정의 파일을 사용하여 REST API를 추가할 수 있습니다.
 {:shortdesc}
 
 ## 전제조건
-{: #prereq_import_swagger}
+{: #prereq_import_swagger_importing_apis}
 
 시작하기 전에, 파일이 버전 2.0의 Swagger 스펙을 준수하는지
 확인하십시오. 파일 형식은 JSON 또는 YAML일 수 있습니다.
@@ -53,7 +60,7 @@ API 정의를 가져온 경우, 이는 **드래프트** 페이지의
 그런 다음, 기타 REST API 정의에서와 같이 API 정의를 편집할 수 있습니다.
 
 ## IBM Integration Bus에서 API 가져오기
-{: #tut_import_iib_apic}
+{: #tut_import_iib_apic_importing_apis}
 
 이 튜토리얼에서 사용자는 관리와 공개가 보다 용이할 수 있도록 IBM Integration Bus에서 작성한 REST API를 {{site.data.keyword.apiconnect_full}}에 가져올 수 있습니다. 
 {: shortdesc}
@@ -69,17 +76,19 @@ IBM Integration Bus를 사용하면 RESTful 웹 서비스로서 통합을
 * API에 대한 호출의 수를 제어할 수 있습니다.
 * 다중 버전의 API를 유지보수할 수 있습니다.
 
-자세한 이점은 [API 관리](managing_apis.html)를 참조하십시오.
+자세한 이점은 [API 관리](/docs/services/apiconnect?topic=apiconnect-managing_apis)를 참조하십시오.
 
 IBM Integration Bus에서 REST API를 작성하여
 {{site.data.keyword.apiconnect_short}}에 가져오려면
 다음 단계를 완료하십시오.
 1. IBM Integration Bus를 사용하여 REST API를 작성하십시오. 제한사항: IBM Integration Bus의 설치된 버전에서 제공되는 IBM Integration Toolkit에서만 REST API를 작성할 수 있습니다.
-	1. IBM Integration Toolkit을 사용하여 REST API를 작성하십시오. IBM Integration Bus에서 REST API 작성 태스크를 완료하는 방법에 대한 자세한 정보는 IBM Knowledge Center에서 [REST API를 사용하여 통합 솔루션 개발 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bi12016_.htm){: new_window}을 참조하십시오.
+	1. IBM Integration Toolkit을 사용하여 REST API를
+		작성하십시오. IBM Integration Bus에서 REST API 작성 태스크를 완료하는 방법에 대한 자세한 정보는 IBM Knowledge Center에서 [REST API를 사용하여 통합 솔루션 개발 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bi12016_.htm){: #new_window}을 참조하십시오.
 		
 	2. **파일** > **새로 작성** > **REST API**를 선택하여 REST API 마법사 작성을 여십시오.
 		
-	3. REST API의 이름을 입력하십시오. 지정하는 이름은 IBM Integration Toolkit에서 프로젝트의 이름으로 사용됩니다.
+	3. REST API의 이름을 입력하십시오. 지정하는 이름은 IBM Integration Toolkit에서 프로젝트의 이름으로
+		사용됩니다.
 		
 	4. 다음의 REST API 작성 방법 중 하나를 선택하고 해당 프로시저를 완료하십시오.
 		
@@ -107,7 +116,7 @@ IBM Integration Bus on Cloud가 통합 플로우에 지정한
 6. 오퍼레이션의 전체 URL을 클립보드에 복사하십시오. 이는 {{site.data.keyword.apiconnect_short}}에서 작업할 API를 구성할 때 필요합니다. 기본 인증을 사용한 경우에는 지정된 사용자 이름과 비밀번호도 기록하십시오.
 
 ### IBM Integration Bus를 API Connect와 통합하십시오.
-{: #integrateiibapic}
+{: #integrateiibapic_importing_apis}
 
 1. IBM Integration Toolkit의 REST API 프로젝트와 연관된 Swagger 파일을 {{site.data.keyword.apiconnect_short}} 서비스로 가져오십시오. 
 	1. {{site.data.keyword.apiconnect_short}} {{site.data.keyword.Bluemix_notm}} 서비스에 로그인하십시오.
@@ -132,14 +141,15 @@ IBM Integration Bus on Cloud가 통합 플로우에 지정한
 	5. **호출**을 선택하십시오.
 	6. API에서 예상 응답을 수신하는지 확인하십시오. 
 	
-API 정의를 가져오고 통합하는 경우, 사용자는 기타 REST API 정의에서와 같이 API를 관리하고 규정할 수 있습니다. API에 대한 자세한 정보는 [API 관리](managing_apis.html)를 참조하십시오.
+API 정의를 가져오고 통합하는 경우, 사용자는 기타 REST API 정의에서와 같이 API를 관리하고 규정할 수 있습니다. API에 대한 자세한 정보는 [API 관리](/docs/services/apiconnect?topic=apiconnect-managing_apis)를 참조하십시오.
 
 ## IBM API Connect에서 IBM App Connect Professional로 작성된 API 공개
+{: #publish_importing_apis}
 
 이 튜토리얼에서는 IBM App Connect Professional 및 {{site.data.keyword.apiconnect_full}}를 사용하여 작성한 REST API를 공개하고 관리할 수 있습니다.
 
 ### 전제조건
-{: #prereq_pub_api_appconn}
+{: #prereq_pub_api_appconn_importing_apis}
 
 이 튜토리얼을 완료하려면 IBM App Connect
 Professional on Cloud와 {{site.data.keyword.apiconnect_short}}의 올바른 계정이 있어야 합니다. REST
@@ -156,14 +166,14 @@ IBM App Connect Professional을
 - API에 대한 호출의 수를 제어할 수 있습니다.
 - 다중 버전의 API를 유지보수할 수 있습니다.
 
-자세한 이점은 [API 관리](managing_apis.html)를 참조하십시오.
+자세한 이점은 [API 관리](/docs/services/apiconnect?topic=apiconnect-managing_apis)를 참조하십시오.
 IBM App Connect Professional에서 REST API를 작성하고
 {{site.data.keyword.apiconnect_short}}에 공개하려면
 다음 단계를 완료하십시오.
 
 1. IBM App Connect Professional을
 사용하여 REST API를 작성하십시오.
-  - IBM ID를 사용하여 [App Connect Professional Web Management Console ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://appconnect.ibmcloud.com/professional/){:new_window}에 로그인하십시오. IBM App Connect Professional Web Management Console에서 REST API를 작성하는 태스크를 완료하는 방법에 대한 자세한 정보는 IBM Knowledge Center의 [관리 콘솔 설정 정보 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window}를 참조하십시오.
+  - IBM ID를 사용하여 [App Connect Professional Web Management Console ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud/app-connect){:new_window}에 로그인하십시오. IBM App Connect Professional Web Management Console에서 REST API를 작성하는 태스크를 완료하는 방법에 대한 자세한 정보는 IBM Knowledge Center의 [관리 콘솔 설정 정보 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window}를 참조하십시오.
   - 아직 선택되지 않은 경우 프로덕션 탭을 선택하십시오.
   - 탐색 패널에서 **저장소** > **구성**을 선택하십시오.
   - 프로젝트 구성 화면에서 {{site.data.keyword.apiconnect_short}}에 공개할 프로젝트를 선택하십시오.  공개할 프로젝트의 구성 세부사항이 표시됩니다.
@@ -211,10 +221,12 @@ IBM App Connect Professional에서 REST API를 작성하고
 IBM App Connect API를 {{site.data.keyword.apiconnect_short}}와 연관시키십시오.
 
 #### Swagger API 정의 가져오기
+{: #import_sw_importing_apis}
 
 IBM App Connect의 REST API 프로젝트와 연관된 Swagger 파일을 {{site.data.keyword.apiconnect_short}} 서비스에 가져오려면 다음 단계를 따르십시오.
 
-1. {{site.data.keyword.apiconnect_short}} {{site.data.keyword.Bluemix_notm}} 서비스에 로그인하십시오.
+1. {{site.data.keyword.apiconnect_short}}
+{{site.data.keyword.Bluemix_notm}} 서비스에 로그인하십시오.
 
 1.  API Manager UI 제목 표시줄에서 **이동 위치** > **드래프트**를 선택하십시오.
 
@@ -237,7 +249,7 @@ API 탭이 열립니다.
 8. 다음 정보로 URL 필드의 host/basePath를 구성하십시오.
 
 - **hostname**: 클라우드 인스턴스에 따라 다른 설정입니다. 이 설정에 대한 자세한 정보는
-[IBM App Connect Professional ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://provide.castiron.ibmcloud.com){:new_window}을 참조하십시오.
+[IBM App Connect Professional ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SS3LC4_7.5.2.0/mapfiles/ic_home.html){:new_window}을 참조하십시오.
 
 - **basepath**: App Connect Professional 오케스트레이션의 httpReceive Request 참고에 지정하는 경로입니다.
 
@@ -245,6 +257,7 @@ API 탭이 열립니다.
 비밀번호를 추가하고 저장하십시오.
 
 #### API 테스트
+{: #test_importing_apis}
 
 API를 테스트하려면 다음 단계를 수행하십시오.
 
@@ -256,6 +269,6 @@ API를 테스트하려면 다음 단계를 수행하십시오.
 6. API에서 예상 응답을 수신하는지 확인하십시오.
 
 API 정의를 가져오고 통합하는 경우, 사용자는 기타 REST API 정의에서와 같이 API를
-관리하고 규정할 수 있습니다. API에 대한 자세한 정보는 [API 관리](managing_apis.html)를 참조하십시오.
+관리하고 규정할 수 있습니다. API에 대한 자세한 정보는 [API 관리](/docs/services/apiconnect?topic=apiconnect-managing_apis)를 참조하십시오.
 
 

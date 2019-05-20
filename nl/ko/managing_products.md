@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,11 +17,12 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # 제품 관리
+{: #managing_products}
 
-제품 관리 방법에 대한 세부사항은 IBM&reg; Knowledge Center 문서 [제품 관리 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){:new_window}을 참조하십시오.
+제품 관리 방법에 대한 세부사항은 IBM&reg; Knowledge Center 문서 [제품 관리 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){: #new_window}을 참조하십시오.
 
 ## 제품 라이프사이클
-{: #prod_lifecycle}
+{: #prod_lifecycle_managing_products}
 
 제품 버전을 관리할 때 사용자는 일련의 라이프사이클 상태를 통해
 이를 이동합니다. 즉, 처음에는 드래프트 제품 버전을 환경에 스테이징하고, 애플리케이션 개발자가
@@ -38,8 +45,8 @@ lastupdated: "2017-12-15"
 <tr class="style-scope doc-content doc-tr-even">
 <td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">스테이징됨</td>
 <td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">제품 버전의 변경 불가능한 사본이 대상 환경에
-배치됩니다. 스테이징됨은 드래프트 제품에서 스테이징할 때의 초기 상태입니다. 
-제품이 스테이징됨 상태인 경우, 개발자는 아직 이를 보거나 등록할 수 없습니다.</td>
+배치됩니다. 스테이징됨은 드래프트 제품에서 스테이징할 때의 초기 상태입니다. 제품이 스테이징됨 상태인 경우, 개발자는 아직 이를 보거나 등록할 수
+없습니다.</td>
 </tr>
 <tr class="style-scope doc-content doc-tr-odd">
 <td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">공개됨</td>
@@ -47,7 +54,7 @@ lastupdated: "2017-12-15"
 이를 등록할 수 있습니다.</td>
 </tr>
 <tr class="style-scope doc-content doc-tr-even">
-<td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">사용되지 않음</td>
+<td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">더 이상 사용되지 않음</td>
 <td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">현재 해당 애플리케이션을 등록 중인 개발자만 제품 버전을 볼 수 있습니다. 제품을 새로 등록할 수는 없습니다.</td>
 </tr>
 <tr class="style-scope doc-content doc-tr-odd">
@@ -64,6 +71,7 @@ API Manager UI의 제품 페이지에 표시됩니다.</td>
 </table>
 
 ### 제품 라이프사이클 플로우
+{: #prod_lifecycle_flows_managing_products}
 
 다음 다이어그램은 제품 버전의 가능한 라이프사이클 상태
 및 제품 버전을 한 라이프사이클 상태에서 다른 라이프사이클 상태로 이동하는 제품 관리 오퍼레이션을
@@ -73,7 +81,7 @@ API Manager UI의 제품 페이지에 표시됩니다.</td>
 
 
 ## 제품 작성
-{: #create_product}
+{: #create_product_managing_products}
 
 제품을 작성하면 개발자가 사용할 수 있는 하나의 오퍼링으로 API 및 플랜 세트를
 수집할 수 있습니다. 플랜에는 플랜에 전체적으로 적용되거나 API의 각 오퍼레이션마다 지정될 수 있는
@@ -123,7 +131,7 @@ API Designer가 기본 브라우저에서 열립니다.
     개발자 조직 또는 커뮤니티를 검색하려면 제품이 스테이징됨, 공개됨
     또는 사용되지 않음 상태여야 합니다. 제품이 스테이징됨, 공개됨 또는 사용되지 않음 상태인
     카탈로그가 샌드박스 카탈로그가 아닌 경우, 이 상태 중 하나가 유지되는 동안에는 제품에 대한 기타 변경을
-    수행할 수 없습니다. 자세한 정보는 [제품 라이프사이클](#prod_lifecycle)을 참조하십시오.
+    수행할 수 없습니다. 자세한 정보는 [제품 라이프사이클](#prod_lifecycle_managing_products)을 참조하십시오.
 
 8. 제품을 등록할 수 있는 사용자를 지정하십시오. **인증된 사용자** 또는
 **사용자 정의**를 선택할 수 있습니다. **사용자 정의**를
@@ -161,8 +169,8 @@ API 위에 마우스 커서를 올려 놓으십시오.
 
 14. **선택사항**:
 플랜에 비율 한계를 추가하려면 **무제한** 선택란을 선택 취소한 후에
-적용하고자 하는 비율 한계를 지정하십시오. **하드 한계 적용** 선택란이
-선택된 경우에는 비율 한계에 도달한 이후 플랜이 애플리케이션의 API 호출을 중지시키며,
+적용하고자 하는 비율 한계를 지정하십시오. **하드 한계 적용** 선택란이 선택된 경우에는
+비율 한계에 도달한 이후 플랜이 애플리케이션의 API 호출을 중지시키며,
 그렇지 않은 경우에는 경고가 표시됩니다.
 
     **참고:** 플랜 레벨에서 비율 한계를 적용하면 플랜 내의 각 오퍼레이션에 적용되는
@@ -190,11 +198,11 @@ API 위에 마우스 커서를 올려 놓으십시오.
 
 제품이 작성되었으며, 이제 개발자가 사용할 수 있는 하나의 오퍼링으로 API 및 플랜 세트가
 지정되었습니다.
-그런 다음, 제품을 카탈로그로 스테이징하십시오. 자세한 정보는 [제품 스테이징](#stage_product})을 참조하십시오.
+다음으로, 다음 섹션 [제품 스테이징](#stage_product_managing_products})에 설명된 대로 카탈로그로 제품을 스테이징하십시오.
 
 
 ## 제품 스테이징
-{: #stage_product}
+{: #stage_product_managing_products}
 
 공개 이전에 카탈로그에서 해당 제품의 특정 버전을 작성하려면 제품을
 스테이징하십시오. 제품이 스테이징됨 상태인 경우, 개발자는 아직 이를 보거나 등록할 수
@@ -239,12 +247,11 @@ API 위에 마우스 커서를 올려 놓으십시오.
 
 - {{site.data.keyword.Bluemix_notm}} **대시보드**를 여십시오. 애플리케이션 타일이 애플리케이션 섹션에 나타납니다.
 
-API Manager를 열어서 애플리케이션 개발자가 개발자 포털에서 액세스할 수 있도록
-제품을 커뮤니티에 공개하십시오. 자세한 정보는 [제품 공개](#publish_proj})를 참조하십시오.
+API Manager를 열어서 다음 섹션 [제품 공개](#publish_proj_managing_products})에 설명된 대로 애플리케이션 개발자가 개발자 포털을 통해 액세스할 수 있는 커뮤니티에 제품을 공개하십시오.
 
 
 ## 제품 공개
-{: #publish_proj}
+{: #publish_proj_managing_products}
 
 애플리케이션 개발자는 플랜이 공개될 때 API를 보고 이에 액세스할 수 있습니다.
 제품을 공개하면 애플리케이션 개발자가 사용할 수 있도록 {{site.data.keyword.Bluemix_short}}
@@ -252,10 +259,10 @@ API Manager를 열어서 애플리케이션 개발자가 개발자 포털에서 
 있습니다.
 
 ### 전제조건
-{: #prereq_publish_proj}
+{: #prereq_publish_proj_managing_products}
 
 공개하기 전에 우선 제품을 스테이징해야 합니다. 제품 스테이징에 대한 자세한 정보는
-[제품 스테이징](#stage_product)을 참조하십시오.
+[제품 스테이징](#stage_product_managing_products)을 참조하십시오.
 
 제품을 공개하려면 다음 단계를 완료하십시오.
 
@@ -287,14 +294,16 @@ API Manager를 열어서 애플리케이션 개발자가 개발자 포털에서 
 
 
 ## Bluemix에 제품 공개
+{: #pub_to_bm_managing_products}
 
 {{site.data.keyword.apiconnect_short}} 대시보드의 **API 탐색** 섹션에서 제품을 보려면 다음 단계를 완료하십시오.
 
 ### 전제조건
+{: #prereq_pub_bm_managing_products}
 
 시작하기 전에, LoopBack으로 구현된 REST API를 공개하려면 앱 런타임을
 공개했으며 새 앱을 지시하는 호출 프록시로 제품을 스테이징했는지
-확인하십시오. 이 작업을 수행하는 방법에 대한 자세한 정보는 [LoopBack 애플리케이션에서 스테이징 및 공개](managing_apis.html#stage_publish_lb_app)를 참조하십시오.
+확인하십시오. 이 작업을 수행하는 방법에 대한 자세한 정보는 [LoopBack 애플리케이션에서 스테이징 및 공개](/docs/services/apiconnect?topic=apiconnect-managing_apis#stage_publish_lb_app_managing_apis)를 참조하십시오.
 
 1. API Manager UI에서 **추가** > **카탈로그**를 클릭하십시오. **카탈로그 추가** 창이 표시됩니다.
 
