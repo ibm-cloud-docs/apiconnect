@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,10 +17,14 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Installation du kit d'outils API Connect
+{: #tut_prereq_install_toolkit}
+
 **Durée**: 15 mn  
 **Niveau de compétence** : Débutant  
 
-## Ce dont vous avez besoin
+## Prérequis
+{: #prereq_tut_prereq_install_toolkit}
+
 1. Node.js
 2. Node Product Manager (NPM)
 3. {{site.data.keyword.apiconnect_full}} _Lite_
@@ -28,10 +38,12 @@ lastupdated: "2017-10-31"
 
 
 ## Installation de node.js
+{: #nodejs_tut_prereq_install_toolkit}
+
 1. Téléchargez et installez node.js à partir de l'une des deux sources suivantes :
-   * [https://nodejs.org/en/download/ ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://nodejs.org/en/download/){:new_window} (Remarque : Téléchargez la version LTS pour votre plateforme, et non la plus récente, ou vous pourriez rencontrer des problèmes.)
+   * [https://nodejs.org/en/download/ ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://nodejs.org/en/download/){: #new_window} (Remarque : Téléchargez la version LTS pour votre plateforme, et non la plus récente, ou vous pourriez rencontrer des problèmes.)
       **OU**
-   * [https://developer.ibm.com/node/sdk/v6/ ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.ibm.com/node/sdk/v6/){:new_window}  
+   * [https://developer.ibm.com/node/sdk/v6/ ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://developer.ibm.com/node/sdk/v6/){: #new_window}  
 
     _Le processus d'installation de node.js installe également **npm** (Node Package Manager)_.
 
@@ -48,11 +60,14 @@ lastupdated: "2017-10-31"
 
 
 ## Installez le kit d'outils API Connect et Microgateway
+{: #tk_micro_tut_prereq_install_toolkit}
+
 1. Mettez à jour le fichier npm config afin d'autoriser l'utilisation de certificats non sécurisés.  
    `npm config -g set strict-ssl false`  
 
 2. Installez le kit d'outils {{site.data.keyword.apiconnect_short}} à partir de **npm**.  
-    `npm install -g apiconnect`
+    `    npm install -g apiconnect
+    `
 
 3. Vérifiez la version installée.  
     `apic -v`

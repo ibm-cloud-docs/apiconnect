@@ -1,8 +1,13 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-10"
+  years: 2019
+lastupdated: "2019-3-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 
 ---
 
@@ -13,27 +18,33 @@ lastupdated: "2017-10-10"
 {:pre: .pre}
 
 # Archivage et suppression de produits d'API
+{: #tut_manage_remove}
+
 **Durée**: 15 mn  
 **Niveau de compétence** : Débutant 
 
-## Prérequis
-
-1. [Configurez votre instance {{site.data.keyword.apiconnect_full}}](tut_prereq_set_up_apic_instance.html).
-
-2. Exécutez le [tutoriel Substitution d'un produit d'API](tut_manage_supercede.html).
-
----
 ## Objectif
+{: #object_tut_manage_remove}
 Dans ce tutoriel, vous allez supprimer, archiver et retirer une API.
 
 ---
+## Prérequis
+{: #prereq_tut_manage_remove}
+
+1. [Configurez votre instance {{site.data.keyword.apiconnect_full}}](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
+
+2. Exécutez le [tutoriel Substitution d'un produit d'API](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede).
+
+---
+
 ## Suppression d'un produit d'API
-1. Connectez-vous à {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://console.ng.bluemix.net/login){:new_window}.
+{: #delete_tut_manage_remove}
 
-2. Dans le tableau de bord {{site.data.keyword.Bluemix_short}}, lancez le service {{site.data.keyword.apiconnect_short}}.
-![](images/Bluemix.png)
+1. Connectez-vous à {{site.data.keyword.Bluemix_short}} : https://cloud.ibm.com.
+2. Dans le **Tableau de bord** {{site.data.keyword.Bluemix_notm}}, cliquez sur **Cloud Foundary Services**. Lancez le service {{site.data.keyword.apiconnect_short}}. 
+3. Dans {{site.data.keyword.apiconnect_short}}, vérifiez que le panneau de navigation est ouvert. S'il ne l'est pas, cliquez sur **>>** pour l'ouvrir.  
 
-3. Dans le gestionnaire d'API, si vous n'avez pas encore épinglé le panneau de navigation de l'interface utilisateur, cliquez sur l'icône **Accéder à** ![](images/navigate-to.png). Le panneau de navigation de l'interface utilisateur du gestionnaire d'API s'ouvre. Pour épingler le panneau de Navigation de l'interface utilisateur, cliquez sur l'icône **Epingler le menu** ![](images/pinned.png).
+  ![](images/cloud-apic-dashboard.png)
 
 4. Cliquez sur **Bac à sable** pour ouvrir le catalogue de bac à sable. **Remarque** : Vous devrez peut-être revenir dans le tableau de bord pour voir les catalogues disponibles. Il est également possible que votre page de tableau de bord affiche les catalogues sous forme de mosaïques au lieu d'une liste.
 ![](images/del-sandbox-list.png)
@@ -50,6 +61,8 @@ Dans ce tutoriel, vous allez supprimer, archiver et retirer une API.
 
 
 ## Archivage d'un produit d'API
+{: #archive_tut_manage_remove}
+
 1. Cliquez sur les points de suspension verticaux sur la ligne **API Weather Provider 2.0.0**.  
 ![](images/del-prod-list2.png)
 
@@ -85,7 +98,9 @@ Dans ce tutoriel, vous allez supprimer, archiver et retirer une API.
 
  
  
-## Tâches exécutées dans ce tutoriel
+## Conclusion
+{: #conclusion_tut_manage_remove}
+
 Dans ce tutoriel, vous avez effectué les activités suivantes :
 
 1. Suppression d'un produit d'API

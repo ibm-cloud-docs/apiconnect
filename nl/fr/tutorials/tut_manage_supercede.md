@@ -1,8 +1,13 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-31"
+  years: 2019
+lastupdated: "2017-3-18"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 
 ---
 
@@ -13,30 +18,34 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Remplacement de produits d'API
+{: #tut_manage_supercede}
+
 **Durée**: 15 mn  
 **Niveau de compétence** : Débutant  
 
-## Prérequis
-
-1. [Configurez votre instance {{site.data.keyword.apiconnect_full}}](tut_prereq_set_up_apic_instance.html).
-
-2. Exécutez le [tutoriel Remplacement d'un produit d'API](tut_manage_replace.html).
-
----
 ## Objectif
+{: #object_tut_manage_supercede}
+
 Dans ce tutoriel, vous allez remplacer une API existante par une nouvelle API.
 
 ---
+## Prérequis
+{: #prereq_tut_manage_supercede}
+
+1. [Configurez votre instance {{site.data.keyword.apiconnect_full}}](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
+
+2. Exécutez le [tutoriel Remplacement d'un produit d'API](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_replace).
+
+---
+
 ## Remplacement d'un produit d'API
-1. Connectez-vous à {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://console.ng.bluemix.net/login){:new_window}.
+{: #super_tut_manage_supercede}
 
-2. Dans le tableau de bord {{site.data.keyword.Bluemix_notm}}, lancez le service {{site.data.keyword.apiconnect_short}}.
-![](images/Bluemix.png)
+1. Connectez-vous à {{site.data.keyword.Bluemix_short}} : https://cloud.ibm.com.
+2. Dans le **Tableau de bord** {{site.data.keyword.Bluemix_notm}}, cliquez sur **Cloud Foundary Services**. Lancez le service {{site.data.keyword.apiconnect_short}}. 
+3. Dans {{site.data.keyword.apiconnect_short}}, vérifiez que le panneau de navigation est ouvert. S'il ne l'est pas, cliquez sur **>>** pour l'ouvrir.  
 
-3. Dans le gestionnaire d'API, si vous n'avez pas encore épinglé le panneau de navigation de l'interface utilisateur, cliquez sur l'icône **Accéder à** ![](images/navigate-to.png). Le panneau de navigation de l'interface utilisateur du gestionnaire d'API s'ouvre. Pour épingler le panneau de Navigation de l'interface utilisateur, cliquez sur l'icône **Epingler le menu** ![](images/pinned.png).
-
-4. Cliquez sur **Bac à sable** pour ouvrir le catalogue de bac à sable. **Remarque** : Il est possible que votre écran affiche des mosaïques au lieu d'une liste de catalogues.
-![](images/del-sandbox-list.png)
+  ![](images/cloud-apic-dashboard.png)
 
 4. Cliquez sur **Brouillons** > **API**.
 
@@ -101,7 +110,9 @@ Dans ce tutoriel, vous allez remplacer une API existante par une nouvelle API.
  
 
  
-## Tâches exécutées dans ce tutoriel
+## Conclusion
+{: #conclusion_tut_manage_supercede}
+
 Dans ce tutoriel, vous avez effectué les activités suivantes :
 
 1. Mise à jour d'un produit d'API.

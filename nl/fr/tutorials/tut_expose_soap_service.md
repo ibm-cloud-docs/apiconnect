@@ -1,8 +1,12 @@
 ---
 
 copyright:
-years: 2017
-lastupdated: "2017-11-14"
+years: 2019
+lastupdated: "2019-3-12"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
 
 ---
 
@@ -14,29 +18,41 @@ lastupdated: "2017-11-14"
  
 
 # Exposition d'un service SOAP en tant qu'API REST
+{: #tut_expose_soap_service}
+
 **Durée** : 20 mn  
 **Niveau de compétence** : Débutant  
 
 ---
 ## Objectif
+{: #object_tut_expose_soap_service}
+
 Dans le gestionnaire d'API, vous allez créer une API REST qui accédera à un service SOAP existant et l'exposera en tant qu'API REST.
 
 ## Prérequis
-1. Avant de commencer, vous devez [configurer votre instance {{site.data.keyword.apiconnect_full}}](tut_prereq_set_up_apic_instance.html).
-2. Avant de commencer, copiez le fichier de test [weatherprovider.wsdl ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} dans votre système de fichiers local.
+{: #prereq_tut_expose_soap_service}
+
+1. Avant de commencer, vous devez [configurer votre instance {{site.data.keyword.apiconnect_full}}](/docs/services/apiconnect?topic=apiconnect-tut_prereq_set_up_apic_instance).
+2. Avant de commencer, copiez le fichier de test [weatherprovider.wsdl ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: #new_window} dans votre système de fichiers local.
 	>![images/info.png]
 	>Vous pouvez cliquer sur **Brut**, puis sauvegarder la page résultante sur votre système de fichiers local en tant que fichier `.wsdl`.
 
 ---
 ## Configuration d'une définition d'API REST
-1. Connectez-vous à {{site.data.keyword.Bluemix_short}} : [https://new-console.ng.bluemix.net/login ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://new-console.ng.bluemix.net/login){:new_window}.
-2. Dans le **tableau de bord** {{site.data.keyword.Bluemix_notm}}, faites défiler vers le bas et sélectionnez {{site.data.keyword.apiconnect_short}}. Vous pouvez également, depuis l'icône de menu, sélectionner **Services** et ensuite **API** pour ouvrir la fenêtre **Utiliser des API**, puis sélectionner **API Connect**. Depuis la page **API Connect**, il suffit d'appuyer sur `Créer` ou d'ajuster les paramètres par défaut. Pour les besoins de cet exercice, laissez l'instance non liée et modifiez le nom de service pour le reconnaître plus facilement par la suite. Par exemple, nommez-le `API Connect-weather-exercise`.
-Appuyez sur le bouton `Créer` pour lancer le service {{site.data.keyword.apiconnect_short}}.  
-Il est possible qu'une alerte décrivant les nouveautés ou la page d'accueil d'informations **API brouillons** s'affiche. Après avoir lu les informations, cliquez sur l'icône **Compris** pour afficher le gestionnaire d'API.
-3. Dans {{site.data.keyword.apiconnect_short}}, si vous n'avez pas encore épinglé le panneau de navigation de l'interface utilisateur, cliquez sur l'icône **Accéder à** ![](images/navigate-to.png). Le panneau de navigation de l'interface utilisateur du gestionnaire d'API s'ouvre. Pour épingler le panneau de Navigation de l'interface utilisateur, cliquez sur l'icône **Epingler le menu** ![](images/pinned.png).
-4. Sélectionnez **Brouillons** le panneau de navigation de l'interface utilisateur, puis cliquez sur l'onglet **API**. L'onglet **API** s'ouvre.
-	![](images/drafts-api-1.png)
+{: #setup_tut_expose_soap_service}
+
+1. Connectez-vous à {{site.data.keyword.Bluemix_short}} : https://cloud.ibm.com.
+2. Dans le **Tableau de bord** {{site.data.keyword.Bluemix_notm}}, cliquez sur **Cloud Foundary Services**. Lancez le service {{site.data.keyword.apiconnect_short}}. 
+3. Dans {{site.data.keyword.apiconnect_short}}, vérifiez que le panneau de navigation est ouvert. S'il ne l'est pas, cliquez sur **>>** pour l'ouvrir.  
+
+  ![](images/cloud-apic-dashboard.png)
+
+4. Sélectionnez **Brouillons** dans le panneau de navigation.
 5. Sélectionnez **Ajouter +** > **Nouvelle API**.
+
+    ![](images/cloud-add-api-new.png)  
+
+	
 6. Indiquez les informations de base sur l'API.
 	- Dans la zone **Titre**, entrez `Weather Data`.
 	- Dans la zone **Nom** laissez la valeur `weather-data` renseignée lorsque vous avez entré le titre.	
@@ -53,18 +69,25 @@ Il est possible qu'une alerte décrivant les nouveautés ou la page d'accueil d'
 	- Vérifiez que la case **Publier ce produit dans un catalogue** est cochée, puis sélectionnez **Bac à sable** comme catalogue cible.
 	![](images/new-api-2.png)
 	- Cliquez sur **Créer une API**. L'onglet **Conception** du brouillon de votre définition d'API s'affiche.
-9. Votre API est maintenant créée. La page Conception s'affiche. Cliquez sur **Sécurité** dans la barre de navigation.
-![](images/api-security-1.png)
-10. Désélectionnez l'option **ID client**.
-![](images/api-security-2.png)
-	>![](images/info.png)
-	>Vous pouvez remarquer qu'une icône de triangle jaune s'affiche en regard de l'icône de sauvegarde disque.  Ce triangle vous avertit que des définitions qui ont été définies n'ont pas encore été utilisées. (Ceci n'affectera pas la définition de l'API.)
-11. Dans la section **Définitions**, cliquez sur l'icône **Ajouter une définition**, ![](images/add-icon.png) puis développez la nouvelle définition en cliquant dessus.
+9. Votre API est maintenant créée. La page Conception s'affiche.
+
+   ![](images/design-new-1.png)
+
+10. Cliquez sur **Définitions** dans la barre de navigation. Cliquez sur l'icône **Ajouter une définition** ![](images/add-icon.png). 
+
+11. Développez la nouvelle définition en cliquant dessus. 
 12. Nommez la définition `Weather Data Output`.
-13. La définition aura cinq propriétés. Clique quatre fois sur **Ajouter une propriété** pour ajouter les propriétés supplémentaires. Modifiez le `Nom de propriété` en vous aidant des informations suivantes et utilisez la valeur par défaut pour les zones `Description`, `Type` et `Exemple`:
+13. La définition aura cinq propriétés. Clique quatre fois sur **Ajouter une propriété** pour ajouter les propriétés supplémentaires. Modifiez le `Nom de propriété` en vous aidant des informations suivantes et utilisez la valeur par défaut pour les zones `Description`, `Type` et `Exemple` : 
+    a. Ajoutez de nouvelles propriétés pour la définition **Weather Data Output**.     
+       - Nom : zip         /  Type : chaîne   
+       - Nom : température /  Type : entier   
+       - Nom : humidité    /  Type : entier   
+       - Nom : ville        /  Type : chaîne   
+       - Nom : état / Type : chaîne   
+
 	![](images/definition-new-1.png)
-14. Dans la section **Chemins**, cliquez sur l'icône **Ajouter un chemin** ![](images/add-icon.png).
-15. Dans la zone **Chemin** du chemin que vous venez de créer, remplacez le contenu par `/getweatherdata`.
+14. Cliquez sur **Chemins** dans la barre de navigation. Cliquez sur l'icône **Ajouter un chemin** ![](images/add-icon.png). 
+15. Définissez le **Titre** du chemin que vous avez récemment créé sur `/getweatherdata`. 
 16. Développez l'opération **GET /getweatherdata** en cliquant dessus.
 	![](images/path-new-1.png)
 17. Pour l'opération **GET /getweatherdata**, cliquez sur **Ajouter un paramètre**, puis sur **Ajouter un nouveau paramètre**.
@@ -75,6 +98,8 @@ Il est possible qu'une alerte décrivant les nouveautés ou la page d'accueil d'
 
 ---
 ## Ajout et configuration de votre appel de service Web
+{: #add_web_tut_expose_soap_service}
+
 Pour ajouter et configurer les stratégies invoke et map qui intègrent votre service Web à votre définition d'API, procédez comme suit.
 1. Dans la section **Services**, cliquez sur l'icône **Ajout d'un service** ![](images/add-icon.png). La fenêtre `Importer le service Web à partir de WSDL` s'ouvre.
 	![](images/upload-file-1.png)
@@ -109,6 +134,8 @@ Vous avez inclus l'appel de service Web dans votre assemblage et mappé un param
 
 ---
 ## Test de votre définition d'API
+{: #test_tut_expose_soap_service}
+
 Pour tester votre définition d'API à l'aide de l'outil de test du gestionnaire d'API, procédez comme suit.
 1. Cliquez sur l'icône **Test** ![](images/test-icon.png) sous l'onglet **Assemblage** pour afficher le panneau de test.
 	![](images/test-pane-1.png)
@@ -119,13 +146,15 @@ Pour tester votre définition d'API à l'aide de l'outil de test du gestionnaire
 5. Cliquez sur **Suivant**.
 6. Sélectionnez `get /getweatherdata` dans la liste des opérations.  
 	![](images/select-operation-1.png)
-7. Faites défiler jusqu'à la zone **zip_code** et entrez `90210`.  
+7. Faites défiler jusqu'à la zone **zip_code** et entrez `10504`.  
 	![](images/test-api-1.png)
 8. Cliquez sur **Appeler**. L'API renvoie la météo actuelle.  
-	![](images/test-api-2.png)
+	![](images/test-wdata-result.png)
 
 ---
-## Résumé des activités du tutoriel
+## Conclusion
+{: #conclusion_tut_expose_soap_service}
+
 Dans ce tutoriel, vous avez effectué les activités suivantes :
 1. Configuration d'une définition d'API REST
 2. Configuration d'une API pour appeler un service Web existant et renvoyer sa sortie
@@ -134,8 +163,9 @@ Dans ce tutoriel, vous avez effectué les activités suivantes :
 ---
 
 ## Etape suivante
+{: #next_tut_expose_soap_service}
 
-Sécurisation de votre API à l'aide d'une [limitation de débit](tut_rate_limit.html), d'un [ID et d'une valeur confidentielle client](tut_secure_landing.html) ou [sécurisation à l'aide de OAuth 2.0](tut_secure_oauth_2.html).
+Sécurisation d'une API [à l'aide d'OAuth 2.0](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
 
 Création > **Gestion** > Sécurisation > Réseaux sociaux > Analyse
 

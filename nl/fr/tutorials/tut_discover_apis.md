@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-20"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,20 +17,27 @@ lastupdated: "2017-11-20"
 {:pre: .pre}
 
 # Découverte des API
+{: #tut_discover_apis}
+
 **Durée** : 25 mn  
 **Niveau de compétence** : Débutant  
 
+## Objectif
+{: #object_tut_discover_apis}
+
+Dans ce tutoriel, vous apprendrez comment un utilisateur de portail peut consommer les API dans le portail de développeur {{site.data.keyword.apiconnect_full}}. Vous comprendrez comment un utilisateur de portail explore des produits et des API, affiche et teste des API et s'abonne à des
+API. 
 
 ## Prérequis
+{: #prereq_tut_discover_apis}
+
 Ce tutoriel ne nécessite aucun prérequis. En tant qu'administrateur du portail, vous pouvez également mener à bien ce tutoriel tout en naviguant dans le portail de développeur pour observer comment les utilisateurs naviguent dans votre portail. N'oubliez pas tous les portails de développeur ont une apparence différente. 
 
 Si vous ne disposez pas d'un portail de développeur existant, vous pouvez en installer et en configurer un dans {{site.data.keyword.Bluemix_short}} avant de lancer ce tutoriel.
 
-## Objectif
-Dans ce tutoriel, vous apprendrez comment un utilisateur de portail peut consommer les API dans le portail de développeur {{site.data.keyword.apiconnect_full}}. Vous comprendrez comment un utilisateur de portail explore des produits et des API, affiche et teste des API et s'abonne à des
-API. 
-
 ## Exploration des produits & des API
+{: #explore_tut_discover_apis}
+
 Cette section montre comment un utilisateur de portail explore les produits et les API dans le portail de développeur.
 
 1. Dans un navigateur, accédez à votre **portail de développeur API Connect**. ![Portail de développeur API Connect](images/11-developer-portal.png)
@@ -46,6 +59,8 @@ Cette section montre comment un utilisateur de portail explore les produits et l
 ---
 
 ## Affichage et test des API
+{: #view_tut_discover_apis}
+
 Cette section montre comment un utilisateur de portail affiche et teste les API disponibles pour un produit. 
 
 1. Accédez aux détails d'API dans le portail de développeur {{site.data.keyword.apiconnect_short}} comme indiqué dans la section précédente.  
@@ -66,6 +81,8 @@ Cette section montre comment un utilisateur de portail affiche et teste les API 
 ---
 
 ## Abonnement à des API
+{: #subscr_tut_discover_apis}
+
 Cette section montre comment un utilisateur de portail s'abonne à des API dans le portail de développeur. 
 
 1. Sélectionnez **Créer un compte**.
@@ -100,14 +117,16 @@ Cette section montre comment un utilisateur de portail s'abonne à des API dans 
   ![Abonnement d'application réussi](images/310-subscribe-success.png) 
 
 ## Conclusion
+{: #conclusion_tut_discover_apis}
 
 Dans ce tutoriel, vous avez appris comment vos utilisateurs de portail explorent des produits et des API, affichent et testent des API et s'abonnent à des API. 
 
 ---
 
 ## Etape suivante
+{: #next_tut_discover_apis}
 
-Apprenez à [extraire des connaissances à partir d'analyses basiques](tut_insights_analytics.html).
+Apprenez à [extraire des connaissances à partir d'analyses basiques](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics).
 
 Création >Gestion> Sécurisation > ** Réseaux sociaux ** > Analyse  
 

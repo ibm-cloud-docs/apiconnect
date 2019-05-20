@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,20 +17,28 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # Gain de connaissances à partir d'analyses basiques
+{: #tut_insights_analytics}
+
 Durée : 30 mn  
 Niveau de compétence : Débutant
 
 ## Objectif
+{: #object_tut_insights_analytics}
+
 Introduction de base aux analyses d'API dans {{site.data.keyword.apiconnect_full}}. Nous ferons le tour des tableaux de bord d'analyse disponibles et vous pourrez continuer avec vos propres API.
 
 
 ## Prérequis
+{: #prereq_tut_insights_analytics}
+
 pour pouvoir afficher vos propres analyses d'API, vous devez avoir créé et publié un produit d'API. En outre, vous devrez appeler votre API plusieurs fois afin de générer des données d'analyse, de préférence avec un identificateur client issu d'une application enregistrée (et non de l'application de test pré-provisionnée).
 
 Pour générer les données dans ce tutoriel, nous avons utilisé *Collection Runner* de Postman pour appeler plusieurs fois une API, avec des données et des ID client différents. Vous pouvez utiliser le même type d'outil (par exemple, HttpRequester pour Firefox) ou utiliser simplement cURL pour appeler plusieurs fois votre API depuis la ligne de commande. Pour obtenir des exemples de demande pour votre API, cliquez sur le lien **Explorer** dans {{site.data.keyword.apiconnect_short}}.
 
 ## Introduction aux analyses de catalogue
-En tant que propriétaire d'API, vous devez pouvoir évaluer la réussite et les performances des API que vous offrez. Le principal emplacement où rechercher des analyses est le niveau catalogue. Si vous n'avez pas l'habitude des catalogues, voir [Utilisation de catalogues ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){:new_window} dans l'IBM Knowledge Center pour une introduction. 
+{: #intro_tut_insights_analytics}
+
+En tant que propriétaire d'API, vous devez pouvoir évaluer la réussite et les performances des API que vous offrez. Le principal emplacement où rechercher des analyses est le niveau catalogue. Si vous n'avez pas l'habitude des catalogues, voir [Utilisation de catalogues ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){: #new_window} dans l'IBM Knowledge Center pour une introduction. 
 
 Vous pouvez également, ainsi que vos développeurs d'applications, accéder à des analyses spécifique d'applications dans le portail de développeur mais, dans ce tutoriel, nous nous concentrons sur les analyses de catalogue.
 
@@ -38,6 +52,8 @@ Ce tutoriel se compose de quatre activités qui montrent comment effectuer les t
 
 
 ## Activité 1 : Affichage des analyses de boîte
+{: #act1_tut_insights_analytics}
+
 1. Dans le service {{site.data.keyword.apiconnect_short}} dans {{site.data.keyword.Bluemix_short}}, lancez votre tableau de bord et sélectionnez le catalogue que vous voulez ouvrir. 
 2. Cliquez sur l'onglet *Analyse*.
 
@@ -65,6 +81,7 @@ Ce tableau de bord propose un autre ensemble de visualisations qui affichent le 
 
 
 ## Activité 2 : Affichage des détails d'événement
+{: #act2_tut_insights_analytics}
 
 Les visualisations sont un bon moyen pour obtenir une présentation utile des données, mais il vous faut également un moyen pour naviguer entre les enregistrement d'événement qui alimentent les graphiques.
 
@@ -77,6 +94,7 @@ Les visualisations sont un bon moyen pour obtenir une présentation utile des do
 Vous pouvez éditer, déplacer et supprimer des visualisations dans votre tableau de bord.
 
 ## Activité 3 : Génération de nouveaux tableaux de bord
+{: #act3_tut_insights_analytics}
 
 Maintenant, créons un nouveau tableau de bord qui fournira une vue des modèles de trafic d'API. Ils sont tous disponibles via les visualisations intégrées. 
 
@@ -101,6 +119,8 @@ Maintenant, créons un nouveau tableau de bord qui fournira une vue des modèles
 
 
 ## Activité 4 : Création de nouvelles visualisations
+{: #act4_tut_insights_analytics}
+
 Dans le tableau de bord d'abonné (Subscriber Dashboard) que nous avons créé, nous avons inclus la visualisation intégrée qui affiche les appels API par jour (API Calls per Day). Lorsque nous observons toutes les informations présentées ensemble, vous aimeriez connaître leur utilisation par application. Créons une nouvelle visualisation qui donne cette information.
 
 1. Cliquez sur **New Visualization** et sélectionnez le lien **Create Visualizations**.
@@ -135,6 +155,7 @@ Ce graphique (jusqu'à présent) affiche une série temporelle d'appels API. Nou
 D'autres informations sont disponibles pour visualiser les détails concernant les appels API, les appelants, etc. La liste complète des événements d'API est disponible dans le Knowledge Center d'API Connect ou dans la liste des conditions lorsque vous créez des visualisations.
 
 ## Conclusion
+{: #conclusion_tut_insights_analytics}
 
 La possibilité de visualiser des analyses d'API dans différents styles et combinaisons vous permet de tirer des conclusions ou d'analyser plus en profondeur vos données d'API. Vous pouvez utiliser ces analyses pour prendre des décisions concernant les API à proposer, le moment où remplacer ou retirer une API, les personnes consommatrices de vos API, etc.
 
@@ -147,7 +168,7 @@ Dans ce tutoriel, nous avons parcouru un certains nombre d'activités pour vous 
 ---
 
 ## Etape suivante
-
-Apprenez à [gérer vos API et vos versions](tut_manage_version_landing.html).
+{: #next_tut_insights_analytics}
+Apprenez à [gérer vos API et vos versions](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_version_landing).
 
 Création > Gestion >Sécurisation> Réseaux sociaux > **Analyse**  

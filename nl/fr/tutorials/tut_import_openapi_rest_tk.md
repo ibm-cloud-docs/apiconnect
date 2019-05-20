@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,32 +17,39 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Importation de votre spécification d'API et passage par un proxy d'un service REST existant à l'aide du kit d'outils de développement
+{: #tut_import_openapi_rest_tk}
+
 Durée : 5 mn  
 Niveau de compétence : Débutant  
 
 
 ## Objectif
+{: #object_tut_import_openapi_rest_tk}
+
 Ce tutoriel montre comment passer votre API existante sous contrôle de gestion avec {{site.data.keyword.apiconnect_full}}. Dans ce tutoriel, vous commencerez par importer une spécification d'OpenAPI, puis vous créerez un proxy d'API passe-système pour un service REST existant.
 
 ## Prérequis
+{: #prereq_tut_import_openapi_rest_tk}
+
 Avant de commencer, vous devez [configurer votre instance API Connect](tut_prereq_set_up_apic_instance.html) et [installer le kit d'outils API Connect](tut_prereq_install_toolkit.html).
 
 ---
 
 
 ## Exploration du modèle d'application et test des noeuds finaux cible
+{: #explore_tut_import_openapi_rest_tk}
 
-Un modèle d'application _weather provider_ a été créé pour ce tutoriel. La spécification d'API correspondante (Swagger 2.0) se trouve dans le fichier [weather-provider-api_1.yaml ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}.
+Un modèle d'application _weather provider_ a été créé pour ce tutoriel. La spécification d'API correspondante (Swagger 2.0) se trouve dans le fichier [weather-provider-api_1.yaml ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){: #new_window}.
 
-1. Pour explorer l'application, accédez à [http://gettingstartedweatherapp.mybluemix.net/ ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}.  
+1. Pour explorer l'application, accédez à [http://gettingstartedweatherapp.mybluemix.net/ ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://gettingstartedweatherapp.mybluemix.net/){: #new_window}.  
 2. Entrez un code postal américain en 5 chiffres valide pour en obtenir la _**météo actuelle**_ et les _**prévisions du jour**_.  
-![](images/explore-weatherapp-1.png)
+![](images/explore-weatherapp-1.png)S
 
-3. Le modèle d'application de météo ci-dessus a été généré à l'aide d'API qui fournissent des données météorologiques. Le noeud final permettant d'obtenir les données météorologiques **en cours** est `https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}`. Testez-le en accédant à [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
+3. Le modèle d'application de météo ci-dessus a été généré à l'aide d'API qui fournissent des données météorologiques. Le noeud final permettant d'obtenir les données météorologiques **en cours** est `https://myweatherprovider.mybluemix.net/current?zipcode={zipcode}`. Testez-le en accédant à [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: #new_window}.  
 
   ![](images/explore-weatherapp-2.png)
 
-4. De même, le noeud final permettant d'obtenir les données prévisionnelles **d'aujourd'hui** est `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`. Testez-le en accédant à [https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){:new_window}.  
+4. De même, le noeud final permettant d'obtenir les données prévisionnelles **d'aujourd'hui** est `https:// myweatherprovider.mybluemix.net/today?zipcode={zipcode}`. Testez-le en accédant à [https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: #new_window}.  
 
   ![](images/explore-weatherapp-3.png)
 
@@ -45,6 +58,8 @@ Un modèle d'application _weather provider_ a été créé pour ce tutoriel. La 
 ---
 
 ## Importation de la spécification d'OpenAPI du modèle d'application pour créer un proxy d'API REST
+{: #import_tut_import_openapi_rest_tk}
+
 1. Lancez le **concepteur d'API**. Dans votre fenêtre de terminal, entrez la commande suivante : `apic edit`.
 2. Connectez-vous à l'aide de votre IBMid.
     ![](images/screenshot_apic-edit_login.png)
@@ -66,6 +81,7 @@ _Vous voyez que la zone Hôte est définie sur `$(catalog.host)` _. Il s'agit de
 
 
 ## Test du proxy de votre API
+{: #test_tut_import_openapi_rest_tk}
 
 1. Démarrez le serveur de test local en sélectionnant l'icône de **démarrage des serveurs**. Une fois la passerelle démarrée, vous verrez que le statut est automatiquement mis à jour sur _**Exécution en cours**_.
     ![](images/screenshot_start-server-1.png)
@@ -88,13 +104,16 @@ _Vous voyez que la zone Hôte est définie sur `$(catalog.host)` _. Il s'agit de
 
 
 ## Conclusion
+{: #conclusion_tut_import_openapi_rest_tk}
 
-Dans ce tutoriel, vous avez vu comment appeler un service REST existant à l'aide d'un proxy passe-système d'API. Vous avez commencé par vérifier la disponibilité de l'exemple de service via le navigateur Web. Ensuite, vous avez créé dans {{site.data.keyword.apiconnect_short}} un proxy d'API que vous avez lié à l'exemple de service à appeler. Enfin, vous avez testé ce service à l'aide des outils de test internes d'{{site.data.keyword.apiconnect_short}}.
+Dans ce tutoriel, vous avez vu comment appeler un service REST existant à l'aide d'un proxy passe-système d'API. Vous avez commencé par vérifier la disponibilité de l'exemple de service via le navigateur Web. Ensuite, vous avez créé dans {{site.data.keyword.apiconnect_short}} un proxy d'API que vous avez lié à l'exemple de
+service à appeler. Enfin, vous avez testé ce service à l'aide des outils de test internes d'{{site.data.keyword.apiconnect_short}}.
 
 ---
 
 ## Etape suivante
+{: #next_tut_import_openapi_rest_tk}
 
-Sécurisation de votre API à l'aide d'une [limitation de débit](tut_rate_limit.html), d'un [ID et d'une valeur confidentielle client](tut_secure_landing.html) ou [sécurisation à l'aide de OAuth 2.0](tut_secure_oauth_2.html).
+Sécurisation de votre API à l'aide d'une [limitation de débit](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rate_limit), d'un [ID et d'une valeur confidentielle client](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing) ou [sécurisation à l'aide de OAuth 2.0](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
 
 Création > **Gestion** > Sécurisation > Réseaux sociaux > Analyse

@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,25 +17,29 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Sécurisation de votre API avec un ID client et une valeur confidentielle du client à l'aide du kit d'outils de développement
-
+{: #tut_secure_id_secret_tk}
 
 **Durée :** 10 mn  
 **Niveau de compétence :** Débutant
 
 
 ## Objectif
+{: #object_tut_secure_id_secret_tk}
 
 Ce tutoriel vous guidera tout au long du processus de sécurisation de votre API avec un ID client et une valeur confidentielle du client. Lorsque des applications sont enregistrées dans votre portail de développeur, un ID client est généré afin d'identifier l'application. Une valeur confidentielle du client, qui sert de mot de passe, peut éventuellement être aussi générée. Les applications devront fournir les clés ID client et Valeur confidentielle du client pour pouvoir accéder à votre API.
 
 
 ## Prérequis
+{: #prereq_tut_secure_id_secret_tk}
+
 Avant de commencer, vous devez avoir terminé l'un des tutoriels suivants :
-- [Importation d'une spécification d'OpenAPI2.0 et passage par un proxy d'un service REST existant](tut_rest_landing.html)
+- [Importation d'une spécification d'OpenAPI2.0 et passage par un proxy d'un service REST existant](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 **ou**  
-- [Ajout d'une nouvelle spécification d'API et appel d'un service REST existant](tut_rest_landing.html)
+- [Ajout d'une nouvelle spécification d'API et appel d'un service REST existant](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 
 
 ## Définition du mécanisme d'identification de votre API
+{: #set_id_tut_secure_id_secret_tk}
 
 1. Lancez le concepteur d'API (s'il n'est pas déjà ouvert) :  
    a. Ouvrez votre terminal.  
@@ -60,6 +70,7 @@ Avant de commencer, vous devez avoir terminé l'un des tutoriels suivants :
     ![](images/3a.png) 
 
 ## Test des modifications apportées à votre API
+{: #test_tut_secure_id_secret_tk}
 
 1. Dans l'onglet Assembler, cliquez sur ► pour tester vos modifications.
 2. Dans le panneau de test, cliquez sur l'opération **get /current**.
@@ -76,6 +87,7 @@ Avant de commencer, vous devez avoir terminé l'un des tutoriels suivants :
   
 
 ## Appel de votre API à l'aide de l'ID client et de la valeur confidentielle du client
+{: #call_tut_secure_id_secret_tk}
 
 Vous pouvez également tester les paramètres de sécurité à l'aide de l'outil Explorer qui appelle explicitement le noeud final de proxy et transmet les clés ID client et Valeur confidentielle du client en tant que valeurs d'en-tête.
 
@@ -90,11 +102,14 @@ Vous pouvez également tester les paramètres de sécurité à l'aide de l'outil
 ---
 
 ### Conclusion
+{: #conclusion_tut_secure_id_secret_tk}
+
 Dans ce tutoriel, vous avez appris à configurer le mécanisme d'identification de votre API, tester les modifications apportées à votre API et appeler votre API en utilisant l'ID client et la valeur confidentielle du client. 
 
 ---
 
 ## Etape suivante
+{: #next_tut_secure_id_secret_tk}
 
 Commencez à diffuser votre API sur les réseaux sociaux via la [création et configuration d'un portail de développeur](tut_config_dev_portal.html).
 

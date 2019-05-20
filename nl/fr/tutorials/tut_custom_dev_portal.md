@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,22 +17,29 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Personnalisation de votre portail de développeur et sélection d'un thème
+{: #tut_custom_dev_portal}
+
 **Durée** : 30 mn  
 **Niveau de compétence** : Débutant  
 
 
 ## Objectif
+{: #object_tut_custom_dev_portal}
+
 Ce tutoriel vous apprendra à personnaliser rapidement votre portail de développeur {{site.data.keyword.apiconnect_full}} et à sélectionner un thème adapté à vos besoins.
 
 ---
 
 ## Prérequis
+{: #prereq_tut_custom_dev_portal}
 
-Avant de commencer ce tutoriel, vous devez avoir finalisé le tutoriel [Installation et configuration de votre portail de développeur](tut_config_dev_portal.html) et être connecté en tant qu'administrateur du portail.
+Avant de commencer ce tutoriel, vous devez avoir finalisé le tutoriel [Installation et configuration de votre portail de développeur](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal) et être connecté en tant qu'administrateur du portail.
 
 ---
 
 ## Personnalisation de votre portail de développeur
+{: #cust_tut_custom_dev_portal}
+
 Une fois votre portail de développeur créé, vous devez personnaliser sa présentation générale.
 
 1. Commençons par modifier la bannière de bienvenue. Dans le menu du haut, sélectionnez **Contenu**, puis **Blocs**.  
@@ -49,6 +62,8 @@ Une fois votre portail de développeur créé, vous devez personnaliser sa prés
 ---
 
 ## Personnalisation du thème de votre portail de développeur
+{: #cust_theme_tut_custom_dev_portal}
+
 Le portail de développeur vous permet de modifier le thème afin de changer sa présentation.
 
 1. Pour modifier le thème, sélectionnez **Apparence** dans le menu du haut, puis sélectionnez **Paramètres** et ensuite **Thème IBM API Connect**. Il s'agit du thème par défaut défini lorsque vous avez créé votre portail de développeur.
@@ -72,6 +87,8 @@ Le portail de développeur vous permet de modifier le thème afin de changer sa 
 ---
 
 ## Sélection d'un autre thème pour votre portail de développeur
+{: #diff_theme_tut_custom_dev_portal}
+
 Le portail de développeur est livré avec un choix de thèmes supplémentaires que vous pouvez personnaliser afin de modifier leur présentation.
 
 1. Pour activer un autre thème, sélectionnez l'onglet **Liste** en haut des paramètres Apparence.
@@ -92,14 +109,16 @@ Le portail de développeur est livré avec un choix de thèmes supplémentaires 
 ---
 
 ## Installation d'un nouveau thème pour votre portail de développeur
+{: #new_theme_tut_custom_dev_portal}
+
 Si la modification d'un thème existant ne répond pas à vos besoins, le portail de développeur vous permet également d'installer un thème pour modifier sa présentation générale.
 
-1. Vous pouvez utiliser des modules ou des thèmes téléchargés depuis [drupal.org ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://drupal.org){:new_window} pour personnaliser votre portail de développeur ou créer votre propre thème.
+1. Vous pouvez utiliser des modules ou des thèmes téléchargés depuis [drupal.org ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://drupal.org){: #new_window} pour personnaliser votre portail de développeur ou créer votre propre thème.
 
 2. Pour installer un thème dans le portail de développeur, sélectionnez **Apparence** dans le menu du haut, puis sélectionnez **Install new theme**.  
   ![Installer un nouveau thème](images/62-install-new.png)
 
-3. Vous pouvez installer des thèmes directement depuis [drupal.org ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://drupal.org){:new_window} en utilisant une adresse URL ou importer un thème que vous avez téléchargé ou créé en cliquant sur **Choisir un fichier**, puis sur **Installer**.  
+3. Vous pouvez installer des thèmes directement depuis [drupal.org ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://drupal.org){: #new_window} en utilisant une adresse URL ou importer un thème que vous avez téléchargé ou créé en cliquant sur **Choisir un fichier**, puis sur **Installer**.  
   ![Installer](images/63-install.png) 
 
 4. Une fois le téléchargement terminé, vous devez activer le thème. Sélectionnez **Activation des thèmes nouvellement ajoutés**.  
@@ -112,7 +131,8 @@ Si la modification d'un thème existant ne répond pas à vos besoins, le portai
 
 ---
 
-## Récapitulatif
+## Conclusion
+{: #conclusion_tut_custom_dev_portal}
 Bravo, vous avez terminé ce tutoriel. Vous avez appris à :
 
 * Personnaliser la page d'accueil de votre portail de développeur
@@ -123,8 +143,9 @@ Bravo, vous avez terminé ce tutoriel. Vous avez appris à :
 ---
 
 ## Etape suivante
+{: #next_tut_custom_dev_portal}
 
-Apprenez [comment un utilisateur navigue dans un portail de développeur](tut_discover_apis.html) ou [comment extraire des connaissances à partir d'analyses basiques](tut_insights_analytics.html).
+Apprenez [comment un utilisateur navigue dans un portail de développeur](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_discover_apis) ou [comment extraire des connaissances à partir d'analyses basiques](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics).
 
 Création >Gestion> Sécurisation > ** Réseaux sociaux ** > Analyse  
 
