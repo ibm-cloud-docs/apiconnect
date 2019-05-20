@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,12 +17,13 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # 匯入 API
+{: #importing_apis}
 
 您可以使用 Swagger 定義檔來新增 REST API。
 {:shortdesc}
 
 ## 必要條件
-{: #prereq_import_swagger}
+{: #prereq_import_swagger_importing_apis}
 
 開始之前，請確定您的檔案符合 2.0 版的 Swagger 規格。此檔案的格式可以是 JSON 或 YAML。
 
@@ -35,7 +42,7 @@ lastupdated: "2017-12-15"
 API 定義在匯入之後，會顯示在「**草稿**」頁面的 **API** 標籤的 API 定義清單中。接下來，您可以編輯您的 API 定義，就像編輯任何其他 REST API 定義一樣。
 
 ## 從 IBM Integration Bus 匯入 API
-{: #tut_import_iib_apic}
+{: #tut_import_iib_apic_importing_apis}
 
 使用此指導教學，您可以將使用 IBM Integration Bus 建立的 REST API 匯入至 {{site.data.keyword.apiconnect_full}}，這樣會比較容易進行管理及發佈。
 {: shortdesc}
@@ -49,11 +56,11 @@ API 定義在匯入之後，會顯示在「**草稿**」頁面的 **API** 標籤
 * 您可以控制 API 的呼叫數目。
 * 您可以維護多個版本的 API。
 
-如需瞭解更多優點，請參閱[管理 API](managing_apis.html)。
+如需瞭解更多優點，請參閱[管理 API](/docs/services/apiconnect?topic=apiconnect-managing_apis)。
 
 若要在 IBM Integration Bus 建立 REST API 並將它匯入至 {{site.data.keyword.apiconnect_short}}，請完成下列步驟：
 1. 使用 IBM Integration Bus 建立 REST API。限制：您只能使用已安裝 IBM Integration Bus 版本隨附的 IBM Integration Toolkit 來建立 REST API。
-	1. 使用 IBM Integration Toolkit 建立 REST API。如需如何完成使用 IBM Integration Bus 建立 REST API 的作業相關資訊，請參閱 IBM Knowledge Center 中的[使用 REST API 開發整合解決方案 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bi12016_.htm){: new_window}。
+	1. 使用 IBM Integration Toolkit 建立 REST API。如需如何完成使用 IBM Integration Bus 建立 REST API 的作業相關資訊，請參閱 IBM Knowledge Center 中的[使用 REST API 開發整合解決方案 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bi12016_.htm){: #new_window}。
 		
 	2. 選取**檔案** > **新建** > **REST API**，開啟「建立 REST API」精靈。
 		
@@ -84,7 +91,7 @@ Swagger 文件在驗證時發生任何錯誤，那些驗證錯誤會顯示在精
 6. 將作業的完整 URL 複製到您的剪貼簿。當您配置 API 以搭配 {{site.data.keyword.apiconnect_short}} 使用時會需要它。如果您已啟用「基本鑑別」，則也請記下指派的使用者名稱及密碼。
 
 ### 整合 IBM Integration Bus 與 API Connect。
-{: #integrateiibapic}
+{: #integrateiibapic_importing_apis}
 
 1. 將與 IBM Integration Toolkit 中 REST API 專案相關聯的 Swagger 檔案匯入至 {{site.data.keyword.apiconnect_short}} 服務。 
 	1. 登入 {{site.data.keyword.apiconnect_short}} {{site.data.keyword.Bluemix_notm}} 服務。
@@ -106,17 +113,18 @@ Swagger 文件在驗證時發生任何錯誤，那些驗證錯誤會顯示在精
 	2. 選取**重新發佈產品**。
 	3. 選取「作業」。
 	4. 輸入必要的參數。
-	5. 選取**呼叫**。
+	5. 選取 **Invoke**。
 	6. 驗證您從 API 收到預期的回應。 
 	
-匯入及整合 API 定義之後，您可以管理和控管 API，就像任何其他 REST API 定義一樣。如需 API 的相關資訊，請參閱[管理 API](managing_apis.html)。
+匯入及整合 API 定義之後，您可以管理和控管 API，就像任何其他 REST API 定義一樣。如需 API 的相關資訊，請參閱[管理 API](/docs/services/apiconnect?topic=apiconnect-managing_apis)。
 
 ## 發佈 IBM API Connect 中使用 IBM App Connect Professional 建立的 API
+{: #publish_importing_apis}
 
 使用此指導教學，您可以發佈及管理使用 IBM App Connect Professional 搭配 {{site.data.keyword.apiconnect_full}} 建立的 REST API。
 
 ### 必要條件
-{: #prereq_pub_api_appconn}
+{: #prereq_pub_api_appconn_importing_apis}
 
 您需要 IBM App Connect Professional on Cloud 和 {{site.data.keyword.apiconnect_short}} 的有效帳戶才能夠完成此指導教學。請確定您的 REST API 檔案符合 2.0 版的 Swagger 規格。此檔案的格式可以是 JSON 或 YAML。
 
@@ -126,10 +134,10 @@ Swagger 文件在驗證時發生任何錯誤，那些驗證錯誤會顯示在精
 - 您可以控制 API 的呼叫數目。
 - 您可以維護多個版本的 API。
 
-如需瞭解更多優點，請參閱[管理 API](managing_apis.html)。若要在 IBM App Connect Professional 建立 REST API 並將它發佈到 {{site.data.keyword.apiconnect_short}}，請完成下列步驟：
+如需瞭解更多優點，請參閱[管理 API](/docs/services/apiconnect?topic=apiconnect-managing_apis)。若要在 IBM App Connect Professional 建立 REST API 並將它發佈到 {{site.data.keyword.apiconnect_short}}，請完成下列步驟：
 
 1. 使用 IBM App Connect Professional 建立 REST API。
-  - 使用您的 IBM ID 登入 [App Connect Professional Web Management Console ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://appconnect.ibmcloud.com/professional/){:new_window}。如需如何完成使用 IBM App Connect Professional Web Management Console 建立 REST API 的作業相關資訊，請參閱 IBM Knowledge Center 中的[關於管理主控台設定 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window}。
+  - 使用您的 IBM ID 登入 [App Connect Professional Web Management Console ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud/app-connect){:new_window}。如需如何完成使用 IBM App Connect Professional Web Management Console 建立 REST API 的作業相關資訊，請參閱 IBM Knowledge Center 中的[關於管理主控台設定 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window}。
 
   - 如果尚未選取，請選取「正式作業」標籤。
   - 在導覽畫面中，選取**儲存庫** > **配置**。
@@ -173,6 +181,7 @@ Swagger 文件在驗證時發生任何錯誤，那些驗證錯誤會顯示在精
 將 IBM App Connect API 與 {{site.data.keyword.apiconnect_short}} 相關聯。
 
 #### 匯入 Swagger API 定義
+{: #import_sw_importing_apis}
 
 若要將與 IBM App Connect 中 REST API 專案相關聯的 Swagger 檔案匯入至 {{site.data.keyword.apiconnect_short}} 服務，請遵循下列步驟：
 
@@ -194,13 +203,14 @@ Swagger 文件在驗證時發生任何錯誤，那些驗證錯誤會顯示在精
 
 8. 使用下列資訊配置 URL 欄位的 host/basePath：
 
-- **hostname**：此設定視您的雲端實例而定。如需此設定的相關資訊，請參閱 [IBM App Connect Professional ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://provide.castiron.ibmcloud.com){:new_window}。
+- **hostname**：此設定視您的雲端實例而定。如需此設定的相關資訊，請參閱 [IBM App Connect Professional ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SS3LC4_7.5.2.0/mapfiles/ic_home.html){:new_window}。
 
 - **basepath**：您在 App Connect Professional 編排的 httpReceive 要求附註上指定的路徑。
 
 9. 將您的 IBM ID 使用者名稱和密碼新增並儲存至用於 App Connect Professional 的 HTTP 基本鑑別詳細資料。
 
 #### 測試 API
+{: #test_importing_apis}
 
 若要測試 API，請遵循下列步驟：
 
@@ -208,9 +218,9 @@ Swagger 文件在驗證時發生任何錯誤，那些驗證錯誤會顯示在精
 2. 選取**重新發佈產品**。
 3. 選取「作業」。
 4.  輸入必要的參數。
-5. 選取**呼叫**。
+5. 選取 **Invoke**。
 6. 驗證您從 API 收到預期的回應。
 
-匯入及整合 API 定義之後，您可以管理和控管 API，就像任何其他 REST API 定義一樣。如需 API 的相關資訊，請參閱[管理 API](managing_apis.html)。
+匯入及整合 API 定義之後，您可以管理和控管 API，就像任何其他 REST API 定義一樣。如需 API 的相關資訊，請參閱[管理 API](/docs/services/apiconnect?topic=apiconnect-managing_apis)。
 
 

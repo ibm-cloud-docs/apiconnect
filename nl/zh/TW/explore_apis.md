@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
-lastupdated: "2017-07-11"
+lastupdated: "2017-09-05"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -19,7 +25,9 @@ lastupdated: "2017-07-11"
 
 2. 展開 API，以檢視其相關資訊。
 
-3. 若要訂閱 API，請按一下 API 產品。即會開啟「開發人員入口網站」，而且您可以訂閱「方案」來存取 API。
+3. 若要訂閱 API，請按一下 API 產品。即會開啟「開發人員入口網站」，而且您可以訂閱「方案」來存取 API。 
+
+  **附註**：如果您選取的方案有計費，則必須提供組織的信用卡卡號。那需要您具有擁有者專用權。
 
 ## 在開發人員入口網站中檢視及測試 API
 {: #view_test_apis_dev_port}
@@ -61,6 +69,8 @@ lastupdated: "2017-07-11"
 4. 識別您要使用的方案之後，請按一下**使用此方案**。即會顯示「使用此方案」對話框。
 
 5. 選取您要與此「方案」搭配使用的應用程式，然後按一下**儲存**。即會顯示應用程式詳細資料。
+
+  **附註**：如果您選取的方案有計費，則必須提供組織的信用卡卡號。那需要您具有擁有者專用權。
 
 6. 若要檢視包含在應用程式所訂閱「方案」中之 API 的作業，請按一下 API 的名稱。
 

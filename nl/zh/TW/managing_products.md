@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,11 +17,12 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # 管理產品
+{: #managing_products}
 
-如需「產品」管理方式的詳細資料，請參閱 IBM&reg; Knowledge Center 文件：[管理產品 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){:new_window}。
+如需「產品」管理方式的詳細資料，請參閱 IBM&reg; Knowledge Center 文件：[管理產品 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){: #new_window}。
 
 ## 產品生命週期
-{: #prod_lifecycle}
+{: #prod_lifecycle_managing_products}
 
 當您管理「產品」版本時，這些版本會經過一系列的生命週期狀態，一開始是將草稿「產品」版本編譯打包至某個環境，接著發佈以讓應用程式開發人員可以使用該「產品」版本，最後予以棄用及保存。下表及下圖說明「產品」版本的各種「產品」生命週期狀態。
 
@@ -54,6 +61,7 @@ lastupdated: "2017-12-15"
 </table>
 
 ### 產品生命週期流程
+{: #prod_lifecycle_flows_managing_products}
 
 下圖顯示「產品」版本的可能生命週期狀態，以及將「產品」版本從某種生命週期狀態移至另一種狀態的「產品」管理作業；例如，「棄用」作業會將「產品」版本從「已發佈」移至「已棄用」狀態。
 
@@ -61,7 +69,7 @@ lastupdated: "2017-12-15"
 
 
 ## 建立產品
-{: #create_product}
+{: #create_product_managing_products}
 
 建立「產品」，以將一組 API 及「方案」收集為一個可供開發人員使用的供應項目。「方案」包括可整個套用至「方案」或針對 API 中每一個作業而指定的速率限制設定。透過「產品」及「方案」，您可以更加強控制開發人員可存取哪些 API。建立產品之後，必須對其進行編譯打包。編譯打包產品會將其移至作用中狀態，以讓您呼叫及測試其內所含的 API。編譯打包產品後，任何開發人員都還看不到它。
 
@@ -89,7 +97,7 @@ apic edit
 
 7. 在**可見性**區段中，您可以指定可看見「產品」的使用者。您可以選擇**公用**、**已鑑別使用者**或**自訂**。如果您選取**自訂**，請使用**鍵入以新增**欄位，來搜尋可看見「產品」中「方案」的開發人員組織或社群。
 
-    **附註：**若要搜尋開發人員組織或社群，「產品」必須處於已編譯打包、已發佈或已淘汰狀態。如果已於其中編譯打包、發佈或淘汰的「型錄」不是沙盤推演「型錄」，則無法對處於上述其中一種狀態的「產品」進行其他變更。如需相關資訊，請參閱[產品生命週期](#prod_lifecycle)。
+    **附註：**若要搜尋開發人員組織或社群，「產品」必須處於已編譯打包、已發佈或已淘汰狀態。如果已於其中編譯打包、發佈或淘汰的「型錄」不是沙盤推演「型錄」，則無法對處於上述其中一種狀態的「產品」進行其他變更。如需相關資訊，請參閱[產品生命週期](#prod_lifecycle_managing_products)。
 
 8. 指定可訂閱「產品」的使用者。您可以選擇**已鑑別使用者**或**自訂**。如果您選取**自訂**，請使用**鍵入以新增**欄位，來搜尋可訂閱「產品」中「方案」的開發人員組織或社群。
 
@@ -122,11 +130,11 @@ apic edit
 
 - 按一下**儲存**圖示，以儲存您的變更。
 
-您已建立「產品」，並將一組 API 及「方案」指定為一個現在可供開發人員使用的供應項目。接下來，將「產品」編譯打包到「型錄」。如需相關資訊，請參閱[編譯打包產品](#stage_product})。
+您已建立「產品」，並將一組 API 及「方案」指定為一個現在可供開發人員使用的供應項目。接下來，將您的產品編譯打包至型錄，如下節[編譯打包產品](#stage_product_managing_products})中所解釋。
 
 
 ## 編譯打包產品
-{: #stage_product}
+{: #stage_product_managing_products}
 
 請先編譯打包「產品」以在「型錄」中建立該「產品」的特定版本，然後再進行發佈。「產品」處於已編譯打包狀態時，任何開發人員都還看不到它也無法訂閱它。
 
@@ -161,18 +169,18 @@ apic edit
 
 - 開啟 {{site.data.keyword.Bluemix_notm}} **儀表板**。您將會在「應用程式」區段中看到應用程式磚。
 
-開啟 API Manager 以將「產品」發佈至社群，讓應用程式開發人員可以在「開發人員入口網站」中存取它。如需相關資訊，請參閱[發佈產品](#publish_proj})。
+開啟 API Manager 以將產品發佈至社群，且應用程式開發人員可以透過「開發人員入口網站」存取它，如下節[發佈產品](#publish_proj_managing_products})中所解釋。
 
 
 ## 發佈產品
-{: #publish_proj}
+{: #publish_proj_managing_products}
 
 發佈方案之後，應用程式開發人員即可看見及存取 API。發佈「產品」，即可在 {{site.data.keyword.Bluemix_short}} **型錄**及內建「開發人員入口網站」中看見產品，以供應用程式開發人員使用。
 
 ### 必要條件
-{: #prereq_publish_proj}
+{: #prereq_publish_proj_managing_products}
 
-您必須先編譯打包「產品」，才能進行發佈。如需編譯打包「產品」的相關資訊，請參閱[編譯打包產品](#stage_product)。
+您必須先編譯打包「產品」，才能進行發佈。如需編譯打包「產品」的相關資訊，請參閱[編譯打包產品](#stage_product_managing_products)。
 
 若要發佈「產品」，請完成下列步驟：
 
@@ -191,12 +199,14 @@ apic edit
 
 
 ## 將產品發佈至 Bluemix
+{: #pub_to_bm_managing_products}
 
 若要在 {{site.data.keyword.apiconnect_short}}「儀表板」的「**探索 API**」區段中查看您的「產品」，請完成下列步驟。
 
 ### 必要條件
+{: #prereq_pub_bm_managing_products}
 
-開始之前，如果您要發佈使用 LoopBack 所實作的 REST API，請確定您已發佈應用程式運行環境，並已將您的產品編譯打包成讓呼叫 Proxy 指向新應用程式。如需如何執行此作業的相關資訊，請參閱[編譯打包及發佈 Loopback 應用程式](managing_apis.html#stage_publish_lb_app)。
+開始之前，如果您要發佈使用 LoopBack 所實作的 REST API，請確定您已發佈應用程式運行環境，並已將您的產品編譯打包成讓 Invoke Proxy 指向新應用程式。如需如何執行此作業的相關資訊，請參閱[編譯打包及發佈 Loopback 應用程式](/docs/services/apiconnect?topic=apiconnect-managing_apis#stage_publish_lb_app_managing_apis)。
 
 1. 在 API Manager 使用者介面中，按一下**新增** > **型錄**。即會顯示「**新增型錄**」視窗。
 

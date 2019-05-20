@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2017-12-15"
 
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 
@@ -19,22 +23,22 @@ lastupdated: "2017-12-15"
 您可以透過下載 Developer Toolkit，以及使用指令行介面 (CLI) 或 API Designer，來建立 API。
 
 ## Developer Toolkit CLI
-{: #dev_tk_cli notoc}
+{: #dev_tk_cli_creating_apis notoc}
 
 Developer Toolkit 提供可用來將 API 發佈至 {{site.data.keyword.apiconnect_long}} 的指令行介面。發佈 API 的方式是將它們包含在「產品」中，然後發佈「產品」。在本端檔案系統中建立及驗證 YAML 定義檔，以定義 API 及「產品」。您接著可以使用 Toolkit 指令，以與 {{site.data.keyword.apiconnect_long}} 互動。
 
 ## API Designer
-{: #designer notoc}
+{: #designer_creating_apis notoc}
 
 API Designer 是 Developer Toolkit 內的離線圖形使用者介面，並提供建立及配置 API 的功能。API Designer 的執行方式是使用指令行介面中的 edit 指令。使用 edit 指令時，會在您的預設瀏覽器中開啟 API Designer，而且可以透過執行指令時顯示的本端主機埠進行存取。
 
 ## 安裝 Developer Toolkit
-{: #install_dev_tk}
+{: #install_dev_tk_creating_apis}
 
 ### 必要條件
-{: #prereq_install_dev_tk}
+{: #prereq_install_dev_tk_creating_apis}
 
-開始之前，您必須在要使用 Toolkit 的機器上安裝 [Node.js ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://nodejs.org/en/){:new_window}，並確定 `node` 在您的 `PATH` 中。
+開始之前，您必須在要使用 Toolkit 的機器上安裝 [Node.js ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://nodejs.org/en/){: #new_window}，並確定 `node` 在您的 `PATH` 中。
 
 當您安裝 Developer Toolkit 時，會安裝下列項目。
 
@@ -67,58 +71,46 @@ API Designer 是 Developer Toolkit 內的離線圖形使用者介面，並提供
 	{: codeblock}
 	
 ## 安裝 LoopBack 連接器
-{: #install_lb_conn}
+{: #install_lb_conn_creating_apis}
 
 您必須先安裝資料來源連接器，才能使用 LoopBack 資料來源存取後端系統的資料，例如資料庫。記憶體內及電子郵件連接器都已內建到 LoopBack，因此您不需要安裝。
 
 ### 必要條件
-{: #prereq_install_lb_conn}
+{: #prereq_install_lb_conn_creating_apis}
 
-Oracle、DB2 及 SQLLite 連接器需要 C 編譯器工具才能建置及安裝二進位延伸。確切的需求視您的作業系統而定，如下表中所說明。
+Oracle、DB2 及 SQLLite 連接器需要 C 編譯器工具才能建置及安裝二進位延伸。確切的需求視您的作業系統而定，如下列清單中所說明。
 
-<table summary="" id="apic_028__table_pre_reqs" class="defaultstyle style-scope doc-content">
-<caption>表 1. 作業系統特有的安裝需求</caption>
-<thead>
-<tr>
-<th style="width: 33.3%" id="th_d70e208" class="thleft style-scope doc-content">Windows</th>
-<th style="width: 33.3%" id="th_d70e210" class="thleft style-scope doc-content">Linux</th>
-<th style="width: 33.3%" id="th_d70e212" class="thleft style-scope doc-content">MAC OS X</th>
-</tr>
-</thead>
-<tbody >
-<tr class="style-scope doc-content doc-tr-odd">
-<td style="width: 33.3%" > [Microsoft .NET Framework 4 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.microsoft.com/en-us/download/details.aspx?id=17851)</td>
-<td style="width: 33.3%">Python 2.7 版（不支援 3.x 版）</td>
-<td style="width: 33.3%" > [適用於 Mac OS X 的版本 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.python.org/downloads/mac-osx/)</td>
-</tr>
-<tr><td style="width: 33.3%" > [Visual Studio ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.visualstudio.com/downloads/download-visual-studio-vs)</td>
-<td style="width: 33.3%">
-<code>make</code>
-</td>
-<td style="width: 33.3%" > [Xcode ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716)</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" > [Python v2.7.10 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.python.org/downloads/release/python-2710/)</td>
-<td style="width: 33.3%">C/C++ 編譯器工具鏈，例如 GCC 4.2 版或更新版本。</td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-<tr><td style="width: 33.3%" > [Microsoft Windows SDK for Windows 7 ![外部鏈結圖示External link icon](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279)</td>
-<td style="width: 33.3%">在 Debian 及 Debian 衍生的發行套件（Ubuntu、Mint 等）上，使用下列指令：<pre class="codeblock style-scope doc-content"><code>apt-get install build-essential</code></pre>
-</td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" >npm 第 3 版。請參閱附註。</td>
-<td style="width: 33.3%">&nbsp;</td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-</tbody>
-</table>
+**Linux**
+- Python 2.7 版（不支援 3.x 版）
 
-**附註：**針對 Windows 安裝：
+- <code>make</code>
 
-- 除非您要購買 Visual Studio Enterprise，否則請使用 Visual Studio Community。請執行安裝程式、勾選「程式設計語言」下的 "Visual C++"，然後接受預設安裝位置。
+- C/C++ 編譯器工具鏈，例如 GCC 4.2 版或更新版本。
 
-- 針對 64 位元建置的 Node.js 及原生模組，您還需要 Windows&trade; 7 64 位元 SDK。如果安裝失敗，請嘗試解除安裝您已先安裝的所有 C++ 2010 x64&amp;x86 可轉散發套件。如果您收到未安裝 64 位元編譯器的錯誤，則可能還需要 Windows&trade; SDK 7.1 的編譯器更新。
-- 輸入下列指令以安裝 npm 第 3 版：
+- 在 Debian 及 Debian 衍生的發行套件（Ubuntu、Mint 等）上，使用下列指令：
+<pre class="codeblock style-scope doc-content"><code>apt-get install build-essential</code></pre>
+
+**Mac OS X**
+- [適用於 Mac OS X 的版本 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.python.org/downloads/mac-osx/){: #new_window}
+
+- [Xcode ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716){: #new_window}
+
+**Windows**
+- [Microsoft .NET Framework 4 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.microsoft.com/en-us/download/details.aspx?id=17851){: #new_window}
+
+- [Visual Studio ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.visualstudio.com/downloads/download-visual-studio-vs){: #new_window}
+
+- [Python v2.7.10 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.python.org/downloads/release/python-2710/){: #new_window}
+
+- [Microsoft Windows SDK for Windows 7 ![外部鏈結圖示External link icon](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279){: #new_window}
+
+- npm 第 3 版：請參閱附註。
+
+**附註**：除非您要購買 Visual Studio Enterprise，否則請使用 Visual Studio Community。請執行安裝程式、勾選「程式設計語言」下的 "Visual C++"，然後接受預設安裝位置。
+
+針對 64 位元建置的 Node.js 及原生模組，您還需要 Windows&trade; 7 64 位元 SDK。如果安裝失敗，請嘗試解除安裝您已先安裝的所有 C++ 2010 x64&amp;x86 可轉散發套件。如果您收到未安裝 64 位元編譯器的錯誤，則可能還需要 Windows&trade; SDK 7.1 的編譯器更新。
+
+輸入下列指令以安裝 npm 第 3 版：
   ```
   npm install -g npm
   ```
@@ -142,12 +134,10 @@ Oracle、DB2 及 SQLLite 連接器需要 C 編譯器工具才能建置及安裝�
 npm install --save <connector-package>
 ```
 {: codeblock}
-其中 `<connector-package>` 是 LoopBack 連接器的 npm 套件名稱，如表格中所示。
-
-
+其中 `<connector-package>` 是 LoopBack 連接器的 npm 套件名稱，如表 1 中所示：
 
 <table summary="" id="apic_connectors_table_pre_reqs" class="defaultstyle style-scope doc-content">
-<caption>表 3. LoopBack 連接器</caption>
+<caption>表 1. LoopBack 連接器</caption>
 <thead>
 <tr class="style-scope doc-content doc-tr-even">
 <th style="width: 50%" id="th_new_d70e1489" class="thleft style-scope doc-content">資料來源</th>
@@ -191,14 +181,15 @@ npm install --save <connector-package>
 </tbody>
 </table>
 
+
 ## 使用 CLI 建立 LoopBack API
-{: #create_lb_api}
+{: #create_lb_api_creating_apis}
 
 下列程序說明如何使用指令行介面來建立 LoopBack&reg; API。
 
 
 ### 必要條件
-{: #prereq_create_lb_api}
+{: #prereq_create_lb_api_creating_apis}
 
 開始之前，請備妥您要使用的型錄的型錄 ID。若要取得型錄 ID，請完成下列步驟：  
 
@@ -234,7 +225,7 @@ npm install --save <connector-package>
   ```
     
     此工具會提示您輸入要在其中建立專案的目錄名稱。
-```
+    ```
     ? Enter name of the directory to contain the project: (<project directory name>)
     ```
     
@@ -282,7 +273,7 @@ npm install --save <connector-package>
       Checkpoint
     (Move up and down to reveal more choices)
     ```
-    如需每一個選項的相關資訊，請參閱[使用內建模型 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){:new_window}。
+如需每一個選項的相關資訊，請參閱[使用內建模型 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){: #new_window}。
 
 9. 選取基礎類別，然後按 **Enter** 鍵。此工具會詢問您是否要公開模型的 REST API。
 ```
@@ -367,7 +358,7 @@ Install loopback-connector-<connector>?
 
 5. 鍵入 `Yes`。此工具即會安裝連接器。
 
-附註：如果您已選取 Oracle 連接器，則必須在 {{site.data.keyword.Bluemix_notm}} 中設定環境變數，Oracle 應用程式才會啟動。若要執行此作業，請完成下列步驟：
+**附註**：如果您已選取 Oracle 連接器，則必須在 {{site.data.keyword.Bluemix_notm}} 中設定環境變數，Oracle 應用程式才會啟動。若要執行此作業，請完成下列步驟：
 
 1. 在 {{site.data.keyword.Bluemix_notm}} 使用者介面中，選取**運算**。
 
@@ -386,7 +377,7 @@ Install loopback-connector-<connector>?
 8. 按一下**儲存**。
 
 ### 測試 LoopBack 專案
-{: #test_lb_proj}
+{: #test_lb_proj_creating_apis}
 
 若要測試 LoopBack 專案，請完成下列步驟。
 
@@ -416,7 +407,7 @@ Service loopback-project-gw (id 2) started on port 4002
 ```
 
 ### 從 CLI 將 LoopBack 應用程式發佈至 {{site.data.keyword.Bluemix_notm}}
-{: #pub_lb_app_cli}
+{: #pub_lb_app_cli_creating_apis}
 
 若要從指令行將 LoopBack 應用程式發佈至 {{site.data.keyword.Bluemix_short}}，請完成下列步驟。
 
@@ -450,7 +441,7 @@ apic organizations -s <region>.apiconnect.ibmcloud.com
   如果不確定，您可以尋找所在地區，方法為按一下功能表列中的「{{site.data.keyword.avatar}}」圖示 <img src="images/i-avatar-icon.svg" alt="虛擬人像圖示"/>，以開啟「帳戶及支援」小組件並檢查地區欄位。
 7. 輸入下列指令，以將您的應用程式發佈至 {{site.data.keyword.Bluemix_notm}}。
 ```
-apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
+apic apps:publish –app <app> -o <org> -s <region>.apiconnect.ibmcloud.com
 ```
 其中：
   * `<app>` 是您的應用程式名稱
@@ -473,7 +464,7 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
     3. 按一下**組合**。
     4. 在「組合」編輯器中，按一下**過濾器原則**圖示。
     5. 選取 **DataPower Gateway 原則**。
-    6. 按兩下**呼叫**。
+    6. 按兩下 **invoke**。
     7. 使用您在步驟 7 所擷取的值，來更新下列欄位。
         - **呼叫 URL**：插入 API 目標 URL。您必須指定安全通訊協定 HTTPS。例如：
         ```
@@ -487,15 +478,15 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
     8. 按一下**儲存**，以儲存 API。
 
 ## 使用 API Designer 建立 LoopBack API
-{: #create_lb_api_design}
+{: #create_lb_api_design_creating_apis}
 
 下列程序說明如何使用 API Designer 來建立 LoopBack API。
 {:shortdesc}
 
 ### 必要條件
-{: #prereq_create_lb_api_design}
+{: #prereq_create_lb_api_design_creating_apis}
 
-**附註**：下列指示假設您使用的是最新版的 Developer Toolkit。若要檢查最新版本，請參閱 [npm ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.npmjs.com/package/apiconnect){:new_window} 套件頁面。
+**附註**：下列指示假設您使用的是最新版的 Developer Toolkit。若要檢查最新版本，請參閱 [npm ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.npmjs.com/package/apiconnect){: #new_window} 套件頁面。
 
 首先，您需要使用 CLI 來建立 LoopBack 專案。若要這麼做，請完成下列步驟：
 
@@ -580,7 +571,7 @@ npm install --save <connector-package>
 **附註：**記憶體內及電子郵件連接器都已內建到 LoopBack，因此您不需要安裝它們。
 
 <table>
-<caption>表 3. LoopBack 連接器</caption>
+<caption>表 2. LoopBack 連接器</caption>
 <thead>
 <tr class="style-scope doc-content doc-tr-even">
 <th style="width: 50%" id="3rd_d70e1489" class="thleft style-scope doc-content">資料來源</th>
@@ -624,7 +615,7 @@ npm install --save <connector-package>
 </tbody>
 </table>
 
-如需相關資訊，請參閱 [LoopBack 文件 - 建置連接器 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){:new_window}。
+如需相關資訊，請參閱 [LoopBack 文件 - 建置連接器 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){: #new_window}。
 
 **附註：**如果您已選取 Oracle 連接器，則必須在 {{site.data.keyword.Bluemix_notm}} 中設定環境變數，Oracle 應用程式才會啟動。若要執行此作業，請完成下列步驟：
 
@@ -656,17 +647,17 @@ http://localhost:<4001/>Running
 {"started":"2017-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-接下來，您需要建立「產品」。如需相關資訊，請參閱[建立產品](managing_products.html#create_product)。
+接下來，您需要建立「產品」。如需相關資訊，請參閱[建立產品](/docs/services/apiconnect?topic=apiconnect-managing_products#create_product_managing_products)。
 **提示**：每次啟動新的命令提示字元時，請確定您的現行工作目錄是專案最上層目錄。若要這麼做，請輸入下列指令：
 ```
 cd <project directory name>
 ```
 
 ## 解除安裝 Developer Toolkit
-{: #uninstall_dev_tk}
+{: #uninstall_dev_tk_creating_apis}
 
 ### 必要條件
-{: #prereq_uninstall_dev_tk}
+{: #prereq_uninstall_dev_tk_creating_apis}
 
 開始之前，您必須輸入下列指令來停止任何在本端執行的應用程式：
 ```
