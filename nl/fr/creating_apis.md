@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2017-12-15"
 
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 
@@ -19,7 +23,7 @@ lastupdated: "2017-12-15"
 Vous pouvez créer des API en téléchargeant le kit d'outils de développement et en utilisant l'interface de ligne de commande (CLI) ou le concepteur d'API.
 
 ## Interface de ligne de commande du kit d'outils de développement
-{: #dev_tk_cli notoc}
+{: #dev_tk_cli_creating_apis notoc}
 
 Le kit d'outils de développement fournit une interface de ligne de commande que vous pouvez utiliser pour publier des API sur {{site.data.keyword.apiconnect_long}}.
 Vous publiez des API en les plaçant dans un produit, puis en publiant
@@ -30,18 +34,18 @@ vous pouvez interagir avec
 utilisant les commandes du kit d'outils.
 
 ## Concepteur d'API
-{: #designer notoc}
+{: #designer_creating_apis notoc}
 
 Le concepteur d'API est une interface graphique autonome qui figure dans le kit d'outils de développement et qui fournit des fonctions de création et de configuration d'API.
 Le concepteur d'API est exécuté à l'aide de la commande edit à partir de l'interface de ligne de commande. Lorsque la commande edit est utilisée, le concepteur d'API s'ouvre dans votre navigateur par défaut ou est accessible via le port d'hôte local qui est affiché lorsque vous exécutez la commande.
 
 ## Installation du kit d'outils de développement
-{: #install_dev_tk}
+{: #install_dev_tk_creating_apis}
 
 ### Prérequis
-{: #prereq_install_dev_tk}
+{: #prereq_install_dev_tk_creating_apis}
 
-Avant de commencer, vous devez installer [Node.js ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://nodejs.org/en/){:new_window} sur la machine où
+Avant de commencer, vous devez installer [Node.js ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://nodejs.org/en/){: #new_window} sur la machine où
 vous prévoyez d'utiliser le kit d'outils. Assurez-vous également que `node` se trouve dans votre `PATH`.
 
 Les éléments suivants sont installés lors de l'installation du kit d'outils de développement :
@@ -77,7 +81,7 @@ commandes du kit d'outils, entrez la commande suivante :
 	{: codeblock}
 	
 ## Installation des connecteurs LoopBack
-{: #install_lb_conn}
+{: #install_lb_conn_creating_apis}
 
 Avant de pouvoir utiliser
 une source de données LoopBack pour accéder aux données d'un système d'arrière-plan tel
@@ -87,62 +91,49 @@ connecteurs en mémoire sont intégrés à LoopBack, par conséquent, il n'est p
 de les installer.
 
 ### Prérequis
-{: #prereq_install_lb_conn}
+{: #prereq_install_lb_conn_creating_apis}
 
 Les connecteurs Oracle, DB2 et SQLLite requièrent des outils de compilation C pour
 générer et installer les extensions binaires. Les besoins exacts dépendent de votre système d'exploitation, comme le décrit
-le tableau suivant.
+la liste suivante.
 
-<table summary="" id="apic_028__table_pre_reqs" class="defaultstyle style-scope doc-content">
-<caption>Tableau 1. Conditions requises pour l'installation sous différents systèmes d'exploitation</caption>
-<thead>
-<tr>
-<th style="width: 33.3%" id="th_d70e208" class="thleft style-scope doc-content">Windows</th>
-<th style="width: 33.3%" id="th_d70e210" class="thleft style-scope doc-content">Linux</th>
-<th style="width: 33.3%" id="th_d70e212" class="thleft style-scope doc-content">MAC OS X</th>
-</tr>
-</thead>
-<tbody >
-<tr class="style-scope doc-content doc-tr-odd">
-<td style="width: 33.3%" > [Microsoft .NET Framework 4 ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.microsoft.com/en-us/download/details.aspx?id=17851)</td>
-<td style="width: 33.3%">Python v2.7 (v3.x non prise en charge)</td>
-<td style="width: 33.3%" > [Python Releases for Mac OS X ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.python.org/downloads/mac-osx/)</td>
-</tr>
-<tr><td style="width: 33.3%" > [Visual Studio ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.visualstudio.com/downloads/download-visual-studio-vs)</td>
-<td style="width: 33.3%">
-<code>make</code>
-</td>
-<td style="width: 33.3%" > [Xcode ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716)</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" > [Python v2.7.10 ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.python.org/downloads/release/python-2710/)</td>
-<td style="width: 33.3%">Une chaîne d'outils de compilateur C/C++, par exemple, GCC version 4.2 ou ultérieure. </td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-<tr><td style="width: 33.3%" > [Microsoft Windows SDK for Windows 7 ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279)</td>
-<td style="width: 33.3%">Sur les distributions Debian et dérivées (Ubuntu, Mint, etc.),
+**Linux**
+- Python v2.7 (v3.x non prise en charge)
+
+- <code>make</code>
+
+- Une chaîne d'outils de compilateur C/C++, par exemple, GCC version 4.2 ou ultérieure.
+
+- Sur les distributions Debian et dérivées (Ubuntu, Mint, etc.),
 utilisez la commande suivante :
 <pre class="codeblock style-scope doc-content"><code>apt-get install build-essential</code></pre>
-</td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" >npm version 3. Voir Remarque.</td>
-<td style="width: 33.3%">&nbsp;</td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-</tbody>
-</table>
 
-**Remarque :** Pour les installations Windows :
+**Mac OS X**
+- [Python Releases for Mac OS X ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.python.org/downloads/mac-osx/){: #new_window}
 
-- Utilisez Visual Studio Community sauf si vous souhaitez acheter Visual Studio Enterprise. Exécutez
+- [Xcode ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716){: #new_window}
+
+**Windows**
+- [Microsoft .NET Framework 4 ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.microsoft.com/en-us/download/details.aspx?id=17851){: #new_window}
+
+- [Visual Studio ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.visualstudio.com/downloads/download-visual-studio-vs){: #new_window}
+
+- [Python v2.7.10 ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.python.org/downloads/release/python-2710/){: #new_window}
+
+- [Microsoft Windows SDK for Windows 7 ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279){: #new_window}
+
+- npm version 3 : consultez la remarque suivante.
+
+**Remarque** : Utilisez Visual Studio Community sauf si vous souhaitez acheter Visual Studio Enterprise. Exécutez
 le programme d'installation, cochez "Visual C++" sous "Langages de programmation" et
 acceptez l'emplacement d'installation par défaut.
 
-- Pour les compilations 64 bits de Node.js et des modules natifs, il vous faut également le SDK pour Windows&trade; 7 64 bits. Si l'installation échoue, essayez de désinstaller l'éventuel
+Pour les compilations 64 bits de Node.js et des modules natifs, il vous faut également le SDK pour Windows&trade; 7 64 bits. Si l'installation échoue, essayez de désinstaller l'éventuel
 package C++ 2010
 x64&amp;x86 Redistributable que vous avez installé en premier. Si vous obtenez des erreurs signalant que
 les compilateurs 64 bits ne sont pas installés, c'est peut-être parce qu'il vous faut aussi la mise à jour du compilateur pour Windows&trade; SDK 7.1.
-- Entrez la commande suivante pour installer npm version 3 :
+
+Entrez la commande suivante pour installer npm version 3 :
   ```
   npm install -g npm
   ```
@@ -169,10 +160,10 @@ installez le connecteur en utilisant la commande suivante dans le répertoire ra
 npm install --save <connector-package>
 ```
 {: codeblock}
-où `<connector-package>` est le nom du package npm pour le connecteur LoopBack, comme indiqué dans le tableau.
+où `<connector-package>` est le nom du package npm pour le connecteur LoopBack, comme indiqué dans le Tableau 1.
 
 <table summary="" id="apic_connectors_table_pre_reqs" class="defaultstyle style-scope doc-content">
-<caption>Tableau 3. Connecteurs LoopBack</caption>
+<caption>Tableau 1. Connecteurs LoopBack</caption>
 <thead>
 <tr class="style-scope doc-content doc-tr-even">
 <th style="width: 50%" id="th_new_d70e1489" class="thleft style-scope doc-content">Source de données</th>
@@ -216,14 +207,15 @@ où `<connector-package>` est le nom du package npm pour le connecteur LoopBack,
 </tbody>
 </table>
 
+
 ## Création d'une API LoopBack à l'aide de l'interface de ligne de commande
-{: #create_lb_api}
+{: #create_lb_api_creating_apis}
 
 La procédure ci-après explique comment créer une API LoopBack&reg; à l'aide de l'interface de ligne de commande.
 
 
 ### Prérequis
-{: #prereq_create_lb_api}
+{: #prereq_create_lb_api_creating_apis}
 
 Avant de commencer, procurez-vous l'identificateur du catalogue que vous souhaitez utiliser. Pour l'obtenir, effectuez les étapes suivantes :  
 
@@ -319,7 +311,7 @@ modèle.
       Checkpoint
     (Move up and down to reveal more choices)
     ```
-    Pour plus d'informations sur chaque option, voir [Utilisation de modèles intégrés ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){:new_window}.
+    Pour plus d'informations sur chaque option, voir [Utilisation de modèles intégrés ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){: #new_window}.
 
 9. Sélectionnez une classe de base et appuyez sur **Entrée**. L'outil vous demande si vous souhaitez présenter l'API REST du modèle.
 ```
@@ -414,7 +406,7 @@ Install loopback-connector-<connector>?
 5. Tapez `Oui`.
 L'outil installe le connecteur.
 
-Si vous avez sélectionné le connecteur Oracle, vous devez définir une variable d'environnement dans
+**Remarque ** : Si vous avez sélectionné le connecteur Oracle, vous devez définir une variable d'environnement dans
 {{site.data.keyword.Bluemix_notm}} pour que l'application Oracle puisse démarrer. Pour ce faire, effectuez les étapes suivantes :
 
 1. Dans l'interface utilisateur
@@ -438,7 +430,7 @@ travailler.
 8. Cliquez sur **Sauvegarder**.
 
 ### Test d'un projet LoopBack
-{: #test_lb_proj}
+{: #test_lb_proj_creating_apis}
 
 Pour tester un projet LoopBack, procédez comme suit :
 
@@ -467,7 +459,7 @@ si vous souhaitez charger l'API à l'aide d'un navigateur Web, ouvrez `http://lo
 ```
 
 ### Publication d'une application LoopBack sur {{site.data.keyword.Bluemix_notm}} à partir de l'interface de ligne de commande
-{: #pub_lb_app_cli}
+{: #pub_lb_app_cli_creating_apis}
 
 Pour publier une application LoopBack sur {{site.data.keyword.Bluemix_short}} à partir de la ligne de commande, procédez comme suit :
 
@@ -501,7 +493,7 @@ où :
   En cas de doute, vous pouvez localiser votre région en cliquant sur l'icône {{site.data.keyword.avatar}} <img src="images/i-avatar-icon.svg" alt="icône d'avatar"/> dans la barre de menus pour ouvrir le widget Compte et support et vérifier la zone de région.
 7. Entrez la commande suivante pour publier votre application sur {{site.data.keyword.Bluemix_notm}}.
 ```
-apic apps:publish –a <app> -o <org> -s <région>.apiconnect.ibmcloud.com
+apic apps:publish –app <app> -o <org> -s <région>.apiconnect.ibmcloud.com
 ```
 où :
   * `<app>` est le nom de l'application.
@@ -540,16 +532,16 @@ l'étape 7. Vous pouvez également l'extraire en vous connectant à {{site.data.
     8. Cliquez sur **Sauvegarder** pour sauvegarder l'API.
 
 ## Création d'une API LoopBack à l'aide du concepteur d'API
-{: #create_lb_api_design}
+{: #create_lb_api_design_creating_apis}
 
 La procédure ci-après explique comment créer une API LoopBack à l'aide du concepteur d'API.
 {:shortdesc}
 
 ### Prérequis
-{: #prereq_create_lb_api_design}
+{: #prereq_create_lb_api_design_creating_apis}
 
 **Remarque** : Les instructions qui suivent partent du principe que vous utilisez la dernière version du
-kit d'outils de développement. Pour savoir quelle est la dernière version, voir la page du package [npm ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.npmjs.com/package/apiconnect){:new_window}.
+kit d'outils de développement. Pour savoir quelle est la dernière version, voir la page du package [npm ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.npmjs.com/package/apiconnect){: #new_window}.
 
 Vous devez commencer par créer un projet LoopBack à l'aide de l'interface de ligne de commande. Pour ce faire, procédez comme suit :
 
@@ -648,7 +640,7 @@ npm install --save <connector-package>
 **Remarque :** Les connecteurs de messagerie (e-mail) et les connecteurs en mémoire sont intégrés à LoopBack ; il n'est donc pas nécessaire de les installer.
 
 <table>
-<caption>Tableau 3. Connecteurs LoopBack</caption>
+<caption>Tableau 2. Connecteurs LoopBack</caption>
 <thead>
 <tr class="style-scope doc-content doc-tr-even">
 <th style="width: 50%" id="3rd_d70e1489" class="thleft style-scope doc-content">Source de données</th>
@@ -692,7 +684,7 @@ npm install --save <connector-package>
 </tbody>
 </table>
 
-Pour plus d'informations, voir [LoopBack Documentation - Building a connector ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){:new_window}.
+Pour plus d'informations, voir [LoopBack Documentation - Building a connector ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){: #new_window}.
 
 **Remarque :** Si vous avez sélectionné le connecteur Oracle, vous devez définir une variable d'environnement dans
 {{site.data.keyword.Bluemix_notm}} pour que l'application Oracle puisse démarrer. Pour ce faire, effectuez les étapes suivantes :
@@ -730,7 +722,7 @@ En fonction de la configuration de votre projet et selon que d'autres processus 
 {"started":"2017-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-A présent, vous devez créer un produit. Pour plus d'informations, voir [Création d'un produit](managing_products.html#create_product).
+A présent, vous devez créer un produit. Pour plus d'informations, voir [Création d'un produit](/docs/services/apiconnect?topic=apiconnect-managing_products#create_product_managing_products).
 **Conseil** : Chaque fois que vous ouvrez une nouvelle invite de commande, vérifiez que le répertoire de travail en cours
 est le répertoire de niveau supérieur du projet. Pour ce faire, entrez la commande suivante :
 ```
@@ -738,10 +730,10 @@ cd <project directory name>
 ```
 
 ## Désinstallation du kit d'outils de développement
-{: #uninstall_dev_tk}
+{: #uninstall_dev_tk_creating_apis}
 
 ### Prérequis
-{: #prereq_uninstall_dev_tk}
+{: #prereq_uninstall_dev_tk_creating_apis}
 
 Avant de commencer, vous devez arrêter toutes les applications qui sont en cours d'exécution localement en entrant la commande suivante :
 ```

@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
-lastupdated: "2017-07-11"
+lastupdated: "2017-09-05"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -21,7 +27,9 @@ votre organisation {{site.data.keyword.Bluemix_short}}, accédez à l'écran d'a
 2. Développez l'API pour afficher davantage d'informations à son sujet.
 
 3. Pour vous abonner à une API, cliquez sur un produit d'API.
-Le portail de développeur s'ouvre et vous pouvez vous abonner à un plan pour accéder à une API.
+Le portail de développeur s'ouvre et vous pouvez vous abonner à un plan pour accéder à une API. 
+
+  **Remarque** : Si le plan que vous sélectionnez est avec facturation, vous devez fournir un numéro de carte de crédit pour votre organisation. Vous devez donc disposer de privilèges de propriétaire.
 
 ## Affichage et test des API dans le portail de développeur
 {: #view_test_apis_dev_port}
@@ -77,6 +85,8 @@ La boîte de dialogue Utiliser ce plan s'affiche.
 5. Sélectionnez l'application que vous souhaitez utiliser avec ce plan, puis cliquez sur
 **Sauvegarder**.
 Les détails de l'application sont affichés.
+
+  **Remarque** : Si le plan que vous sélectionnez est avec facturation, vous devez fournir un numéro de carte de crédit pour votre organisation. Vous devez donc disposer de privilèges de propriétaire.
 
 6. Pour afficher les opérations des API
 incluses dans les plans auxquels l'application est

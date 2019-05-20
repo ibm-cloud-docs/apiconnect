@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-24"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,6 +17,7 @@ lastupdated: "2017-10-24"
 {:pre: .pre}
 
 # Configuration d'un catalogue
+{: #create_catalog}
 
 Vous pouvez créer et configurer vos catalogues de gestionnaire
 d'API. Les catalogues sont
@@ -31,7 +38,7 @@ d'affichage**.
 
 4. Entrez le texte devant former le segment de catalogue de l'adresse URL
 dans la zone **Nom**.
-	**REMARQUE :** La zone **Nom** ne peut comporter que des caractères alphanumériques minuscules (a à z
+	**Remarque :** La zone **Nom** ne peut comporter que des caractères alphanumériques minuscules (a à z
 et 0 à 9) et des traits d'union (-). Le
 trait d'union ne peut pas être le premier ou le dernier caractère du nom.
 
@@ -63,7 +70,7 @@ catalogue.
         Toutefois, vous pouvez ignorer le format par défaut en spécifiant une URL convenant mieux à votre entreprise, par exemple, `https://api.monentreprise.com`. Tout noeud final d'API affiché dans le portail de développeur reflétera l'URL spécifiée.
 			**Remarques :**
 		    - Vous devez configurer une entrée DNS qui mappe votre nom d'hôte et de domaine personnalisé à l'URL de passerelle par défaut.
-		    - Pour que les noeuds finaux d'une API reflètent votre URL de passerelle personnalisée, vous devez configurer l'API qui doit être appliquée par la passerelle API Connect. Pour plus d'informations, voir [Specifying an alternative host for an API ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+		    - Pour que les noeuds finaux d'une API reflètent votre URL de passerelle personnalisée, vous devez configurer l'API qui doit être appliquée par la passerelle API Connect. Pour plus d'informations, voir [Specifying an alternative host for an API ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 		    - Assurez-vous que la même URL de passerelle personnalisée n'est pas
 appliquée à plusieurs catalogues car le comportement dans ce scénario n'est pas
 défini.
@@ -78,7 +85,7 @@ défini.
 dans ce catalogue, indiquez l'URL dans cette zone. Tout noeud final d'API affiché dans le portail de développeur reflétera l'URL spécifiée. Ces noeuds finaux existent sur la passerelle tierce ou sur l'équilibreur de charge et projettent une adresse virtuelle, exposée aux consommateurs de l'API, qui est mappée au proxy de l'API ou aux noeuds finaux de l'assemblage d'API sur la passerelle. Les noeuds finaux qui sont dérivés de l'URL d'API personnalisée sont généralement publiés dans les portails de développeur de production afin de faire la promotion de l'adresse de l'API.
 
 	    **Remarque :** Si vous spécifiez une URL d'API personnalisée pour un catalogue, il est prioritaire sur n'importe quel nom d'hôte que vous
-	    spécifiez lors de la configuration de l'API. Pour plus d'informations, voir [Specifying an alternative host for an API ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+	    spécifiez lors de la configuration de l'API. Pour plus d'informations, voir [Specifying an alternative host for an API ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 
 	    - **Nom d'hôte des appels API du portail de développeur** :
 	    Dans la zone de la fenêtre Noeud final d'API de port, entrez un nom d'hôte pour les appels d'API de portail de développeur. Le
@@ -90,7 +97,7 @@ appels.
 7. Cliquez sur l'icône **Sauvegarder**.
 
 ## Partitionnement d'un catalogue
-{: #apic_spaces}
+{: #apic_spaces_create_catalog}
 
 Pour pouvoir utiliser la fonction de syndication dans
 {{site.data.keyword.apiconnect_short}},
@@ -111,4 +118,4 @@ pouvez gérer vos espaces en cliquant sur l'un de ces liens.
 Les espaces sont activés pour votre catalogue et un espace par défaut,
 nommé New Space, est créé.
 
-Pour plus d'informations sur l'utilisation de la syndication, reportez-vous aux rubriques du Knowledge Center, [Utilisation de la syndication dans IBM API Connect ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}.
+Pour plus d'informations sur l'utilisation de la syndication, reportez-vous aux rubriques du Knowledge Center, [Utilisation de la syndication dans IBM API Connect ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){: #new_window}.

@@ -1,8 +1,12 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-15"
+  years: 2018
+lastupdated: "2019-01-17"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
 
 ---
 
@@ -21,89 +25,22 @@ Vous pouvez utiliser API Connect pour gérer des API dans {{site.data.keyword.Bl
 Si vous êtes un client, vous pouvez gérer comment une API est utilisée dans l'interface utilisateur du gestionnaire d'API une fois qu'un développeur l'a créée et qu'il a envoyé le produit à {{site.data.keyword.Bluemix_notm}}. Les rubriques ci-après expliquent comment créer et gérer des produits dans {{site.data.keyword.apiconnect_short}}.
 
 ## Exposition d'API sur site via une passerelle sécurisée
-{: #expose_apis_sec_gate}
+{: #expose_apis_sec_gate_managing_apis}
 
 Vous pouvez créer une passerelle sécurisée pour exposer en toute sécurité des API sur site sur {{site.data.keyword.apiconnect_full}}.
 
-Lorsque vous créez une passerelle sécurisée, vous intégrez les fonctions du service {{site.data.keyword.Bluemix_notm}}
-{{site.data.keyword.SecureGateway}} à {{site.data.keyword.apiconnect_short}}. Cela signifie que vous pouvez accéder de manière sécurisée à vos API sur site à partir d'{{site.data.keyword.apiconnect_short}} via un passage sécurisé sans avoir à mettre à disposition une instance distincte du service {{site.data.keyword.SecureGateway}}. En réalité, vous créez un tunnel vers {{site.data.keyword.apiconnect_short}} dans un environnement public sans exposer vos données sur site. Il
-suffit de créer la passerelle et de la lier à une API. Vous avez déjà terminé
-la création d'une destination, du profil SSL et des certificats.
-Pour plus d'informations sur le service
-{{site.data.keyword.SecureGateway}},
-voir [A
-propos de {{site.data.keyword.SecureGateway}}](../../services/SecureGateway/sg_overview.html#sg_overview).
-Pour créer une passerelle sécurisée, procédez comme indiqué dans la rubrique
-ci-après.
+Lorsque vous créez une passerelle sécurisée et fournissez ensuite une adresse pour son client ou cloud `<host>:<port>`, vous intégrez les fonctions du service {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.SecureGateway}} à {{site.data.keyword.apiconnect_short}}. Cela signifie que vous pouvez accéder de manière sécurisée à vos API sur site à partir d'{{site.data.keyword.apiconnect_short}} via un passage sécurisé. En réalité, vous créez un tunnel vers {{site.data.keyword.apiconnect_short}} dans un environnement public sans exposer vos données sur site. Il suffit de créer et de configurer le service de passerelle sécurisée sur IBM Cloud et de lui fournir une adresse dans une API. 
 
-### Création d'une passerelle sécurisée
-{: #create_sec_gate notoc}
-
-Lorsque vous créez une passerelle sécurisée, un ID de passerelle et
-un jeton de sécurité sont créés pour vous.
-Vous configurez également un client de passerelle sécurisée dans votre
-environnement sur site auquel
-{{site.data.keyword.apiconnect_short}}
-se connectera. Une fois le client configuré, utilisez l'ID de passerelle et le
-jeton de sécurité pour vous connecter au client et ainsi accéder à vos API sur
-site.
-
-Pour créer une passerelle, procédez comme suit :
-
-1. Cliquez sur **Accéder à** <img alt="Icône Accéder à" src="images/navigate_to_icon.png"> > **Admin** > **Passerelles sécurisées**.
-La page `Secure Gateways` s'affiche et
-une visite guidée de Secure Gateway apparaît dans l'angle de l'interface
-utilisateur.
-
-2. **Facultatif** :
-Cliquez sur chaque étape de la visite guidée pour finaliser la configuration de votre passerelle.
-
-3. Cliquez sur **Ajouter**.
-La boîte de dialogue `Créer une passerelle Secure Gateway` s'affiche.
-
-4. Indiquez un nom pour votre passerelle.
-    **Remarque :** Seuls les caractères alphanumériques et les traits de soulignement sont admis.
-
-5. Cliquez sur **Sauvegarder**.
-La passerelle apparaît, ainsi que l'ID de passerelle et le jeton
-de sécurité.
-
-6. Cliquez sur **Configurer**.
-Cliquer sur **Configurer** vous permet de télécharger et d'installer un client de passerelle sécurisée
-sur votre poste de travail sur site afin de connecter un réseau distant à une passerelle sécurisée au sein du réseau Bluemix&reg;.
-
-    La fenêtre `Configurer des clients Secure Gateway` s'affiche.
-
-7. Cliquez sur le client que vous souhaitez utiliser à partir des options suivantes :
-
-    - Programmes d'installation IBM&reg;
-    - Docker
-    - IBM DataPower&reg;
-
-8. Suivez les instructions à l'écran pour installer et exécuter le client que vous avez sélectionné.
-Pour plus d'informations sur la configuration d'un client de passerelle
-sécurisée, voir
-[Configuration
-d'un client](../../services/SecureGateway/sg_021.html#sg_021).
-
-9. Lorsque vous avez terminé l'installation du client, fermez la fenêtre **Configurer des clients Secure Gateway**.
-
-10. Actualisez la page.
-
-Le client est connecté. L'ID de passerelle et le statut sont affichés. Vous
-avez terminé la configuration de la passerelle et avez créé une passerelle
-sécurisée.
-A présent, utilisez la passerelle sécurisée pour accéder à vos API
-sur site.
+Pour plus d'informations sur le service {{site.data.keyword.SecureGateway}} et sa configuration, voir [A propos
+de {{site.data.keyword.SecureGateway}}![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/docs/services/SecureGateway?topic=index#getting-started-with-sg){: #new_window}.
 
 ### Utilisation de la passerelle sécurisée avec vos API
-{: #using_sec_gate_apis notoc}
+{: #using_sec_gate_apis_managing_apis notoc}
 
 Une fois la passerelle configurée, vous pouvez l'utiliser avec vos API.
 {:shortdesc}
 
-Pour utiliser votre passerelle sécurisée avec des API, procédez
-comme suit :
+Pour utiliser votre passerelle sécurisée avec des API, procédez comme suit.
 1. Créez votre API et votre produit en procédant comme indiqué dans les étapes ci-après.
   - Cliquez sur **Accéder à** <img src="images/navigate_to_icon.png" alt="Icône Accéder à" /> > **Brouillons** > **API** > **Ajouter**.
   - Sélectionnez le type d'API que vous souhaitez créer.
@@ -117,44 +54,33 @@ comme suit :
 **RESTRICTION** : Vous ne pouvez pas utiliser de commutateurs logiques, tels `Switch`, `Operation
 Switch` et `If`, avec des API qui utilisent une passerelle sécurisée.
 
-4. Sélectionnez **Accéder à l'URL via Secure Gateway**.
+4. **Ne** cochez **pas** la case **Accéder à l'URL via la passerelle sécurisée**.
+**IMPORTANT** : Cette case à cocher correspond à une fonction obsolète qui n'est pas prise en charge en production et peut être supprimée à tout moment. A la place, fournissez directement une adresse pour l'URL de passerelle sécurisée, sans cocher cette case. 
 
-5. Dans la zone URL, mettez à jour `target-url` avec le nom d'hôte et le numéro de port sur site. Par exemple,
+5. Dans la zone URL, mettez à jour `target-url` avec le nom d'hôte et le numéro de port du cloud, par exemple :
 ```
-target-url: http://onpremdb2.rtp.raleigh.ibm.com:3055$(request.path)$(request.search)
+target-url: cap-sg-prd-5.securegateway.appdomain.cloud:18579
 ```
 
 6. Cliquez sur **Sauvegarder** <img src="images/icon_save.png" alt="Icône Sauvegarder" />.
 
-7. Cliquez sur l'onglet **Source**.  Notez que la zone `secure-gateway` a pour valeur `true`.
+7. Cliquez sur **Toutes les API** > **Produits**, puis sélectionnez le produit que vous avez créé précédemment.
 
-8. Cliquez sur **Toutes les API** > **Produits**, puis sélectionnez le produit que vous avez créé précédemment.
+8. Cliquez sur **Publier** pour transférer le produit dans un catalogue sélectionné.
 
-9. Cliquez sur l'icône **Publier** pour transférer le
-produit dans un catalogue choisi.
+9. Sélectionnez le catalogue que vous souhaitez utiliser.
 
-10. Sélectionnez le catalogue que vous souhaitez utiliser.
+10. Sélectionnez le produit transféré.
 
-11. Sélectionnez le produit transféré.
+11. Cliquez sur **Publier**.
 
-12. Cliquez sur **Publier** et sélectionnez **Affectations Secure Gateway**.
-
-Vous avez exposé votre API sur site de manière sécurisée sur {{site.data.keyword.apiconnect_short}}. Les éventuels profils TLS associés à une destination sont ajoutés. Pour vérifier les profils TLS,
-cliquez sur **Accéder à** <img src="images/navigate_to_icon.png" alt="Icône Accéder à" /> > **Admin** > **Sécurité** > **Profils TLS**.
-Vous pouvez disposer de plusieurs passerelles pour chaque API. Vous déterminez la passerelle à utiliser lorsque
-vous publiez l'API. Si vous avez déjà mis le service {{site.data.keyword.SecureGateway}} à disposition, vous pouvez
-surveiller vos destinations dans le tableau de bord {{site.data.keyword.SecureGateway}}. Vous
-ne pouvez cependant pas éditer de destinations
-{{site.data.keyword.apiconnect_short}}
-créées par le service {{site.data.keyword.apiconnect_short}}.
-A présent, testez votre API {{site.data.keyword.SecureGateway}}.
+Vous avez exposé votre API sur site de manière sécurisée sur {{site.data.keyword.apiconnect_short}}. A présent, testez votre API {{site.data.keyword.SecureGateway}}.
 
 ### Test de votre API de passerelle sécurisée
-{: test_sec_gate notoc}
+{: test_sec_gate_managing_apis notoc}
 
-Après avoir associé la passerelle à une API, vous pouvez tester
-l'API afin de vous assurer que la passerelle fonctionne et qu'elle génère la
-réponse correcte.
+Après avoir fourni une adresse pour la passerelle {{site.data.keyword.SecureGateway}} dans une API, vous pouvez tester
+l'API afin de vous assurer que la passerelle fonctionne et qu'elle génère la réponse correcte.
 
 Pour tester une API à l'aide de la passerelle sécurisée,
 procédez comme suit :
@@ -166,7 +92,7 @@ procédez comme suit :
 
 3. Sélectionnez un catalogue à tester à partir de la liste fournie.
 
-4. Sélectionnez une passerelle sécurisée à utiliser pour le test à partir de la liste fournie.
+4. Vérifiez que l'URL fournit une adresse pour la passerelle sécurisée correcte `<cloud_host>:<port>` et que la destination du service de passerelle sécurisée a été correctement configurée, comme décrit dans la documentation [{{site.data.keyword.SecureGateway}}![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/docs/services/SecureGateway?topic=index#getting-started-with-sg){: #new_window}.
 
 5. Choisissez un produit dans la liste fournie, puis cliquez sur **Republier le produit**.
    **Important** : Si le produit est déjà publié dans un catalogue, il sera à
@@ -185,7 +111,7 @@ publier**.
 Les résultats du test s'affichent.
 
 ## Transfert et publication d'une application LoopBack
-{: #stage_publish_lb_app}
+{: #stage_publish_lb_app_managing_apis}
 
 1. Dans le panneau de navigation du concepteur d'API, cliquez sur **Produits**.
 L'onglet Produits s'ouvre.
@@ -253,7 +179,7 @@ Pour vérifier que la publication a abouti, procédez comme suit :
 
 1. Vérifiez que l'application {{site.data.keyword.Bluemix_notm}} est en cours d'exécution.
 
-2. Ouvrez une fenêtre de navigateur et accédez à l'URL cible de l'API.
+2. Ouvrez une fenêtre de navigateur et accédez à l'URL de l'API.
 L'application est sécurisée au moyen de la validation client. Si vous n'indiquez pas le certificat client approprié, une erreur est générée (comportement normal).
 
 3. Accédez à l'URL {{site.data.keyword.apiconnect_short}} exposée.
@@ -264,6 +190,7 @@ https://<domaine>/<org Bluemix>-<espace Bluemix>/<identificateur catalogue>/api/
 Une réponse 200 s'affiche.
 
 ## Configuration d'un catalogue
+{: #config_cat_managing_apis}
 
 Vous pouvez créer et configurer vos catalogues de gestionnaire
 d'API. Les catalogues sont
@@ -318,7 +245,7 @@ comporte pas le nom de catalogue.
         Toutefois, vous pouvez ignorer le format par défaut en spécifiant une URL convenant mieux à votre entreprise, par exemple, `https://api.monentreprise.com`. Tout noeud final d'API affiché dans le portail de développeur reflétera l'URL spécifiée.
         **Remarques :**
 		    - Vous devez configurer une entrée DNS qui mappe votre nom d'hôte et de domaine personnalisé à l'URL de passerelle par défaut.
-		    - Pour que les noeuds finaux d'une API reflètent votre URL de passerelle personnalisée, vous devez configurer l'API qui doit être appliquée par la passerelle API Connect. Pour plus d'informations, voir [Specifying an alternative host for an API ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+		    - Pour que les noeuds finaux d'une API reflètent votre URL de passerelle personnalisée, vous devez configurer l'API qui doit être appliquée par la passerelle API Connect. Pour plus d'informations, voir [Specifying an alternative host for an API ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 		    - Assurez-vous que la même URL de passerelle personnalisée n'est pas
 appliquée à plusieurs catalogues car le comportement dans ce scénario n'est pas
 défini.
@@ -334,7 +261,7 @@ défini.
 dans ce catalogue, indiquez l'URL dans cette zone. Tout noeud final d'API affiché dans le portail de développeur reflétera l'URL spécifiée. Ces noeuds finaux existent sur la passerelle tierce ou sur l'équilibreur de charge et projettent une adresse virtuelle, exposée aux consommateurs de l'API, qui est mappée au proxy de l'API ou aux noeuds finaux de l'assemblage d'API sur la passerelle. Les noeuds finaux qui sont dérivés de l'URL d'API personnalisée sont généralement publiés dans les portails de développeur de production afin de faire la promotion de l'adresse de l'API.
 
 	    **Remarque :** Si vous spécifiez une URL d'API personnalisée pour un catalogue, il est prioritaire sur n'importe quel nom d'hôte que vous
-	    spécifiez lors de la configuration de l'API. Pour plus d'informations, voir [Specifying an alternative host for an API ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+	    spécifiez lors de la configuration de l'API. Pour plus d'informations, voir [Specifying an alternative host for an API ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 
 	    - **Nom d'hôte des appels API du portail de développeur** :
 	    Dans la zone de la fenêtre Noeud final d'API de port, entrez un nom d'hôte pour les appels d'API de portail de développeur. Le
@@ -346,6 +273,7 @@ appels.
 7. Cliquez sur l'icône **Sauvegarder**.
 
 ## Partitionnement d'un catalogue
+{: #part_cat_managing_apis}
 
 Pour pouvoir utiliser la fonction de syndication dans
 {{site.data.keyword.apiconnect_short}},
@@ -366,10 +294,10 @@ pouvez gérer vos espaces en cliquant sur l'un de ces liens.
 Les espaces sont activés pour votre catalogue et un espace par défaut,
 nommé New Space, est créé.
 
-Pour plus d'informations sur l'utilisation de la syndication, reportez-vous aux rubriques du Knowledge Center, [Utilisation de la syndication dans IBM API Connect ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}.
+Pour plus d'informations sur l'utilisation de la syndication, reportez-vous aux rubriques du Knowledge Center, [Utilisation de la syndication dans IBM API Connect ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){: #new_window}.
 
 ## Configuration d'un portail de développeur
-{: #config_dev_portal}
+{: #config_dev_portal_managing_apis}
 
 Un portail de développeur est là où vos plans sont publiés afin d'être accessibles et utilisables par les développeurs d'applications.
 
@@ -394,10 +322,10 @@ Portal**. L'URL de portail s'affiche.
 Votre portail de développeur est configuré. L'URL du portail de développeur se trouve sur la ligne Objet du courrier électronique que vous avez reçu. L'URL est également disponible dans l'interface utilisateur du gestionnaire d'API ; vous pouvez y accéder en cliquant sur **Portail** > **Paramètres**.
 
 Pour plus d'informations sur les tâches que vous pouvez exécuter dans le portail de développeur, consultez les rubriques de l'IBM
-Knowledge Center relatives au [portail de développeur![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.html){:new_window}.
+Knowledge Center relatives au [portail de développeur![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.html){: #new_window}.
 
 ## Configuration des droits des rôles
-{: #config_permissions_roles}
+{: #config_permissions_roles_managing_apis}
 
 Pour configurer les droits des rôles dans le gestionnaire d'API,
 procédez comme indiqué ci-après.

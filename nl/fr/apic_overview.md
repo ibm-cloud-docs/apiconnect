@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-18"
+lastupdated: "2017-09-14"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
 
 ---
 
@@ -14,8 +18,9 @@ lastupdated: "2017-07-18"
 {:pre: .pre}
 
 # Présentation d'IBM API Connect
+{: #about_apic_overview}
 
-Utilisez le service {{site.data.keyword.apiconnect_full}} pour créer rapidement des API et des microservices à partir des environnements d'exécution Node.js et Java. Une fois ces éléments créés, vous pouvez gérer vos API avec des contrôles de niveau métier en définissant différents niveaux de sécurité et de visibilité et des limites de débit tout en partageant ces API avec des développeurs d'applications. Le service {{site.data.keyword.apiconnect_short}} fournit également les outils vous permettant de transformer et renforcer votre activité au moyen de connaissances obtenues via des analyses détaillées et des recherches filtrées structurées.
+Utilisez le service {{site.data.keyword.apiconnect_full}} pour créer rapidement des API et des microservices à partir des environnements d'exécution Node.js et Java. Une fois ces éléments créés, vous pouvez gérer vos API avec des contrôles de niveau métier en définissant différents niveaux de sécurité et de visibilité, des plans de facturation et des limites de débit tout en partageant ces API avec des développeurs d'applications. Le service {{site.data.keyword.apiconnect_short}} fournit également les outils vous permettant de transformer et renforcer votre activité au moyen de connaissances obtenues via des analyses détaillées et des recherches filtrées structurées.
 
 <object height="315" type="application/x-shockwave-flash" width="560"
 data="https://www.youtube.com/v/lmxyiNMER5Y?version=3&amp;hl=en_US">
@@ -27,6 +32,7 @@ data="https://www.youtube.com/v/lmxyiNMER5Y?version=3&amp;hl=en_US">
 </object>
 
 ## Création d'API
+{: #creation_apic_overview}
 
 {{site.data.keyword.apiconnect_short}} vous permet d'importer des API à partir de définitions Swagger ou de créer des API en utilisant une URL de proxy ou en assemblant des données à partir de sources de données HTTP. {{site.data.keyword.apiconnect_short}} prend également en charge la création et le test d'API en mode hors ligne. Il existe une micro-passerelle intégrée au kit d'outils de développement qui vous permet de vous connecter à des sources de données dorsales, telles qu'une base de données SQL, et d'effectuer ces opérations de création, de lecture, de mise à jour et de suppression.
 
@@ -53,30 +59,36 @@ L'application LoopBack est déployée sur l'environnement d'exécution {{site.da
 
 <img src="images/Deployed.png" alt="Diagramme illustrant où l'application LoopBack, l'API et le produit sont déployés."/>
 
-Pour plus d'informations sur les tâches nécessaires à la création d'API, voir [Création d'API](creating_apis.html).
+Pour plus d'informations sur les tâches nécessaires à la création d'API, voir [Création d'API](/docs/services/apiconnect?topic=apiconnect-creating_apis).
 
 ## Présentation de la gestion des API
 
-Une fois qu'un produit a été transféré et publié, vous pouvez ouvrir le gestionnaire d'API pour gérer la sécurité, les limites de débit et les règles, puis publier le produit sur un portail de développement.
+Une fois qu'un produit a été transféré et publié, vous pouvez ouvrir le gestionnaire d'API pour gérer la sécurité, les limites de débit, les règles et les informations de facturation, puis publier le produit sur un portail de développement.
 
-Comme illustré dans le diagramme ci-après, un produit contient un plan, qui comprend une API.
+Comme illustré dans le diagramme ci-après, un produit contient un plan, qui comprend une ou plusieurs API.
 
 <img src="images/Product.png" alt="Diagramme illustrant le contenu d'un produit"/>
 
 ### Plans
+{: #plans_apic_overview}
 
 Pour qu'une API puisse être mise à la disposition d'un client, elle doit être incluse dans un plan. Les plans sont utilisés pour distinguer les diverses offres. Les plans peuvent partager des API mais l'obligation ou la non-obligation d'approbation de l'abonnement dépend du plan lui-même. De plus, vous pouvez imposer des limites de débit via des plans ou au moyen d'opérations dans les API d'un plan qui se substituent à la limite de débit du plan.
 
+Des plans peuvent également spécifier les coûts de facturation pour les clients qui utilisent vos produits. Par exemple, vous pouvez définir trois plans différents pour un seul produit. Chaque plan peut comporter un coût d'abonnement différent et une limite de débit différente ciblant différents clients.  
+
 ### Produits
+{: #products_apic_overview}
 
 Les plans et les API sont regroupés dans des produits. Ces produits vous permettent de gérer la disponibilité et la visibilité des API et des plans. Le concepteur d'API vous permet de créer, d'éditer et de transférer votre produit. Utilisez le gestionnaire d'API pour gérer le cycle de vie de votre produit.
 
 Le diagramme suivant illustre la façon dont les produits, les plans et les API sont liés entre eux. Notez que les plans n'appartiennent qu'à un seul produit, qu'ils peuvent posséder différentes API pour d'autres plans au sein d'un même produit et qu'ils peuvent partager des API avec des plans d'un autre produit. Figure montrant la hiérarchie des produits, des plans et des API. <img src="images/plan_product_hierarchy.png" alt="Figure montrant la hiérarchie des produits, des plans et des API."/>
 
 Vous ne pouvez créer des plans que dans des produits qui sont
-ensuite publiés dans un catalogue. Un gestionnaire du cycle de vie peut ensuite contrôler la disponibilité et la visibilité des API et des plans via le gestionnaire d'API. Le portail de développeur permet au client de s'abonner à l'un des plans qui sont mis sa disposition et identifiés dans le gestionnaire d'API. L'utilisateur ne peut s'abonner qu'à un plan d'un produit spécifique. Il est utile d'avoir plusieurs plans dans un seul produit car ils peuvent remplir des objectifs similaires mais avec des niveaux de performances différents. Par exemple, vous pouvez disposer d'un "plan de démonstration", qui met à disposition une API à disposition, et d'un "plan complet", qui met à disposition plusieurs API.
+ensuite publiés dans un catalogue. Un gestionnaire du cycle de vie peut ensuite contrôler la disponibilité et la visibilité des API et des plans via le gestionnaire d'API. Le portail de développeur permet au client de s'abonner à l'un des plans qui sont mis sa disposition et identifiés dans le gestionnaire d'API. S'il s'agit d'un plan avec facturation, le client doit fournir des informations de carte de crédit lors de l'abonnement. L'utilisateur ne peut s'abonner qu'à un plan d'un produit spécifique. Il est utile d'avoir plusieurs plans dans un seul produit car ils peuvent remplir des objectifs similaires mais avec des niveaux de performances et de coûts différents. Par exemple, vous pouvez disposer d'un "plan de démonstration", qui met à disposition une API à disposition, et d'un "plan complet", qui met à disposition plusieurs API.
 
 Il est possible de contrôler les API qu'un utilisateur peut utiliser mais il est également possible d'utiliser plusieurs plans pour implémenter des limites de débit. Une limite de débit peut être implémentée sous la forme d'un débit par défaut dans la totalité d'un plan. Il est aussi possible, pour des opérations d'API spécifiques au sein de ce plan, de les exempter de la limite de débit du plan. Différents plans peuvent avoir des limites de débit différentes, entre les opérations et pour la limite globale. Cela est utile pour pouvoir offrir des niveaux de services différents aux clients. Par exemple, un "plan de démonstration" peut imposer une limite de débit de 10 appels par minute tandis qu'un "plan complet" peut autoriser jusqu'à 1000 appels par minute.
+
+Enfin, différents plans peuvent être utilisés pour affecter un coût de facturation. Un plan peut être gratuit ou avec facturation. Les plans avec facturation peuvent être utilisés avec des limites de débit pour définir différents niveaux de service pour les clients. Par exemple, un "plan de démonstration" peut imposer une limite de débit de 10 appels par minute pour un coût de 5 $ par mois, tandis qu'un "plan complet" peut autoriser jusqu'à 1 000 appels par minute pour un coût de 20 $ par mois.
 
 **Remarque :** L'application d'une limite de débit au niveau du plan crée une limite de débit par défaut qui s'applique à chaque
     opération au sein du plan. Si vous avez besoin de spécifier des limites de débit spécifiques pour
@@ -89,9 +101,10 @@ IBM API Connect prend également en charge l'implémentation de plusieurs versio
 **Remarque :** La version d'un produit est distincte de celle des API contenues dans les plans associés. Les plans ne peuvent pas avoir leur propre version ; ils utilisent celle de leur produit
 parent.
 
-Pour plus d'informations sur les tâches nécessaires à la gestion des API, voir [Gestion des API](managing_apis.html).
+Pour plus d'informations sur les tâches nécessaires à la gestion des API, voir [Gestion des API](/docs/services/apiconnect?topic=apiconnect-managing_apis).
 
 ### Catalogues
+{: #catalogs_apic_overview}
 
 Les produits doivent être transférés dans un catalogue, puis
 publiés dans des organisations de développeurs pour pouvoir être mis à la
@@ -110,6 +123,7 @@ quelques catalogues de test et un cloud de production, éventuellement doté de
 son propre catalogue de test.
 
 #### Paramètres de catalogue
+{: #cat_set_apic_overview}
 
 Vous pouvez appliquer les paramètres suivants à un catalogue :
 
@@ -134,12 +148,12 @@ développement.
 - **Par défaut** : Vous pouvez définir l'un de vos catalogues comme le catalogue par défaut. Ensuite, les appels d'API qui sont publiés sur ce catalogue peuvent utiliser
 une URL plus courte qui ne comporte pas le nom de catalogue.
 
-Pour plus d'informations sur l'utilisation du portail de
-développeur, voir
+Pour plus d'informations sur l'utilisation du portail de développeur, voir
 [Recherche
-et utilisation des API](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.dita).
+et utilisation des API ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.dita){: #new_window}.
 
 ### Syndication
+{: #syn_apic_overview}
 
 La fonction de syndication
 d'{{site.data.keyword.apiconnect_full}}
@@ -164,4 +178,4 @@ Vols est capable de transférer des API uniquement vers l'espace Vols.
 **Remarque :** Par défaut, les espaces sont désactivés dans un catalogue. Pour les
 activer, vous devez modifier les paramètres du catalogue.
 
-Pour partitionner un catalogue, voir [Partitionnement d'un catalogue](create_catalog.html#apic_spaces).
+Pour partitionner un catalogue, voir [Partitionnement d'un catalogue](/docs/services/apiconnect?topic=apiconnect-create_catalog#apic_spaces).
