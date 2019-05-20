@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
-lastupdated: "2017-07-11"
+lastupdated: "2017-09-05"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -19,7 +25,9 @@ lastupdated: "2017-07-11"
 
 2. 展开 API 可查看有关该 API 的更多信息。
 
-3. 要预订 API，请单击 API 产品。这将打开开发者门户网站，您可以在其中预订套餐来访问 API。
+3. 要预订 API，请单击 API 产品。这将打开开发者门户网站，您可以在其中预订套餐来访问 API。 
+
+  **注**：如果您选择的是收费套餐，那么必须提供您的组织的信用卡卡号。这要求您必须拥有所有者特权。
 
 ## 在开发者门户网站中查看和测试 API
 {: #view_test_apis_dev_port}
@@ -61,6 +69,8 @@ lastupdated: "2017-07-11"
 4. 在确定要使用的套餐后，单击**使用此套餐**。这将显示“使用此套餐”对话框。
 
 5. 选择要与此套餐一起使用的应用程序，然后单击**保存**。这将显示该应用程序的详细信息。
+
+  **注**：如果您选择的是收费套餐，那么必须提供您的组织的信用卡卡号。这要求您必须拥有所有者特权。
 
 6. 要查看该应用程序预订的套餐中所包含 API 的操作，请单击相应 API 的名称。
 

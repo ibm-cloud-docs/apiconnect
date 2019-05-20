@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,11 +17,12 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # 管理产品
+{: #managing_products}
 
-有关可用于管理产品的方式的详细信息，请参阅 IBM&reg; Knowledge Center 文档[管理产品 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){:new_window}。
+有关可用于管理产品的方式的详细信息，请参阅 IBM&reg; Knowledge Center 文档[管理产品 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){: #new_window}。
 
 ## 产品生命周期
-{: #prod_lifecycle}
+{: #prod_lifecycle_managing_products}
 
 管理产品版本时，可使版本在一系列生命周期状态之间转变，从初始将草稿产品版本编译打包到环境中，一直到发布以使产品版本可供应用程序开发者使用，再到最终引退和归档。下面的表和图描述了产品版本的各种产品生命周期状态。
 
@@ -54,6 +61,7 @@ lastupdated: "2017-12-15"
 </table>
 
 ### 产品生命周期流程
+{: #prod_lifecycle_flows_managing_products}
 
 下图显示了产品版本的可能生命周期状态，以及将产品版本从一个生命周期状态转变为另一个状态的产品管理操作；例如，“引退”操作将产品版本从“已发布”转变为“已引退”状态。
 
@@ -61,7 +69,7 @@ lastupdated: "2017-12-15"
 
 
 ## 创建产品
-{: #create_product}
+{: #create_product_managing_products}
 
 通过创建产品，可将一组 API 和套餐收集到一个可供开发者使用的产品服务中。套餐包含速率限制设置，这些设置可应用于整个套餐，也可针对某个 API 中的每个操作进行指定。通过产品和套餐，可以更好地控制开发者有权访问哪些 API。创建产品后，必须对产品编译打包。对产品编译打包将使该产品转变为活动状态，使您可以调用并测试其中包含的 API。对产品编译打包后，任何开发者都还无法查看该产品。
 
@@ -91,7 +99,7 @@ API Designer 将在缺省浏览器中打开。
 
 7. 在**可视性**部分中，指定要使其可查看该产品的用户。可以选择**公共**、**已认证的用户**或**定制**。如果选择**定制**，请使用**输入以添加**字段来搜索要使其可查看该产品内套餐的开发者组织或社区。
 
-    **注：**要搜索开发者组织或社区，产品必须处于“已编译打包”、“已发布”或“已弃用”状态。如果在其中编译打包、发布或弃用产品的目录不是沙箱目录，那么当产品处于其中某一状态时，无法对该产品进行其他更改。有关更多信息，请参阅[产品生命周期](#prod_lifecycle)。
+    **注：**要搜索开发者组织或社区，产品必须处于“已编译打包”、“已发布”或“已弃用”状态。如果在其中编译打包、发布或弃用产品的目录不是沙箱目录，那么当产品处于其中某一状态时，无法对该产品进行其他更改。有关更多信息，请参阅[产品生命周期](#prod_lifecycle_managing_products)。
 
 8. 指定可以预订该产品的用户。可以选择**已认证的用户**或**定制**。如果选择**定制**，请使用**输入以添加**字段来搜索要使其能够预订该产品内套餐的开发者组织或社区。
 
@@ -124,11 +132,11 @@ API Designer 将在缺省浏览器中打开。
 
 - 单击**保存**图标以保存更改。
 
-您已创建产品，并且在现在可提供给开发者使用的一个产品服务中指定了一组 API 和套餐。接下来，将产品编译打包到目录。有关更多信息，请参阅[对产品编译打包](#stage_product})。
+您已创建产品，并且在现在可提供给开发者使用的一个产品服务中指定了一组 API 和套餐。接下来，将您的产品编辑打包到目录中，如下一节所述：[编译打包产品](#stage_product_managing_products})。
 
 
 ## 编译打包产品
-{: #stage_product}
+{: #stage_product_managing_products}
 
 发布产品之前，对产品编译打包以在目录中创建该产品的特定版本。产品处于“已编译打包”状态时，任何开发者都还无法查看或预订该产品。
 
@@ -163,18 +171,18 @@ API Designer 将在缺省浏览器中打开。
 
 - 打开 {{site.data.keyword.Bluemix_notm}} **仪表板**。您将在“应用程序”部分中看到应用程序磁贴。
 
-打开 API Manager 以将您的产品发布到社区，供应用程序开发者在开发者门户网站中进行访问。有关更多信息，请参阅[发布产品](#publish_proj})。
+打开 API Manager，将您的产品发布到应用程序开发者可通过开发者门户网站进行访问的社区，如下一节所述：[发布产品](#publish_proj_managing_products})。
 
 
 ## 发布产品
-{: #publish_proj}
+{: #publish_proj_managing_products}
 
 发布套餐后，应用程序开发者即可查看和访问 API。发布产品可使该产品在 {{site.data.keyword.Bluemix_short}} **目录**和内置开发者门户网站中显示，供应用程序开发者使用。
 
 ### 先决条件
-{: #prereq_publish_proj}
+{: #prereq_publish_proj_managing_products}
 
-必须首先编译打包产品，然后才能将其发布。有关对产品编译打包的更多信息，请参阅[对产品编译打包](#stage_product)。
+必须首先编译打包产品，然后才能将其发布。有关对产品编译打包的更多信息，请参阅[对产品编译打包](#stage_product_managing_products)。
 
 要发布产品，请完成以下步骤：
 
@@ -192,12 +200,14 @@ API Designer 将在缺省浏览器中打开。
 
 
 ## 将产品发布到 Bluemix
+{: #pub_to_bm_managing_products}
 
 要在 {{site.data.keyword.apiconnect_short}}“仪表板”的“**浏览 API**”部分中查看产品，请完成以下步骤。
 
 ### 先决条件
+{: #prereq_pub_bm_managing_products}
 
-开始之前，如果要发布使用 LoopBack 实现的 REST API，请确保已发布应用程序运行时，并且已使用指向新应用程序的调用代理对产品编译打包。有关如何执行此操作的更多信息，请参阅[对 LoopBack 应用程序执行编译打包和发布操作](managing_apis.html#stage_publish_lb_app)。
+开始之前，如果要发布使用 LoopBack 实现的 REST API，请确保已发布应用程序运行时，并且已使用指向新应用程序的调用代理对产品编译打包。有关如何执行此操作的更多信息，请参阅[对 LoopBack 应用程序执行编译打包和发布操作](/docs/services/apiconnect?topic=apiconnect-managing_apis#stage_publish_lb_app_managing_apis)。
 
 1. 在 API Manager UI 中，单击**添加** > **目录**。这将显示“**添加目录**”窗口。
 

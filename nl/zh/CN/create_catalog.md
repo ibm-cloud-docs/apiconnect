@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-24"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,6 +17,7 @@ lastupdated: "2017-10-24"
 {:pre: .pre}
 
 # 配置目录
+{: #create_catalog}
 
 您可以创建和配置 API Manager 目录。使用目录，可在将产品和 API 提供给开发者组织之前，将它们分隔开来以用于测试。
 配置目录时，还可以配置定制标记，以便您无需使用 API Manager 提供的缺省 API URL。
@@ -40,9 +47,9 @@ lastupdated: "2017-10-24"
         ```
         https://gateway_cluster_hostname/organization_name/Catalog_name
         ```
-但是，您可以通过指定更适合企业的 URL 来覆盖缺省值；例如，`https://api.mycompany.com`。之后，开发者门户网站中显示的任何 API 端点都将反映该指定的 URL。**注：**
+        但是，您可以通过指定更适合企业的 URL 来覆盖缺省值；例如，`https://api.mycompany.com`。之后，开发者门户网站中显示的任何 API 端点都将反映该指定的 URL。**注：**
 		    - 您必须配置 DNS 条目，以将定制主机名和域映射到缺省网关 URL。
-		    - 对于要反映定制网关 URL 的 API 的端点，您必须对该 API 进行配置，以由 API Connect 网管强制执行。有关更多信息，请参阅[为 API 指定替代主机 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}。
+		    - 对于要反映定制网关 URL 的 API 的端点，您必须对该 API 进行配置，以由 API Connect 网管强制执行。有关更多信息，请参阅[为 API 指定替代主机 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}。
 		    - 确保未向多个目录应用相同的定制网关 URL，因为并未在该场景中定义此类行为。
 **提示：**调用 API 时，还可以将 API 请求上的 HTTP 主机头设置为在“定制网关 URL”字段中指定的值。
 
@@ -52,16 +59,16 @@ lastupdated: "2017-10-24"
 
 	    如果您正在该目录中使用第三方网关或外部负载均衡器，请在该字段中提供 URL。之后，开发者门户网站中显示的任何 API 端点都将反映该指定的 URL。这些端点存在于第三方网关或负载均衡器上，呈现一个虚拟地址并显示给 API 使用者，该虚拟地址会映射到网关上的 API 代理或 API 组合端点。从定制 API URL 衍生的端点通常发布在生产开发者门户网站中，以推广该 API 的地址。
 
-	    **注：**如果您为目录指定定制 API URL，那么它会优先于您在配置 API 时指定的任何主机名。有关更多信息，请参阅[为 API 指定替代主机 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}。
+	    **注：**如果您为目录指定定制 API URL，那么它会优先于您在配置 API 时指定的任何主机名。有关更多信息，请参阅[为 API 指定替代主机 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}。
 
 	    - **开发者门户网站 API 调用的主机名**：在“端口 API 端点”窗口区域中，输入开发者门户网站 API 调用的主机名。输入的主机名可以是管理服务的主机名。
-要访问开发者门户网站上下文中的开发者门户网站 API，您必须配置开发者门户网站 API 调用的基本主机名。
-此操作允许 API Manager 将主机名映射到开发者门户网站 API 调用的提供者组织和目录，而不需要您对其进行查找并将它们包含在调用中。
+     要访问开发者门户网站上下文中的开发者门户网站 API，您必须配置开发者门户网站 API 调用的基本主机名。
+     此操作允许 API Manager 将主机名映射到开发者门户网站 API 调用的提供者组织和目录，而不需要您对其进行查找并将它们包含在调用中。
 
 7. 单击**保存**图标。
 
-## 分区目录
-{: #apic_spaces}
+## 对目录分区
+{: #apic_spaces_create_catalog}
 
 要使用 {{site.data.keyword.apiconnect_short}} 中的联合功能，您必须在需要联合功能的任何目录中，启用空间。
 
@@ -76,4 +83,4 @@ lastupdated: "2017-10-24"
 此时将会针对您的目录启用空间，且会创建名为“新空间”的缺省空间。
 
 
-有关使用联合的更多信息，请参阅 Knowledge Center 主题[使用 IBM API Connect 中的联合 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}。
+有关使用联合的更多信息，请参阅 Knowledge Center 主题[使用 IBM API Connect 中的联合 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){: #new_window}。

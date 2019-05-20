@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,12 +17,13 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # 导入 API
+{: #importing_apis}
 
 您可以使用 Swagger 定义文件来添加 REST API。
 {:shortdesc}
 
 ## 先决条件
-{: #prereq_import_swagger}
+{: #prereq_import_swagger_importing_apis}
 
 开始之前，请确保您的文件符合 Swagger 规范 V2.0。该文件的格式可以是 JSON 或 YAML。
 
@@ -35,7 +42,7 @@ lastupdated: "2017-12-15"
 API 定义导入后，会显示在“**草稿**”页面中 **API** 选项卡的 API 定义列表中。接下来，可以编辑 API 定义，编辑方法与编辑其他任何 REST API 定义一样。
 
 ## 通过 IBM Integration Bus 导入 API
-{: #tut_import_iib_apic}
+{: #tut_import_iib_apic_importing_apis}
 
 在本教程中，可以将使用 IBM Integration Bus 创建的 REST API 导入到 {{site.data.keyword.apiconnect_full}}，从而可更轻松地管理和发布这些 API。
 {: shortdesc}
@@ -49,11 +56,11 @@ API 定义导入后，会显示在“**草稿**”页面中 **API** 选项卡的
 * 您可以控制对 API 执行的调用数。
 * 您可以维护多个 API 版本。
 
-有关更多优点，请参阅[管理 API](managing_apis.html)。
+有关更多优点，请参阅[管理 API](/docs/services/apiconnect?topic=apiconnect-managing_apis)。
 
 要在 IBM Integration Bus 中创建 REST API 并将其导入到 {{site.data.keyword.apiconnect_short}}，请完成以下步骤：
 1. 使用 IBM Integration Bus 创建 REST API。限制：仅可使用安装的 IBM Integration Bus 版本随附的 IBM Integration Toolkit 来创建 REST API。
-	1. 使用 IBM Integration Toolkit 创建 REST API。有关如何完成使用 IBM Integration Bus 创建 REST API 的任务的更多信息，请参阅 IBM Knowledge Center 中的[使用 REST API 开发集成解决方案 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bi12016_.htm){: new_window}。
+	1. 使用 IBM Integration Toolkit 创建 REST API。有关如何完成使用 IBM Integration Bus 创建 REST API 的任务的更多信息，请参阅 IBM Knowledge Center 中的[使用 REST API 开发集成解决方案 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bi12016_.htm){: #new_window}。
 		
 	2. 通过选择**文件** > **新建** > **REST API**，打开“创建 REST API”向导。
 		
@@ -83,7 +90,7 @@ API 定义导入后，会显示在“**草稿**”页面中 **API** 选项卡的
 6. 将操作的完整 URL 复制到剪贴板。在将该 API 配置为与 {{site.data.keyword.apiconnect_short}} 配合使用时，需要此 URL。如果启用了“基本认证”，那么还需要记录分配的用户名和密码。
 
 ### 将 IBM Integration Bus API 与 API Connect 集成。
-{: #integrateiibapic}
+{: #integrateiibapic_importing_apis}
 
 1. 将与 IBM Integration Toolkit 中的 REST API 项目关联的 Swagger 文件导入到 {{site.data.keyword.apiconnect_short}} 服务。 
 	1. 登录到 {{site.data.keyword.apiconnect_short}} {{site.data.keyword.Bluemix_notm}} 服务。
@@ -108,14 +115,15 @@ API 定义导入后，会显示在“**草稿**”页面中 **API** 选项卡的
 	5. 选择**调用**。
 	6. 验证是否从 API 收到预期响应。 
 	
-导入并集成 API 定义后，可管理 API，如管理任何其他 REST API 定义一样。有关 API 的更多信息，请参阅[管理 API](managing_apis.html)。
+导入并集成 API 定义后，可管理 API，如管理任何其他 REST API 定义一样。有关 API 的更多信息，请参阅[管理 API](/docs/services/apiconnect?topic=apiconnect-managing_apis)。
 
 ## 在 IBM API Connect 中发布使用 IBM App Connect Professional 创建的 API
+{: #publish_importing_apis}
 
 在本教程中，可以通过 {{site.data.keyword.apiconnect_full}} 发布并管理使用 IBM App Connect Professional 创建的 REST API。
 
 ### 先决条件
-{: #prereq_pub_api_appconn}
+{: #prereq_pub_api_appconn_importing_apis}
 
 您需要 IBM App Connect Professional on Cloud 和 {{site.data.keyword.apiconnect_short}} 的有效帐户才能完成此教程的学习。请确保您的 REST API 文件符合 Swagger 规范 V2.0。该文件的格式可以是 JSON 或 YAML。
 
@@ -125,10 +133,10 @@ API 定义导入后，会显示在“**草稿**”页面中 **API** 选项卡的
 - 您可以控制对 API 执行的调用数。
 - 您可以维护多个 API 版本。
 
-有关更多优点，请参阅[管理 API](managing_apis.html)。要在 IBM App Connect Professional 中创建 REST API 并将其发布到 {{site.data.keyword.apiconnect_short}}，请完成以下步骤：
+有关更多优点，请参阅[管理 API](/docs/services/apiconnect?topic=apiconnect-managing_apis)。要在 IBM App Connect Professional 中创建 REST API 并将其发布到 {{site.data.keyword.apiconnect_short}}，请完成以下步骤：
 
 1. 通过使用 IBM App Connect Professional 创建 REST API。
-  - 使用 IBM 标识登录到 [App Connect Professional Web 管理控制台 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://appconnect.ibmcloud.com/professional/){:new_window}。有关如何完成使用 IBM App Connect Professional Web 管理控制台创建 REST API 的任务的更多信息，请参阅 IBM Knowledge Center 中的[关于管理控制台设置 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window}。
+  - 使用 IBM 标识登录到 [App Connect Professional Web 管理控制台 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud/app-connect){:new_window}。有关如何完成使用 IBM App Connect Professional Web 管理控制台创建 REST API 的任务的更多信息，请参阅 IBM Knowledge Center 中的[关于管理控制台设置 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window}。
   - 选择“生产”选项卡（如果尚未选择）。
   - 在导航面板中选择**存储库** > **配置**。
   - 在“项目配置”屏幕中，选择要发布到 {{site.data.keyword.apiconnect_short}} 的项目。将显示要发布的项目的“配置详细信息”。
@@ -170,6 +178,7 @@ API 定义导入后，会显示在“**草稿**”页面中 **API** 选项卡的
 将 IBM App Connect API 与 {{site.data.keyword.apiconnect_short}} 相关联。
 
 #### 导入 Swagger API 定义
+{: #import_sw_importing_apis}
 
 要将与 IBM App Connect 中的 REST API 项目关联的 Swagger 文件导入到 {{site.data.keyword.apiconnect_short}} 服务，请执行以下步骤：
 
@@ -191,13 +200,14 @@ API 定义导入后，会显示在“**草稿**”页面中 **API** 选项卡的
 
 8. 使用以下信息配置 URL 字段的 host/basePath：
 
-- **hostname**：这是取决于云实例的设置。有关此设置的更多信息，请参阅 [IBM App Connect Professional ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://provide.castiron.ibmcloud.com){:new_window}。
+- **hostname**：这是取决于云实例的设置。有关此设置的更多信息，请参阅 [IBM App Connect Professional ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SS3LC4_7.5.2.0/mapfiles/ic_home.html){:new_window}。
 
 - **basepath**：您在 App Connect Professional 编排中的 httpReceive 请求注释上指定的路径。
 
 9. 添加 IBM 标识用户名和密码并将其保存到用于 App Connect Professional 的 HTTP 基本认证详细信息中。
 
 #### 测试 API
+{: #test_importing_apis}
 
 要测试 API，请执行以下步骤：
 
@@ -208,6 +218,6 @@ API 定义导入后，会显示在“**草稿**”页面中 **API** 选项卡的
 5. 选择**调用**。
 6. 验证是否从 API 收到预期响应。
 
-导入并集成 API 定义后，可管理 API，如管理任何其他 REST API 定义一样。有关 API 的更多信息，请参阅[管理 API](managing_apis.html)。
+导入并集成 API 定义后，可管理 API，如管理任何其他 REST API 定义一样。有关 API 的更多信息，请参阅[管理 API](/docs/services/apiconnect?topic=apiconnect-managing_apis)。
 
 

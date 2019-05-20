@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2017-12-15"
 
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 
@@ -19,22 +23,22 @@ lastupdated: "2017-12-15"
 您可以通过下载开发者工具箱并使用命令行界面 (CLI) 或 API Designer 来创建 API。
 
 ## 开发者工具箱 CLI
-{: #dev_tk_cli notoc}
+{: #dev_tk_cli_creating_apis notoc}
 
 开发者工具箱提供了可用于将 API 发布到 {{site.data.keyword.apiconnect_long}} 的命令行界面。通过将 API 包含在产品中，然后发布该产品，就可以发布这些 API。通过在本地文件系统中创建和验证 YAML 定义文件来定义 API 和产品。这样，您就可以使用工具箱命令来与 {{site.data.keyword.apiconnect_long}} 交互。
 
 ## API Designer
-{: #designer notoc}
+{: #designer_creating_apis notoc}
 
 API Designer 是开发者工具箱中的脱机图形用户界面，提供了用于创建和配置 API 的功能。API Designer 通过命令行界面使用 edit 命令来运行。使用 edit 命令时，API Designer 会在缺省浏览器中打开，或者可通过运行该命令时显示的本地主机端口进行访问。
 
 ## 安装开发者工具箱
-{: #install_dev_tk}
+{: #install_dev_tk_creating_apis}
 
 ### 先决条件
-{: #prereq_install_dev_tk}
+{: #prereq_install_dev_tk_creating_apis}
 
-开始之前，您必须在要使用工具箱的机器上安装 [Node.js ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://nodejs.org/en/){:new_window}，并确保 `node` 位于您的 `PATH` 中。
+开始之前，您必须在要使用工具箱的机器上安装 [Node.js ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://nodejs.org/en/){: #new_window}，并确保 `node` 位于您的 `PATH` 中。
 
 安装开发者工具箱时，会安装以下各项。
 
@@ -68,60 +72,47 @@ API Designer 是开发者工具箱中的脱机图形用户界面，提供了用�
 	{: codeblock}
 	
 ## 安装 LoopBack 连接器
-{: #install_lb_conn}
+{: #install_lb_conn_creating_apis}
 
 您必须安装数据源连接器，才能使用 LoopBack 数据源，来访问后端系统（如数据库）中的数据。
 内存中和电子邮件连接器内置于 LoopBack 中，所以无需进行安装。
 
 ### 先决条件
-{: #prereq_install_lb_conn}
+{: #prereq_install_lb_conn_creating_apis}
 
 Oracle、DB2 和 SQLLite 连接器需要 C 编译器工具，才能构建和安装二进制扩展。
-确切的需求取决于操作系统，如下表所述。
+具体要求取决于您的操作系统，如以下列表所述。
 
-<table summary="" id="apic_028__table_pre_reqs" class="defaultstyle style-scope doc-content">
-<caption>表 1. 特定于操作系统的安装需求</caption>
-<thead>
-<tr>
-<th style="width: 33.3%" id="th_d70e208" class="thleft style-scope doc-content">Windows</th>
-<th style="width: 33.3%" id="th_d70e210" class="thleft style-scope doc-content">Linux</th>
-<th style="width: 33.3%" id="th_d70e212" class="thleft style-scope doc-content">MAC OS X</th>
-</tr>
-</thead>
-<tbody >
-<tr class="style-scope doc-content doc-tr-odd">
-<td style="width: 33.3%" > [Microsoft .NET Framework 4 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.microsoft.com/en-us/download/details.aspx?id=17851)</td>
-<td style="width: 33.3%">Python V2.7（不支持 V3.x）</td>
-<td style="width: 33.3%" > [Python Releases for Mac OS X ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.python.org/downloads/mac-osx/)</td>
-</tr>
-<tr><td style="width: 33.3%" > [Visual Studio ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.visualstudio.com/downloads/download-visual-studio-vs)</td>
-<td style="width: 33.3%">
-<code>make</code>
-</td>
-<td style="width: 33.3%" > [Xcode ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716)</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" > [Python V2.7.10 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.python.org/downloads/release/python-2710/)</td>
-<td style="width: 33.3%">C/C++ 编译器工具链，例如 GCC V4.2 或更高版本。</td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-<tr><td style="width: 33.3%" > [Microsoft Windows SDK for Windows 7 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279)</td>
-<td style="width: 33.3%">在 Debian 和 Debian 派生的分发版（Ubuntu、Mint 等）上，使用以下命令：<pre class="codeblock style-scope doc-content"><code>apt-get install build-essential</code></pre>
-</td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" >npm V3。请参阅以下注释。</td>
-<td style="width: 33.3%">&nbsp;</td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-</tbody>
-</table>
+**Linux**
+- Python V2.7（不支持 V3.x）
 
-**注：**对于 Windows 安装：
+- <code>make</code>
+- C/C++ 编译器工具链，例如 GCC V4.2 或更高版本。
 
-- 除非您想购买 Visual Studio Enterprise，否则请使用 Visual Studio Community。运行安装程序，在“编程语言”下选中“Visual C++”，然后接受缺省安装位置。
+- 在 Debian 和 Debian 派生的分发版（Ubuntu、Mint 等）上，使用以下命令：
+<pre class="codeblock style-scope doc-content"><code>apt-get install build-essential</code></pre>
 
-- 对于 Node.js 和本机模块的 64 位构建，您还需要 Windows&trade; 7 64 位 SDK。如果安装失败，请先尝试卸载任何您已安装的 C++ 2010 x64&amp;x86 可再分发包。如果您收到错误称未安装 64 位编译器，那么您还可能需要针对 Windows&trade; SDK 7.1 编译器更新。
-- 输入以下命令，以安装 npm V3：
+**Mac OS X**
+- [Python Releases for Mac OS X ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.python.org/downloads/mac-osx/){: #new_window}
+
+- [Xcode ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716){: #new_window}
+
+**Windows**
+- [Microsoft .NET Framework 4 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.microsoft.com/en-us/download/details.aspx?id=17851){: #new_window}
+
+- [Visual Studio ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.visualstudio.com/downloads/download-visual-studio-vs){: #new_window}
+
+- [Python V2.7.10 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.python.org/downloads/release/python-2710/){: #new_window}
+
+- [Microsoft Windows SDK for Windows 7 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279){: #new_window}
+
+- npm V3：请参阅以下注释。
+
+**注**：除非您想购买 Visual Studio Enterprise，否则请使用 Visual Studio Community。运行安装程序，在“编程语言”下选中“Visual C++”，然后接受缺省安装位置。
+
+对于 Node.js 和本机模块的 64 位构建，您还需要 Windows&trade; 7 64 位 SDK。如果安装失败，请先尝试卸载任何您已安装的 C++ 2010 x64&amp;x86 可再分发包。如果您收到错误称未安装 64 位编译器，那么您还可能需要针对 Windows&trade; SDK 7.1 编译器更新。
+
+输入以下命令，以安装 npm V3：
   ```
   npm install -g npm
   ```
@@ -143,11 +134,10 @@ Oracle、DB2 和 SQLLite 连接器需要 C 编译器工具，才能构建和安�
 npm install --save <connector-package>
 ```
 {: codeblock}
-其中，`<connector-package>` 是 LoopBack 连接器的 npm 软件包的名称，如表中所示。
-
+其中，`<connector-package>` 是 LoopBack 连接器的 npm 软件包的名称，如表 1 所示：
 
 <table summary="" id="apic_connectors_table_pre_reqs" class="defaultstyle style-scope doc-content">
-<caption>表 3. LoopBack 连接器</caption>
+<caption>表 1. LoopBack 连接器</caption>
 <thead>
 <tr class="style-scope doc-content doc-tr-even">
 <th style="width: 50%" id="th_new_d70e1489" class="thleft style-scope doc-content">数据源</th>
@@ -191,14 +181,15 @@ npm install --save <connector-package>
 </tbody>
 </table>
 
+
 ## 使用 CLI 创建 LoopBack API
-{: #create_lb_api}
+{: #create_lb_api_creating_apis}
 
 以下过程描述了如何使用命令行界面来创建 LoopBack&reg; API。
 
 
 ### 先决条件
-{: #prereq_create_lb_api}
+{: #prereq_create_lb_api_creating_apis}
 
 开始之前，请准备好要使用的目录的目录标识。要获取目录标识，请完成以下步骤：  
 
@@ -285,7 +276,7 @@ npm install --save <connector-package>
       Checkpoint
     (Move up and down to reveal more choices)
     ```
-有关每个选项的更多信息，请参阅[使用内置模型 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){:new_window}。
+有关每个选项的更多信息，请参阅[使用内置模型 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){: #new_window}。
 
 
 9. 选择基类，然后按 **Enter** 键。工具将询问您是否要公开模型的 REST API。
@@ -381,7 +372,7 @@ Install loopback-connector-<connector>?
 
 5. 输入 `Yes`。工具将安装该连接器。
 
-注：如果您已选择 Oracle 连接器，那么必须在 {{site.data.keyword.Bluemix_notm}} 中设置环境变量，以便 Oracle 应用程序能够启动。为此，请完成以下步骤：
+**注**：如果您已选择 Oracle 连接器，那么必须在 {{site.data.keyword.Bluemix_notm}} 中设置环境变量，以便 Oracle 应用程序能够启动。为此，请完成以下步骤：
 
 1. 在 {{site.data.keyword.Bluemix_notm}} UI 中，选择**计算**。
 
@@ -400,7 +391,7 @@ Install loopback-connector-<connector>?
 8. 单击**保存**。
 
 ### 测试 LoopBack 项目
-{: #test_lb_proj}
+{: #test_lb_proj_creating_apis}
 
 要测试 LoopBack 项目，请完成以下步骤。
 
@@ -430,7 +421,7 @@ Service loopback-project-gw (id 2) started on port 4002
 ```
 
 ### 通过 CLI 将 LoopBack 应用程序发布到 {{site.data.keyword.Bluemix_notm}}
-{: #pub_lb_app_cli}
+{: #pub_lb_app_cli_creating_apis}
 
 要通过命令行将 LoopBack 应用程序发布到 {{site.data.keyword.Bluemix_short}}，请完成以下步骤：
 
@@ -464,7 +455,7 @@ apic organizations -s <region>.apiconnect.ibmcloud.com
   如果您不确定，那么可以通过单击菜单栏中的 {{site.data.keyword.avatar}} 图标 <img src="images/i-avatar-icon.svg" alt="“头像”图标"/> 以打开“帐户和支持”窗口小部件并检查区域字段，从而找到您的区域。
 7. 输入以下命令以将应用程序发布到 {{site.data.keyword.Bluemix_notm}}。
 ```
-apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
+apic apps:publish –app <app> -o <org> -s <region>.apiconnect.ibmcloud.com
 ```
 其中：
   * `<app>` 是您的应用程序的名称
@@ -503,15 +494,15 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
     8. 单击**保存**以保存 API。
 
 ## 使用 API Designer 创建 LoopBack API
-{: #create_lb_api_design}
+{: #create_lb_api_design_creating_apis}
 
 以下过程描述了如何使用 API Designer 来创建 LoopBack API。
 {:shortdesc}
 
 ### 先决条件
-{: #prereq_create_lb_api_design}
+{: #prereq_create_lb_api_design_creating_apis}
 
-**注**：以下指示信息假设您使用的是最新版本的开发者工具箱。要检查最新的版本，请参阅 [npm ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.npmjs.com/package/apiconnect){:new_window} 软件包页面。
+**注**：以下指示信息假设您使用的是最新版本的开发者工具箱。要检查最新的版本，请参阅 [npm ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.npmjs.com/package/apiconnect){: #new_window} 软件包页面。
 
 首先，需要使用 CLI 创建 LoopBack 项目。为此，请完成以下步骤：
 
@@ -601,7 +592,7 @@ npm install --save <connector-package>
 **注：**内存中和电子邮件连接器内置于 LoopBack 中，所以无需进行安装。
 
 <table>
-<caption>表 3. LoopBack 连接器</caption>
+<caption>表 2. LoopBack 连接器</caption>
 <thead>
 <tr class="style-scope doc-content doc-tr-even">
 <th style="width: 50%" id="3rd_d70e1489" class="thleft style-scope doc-content">数据源</th>
@@ -645,7 +636,7 @@ npm install --save <connector-package>
 </tbody>
 </table>
 
-有关更多信息，请参阅 [LoopBack 文档 - 构建连接器 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){:new_window}。
+有关更多信息，请参阅 [LoopBack 文档 - 构建连接器 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){: #new_window}。
 
 **注：**如果您已选择 Oracle 连接器，那么必须在 {{site.data.keyword.Bluemix_notm}} 中设置环境变量，以便 Oracle 应用程序能够启动。为此，请完成以下步骤：
 
@@ -679,17 +670,17 @@ http://localhost:<4001/>Running
 {"started":"2017-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-接下来，需要创建产品。有关更多信息，请参阅[创建产品](managing_products.html#create_product)。
+接下来，需要创建产品。有关更多信息，请参阅[创建产品](/docs/services/apiconnect?topic=apiconnect-managing_products#create_product_managing_products)。
 **提示**：无论何时启动新命令提示符，都要确保当前工作目录为项目顶级目录。为此，请输入以下命令：
 ```
 cd <project directory name>
 ```
 
 ## 卸载开发者工具箱
-{: #uninstall_dev_tk}
+{: #uninstall_dev_tk_creating_apis}
 
 ### 先决条件
-{: #prereq_uninstall_dev_tk}
+{: #prereq_uninstall_dev_tk_creating_apis}
 
 开始之前，必须通过输入以下命令来停止正在本地运行的所有应用程序：
 ```
