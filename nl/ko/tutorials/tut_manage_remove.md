@@ -1,8 +1,13 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-10"
+  years: 2019
+lastupdated: "2019-3-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 
 ---
 
@@ -13,28 +18,33 @@ lastupdated: "2017-10-10"
 {:pre: .pre}
 
 # API 제품 아카이브 및 삭제
+{: #tut_manage_remove}
+
 **소요 시간**: 15분  
 **스킬 레벨**: 초보자 
 
-## 전제조건
-
-1. [{{site.data.keyword.apiconnect_full}} 인스턴스를 설정하십시오](tut_prereq_set_up_apic_instance.html).
-
-2. [API 제품 튜토리얼 대체](tut_manage_supercede.html)를 완료하십시오.
-
----
 ## 목표
+{: #object_tut_manage_remove}
 이 튜토리얼에서는 API를 삭제, 아카이브 및 폐기합니다.
 
 ---
+## 전제조건
+{: #prereq_tut_manage_remove}
+
+1. [{{site.data.keyword.apiconnect_full}} 인스턴스를 설정](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance)하십시오.
+
+2. [API 제품 튜토리얼 대체](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede)를 완료하십시오.
+
+---
+
 ## API 제품 삭제
-1. {{site.data.keyword.Bluemix_short}}에 로그인하십시오. [https://console.ng.bluemix.net/login ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.ng.bluemix.net/login){:new_window}.
+{: #delete_tut_manage_remove}
 
-2. {{site.data.keyword.Bluemix_short}} 대시보드에서 {{site.data.keyword.apiconnect_short}} 서비스를 실행하십시오.
-![](images/Bluemix.png)
+1. {{site.data.keyword.Bluemix_short}}: https://cloud.ibm.com에 로그인하십시오.
+2. {{site.data.keyword.Bluemix_notm}} **대시보드**에서 **Cloud Foundary 서비스**를 클릭하십시오.{{site.data.keyword.apiconnect_short}} 서비스를 시작하십시오. 
+3. {{site.data.keyword.apiconnect_short}}에서 탐색 패널이 열려 있는지 확인하십시오. 열려 있지 않으면 **>>**를 클릭하여 여십시오.  
 
-3. API Manager에서 UI 탐색 분할창을 아직 고정하지 않은 경우 **이동 위치** 아이콘 ![](images/navigate-to.png)을 클릭하십시오. API Manager UI 탐색 분할창이 열립니다. UI 탐색 분할창을 고정하려면 **핀 메뉴** 아이콘 ![](images/pinned.png)을 클릭하십시오.
-
+  ![](images/cloud-apic-dashboard.png)
 4. **샌드박스**를 클릭하여 샌드박스 카탈로그를 여십시오. **참고**: 사용 가능한 카탈로그를 보려면 대시보드로 리턴해야 할 수도 있습니다. 또한 대시보드 페이지에는 목록이 아니라 타일로 카탈로그가 표시될 수 있습니다.
 ![](images/del-sandbox-list.png)
 
@@ -50,6 +60,8 @@ lastupdated: "2017-10-10"
 
 
 ## API 제품 아카이브
+{: #archive_tut_manage_remove}
+
 1. **Weather Provider API 2.0.0** 행에서 세로 생략 기호를 클릭하십시오.  
 ![](images/del-prod-list2.png)
 
@@ -85,7 +97,9 @@ lastupdated: "2017-10-10"
 
  
  
-## 이 튜토리얼에서 수행한 작업
+## 결론
+{: #conclusion_tut_manage_remove}
+
 이 튜토리얼에서 다음 활동을 완료했습니다.
 
 1. API 제품 삭제

@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2017-10-31"
 
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 
@@ -21,12 +25,14 @@ lastupdated: "2017-10-31"
 클라이언트 ID와 클라이언트 시크릿으로 API를 보호하려면 프로세스의 메소드를 선택해야 합니다.
 
 ## {{site.data.keyword.Bluemix_notm}}
+{: #secure_tut_secure_landing}
 
-- [{{site.data.keyword.Bluemix_notm}}를 사용하여 클라이언트 ID와 클라이언트 시크릿으로 API 보호](tut_secure_id_secret_bm.html)
+- [{{site.data.keyword.Bluemix_notm}}를 사용하여 클라이언트 ID와 클라이언트 시크릿으로 API 보호](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_id_secret_bm)
 
 ## 개발자 툴킷
+{: #tk_tut_secure_landing}
 
-- [개발자 툴킷을 사용하여 클라이언트 ID와 클라이언트 시크릿으로 API 보호](tut_secure_id_secret_tk.html)
+- [개발자 툴킷을 사용하여 클라이언트 ID와 클라이언트 시크릿으로 API 보호](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_id_secret_tk)
 
 
 

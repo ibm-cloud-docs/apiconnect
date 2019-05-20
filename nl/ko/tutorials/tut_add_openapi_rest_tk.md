@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-02"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,35 +17,45 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # 개발자 툴킷으로 새 API 스펙 추가 및 기존 REST 서비스 호출
+{: #tut_add_openapi_rest_tk}
+
 **소요 시간**: 15분  
 **스킬 레벨**: 초보자  
 
 ## 목표
+{: #object_tut_add_openapi_rest_tk}
+
 이 튜토리얼을 사용하면 기존 API를 관리 제어하는 방법을 설명하여 {{site.data.keyword.apiconnect_full}}를 신속하게 시작할 수 있습니다. 새로운 OpenAPI 스펙 작성부터 시작한 다음 기존 REST 서비스의 통과(passthrough) API 프록시를 작성합니다.
 
 ## 전제조건
-시작하기 전에 [API Connect 인스턴스를 설정](tut_prereq_set_up_apic_instance.html)하고 [API Connect 툴킷을 설치](tut_prereq_install_toolkit.html)해야 합니다.
+{: #prereq_tut_add_openapi_rest_tk}
+
+시작하기 전에 [API Connect 인스턴스를 설정](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance)하고 [API Connect 툴킷을 설치](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_install_toolkit)해야 합니다.
 
 ---
 
 
 ## 샘플 앱 탐색 및 대상 엔드포인트 테스트
+{: #expl_test_tut_add_openapi_rest_tk}
+
 이 튜토리얼용으로 샘플 _날씨 제공업체_ 앱이 작성되었습니다.
-1. 앱을 탐색하려면 [http://gettingstartedweatherapp.mybluemix.net/ ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}으로 이동하십시오.  
+1. 앱을 탐색하려면 [http://gettingstartedweatherapp.mybluemix.net/ ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://gettingstartedweatherapp.mybluemix.net/){: #new_window}으로 이동하십시오.  
 2. 올바른 5자리 미국 우편번호를 입력하여 _**현재 날씨**_ 및 _**오늘의 예보**_를 보십시오.  
 ![](images/explore-weatherapp-1.png)
 
-3. 위의 샘플 날씨 앱은 날씨 데이터를 제공하는 API를 사용하여 빌드되었습니다. **현재** 날씨 데이터를 가져오는 엔드포인트는 _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_입니다. [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}을 방문하여 테스트하십시오.  
+3. 위의 샘플 날씨 앱은 날씨 데이터를 제공하는 API를 사용하여 빌드되었습니다. **현재** 날씨 데이터를 가져오는 엔드포인트는 _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_입니다. [https://myweatherprovider.mybluemix.net/current?zipcode=90210](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: #new_window}을 방문하여 테스트하십시오.  
 
   ![](images/explore-weatherapp-2.png)
 
-4. 마찬가지로 **오늘의** 예보 데이터를 가져오는 엔드포인트는 `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`입니다. [https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){:new_window}으로 이동하여 테스트하십시오.  
+4. 마찬가지로 **오늘의** 예보 데이터를 가져오는 엔드포인트는 `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`입니다. [https://myweatherprovider.mybluemix.net/today?zipcode=90210](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: #new_window}으로 이동하여 테스트하십시오.  
 
   ![](images/explore-weatherapp-3.png)
 
 ---
 
 ## 새 OpenAPI 스펙 추가 및 기존 REST 서비스 호출
+{: #add_spec_tut_add_openapi_rest_tk}
+
 1. **API Designer**를 실행하십시오. 터미널에서 `apic edit`을 입력하십시오.
 2. IBM ID를 사용하여 로그인하십시오.
     ![](images/screenshot_apic-edit_login.png)
@@ -129,8 +145,11 @@ _(다음 튜토리얼에서 API 키로 보안을 확인합니다.)_
 ---
 
 ## API 프록시 테스트
+{: #test_tut_add_openapi_rest_tk}
 
 ### _API Manager 테스트 도구_로 테스트하십시오.
+{: #test_apimgr_tut_add_openapi_rest_tk}
+
 1. 디자이너의 왼쪽 하단에서 시작 서버 아이콘(>)을 클릭하여 로컬 테스트 서버를 시작하십시오. 게이트웨이가 시작되면 상태가 실행 중으로 자동 업데이트됩니다.
 
     ![](images/screenshot_start-server-1.png)
@@ -150,7 +169,9 @@ _(다음 튜토리얼에서 API 키로 보안을 확인합니다.)_
 
 _CORS 오류가 발생하면 오류 메시지의 지시사항을 따르십시오. 오류의 링크를 클릭하여 브라우저에 예외를 추가하고 "호출" 단추를 다시 누르십시오._
 
-### _도구 탐색_으로 테스트하십시오.  
+### _탐색 도구_로 테스트하십시오.
+{: #test_explore_tut_add_openapi_rest_tk}
+
 1. API 프록시 엔드포인트를 테스트하려면 _탐색_을 선택하십시오.
 2. 팔레트에서 **GET /current** 오퍼레이션을 선택하십시오.
 3. 테스트 상자에서 올바른 미국 우편번호(예: 90210)를 입력하십시오.
@@ -160,13 +181,16 @@ _CORS 오류가 발생하면 오류 메시지의 지시사항을 따르십시오
 ---
 
 ## 결론
+{: #conclusion_tut_add_openapi_rest_tk}
+
 이 튜토리얼에서는 API 통과 프록시를 통해 기존 REST 서비스를 호출하는 방법을 확인했습니다. 웹 브라우저를 통해 샘플 서비스의 가용성을 확인하는 작업부터 시작했습니다. 그런 다음 {{site.data.keyword.apiconnect_short}}에서 새 OpenAPI 스펙을 작성하여 호출할 샘플 서비스에 연결했습니다. 마지막으로 기본 제공 테스트 도구를 사용하여 API 프록시를 테스트했습니다.
 
 ---
 
 ## 다음 단계
+{: #next_tut_add_openapi_rest_tk}
 
-[비율 한계](tut_rate_limit.html), [클라이언트 ID 및 시크릿](tut_secure_landing.html) 또는 [OAuth 2.0를 사용하여 보호](tut_secure_oauth_2.html)를 사용하여 API를 보호합니다.
+[비율 한계](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rate_limit), [클라이언트 ID 및 시크릿](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing) 또는 [OAuth 2.0를 사용하여 보호](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2)를 사용하여 API를 보호합니다.
 
 작성 > **관리** > 보안 > 소셜화 > 분석
 

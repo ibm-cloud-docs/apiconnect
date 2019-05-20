@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-02"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,11 +17,15 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # 비율 한계 설정
+{: #tut_rate_limit}
+
 **소요 시간**: 15분  
 **스킬 레벨**: 초보자  
 
 
 ## 목표
+{: #object_tut_rate_limit}
+
 이 튜토리얼에서는 API의 비율 한계 설정 방법을 보여줍니다. 비율 한계를 설정하면 API와 API 내의
 특정 오퍼레이션에 대한 네트워크 트래픽을 관리할 수 있습니다. 비율 한계는 특정 시간 간격으로 허용할 최대 호출 수입니다.
 
@@ -29,21 +39,26 @@ lastupdated: "2017-11-02"
 
 
 ## 전제조건
-{{site.data.keyword.apiconnect_short}}에 하나 이상의 API 키로 보호되는 API가 이미 작성되어 있어야 합니다. 다음 지시사항에서는 [클라이언트 ID 및 시크릿](tut_secure_landing.html)으로 보호되는 [Weather Provider API 예제 파일 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}부터 시작합니다.
+{: #prereq_tut_rate_limit}
+
+{{site.data.keyword.apiconnect_short}}에 하나 이상의 API 키로 보호되는 API가 이미 작성되어 있어야 합니다. 다음 지시사항에서는 [클라이언트 ID 및 시크릿](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing)으로 보호되는 [Weather Provider API 예제 파일 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){: #new_window}부터 시작합니다.
 
 이 튜토리얼을 시작하기 전에 다음 튜토리얼을 완료하십시오.
-- [API 스펙 가져오기 및 기존 REST 서비스 프록시](tut_rest_landing.html).
-- [클라이언트 ID 및 시크릿을 사용하여 API 보호](tut_secure_landing.html).
+- [API 스펙 가져오기 및 기존 REST 서비스 프록시](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
+- [클라이언트 ID 및 시크릿을 사용하여 API 보호](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing).
 
 
 ---
 ## API Connect 실행
+{: #launch_tut_rate_limit}
 
-1. {{site.data.keyword.Bluemix_notm}}에 로그인하십시오. [https://console.ng.bluemix.net/login ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.ng.bluemix.net/login){:new_window}.
+1. {{site.data.keyword.Bluemix_notm}}에 로그인하십시오. [https://console.ng.bluemix.net/login ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.ng.bluemix.net/login){: #new_window}.
 2. {{site.data.keyword.Bluemix_notm}}에 로그인하고 나면 아래로 스크롤하여 **모든 서비스**로 이동한 다음 **API Connect**를 클릭하십시오.
 3. **API Connect**를 클릭하여 {{site.data.keyword.apiconnect_short}} 서비스를 실행하십시오.
 
 ## 기본 플랜 탐색
+{: #explore_tut_rate_limit}
+
 1. {{site.data.keyword.apiconnect_short}} 탐색 패널에서 **드래프트**를 선택하십시오. (탐색 패널이 열려 있지 않으면 **>>**를 클릭하여 여십시오.)
 2. **제품 탭**을 선택하면 Weather Provider API 제품이 나열되어야 합니다.
 
@@ -59,6 +74,7 @@ lastupdated: "2017-11-02"
 
    
 ## 새 비율-한계 플랜 작성
+{: #create_tut_rate_limit}
 
 기본 플랜이 표시되는 방식을 확인했으므로, API 이용자가 플랜의 한계를 초과하면 발생하는 사항을 보여주기 위해 비율 한계가 더 제한적인 새 플랜을 작성해 보겠습니다. 
 1. 단추를 클릭하여 새 플랜을 추가하십시오.
@@ -78,12 +94,13 @@ lastupdated: "2017-11-02"
 
 
 ## 업데이트된 제품을 샌드박스 카탈로그에 스테이징 및 공개
+{: #stage_tut_rate_limit}
 
-이전 예에서 테스트 도구를 사용하여 제품을 공개했습니다. 그러면 이 도구에서 사전 제공된 테스트 애플리케이션 신임 정보를 사용하여 API를 호출합니다. 그러나 이 테스트 애플리케이션에는 비율 한계가 적용되지 않으므로, 여기서는 비율 한계 용도로 새 애플리케이션을 작성하지 않습니다. 자세한 정보는 [API Connect에 대한 IBM Knowledge Center 컨텐츠 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){:new_window}을 참조하십시오.
+이전 예에서 테스트 도구를 사용하여 제품을 공개했습니다. 그러면 이 도구에서 사전 제공된 테스트 애플리케이션 인증 정보를 사용하여 API를 호출합니다. 그러나 이 테스트 애플리케이션에는 비율 한계가 적용되지 않으므로, 여기서는 비율 한계 용도로 새 애플리케이션을 작성하지 않습니다. 자세한 정보는 [API Connect에 대한 IBM Knowledge Center 컨텐츠 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){: #new_window}을 참조하십시오.
 
 1. 공개 아이콘을 클릭하여 제품을 **샌드박스** 카탈로그로 *스테이징*하십시오. 이 조치를 수행하면 선택한 카탈로그에 드래프트 제품 변경사항을 추가합니다. 다음으로, 개발자 포털을 통해 이용자가 사용할 수 있도록 제품 변경사항을 *공개*해야 합니다.
    ![](./images/stageproduct.png) 
-2. 다음 단추를 클릭하여 탐색 메뉴를 여십시오.  >> 
+2. 다음 단추를 클릭하여 탐색 메뉴를 여십시오. >>
 3. 대시보드를 선택한 다음 **샌드박스** 카탈로그를 여십시오. Weather Provider API 제품이 **스테이징됨**으로 나열됩니다.
 4. 생략 기호를 클릭하고 메뉴에서 **공개**를 선택하십시오.
    ![](./images/publish.png) 
@@ -91,16 +108,18 @@ lastupdated: "2017-11-02"
 
 
 ## 개발자 포털에서 새 (이용자) 애플리케이션 등록
-애플리케이션 개발자가 개발자 포털을 사용하여 API를 검색하고 사용합니다. 개발자 포털에 대한 자세한 정보는 이 [IBM Knowledge Center 주제 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){:new_window}를 확인하십시오.
+{: #reg_tut_rate_limit}
+
+애플리케이션 개발자가 개발자 포털을 사용하여 API를 검색하고 사용합니다. 개발자 포털에 대한 자세한 정보는 이 [IBM Knowledge Center 주제 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){: #new_window}를 확인하십시오.
 
 개발자 포털에서 처음 작업하는 경우 샌드박스 카탈로그용으로 개발자 포털을 프로비저닝해야 합니다. 포털을 프로비저닝할 때 로그인한 계정이 해당 포털의 관리자 계정이 됩니다. 그런 다음 API를 탐색하고 테스트하려면 관리자 계정과 다른 새로운 개발자 계정(다른 이메일 주소 사용)을 작성한 다음 이 계정으로 로그인해야 합니다.
 
 다음 지시사항은 이 단계를 안내합니다.
 
-1. 개발자 포털을 실행하십시오. URL을 모르면 샌드박스 카탈로그의 설정 탭에서 찾을 수 있습니다. 개발자 포털을 처음으로 프로비저닝하려면 [개발자 포털 설정 및 구성](tut_config_dev_portal.html)을 참조하십시오.
+1. 개발자 포털을 실행하십시오. URL을 모르면 샌드박스 카탈로그의 설정 탭에서 찾을 수 있습니다. 개발자 포털을 처음으로 프로비저닝하려면 [개발자 포털 설정 및 구성](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal)을 참조하십시오.
     - 이 작업을 완료하는 데 최대 1시간이 걸릴 수 있습니다. 샌드박스 개발자 포털이 준비되면
 새 개발자 포털 사이트의 링크가 있는 이메일이 전송됩니다. 이 링크는 관리자 계정에 대한 일회용 링크입니다.
-2. 앱 개발자 신임 정보(사용자의 IBM ID가 **아님**) 를 사용하여 포털에 로그인하십시오. ***(필요한 경우 IBM ID 이외의 다른 주소를 사용하여 새 개발자를 작성하십시오.)***
+2. 앱 개발자 인증 정보(사용자의 IBM ID가 **아님**) 를 사용하여 포털에 로그인하십시오. ***(필요한 경우 IBM ID 이외의 다른 주소를 사용하여 새 개발자를 작성하십시오.)***
 3. 도구 모음에서 **앱** 링크를 클릭한 다음 **새 앱 작성** 단추를 클릭하십시오.
 
 4. 애플리케이션에 제목을 지정하고 **제출**을 클릭하십시오.
@@ -115,6 +134,7 @@ lastupdated: "2017-11-02"
 
 
 ## API 제품에 등록
+{: #subscr_tut_rate_limit}
 
 1. 도구 모음에서 **API 제품** 링크를 클릭하십시오. Weather Provider API 제품이 나열됩니다! 
 
@@ -127,6 +147,7 @@ lastupdated: "2017-11-02"
 이 동작을 테스트하고 애플리케이션이 지정된 비율을 초과하면 발생하는 사항을 관찰한 준비가 되었습니다.
 
 ## 비율 한계 API 호출
+{: #call_tut_rate_limit}
 
 1. 개발자 포털의 Weather Provider API 제품 페이지에서 API 링크를 클릭하십시오.
 
@@ -147,13 +168,15 @@ lastupdated: "2017-11-02"
 
 
 ## 결론
+{: #conclusion_tut_rate_limit}
 
 축하합니다! 비율 한계 플랜이 작성되어, 보안 API와 연관되고, API가 사용자가 지정한 매개변수의 요청에만 응답하는지 확인했습니다.
 
 ---
 
 ## 다음 단계
+{: #next_tut_rate_limit}
 
-[개발자 포털을 설정 및 구성](tut_config_dev_portal.html)하여 API의 소셜화를 시작하십시오.
+[개발자 포털을 설정 및 구성](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal)하여 API의 소셜화를 시작하십시오.
 
 작성 > 관리 > **보안** > 소셜화 > 분석

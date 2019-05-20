@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,10 +17,14 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # API Connect 툴킷 설치
+{: #tut_prereq_install_toolkit}
+
 **소요 시간**: 15분  
 **스킬 레벨**: 초보자  
 
-## 필요한 항목
+## 전제조건
+{: #prereq_tut_prereq_install_toolkit}
+
 1. Node.js
 2. NPM(Node Product Manager)
 3. {{site.data.keyword.apiconnect_full}} _Lite_
@@ -28,10 +38,12 @@ lastupdated: "2017-10-31"
 
 
 ## node.js 설치
+{: #nodejs_tut_prereq_install_toolkit}
+
 1. 다음 두 소스 중 하나에서 node.js를 다운로드하여 설치하십시오.
-   * [https://nodejs.org/en/download/ ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://nodejs.org/en/download/){:new_window}(참고: 최신 버전이 아니라 플랫폼의 LTS 버전을 다운로드하십시오. 그렇지 않으면 오류가 발생할 수 있습니다.)
+   * [https://nodejs.org/en/download/ ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://nodejs.org/en/download/){: #new_window}(참고: 최신 버전이 아니라 플랫폼의 LTS 버전을 다운로드하십시오. 그렇지 않으면 오류가 발생할 수 있습니다.)
       **또는**
-   * [https://developer.ibm.com/node/sdk/v6/ ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.ibm.com/node/sdk/v6/){:new_window}  
+   * [https://developer.ibm.com/node/sdk/v6/ ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.ibm.com/node/sdk/v6/){: #new_window}  
 
     _node.js를 설치하면 **npm**(Node Package Manager)도 설치됩니다_.
 
@@ -48,6 +60,8 @@ lastupdated: "2017-10-31"
 
 
 ## API Connect 툴킷 및 Microgateway 설치
+{: #tk_micro_tut_prereq_install_toolkit}
+
 1. 신뢰되지 않는 인증서를 사용할 수 있도록 npm 구성을 업데이트하십시오.  
    `npm config -g set strict-ssl false`  
 

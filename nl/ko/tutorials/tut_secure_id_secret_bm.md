@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,25 +17,28 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # {{site.data.keyword.Bluemix_notm}}를 사용하여 클라이언트 ID와 클라이언트 시크릿으로 API 보호
+{: #tut_secure_id_secret_bm}
 
 **소요 시간:** 10분  
 **스킬 레벨:** 초보자
 
 
 ## 목표
-
+{: #object_tut_secure_id_secret_bm}
 이 튜토리얼에서는 클라이언트 ID와 클라이언트 시크릿으로 API를 보호하는 방법을 안내합니다. 개발자 포털에 애플리케이션이 등록되면 애플리케이션을 식별하기 위해 클라이언트 ID가 생성됩니다. 선택적으로 비밀번호 역할을 수행하는 클라이언트 시크릿도 생성될 수 있습니다. API에 액세스하려면 애플리케이션에서 생성된 클라이언트 ID와 클라이언트 시크릿 키를 제공해야 합니다.
 
 
 ## 전제조건
+{: #prereq_tut_secure_id_secret_bm}
 
 시작하기 전에 다음 튜토리얼 중 하나를 완료해야 합니다. 
-- [OpenAPI2.0 스펙 가져오기 및 기존 REST 서비스 프록시](tut_rest_landing.html)  
+- [OpenAPI2.0 스펙 가져오기 및 기존 REST 서비스 프록시](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)  
 **또는**  
-- [새 API 스펙 추가 및 기존 REST 서비스 호출](tut_rest_landing.html)
+- [새 API 스펙 추가 및 기존 REST 서비스 호출](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 
 
 ## API의 ID 메커니즘 설정
+{: #set_id_tut_secure_id_secret_bm}
 
 1. 다음과 같이 API의 디자인 보기로 이동하십시오.  
    a. 왼쪽 탐색 패널에서 **드래프트**를 클릭하십시오.  
@@ -53,6 +62,7 @@ lastupdated: "2017-10-31"
 
 
 ## API 변경사항 테스트
+{: #test_tut_secure_id_secret_bm}
 
 1. 어셈블 탭에서 ► 단추를 클릭하여 변경사항을 테스트하십시오.
 
@@ -76,6 +86,7 @@ lastupdated: "2017-10-31"
 
 
 ## 클라이언트 ID와 클라이언트 시크릿을 사용하여 API 호출
+{: #call_tut_secure_id_secret_bm}
 
 프록시 엔드포인트를 명시적으로 호출하고 클라이언트 ID와 클라이언트 시크릿 키를 헤더 값으로 전달하는 탐색 도구를 사용하여 보안 설정을 테스트할 수 있습니다.
 
@@ -90,12 +101,15 @@ lastupdated: "2017-10-31"
 ---
 
 ## 결론
+{: #conclusion_tut_secure_id_secret_bm}
+
 이 튜토리얼에서는 API의 ID 메커니즘을 설정하고 API의 변경사항을 테스트하며 클라이언트 ID와 클라이언트 시크릿을 사용하여 API를 호출하는 방법을 배웠습니다. 
 
 ---
 
 ## 다음 단계
+{: #next_tut_secure_id_secret_bm}
 
-[개발자 포털을 설정 및 구성](tut_config_dev_portal.html)하여 API의 소셜화를 시작하십시오.
+[개발자 포털을 설정 및 구성](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal)하여 API의 소셜화를 시작하십시오.
 
 작성 > 관리 > **보안** > 소셜화 > 분석

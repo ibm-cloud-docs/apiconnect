@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-20"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,19 +17,26 @@ lastupdated: "2017-11-20"
 {:pre: .pre}
 
 # API 검색
+{: #tut_discover_apis}
+
 **소요 시간**: 25분  
 **스킬 레벨**: 초보자  
 
+## 목표
+{: #object_tut_discover_apis}
+
+이 튜토리얼에서는 포털 사용자가 {{site.data.keyword.apiconnect_full}} 개발자 포털에서 API를 이용할 수 있는 방법에 대해 알아봅니다. 포털 사용자가 제품과 API를 탐색하고 API를 보고 테스트하며 API에 등록하는 방법을 파악합니다. 
 
 ## 전제조건
+{: #prereq_tut_discover_apis}
+
 이 튜토리얼에는 전제조건이 없습니다. 포털 관리자로서 개발자 포털을 탐색하는 동안 이 튜토리얼을 완료하여 포털 사용자가 개발자 포털을 탐색하는 방법을 경험할 수 있습니다. 개발자 포털마다 스킨이 다르다는 점에 유의하십시오. 
 
 기존 개발자 포털이 없으면 이 튜토리얼을 진행하기 전에 {{site.data.keyword.Bluemix_short}}에 개발자 포털을 설정하여 구성할 수 있습니다.
 
-## 목표
-이 튜토리얼에서는 포털 사용자가 {{site.data.keyword.apiconnect_full}} 개발자 포털에서 API를 이용할 수 있는 방법에 대해 알아봅니다. 포털 사용자가 제품과 API를 탐색하고 API를 보고 테스트하며 API에 등록하는 방법을 파악합니다. 
-
 ## 제품 및 API 탐색
+{: #explore_tut_discover_apis}
+
 이 섹션에서는 포털 사용자가 개발자 포털에서 API를 탐색하는 방법을 보여줍니다.
 
 1. 브라우저에서 **API Connect 개발자 포털**로 이동하십시오.
@@ -47,6 +60,8 @@ lastupdated: "2017-11-20"
 ---
 
 ## API 보기 및 테스트
+{: #view_tut_discover_apis}
+
 이 섹션에서는 포털 사용자가 제품에 사용 가능한 API를 보고 테스트하는 방법을 보여줍니다. 
 
 1. 이전 섹션에 개요된 대로 {{site.data.keyword.apiconnect_short}} 개발자 포털에서 API 세부사항으로 이동하십시오.  
@@ -67,6 +82,8 @@ lastupdated: "2017-11-20"
 ---
 
 ## API에 등록
+{: #subscr_tut_discover_apis}
+
 이 섹션에서는 포털 사용자가 개발자 포털에서 API에 등록하는 방법을 보여줍니다. 
 
 1. **계정 작성**을 선택하십시오.
@@ -101,14 +118,16 @@ lastupdated: "2017-11-20"
   ![앱 등록 성공](images/310-subscribe-success.png) 
 
 ## 결론
+{: #conclusion_tut_discover_apis}
 
 이 튜토리얼에서는 포털 사용자가 제품과 API를 탐색하고 API를 보고 테스트하며 API에 등록하는 방법을 학습했습니다. 
 
 ---
 
 ## 다음 단계
+{: #next_tut_discover_apis}
 
-[기본 분석에서 인사이트를 얻는 방법](tut_insights_analytics.html)을 배우십시오.
+[기본 분석에서 인사이트를 얻는 방법](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics)을 배우십시오.
 
 작성 >관리> 보안 > ** 소셜화 ** > 분석  
 

@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2017-10-10"
 
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 
@@ -14,6 +18,7 @@ lastupdated: "2017-10-10"
 {:pre: .pre}
 
 # API 및 제품 버전 관리
+{: #tut_manage_version_landing}
 
 API 공급업체에서는 API와 해당 API를 포함하는 제품을 공개한 후 일반적으로 해당 제품과 API를 업데이트해야 합니다. API 제품 업데이트는 여러 다른 방법으로 수행할 수 있습니다.  
 
@@ -29,9 +34,9 @@ API를 바꾸고 나면 다음 단계에 따라 API 제품을 서비스 중단�
 
 이 튜토리얼 시리즈에서는 API 제품이 해당 상태를 모두 거치도록 진행합니다. 다음 순서로 튜토리얼을 완료하십시오.
 
-1. [API 제품 바꾸기](tut_manage_replace.html)
-2. [API 제품 대체](tut_manage_supercede.html)
-3. [API 제품 아카이브 및 삭제](tut_manage_remove.html)
+1. [API 제품 바꾸기](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_replace)
+2. [API 제품 대체](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede)
+3. [API 제품 아카이브 및 삭제](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_remove)
 
 
 

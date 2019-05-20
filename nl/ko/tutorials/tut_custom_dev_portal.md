@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,22 +17,29 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # 개발자 포털 사용자 정의 및 테마 선택
+{: #tut_custom_dev_portal}
+
 **소요 시간**: 30분  
 **스킬 레벨**: 초보자  
 
 
 ## 목표
+{: #object_tut_custom_dev_portal}
+
 이 튜토리얼을 사용하면 신속하게 {{site.data.keyword.apiconnect_full}} 개발자 포털을 사용자 정의하고 요구사항에 맞는 테마를 선택할 수 있습니다.
 
 ---
 
 ## 전제조건
+{: #prereq_tut_custom_dev_portal}
 
-이 튜토리얼을 시작하기 전에 [개발자 포털 설정 및 구성](tut_config_dev_portal.html) 튜토리얼을 완료하고 포털 관리자로 로그인해야 합니다.
+이 튜토리얼을 시작하기 전에 [개발자 포털 설정 및 구성](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal) 튜토리얼을 완료하고 포털 관리자로 로그인해야 합니다.
 
 ---
 
 ## 개발자 포털 사용자 정의
+{: #cust_tut_custom_dev_portal}
+
 개발자 포털을 작성하고 나면 룩앤필을 사용자 정의할 수 있습니다.
 
 1. 먼저 시작 배너를 수정하겠습니다. 맨 위 메뉴에서 **컨텐츠**를 선택하고 **블록**을 선택하십시오.  
@@ -49,6 +62,8 @@ lastupdated: "2017-10-31"
 ---
 
 ## 개발자 포털의 테마 사용자 정의
+{: #cust_theme_tut_custom_dev_portal}
+
 개발자 포털을 사용하면 테마를 수정하여 룩앤필을 변경할 수 있습니다.
 
 1. 테마를 수정하려면 맨 위 메뉴에서 **모양**, **설정** 및 **IBM API Connect 테마**를 순서대로 선택하십시오. 개발자 포털을 작성할 때 이 테마가 기본값입니다.
@@ -72,6 +87,8 @@ lastupdated: "2017-10-31"
 ---
 
 ## 개발자 포털에 대해 다른 테마 선택
+{: #diff_theme_tut_custom_dev_portal}
+
 개발자 포털에는 선택하여 룩앤필을 변경할 수 있는 추가 테마가 함께 제공됩니다.
 
 1. 다른 테마를 사용하려면 모양 설정의 맨 위에 있는 **목록** 탭을 선택하십시오.
@@ -92,14 +109,16 @@ lastupdated: "2017-10-31"
 ---
 
 ## 개발자 포털의 새 테마 설치
+{: #new_theme_tut_custom_dev_portal}
+
 기존 테마를 수정해도 요구사항에 맞지 않는 경우 개발자 포털을 통해 테마를 설치하여 룩앤필을 변경할 수 있습니다.
 
-1. [drupal.org ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](http://drupal.org){:new_window}에서 다운로드한 모듈 또는 테마를 사용하여 개발자 포털을 사용자 정의하거나 고유 포털을 작성할 수 있습니다.
+1. [drupal.org ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://drupal.org){: #new_window}에서 다운로드한 모듈 또는 테마를 사용하여 개발자 포털을 사용자 정의하거나 고유 포털을 작성할 수 있습니다.
 
 2. 개발자 포털에 테마를 설치하려면 맨 위 메뉴에서 **모양**을 선택한 다음 **새 테마 설치**를 선택하십시오.  
   ![새 테마 설치](images/62-install-new.png)
 
-3. URL을 사용하여 [drupal.org ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](http://drupal.org){:new_window}에서 직접 테마를 설치하거나 **파일 선택**과 **설치**를 순서대로 클릭하여 다운로드하거나 작성한 테마를 업로드할 수 있습니다.  
+3. URL을 사용하여 [drupal.org ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://drupal.org){: #new_window}에서 직접 테마를 설치하거나 **파일 선택**과 **설치**를 순서대로 클릭하여 다운로드하거나 작성한 테마를 업로드할 수 있습니다.  
   ![설치](images/63-install.png) 
 
 4. 업로드가 완료되면 테마를 사용해야 합니다. **새로 추가된 테마 사용**을 선택하십시오.  
@@ -112,7 +131,8 @@ lastupdated: "2017-10-31"
 
 ---
 
-## 요약
+## 결론
+{: #conclusion_tut_custom_dev_portal}
 축하합니다. 이 튜토리얼을 완료했습니다. 이 튜토리얼에서는 다음을 수행하는 방법을 학습했습니다.
 
 * 개발자 포털 시작 페이지 사용자 정의
@@ -123,8 +143,9 @@ lastupdated: "2017-10-31"
 ---
 
 ## 다음 단계
+{: #next_tut_custom_dev_portal}
 
-[개발자 포털을 통해 탐색하는 방법](tut_discover_apis.html) 또는 [기본 분석에서 인사이트를 얻는 방법](tut_insights_analytics.html)을 알아보십시오.
+[개발자 포털을 통해 탐색하는 방법](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_discover_apis) 또는 [기본 분석에서 인사이트를 얻는 방법](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics)을 알아보십시오.
 
 작성 >관리> 보안 > ** 소셜화 ** > 분석  
 

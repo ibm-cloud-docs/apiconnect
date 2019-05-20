@@ -1,8 +1,12 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-31"
+  years: 2019
+lastupdated: "2017-3-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
 
 ---
 
@@ -14,36 +18,37 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # API 제품 바꾸기
+{: #tut_manage_replace}
+
 **소요 시간**: 15분  
 **스킬 레벨**: 초보자  
 
+## 목표
+{: #object_tut_manage_replace}
+이 튜토리얼에서는 기존 API 제품을 새 제품으로 바꾸어 업데이트합니다. API 제품을 바꾸면 변경사항이 즉시 적용되고 모든 애플리케이션 등록이 자동으로 업데이트됩니다.  
 
+---
 ## 전제조건
+{: #prereq_tut_manage_replace}
 
-1. [{{site.data.keyword.apiconnect_full}} 인스턴스를 설정하십시오](tut_prereq_set_up_apic_instance.html).
+1. [{{site.data.keyword.apiconnect_full}} 인스턴스를 설정](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance)하십시오.
 
 2. 다음 튜토리얼 중 하나를 완료하십시오.
  
-    - [OpenAPI2.0 스펙 가져오기 및 기존 REST 서비스 프록시](tut_rest_landing.html)
+    - [OpenAPI2.0 스펙 가져오기 및 기존 REST 서비스 프록시](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 **또는**  
-    - [새 API 스펙 추가 및 기존 REST 서비스 호출](tut_rest_landing.html).
+    - [새 API 스펙 추가 및 기존 REST 서비스 호출](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
 
 ---
-## 목표
-이 튜토리얼에서는 기존 API 제품을 새 제품으로 바꾸어 업데이트합니다. API 제품을 바꾸면 변경사항이 즉시 적용되고 모든 애플리케이션 등록이 자동으로 업데이트됩니다.  
 
-
----
 ## API 제품 바꾸기
-{: #repl_api_prod}
+{: #repl_api_prod_tut_manage_replace}}
 
-1. {{site.data.keyword.Bluemix_short}}에 로그인하십시오. [https://console.ng.bluemix.net/login ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.ng.bluemix.net/login){:new_window}.
+1. {{site.data.keyword.Bluemix_short}}: https://cloud.ibm.com에 로그인하십시오.
+2. {{site.data.keyword.Bluemix_notm}} **대시보드**에서 **Cloud Foundary 서비스**를 클릭하십시오.{{site.data.keyword.apiconnect_short}} 서비스를 시작하십시오. 
+3. {{site.data.keyword.apiconnect_short}}에서 탐색 패널이 열려 있는지 확인하십시오. 열려 있지 않으면 **>>**를 클릭하여 여십시오.  
 
-2. {{site.data.keyword.Bluemix_notm}} 대시보드에서 {{site.data.keyword.apiconnect_short}} 서비스를 실행하십시오.
-![](images/Bluemix.png)
-
-3. API Manager에서 UI 탐색 분할창을 아직 고정하지 않은 경우 **이동 위치** 아이콘 ![](images/navigate-to.png)을 클릭하십시오. API Manager UI 탐색 분할창이 열립니다. UI 탐색 분할창을 고정하려면 **핀 메뉴** 아이콘 ![](images/pinned.png)을 클릭하십시오.
-
+  ![](images/cloud-apic-dashboard.png)
 4. **드래프트** > **API**를 클릭하십시오.
 
 5. API 패널에서 **Weather Provider API**를 클릭하여 REST 프록시 API를 여십시오.  
@@ -91,7 +96,8 @@ lastupdated: "2017-10-31"
  ![](images/rep-prod-retired.png) 
  
 
-## 이 튜토리얼에서 수행한 작업
+## 결론
+{: #conclusion_tut_manage_replace}
 
 이 튜토리얼에서 다음 활동을 완료했습니다.
 1. API 제품 업데이트.
