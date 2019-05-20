@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,10 +17,14 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # 安装 API Connect 工具箱
+{: #tut_prereq_install_toolkit}
+
 **持续时间**：15 分钟  
 **技能级别**：初学者  
 
-## 所需项目
+## 先决条件
+{: #prereq_tut_prereq_install_toolkit}
+
 1. Node.js
 2. Node Product Manager (NPM)
 3. {{site.data.keyword.apiconnect_full}} _Lite_
@@ -27,9 +37,11 @@ lastupdated: "2017-10-31"
 
 
 ## 安装 node.js
+{: #nodejs_tut_prereq_install_toolkit}
+
 1. 从以下两个源之一下载并安装 node.js：
-   * [https://nodejs.org/en/download/ ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://nodejs.org/en/download/){:new_window}（注：请下载适用于您平台的 LTS 版本，而不是最新版本，否则可能会遇到错误。）**或**
-   * [https://developer.ibm.com/node/sdk/v6/ ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/node/sdk/v6/){:new_window}  
+   * [https://nodejs.org/en/download/ ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://nodejs.org/en/download/){: #new_window}（注：请下载适用于您平台的 LTS 版本，而不是最新版本，否则可能会遇到错误。）**或**
+   * [https://developer.ibm.com/node/sdk/v6/ ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/node/sdk/v6/){: #new_window}  
 
     _安装 node.js 还会安装 **npm** (Node Package Manager)_。
 
@@ -46,6 +58,8 @@ lastupdated: "2017-10-31"
 
 
 ## 安装 API Connect 工具箱和 Micro Gateway
+{: #tk_micro_tut_prereq_install_toolkit}
+
 1. 更新 npm 配置以允许使用不可信证书。  
    `npm config -g set strict-ssl false`  
 

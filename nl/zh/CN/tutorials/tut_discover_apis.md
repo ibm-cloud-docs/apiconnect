@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-20"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,11 +17,21 @@ lastupdated: "2017-11-20"
 {:pre: .pre}
 
 # 发现 API
+{: #tut_discover_apis}
+
 **持续时间**：25 分钟  
 **技能级别**：初学者  
 
+## 目标
+{: #object_tut_discover_apis}
+
+在本教程中，您将学习门户网站用户可以如何在 {{site.data.keyword.apiconnect_full}} 开发者门户网站中使用 API。您将了解门户网站用户如何浏览产品和 API，查看和测试 API 以及预订 API。
+
+ 
 
 ## 先决条件
+{: #prereq_tut_discover_apis}
+
 本教程无先决条件。作为门户网站管理员，您还可以在浏览开发者门户网站以感受门户网站用户如何浏览开发者门户网站时完成本教程。请记住，所有开发者门户网站都有不同的外表。
 
  
@@ -24,12 +40,9 @@ lastupdated: "2017-11-20"
 
 
 
-## 目标
-在本教程中，您将学习门户网站用户可以如何在 {{site.data.keyword.apiconnect_full}} 开发者门户网站中使用 API。您将了解门户网站用户如何浏览产品和 API，查看和测试 API 以及预订 API。
-
- 
-
 ## 浏览产品和 API
+{: #explore_tut_discover_apis}
+
 本部分显示门户网站用户将如何在开发者门户网站中浏览产品和 API。
 
 1. 在浏览器中，导航至 **API Connect 开发者门户网站**。
@@ -53,6 +66,8 @@ lastupdated: "2017-11-20"
 ---
 
 ## 查看和测试 API
+{: #view_tut_discover_apis}
+
 本部分显示门户网站用户将如何查看和测试产品的可用 API。 
 
 1. 如上一部分中所概述，在 {{site.data.keyword.apiconnect_short}} 开发者门户网站中导航至 API 详细信息。  
@@ -73,6 +88,8 @@ lastupdated: "2017-11-20"
 ---
 
 ## 预订 API
+{: #subscr_tut_discover_apis}
+
 本部分显示门户网站用户将如何在开发者门户网站中预订 API。 
 
 1. 选择**创建帐户**。
@@ -106,14 +123,16 @@ lastupdated: "2017-11-20"
 ![应用程序预订成功](images/310-subscribe-success.png) 
 
 ## 结论
+{: #conclusion_tut_discover_apis}
 
 在本教程中，您已学习门户网站用户如何浏览产品和 API，查看和测试 API 以及预订 API。 
 
 ---
 
 ## 下一步
+{: #next_tut_discover_apis}
 
-学习[如何通过基本分析获得洞察](tut_insights_analytics.html)。
+学习[如何通过基本分析获得洞察](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics)。
 
 创建 > 管理 > 安全 > **社交化** > 分析  
 

@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  title: ÆøÏó·şÎñÌá¹©ÉÌ API
+  title: æ°”è±¡æœåŠ¡æä¾›å•† API
   version: 1.0.0
   x-ibm-name: weather-provider-api
 host: $(catalog.host)
@@ -12,30 +12,30 @@ produces:
 paths:
   /current:
     get:
-      summary: µ±Ç°ÌìÆø
+      summary: å½“å‰å¤©æ°”
       parameters:
         - name: zipcode
           in: query
-          description: ÓĞĞ§µÄ 5 Î»ÊıÃÀ¹úÓÊÕş±àÂë
+          description: æœ‰æ•ˆçš„ 5 ä½æ•°ç¾å›½é‚®æ”¿ç¼–ç 
           required: true
           type: string
       responses:
         '200':
-          description: ³É¹¦
+          description: æˆåŠŸ
           schema:
             $ref: '#/definitions/Current'
   /today:
     get:
-      summary: "½ñÈÕÌìÆø"
+      summary: "ä»Šæ—¥å¤©æ°”"
       parameters:
         - name: zipcode
           in: query
-          description: ÓĞĞ§µÄ 5 Î»ÊıÃÀ¹úÓÊÕş±àÂë
+          description: æœ‰æ•ˆçš„ 5 ä½æ•°ç¾å›½é‚®æ”¿ç¼–ç 
           required: true
           type: string
       responses:
         '200':
-          description: ÓÃ»§µÄ¸öÈËµµ°¸ĞÅÏ¢
+          description: ç”¨æˆ·çš„ä¸ªäººæ¡£æ¡ˆä¿¡æ¯
           schema:
             $ref: '#/definitions/Today'
 definitions:

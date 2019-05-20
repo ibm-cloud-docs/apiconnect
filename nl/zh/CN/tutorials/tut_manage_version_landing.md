@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2017-10-10"
 
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 
@@ -14,6 +18,7 @@ lastupdated: "2017-10-10"
 {:pre: .pre}
 
 # 管理 API 和产品版本
+{: #tut_manage_version_landing}
 
 发布 API 以及包含该 API 的产品后，API 提供者通常希望或需要更新这些产品和 API。更新 API 产品可通过不同方式执行。  
 
@@ -29,9 +34,9 @@ lastupdated: "2017-10-10"
 
 在此系列教程中，您将使 API 产品依次经历所有这些状态。请按以下顺序完成教程：
 
-1. [替换 API 产品](tut_manage_replace.html)
-2. [取代 API 产品](tut_manage_supercede.html)
-3. [归档和删除 API 产品](tut_manage_remove.html)
+1. [替换 API 产品](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_replace)
+2. [取代 API 产品](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede)
+3. [归档和删除 API 产品](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_remove)
 
 
 

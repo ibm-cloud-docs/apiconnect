@@ -1,7 +1,13 @@
 ---
+
 copyright:
-  years: 2017
-lastupdated: "2017-12-15"
+  years: 2019
+lastupdated: "2019-3-11"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 
@@ -13,31 +19,32 @@ lastupdated: "2017-12-15"
 
 
 # 管理 SOAP 服务
+{: #tut_manage_soap_api}
+
 **持续时间**：15 分钟
 **技能级别**：初学者
 
 ---
 ## 目标
+{: #object_tut_manage_soap_api}
+
 在本教程中，您将使用 API Manager 来创建 SOAP API，这是基于 SOAP 的天气服务的代理。
 
 ## 先决条件
-- 开始之前，需要[设置 {{site.data.keyword.apiconnect_short}} 实例](tut_prereq_set_up_apic_instance.html)。
-- 开始之前，请将 [weatherprovider.wsdl 测试 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} 文件复制到本地文件系统。注：可以单击**原始**，然后将生成的页面在本地系统上另存为 `.wsdl` 文件。如名称所示，此 SOAP 服务在给定邮政编码时会返回相应的天气数据。
+{: #prereq_tut_manage_soap_api}
+
+- 开始之前，需要[设置 {{site.data.keyword.apiconnect_short}} 实例](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance)。
+- 开始之前，请将 [weatherprovider.wsdl 测试 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: #new_window} 文件复制到本地文件系统。注：可以单击**原始**，然后将生成的页面在本地系统上另存为 `.wsdl` 文件。如名称所示，此 SOAP 服务在给定邮政编码时会返回相应的天气数据。
 
 ---
 ## 设置 SOAP API 定义
-1. 登录到 {{site.data.keyword.Bluemix_short}}：[https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}。
+{: #setup_tut_manage_soap_api}
 
-2. 在 {{site.data.keyword.Bluemix_notm}} **仪表板**中，向下滚动到**所有服务**。
-
-3. 选择 **API Connect** 以启动 {{site.data.keyword.apiconnect_short}} 服务。 
-  
-4. 如果您尚不在“草稿”页面中，请导航至该页面：  
-    a. 在 {{site.data.keyword.apiconnect_short}} 界面中，单击 >> 以打开导航面板。
-    b. 在导航面板中单击**草稿**。
-    c. 转至 **API** 选项卡。
-
-5. 在“API”选项卡中，单击`添加 +`。
+1. 登录到 {{site.data.keyword.Bluemix_short}}：https://cloud.ibm.com。
+2. 在 {{site.data.keyword.Bluemix_notm}} **仪表板**中，单击 **Cloud Foundary 服务**。 
+3. 启动 {{site.data.keyword.apiconnect_short}} 服务。 
+4. 在 {{site.data.keyword.apiconnect_short}} 中，确保左侧的导航面板已打开。如果未打开，请单击 **>>** 将其打开。  
+5. 在导航面板中选择**草稿**。   
 
 6. 在下拉菜单中，选择**来自 SOAP 服务的 API**。
 ![新建 API](images/newapi-menu2.png)
@@ -52,14 +59,13 @@ lastupdated: "2017-12-15"
 
 10. 成功导入后，将转至 API 的“设计”视图。此外，还可以在“源”选项卡下查看 OpenAPI 定义。_在“源”选项卡中，将看到 WSDL 包装在 OpenAPI 定义中。_![“API 编辑器”页面](images/designpage2.png)
 
-11. 向下滚动到**安全性**选项卡，然后单击“删除”图标以除去创建服务时自动生成的 `clientIDHeader (API Key)`。_您将在下一个教程的“API 密钥”中学习安全性。_
+11. 单击 ![保存](images/save.png) 图标以保存更改。很快将显示“API 已保存”确认通知。
 
-12. 单击 ![保存](images/save.png) 图标以保存更改。很快将显示“API 已保存”确认通知。
-
-13. 在带有“保存”图标的菜单栏中，**设计**选项卡会指示您的当前位置。在其旁边找到**源**选项卡，在其中可以直接查看表示您 API 的 Swagger (2.0) 文件，然后在其旁边找到**组合**选项卡，该选项卡会将您转至拖放界面进行 API 处理。单击**组合**。
+12. 在带有“保存”图标的菜单栏中，**设计**选项卡会指示您的当前位置。在其旁边找到**源**选项卡，在其中可以直接查看表示您 API 的 Swagger (2.0) 文件，然后在其旁边找到**组合**选项卡，该选项卡会将您转至拖放界面进行 API 处理。单击**组合**。
 ![“组合”选项卡](images/assemble-clean.png)  
 
 ## 测试 SOAP API 定义
+{: #test_tut_manage_soap_api}
 
 1. 在**组合**选项卡中，单击**更多操作**（三个点）图标，然后从菜单中选择**生成缺省产品**。  
    ![打开的“更多操作”菜单](images/gen-default-prod.png)
@@ -67,7 +73,7 @@ lastupdated: "2017-12-15"
 2. 接受**新建产品**弹出对话框中的缺省选项，然后选择**创建产品**。这将创建 **weatherService 产品 1.0.0**，并将其发布到“沙箱”目录。  
   ![创建新产品](images/12a-chooseproduct.png)
  
-  _在 {{site.data.keyword.apiconnect_short}} 中，**产品**提供了用于对特定用途的 API 进行分组的机制。产品将发布到**目录**。参考：[{{site.data.keyword.apiconnect_short}} 词汇表](../apic_glossary.html)_
+  _在 {{site.data.keyword.apiconnect_short}} 中，**产品**提供了用于对特定用途的 API 进行分组的机制。产品将发布到**目录**。参考：[{{site.data.keyword.apiconnect_short}} 词汇表](docs/services/apiconnect/tutorials/tut_expose_soap_service/apic_glossary.html)_
 
 3. 保存更改。  
 
@@ -92,13 +98,15 @@ lastupdated: "2017-12-15"
    </soap:Body>
   </soap:Envelope>
   ```
-  {: codeblock}  
+ 
   ![请求](images/14-enterrequest.png)
 
 9. 根据需要向下滚动，然后单击**调用**。该 API 将返回包含当前天气的响应**主体**。  
   ![](images/15-success.png)
 
-## 在本教程中执行的操作
+## 结论
+{: #conclusion_tut_manage_soap_api}
+
 在本教程中，您已完成以下操作：
 1. 设置 SOAP API 定义
 2. 测试 API 定义
@@ -107,7 +115,8 @@ lastupdated: "2017-12-15"
 ---
 
 ## 下一步
+{: #next_tut_manage_soap_api}
 
-[将服务公开为 REST API](tut_expose_soap_service.html)，或者使用[速率限制](tut_rate_limit.html)、[客户机标识和私钥](tut_secure_landing.html)或[使用 OAuth 2.0 进行保护](tut_secure_oauth_2.html)来保护 API。
+[将服务公开为 REST API](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_expose_soap_service)，或者利用[使用 OAuth 2.0 进行保护](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2)来保护 API。
 
 创建 > **管理** > 安全 > 社交化 > 分析

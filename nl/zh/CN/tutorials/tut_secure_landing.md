@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2017-10-31"
 
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 
@@ -21,12 +25,14 @@ lastupdated: "2017-10-31"
 要使用客户机标识和客户机私钥来保护 API，必须为过程选择一种方法。
 
 ## {{site.data.keyword.Bluemix_notm}}
+{: #secure_tut_secure_landing}
 
-- [通过 {{site.data.keyword.Bluemix_notm}} 使用客户机标识和客户机私钥保护 API](tut_secure_id_secret_bm.html)
+- [使用 {{site.data.keyword.Bluemix_notm}} 通过客户机标识和客户机私钥保护 API](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_id_secret_bm)
 
 ## 开发者工具箱
+{: #tk_tut_secure_landing}
 
-- [通过开发者工具箱使用客户机标识和客户机私钥保护 API](tut_secure_id_secret_tk.html)
+- [通过开发者工具箱使用客户机标识和客户机私钥保护 API](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_id_secret_tk)
 
 
 

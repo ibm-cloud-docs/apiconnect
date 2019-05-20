@@ -1,8 +1,12 @@
 ---
 
 copyright:
-years: 2017
-lastupdated: "2017-11-14"
+years: 2019
+lastupdated: "2019-3-12"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
 
 ---
 
@@ -14,29 +18,40 @@ lastupdated: "2017-11-14"
  
 
 # 将 SOAP 服务公开为 REST API
+{: #tut_expose_soap_service}
+
 **持续时间**：20 分钟  
 **技能级别**：初学者  
 
 ---
 ## 目标
+{: #object_tut_expose_soap_service}
+
 在 API Manager 中，您将创建一个 REST API，用于访问现有 SOAP 服务并将其公开为 REST API。
 
 ## 先决条件
-1. 开始之前，需要[设置 {{site.data.keyword.apiconnect_full}} 实例](tut_prereq_set_up_apic_instance.html)。
-2. 开始之前，请将 [weatherprovider.wsdl 测试 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} 文件复制到本地文件系统。
+{: #prereq_tut_expose_soap_service}
+
+1. 开始之前，需要[设置 {{site.data.keyword.apiconnect_full}} 实例](/docs/services/apiconnect?topic=apiconnect-tut_prereq_set_up_apic_instance)。
+2. 开始之前，请将 [weatherprovider.wsdl 测试 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: #new_window} 文件复制到本地文件系统。
 	>![images/info.png]
 	>可以单击**原始**，然后将生成的页面在本地系统上另存为 `.wsdl` 文件。
 
 ---
 ## 设置 REST API 定义
-1. 登录到 {{site.data.keyword.Bluemix_short}}：[https://new-console.ng.bluemix.net/login ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://new-console.ng.bluemix.net/login){:new_window}。
-2. 在 {{site.data.keyword.Bluemix_notm}} **仪表板**中，向下滚动并选择 {{site.data.keyword.apiconnect_short}}。或者，从菜单图标中，选择**服务**，接着选择 **API** 以访问**使用 API** 窗口，然后选择 **API Connect**。在 **API Connect** 页面中，可以直接按`创建`，也可以调整缺省设置。对于本练习，请将此实例保留未绑定状态，并调整“服务名称”以方便以后更容易识别。例如，`API Connect-weather-exercise`。按`创建`按钮以启动 {{site.data.keyword.apiconnect_short}} 服务。  
-您可能会看到一条描述新增内容的警报，或者看到**草稿 API** 信息启动页面。阅读相应信息后，单击“**知道了**”图标以查看 API Manager。
-3. 在 {{site.data.keyword.apiconnect_short}} 中，如果先前未锁定 UI 导航窗格，请单击**导航至**图标 ![](images/navigate-to.png)。这将打开 API Manager UI 导航窗格。要锁定 UI 导航窗格，请单击**锁定菜单**图标 ![](images/pinned.png)。
-4. 在 UI 导航窗格中选择**草稿**，然后单击 **API** 选项卡。这将打开 **API** 选项卡。
-	![](images/drafts-api-1.png)
+{: #setup_tut_expose_soap_service}
+
+1. 登录到 {{site.data.keyword.Bluemix_short}}：https://cloud.ibm.com。
+2. 在 {{site.data.keyword.Bluemix_notm}} **仪表板**中，单击 **Cloud Foundary 服务**。启动 {{site.data.keyword.apiconnect_short}} 服务。 
+3. 在 {{site.data.keyword.apiconnect_short}} 中，确保导航面板已打开。如果未打开，请单击 **>>** 将其打开。  
+
+  ![](images/cloud-apic-dashboard.png)
+
+4. 在导航面板中选择**草稿**。
 5. 选择**添加 +** > **新建 API**。
-6. 指定有关 API 的基本信息。
+
+    ![](images/cloud-add-api-new.png)  
+	6. 指定有关 API 的基本信息。
 	- 在**标题**字段中，输入 `Weather Data`。
 	- 输入标题时，**名称**字段会填充 `weather-data`，请保留此值不变。	
 	- 将**基本路径**字段保留为 `/weather-data`。
@@ -52,17 +67,25 @@ lastupdated: "2017-11-14"
 	- 确保选中**将此产品发布到目录**复选框，然后选择**沙箱**作为目标目录。
 	![](images/new-api-2.png)
 	- 单击**创建 API**。这将打开 API 定义草稿的**设计**选项卡。
-9. 现在，API 已创建。将显示“设计”页面。单击导航栏中的**安全性**。
-![](images/api-security-1.png)
-10. 取消选中 **ClientID** 选项。
-![](images/api-security-2.png)
-	>![](images/info.png)
-	>您可能会注意到，在“保存”磁盘图标旁显示有一个黄色三角形图标。这是警告，指示存在已定义但尚未使用的定义。（此警告不会影响 API 定义。）
-11. 在**定义**部分中，单击**添加定义**图标 ![](images/add-icon.png)，然后通过单击该图标来展开新定义。
+9. 现在，API 已创建。将显示“设计”页面。
+
+   ![](images/design-new-1.png)
+
+10. 单击导航栏上的**定义**。单击**添加定义**图标 ![](images/add-icon.png)。
+
+11. 通过单击新定义来将其展开。
 12. 将定义命名为 `Weather Data Output`。
-13. 该定义将有五个属性。请单击**添加属性**四次以添加其他属性。参考下图来对`属性名称`重命名，并对`描述`、`类型`和`示例`使用缺省值：![](images/definition-new-1.png)
-14. 在**路径**部分中，单击**添加路径**图标 ![](images/add-icon.png).
-15. 在新创建的路径的**路径**字段中，将内容替换为 `/getweatherdata`。
+13. 该定义将有五个属性。请单击**添加属性**四次以添加其他属性。参考下图来对`属性名称`重命名，并对`描述`、`类型`和`示例`使用缺省值：
+    a. 为 **Weather Data Output** 定义添加新属性。    
+       - 名称：zip         /  类型：string   
+       - 名称：temperature /  类型：integer   
+       - 名称：humidity    /  类型：integer   
+       - 名称：city        /  类型：string   
+       - 名称：state       /  类型：string   
+
+	![](images/definition-new-1.png)
+14. 单击导航栏中的**路径**。单击**添加路径**图标 ![](images/add-icon.png)。
+15. 将新创建的路径的**标题**设置为 `/getweatherdata`。
 16. 通过单击 **GET /getweatherdata** 操作以将其展开。![](images/path-new-1.png)
 17. 对于 **GET /getweatherdata** 操作，请单击**添加参数**，然后单击**添加新参数**。
 18. 将新参数命名为 `zip_code`，并将其余参数保留缺省值。
@@ -72,6 +95,8 @@ lastupdated: "2017-11-14"
 
 ---
 ## 添加和配置 Web Service 调用
+{: #add_web_tut_expose_soap_service}
+
 要添加并配置用于将 Web Service 集成到 API 定义中的 invoke 和 map 策略，请完成以下步骤。
 1. 在**服务**部分中，单击**添加服务**图标 ![](images/add-icon.png)。这将打开`通过 WSDL 导入 Web Service` 窗口。
 	![](images/upload-file-1.png)
@@ -106,6 +131,8 @@ lastupdated: "2017-11-14"
 
 ---
 ## 测试 API 定义
+{: #test_tut_expose_soap_service}
+
 要使用 API Manager 测试工具来测试 API 定义，请完成以下步骤。
 1. 单击**组合件**选项卡下的**测试**图标 ![](images/test-icon.png) 以显示测试窗格。
 	![](images/test-pane-1.png)
@@ -116,13 +143,15 @@ lastupdated: "2017-11-14"
 5. 单击**下一步**。
 6. 从操作列表中选择 `get /getweatherdata`。  
 	![](images/select-operation-1.png)
-7. 向下滚动到 **zip_code** 字段，然后输入 `90210`。  
+7. 向下滚动到 **zip_code** 字段，然后输入 `10504`。  
 	![](images/test-api-1.png)
 8. 单击**调用**。API 将返回当前天气。  
-	![](images/test-api-2.png)
+	![](images/test-wdata-result.png)
 
 ---
-## 在本教程中执行的操作
+## 结论
+{: #conclusion_tut_expose_soap_service}
+
 在本教程中，您已完成以下活动：
 1. 设置 REST API 定义
 2. 配置 API 以调用现有 Web Service 并返回其输出
@@ -131,8 +160,9 @@ lastupdated: "2017-11-14"
 ---
 
 ## 下一步
+{: #next_tut_expose_soap_service}
 
-使用[速率限制](tut_rate_limit.html)、[客户机标识和私钥](tut_secure_landing.html)或[使用 OAuth 2.0 进行保护](tut_secure_oauth_2.html)来保护 API。
+利用[使用 OAuth 2.0 进行保护](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2)来保护 API。
 
 创建 > **管理** > 安全 > 社交化 > 分析
 

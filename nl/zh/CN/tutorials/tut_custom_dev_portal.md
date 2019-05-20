@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,22 +17,29 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # 定制开发者门户网站并选择主题
+{: #tut_custom_dev_portal}
+
 **持续时间**：30 分钟  
 **技能级别**：初学者  
 
 
 ## 目标
+{: #object_tut_custom_dev_portal}
+
 本教程旨在帮助您快速定制 {{site.data.keyword.apiconnect_full}} 开发者门户网站并选择适合您需求的主题。
 
 ---
 
 ## 先决条件
+{: #prereq_tut_custom_dev_portal}
 
-开始本教程之前，您应该已完成[设置和配置开发者门户网站](tut_config_dev_portal.html)教程并以门户网站管理员身份登录。
+开始本教程之前，您应该已完成[设置和配置开发者门户网站](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal)教程并以门户网站管理员身份登录。
 
 ---
 
 ## 定制开发者门户网站
+{: #cust_tut_custom_dev_portal}
+
 创建开发者门户网站后，可以对其外观进行定制。
 
 1. 首先修改“欢迎条幅”。在顶部菜单中，选择**内容**，然后选择**块**。  
@@ -49,6 +62,8 @@ lastupdated: "2017-10-31"
 ---
 
 ## 为开发者门户网站定制主题
+{: #cust_theme_tut_custom_dev_portal}
+
 开发者门户网站允许您修改主题以更改其外观。
 
 1. 要修改主题，请从顶部菜单中选择**外观**，再选择**设置**，然后选择 **IBM API Connect 主题**。这是创建开发者门户网站时的缺省主题。![IBM API Connect 主题](images/41-APIC-theme.png) 
@@ -69,6 +84,8 @@ lastupdated: "2017-10-31"
 ---
 
 ## 为开发者门户网站选择其他主题
+{: #diff_theme_tut_custom_dev_portal}
+
 开发者门户网站随附其他主题，可供您选择和定制以更改其外观。
 
 1. 要启用其他主题，请选择“外观”设置顶部的**列表**选项卡。![列表](images/51-list.png) 
@@ -87,14 +104,16 @@ lastupdated: "2017-10-31"
 ---
 
 ## 为开发者门户网站安装新主题
+{: #new_theme_tut_custom_dev_portal}
+
 如果修改现有主题无法满足您的需求，那么开发者门户网站还允许您安装主题来更改其外观。
 
-1. 可以使用从 [drupal.org ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://drupal.org){:new_window} 下载的模块或主题来定制开发者门户网站，也可以创建自己的主题。
+1. 可以使用从 [drupal.org ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://drupal.org){: #new_window} 下载的模块或主题来定制开发者门户网站，也可以创建自己的主题。
 
 2. 要将主题安装到开发者门户网站中，请从顶部菜单中选择**外观**，然后选择**安装新主题**。  
   ![安装新主题](images/62-install-new.png)
 
-3. 您可以使用 URL 直接从 [drupal.org ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://drupal.org){:new_window} 安装主题，也可以通过单击**选择文件**，然后单击**安装**来上传已下载或创建的主题。  
+3. 您可以使用 URL 直接从 [drupal.org ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://drupal.org){: #new_window} 安装主题，也可以通过单击**选择文件**，然后单击**安装**来上传已下载或创建的主题。  
   ![安装](images/63-install.png) 
 
 4. 上传完成后，需要启用主题。选择**启用新添加的主题**。  
@@ -107,7 +126,8 @@ lastupdated: "2017-10-31"
 
 ---
 
-## 总结
+## 结论
+{: #conclusion_tut_custom_dev_portal}
 祝贺您，您已完成本教程。在本教程中，您已学习如何执行以下操作：
 
 * 定制开发者门户网站欢迎页面
@@ -118,8 +138,9 @@ lastupdated: "2017-10-31"
 ---
 
 ## 下一步
+{: #next_tut_custom_dev_portal}
 
-学习[用户如何浏览开发者门户网站](tut_discover_apis.html)或[如何通过基本分析获得洞察](tut_insights_analytics.html)。
+学习[用户如何浏览开发者门户网站](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_discover_apis)或[如何通过基本分析获得洞察](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics)。
 
 创建 > 管理 > 安全 > **社交化** > 分析  
 

@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-02"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,35 +17,45 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # 使用开发者工具箱添加新的 API 规范并调用现有 REST 服务
+{: #tut_add_openapi_rest_tk}
+
 **持续时间**：15 分钟  
 **技能级别**：初学者  
 
 ## 目标
+{: #object_tut_add_openapi_rest_tk}
+
 本教程通过说明如何将现有 API 纳入管理控制，帮助您快速上手使用 {{site.data.keyword.apiconnect_full}}。首先将创建新的 OpenAPI 规范，然后为现有 REST 服务创建传递 API 代理。
 
 ## 先决条件
-开始之前，需要[设置 API Connect 实例](tut_prereq_set_up_apic_instance.html)和[安装 API Connect 工具箱](tut_prereq_install_toolkit.html)。
+{: #prereq_tut_add_openapi_rest_tk}
+
+开始之前，需要[设置 API Connect 实例](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance)和[安装 API Connect 工具箱](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_install_toolkit)。
 
 ---
 
 
 ## 浏览样本应用程序并测试目标端点
+{: #expl_test_tut_add_openapi_rest_tk}
+
 针对本教程创建了样本 _Weather Provider_ 应用程序。
-1. 要浏览该应用程序，请转至 [http://gettingstartedweatherapp.mybluemix.net/ ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}。  
+1. 要浏览该应用程序，请转至 [http://gettingstartedweatherapp.mybluemix.net/ ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://gettingstartedweatherapp.mybluemix.net/){: #new_window}。  
 2. 输入有效的 5 位美国邮政编码，以获取_**当前天气**_和_**今日预测**_。  
 ![](images/explore-weatherapp-1.png)
 
-3. 以上样本天气应用程序是使用提供天气数据的 API 构建的。用于获取**当前**天气数据的端点为 _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_。通过访问 [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window} 对其进行测试。  
+3. 以上样本天气应用程序是使用提供天气数据的 API 构建的。用于获取**当前**天气数据的端点为 _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_。通过访问 [https://myweatherprovider.mybluemix.net/current?zipcode=90210](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: #new_window} 对其进行测试。  
 
   ![](images/explore-weatherapp-2.png)
 
-4. 与此类似，用于获取**今日**预测数据的端点为 `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`。通过转至 [https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){:new_window} 对其进行测试。  
+4. 与此类似，用于获取**今日**预测数据的端点为 `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`。通过转至 [https://myweatherprovider.mybluemix.net/today?zipcode=90210](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: #new_window} 对其进行测试。  
 
   ![](images/explore-weatherapp-3.png)
 
 ---
 
 ## 添加新的 OpenAPI 规范并调用现有 REST 服务
+{: #add_spec_tut_add_openapi_rest_tk}
+
 1. 启动 **API Designer**。在终端中，输入 `apic edit`。
 2. 使用您的 IBM 标识登录。![](images/screenshot_apic-edit_login.png)
 3.   在 API Designer 中，确保导航面板已打开。如果未打开，请单击 >> 将其打开。在 **API Designer** 导航面板中，选择**草稿 > API**。
@@ -125,8 +141,11 @@ _（我们将在下一个教程的“API 密钥”中探讨安全性。）_
 ---
 
 ## 测试 API 代理
+{: #test_tut_add_openapi_rest_tk}
 
-### 使用 _API Manager 测试工具_进行测试。
+### 使用 _API Manager 测试工具_进行测试
+{: #test_apimgr_tut_add_openapi_rest_tk}
+
 1. 通过单击 Designer 左下方的“启动服务器”图标 (>) 来启动本地测试服务器。网关启动后，将看到状态自动更新为“正在运行”。
 
     ![](images/screenshot_start-server-1.png)
@@ -140,13 +159,15 @@ _（我们将在下一个教程的“API 密钥”中探讨安全性。）_
   b. 单击**调用**，并验证是否看到以下内容：
   ```
   200 OK response
-  Current weather data for 90210
+  Current weather data for 90210  
   ```
     ![](images/screenshot_test-2.png)  
 
 _如果遇到 CORS 错误，请按照错误消息中的指示信息进行操作。单击错误中的链接以将例外添加到浏览器，然后重新点击“调用”按钮。_
 
-### 使用_浏览工具_进行测试。  
+### 使用_浏览工具_进行测试
+{: #test_explore_tut_add_openapi_rest_tk}
+
 1. 要测试 API 代理端点，请选择_浏览_。
 2. 从选用板中选择 **GET /current** 操作。
 3. 在测试框中输入有效的美国邮政编码（例如 90210）。
@@ -156,13 +177,16 @@ _如果遇到 CORS 错误，请按照错误消息中的指示信息进行操作�
 ---
 
 ## 结论
+{: #conclusion_tut_add_openapi_rest_tk}
+
 在本教程中，您了解了如何通过 API 传递代理来调用现有 REST 服务。首先，通过 Web 浏览器检查了样本服务的可用性。接着，在 {{site.data.keyword.apiconnect_short}} 中创建了新的 OpenAPI 规范，并将其链接到要调用的样本服务。最后，使用内置测试工具对 API 代理进行了测试。
 
 ---
 
 ## 下一步
+{: #next_tut_add_openapi_rest_tk}
 
-使用[速率限制](tut_rate_limit.html)、[客户机标识和私钥](tut_secure_landing.html)或[使用 OAuth 2.0 进行保护](tut_secure_oauth_2.html)来保护 API。
+使用[速率限制](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rate_limit)、[客户机标识和私钥](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing)或[使用 OAuth 2.0 进行保护](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2)来保护 API。
 
 创建 > **管理** > 安全 > 社交化 > 分析
 

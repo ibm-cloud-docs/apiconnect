@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,20 +17,28 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # 通过基本分析获得洞察
+{: #tut_insights_analytics}
+
 持续时间：30 分钟  
 技能级别：初学者
 
 ## 目标
+{: #object_tut_insights_analytics}
+
 这是对 {{site.data.keyword.apiconnect_full}} 中 API 分析的基本介绍。我们将浏览可用的分析仪表板，并且在这个过程中，您可以使用自己的 API。
 
 
 ## 先决条件
+{: #prereq_tut_insights_analytics}
+
 为了查看您自己的 API 分析，必须已创建并发布 API 产品。此外，您还需要多次调用自己的 API 来生成一些分析数据，最好是使用已注册应用程序（而非预供应的测试应用程序）中的客户机标识。
 
 为了在本教程中生成数据，我们使用了 Postman 的*集合运行器*通过不同的数据和客户机标识来多次调用某个 API。您可以使用类似的工具（如用于 Firefox 的 HttpRequester），或者直接使用 cURL 通过命令行多次调用您的 API。通过单击 {{site.data.keyword.apiconnect_short}} 中的**浏览**链接可以获取 API 的样本请求。
 
 ## 目录分析简介
-作为 API 所有者，您需要一种方法来评估自己提供的 API 的成功程度及其性能。您将查找分析的主要位置位于目录级别。如果尚不了解目录，请参阅 IBM Knowledge Center 中的[使用目录 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){:new_window} 以进行简要了解。 
+{: #intro_tut_insights_analytics}
+
+作为 API 所有者，您需要一种方法来评估自己提供的 API 的成功程度及其性能。您将查找分析的主要位置位于目录级别。如果尚不了解目录，请参阅 IBM Knowledge Center 中的[使用目录 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){: #new_window} 以进行简要了解。 
 
 您和应用开发者还可以在开发者门户网站中访问特定于应用程序的分析，但在本教程中，我们将重点关注“目录分析”。
 
@@ -38,6 +52,8 @@ lastupdated: "2017-12-15"
 
 
 ## 活动 1：查看开箱即用的分析
+{: #act1_tut_insights_analytics}
+
 1. 在 {{site.data.keyword.Bluemix_short}} 上的 {{site.data.keyword.apiconnect_short}} 服务中，启动“仪表板”并选择要打开的目录。 
 2. 单击*分析*选项卡。
 
@@ -65,6 +81,7 @@ lastupdated: "2017-12-15"
 
 
 ## 活动 2：查看事件详细信息
+{: #act2_tut_insights_analytics}
 
 可视化项非常适合用于获取数据的有用概述，但您还需要一种方法来导航到用于填充图表的事件记录。
 
@@ -77,6 +94,7 @@ lastupdated: "2017-12-15"
 可以在仪表板上编辑、移动和删除可视化项。
 
 ## 活动 3：构建新的仪表板
+{: #act3_tut_insights_analytics}
 
 现在，我们将创建一个新的仪表板，用于提供 API 流量模式的视图。这些都是使用内置可视化项提供的。 
 
@@ -103,6 +121,8 @@ lastupdated: "2017-12-15"
 
 
 ## 活动 4：创建新的可视化项
+{: #act4_tut_insights_analytics}
+
 在已创建的“订户仪表板”上，我们包含了用于显示每日 API 调用数的内置可视化项。当查看一起显示的所有信息时，我们实际希望按应用程序查看使用情况。所以，下面将创建一个新的可视化项来显示此信息。
 
 1. 单击**新建可视化项**，然后选择**创建可视化项**链接。
@@ -137,6 +157,7 @@ lastupdated: "2017-12-15"
 还有其他信息可用于对有关 API 调用、调用者等的详细信息进行可视化。API Connect Knowledge Center 中或创建可视化项时的“词汇”列表中提供了 API 事件的完整列表。
 
 ## 结论
+{: #conclusion_tut_insights_analytics}
 
 借助以不同样式和组合来可视化 API 分析的能力，您可得出结论或更深入地了解 API 数据。可以使用此洞察来做出有关提供哪些 API、何时替换或引退 API 以及谁在使用 API 等的决策。
 
@@ -149,7 +170,7 @@ lastupdated: "2017-12-15"
 ---
 
 ## 下一步
-
-学习[如何管理 API 和版本控制](tut_manage_version_landing.html)。
+{: #next_tut_insights_analytics}
+学习[如何管理 API 和版本控制](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_version_landing)。
 
 创建 > 管理 > 安全 > 社交化 > **分析**  

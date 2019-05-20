@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,18 +17,26 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # 设置和配置开发者门户网站
+{: #tut_config_dev_portal}
+
 **持续时间**：30 分钟  
 **技能级别**：初学者  
 
-## 先决条件
-开始之前，需要[导入 API 规范并代理现有 REST 服务](tut_rest_landing.html)。
-
 ## 目标
+{: #object_tut_config_dev_portal}
+
 本教程旨在帮助您快速上手配置 **API Connect 开发者门户网站**。 
+
+## 先决条件
+{: #prereq_tut_config_dev_portal}
+
+开始之前，需要[导入 API 规范并代理现有 REST 服务](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)。
 
 ---
 
 ## 创建开发者门户网站
+{: #create_prereq_tut_config_dev_portal}
+
 在本部分中，您将为目录创建开发者门户网站。
 
 *目录*是一个 IBM 术语，表示不同的环境。例如，可针对测试、编译打包和生产环境创建不同的目录。您应该有一个名为“沙箱”的目录。请自由使用此目录来创建开发者门户网站，也可创建新目录并根据您的需要命名。
@@ -48,6 +62,8 @@ lastupdated: "2017-10-31"
 ---
 
 ## 浏览开发者门户网站
+{: #explore_prereq_tut_config_dev_portal}
+
 在本部分中，您将了解在先前步骤中创建的开发者门户网站。
 
 1. 为目录配置开发者门户网站后，您会收到一封电子邮件，其中包含一次性登录链接。选择该链接以启动开发者门户网站。
@@ -62,7 +78,7 @@ lastupdated: "2017-10-31"
   
 |选项卡|描述| 
 |:---------------- | -------------------- | 
-|_主页_|“主页”是开发者门户网站的欢迎页面。可以[定制页面](tut_custom_dev_portal.html)以满足您的需求。| 
+|_主页_|“主页”是开发者门户网站的欢迎页面。可以[定制页面](/docs/service/apiconnect/tutorials?topic=apiconnect-tut_custom_dev_portal)以满足您的需求。| 
 |_入门_|“入门”页面用于指示开发者如何开始使用开发者门户网站。|
 |_API 产品_|“ API 产品”页面供开发者用于浏览和预订门户网站上可用的 API。| 
 |_应用程序_|“应用程序”页面显示正在使用 API 的应用程序。| 
@@ -75,12 +91,15 @@ lastupdated: "2017-10-31"
   ![API 产品](images/27-api-products.png)
 
 ### 结论
+{: #conclusion_prereq_tut_config_dev_portal}
+
 在本教程中，您已学习如何设置和配置 {{site.data.keyword.apiconnect_short}} 开发者门户网站。此外，还浏览了开发者门户网站。
 
 ---
 
 ## 下一步
+{: #next_prereq_tut_config_dev_portal}
 
-[定制开发者门户网站并选择主题](tut_custom_dev_portal.html)。
+[定制开发者门户网站并选择主题](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_custom_dev_portal)。
 
 创建 > 管理 > 安全 > **社交化** > 分析

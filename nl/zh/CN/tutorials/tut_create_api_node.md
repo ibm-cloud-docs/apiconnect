@@ -4,23 +4,27 @@ copyright:
   years: 2018
 lastupdated: "2018-02-22"
 
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
-
-{:new_window: target="_blank"}
+{:new_window: target="blank"}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-
 # 使用 Node.js 创建 API
+{: #tut_create_api_node}
 
 **持续时间**：20 分钟  
 **技能级别**：初学者  
 
 ---
 ## 目标
+{: #object_tut_create_api_node}
 
 本教程将指导您逐步使用 LoopBack 框架以 Node.js 创建 API。本教程将描述如何执行以下操作：
 1. 创建新的 LoopBack 项目。
@@ -29,18 +33,21 @@ lastupdated: "2018-02-22"
 
 ---
 ## 先决条件
+{: #prereq_tut_create_api_node}
 
-开始之前，请[安装 {{site.data.keyword.apiconnect_short}} 工具箱](tut_prereq_install_toolkit.html)。如果已安装工具箱，请确保运行的是 V5.0.8.1 或更高版本。可通过在命令行上输入以下命令进行验证：
+开始之前，请[安装 {{site.data.keyword.apiconnect_short}} 工具箱](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_install_toolkit)。如果已安装工具箱，请确保运行的是 V5.0.8.1 或更高版本。可通过在命令行上输入以下命令进行验证：
 	```
 	apic -v
 	```
 
 ---
 ## 创建 LoopBack 项目
+{: #create_tut_create_api_node}
 
 可以使用 {{site.data.keyword.apiconnect_short}} 开发者工具箱命令行界面或 API Designer 界面来创建 LoopBack 项目。 
  
 ### 使用工具箱命令行创建 LoopBack 项目
+{: #create_cli_tut_create_api_node}
 
 要使用 {{site.data.keyword.apiconnect_short}} 工具箱命令行创建 LoopBack 项目，请完成以下步骤：
 1.  在命令行界面中，输入以下命令。此命令用于创建和管理 LoopBack 应用程序。
@@ -84,6 +91,7 @@ lastupdated: "2018-02-22"
 
 
 ### 使用 API Designer 界面创建 LoopBack 项目
+{: #create_apid_tut_create_api_node}
 
 要使用 API Designer 创建 LoopBack 项目，请完成以下步骤：
 1.  在命令行界面中，输入以下命令以启动 API Designer：
@@ -116,10 +124,13 @@ lastupdated: "2018-02-22"
 
 ---
 ## 添加新的数据源和模型
+{: #add_tut_create_api_node}
 
 要使用 API Designer 向 LoopBack 项目添加新的模型和数据源，请完成以下步骤：
 
 ### 添加数据源
+{: #add_ds_tut_create_api_node}
+
 要使用 API Designer 向 LoopBack 项目添加新的数据源，请完成以下步骤。
 1. 还必须如`通过命令行创建 LoopBack 项目`中所述，创建 LoopBack 项目（“weather-data”项目），并确保当前工作目录是项目根目录：
 	```bash
@@ -144,35 +155,37 @@ lastupdated: "2018-02-22"
 6. 单击**新建**。
 7. 缺省情况下，**连接器**设置显示**内存中数据库**，并且其他设置为空白。目前请保留缺省设置，API Designer 会自动保存新数据源。
 	>![参考信息]
-	>内存中数据源内置于 LoopBack 中，但仅适用于开发和初始测试。准备好将模型连接到实际数据源（如数据库服务器）时，请相应地更改**连接器**设置，并按照[安装 LoopBack 连接器 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tapim-connector-install.html#task_i2p_dnw_vv){:new_window} 中的指示信息安装数据源连接器。根据连接器类型，相应地输入连接器设置（主机名、数据库名称、用户名和密码），然后单击**保存**图标 ![](images/save-icon.png)。API Designer 会自动测试与数据源的连接。如果测试成功，将显示**成功 - 数据源连接测试成功**消息。
+	>内存中数据源内置于 LoopBack 中，但仅适用于开发和初始测试。准备好将模型连接到实际数据源（如数据库服务器）时，请相应地更改**连接器**设置，并按照以下 IBM Knowledge Center 主题中的指示信息来安装适合您连接器类型的数据源连接器，然后单击**保存**图标 ![](images/save-icon.png)：<https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tapim-connector-install.html#task_i2p_dnw_vv>安装 LoopBack 连接器 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")。API Designer 会自动测试与数据源的连接。如果测试成功，将显示**成功 - 数据源连接测试成功**消息。
 8. 单击“测试连接”图标 ![](images/db-test-icon.png) 以测试数据源连接。这将显示消息“数据源连接测试成功”。
-9. 单击**所有数据源**。数据源会显示在数据源列表中，并且编辑器会使用新数据源的设置来更新 server/datasources.json 文件。
+9. 单击所有数据源。数据源会显示在数据源列表中，并且编辑器会使用新数据源的设置来更新 server/datasources.json 文件。
 
 ### 添加模型
+{: #add_model_tut_create_api_node}
 
 要使用 API Designer 向 LoopBack 项目添加新模型，请完成以下步骤：
-1. 单击**模型**图标 ![](images/models-icon.png)。
-2. 单击**添加**。这将打开“新建 LoopBack 模型”窗口。
-3. 在**名称**文本字段中输入 `weather`，然后单击**新建**。
-4. 在**数据源**字段中，选择 **weatherDS**。![](images/new-model-1.png)
-5. 在**属性**中，单击**添加属性**图标 ![](images/add-icon.png)。
-6. 在**属性名称**文本字段中，输入 `zip_code`。
-7. 对于**类型**，选择 **number**。
-8. 选中**必需**以使此属性成为必需属性。这表示在添加或更新模型实例时，此属性必须具有值。 
-9. 选择**标识**以确保属性具有唯一标识。目前，请保留其他设置的缺省值：
-	- **是数组**：属性是否为包含指定类型的元素的 JavaScript 数组。
-	- **索引**：属性是否表示作为数据库索引的列（字段）。
-	- **描述**：属性的文本描述。
-9. 再次单击**添加属性**图标 ![](images/add-icon.png) 以添加其他属性。请参阅下表以完成其余属性：
+1. 单击模型图标 ![](images/models-icon.png)。
+2. 单击添加。这将打开“新建 LoopBack 模型”窗口。
+3. 在名称文本字段中输入 weather，然后单击新建。
+4. 在数据源字段中，选择 weatherDS。![](images/new-model-1.png)
+5. 在属性中，单击添加属性图标 ![](images/add-icon.png)。
+6. 在属性名称文本字段中，输入 zip_code。
+7. 对于类型，选择 number。
+8. 选中必需以使此属性成为必需属性。这表示在添加或更新模型实例时，此属性必须具有值。 
+9. 选择标识以确保属性具有唯一标识。目前，请保留其他设置的缺省值：
+	- 是数组：属性是否为包含指定类型的元素的 JavaScript 数组。
+	- 索引：属性是否表示作为数据库索引的列（字段）。
+	- 描述：属性的文本描述。
+9. 再次单击添加属性图标 ![](images/add-icon.png) 以添加其他属性。请参阅下表以完成其余属性：
 	![](images/new-model-property-1.png)
-10. 单击**保存**图标 ![](images/save-icon.png) 以保存更改。
-11. 单击**所有模型**以完成对模型的编辑。
+10. 单击保存图标 ![](images/save-icon.png) 以保存更改。
+11. 单击所有模型以完成对模型的编辑。
 
 这将完成向 weather-data LoopBack 项目添加新数据源和模型的操作。
 
 ---
 
 ## 测试 LoopBack 项目
+{: #test_tut_create_api_node}
 
 >![参考信息]
 
@@ -208,7 +221,7 @@ lastupdated: "2018-02-22"
 	>要将其重新启动，请单击**重新启动服务器**图标 ![](images/restart-icon.png)：
 	>![](images/restart-server-1.png)
 	
-4. 单击**浏览**图标 ![](images/explore-icon.png) 以查看 API Designer 浏览工具。侧边栏将显示 API 中 LoopBack 模型的所有 REST 操作。缺省情况下，基于 PersistedModel 的模型有[一组标准的创建、读取、更新和删除操作 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){:new_window}。
+4. 单击**浏览**图标 ![](images/explore-icon.png) 以查看 API Designer 浏览工具。侧边栏将显示 API 中 LoopBack 模型的所有 REST 操作。缺省情况下，基于 PersistedModel 的模型有[一组标准的创建、读取、更新和删除操作 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){: new_window}，如 Loopback 文档中所述。
 
 5. 单击左侧窗格中的 **weather.create** 操作以显示端点。
 ![](images/explore-test-1.png)
@@ -241,6 +254,8 @@ lastupdated: "2018-02-22"
 ---
 
 ### 在本教程中完成的操作
+{: #conclusion_tut_create_api_node}
+
 在本教程中，您已完成以下操作：
 1. 使用 {{site.data.keyword.apiconnect_short}} 工具箱命令行创建了新的 LoopBack 项目。
 2. 使用 {{site.data.keyword.apiconnect_short}} 工具箱中的 API Designer 向 LoopBack 项目添加了新的模型和数据源。
@@ -250,8 +265,9 @@ lastupdated: "2018-02-22"
 ---
 
 ## 下一步
+{: #next_tut_create_api_node}
 
-[管理 REST 服务](tut_rest_landing.html)或[管理 SOAP 服务](tut_manage_soap_api.html)。
+[管理 REST 服务](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)或[管理 SOAP 服务](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_soap_api)。
 
 创建 > **管理** > 安全 > 社交化 > 分析
 

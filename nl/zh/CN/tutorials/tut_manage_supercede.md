@@ -1,8 +1,13 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-31"
+  years: 2019
+lastupdated: "2017-3-18"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 
 ---
 
@@ -13,30 +18,34 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # 取代 API 产品
+{: #tut_manage_supercede}
+
 **持续时间**：15 分钟  
 **技能级别**：初学者  
 
-## 先决条件
-
-1. [设置 {{site.data.keyword.apiconnect_full}} 实例](tut_prereq_set_up_apic_instance.html)。
-
-2. 完成[替换 API 产品](tut_manage_replace.html)教程。
-
----
 ## 目标
+{: #object_tut_manage_supercede}
+
 在本教程中，您将使用新的 API 取代现有 API。
 
 ---
+## 先决条件
+{: #prereq_tut_manage_supercede}
+
+1. [设置 {{site.data.keyword.apiconnect_full}} 实例](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance)。
+
+2. 完成[替换 API 产品](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_replace)教程。
+
+---
+
 ## 取代 API 产品
-1. 登录到 {{site.data.keyword.Bluemix_short}}：[https://console.ng.bluemix.net/login ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://console.ng.bluemix.net/login){:new_window}。
+{: #super_tut_manage_supercede}
 
-2. 在 {{site.data.keyword.Bluemix_notm}}“仪表板”中，启动 {{site.data.keyword.apiconnect_short}} 服务。
-![](images/Bluemix.png)
+1. 登录到 {{site.data.keyword.Bluemix_short}}：https://cloud.ibm.com。
+2. 在 {{site.data.keyword.Bluemix_notm}} **仪表板**中，单击 **Cloud Foundary 服务**。启动 {{site.data.keyword.apiconnect_short}} 服务。 
+3. 在 {{site.data.keyword.apiconnect_short}} 中，确保导航面板已打开。如果未打开，请单击 **>>** 将其打开。  
 
-3. 在 API Manager 中，如果先前未锁定 UI 导航窗格，请单击**导航至**图标 ![](images/navigate-to.png)。这将打开 API Manager UI 导航窗格。要锁定 UI 导航窗格，请单击**锁定菜单**图标 ![](images/pinned.png)。
-
-4. 单击**沙箱**以打开“沙箱”目录。**注**：您的屏幕可能会显示磁贴，而不是目录列表。
-![](images/del-sandbox-list.png)
+  ![](images/cloud-apic-dashboard.png)
 
 4. 单击**草稿** > **API**。
 
@@ -101,7 +110,9 @@ lastupdated: "2017-10-31"
  
 
  
-## 在本教程中完成的操作
+## 结论
+{: #conclusion_tut_manage_supercede}
+
 在本教程中，您已完成以下活动：
 
 1. 更新 API 产品。
