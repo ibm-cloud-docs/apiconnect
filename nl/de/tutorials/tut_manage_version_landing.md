@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2017-10-10"
 
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 
@@ -14,6 +18,7 @@ lastupdated: "2017-10-10"
 {:pre: .pre}
 
 # API- und Produktversionen verwalten
+{: #tut_manage_version_landing}
 
 Nach dem Veröffentlichen einer API und des Produkts, in dem die API enthalten ist, möchten oder müssen die API-Anbieter in der Regeln diese Produkte und APIs aktualisieren. Die Aktualisierung eines API-Produkts kann auf mehrere Arten durchgeführt werden.  
 
@@ -29,9 +34,9 @@ Nach Ersetzen einer API können Sie ein API-Produkt außer Betrieb setzen und es
 
 In diesen Lernprogrammen versetzen Sie API-Produkte in alle diese Statusarten. Führen Sie die Lernprogramme in der folgenden Reihenfolge aus:
 
-1. [API-Produkt ersetzen](tut_manage_replace.html)
-2. [API-Produkt außer Kraft setzen](tut_manage_supercede.html)
-3. [API-Produkt archivieren und löschen](tut_manage_remove.html)
+1. [API-Produkt ersetzen](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_replace)
+2. [API-Produkt außer Kraft setzen](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede)
+3. [API-Produkt archivieren und löschen](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_remove)
 
 
 

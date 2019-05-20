@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,18 +17,26 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Developer Portal einrichten und konfigurieren
+{: #tut_config_dev_portal}
+
 **Dauer**: 30 Minuten  
 **Kenntnisstufe**: Anfänger  
 
-## Voraussetzungen
-Bevor Sie beginnen, müssen Sie [die API-Spezifikationen importieren und einen Proxy für einen vorhandenen REST-Service erstellen](tut_rest_landing.html).
-
 ## Lernziel
+{: #object_tut_config_dev_portal}
+
 In diesem Lernprogramm lernen Sie, wie **API Connect Developer Portal** konfiguriert wird. 
+
+## Voraussetzungen
+{: #prereq_tut_config_dev_portal}
+
+Bevor Sie beginnen, müssen Sie [die API-Spezifikationen importieren und einen Proxy für einen vorhandenen REST-Service erstellen](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
 
 ---
 
 ## Developer Portal erstellen
+{: #create_prereq_tut_config_dev_portal}
+
 In diesem Abschnitt erstellen Sie eine Developer Portal-Instanz für einen Katalog.
 
 *Kataloge* ist ein IBM Begriff für unterschiedliche Umgebungen. Für Test-, Bereitstellungs- und Produktionsumgebungen würden zum Beispiel unterschiedliche Kataloge erstellt werden. Ein Katalog mit dem Namen Sandbox muss vorhanden sein. Sie können entweder diesen Katalog zum Erstellen der Developer Portal-Instanz verwenden oder einen neuen Katalog erstellen und einen beliebigen Namen für diesen definieren.
@@ -51,6 +65,8 @@ In diesem Abschnitt erstellen Sie eine Developer Portal-Instanz für einen Katal
 ---
 
 ## Developer Portal kennenlernen
+{: #explore_prereq_tut_config_dev_portal}
+
 In diesem Abschnitt machen Sie sich mit der Developer Portal-Instanz vertraut, die Sie im vorherigen Schritt erstellt haben.
 
 1. Nachdem Sie die Developer Portal-Instanz für Ihren Katalog konfiguriert haben, empfangen Sie eine E-Mail mit einem nur einmal verwendbaren Anmeldelink. Wählen Sie den Link aus, um die Developer Portal-Instanz zu starten.
@@ -66,7 +82,7 @@ In diesem Abschnitt machen Sie sich mit der Developer Portal-Instanz vertraut, d
   
 | Registerkarte              | Beschreibung          | 
 |:---------------- | -------------------- | 
-| _Home_       | Die Seite 'Home' ist die Begrüßungsseite von Developer Portal. Sie können [die Seite anpassen](tut_custom_dev_portal.html), damit sie Ihren Anforderungen entspricht. | 
+| _Home_       | Die Seite 'Home' ist die Begrüßungsseite von Developer Portal. Sie können [die Seite anpassen](/docs/service/apiconnect/tutorials?topic=apiconnect-tut_custom_dev_portal), damit sie Ihren Anforderungen entspricht. | 
 | _Einführung_       | Die Seite 'Einführung' enthält Anweisungen für Entwickler zum Einstieg in die Verwendung von Developer Portal. |
 | _API-Produkte_ | Auf der Seite 'API-Produkte' durchsuchen und abonnieren die Entwickler die APIs, die im Portal zur Verfügung stehen. | 
 | _Apps_ | Auf der Seite 'Apps' werden die Anwendungen angezeigt, die die APIs verwenden. | 
@@ -79,12 +95,15 @@ Hinweis: Auf der Seite 'API-Produkte' können Sie eines der Produkte zum Anzeige
   ![API-Produkte](images/27-api-products.png)
 
 ### Fazit
+{: #conclusion_prereq_tut_config_dev_portal}
+
 In diesem Lernprogramm haben Sie gelernt, wie Sie {{site.data.keyword.apiconnect_short}} Developer Portal einrichten und konfigurieren. Außerdem haben Sie sich mit der Developer Portal-Instanz vertraut gemacht.
 
 ---
 
 ## Nächster Schritt
+{: #next_prereq_tut_config_dev_portal}
 
-[Developer Portal anpassen und Motiv auswählen](tut_custom_dev_portal.html).
+[Developer Portal anpassen und Motiv auswählen](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_custom_dev_portal).
 
-Erstellen >Verwalten> Schützen > ** Teilen ** > Analysieren
+Erstellen > Verwalten > Schützen > **Teilen** > Analysieren

@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  title: Weather Provider API
+  title: Wetter-Provider-API
   version: 1.0.0
   x-ibm-name: weather-provider-api
 host: $(catalog.host)
@@ -19,7 +19,11 @@ paths:
           description: Gültige fünfstellige Postleitzahl in den USA
           required: true
           type: string
-      responses: '200': description: Schema für erfolgreiche Durchführung: $ref: '#/definitions/Current'
+      responses:
+        '200':
+          description: Erfolg
+          schema:
+            $ref: '#/definitions/Current'
   /today:
     get:
       summary: "Wetter heute"
@@ -29,7 +33,11 @@ paths:
           description: Gültige fünfstellige Postleitzahl in den USA
           required: true
           type: string
-      responses: '200': description: Profilinformationen für ein Benutzerschema: $ref: '#/definitions/Today'
+      responses:
+        '200':
+          description: Profilinformationen für einen Benutzer
+          schema:
+            $ref: '#/definitions/Today'
 definitions:
   Today:
     type: object

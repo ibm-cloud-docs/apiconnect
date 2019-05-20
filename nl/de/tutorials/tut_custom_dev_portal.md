@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,25 +17,32 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Developer Portal anpassen und Motiv auswählen
+{: #tut_custom_dev_portal}
+
 **Dauer**: 30 Minuten  
 **Kenntnisstufe**: Anfänger  
 
 
 ## Lernziel
+{: #object_tut_custom_dev_portal}
+
 In diesem Lernprogramm erfahren Sie, wie Sie {{site.data.keyword.apiconnect_full}} Developer Portal schnell anpassen und ein Motiv auswählen, das Ihren Anforderungen entspricht.
 
 ---
 
 ## Voraussetzungen
+{: #prereq_tut_custom_dev_portal}
 
-Bevor Sie mit diesem Lernprogramm beginnen, sollten Sie das Lernprogramm [Developer Portal einrichten und konfigurieren](tut_config_dev_portal.html) abgeschlossen haben und als Portaladministrator angemeldet sein.
+Bevor Sie mit diesem Lernprogramm beginnen, sollten Sie das Lernprogramm [Developer Portal einrichten und konfigurieren](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal) abgeschlossen haben und als Portaladministrator angemeldet sein.
 
 ---
 
 ## Developer Portal anpassen
+{: #cust_tut_custom_dev_portal}
+
 Nach der Erstellung Ihrer Developer Portal-Instanz können Sie Darstellung und Funktionsweise anpassen.
 
-1. Als Erstes wird das Willkomensbanner geändert. Wählen Sie im obersten Menü **Inhalt** und anschließend **Blöcke** aus.  
+1. Als Erstes wird das Willkommensbanner geändert. Wählen Sie im obersten Menü **Inhalt** und anschließend **Blöcke** aus.  
   ![Inhaltsmenü](images/31-content.png)
 
 2. Wählen Sie **Bearbeiten** im Block **Willkommensbanner** aus.  
@@ -49,6 +62,8 @@ Nach der Erstellung Ihrer Developer Portal-Instanz können Sie Darstellung und F
 ---
 
 ## Motiv von Developer Portal anpassen
+{: #cust_theme_tut_custom_dev_portal}
+
 In Developer Portal können Sie durch eine Änderung des Motivs die Darstellung und Funktionsweise ändern.
 
 1. Wählen Sie zum Ändern des Motivs im obersten Menü **Darstellung**, danach **Einstellungen** und anschließend **Motiv von IBM API Connect** aus. Hierbei handelt es sich um das Standardmotiv, wenn Sie Developer Portal erstellt haben.
@@ -72,6 +87,8 @@ In Developer Portal können Sie durch eine Änderung des Motivs die Darstellung 
 ---
 
 ## Anderes Motiv für Developer Portal auswählen
+{: #diff_theme_tut_custom_dev_portal}
+
 Im Lieferumfang von Developer Portal sind zusätzliche Motive enthalten, die Sie auswählen und anpassen können, um Darstellung und Funktionsweise zu ändern.
 
 1. Wählen Sie zum Aktivieren eines anderen Motivs die Registerkarte **Liste** ganz oben im Bereich der Eigenschaften von 'Darstellung' aus.
@@ -92,14 +109,16 @@ Im Lieferumfang von Developer Portal sind zusätzliche Motive enthalten, die Sie
 ---
 
 ## Neues Motiv für Developer Portal installieren
+{: #new_theme_tut_custom_dev_portal}
+
 Wenn die Änderung eines vorhandenen Motivs nicht Ihre Anforderungen erfüllt, können Sie in Developer Portal auch ein Motiv installieren, um Darstellung und Funktionsweise zu ändern.
 
-1. Sie können Module oder Motive verwenden, die Sie von [drupal.org ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://drupal.org){:new_window} heruntergeladen haben, um Ihre Developer Portal-Instanz anzupassen; alternativ können Sie eine eigene erstellen.
+1. Sie können Module oder Motive verwenden, die Sie von [drupal.org ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://drupal.org){: #new_window} heruntergeladen haben, um Ihre Developer Portal-Instanz anzupassen; alternativ können Sie eine eigene erstellen.
 
 2. Wählen Sie zum Installieren eines Motivs in Developer Portal im oberen Menü **Darstellung** und anschließend **Neues Motiv installieren** aus.  
   ![Neues Motiv installieren](images/62-install-new.png)
 
-3. Sie können Motive mithilfe einer URL direkt von [drupal.org ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://drupal.org){:new_window} installieren; alternativ können Sie durch Klicken auf **Datei auswählen** ein Motiv hochladen, das Sie heruntergeladen oder erstellt haben, und anschließend auf **Installieren** klicken.  
+3. Sie können Motive mithilfe einer URL direkt von [drupal.org ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://drupal.org){: #new_window} installieren; alternativ können Sie durch Klicken auf **Datei auswählen** ein Motiv hochladen, das Sie heruntergeladen oder erstellt haben, und anschließend auf **Installieren** klicken.  
   ![Installieren](images/63-install.png) 
 
 4. Wenn das Hochladen abgeschlossen ist, müssen Sie das Motiv aktivieren. Wählen Sie **Neu hinzugefügte Motive aktivieren** aus.  
@@ -112,7 +131,8 @@ Wenn die Änderung eines vorhandenen Motivs nicht Ihre Anforderungen erfüllt, k
 
 ---
 
-## Zusammenfassung
+## Fazit
+{: #conclusion_tut_custom_dev_portal}
 Glückwunsch! Sie haben dieses Lernprogramm abgeschlossen. In diesem Lernprogramm haben Sie Folgendes gelernt:
 
 * Begrüßungsseite von Developer Portal anpassen
@@ -123,8 +143,9 @@ Glückwunsch! Sie haben dieses Lernprogramm abgeschlossen. In diesem Lernprogram
 ---
 
 ## Nächster Schritt
+{: #next_tut_custom_dev_portal}
 
-Lernen, [wie ein Benutzer durch Developer Portal navigiert](tut_discover_apis.html) oder [wie Erkenntnisse aus grundlegenden Analysedaten gewonnen werden können](tut_insights_analytics.html).
+Lernen, [wie ein Benutzer durch Developer Portal navigiert](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_discover_apis) oder [wie Erkenntnisse aus grundlegenden Analysedaten gewonnen werden können](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics).
 
-Erstellen >Verwalten> Schützen > ** Teilen ** > Analysieren  
+Erstellen > Verwalten > Schützen > **Teilen** > Analysieren  
 

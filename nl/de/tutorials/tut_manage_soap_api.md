@@ -1,7 +1,13 @@
 ---
+
 copyright:
-  years: 2017
-lastupdated: "2017-12-15"
+  years: 2019
+lastupdated: "2019-3-11"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 
@@ -13,32 +19,33 @@ lastupdated: "2017-12-15"
 
 
 # SOAP-Service verwalten
+{: #tut_manage_soap_api}
+
 **Dauer:** 15 Minuten
 **Kenntnisstufe:** Anfänger
 
 ---
 ## Lernziel
+{: #object_tut_manage_soap_api}
+
 In diesem Lernprogramm verwenden Sie API Manager, um eine SOAP-API zu erstellen, die als Proxy für einen SOAP-basierten Wetterdienst fungiert.
 
 ## Voraussetzungen
-- Bevor Sie beginnen, müssen Sie [eine Instanz von {{site.data.keyword.apiconnect_short}} einrichten](tut_prereq_set_up_apic_instance.html).
-- Bevor Sie beginnen, müssen Sie die Testdatei [weatherprovider.wsdl ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} in Ihr lokales Dateisystem kopieren.
+{: #prereq_tut_manage_soap_api}
+
+- Bevor Sie beginnen, müssen Sie [eine Instanz von {{site.data.keyword.apiconnect_short}} einrichten](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
+- Bevor Sie beginnen, müssen Sie die Testdatei [weatherprovider.wsdl ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: #new_window} in Ihr lokales Dateisystem kopieren.
 Hinweis: Sie können auf **Unbearbeitet** klicken und anschließend die resultierende Seite im lokalen System als `.wsdl`-Datei speichern. Wie der Name nahelegt, werden von diesem SOAP-Service Wetterdaten zurückgegeben, wenn eine Postleitzahl eingegeben wird.
 
 ---
 ## SOAP-API-Definition festlegen
-1. Melden Sie sich an {{site.data.keyword.Bluemix_short}} an: [https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}.
+{: #setup_tut_manage_soap_api}
 
-2. Blättern Sie im {{site.data.keyword.Bluemix_notm}}-**Dashboard** abwärts bis zu **Alle Services**.
-
-3. Wählen Sie **API Connect** aus, um den {{site.data.keyword.apiconnect_short}}-Service zu starten. 
-  
-4. Navigieren Sie zur Seite 'Entwürfe', falls diese noch nicht angezeigt wird:  
-    a. Klicken Sie in der {{site.data.keyword.apiconnect_short}}-Schnittstelle auf >>, um das Navigationsfenster zu öffnen.
-    b. Klicken Sie im Navigationsfenster auf **Entwürfe**.
-    c. Wechseln Sie zur Registerkarte **APIs**.
-
-5. Klicken Sie in der Registerkarte 'APIs' auf `Hinzufügen +`.
+1. Melden Sie sich bei {{site.data.keyword.Bluemix_short}} an: https://cloud.ibm.com.
+2. Klicken Sie im {{site.data.keyword.Bluemix_notm}}-**Dashboard** auf **Cloud Foundry-Services**. 
+3. Starten Sie den {{site.data.keyword.apiconnect_short}}-Service. 
+4. Stellen Sie in {{site.data.keyword.apiconnect_short}} sicher, dass das Navigationsfenster auf der linken Seite geöffnet ist. Falls dies nicht der Fall ist, klicken Sie auf **>>**, um es zu öffnen.  
+5. Wählen Sie im Navigationsfenster **Entwürfe** aus.   
 
 6. Wählen Sie im Dropdown-Menü **API von SOAP-Service** aus.
   ![Neue API](images/newapi-menu2.png)
@@ -55,15 +62,13 @@ Hinweis: Sie können auf **Unbearbeitet** klicken und anschließend die resultie
    _In der Registerkarte 'Quelle' wird angezeigt, dass die WSDL-Datei in der OpenAPI-Definition eingeschlossen ist._
   ![API-Editorseite](images/designpage2.png)
 
-11. Blättern Sie abwärts bis zur Registerkarte **Sicherheit** und klicken Sie auf das Löschsymbol, um `clientIDHeader (API Key)` zu entfernen (wurde beim Erstellen des Service automatisch generiert).
-   _Im nächsten Lernprogramm erfahren Sie mehr über Sicherheit durch API-Schlüssel._
+11. Klicken Sie auf das Symbol ![Speichern](images/save.png), um Ihre Änderungen zu speichern. Kurzzeitig wird die Bestätigungsnachricht 'API gespeichert' angezeigt.
 
-12. Klicken Sie auf das Symbol ![Speichern](images/save.png), um Ihre Änderungen zu speichern. Kurzzeitig wird die Bestätigungsnachricht 'API gespeichert' angezeigt.
-
-13. In der Menüleiste mit dem Speichersymbol gibt die Registerkarte **Design** die derzeitige Position an. Daneben befindet sich die Registerkarte **Quelle**, in der Sie direkt die Swagger-Datei (Version 2.0) anzeigen können, in der die API dargestellt wird; in der Nähe befindet sich auch die Registerkarte **Assemblieren**, mit der Sie die Drag-and-Drop-Schnittstelle für die API-Verarbeitung öffnen können. Klicken Sie auf **Assemblieren**.
+12. In der Menüleiste mit dem Speichersymbol gibt die Registerkarte **Design** die derzeitige Position an. Daneben befindet sich die Registerkarte **Quelle**, in der Sie direkt die Swagger-Datei (Version 2.0) anzeigen können, in der die API dargestellt wird; in der Nähe befindet sich auch die Registerkarte **Assemblieren**, mit der Sie die Drag-and-Drop-Schnittstelle für die API-Verarbeitung öffnen können. Klicken Sie auf **Assemblieren**.
   ![Registerkarte 'Assemblieren'](images/assemble-clean.png)  
 
 ## SOAP-API-Definition testen
+{: #test_tut_manage_soap_api}
 
 1. Klicken Sie in der Registerkarte **Assemblieren** auf das Symbol **Weitere Aktionen** (drei Punkte) und wählen Sie **Standardprodukt generieren** im Menü aus.  
    ![Menü für weitere Aktionen, öffnen](images/gen-default-prod.png)
@@ -71,7 +76,7 @@ Hinweis: Sie können auf **Unbearbeitet** klicken und anschließend die resultie
 2. Bestätigen Sie die Standardoptionen im Dialogfenster **Neues Produkt** und wählen Sie **Produkt erstellen** aus. **weatherService product 1.0.0** wird erstellt und im Sandbox-Katalog veröffentlicht.  
   ![Erstellen eines neuen Produkts](images/12a-chooseproduct.png)
  
-  _In {{site.data.keyword.apiconnect_short}} wird mithilfe von **Produkte** eine Möglichkeit zum Gruppieren von APIs bereitgestellt, die für eine bestimmte Verwendung vorgesehen sind. Die Produkte werden in einem **Katalog** veröffentlicht. Referenz: [{{site.data.keyword.apiconnect_short}}-Glossar](../apic_glossary.html)_
+  _In {{site.data.keyword.apiconnect_short}} wird mithilfe von **Produkte** eine Möglichkeit zum Gruppieren von APIs bereitgestellt, die für eine bestimmte Verwendung vorgesehen sind. Die Produkte werden in einem **Katalog** veröffentlicht. Referenz: [{{site.data.keyword.apiconnect_short}}-Glossar](docs/services/apiconnect/tutorials/tut_expose_soap_service/apic_glossary.html)_
 
 3. Speichern Sie Ihre Änderungen.  
 
@@ -96,14 +101,16 @@ Hinweis: Sie können auf **Unbearbeitet** klicken und anschließend die resultie
    </soap:Body>
   </soap:Envelope>
   ```
-  {: codeblock}  
+ 
   ![Die Anforderung](images/14-enterrequest.png)
 
 9. Blättern Sie bei Bedarf nach unten und klicken Sie auf **Aufrufen**.
 Von der API wird der **Hauptteil** der Antwort mit dem aktuellen Wetter zurückgegeben.  
   ![](images/15-success.png)
 
-## Was Sie in diesem Lernprogramm erreicht haben
+## Fazit
+{: #conclusion_tut_manage_soap_api}
+
 In diesem Lernprogramm haben Sie Folgendes durchgeführt:
 1. SOAP-API-Definition festgelegt
 2. API-Definition getestet
@@ -112,7 +119,8 @@ In diesem Lernprogramm haben Sie Folgendes durchgeführt:
 ---
 
 ## Nächster Schritt
+{: #next_tut_manage_soap_api}
 
-[Service als REST-API verfügbar machen](tut_expose_soap_service.html) oder API mit [Quotenbegrenzung](tut_rate_limit.html), [Client-ID und geheimen Schlüssel](tut_secure_landing.html) oder [Schutz durch OAuth 2.0](tut_secure_oauth_2.html) schützen.
+[Service als REST-API verfügbar machen](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_expose_soap_service) oder die API schützen wie in [Schutz durch OAuth 2.0](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2) beschrieben.
 
 Erstellen > **Verwalten** > Schützen > Teilen > Analysieren

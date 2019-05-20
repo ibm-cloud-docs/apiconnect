@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-02"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,41 +17,51 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # Neue API-Spezifikation hinzufügen und vorhandenen REST-Service mit Entwicklertoolkit aufrufen
+{: #tut_add_openapi_rest_tk}
+
 **Dauer**: 15 Minuten  
 **Kenntnisstufe**: Anfänger  
 
 ## Lernziel
+{: #object_tut_add_openapi_rest_tk}
+
 Dieses Lernprogramm unterstützt Sie beim Einstieg in {{site.data.keyword.apiconnect_full}}, da es verdeutlicht, wie Sie vorgehen müssen, damit Sie eine vorhandene API verwalten können. In einem ersten Schritt wird eine neue OpenAPI-Spezifikation erstellt, anschließend ein Durchgriffs-API-Proxy für einen vorhandenen REST-Service.
 
 ## Voraussetzung
-Bevor Sie beginnen, müssen Sie [eine Instanz von API Connect einrichten](tut_prereq_set_up_apic_instance.html) und [das API Connect-Toolkit installieren](tut_prereq_install_toolkit.html).
+{: #prereq_tut_add_openapi_rest_tk}
+
+Bevor Sie beginnen, müssen Sie [eine Instanz von API Connect einrichten](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance) und [das API Connect-Toolkit installieren](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_install_toolkit).
 
 ---
 
 
 ## Beispielapp untersuchen und Zielendpunkt testen
+{: #expl_test_tut_add_openapi_rest_tk}
+
 Für dieses Lernprogramm wurde die Beispielapp _weather provider_ erstellt.
-1. Rufen Sie [http://gettingstartedweatherapp.mybluemix.net/ ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://gettingstartedweatherapp.mybluemix.net/){:new_window} auf, um die App kennenzulernen.  
+1. Rufen Sie [http://gettingstartedweatherapp.mybluemix.net/ ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://gettingstartedweatherapp.mybluemix.net/){: #new_window} auf, um die App kennenzulernen.  
 2. Geben Sie eine gültige fünfstellige US-Postleitzahl ein, um Angaben zum _**aktuellen Wetter**_ und zur _**Vorhersage für heute**_ zu erhalten.  
 ![](images/explore-weatherapp-1.png)
 
-3. Die obigen Beispielwetterapp wurde mithilfe von APIs erstellt, von denen die Wetterdaten bereitgestellt werden. Der Endpunkt zum Abrufen der **aktuellen** Wetterdaten ist _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Testen Sie ihn durch Aufrufen von [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
+3. Die obige Beispielwetterapp wurde mithilfe von APIs erstellt, von denen die Wetterdaten bereitgestellt werden. Der Endpunkt zum Abrufen der **aktuellen** Wetterdaten ist _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Testen Sie ihn durch Aufrufen von [https://myweatherprovider.mybluemix.net/current?zipcode=90210](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: #new_window}.  
 
   ![](images/explore-weatherapp-2.png)
 
-4. Analog ist der Endpunkt zum Abrufen der Vorhersagedaten von **heute** der Link `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`. Testen Sie ihn durch Aufrufen von [https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){:new_window}.  
+4. Analog ist der Endpunkt zum Abrufen der Vorhersagedaten von **heute** der Link `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`. Testen Sie ihn durch Aufrufen von [https://myweatherprovider.mybluemix.net/today?zipcode=90210](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: #new_window}.  
 
   ![](images/explore-weatherapp-3.png)
 
 ---
 
 ## Neue OpenAPI-Spezifikation hinzufügen und vorhandenen REST-Service aufrufen
+{: #add_spec_tut_add_openapi_rest_tk}
+
 1. Starten Sie **API Designer**. Geben Sie im Terminal `apic edit` ein.
 2. Melden Sie sich mit Ihrer IBMid an.
     ![](images/screenshot_apic-edit_login.png)
 3.   Stellen Sie in API Designer sicher, dass das Navigationsfenster geöffnet ist. Falls dies nicht der Fall ist, klicken Sie auf >>, um es zu öffnen. Wählen Sie im **API Designer**-Navigationsfenster **Entwürfe > APIs** aus.
 4. Wählen Sie in der Anzeige **APIs** die Optionen **Hinzufügen > Neue API** aus.
-5. Geben Sie im Fenster 'Neue API' die Zeichenfolge 'Weather Provider API' als Titel ein. _Name und Basispfad werden automatisch generiert_.  
+5. Geben Sie im Fenster 'Neue API' die Zeichenfolge 'Wetter-Provider-API' als Titel ein. _Name und Basispfad werden automatisch generiert_.  
   ![](images/toolkit-add-new-api.png)   
 6. Klicken Sie auf **API erstellen**, um den Assistenten zu beenden.  
 
@@ -57,7 +73,7 @@ Für dieses Lernprogramm wurde die Beispielapp _weather provider_ erstellt.
 _(Die Sicherheit durch API-Schlüssel wird im nächsten Lernprogramm besprochen.)_  
 
 10. Erstellen Sie in der Anzeige **Pfade** durch Klicken auf **+** einen neuen Pfad.
-  a. Legen Sie für den neuen Pfad den Namen '**/current**' fest.  
+  a. Legen Sie für den neuen Pfad den Namen "**/current**" fest.  
   b. Wählen Sie in derselben Anzeige **Pfade** den Abschnitt **GET /current** aus.  
   c. Fügen Sie im Abschnitt **GET /current** einen neuen **Parameter** hinzu. Wie schon beim Beschreiben der Beispielapp erläutert, ist für den Wetterdienst eine Postleitzahl als Parameter erforderlich.
       - Name: Postleitzahl  
@@ -129,8 +145,11 @@ _(Die Sicherheit durch API-Schlüssel wird im nächsten Lernprogramm besprochen.
 ---
 
 ## API-Proxy testen
+{: #test_tut_add_openapi_rest_tk}
 
 ### Mit _API Manager-Testtool_ testen
+{: #test_apimgr_tut_add_openapi_rest_tk}
+
 1. Starten Sie den lokalen Testserver durch Klicken auf das Symbol zum Starten der Server (>) unten links in Designer. Sobald das Gateway gestartet ist, wird der Status automatisch auf 'Aktiv' aktualisiert.
 
     ![](images/screenshot_start-server-1.png)
@@ -150,8 +169,10 @@ _(Die Sicherheit durch API-Schlüssel wird im nächsten Lernprogramm besprochen.
 
 _Falls ein CORS-Fehler auftritt, gehen Sie gemäß den Anweisungen in der Fehlernachricht vor. Klicken Sie auf den Link im Fehler, um die Ausnahmebedingung zum Browser hinzuzufügen und klicken Sie anschließend erneut auf die Schaltfläche zum Aufrufen._
 
-### Mit _Explore-Tool_ testen  
-1. Wählen Sie zum Testen der API-Proxy-Endpunkte _Explore_ aus.
+### Mit _Explorertool_ testen
+{: #test_explore_tut_add_openapi_rest_tk}
+
+1. Wählen Sie zum Testen der API-Proxy-Endpunkte _Erkunden_ aus.
 2. Wählen Sie die Operation **GET /current** in der Palette aus.
 3. Geben Sie eine gültige US-Postleitzahl (zum Beispiel 90210) in das Testfeld ein.
 4. Klicken Sie auf **Operation aufrufen**, um die Antwort anzuzeigen.  
@@ -160,13 +181,16 @@ _Falls ein CORS-Fehler auftritt, gehen Sie gemäß den Anweisungen in der Fehler
 ---
 
 ## Fazit
+{: #conclusion_tut_add_openapi_rest_tk}
+
 In diesem Lernprogramm haben Sie erfahren, wie ein vorhandener REST-Service über einen Durchgriffs-API-Proxy aufgerufen werden kann. Als ersten Schritt haben Sie die Verfügbarkeit des Beispielservice über den Web-Browser getestet. Anschließend haben Sie eine neue OpenAPI-Spezifikation in {{site.data.keyword.apiconnect_short}} erstellt und mit dem Beispielservice verknüpft, der aufgerufen werden soll. Zum Schluss haben Sie den API-Proxy mit dem integrierten Testtool getestet.
 
 ---
 
 ## Nächster Schritt
+{: #next_tut_add_openapi_rest_tk}
 
-API mit [Quotenbegrenzung](tut_rate_limit.html), [Client-ID und geheimen Schlüssel](tut_secure_landing.html) oder [OAuth 2.0](tut_secure_oauth_2.html) schützen.
+API mit [Quotenbegrenzung](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rate_limit), [Client-ID und geheimen Schlüssel](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing) oder [OAuth 2.0](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2) schützen.
 
 Erstellen > **Verwalten** > Schützen > Teilen > Analysieren
 

@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,25 +17,29 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # API mit-Client-ID und geheimem Clientschlüssel mithilfe von Developer Toolkit schützen
-
+{: #tut_secure_id_secret_tk}
 
 **Dauer:** 10 Minuten  
 **Kenntnisstufe:** Anfänger
 
 
 ## Lernziel
+{: #object_tut_secure_id_secret_tk}
 
 Im folgenden Lernprogramm wird beschrieben, wie Sie eine API mit einer Client-ID und einem geheimen Clientschlüssel schützen. Wenn Anwendungen in Developer Portal registriert werden, wird eine Client-ID zum Identifizieren der Anwendung generiert. Optional kann auch ein geheimer Clientschlüssel generiert werden, der dann als Kennwort dient. Von den Anwendungen müssen die generierten Client-IDs und geheimen Clientschlüssel für den Zugriff auf die API angegeben werden.
 
 
 ## Voraussetzungen
+{: #prereq_tut_secure_id_secret_tk}
+
 Bevor Sie beginnen, müssen Sie eines der folgenden Lernprogramme durchgeführt haben:
-- [OpenAPI 2.0-Spezifikation importieren und Proxy für vorhandenen REST-Service erstellen](tut_rest_landing.html)
+- [OpenAPI 2.0-Spezifikation importieren und Proxy für vorhandenen REST-Service erstellen](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 **oder**  
-- [Neue OpenAPI-Spezifikation hinzufügen und vorhandenen REST-Service aufrufen](tut_rest_landing.html)
+- [Neue OpenAPI-Spezifikation hinzufügen und vorhandenen REST-Service aufrufen](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 
 
 ## Identifikationsmechanismus für API einrichten
+{: #set_id_tut_secure_id_secret_tk}
 
 1. Starten Sie API Designer (falls noch nicht gestartet):  
    a. Öffnen Sie das Terminal.  
@@ -40,7 +50,7 @@ Bevor Sie beginnen, müssen Sie eines der folgenden Lernprogramme durchgeführt 
 2. Navigieren Sie zur Ansicht 'Design' der API:
     a. Klicken Sie im linken Navigationsfenster auf **Entwürfe**. 
     b. Klicken Sie anschließend auf die Registerkarte **APIs**.
-    c. Klicken Sie auf die API _Weather Provider API_, die Sie im vorherigen Lernprogramm erstellt haben. Daraufhin wird die Ansicht **Design** der API geöffnet.  
+    c. Klicken Sie auf die API _Wetter-Provider-API_, die Sie im vorherigen Lernprogramm erstellt haben. Daraufhin wird die Ansicht **Design** der API geöffnet.  
     ![](images/1_goto_drafts_api.png)  
 
 3. Gehen Sie in der Ansicht 'Design' wie folgt vor:  
@@ -60,6 +70,7 @@ Bevor Sie beginnen, müssen Sie eines der folgenden Lernprogramme durchgeführt 
     ![](images/3a.png) 
 
 ## An API vorgenommene Änderungen testen
+{: #test_tut_secure_id_secret_tk}
 
 1. Klicken Sie in der Registerkarte 'Assemblieren' auf die Schaltfläche ►, um die Änderungen zu testen.
 2. Klicken Sie in der Testanzeige auf die Operation **get /current**.
@@ -76,8 +87,9 @@ Bevor Sie beginnen, müssen Sie eines der folgenden Lernprogramme durchgeführt 
   
 
 ## API mit Client-ID und geheimem Clientschlüssel aufrufen
+{: #call_tut_secure_id_secret_tk}
 
-Die Sicherheitseinstellungen können auch mit dem Tool Explore getestet werden, von dem explizit der Proxy-Endpunkt aufgerufen wird und die Client-ID mit den geheimen Clientschlüsseln als Headerwerte übergeben wird.
+Die Sicherheitseinstellungen können auch mit dem Explorertool getestet werden, von dem explizit der Proxy-Endpunkt aufgerufen wird und die Client-ID mit den geheimen Clientschlüsseln als Headerwerte übergeben wird.
 
 
 1. Klicken Sie auf **Erkunden**.
@@ -91,11 +103,14 @@ Die Sicherheitseinstellungen können auch mit dem Tool Explore getestet werden, 
 ---
 
 ### Fazit
+{: #conclusion_tut_secure_id_secret_tk}
+
 In diesem Lernprogramm haben Sie gelernt, wie der Identifikationsmechanismus für eine API eingerichtet wird, wie die an einer API vorgenommenen Änderungen getestet werden und wie die API mit der Client-ID und dem geheimen Clientschlüssel aufgerufen wird. 
 
 ---
 
 ## Nächster Schritt
+{: #next_tut_secure_id_secret_tk}
 
 Teilen der API durch [Einrichten und Konfigurieren von Developer Portal](tut_config_dev_portal.html) starten
 

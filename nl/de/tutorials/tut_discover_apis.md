@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-20"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,19 +17,26 @@ lastupdated: "2017-11-20"
 {:pre: .pre}
 
 # APIs kennenlernen
+{: #tut_discover_apis}
+
 **Dauer**: 25 Minuten  
 **Kenntnisstufe**: Anfänger  
 
+## Lernziel
+{: #object_tut_discover_apis}
+
+In diesem Lernprogramm erfahren Sie, wie ein Portalbenutzer die APIs in {{site.data.keyword.apiconnect_full}} Developer Portal nutzen kann. Sie machen sich damit vertraut, wie ein Portalbenutzer Produkte und APIs durchsucht, APIs anzeigt und testet, und wie er die APIs abonniert. 
 
 ## Voraussetzung
+{: #prereq_tut_discover_apis}
+
 Für dieses Lernprogramm müssen keine Voraussetzungen erfüllt sein. Als Portaladministrator können Sie dieses Lernprogramm auch durcharbeiten, während Sie in Developer Portal navigieren, um zu untersuchen, wie die Portalbenutzer in Developer Portal navigieren. Beachten Sie, dass alle Instanzen von Developer Portal unterschiedliche Oberflächen aufweisen. 
 
 Wenn Sie nicht über eine vorhandene Developer Portal-Instanz verfügen, können Sie eine solche in {{site.data.keyword.Bluemix_short}} einrichten und konfigurieren, bevor Sie mit diesem Lernprogramm fortfahren.
 
-## Lernziel
-In diesem Lernprogramm erfahren Sie, wie ein Portalbenutzer die APIs in {{site.data.keyword.apiconnect_full}} Developer Portal nutzen kann. Sie machen sich damit vertraut, wie ein Portalbenutzer Produkte und APIs durchsucht, APIs anzeigt und testet, und wie er die APIs abonniert. 
-
 ## Produkte & APIs erkunden
+{: #explore_tut_discover_apis}
+
 In diesem Abschnitt wird beschrieben, wie ein Portalbenutzer die Produkte und APIs in Developer Portal erkunden kann.
 
 1. Navigieren Sie in einem Browser zu **API Connect Developer Portal**.
@@ -47,6 +60,8 @@ In diesem Abschnitt wird beschrieben, wie ein Portalbenutzer die Produkte und AP
 ---
 
 ## APIs anzeigen und testen
+{: #view_tut_discover_apis}
+
 In diesem Abschnitt wird erläutert, wie ein Portalbenutzer die für ein Produkt verfügbaren APIs anzeigt und testet. 
 
 1. Navigieren Sie wie im vorherigen Abschnitt beschrieben zu den API-Details in {{site.data.keyword.apiconnect_short}} Developer Portal.  
@@ -67,6 +82,8 @@ In diesem Abschnitt wird erläutert, wie ein Portalbenutzer die für ein Produkt
 ---
 
 ## APIs abonnieren
+{: #subscr_tut_discover_apis}
+
 In diesem Abschnitt wird beschrieben, wie ein Portalbenutzer APIs in Developer Portal abonniert. 
 
 1. Wählen Sie **Konto erstellen** aus.
@@ -101,14 +118,16 @@ In diesem Abschnitt wird beschrieben, wie ein Portalbenutzer APIs in Developer P
   ![Abonnierung der App erfolgreich](images/310-subscribe-success.png) 
 
 ## Fazit
+{: #conclusion_tut_discover_apis}
 
 In diesem Lernprogramm haben Sie erfahren, wie Portalbenutzer Produkte und APIs durchsuchen, APIs anzeigen und testen, und wie sie die APIs abonnieren. 
 
 ---
 
 ## Nächster Schritt
+{: #next_tut_discover_apis}
 
-Lernen, [wie Erkenntnisse aus grundlegenden Analysedaten gewonnen werden können](tut_insights_analytics.html).
+Lernen, [wie Erkenntnisse aus grundlegenden Analysedaten gewonnen werden können](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics).
 
 Erstellen > Verwalten > Schützen > **Teilen** > Analysieren  
 

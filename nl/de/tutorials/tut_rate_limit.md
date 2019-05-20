@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-02"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,11 +17,16 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # Quotenbegrenzungen einrichten
-**Dauer**: 15 Minuten  
-**Kenntnisstufe**: Anfänger  
+{: #tut_rate_limit}
+
+**Dauer:** 15 Minuten
+  
+**Kenntnisstufe:** Anfänger  
 
 
 ## Lernziel
+{: #object_tut_rate_limit}
+
 In diesem Lernprogramm erfahren Sie, wie Sie Quotenbegrenzungen für APIs verwenden. Durch das Festlegen von Quotenbegrenzungen können Sie den Netzverkehr für die
 APIs und bestimmte Operationen in den APIs verwalten. Eine Quotenbegrenzung ist die maximale Anzahl an Aufrufen, die in einem bestimmten Zeitintervall zulässig sein soll.
 
@@ -29,23 +40,28 @@ In diesem Lernprogramm machen Sie sich mit den folgenden Themen vertraut:
 
 
 ## Voraussetzungen
-Sie müssen bereits eine API in {{site.data.keyword.apiconnect_short}} erstellt haben, die mit mindestens einem API-Schlüssel gesichert ist. In den folgenden Anweisungen ist die [Beispieldatei für 'Weather Provider API' ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window} der Ausgangspunkt, gesichert mithilfe einer [Client-ID und einem geheimen Schlüssel](tut_secure_landing.html).
+{: #prereq_tut_rate_limit}
+
+Sie müssen bereits eine API in {{site.data.keyword.apiconnect_short}} erstellt haben, die mit mindestens einem API-Schlüssel gesichert ist. In den folgenden Anweisungen ist die [Beispieldatei für 'Wetter-Provider-API' ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){: #new_window} der Ausgangspunkt, gesichert mithilfe einer [Client-ID und einem geheimen Schlüssel](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing).
 
 Führen Sie folgenden Lernprogramme aus, bevor Sie mit diesem Lernprogramm beginnen:
-- [API-Spezifikation importieren und Proxy für vorhandenen REST-Service erstellen](tut_rest_landing.html)
-- [API mit Client-ID und geheimen Schlüssel schützen](tut_secure_landing.html)
+- [API-Spezifikation importieren und Proxy für vorhandenen REST-Service erstellen](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
+- [API mit Client-ID und geheimen Schlüssel schützen](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing)
 
 
 ---
 ## API Connect starten
+{: #launch_tut_rate_limit}
 
-1. Melden Sie sich an {{site.data.keyword.Bluemix_notm}} an: [https://console.ng.bluemix.net/login ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.ng.bluemix.net/login){:new_window}.
+1. Melden Sie sich an {{site.data.keyword.Bluemix_notm}} an: [https://console.ng.bluemix.net/login ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.ng.bluemix.net/login){: #new_window}.
 2. Blättern Sie nach der Anmeldung an {{site.data.keyword.Bluemix_notm}} abwärts bis zu **Alle Services** und klicken Sie auf **API Connect**.
 3. Klicken Sie auf **API Connect**, um den {{site.data.keyword.apiconnect_short}}-Service zu starten.
 
 ## Standardplan kennenlernen
+{: #explore_tut_rate_limit}
+
 1. Wählen Sie im {{site.data.keyword.apiconnect_short}}-Navigationsfenster **Entwürfe** aus. (Wenn das Navigationsfenster nicht geöffnet wird, klicken Sie auf **>>**, um es zu öffnen.)
-2. Wählen Sie die Registerkarte **Produkte** aus; daraufhin sollte das Produkt 'Weather Provider API' aufgelistet werden.
+2. Wählen Sie die Registerkarte **Produkte** aus; daraufhin sollte das Produkt 'Wetter-Provider-API' aufgelistet werden.
 
    ![](./images/draftproducts.png)      
 
@@ -59,6 +75,7 @@ Führen Sie folgenden Lernprogramme aus, bevor Sie mit diesem Lernprogramm begin
 
    
 ## Neuen Plan mit Quotenbegrenzung erstellen
+{: #create_tut_rate_limit}
 
 Nachdem Sie sich mit dem Standardplan vertraut gemacht haben, wird im nächsten Schritt ein neuer Plan mit restriktiveren Quotenbegrenzungen erstellt, um zu veranschaulichen, was geschieht, wenn ein API-Nutzer die Obergrenzen für den Plan überschreitet. 
 1. Klicken Sie auf die Schaltfläche, um einen neuen Plan hinzuzufügen.
@@ -78,26 +95,29 @@ Nachdem Sie sich mit dem Standardplan vertraut gemacht haben, wird im nächsten 
 
 
 ## Aktualisiertes Produkt im Sandbox-Katalog bereitstellen und veröffentlichen
+{: #stage_tut_rate_limit}
 
-Es kann sein, dass Sie Ihr Produkt in früheren Beispielen mit dem Testtool veröffentlicht haben, von dem die API mit den vorab bereitgestellten Berechtigungsnachweisen der Testanwendung aufgerufen wird. Da für diese Testanwendung jedoch nicht Quotenbegrenzungen gelten, müssen Sie zum Testen der Quotenbegrenzungen hier eine neue Anwendung erstellen. Weitere Informationen hierzu finden Sie im [IBM Knowledge Center-Inhalt für API Connect ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){:new_window}.
+Es kann sein, dass Sie Ihr Produkt in früheren Beispielen mit dem Testtool veröffentlicht haben, von dem die API mit den vorab bereitgestellten Berechtigungsnachweisen der Testanwendung aufgerufen wird. Da für diese Testanwendung jedoch nicht Quotenbegrenzungen gelten, müssen Sie zum Testen der Quotenbegrenzungen hier eine neue Anwendung erstellen. Weitere Informationen hierzu finden Sie im [IBM Knowledge Center-Inhalt für API Connect ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){: #new_window}.
 
 1. Klicken Sie auf das Symbol 'Veröffentlichen' zum *Bereitstellen* des Produkts im **Sandbox**-Katalog. Durch diese Aktion werden die Änderungen am Produktentwurf zum ausgewählten Katalog hinzugefügt. Im nächsten Schritt ist das *Veröffentlichen* der Produktänderungen erforderlich, damit sie für die Nutzer über Developer Portal verfügbar werden.
    ![](./images/stageproduct.png) 
 2. Klicken Sie auf die Schaltfläche >>, um das Navigationsmenü zu öffnen.
-3. Wählen Sie das Dashboard aus und öffnen Sie anschließend den Katalog **Sandbox**. Das Produkt 'Weather Provider API' wird als **Bereitgestellt** aufgelistet.
+3. Wählen Sie das Dashboard aus und öffnen Sie anschließend den Katalog **Sandbox**. Das Produkt 'Wetter-Provider-API' wird als **Bereitgestellt** aufgelistet.
 4. Klicken Sie auf den Auslassungspunkt und wählen Sie im Menü **Veröffentlichen** aus.
    ![](./images/publish.png) 
 5. Bestätigen Sie die Standardeinstellungen für die Sichtbarkeit und klicken Sie auf die Schaltfläche **Veröffentlichen**. Sobald das Produkt veröffentlicht und in Developer Portal sichtbar ist, können Anwendungsentwickler die verfügbaren Pläne abonnieren.
 
 
 ## Neue Anwendung (für Nutzer) in Developer Portal registrieren
-Anwendungsentwickler untersuchen und verwenden APIs mithilfe von Developer Portal. Weitere Informationen zu Developer Portal finden Sie im folgenden [IBM Knowledge Center-Abschnitt ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){:new_window}.
+{: #reg_tut_rate_limit}
+
+Anwendungsentwickler untersuchen und verwenden APIs mithilfe von Developer Portal. Weitere Informationen zu Developer Portal finden Sie im folgenden [IBM Knowledge Center-Abschnitt ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){: #new_window}.
 
 Wenn Sie zum ersten Mal mit Developer Portal arbeiten, müssen Sie eine Developer Portal-Instanz für den Sandbox-Katalog bereitstellen. Das Konto, an dem Sie sich anmelden, wenn Sie das Portal bereitstellen, ist das Administratorkonto für dieses Portal. Damit Sie anschließend APIs untersuchen und testen können, müssen Sie eine &-Anmeldung mit einem neuen Developer Portal-Konto erstellen und sich unter Verwendung dieses Kontos und nicht des Administratorkontos anmelden (mit einer anderen E-Mail-Adresse).
 
 Führen Sie diese Schritte gemäß der folgenden Anweisungen aus.
 
-1. Starten Sie Developer Portal. Wenn Sie die URL nicht kennen, finden Sie diese in der Registerkarte 'Einstellungen' des Sandbox-Katalogs. Wenn Sie Developer Portal zum ersten Mal bereitstellen, lesen Sie die Informationen in [Developer Portal einrichten und konfigurieren](tut_config_dev_portal.html).
+1. Starten Sie Developer Portal. Wenn Sie die URL nicht kennen, finden Sie diese in der Registerkarte 'Einstellungen' des Sandbox-Katalogs. Wenn Sie Developer Portal zum ersten Mal bereitstellen, lesen Sie die Informationen in [Developer Portal einrichten und konfigurieren](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal).
     - Dieser Vorgang kann bis zu einer Stunde dauern. Wenn die Sandbox-Developer Portal-Instanz fertig ist, empfangen Sie eine E-Mail mit einem Link
 zur neuen Developer Portal-Site. Der Link ist ein Link zur einmaligen Verwendung für das Administratorkonto.
 2. Melden Sie sich mit Ihren App-Entwickler-Berechtigungsnachweisen an (**nicht** mit der IBMid). ***(Erstellen Sie bei Bedarf unter Verwendung einer anderen Adresse als Ihrer IBMid ein neues Entwicklerkonto.)***
@@ -115,8 +135,9 @@ zur neuen Developer Portal-Site. Der Link ist ein Link zur einmaligen Verwendung
 
 
 ## API-Produkt abonnieren
+{: #subscr_tut_rate_limit}
 
-1. Klicken Sie in der Symbolleiste auf den Link **API-Produkte**. Das Produkt 'Weather Provider API' wird aufgelistet. 
+1. Klicken Sie in der Symbolleiste auf den Link **API-Produkte**. Das Produkt 'Wetter-Provider-API' wird aufgelistet. 
 
    ![](./images/apiproducts.png)
 2. Klicken Sie auf den Link zum Anzeigen der Details und Optionen. Die verfügbaren Pläne sollten angezeigt werden: der ursprüngliche Standardplan und der neue Demoplan. (Falls nur ein Plan angezeigt wird, kehren Sie zu {{site.data.keyword.apiconnect_short}} zurück und stellen sicher, dass die Produktänderungen gespeichert, bereitgestellt und im Sandbox-Katalog veröffentlicht wurden.) 
@@ -127,8 +148,9 @@ zur neuen Developer Portal-Site. Der Link ist ein Link zur einmaligen Verwendung
 Jetzt kann dieses Verhalten getestet werden und es kann überwacht werden, was geschieht, wenn die Anwendung die angegebene Rate überschreitet.
 
 ## API mit Quotenbegrenzung aufrufen
+{: #call_tut_rate_limit}
 
-1. Klicken Sie auf der Seite des Produkts 'Weather Provider API' in Developer Portal auf den Link für die API.
+1. Klicken Sie auf der Seite des Produkts 'Wetter-Provider-API' in Developer Portal auf den Link für die API.
 
    ![](./images/weatherproviderapi.png)
 2. Die Seite wird aktualisiert und die Details der API, ihre Operationen und ein Bereich zum Testen der API werden angezeigt. (Auf diese Art lernen auch die API-Nutzer die API kennen und testen sie.) Beachten Sie das dunkle Testfenster und blättern Sie abwärts zum ersten Abschnitt mit der Bezeichnung **Diese Operation testen**.
@@ -147,13 +169,15 @@ Jetzt kann dieses Verhalten getestet werden und es kann überwacht werden, was g
 
 
 ## Fazit
+{: #conclusion_tut_rate_limit}
 
 Glückwunsch! Sie haben erfolgreich einen Plan mit Quotenbegrenzung erstellt, diesem geschützte APIs zugeordnet und sichergestellt, dass die API nur auf Anforderungen gemäß den von Ihnen angegebenen Parametern antwortet.
 
 ---
 
 ## Nächster Schritt
+{: #next_tut_rate_limit}
 
-Teilen der API durch [Einrichten und Konfigurieren von Developer Portal](tut_config_dev_portal.html) starten
+Teilen der API durch [Einrichten und Konfigurieren von Developer Portal](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal) starten
 
 Erstellen > Verwalten > **Schützen** > Teilen > Analysieren

@@ -1,8 +1,13 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-10"
+  years: 2019
+lastupdated: "2019-3-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 
 ---
 
@@ -13,32 +18,38 @@ lastupdated: "2017-10-10"
 {:pre: .pre}
 
 # API-Produkte archivieren und löschen
+{: #tut_manage_remove}
+
 **Dauer**: 15 Minuten  
 **Kenntnisstufe**: Anfänger 
 
-## Voraussetzungen
-
-1. [Richten Sie die {{site.data.keyword.apiconnect_full}}-Instanz ein](tut_prereq_set_up_apic_instance.html).
-
-2. Schließen Sie das [Lernprogramm zum Außerkraftsetzen von API-Produkten](tut_manage_supercede.html) ab.
-
----
 ## Lernziel
+{: #object_tut_manage_remove}
 In diesem Lernprogramm löschen und archivieren Sie eine API und ziehen eine API zurück.
 
 ---
+## Voraussetzungen
+{: #prereq_tut_manage_remove}
+
+1. [Richten Sie die {{site.data.keyword.apiconnect_full}}-Instanz ein](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
+
+2. Schließen Sie das [Lernprogramm zum Außerkraftsetzen von API-Produkten](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede) ab.
+
+---
+
 ## API-Produkt löschen
-1. Melden Sie sich an {{site.data.keyword.Bluemix_short}} an: [https://console.ng.bluemix.net/login ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.ng.bluemix.net/login){:new_window}.
+{: #delete_tut_manage_remove}
 
-2. Starten Sie im {{site.data.keyword.Bluemix_short}}-Dashboard den {{site.data.keyword.apiconnect_short}}-Service.
-![](images/Bluemix.png)
+1. Melden Sie sich bei {{site.data.keyword.Bluemix_short}} an: https://cloud.ibm.com.
+2. Klicken Sie im {{site.data.keyword.Bluemix_notm}}-**Dashboard** auf **Cloud Foundry-Services**.Starten Sie den {{site.data.keyword.apiconnect_short}}-Service. 
+3. Stellen Sie in {{site.data.keyword.apiconnect_short}} sicher, dass das Navigationsfenster geöffnet ist. Falls dies nicht der Fall ist, klicken Sie auf **>>**, um es zu öffnen.  
 
-3. Wenn Sie in API Manager bisher nicht den Navigationsbereich der Benutzerschnittstelle fixiert haben, klicken Sie auf das Symbol **Navigieren zu** ![](images/navigate-to.png). Der Navigationsbereich der Benutzerschnittstelle von API Manager wird geöffnet. Klicken Sie zum Fixieren des Navigationsbereichs der Benutzerschnittstelle auf das Symbol für das **Fixiermenü** ![](images/pinned.png).
+  ![](images/cloud-apic-dashboard.png)
 
 4. Klicken Sie auf **Sandbox**, um den Sandbox-Katalog zu öffnen. **Hinweis:** Es kann sein, dass Sie zum Dashboard zurückkehren müssen, um die verfügbaren Kataloge anzuzeigen. Es kann auch vorkommen, dass die Kataloge auf der Dashboardseite als Kacheln und nicht in einer Liste angezeigt werden.
 ![](images/del-sandbox-list.png)
 
-5. Klicken Sie auf den vertikalen Auslassungspunkt in der Zeile **Weather Provider API 1.0.0**.  
+5. Klicken Sie auf den vertikalen Auslassungspunkt in der Zeile **Wetter-Provider-API 1.0.0**.  
 ![](images/del-prod-list1.png)
 
 6. Wählen Sie **Aus Katalog löschen** aus.  
@@ -50,7 +61,9 @@ In diesem Lernprogramm löschen und archivieren Sie eine API und ziehen eine API
 
 
 ## API-Produkt archivieren
-1. Klicken Sie auf den vertikalen Auslassungspunkt in der Zeile **Weather Provider API 2.0.0**.  
+{: #archive_tut_manage_remove}
+
+1. Klicken Sie auf den vertikalen Auslassungspunkt in der Zeile **Wetter-Provider-API 2.0.0**.  
 ![](images/del-prod-list2.png)
 
 2. Wählen Sie **Zurückziehen** aus.  
@@ -59,7 +72,7 @@ In diesem Lernprogramm löschen und archivieren Sie eine API und ziehen eine API
 3. Klicken Sie auf **OK**.  
 ![](images/del-retire-dialog.png)
 
-4. Klicken Sie auf den vertikalen Auslassungspunkt in der Zeile **Weather Provider API 2.0.0**.  
+4. Klicken Sie auf den vertikalen Auslassungspunkt in der Zeile **Wetter-Provider-API 2.0.0**.  
 ![](images/del-prod-list3.png)
 
 5. Wählen Sie **Archivieren** aus.  
@@ -75,7 +88,7 @@ In diesem Lernprogramm löschen und archivieren Sie eine API und ziehen eine API
 8. Wählen Sie **Archiviert** aus.  
 ![](images/del-view-archived.png)
 
-9. Klicken Sie auf den vertikalen Auslassungspunkt in der Zeile **Weather Provider API 2.0.0**.  
+9. Klicken Sie auf den vertikalen Auslassungspunkt in der Zeile **Wetter-Provider-API 2.0.0**.  
 ![](images/del-prod-list5.png)
 
 10. Wählen Sie **Archivierung aufheben** aus.  
@@ -85,7 +98,9 @@ In diesem Lernprogramm löschen und archivieren Sie eine API und ziehen eine API
 
  
  
-## Was Sie in diesem Lernprogramm erreicht haben
+## Fazit
+{: #conclusion_tut_manage_remove}
+
 In diesem Lernprogramm haben Sie Folgendes durchgeführt:
 
 1. Ein API-Produkt gelöscht

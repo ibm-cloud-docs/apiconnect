@@ -1,7 +1,13 @@
 ---
+
 copyright:
-  years: 2017
-lastupdated: "2017-10-31"
+  years: 2019
+lastupdated: "2019-3-14"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,11 +17,16 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # API Connect-Instanz einrichten
-**Dauer:** 15 Minuten  
+{: #tut_prereq_set_up_apic_instance}
+
+**Dauer:** 15 Minuten
+  
 **Kenntnisstufe:** Anfänger  
 
 
-## Was Sie benötigen
+## Voraussetzungen
+{: #prereq_tut_prereq_set_up_apic_instance}
+
 1. Eine IBMid
 2. Ein {{site.data.keyword.Bluemix_short}}-Konto
 3. Eine {{site.data.keyword.apiconnect_full}}-Instanz mit mindestens einem _Lite_-Plan
@@ -32,18 +43,18 @@ lastupdated: "2017-10-31"
 ---
 
 
-1. Melden Sie sich mit Ihrer IBMid an der folgenden URL an: [https://console.ng.bluemix.net/registration/ ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.ng.bluemix.net/registration/){:new_window}.
+1. Registrieren Sie sich für die IBM Cloud-ID unter der folgenden URL: [https://cloud.ibm.com/registration/ ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/registration/){: #new_window}.
 
-	Verfügen Sie bereits über eine IBMid? Dann überspringen Sie die Registrierung und erstellen einfach ein kostenloses {{site.data.keyword.Bluemix_short}}-Konto unter der folgenden URL: [https://console.ng.bluemix.net/ ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.ng.bluemix.net/){:new_window}.  
+	Verfügen Sie bereits über eine IBMid? Dann überspringen Sie die Registrierung und erstellen Sie ein kostenfreies {{site.data.keyword.Bluemix_short}}-Konto unter der folgenden URL: [https://cloud.ibm.com/ ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/){: #new_window}.  
 
 2. Wenn Sie über eine IBMid und ein {{site.data.keyword.Bluemix_notm}}-Konto verfügen, erstellen Sie Ihre {{site.data.keyword.apiconnect_short}}-Instanz.  
-  a. Melden Sie sich an {{site.data.keyword.Bluemix_notm}} an: [https://new-console.ng.bluemix.net/login ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://new-console.ng.bluemix.net/login){:new_window}.  
-  ![](images/prereqs-1.png)  
+  a. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} an: [https://cloud.ibm.com/login ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/login){: #new_window}.  
+  ![](images/cloud_login_page.png)  
   b. Erstellen Sie Ihre _Organisation_ in {{site.data.keyword.Bluemix_notm}}. Sie werden dazu aufgefordert, wenn Sie sich zum ersten Mal anmelden.  
   ![](images/prereqs-2.png)
   c. Erstellen Sie Ihren _Bereich_.  
   ![](images/prereqs-3.png)
-  d. Rufen Sie [https://console.ng.bluemix.net/catalog/services/api-connect ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.ng.bluemix.net/catalog/services/api-connect){:new_window} auf.  
+  d. Rufen Sie [https://console.ng.bluemix.net/catalog/services/api-connect ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://console.ng.bluemix.net/catalog/services/api-connect){: #new_window} auf.  
   ![](images/prereqs-4.png)  
   e. Wählen Sie den Preistarif _Lite_ (kostenlos) aus und klicken Sie auf **Erstellen**, um zu beginnen.  
   ![](images/lite-plan.png)  

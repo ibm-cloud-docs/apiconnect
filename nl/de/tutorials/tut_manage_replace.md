@@ -1,8 +1,12 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-31"
+  years: 2019
+lastupdated: "2017-3-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
 
 ---
 
@@ -14,39 +18,41 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # API-Produkt ersetzen
+{: #tut_manage_replace}
+
 **Dauer**: 15 Minuten  
 **Kenntnisstufe**: Anfänger  
 
+## Lernziel
+{: #object_tut_manage_replace}
+In diesem Lernprogramm aktualisieren Sie ein vorhandenes API-Produkt, indem Sie es durch ein neueres ersetzen. Wenn ein API-Produkt ersetzt wird, werden die Änderungen sofort wirksam und alle Anwendungsabonnements werden automatisch aktualisiert.  
 
+---
 ## Voraussetzungen
+{: #prereq_tut_manage_replace}
 
-1. [Richten Sie die {{site.data.keyword.apiconnect_full}}-Instanz ein](tut_prereq_set_up_apic_instance.html).
+1. [Richten Sie die {{site.data.keyword.apiconnect_full}}-Instanz ein](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
 
 2. Führen Sie eines der folgenden Lernprogramme aus:
  
-    - [OpenAPI 2.0-Spezifikation importieren und Proxy für vorhandenen REST-Service erstellen](tut_rest_landing.html)
+    - [OpenAPI 2.0-Spezifikation importieren und Proxy für vorhandenen REST-Service erstellen](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
        **oder**  
-    - [Neue OpenAPI-Spezifikation hinzufügen und vorhandenen REST-Service aufrufen](tut_rest_landing.html).
+    - [Neue OpenAPI-Spezifikation hinzufügen und vorhandenen REST-Service aufrufen](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
 
 ---
-## Lernziel
-In diesem Lernprogramm aktualisieren Sie ein vorhandenes API-Produkt, indem Sie es durch ein neueres ersetzen. Wenn ein API-Produkt ersetzt wird, werden die Änderungen sofort wirksam und alle Anwendungsabonnements werden automatisch aktualisiert.  
 
-
----
 ## API-Produkt ersetzen
-{: #repl_api_prod}
+{: #repl_api_prod_tut_manage_replace}}
 
-1. Melden Sie sich an {{site.data.keyword.Bluemix_short}} an: [https://console.ng.bluemix.net/login ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.ng.bluemix.net/login){:new_window}.
+1. Melden Sie sich bei {{site.data.keyword.Bluemix_short}} an: https://cloud.ibm.com.
+2. Klicken Sie im {{site.data.keyword.Bluemix_notm}}-**Dashboard** auf **Cloud Foundry-Services**.Starten Sie den {{site.data.keyword.apiconnect_short}}-Service. 
+3. Stellen Sie in {{site.data.keyword.apiconnect_short}} sicher, dass das Navigationsfenster geöffnet ist. Falls dies nicht der Fall ist, klicken Sie auf **>>**, um es zu öffnen.  
 
-2. Starten Sie im {{site.data.keyword.Bluemix_notm}}-Dashboard den {{site.data.keyword.apiconnect_short}}-Service.
-![](images/Bluemix.png)
-
-3. Wenn Sie in API Manager bisher nicht den Navigationsbereich der Benutzerschnittstelle fixiert haben, klicken Sie auf das Symbol **Navigieren zu** ![](images/navigate-to.png). Der Navigationsbereich der Benutzerschnittstelle von API Manager wird geöffnet. Klicken Sie zum Fixieren des Navigationsbereichs der Benutzerschnittstelle auf das Symbol für das **Fixiermenü** ![](images/pinned.png).
+  ![](images/cloud-apic-dashboard.png)
 
 4. Klicken Sie auf **Entwürfe** > **APIs**.
 
-5. Klicken Sie in der Anzeige 'APIs' auf **Weather Provider API**, um die API für den REST-Proxy zu öffnen.  
+5. Klicken Sie in der Anzeige 'APIs' auf **Wetter-Provider-API**, um die API für den REST-Proxy zu öffnen.  
 ![](images/rep-api-list.png)
 
 6. Ändern Sie die **Version** in 2.0.0.  
@@ -60,7 +66,7 @@ In diesem Lernprogramm aktualisieren Sie ein vorhandenes API-Produkt, indem Sie 
 9. Klicken Sie auf **Produkte**.  
 ![](images/rep-api-list-2.png)
 
-10.	Wählen Sie das Produkt **Weather Provider API** aus.  
+10.	Wählen Sie das Produkt **Wetter-Provider-API** aus.  
 ![](images/rep-draft-prod-list.png)
 
 11.	Ändern Sie die **Version** in 2.0.0. Geben Sie `Updated API` in das Feld **Beschreibung** ein. Klicken Sie auf das Plattensymbol, um die Änderungen zu speichern.  
@@ -75,23 +81,24 @@ In diesem Lernprogramm aktualisieren Sie ein vorhandenes API-Produkt, indem Sie 
 
 14.	Klicken Sie auf **Sandbox**.  
 
-15.	Klicken Sie auf den vertikalen Auslassungspunkt in der Zeile **Weather Provider API Product 2.0.0 Staged**.  
+15.	Klicken Sie auf den vertikalen Auslassungspunkt in der Zeile **Wetter-Provider-API Product 2.0.0 Staged**.  
 ![](images/rep-dash-prod-list-2.png)
 
 16.	Wählen Sie **Vorhandenes Produkt ersetzen** aus.  
 ![](images/rep-replace-prod.png)
 
-17.	Wählen Sie **Weather Provider API Product 1.0.0** in der Liste der dargestellten Produkte aus. Klicken Sie auf **Weiter**.  
+17.	Wählen Sie **Wetter-Provider-API Product 1.0.0** in der Liste der dargestellten Produkte aus. Klicken Sie auf **Weiter**.  
 ![](images/rep-replace-dialog.png)
 
 18.	Wählen Sie **Standardplan** aus. Klicken Sie auf **Ersetzen**.  
 ![](images/rep-replace-dialog-2.png)
 
-    Als Ergebnis dieses Ersetzungsvorgangs wird 'Weather Provider API Product 1.0.0' zurückgezogen und 'Weather Provider API Product 2.0.0' veröffentlicht. **Hinweis:** Während des Ersetzungsvorgangs ist es möglich, den Plan zu ändern, der diesem Produkt zugeordnet ist. Dies ist eine einfach Möglichkeit zum Ändern des Plans für ein API-Produkt.
+    Als Ergebnis dieses Ersetzungsvorgangs wird 'Wetter-Provider-API Product 1.0.0' zurückgezogen und 'Wetter-Provider-API Product 2.0.0' veröffentlicht. **Hinweis:** Während des Ersetzungsvorgangs ist es möglich, den Plan zu ändern, der diesem Produkt zugeordnet ist. Dies ist eine einfach Möglichkeit zum Ändern des Plans für ein API-Produkt.
  ![](images/rep-prod-retired.png) 
  
 
-## Was Sie in diesem Lernprogramm erreicht haben
+## Fazit
+{: #conclusion_tut_manage_replace}
 
 In diesem Lernprogramm haben Sie Folgendes durchgeführt:
 1. Ein API-Produkt aktualisiert.

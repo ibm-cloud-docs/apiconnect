@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,20 +17,28 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # Erkenntnisse aus grundlegenden Analysedaten gewinnen
+{: #tut_insights_analytics}
+
 Dauer: 30 Minuten  
 Kenntnisstufe: Anfänger
 
 ## Lernziel
+{: #object_tut_insights_analytics}
+
 Hierbei handelt es sich um eine grundlegende Einführung in {{site.data.keyword.apiconnect_full}}. Die verfügbaren Analysedashboards werden erläutert und später folgen die eigenen APIs.
 
 
 ## Voraussetzungen
+{: #prereq_tut_insights_analytics}
+
 Damit Sie eigene API-Analysen anzeigen können, müssen Sie ein API-Produkt erstellt und veröffentlicht haben. Außerdem müssen Sie Ihre API einige Male aufgerufen haben, damit Analysedaten generiert werden, vorzugsweise mithilfe einer Client-ID einer registrierten Anwendung (nicht der vorab bereitgestellten Testapp).
 
-Zum Generieren der Daten in diesem Lernprogramm wird *Collection Runner* von Postman zum mehrmaligen Aufrufen der API mit unterschiedlichen Daten und Client-IDs verwendet. Sie können ein ähnliches Tool (wie HttpRequester für Firefox) oder einfach cURL zum mehrmaligen Aufrufen der API in der Befehlszeile verwenden. Wenn Sie Beispielanforderungen für Ihre API beschaffen möchten, klicken Sie auf den Link **Explore** in {{site.data.keyword.apiconnect_short}}.
+Zum Generieren der Daten in diesem Lernprogramm wird *Collection Runner* von Postman zum mehrmaligen Aufrufen der API mit unterschiedlichen Daten und Client-IDs verwendet. Sie können ein ähnliches Tool (wie HttpRequester für Firefox) oder einfach cURL zum mehrmaligen Aufrufen der API in der Befehlszeile verwenden. Wenn Sie Beispielanforderungen für Ihre API beschaffen möchten, klicken Sie auf den Link **Erkunden** in {{site.data.keyword.apiconnect_short}}.
 
 ## Einführung in die Kataloganalyse
-Als Eigner einer API benötigen Sie eine Möglichkeit, den Erfolg und die Leistung der von Ihnen angebotenen APIs zu bewerten. Diese Bewertung der Analysedaten findet hauptsächlich auf der Katalogebene statt. Falls Sie noch keine Einführung in Kataloge erhalten haben, finden Sie diese im IBM Knowledge Center unter [Mit Katalogen arbeiten ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){:new_window}. 
+{: #intro_tut_insights_analytics}
+
+Als Eigner einer API benötigen Sie eine Möglichkeit, den Erfolg und die Leistung der von Ihnen angebotenen APIs zu bewerten. Diese Bewertung der Analysedaten findet hauptsächlich auf der Katalogebene statt. Falls Sie noch keine Einführung in Kataloge erhalten haben, finden Sie diese im IBM Knowledge Center unter [Mit Katalogen arbeiten ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){: #new_window}. 
 
 Sie und Ihre App-Entwickler können auch auf anwendungsspezifische Analysen in Developer Portal zugreifen, in diesem Lernprogramm wird jedoch nur die Kataloganalyse besprochen.
 
@@ -38,6 +52,8 @@ Dieses Lernprogramm besteht aus vier Aktivitäten, mit deren Hilfe beschrieben w
 
 
 ## Aktivität 1: Sofort nutzbare Analysedaten anzeigen
+{: #act1_tut_insights_analytics}
+
 1. Starten Sie im {{site.data.keyword.apiconnect_short}}-Service in {{site.data.keyword.Bluemix_short}} das Dashboard und wählen Sie den Katalog aus, den Sie öffnen möchten. 
 2. Klicken Sie auf die Registerkarte *Analyse*.
 
@@ -65,6 +81,7 @@ In diesem Dashboard sind andere Visualisierungen enthalten, von denen API-Status
 
 
 ## Aktivität 2: Ereignisdetails anzeigen
+{: #act2_tut_insights_analytics}
 
 Die Visualisierungen sind eine gute Möglichkeit, um einen Überblick über die Daten zu erhalten, aber Sie benötigen auch eine Möglichkeit, zu den Ereignisdatensätzen zu navigieren, aus denen die Diagramme bestehen.
 
@@ -77,6 +94,7 @@ Die Visualisierungen sind eine gute Möglichkeit, um einen Überblick über die 
 Sie können Visualisierungen im Dashboard bearbeiten, verschieben und löschen.
 
 ## Aktivität 3: Neue Dashboards erstellen
+{: #act3_tut_insights_analytics}
 
 In diesem Schritt wird ein neues Dashboard erstellt, von dem eine Ansicht der API-Datenverkehrsmuster bereitgestellt wird. Diese sind alle mithilfe integrierter Visualisierungen verfügbar. 
 
@@ -101,6 +119,8 @@ In diesem Schritt wird ein neues Dashboard erstellt, von dem eine Ansicht der AP
 
 
 ## Aktivität 4: Neue Visualisierungen erstellen
+{: #act4_tut_insights_analytics}
+
 Im oben erstellen Abonnentendashboard (Subscriber Dashboard) wurden eine integrierte Visualisierung eingeschlossen, von der die API-Aufrufe pro Tag angezeigt werden. Wenn diese Informationen in ihrer Gesamtheit angezeigt werden, ist eine Angabe der Verwendung pro App sinnvoll. Hierfür wird jetzt eine neue Visualisierung erstellt, von der diese Informationen angezeigt werden.
 
 1. Klicken Sie auf **Neue Visualisierung** und wählen Sie den Link **Visualisierungen erstellen** aus.
@@ -135,6 +155,7 @@ In diesem Diagramm wird (bisher) eine Zeitreihe für API-Aufrufe angezeigt. Wir 
 Für die Visualisierung von Details zu API-Aufrufen, Aufrufern, etc stehen weitere Informationen zur Verfügung. Eine vollständige Liste der API-Ereignisse ist im API Connect Knowledge Center oder in der Liste der Begriffe beim Erstellen von Visualisierungen verfügbar.
 
 ## Fazit
+{: #conclusion_tut_insights_analytics}
 
 Die Möglichkeit zur Visualisierung von API-Analysedaten in unterschiedlichen Darstellungsarten und Kombinationen ermöglicht Schlussfolgerungen oder tiefere Einblicke in die API-Daten. Sie können diese Erkenntnisse nutzen, um zu entscheiden, welche APIs angeboten werden sollen, wann eine API ersetzt oder zurückgezogen werden soll, wer eine API nutzt, etc.
 
@@ -147,7 +168,7 @@ In diesem Lernprogramm wurden mehrere Aktivitäten beschrieben, die die Erstellu
 ---
 
 ## Nächster Schritt
-
-Lernen, [wie die APIs und Versionssteuerung verwaltet werden](tut_manage_version_landing.html).
+{: #next_tut_insights_analytics}
+Lernen, [wie die APIs und Versionssteuerung verwaltet werden](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_version_landing).
 
 Erstellen > Verwalten > Schützen > Teilen > **Analysieren**  
