@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,11 +17,12 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # Gestión de productos
+{: #managing_products}
 
-Para obtener detalles de los modos en los que puede gestionar los productos, consulte la documentación de IBM&reg; Knowledge Center [Gestión de los productos ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){:new_window}.
+Para obtener detalles de los modos en los que puede gestionar los productos, consulte la documentación de IBM&reg; Knowledge Center [Gestión de los productos ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){: #new_window}.
 
 ## Ciclo de vida del producto
-{: #prod_lifecycle}
+{: #prod_lifecycle_managing_products}
 
 Cuando gestiona las versiones de su producto, estas pasan por una serie de estados de ciclo de vida, desde la transferencia inicial a un entorno de un borrador de versión de producto hasta la publicación, a fin de que la versión del producto esté disponible para los desarrolladores de aplicaciones, así como la posible retirada y archivado. En la siguiente tabla y en el siguiente diagrama se describen los distintos estados de ciclo de vida de una versión de producto.
 
@@ -54,6 +61,7 @@ Cuando gestiona las versiones de su producto, estas pasan por una serie de estad
 </table>
 
 ### Flujos del ciclo de vida del producto
+{: #prod_lifecycle_flows_managing_products}
 
 En el siguiente diagrama se muestran los posibles estados del ciclo de vida de una versión del producto y las operaciones de gestión de productos que hacen que la versión del producto pase de un estado del ciclo de vida a otro; por ejemplo, la operación de retirada hace que la versión del producto pase del estado Publicado al estado Retirado.
 
@@ -61,7 +69,7 @@ En el siguiente diagrama se muestran los posibles estados del ciclo de vida de u
 
 
 ## Creación de un producto
-{: #create_product}
+{: #create_product_managing_products}
 
 Cree un producto para recopilar un conjunto de API y planes en una oferta que pondrá a disposición de los desarrolladores. Un plan incluye valores de límite de tarifa que se pueden aplicar al plan como un todo o bien de forma específica para cada operación de una API. Gracias a los productos y los planes, puede controlar mejor a qué API acceden los desarrolladores. Después de crear un producto, este debe transferirse. La transferencia de un producto hace que tenga un estado activo, lo que le permite llamar y probar las API incluidas. Al transferir un producto, aún no está visible para los desarrolladores.
 
@@ -94,7 +102,7 @@ Indique una descripción, un contacto, una licencia y los términos del servicio
 7. En la sección **Visibilidad**, especifique los usuarios que podrán ver el producto. Puede elegir **Público**, **Usuarios autenticados** o **Personalizado**. Si selecciona **Personalizado**, utilice el campo **Tipo que se va a añadir** para buscar organizaciones o comunidades de los desarrolladores en las que desea que estén visibles los planes del producto.
 
     **Nota:**
-    Para buscar organizaciones o comunidades de desarrolladores, el producto debe tener el estado Transferido, Publicado o En desuso. Si el catálogo en el que está transferido, publicado o en desuso no es un catálogo de recinto de pruebas, no podrá efectuar otros cambios en el producto mientras tenga uno de los estados mencionados. Para obtener más información, consulte [Ciclo de vida del producto](#prod_lifecycle).
+    Para buscar organizaciones o comunidades de desarrolladores, el producto debe tener el estado Transferido, Publicado o En desuso. Si el catálogo en el que está transferido, publicado o en desuso no es un catálogo de recinto de pruebas, no podrá efectuar otros cambios en el producto mientras tenga uno de los estados mencionados. Para obtener más información, consulte [Ciclo de vida del producto](#prod_lifecycle_managing_products).
 
 8. Especifique los usuarios que se pueden suscribir al producto. Puede elegir **Usuarios autenticados** o **Personalizado**. Si selecciona **Personalizado**, utilice el campo **Tipo que se va a añadir** para buscar las organizaciones o comunidades de los desarrolladores que podrán suscribirse a los planes del producto.
 
@@ -134,11 +142,11 @@ Añada un límite de tarifa a una operación.
 - Pulse el icono **Guardar** para guardar los cambios.
 
 Ha creado un producto y ha especificado un conjunto de API y planes en una oferta que puede poner a disposición de los desarrolladores.
-A continuación, transfiera el producto a un catálogo. Para obtener más información, consulte [Transferencia de un producto](#stage_product}).
+A continuación transfiera su producto a un catálogo tal y como se explica en la sección siguiente, [Transferencia de un producto](#stage_product_managing_products}).
 
 
 ## Transferencia de un producto
-{: #stage_product}
+{: #stage_product_managing_products}
 
 Transfiera un producto para crear una versión específica de dicho producto en un catálogo antes de publicarlo. Cuando un producto está en estado transferido, aún no está visible para los desarrolladores, que no se pueden suscribir a este.
 
@@ -177,20 +185,20 @@ API Manager, seleccione la sección Panel de control del panel de navegación y 
 
 - Abra el **panel de control** de {{site.data.keyword.Bluemix_notm}}. Verá el icono de la aplicación en la sección Aplicaciones.
 
-Abra API Manager para publicar el producto en una comunidad para que los desarrolladores de aplicaciones puedan acceder a él en el portal de desarrolladores. Para obtener más información, consulte [Publicación de un producto](#publish_proj}).
+Abra API Manager para publicar el producto en una comunidad donde los desarrolladores de aplicaciones puedan acceder a él a través del Portal del desarrollador explicado en la sección siguiente, [Publicación de un producto](#publish_proj_managing_products}).
 
 
 ## Publicación de un producto
-{: #publish_proj}
+{: #publish_proj_managing_products}
 
 Cuando se publica un plan, las API pasan a estar visibles y accesibles para los desarrolladores de aplicaciones.
 La publicación de un producto hace que esté visible en el **Catálogo** de {{site.data.keyword.Bluemix_short}}
 y en el portal del desarrollador incorporado para que los desarrolladores de aplicaciones puedan utilizarlo.
 
 ### Requisitos previos
-{: #prereq_publish_proj}
+{: #prereq_publish_proj_managing_products}
 
-Debe transferir un producto antes de publicarlo. Para obtener más información sobre la transferencia de productos, consulte [Transferencia de un producto](#stage_product).
+Debe transferir un producto antes de publicarlo. Para obtener más información sobre la transferencia de productos, consulte [Transferencia de un producto](#stage_product_managing_products).
 
 Para publicar un producto, lleve a cabo los pasos siguientes:
 
@@ -213,12 +221,14 @@ Su producto tiene el estado Publicado. El producto se publica en el catálogo y 
 
 
 ## Publicación de un producto en Bluemix
+{: #pub_to_bm_managing_products}
 
 Para ver los productos en la sección **Explorar API** del panel de control de {{site.data.keyword.apiconnect_short}}, lleve a cabo los siguientes pasos.
 
 ### Requisitos previos
+{: #prereq_pub_bm_managing_products}
 
-Antes de empezar, si desea publicar una API REST implementada con LoopBack, asegúrese de que ha publicado el tiempo de ejecución de la app y de que ha transferido el producto con el proxy invoke apuntando a la nueva app. Para obtener más información sobre cómo hacerlo, consulte [Transferir y publicar una aplicación Loopback](managing_apis.html#stage_publish_lb_app).
+Antes de empezar, si desea publicar una API REST implementada con LoopBack, asegúrese de que ha publicado el tiempo de ejecución de la app y de que ha transferido el producto con el proxy invoke apuntando a la nueva app. Para obtener más información sobre cómo hacerlo, consulte [Transferir y publicar una aplicación Loopback](/docs/services/apiconnect?topic=apiconnect-managing_apis#stage_publish_lb_app_managing_apis).
 
 1. En la interfaz de usuario de API Manager, pulse **Añadir** > **Catálogo**. Aparece la ventana **Añadir catálogo**.
 

@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-24"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,6 +17,7 @@ lastupdated: "2017-10-24"
 {:pre: .pre}
 
 # Configuración de un catálogo
+{: #create_catalog}
 
 Puede crear y configurar catálogos de API Manager. Los catálogos son útiles para separar
 productos y API para probarlos antes de hacerlos disponibles a organizaciones de desarrolladores.
@@ -28,8 +35,7 @@ Aparece la ventana **Añadir catálogo**.
 
 4. Especifique el texto que quiere que forme el segmento del catálogo del URL, en el campo
 **Nombre**.
-	**NOTA:** El campo **Nombre** puede contener sólo caracteres alfanuméricos en minúscula (a-z y 0-9) o
-guiones (-). Un guión no se puede utilizar ni como primer ni como último carácter en el nombre.
+	**Nota:** El campo **Nombre** puede contener sólo caracteres alfanuméricos en minúscula (a-z y 0-9) o guiones (-). Un guión no se puede utilizar ni como primer ni como último carácter en el nombre.
 
 5. Pulse **Añadir**. Se ha creado el catálogo y se muestra en el panel de control.
 
@@ -65,7 +71,7 @@ Portal del desarrollador reflejará entonces el URL especificado.
 		    - Debe configurar una entrada DNS que correlacione el dominio y nombre de host personalizado con el
 URL de la pasarela predeterminado.
 		    - Para que los puntos finales de una API reflejen el URL de la pasarela personalizada, debe
-configurar la API para que la pasarela de API Connect la imponga. Para obtener más información, consulte [Cómo especificar un host alternativo para una API ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+configurar la API para que la pasarela de API Connect la imponga. Para obtener más información, consulte [Cómo especificar un host alternativo para una API ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 		    - Asegúrese de que el mismo URL de la pasarela personalizada no se aplique a varios catálogos ya que
 el comportamiento en ese caso no estará definido.
 				**SUGERENCIA**: Cuando invoque la API, también puede establecer la cabecera de host HTTP en la solicitud de la API
@@ -87,7 +93,7 @@ correlacionada con los puntos finales de ensamblaje de la API o el proxy de la A
 desarrolladores de producción para publicar la dirección de la API.
 
 	    **Nota:** Si especifica un URL de API personalizado para un catálogo, prevalece sobre los nombres de host
-que especifique al configurar la API. Para obtener más información, consulte [Cómo especificar un host alternativo para una API ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+que especifique al configurar la API. Para obtener más información, consulte [Cómo especificar un host alternativo para una API ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 
 	    - **Nombre de host para las llamadas de API del portal de desarrolladores**:
 	    En el área de ventana Punto final de API del puerto, especifique un nombre de host para las
@@ -101,7 +107,7 @@ en lugar de tener que buscarlo e incluirlo en las llamadas.
 7. Pulse el icono **Guardar**.
 
 ## Particionamiento de un catálogo
-{: #apic_spaces}
+{: #apic_spaces_create_catalog}
 
 Para utilizar la característica de sindicación en {{site.data.keyword.apiconnect_short}}, debe habilitar espacios en cualquier catálogo en el que necesite las funciones de sindicación.
 
@@ -115,4 +121,4 @@ Se muestra un enlace **Gestionar espacios** bajo el control deslizante **Espacio
 
 Los espacios se habilitan para el catálogo y se crea un espacio predeterminado llamado Nuevo espacio.
 
-Para obtener más información sobre cómo utilizar la sindicación, consulte en los temas de Knowledge Center, [Utilización de la sindicación en IBM API Connect ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}.
+Para obtener más información sobre cómo utilizar la sindicación, consulte en los temas de Knowledge Center, [Utilización de la sindicación en IBM API Connect ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){: #new_window}.
