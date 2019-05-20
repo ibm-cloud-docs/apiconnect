@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-24"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,6 +17,7 @@ lastupdated: "2017-10-24"
 {:pre: .pre}
 
 # Configurazione di un catalogo
+{: #create_catalog}
 
 Puoi creare un catalogo e configurare i tuoi cataloghi API Manager. I cataloghi sono utili per separare
 i prodotti e le API e per verificarli prima di renderli disponibili per le organizzazioni degli sviluppatori.
@@ -28,7 +35,7 @@ Viene visualizzata la finestra **Aggiungi catalogo**.
 
 4. Immetti il testo che desideri formi il segmento del catalogo dell'URL, nel campo
 **Nome**.
-	**NOTA:** Il campo **Nome** può contenere solo caratteri alfanumerici minuscoli (a-z
+	**Nota:** il campo **Nome** può contenere solo caratteri alfanumerici minuscoli (a-z
 e 0-9) o i caratteri trattino (-). Un trattino non può essere utilizzato come primo o ultimo carattere nel nome.
 
 5. Fai clic su **Aggiungi**. Il tuo catalogo è stato creato e viene visualizzato nel tuo dashboard.
@@ -65,7 +72,7 @@ rifletterà quindi l'URL specificato.
 			**Note:**
 		    - Devi configurare una voce DNS che associa i tuoi nome host e dominio personalizzati all'URL gateway predefinito.
 		    - In modo che gli endpoint di un'API riflettano il tuo URL gateway personalizzato, devi configurare l'API
-in modo che venga forzata dal gateway di API Connect. Per ulteriori informazioni, vedi [Specifying an alternative host for an API ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+in modo che venga forzata dal gateway di API Connect. Per ulteriori informazioni, vedi [Specifying an alternative host for an API ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 		    - Assicurati che lo stesso URL gateway personalizzato non sia applicato a più cataloghi poiché il comportamento
 in tale caso non è definito.
 				**SUGGERIMENTO**: quando chiami l'API, puoi anche impostare l'intestazione host HTTP della richiesta API
@@ -87,7 +94,7 @@ sul gateway. Gli endpoint derivati dall'URL API personalizzato sono normalmente 
 sviluppatori di produzione per annunciare l'indirizzo dell'API.
 
 	    **Nota:** se specifici un URL API personalizzato per un catalogo, ha la precedenza su tutti i nomi host che specifichi
-quando configuri l'API. Per ulteriori informazioni, vedi [Specifying an alternative host for an API ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+quando configuri l'API. Per ulteriori informazioni, vedi [Specifying an alternative host for an API ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 
 	    - **Nome host per le chiamate API del portale sviluppatori**:
 	    nell'area della finestra dell'endpoint API della porta, immetti un nome host per le chiamate API del portale sviluppatori. Il nome host
@@ -100,7 +107,7 @@ di ricercarli e includerli nelle tue chiamate.
 7. Fai clic sull'icona **Salva**.
 
 ## Partizionamento di un catalogo
-{: #apic_spaces}
+{: #apic_spaces_create_catalog}
 
 Per utilizzare la funzione di diffusione in {{site.data.keyword.apiconnect_short}}, devi abilitare gli spazi
 in ogni catalogo in cui hai bisogno delle funzionalità di diffusione.
@@ -108,14 +115,14 @@ in ogni catalogo in cui hai bisogno delle funzionalità di diffusione.
 Per abilitare gli spazi in un catalogo, completa la seguente procedura:
 1. Nel dashboard dell'interfaccia utente API Manager, seleziona il catalogo con cui vuoi lavorare.
 
-2. Fai clic su **Impostazioni** > **Panoramica** e fai clic sul controllo dello slider **Spazi**.
+2. Fai clic su **Impostazioni** > **Panoramica** e fai clic sul controllo del dispositivo di scorrimento **Spazi**.
 
 3. Nella finestra **Abilita spazi**, fai clic su **Abilita**, e fai quindi clic sull'icona **Salva**
 <img src="images/icon_save.png" alt="icona salva"/>.
-Viene visualizzato un link **Gestisci spazi** sotto il controllo dello slider
+Viene visualizzato un link **Gestisci spazi** sotto il controllo del dispositivo di scorrimento
 **Spazi** e un link **Spazi** viene aggiunto al pannello di
 navigazione. Puoi gestire i tuoi spazi facendo clic su questi link.
 
 Gli spazi vengono abilitati per il tuo catalogo e viene creato un spazio predefinito denominato nuovo spazio.
 
-Per ulteriori informazioni sull'utilizzo della diffusione, consulta gli argomenti del Knowledge Center, [Using syndication in IBM API Connect ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}.
+Per ulteriori informazioni sull'utilizzo della diffusione, consulta gli argomenti del Knowledge Center, [Using syndication in IBM API Connect ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){: #new_window}.

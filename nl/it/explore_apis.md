@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
-lastupdated: "2017-07-11"
+lastupdated: "2017-09-05"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -21,7 +27,9 @@ lastupdated: "2017-07-11"
 2. Espandi l'API per visualizzare ulteriori informazioni su di essa.
 
 3. Per sottoscrivere un'API, fai clic su un prodotto API.
-Viene aperto il portale sviluppatori, dove puoi sottoscrivere un piano per accedere a un'API.
+Viene aperto il portale sviluppatori, dove puoi sottoscrivere un piano per accedere a un'API. 
+
+  **Nota**: se il piano che selezioni ha la fatturazione, devi fornire un numero di carta di credito per la tua organizzazione. Ciò richiede che tu disponga di privilegi di proprietario.
 
 ## Visualizzazione e verifica delle API nel portale sviluppatori
 {: #view_test_apis_dev_port}
@@ -71,6 +79,8 @@ Viene visualizzata la finestra di dialogo Utilizza questo piano.
 
 5. Seleziona l'applicazione che vuoi usare con questo piano e fai quindi clic su **Salva**.
 Vengono visualizzati i dettagli dell'applicazione.
+
+  **Nota**: se il piano che selezioni ha la fatturazione, devi fornire un numero di carta di credito per la tua organizzazione. Ciò richiede che tu disponga di privilegi di proprietario.
 
 6. Per visualizzare le operazioni per le API incluse nei piani sottoscritti dall'applicazione, fai clic sul nome dell'API.
 

@@ -1,8 +1,12 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-15"
+  years: 2018
+lastupdated: "2019-01-17"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
 
 ---
 
@@ -21,82 +25,25 @@ Puoi utilizzare API Connect per gestire le API in {{site.data.keyword.Bluemix}},
 Se sei un cliente, puoi gestire come
 viene utilizzato nell'interfaccia utente API Manager dopo che uno sviluppatore ha creato un'API e ha eseguito il push del prodotto a {{site.data.keyword.Bluemix_notm}}. I seguenti argomenti descrivono come creare e gestire i prodotti all'interno di {{site.data.keyword.apiconnect_short}}.
 
-## Esposizione di API installate in loco tramite un gateway sicuro
-{: #expose_apis_sec_gate}
+## Esposizione di API in loco tramite un gateway sicuro
+{: #expose_apis_sec_gate_managing_apis}
 
-Puoi creare un gateway sicuro per esporre in sicurezza le API installate in loco in {{site.data.keyword.apiconnect_full}}.
+Puoi creare un gateway sicuro per esporre in sicurezza le API in loco in {{site.data.keyword.apiconnect_full}}.
 
-Quando crei un gateway sicuro, integri le funzioni del servizio {{site.data.keyword.Bluemix_notm}}
-{{site.data.keyword.SecureGateway}} con {{site.data.keyword.apiconnect_short}}. Ciò significa che disponi di un metodo
-sicuro per accedere alle tue API installate in loco da {{site.data.keyword.apiconnect_short}} attraverso un passaggio protetto
-senza la necessità di effettuare il provisioning di un'istanza separata del servizio {{site.data.keyword.SecureGateway}}. Crei effettivamente un tunnel
+Quando crei un gateway sicuro e fornisci quindi un indirizzo per il suo client o cloud `<host>:<port>`, integri le funzioni del servizio {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.SecureGateway}} con {{site.data.keyword.apiconnect_short}}. Ciò significa che disponi di un metodo
+sicuro per accedere alle tue API in loco da {{site.data.keyword.apiconnect_short}} attraverso un passaggio protetto. Crei effettivamente un tunnel
 a {{site.data.keyword.apiconnect_short}} su un ambiente pubblico
-senza esporre i tuoi dati installati in loco. Tutto ciò che devi fare è di creare il gateway e collegarlo
-a un'API. La creazione di una destinazione, del profilo SSL e dei certificati sono già stati completati per te.
-Per ulteriori informazioni sul servizio {{site.data.keyword.SecureGateway}}, consulta
-[About {{site.data.keyword.SecureGateway}}](../../services/SecureGateway/sg_overview.html#sg_overview).
-Per creare un gateway sicuro, completa la procedura nei seguenti argomenti.
+senza esporre i tuoi dati in loco. Tutto ciò che devi fare è creare e configurare il servizio gateway sicuro su IBM Cloud e fornirgli un indirizzo in un'API.
 
-### Creazione di un gateway sicuro
-{: #create_sec_gate notoc}
-
-Quando crei un gateway sicuro, ti vengono generati un token di sicurezza e un ID gateway.
-Puoi inoltre impostare un client del gateway sicuro sul tuo ambiente in loco per {{site.data.keyword.apiconnect_short}} a cui collegarti. Dopo aver configurato il client,
-utilizza l'ID gateway e il token di sicurezza per collegarti al client in modo da poter accedere
-alle tue API in loco.
-
-Per creare un gateway, completa la seguente procedura:
-
-1. Fai clic su **Passa a** <img alt="Passa all'icona" src="images/navigate_to_icon.png"> > **Ammin** > **Gateway sicuri**.
-Si apre la pagina `Gateway sicuri` e viene visualizzato un tour guidato dei gateway sicuri nell'angolo
-dell'interfaccia utente.
-
-2. **Facoltativo**:
-fai clic in ogni passo del tour guidato per completare la configurazione del tuo gateway.
-
-3. Fai clic su **Aggiungi**.
-Viene visualizzata la finestra di
-dialogo `Crea gateway sicuro`.
-
-4. Fornisci un nome per il gateway.
-    **Nota:** sono consentiti solo caratteri alfanumerici e di sottolineatura.
-
-5. Fai clic su **Salva**.
-Il gateway viene visualizzato con l'ID gateway e il token di sicurezza.
-
-6. Fai clic su **Configura**.
-Facendo clic su **Configura** potrai scaricare e installare un client del gateway sicuro
-sulla tua workstation installata in loco per connettere una rete remota a un gateway sicuro nella rete Bluemix&reg;.
-
-    Viene visualizzata la finestra `Configura client
-del gateway sicuro`.
-
-7. Fai clic sul client da utilizzare scegliendo tra le seguenti opzioni:
-
-    - IBM&reg; Installers
-    - Docker
-    - IBM DataPower&reg;
-
-8. Segui le istruzioni su schermo per installare ed eseguire il client selezionato.
-Per ulteriori informazioni sulla configurazione di un client del gateway sicuro, consulta
-[Impostazione di un client](../../services/SecureGateway/sg_021.html#sg_021).
-
-9. Al termine dell'installazione del client, chiudi la finestra **Configura client
-del gateway sicuro**.
-
-10. Aggiorna la pagina.
-
-Il client è connesso e vengono visualizzati l'ID e lo stato del gateway. Hai completato la tua configurazione del gateway
-e hai creato un gateway sicuro.
-Successivamente, utilizza il gateway sicuro per accedere alle tue API in loco.
+Per ulteriori informazioni sul servizio {{site.data.keyword.SecureGateway}} e su come configurarlo, vedi [Informazioni su {{site.data.keyword.SecureGateway}}![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/docs/services/SecureGateway?topic=index#getting-started-with-sg){: #new_window}.
 
 ### Utilizzo del gateway sicuro con le tue API
-{: #using_sec_gate_apis notoc}
+{: #using_sec_gate_apis_managing_apis notoc}
 
 Dopo aver configurato il gateway, puoi utilizzarlo con le tue API.
 {:shortdesc}
 
-Per utilizzare il tuo gateway sicuro, completa la seguente procedura:
+Per utilizzare il tuo gateway sicuro con le API, completa la seguente procedura.
 1. Crea l'API e il prodotto come descritto nella seguente procedura.
   - Fai clic su **Passa a** <img src="images/navigate_to_icon.png" alt="Passa all'icona" /> > **Bozze** > **API** > **Aggiungi**.
   - Seleziona il tipo di API che vuoi creare.
@@ -111,45 +58,32 @@ Per utilizzare il tuo gateway sicuro, completa la seguente procedura:
 **LIMITAZIONE**: non è possibile utilizzare gli switch logici, come adempio `Switch`, `Operation
 Switch` e `If`, con le API che usano un gateway sicuro.
 
-4. Seleziona **Accedi all'URL tramite il gateway sicuro**.
+4. **Non** selezionare la casella di spunta **Access URL through Secure Gateway**.
+**IMPORTANTE**: questa casella di spunta è per una funzione dichiarata obsoleta che non è supportata per la produzione ed è soggetta a rimozione in qualsiasi momento. Fornirai un indirizzo invece direttamente all'URL di Secure Gateway, senza selezionare questa casella di spunta.
 
-5. Nel campo URL, aggiorna il `target-url` con il nome dell'host installato in loco
-e il numero di porta. Ad esempio,
+5. Nel campo URL, aggiorna `target-url` con il nome host cloud e il numero porta, ad esempio:
 ```
-target-url: http://onpremdb2.rtp.raleigh.ibm.com:3055$(request.path)$(request.search)
+target-url: cap-sg-prd-5.securegateway.appdomain.cloud:18579
 ```
 
 6. Fai clic su **Salva** <img src="images/icon_save.png" alt="icona Salva" />.
 
-7. Fai clic sulla scheda **Origine**.  Nota il campo `secure-gateway` con un
-valore `true`.
+7. Fai clic su **Tutte le API** > **Prodotti** e seleziona il prodotto creato in precedenza.
 
-8. Fai clic su **Tutte le API** > **Prodotti** e seleziona il prodotto creato in precedenza.
+8. Fai clic su **Pubblica** per preparare il prodotto su un catalogo selezionato.
 
-9. Fai clic sull'icona **Pubblica** per preparare il prodotto su un catalogo di tua scelta.
+9. Seleziona il catalogo che vuoi utilizzare.
 
-10. Seleziona il catalogo che vuoi utilizzare.
+10. Seleziona il prodotto preparato.
 
-11. Seleziona il prodotto preparato.
+11. Fai clic su **Pubblica**.
 
-12. Fai clic su **Pubblica** e seleziona **Assegnazioni
-gateway sicuro**.
-
-Hai esposto in modo sicuro la tua API installata in loco in {{site.data.keyword.apiconnect_short}}. Vengono aggiunti tutti i profili TLS
-associati a una destinazione. Per controllare i profili TLS,
-fai clic su **Passa a** <img src="images/navigate_to_icon.png" alt="Passa all'icona" /> > **Ammin** > **Sicurezza** > **Profili TLS**.
-Puoi disporre di più gateway per ciascuna API. Decidi tu quale gateway utilizzare quando pubblichi
-l'API.Se disponi già del servizio {{site.data.keyword.SecureGateway}} con provisioning, sarai in grado di
-monitorare le tue destinazioni nel dashboard {{site.data.keyword.SecureGateway}}. Tuttavia,
-non puoi modificare alcuna destinazione {{site.data.keyword.apiconnect_short}} creata dal servizio
-{{site.data.keyword.apiconnect_short}}.
-Successivamente, verifica la tua API {{site.data.keyword.SecureGateway}}.
+Hai esposto in modo sicuro la tua API in loco in {{site.data.keyword.apiconnect_short}}. Successivamente, verifica la tua API {{site.data.keyword.SecureGateway}}.
 
 ### Verifica la tua API del gateway sicuro
-{: test_sec_gate notoc}
+{: test_sec_gate_managing_apis notoc}
 
-Dopo aver collegato il gateway a un'API, puoi verificare l'API per essere sicuro che il gateway
-funzioni e che produca la risposta corretta.
+Dopo che hai fornito un indirizzo al {{site.data.keyword.SecureGateway}} in un'API, puoi verificare l'API per assicurarti che il gateway stia funzionando e che produca la risposta corretta.
 
 Per verificare un'API utilizzando un gateway sicuro, completa la seguente procedura:
 
@@ -160,27 +94,25 @@ Per verificare un'API utilizzando un gateway sicuro, completa la seguente proced
 
 3. Seleziona un catalogo da verificare dall'elenco fornito.
 
-4. Seleziona un gateway sicuro da verificare dall'elenco fornito.
+4. Assicurati che l'URL fornisca un indirizzo al Secure Gateway corretto`<cloud_host>:<port>` e che la destinazione del servizio di gateway sicuro sia stata configurata correttamente, come descritto nella documentazione [{{site.data.keyword.SecureGateway}}![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/docs/services/SecureGateway?topic=index#getting-started-with-sg){: #new_window}.
 
-5. Scegli un prodotto esistente dall'elenco e fai clic su **Ripubblica
-prodotto**.
+5. Scegli un prodotto esistente dall'elenco e fai clic su **Ripubblica prodotto**.
    **Importante** se questo prodotto è già stato pubblicato in un catalogo, sarà ripubblicato
 con il nuovo gateway.
 
 6. **Facoltativo**:
-fornisci un nome per creare un nuovo prodotto e fai clic su **Crea e
-pubblica**.
+fornisci un nome per creare un nuovo prodotto e fai clic su **Crea e pubblica**.
 
 7. Fai clic su **Avanti**.
 
 8. Seleziona un'operazione da richiamare dall'elenco fornito.
 
-9. Fai clic su **Richiama**.
+9. Fai clic su **Invoke**.
 
 Vengono visualizzati i risultati della verifica.
 
 ## Preparazione e pubblicazione di un'applicazione LoopBack
-{: #stage_publish_lb_app}
+{: #stage_publish_lb_app_managing_apis}
 
 1. Nel riquadro di navigazione dell'API Designer, fai clic su **Prodotti**.
 Viene aperta la scheda Prodotti.
@@ -249,7 +181,7 @@ Per verificare che la pubblicazione abbia funzionato, completa la seguente proce
 
 1. Accertati che l'applicazione {{site.data.keyword.Bluemix_notm}} sia in esecuzione.
 
-2. Apri una finestra del browser e passa all'URL di destinazione API.
+2. Apri una finestra del browser e passa all'URL API.
 L'applicazione viene protetta con la convalida client. Se non fornisci il certificato client corretto, si verificherà una condizione di errore (ciò è previsto).
 
 3. Passa all'URL {{site.data.keyword.apiconnect_short}} esposto.
@@ -261,6 +193,7 @@ https://<domain>/<Bluemix org>-<Bluemix space>/<Catalog identifier>/api/notes
 Viene visualizzata una risposta 200.
 
 ## Configurazione di un catalogo
+{: #config_cat_managing_apis}
 
 Puoi creare un catalogo e configurare i tuoi cataloghi API Manager. I cataloghi sono utili per separare
 i prodotti e le API e per verificarli prima di renderli disponibili per le organizzazioni degli sviluppatori.
@@ -314,7 +247,7 @@ rifletterà quindi l'URL specificato.
         **Note:**
 		    - Devi configurare una voce DNS che associa i tuoi nome host e dominio personalizzati all'URL gateway predefinito.
 		    - In modo che gli endpoint di un'API riflettano il tuo URL gateway personalizzato, devi configurare l'API
-in modo che venga forzata dal gateway di API Connect. Per ulteriori informazioni, vedi [Specifying an alternative host for an API ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+in modo che venga forzata dal gateway di API Connect. Per ulteriori informazioni, vedi [Specifying an alternative host for an API ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 		    - Assicurati che lo stesso URL gateway personalizzato non sia applicato a più cataloghi poiché il comportamento
 in tale caso non è definito.
 	        **SUGGERIMENTO**: quando chiami l'API, puoi anche impostare l'intestazione host HTTP della richiesta API
@@ -336,7 +269,7 @@ sul gateway. Gli endpoint derivati dall'URL API personalizzato sono normalmente 
 sviluppatori di produzione per annunciare l'indirizzo dell'API.
 
 	    **Nota:** se specifici un URL API personalizzato per un catalogo, ha la precedenza su tutti i nomi host che specifichi
-quando configuri l'API. Per ulteriori informazioni, vedi [Specifying an alternative host for an API ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+quando configuri l'API. Per ulteriori informazioni, vedi [Specifying an alternative host for an API ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 
 	    - **Nome host per le chiamate API del portale sviluppatori**:
 	    nell'area della finestra dell'endpoint API della porta, immetti un nome host per le chiamate API del portale sviluppatori. Il nome host
@@ -349,6 +282,7 @@ di ricercarli e includerli nelle tue chiamate.
 7. Fai clic sull'icona **Salva**.
 
 ## Partizionamento di un catalogo
+{: #part_cat_managing_apis}
 
 Per utilizzare la funzione di diffusione in {{site.data.keyword.apiconnect_short}}, devi abilitare gli spazi
 in ogni catalogo in cui hai bisogno delle funzionalità di diffusione.
@@ -356,20 +290,20 @@ in ogni catalogo in cui hai bisogno delle funzionalità di diffusione.
 Per abilitare gli spazi in un catalogo, completa la seguente procedura:
 1. Nel dashboard dell'interfaccia utente API Manager, seleziona il catalogo con cui vuoi lavorare.
 
-2. Fai clic su **Impostazioni** > **Panoramica** e fai clic sul controllo dello slider **Spazi**.
+2. Fai clic su **Impostazioni** > **Panoramica** e fai clic sul controllo del dispositivo di scorrimento **Spazi**.
 
 3. Nella finestra **Abilita spazi**, fai clic su **Abilita**, e fai quindi clic sull'icona **Salva**
 <img src="images/icon_save.png" alt="icona salva"/>.
-Viene visualizzato un link **Gestisci spazi** sotto il controllo dello slider
+Viene visualizzato un link **Gestisci spazi** sotto il controllo del dispositivo di scorrimento
 **Spazi** e un link **Spazi** viene aggiunto al pannello di
 navigazione. Puoi gestire i tuoi spazi facendo clic su questi link.
 
 Gli spazi vengono abilitati per il tuo catalogo e viene creato un spazio predefinito denominato nuovo spazio.
 
-Per ulteriori informazioni sull'utilizzo della diffusione, consulta gli argomenti del Knowledge Center, [Using syndication in IBM API Connect ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}.
+Per ulteriori informazioni sull'utilizzo della diffusione, consulta gli argomenti del Knowledge Center, [Using syndication in IBM API Connect ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){: #new_window}.
 
 ## Configurazione di un portale sviluppatori
-{: #config_dev_portal}
+{: #config_dev_portal_managing_apis}
 
 Un portale sviluppatori è l'area in cui vengono pubblicati i tuoi piani per consentire agli sviluppatori di applicazioni di accedervi e farne uso.
 
@@ -396,10 +330,10 @@ riga dell'oggetto della email che hai ricevuto. Puoi anche trovare l'URL nell'in
 clic su **Portale** > **Impostazioni**.
 
 Per ulteriori informazioni sulle attività che puoi completare nel portale sviluppatori, consulta gli argomenti
-dell'IBM Knowledge Center relativi al [portale sviluppatori ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.html){:new_window}.
+dell'IBM Knowledge Center relativi al [portale sviluppatori ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.html){: #new_window}.
 
 ## Configurazione delle autorizzazioni per i ruoli
-{: #config_permissions_roles}
+{: #config_permissions_roles_managing_apis}
 
 Per configurare le autorizzazioni per i ruoli in API Manager, completa la seguente procedura.
 

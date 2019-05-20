@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,12 +17,13 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # Gestione dei prodotti
+{: #managing_products}
 
 Per informazioni dettagliate sulle modalità in cui puoi gestire i tuoi prodotti, nella documentazione dell'IBM&reg; Knowledge Center consulta
-[Managing your Products ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){:new_window}.
+[Managing your Products ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){: #new_window}.
 
 ## Ciclo di vita del prodotto
-{: #prod_lifecycle}
+{: #prod_lifecycle_managing_products}
 
 Quando gestisci le tue versioni del prodotto, le fai passare per una serie di stati del
 ciclo di vita, dalla preparazione iniziale di una bozza della versione del prodotto a un ambiente, fino
@@ -66,6 +73,7 @@ nella pagina Prodotti nell'interfaccia utente API Manager.</td>
 </table>
 
 ### Flussi del ciclo di vita del prodotto
+{: #prod_lifecycle_flows_managing_products}
 
 Il seguente diagramma mostra i possibili stati
 del ciclo di vita per una versione del prodotto e le operazioni di gestione prodotto che fanno passare una
@@ -76,7 +84,7 @@ versione del prodotto dallo stato Pubblicato a quello Ritirato.
 
 
 ## Creazione di un prodotto
-{: #create_product}
+{: #create_product_managing_products}
 
 Crea un prodotto per raccogliere un set di API e piani in una singola offerta che rendi disponibile per
 i tuoi sviluppatori. Un piano include delle impostazioni di limite di frequenza che possono essere applicate al piano nel suo insieme oppure specificate per ciascuna operazione in un'API. Tramite i prodotti e i piani, hai un maggiore controllo su quali sono le API a cui hanno accesso i tuoi sviluppatori. Dopo che hai creato un prodotto, è necessario prepararlo. La preparazione di un prodotto lo fa passare a uno stato attivo che ti consente di richiamare e verificare le API in esso incluse. Quando un prodotto viene preparato, non è ancora visibile agli sviluppatori.
@@ -121,7 +129,7 @@ sviluppatori per cui desideri che siano visibili i piani nel prodotto.
     per cercare organizzazioni o community di sviluppatori, il nome prodotto deve essere nello stato
 di preparato, pubblicato od obsoleto. Se il catalogo in cui è preparato, pubblicato od obsoleto
 non è un catalogo sandbox, non puoi apportare altre modifiche al prodotto mentre è in uno di
-questi stati. Per ulteriori informazioni, consulta [Ciclo di vita del prodotto](#prod_lifecycle).
+questi stati. Per ulteriori informazioni, consulta [Ciclo di vita del prodotto](#prod_lifecycle_managing_products).
 
 8. Specifica gli utenti che possono sottoscrivere il prodotto. Puoi scegliere **Utenti
 autenticati ** o **Personalizzato**. Se selezioni **Personalizzato**,
@@ -184,11 +192,11 @@ altrimenti, verrà presentata un'avvertenza.
 - Fai clic sull'icona **Salva** per salvare le modifiche da te apportate.
 
 Hai creato un prodotto e specificato un set di API e piani in una singola offerta che puoi ora rendere disponibile ai tuoi sviluppatori.
-Procedi quindi alla preparazione del tuo prodotto in un catalogo. Per ulteriori informazioni, consulta [Preparazione di un prodotto](#stage_product}).
+Procedi quindi a preparare il tuo prodotto in un catalogo, come spiegato nella prossima sezione, [Preparazione di un prodotto](#stage_product_managing_products}).
 
 
 ## Preparazione di un prodotto
-{: #stage_product}
+{: #stage_product_managing_products}
 
 Prepara un prodotto per crearne una specifica versione in un catalogo prima della pubblicazione. Quando un
 prodotto è nello stato "Preparato", non è ancora visibile, o sottoscrivibile, per gli sviluppatori.
@@ -230,11 +238,11 @@ richiesto. Il prodotto viene visualizzato con uno stato di Preparato.
 
 - Apri il **Dashboard** {{site.data.keyword.Bluemix_notm}}. Nella sezione Applicazioni vedrai il tile dell'applicazione.
 
-Apri l'API Manager per pubblicare il tuo prodotto in una community per consentire agli sviluppatori di applicazioni di accedervi nel portale sviluppatori. Per ulteriori informazioni, consulta [Pubblicazione di un prodotto](#publish_proj}).
+Apre l'API Manager per pubblicare il tuo prodotto in una community dove gli sviluppatori dell'applicazione possono accedervi tramite il portale sviluppatori, come spiegato nella prossima sezione [Pubblicazione di un prodotto](#publish_proj_managing_products}).
 
 
 ## Pubblicazione di un prodotto
-{: #publish_proj}
+{: #publish_proj_managing_products}
 
 Le API diventano visibili e accessibili agli sviluppatori di applicazioni
 dopo la pubblicazione di un piano.
@@ -242,10 +250,10 @@ La pubblicazione di un prodotto lo rende visibile nel **Catalogo** {{site.data.k
 e nel portale sviluppatori integrato e disponibile per l'utilizzo da parte degli sviluppatori di applicazioni.
 
 ### Prerequisiti
-{: #prereq_publish_proj}
+{: #prereq_publish_proj_managing_products}
 
 Devi preparare un prodotto, prima che possa essere pubblicato. Per ulteriori informazioni sulla preparazione di prodotti, vedi
-[Preparazione di un prodotto](#stage_product).
+[Preparazione di un prodotto](#stage_product_managing_products).
 
 Per pubblicare un prodotto, completa questa procedura:
 
@@ -277,16 +285,18 @@ rifiutarle o accettarle.
 
 
 ## Pubblicazione di un prodotto in Bluemix
+{: #pub_to_bm_managing_products}
 
 Per visualizzare i tuoi prodotti nella sezione **Esplora API** del
 Dashboard {{site.data.keyword.apiconnect_short}}, completa la seguente procedura.
 
 ### Prerequisiti
+{: #prereq_pub_bm_managing_products}
 
 Prima di iniziare, se vuoi pubblicare un'API REST implementata con LoopBack, accertati di aver
 pubblicato il runtime della tua applicazione e di aver preparato il tuo prodotto con il proxy di richiamo
 che punta alla nuova applicazione. Per ulteriori informazioni su come eseguire tale operazione, vedi
-[Preparazione e pubblicazione di un'applicazione Loopback](managing_apis.html#stage_publish_lb_app).
+[Preparazione e pubblicazione di un'applicazione Loopback](/docs/services/apiconnect?topic=apiconnect-managing_apis#stage_publish_lb_app_managing_apis).
 
 1. Nell'interfaccia utente API Manager, fai clic su **Aggiungi** > **Catalogo**. Viene visualizzata la finestra **Aggiungi catalogo**.
 
