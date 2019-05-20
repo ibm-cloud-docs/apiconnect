@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-20"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,19 +17,26 @@ lastupdated: "2017-11-20"
 {:pre: .pre}
 
 # Descubrimiento de API
+{: #tut_discover_apis}
+
 **Duración**: 25 minutos  
 **Nivel de habilidad**: Principiante  
 
+## Objetivo
+{: #object_tut_discover_apis}
+
+En esta guía de aprendizaje, aprenderá cómo un usuario del portal puede consumir las API en el Portal del desarrollador de {{site.data.keyword.apiconnect_full}}. Comprenderá cómo un usuario del portal puede explorar productos y API, ver y probar API, y suscribirse a las API. 
 
 ## Requisito previo
+{: #prereq_tut_discover_apis}
+
 No hay ningún requisito previo para esta guía de aprendizaje. Como administrador del portal, también puede completar esta guía de aprendizaje mientras navega por el portal del desarrollador para experimentar cómo navegan los usuarios del portal por el portal del desarrollador. Tenga en cuenta que todos los portales de desarrolladores tienen diferentes texturas. 
 
 Si no tiene un portal del desarrollador existente, puede establecer y configurar un portal del desarrollador en {{site.data.keyword.Bluemix_short}} antes de continuar con esta guía de aprendizaje.
 
-## Objetivo
-En esta guía de aprendizaje, aprenderá cómo un usuario del portal puede consumir las API en el Portal del desarrollador de {{site.data.keyword.apiconnect_full}}. Comprenderá cómo un usuario del portal puede explorar productos y API, ver y probar API, y suscribirse a las API. 
-
 ## Explorar los productos y las API
+{: #explore_tut_discover_apis}
+
 Esta sección muestra cómo un usuario del portal exploraría los productos y las API en el portal del desarrollador.
 
 1. En un navegador, vaya a su **Portal del desarrollador de API Connect**.
@@ -47,6 +60,8 @@ Esta sección muestra cómo un usuario del portal exploraría los productos y la
 ---
 
 ## Ver y probar las API
+{: #view_tut_discover_apis}
+
 Esta sección muestra cómo un usuario del portal puede ver y probar las API disponibles para un producto. 
 
 1. Vaya a los detalles de la API en el Portal del desarrollador de {{site.data.keyword.apiconnect_short}} como se describe en la sección anterior.  
@@ -67,6 +82,8 @@ Esta sección muestra cómo un usuario del portal puede ver y probar las API dis
 ---
 
 ## Suscribirse a las API
+{: #subscr_tut_discover_apis}
+
 Esta sección muestra cómo se puede suscribir un usuario del portal a las API en el portal del desarrollador. 
 
 1. Seleccione **Crear una cuenta**.
@@ -101,14 +118,16 @@ Esta sección muestra cómo se puede suscribir un usuario del portal a las API e
   ![Suscripción de la app correcta](images/310-subscribe-success.png) 
 
 ## Conclusión
+{: #conclusion_tut_discover_apis}
 
 En esta guía de aprendizaje, ha aprendido cómo pueden explorar los usuarios del portal productos y API, cómo pueden ver y probar API, y cómo suscribirse a API. 
 
 ---
 
 ## Paso siguiente
+{: #next_tut_discover_apis}
 
-Aprender [cómo obtener conocimientos de análisis básico](tut_insights_analytics.html).
+Aprender [cómo obtener conocimientos de análisis básico](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics).
 
 Crear > Gestionar > Proteger > **Socializar** > Analizar  
 

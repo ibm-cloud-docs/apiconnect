@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-02"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,37 +17,47 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # Añadir una nueva especificación de API e invocar un servicio REST anterior utilizando el Developer Toolkit
+{: #tut_add_openapi_rest_tk}
+
 **Duración**: 15 minutos  
 **Nivel de habilidad**: Principiante  
 
 ## Objetivo
+{: #object_tut_add_openapi_rest_tk}
+
 Esta guía de aprendizaje le ayuda a comenzar rápidamente con {{site.data.keyword.apiconnect_full}} ilustrando cómo puede llevar su API anterior bajo control de gestión. Empezará por crear una nueva especificación de OpenAPI, y luego por crear un proxy de API de paso a través para un servicio REST anterior.
 
 ## Requisito previo
-Antes de empezar, necesita [configurar la instancia de API Connect](tut_prereq_set_up_apic_instance.html) e [instalar el kit de herramientas de API Connect](tut_prereq_install_toolkit.html).
+{: #prereq_tut_add_openapi_rest_tk}
+
+Antes de empezar, necesita [configurar la instancia de API Connect](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance) e [instalar el kit de herramientas de API Connect](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_install_toolkit).
 
 ---
 
 
 ## Explorar la app de ejemplo y probar los puntos finales de destino
+{: #expl_test_tut_add_openapi_rest_tk}
+
 Se ha creado una app _weather provider_ de ejemplo para esta guía de aprendizaje.
-1. Para explorar la app, vaya a [http://gettingstartedweatherapp.mybluemix.net/ ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}.  
+1. Para explorar la app, vaya a [http://gettingstartedweatherapp.mybluemix.net/ ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://gettingstartedweatherapp.mybluemix.net/){: #new_window}.  
 2. Especifique un código postal de Estados Unidos de 5 dígitos válido para obtener el _**tiempo actual**_ y la _**previsión de hoy**_.  
 ![](images/explore-weatherapp-1.png)
 
-3. La app de tiempo de ejemplo anterior se ha creado utilizando API que proporcionan los datos meteorológicos. El punto final para obtener los datos meteorológicos **actuales** es _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Pruébelo visitando [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
+3. La app de tiempo de ejemplo anterior se ha creado utilizando API que proporcionan los datos meteorológicos. El punto final para obtener los datos meteorológicos **actuales** es _**https://myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Pruébelo visitando [https://myweatherprovider.mybluemix.net/current?zipcode=90210](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: #new_window}.  
 
   ![](images/explore-weatherapp-2.png)
 
-4. Asimismo, el punto final para obtener los datos de previsión **de hoy** es `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`. Pruébelo yendo a [https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){:new_window}.  
+4. Asimismo, el punto final para obtener los datos de previsión **de hoy** es `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`. Pruébelo yendo a [https://myweatherprovider.mybluemix.net/today?zipcode=90210](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: #new_window}.  
 
   ![](images/explore-weatherapp-3.png)
 
 ---
 
 ## Añadir una nueva especificación de OpenAPI e invocar un servicio REST anterior
+{: #add_spec_tut_add_openapi_rest_tk}
+
 1. Inicie **API Designer**. En el terminal, escriba `apic edit`.
-2. Inicie sesión en el ID de IBM.
+2. Inicie sesión con su IBMid.
     ![](images/screenshot_apic-edit_login.png)
 3.   En API Designer, asegúrese de que el panel de navegación esté abierto. Si no lo está, pulse >> para abrirlo. En el panel de navegación de **API Designer**, seleccione **Borradores > API**.
 4. En el panel **API**, seleccione **Añadir > Nueva API**.
@@ -109,7 +125,7 @@ _(Visitaremos la seguridad con las Claves de API en la siguiente guía de aprend
 
 18. Guarde la API.
 
-19. Conmute al separador **Ensamblar**. Ha creado dos operaciones hasta ahora: **GET /current** y **GET /today**. Para garantizar que se invoca el punto final de destino correcto, deberá crear la lógica que ejecutará supeditada a la operación que se llama. Vamos a utilizar la construcción lógica **Conmutador de funcionamiento** para hacerlo.  
+19. Cambie al separador **Ensamblar**. Ha creado dos operaciones hasta ahora: **GET /current** y **GET /today**. Para garantizar que se invoca el punto final de destino correcto, deberá crear la lógica que ejecutará supeditada a la operación que se llama. Vamos a utilizar la construcción lógica **Conmutador de funcionamiento** para hacerlo.  
 
     a. Suprima la política de **invocación** que ya se puede añadir al _lienzo_.  
     b. Desde la _paleta_, arrastre el **Conmutador de funcionamiento** y suéltelo en el lienzo.  
@@ -129,8 +145,11 @@ _(Visitaremos la seguridad con las Claves de API en la siguiente guía de aprend
 ---
 
 ## Probar el proxy de la API
+{: #test_tut_add_openapi_rest_tk}
 
-### Probar con la _herramienta de prueba API Manager_.
+### Probar con la _herramienta de prueba API Manager_
+{: #test_apimgr_tut_add_openapi_rest_tk}
+
 1. Inicie el servidor de prueba local pulsando el icono de servidores de inicio (>) en la parte inferior izquierda del diseñador. Una vez que se inicie la Pasarela, verá la actualización automática del estado en En ejecución.
 
     ![](images/screenshot_start-server-1.png)
@@ -150,7 +169,9 @@ _(Visitaremos la seguridad con las Claves de API en la siguiente guía de aprend
 
 _Si ejecuta en un error de CORS, siga las instrucciones del mensaje de error. Pulse el enlace del error para añadir la excepción a su navegador, y a continuación pulse el botón "invocar" de nuevo._
 
-### Probar con la _herramienta Explorar_.  
+### Probar con la _herramienta Explorar_
+{: #test_explore_tut_add_openapi_rest_tk}
+
 1. Para probar los puntos finales proxy de la API, seleccione _Explorar_.
 2. Seleccione la operación **GET /current** de la paleta.
 3. Especifique un código postal de Estados Unidos válido (p. ej. 90210) en el recuadro de prueba.
@@ -160,13 +181,16 @@ _Si ejecuta en un error de CORS, siga las instrucciones del mensaje de error. Pu
 ---
 
 ## Conclusión
+{: #conclusion_tut_add_openapi_rest_tk}
+
 En esta guía de aprendizaje, ha visto cómo se puede invocar un servicio REST anterior mediante un proxy de paso a través de la API. Ha comenzado comprobando la disponibilidad del servicio de ejemplo mediante el explorador web. A continuación, ha creado una nueva especificación de OpenAPI en {{site.data.keyword.apiconnect_short}}, y la ha enlazado al servicio de ejemplo que se invocará. Por último, ha probado el proxy de la API con la herramienta de pruebas incorporada.
 
 ---
 
 ## Paso siguiente
+{: #next_tut_add_openapi_rest_tk}
 
-Proteger la API utilizando [limitación de tarifas](tut_rate_limit.html), [ID y secreto de cliente](tut_secure_landing.html), o [protección utilizando OAuth 2.0](tut_secure_oauth_2.html).
+Proteger la API utilizando [limitación de tarifas](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rate_limit), [ID y secreto de cliente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing), o [protección utilizando OAuth 2.0](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
 
 Crear > **Gestionar** > Proteger > Socializar > Analizar
 

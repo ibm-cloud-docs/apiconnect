@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,22 +17,29 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Personalización del Portal del desarrollador y selección de un tema
+{: #tut_custom_dev_portal}
+
 **Duración**: 30 minutos  
 **Nivel de habilidad**: Principiante  
 
 
 ## Objetivo
+{: #object_tut_custom_dev_portal}
+
 Esta guía de aprendizaje le ayudará a personalizar rápidamente el Portal del desarrollador de {{site.data.keyword.apiconnect_full}} y a seleccionar un tema que se ajuste a sus necesidades.
 
 ---
 
 ## Requisitos previos
+{: #prereq_tut_custom_dev_portal}
 
-Antes de iniciar esta guía de aprendizaje, debe haber completado la guía de aprendizaje [Establecimiento y configuración del Portal del desarrollador](tut_config_dev_portal.html) y haberse registrado como el administrador de portal.
+Antes de iniciar esta guía de aprendizaje, debe haber completado la guía de aprendizaje [Establecimiento y configuración del Portal del desarrollador](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal) y haberse registrado como el administrador de portal.
 
 ---
 
 ## Personalizar el portal del desarrollador
+{: #cust_tut_custom_dev_portal}
+
 Después de haber creado el portal del desarrollador, puede personalizar su aspecto.
 
 1. Vamos a empezar por modificar la cabecera de bienvenida. En el parte superior, seleccione **Contenido** y luego seleccione **Bloques**.  
@@ -49,6 +62,8 @@ Después de haber creado el portal del desarrollador, puede personalizar su aspe
 ---
 
 ## Personalizar el tema para el portal del desarrollador
+{: #cust_theme_tut_custom_dev_portal}
+
 El portal del desarrollador le permite modificar el tema para cambiar su aspecto.
 
 1. Para modificar el tema, seleccione **Aspecto** en el menú superior, seleccione **Configuración** y luego **Tema de IBM API Connect**. Este será el tema predeterminado cuando se cree el portal del desarrollador.
@@ -72,6 +87,8 @@ El portal del desarrollador le permite modificar el tema para cambiar su aspecto
 ---
 
 ## Seleccionar un tema diferente para el portal del desarrollador
+{: #diff_theme_tut_custom_dev_portal}
+
 El portal del desarrollador se proporciona con temas adicionales que puede elegir y personalizar para cambiar su aspecto.
 
 1. Para habilitar un tema diferente, seleccione el separador **Lista** en la parte superior de los valores Aspecto. ![Listas](images/51-list.png) 
@@ -91,14 +108,16 @@ El portal del desarrollador se proporciona con temas adicionales que puede elegi
 ---
 
 ## Instalar un tema nuevo para el portal del desarrollador
+{: #new_theme_tut_custom_dev_portal}
+
 Si modificar un tema anterior no se ajusta a sus necesidades, el portal del desarrollador también le permite instalar un tema para cambiar su aspecto.
 
-1. Puede utilizar módulos o temas descargados de [drupal.org ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://drupal.org){:new_window} para personalizar el portal del desarrollador o puede crear el suyo propio.
+1. Puede utilizar módulos o temas descargados de [drupal.org ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://drupal.org){: #new_window} para personalizar el portal del desarrollador o puede crear el suyo propio.
 
 2. Para instalar un tema en el portal del desarrollador, seleccione **Aspecto** desde el menú superior y, a continuación, seleccione **Instalar tema nuevo**.  
   ![Instalar un tema nuevo](images/62-install-new.png)
 
-3. Puede instalar temas directamente desde [drupal.org ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://drupal.org){:new_window} utilizando un URL, o puede cargar un tema que haya descargado o creado pulsando **Elegir archivo** y luego **Instalar**.  
+3. Puede instalar temas directamente desde [drupal.org ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://drupal.org){: #new_window} utilizando un URL, o puede cargar un tema que haya descargado o creado pulsando **Elegir archivo** y luego **Instalar**.  
   ![Instalar](images/63-install.png) 
 
 4. Cuando la carga finalice, debe habilitar el tema. Seleccione **Habilitar temas recién añadidos**.  
@@ -111,7 +130,8 @@ Si modificar un tema anterior no se ajusta a sus necesidades, el portal del desa
 
 ---
 
-## Resumen
+## Conclusión
+{: #conclusion_tut_custom_dev_portal}
 Enhorabuena, ha finalizado esta guía de aprendizaje. En esta guía de aprendizaje, ha aprendido a:
 
 * Personalizar la página de bienvenida del portal del desarrollador
@@ -122,8 +142,9 @@ Enhorabuena, ha finalizado esta guía de aprendizaje. En esta guía de aprendiza
 ---
 
 ## Paso siguiente
+{: #next_tut_custom_dev_portal}
 
-Aprender [cómo navega un usuario por un Portal del desarrollador](tut_discover_apis.html) o [cómo obtener conocimientos de análisis básico](tut_insights_analytics.html).
+Aprender [cómo navega un usuario por un Portal del desarrollador](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_discover_apis) o [cómo obtener conocimientos de análisis básico](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics).
 
 Crear > Gestionar > Proteger > **Socializar** > Analizar  
 

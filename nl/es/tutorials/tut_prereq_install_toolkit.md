@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,10 +17,14 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Instalación del kit de herramientas de API Connect
+{: #tut_prereq_install_toolkit}
+
 **Duración**: 15 minutos  
 **Nivel de habilidad**: Principiante  
 
-## Lo que necesitará
+## Requisitos previos
+{: #prereq_tut_prereq_install_toolkit}
+
 1. Node.js
 2. Node Product Manager (NPM)
 3. {{site.data.keyword.apiconnect_full}} _Lite_
@@ -28,10 +38,12 @@ lastupdated: "2017-10-31"
 
 
 ## Instalar node.js
+{: #nodejs_tut_prereq_install_toolkit}
+
 1. Descargue e instale node.js de una de estas dos fuentes:
-   * [https://nodejs.org/en/download/ ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://nodejs.org/en/download/){:new_window} (Nota: Descargue la versión LTS para la plataforma, no la más reciente, o puede experimentar errores)
+   * [https://nodejs.org/en/download/ ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://nodejs.org/en/download/){: #new_window} (Nota: Descargue la versión LTS para la plataforma, no la más reciente, o puede experimentar errores)
       **O**
-   * [https://developer.ibm.com/node/sdk/v6/ ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/node/sdk/v6/){:new_window}  
+   * [https://developer.ibm.com/node/sdk/v6/ ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/node/sdk/v6/){: #new_window}  
 
     _La instalación de node.js también instala **npm** (Node Package Manager)_.
 
@@ -48,6 +60,8 @@ lastupdated: "2017-10-31"
 
 
 ## Instalar el kit de herramientas de API Connect y Microgateway
+{: #tk_micro_tut_prereq_install_toolkit}
+
 1. Actualice npm config para permitir el uso de certificados de no confianza.  
    `npm config -g set strict-ssl false`  
 

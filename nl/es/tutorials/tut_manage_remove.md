@@ -1,8 +1,13 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-10"
+  years: 2019
+lastupdated: "2019-3-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 
 ---
 
@@ -13,27 +18,33 @@ lastupdated: "2017-10-10"
 {:pre: .pre}
 
 # Archivado y supresión de Productos de API
+{: #tut_manage_remove}
+
 **Duración**: 15 minutos  
 **Nivel de habilidad**: Principiante 
 
-## Requisitos previos
-
-1. [Configurar la instancia de {{site.data.keyword.apiconnect_full}}](tut_prereq_set_up_apic_instance.html).
-
-2. Complete la [guía de aprendizaje Reemplazar un producto de API](tut_manage_supercede.html).
-
----
 ## Objetivo
+{: #object_tut_manage_remove}
 En esta guía de aprendizaje, suprimirá, archivará y retirará una API.
 
 ---
+## Requisitos previos
+{: #prereq_tut_manage_remove}
+
+1. [Configurar la instancia de {{site.data.keyword.apiconnect_full}}](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
+
+2. Complete la [guía de aprendizaje Reemplazar un producto de API](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede).
+
+---
+
 ## Supresión de un Producto de API
-1. Inicie sesión en {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.ng.bluemix.net/login){:new_window}.
+{: #delete_tut_manage_remove}
 
-2. En el Panel de control de {{site.data.keyword.Bluemix_short}}, inicie el servicio de {{site.data.keyword.apiconnect_short}}.
-![](images/Bluemix.png)
+1. Inicie sesión en {{site.data.keyword.Bluemix_short}}: https://cloud.ibm.com.
+2. En el **Panel de control** de {{site.data.keyword.Bluemix_notm}}, pulse **Servicios de Cloud Foundry**. Inicie el servicio {{site.data.keyword.apiconnect_short}}. 
+3. En {{site.data.keyword.apiconnect_short}}, asegúrese de que el panel de navegación está abierto. Si no lo está, pulse **>>** para abrirlo.  
 
-3. En API Manager, si no ha marcado anteriormente el panel de navegación de la IU, pulse el icono **Navegar a** ![](images/navigate-to.png). Se abrirá el panel de navegación de la IU de API Manager. Para marcar el panel de navegación de la IU, pulse el icono **de menú Marcar** ![](images/pinned.png).
+  ![](images/cloud-apic-dashboard.png)
 
 4. Pulse **Recinto de pruebas** para abrir el catálogo Recinto de pruebas. **Nota**: Puede que necesite volver al Panel de control para ver los catálogos disponibles. Además, la página del panel de control puede mostrar catálogos como mosaicos en lugar de una lista.
 ![](images/del-sandbox-list.png)
@@ -50,6 +61,8 @@ En esta guía de aprendizaje, suprimirá, archivará y retirará una API.
 
 
 ## Archivado de un producto de API
+{: #archive_tut_manage_remove}
+
 1. Pulse los puntos suspensivos verticales en la línea **Weather Provider API 2.0.0**.  
 ![](images/del-prod-list2.png)
 
@@ -85,7 +98,9 @@ En esta guía de aprendizaje, suprimirá, archivará y retirará una API.
 
  
  
-## Qué ha hecho en esta guía de aprendizaje
+## Conclusión
+{: #conclusion_tut_manage_remove}
+
 En esta guía de aprendizaje, ha completado las actividades siguientes:
 
 1. Se ha suprimido un producto de API

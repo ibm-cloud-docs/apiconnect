@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,18 +17,26 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Establecimiento y configuración del Portal del desarrollador
+{: #tut_config_dev_portal}
+
 **Duración**: 30 minutos  
 **Nivel de habilidad**: Principiante  
 
-## Requisitos previos
-Antes de empezar, necesita [importar la especificación de la API y el proxy en un servicio REST anterior](tut_rest_landing.html).
-
 ## Objetivo
-Esta guía de aprendizaje le ayudará a empezar rápidamente con la configuración del **Portal del desarrollador de la API**. 
+{: #object_tut_config_dev_portal}
+
+Esta guía de aprendizaje le ayudará a empezar rápidamente con la configuración del **Portal del desarrollador de API Connect**. 
+
+## Requisitos previos
+{: #prereq_tut_config_dev_portal}
+
+Antes de empezar, necesita [importar la especificación de la API y el proxy en un servicio REST anterior](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
 
 ---
 
 ## Crear el portal del desarrollador
+{: #create_prereq_tut_config_dev_portal}
+
 En esta sección, creará un portal del desarrollador para un catálogo.
 
 *Catálogos* es un término de IBM para distintos entornos. Por ejemplo, puede crear catálogos distintos para la prueba, la transferencia y los entornos de producción. Debe tener un catálogo denominado Recinto de pruebas. Empiece a utilizar este catálogo para crear el portal del desarrollador, o crear un nuevo catálogo y ponerle el nombre que desee.
@@ -51,6 +65,8 @@ En esta sección, creará un portal del desarrollador para un catálogo.
 ---
 
 ## Explorar el portal del desarrollador
+{: #explore_prereq_tut_config_dev_portal}
+
 En esta sección, deberá familiarizarse con el portal del desarrollador que ha creado en los pasos anteriores.
 
 1. Después de haber configurado el portal del desarrollador para el catálogo, recibirá un correo electrónico con un enlace a un inicio de sesión único. Seleccione el enlace para iniciar el portal del desarrollador.
@@ -66,25 +82,28 @@ En esta sección, deberá familiarizarse con el portal del desarrollador que ha 
   
 | Separador              | Descripción          | 
 |:---------------- | -------------------- | 
-| _Inicio_       | La página de inicio es la página de bienvenida para el portal del desarrollador. Puede [personalizar la página](tut_custom_dev_portal.html) para que se ajuste a sus necesidades. | 
+| _Inicio_       | La página de inicio es la página de bienvenida para el portal del desarrollador. Puede [personalizar la página](/docs/service/apiconnect/tutorials?topic=apiconnect-tut_custom_dev_portal) para que se ajuste a sus necesidades. | 
 | _Cómo empezar_       | La página Cómo empezar se utiliza para indicar a los desarrolladores cómo empezar a utilizar el portal del desarrollador. |
 | _Productos de API_ | La página Productos de API la utilizan los desarrolladores para explorar y suscribirse a las API que están disponibles en el portal. | 
 | _Apps_ | La página Apps muestra las aplicaciones que utilizan las API. | 
 | _Blogs_ | La página Blogs es donde puede crear y mostrar publicaciones de blogs sobre sus API. | 
 | _Foros_ | La página Foros es donde los desarrolladores pueden tener discusiones y formular preguntas sobre las API. | 
-| _Soporte_ | La página Soporte es donde puede indicar a los desarrolladores sobre cómo pueden recibir apoyo en sus API. Por ejemplo, puede referirse a sus foros y preguntas frecuentes. También puede proporcionar un enlace que les permite abrir una incidencia de soporte si es necesario. | 
+| _Soporte_ | La página Soporte es donde puede indicar a los desarrolladores cómo pueden recibir asistencia sobre sus API. Por ejemplo, puede referirse a sus foros y preguntas frecuentes. También puede proporcionar un enlace que les permite abrir una incidencia de soporte si es necesario. | 
 
 Nota: En la página Productos de API, puede seleccionar uno de los productos para ver la página del producto para una API y los planes disponibles. Permite a los desarrolladores suscribirse y ver los detalles de la API. 
 
   ![Productos de la API](images/27-api-products.png)
 
 ### Conclusión
+{: #conclusion_prereq_tut_config_dev_portal}
+
 En esta guía de aprendizaje, ha aprendido cómo establecer y configurar el Portal del desarrollador de {{site.data.keyword.apiconnect_short}}. También ha explorado el portal del desarrollador.
 
 ---
 
 ## Paso siguiente
+{: #next_prereq_tut_config_dev_portal}
 
-[Personalice su Portal del desarrollador y seleccione un tema](tut_custom_dev_portal.html).
+[Personalice su Portal del desarrollador y seleccione un tema](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_custom_dev_portal).
 
 Crear > Gestionar > Proteger > **Socializar** > Analizar

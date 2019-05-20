@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-02"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,11 +17,15 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # Configuración de límites de velocidad
+{: #tut_rate_limit}
+
 **Duración**: 15 minutos  
 **Nivel de habilidad**: Principiante  
 
 
 ## Objetivo
+{: #object_tut_rate_limit}
+
 Esta guía de aprendizaje muestra cómo limitar la velocidad de las API. El establecimiento de límites de velocidad le permite gestionar el tráfico de red para las
 API y las operaciones específicas dentro de las API. Un límite de velocidad es el número máximo de llamadas que desea permitir en un intervalo de tiempo determinado.
 
@@ -29,21 +39,26 @@ En esta guía de aprendizaje, hará lo siguiente:
 
 
 ## Requisitos previos
-Debe haber creado ya una API en {{site.data.keyword.apiconnect_short}}, protegida con al menos una clave de API. En las instrucciones siguientes, nuestro punto de partida es el [archivo de ejemplo de Weather Provider API ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}, protegido utilizando un [ID y secreto de cliente](tut_secure_landing.html).
+{: #prereq_tut_rate_limit}
+
+Debe haber creado ya una API en {{site.data.keyword.apiconnect_short}}, protegida con al menos una clave de API. En las instrucciones siguientes, nuestro punto de partida es el [archivo de ejemplo de Weather Provider API ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){: #new_window}, protegido utilizando un [ID y secreto de cliente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing).
 
 Complete las guías de aprendizaje siguientes antes de empezar esta guía de aprendizaje:
-- [Importe la especificación de la API, y el proxy en un servicio REST anterior](tut_rest_landing.html).
-- [Proteja la API con un ID y secreto de cliente](tut_secure_landing.html).
+- [Importe la especificación de la API, y el proxy en un servicio REST anterior](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
+- [Proteja la API con un ID y secreto de cliente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing).
 
 
 ---
 ## Iniciar API Connect
+{: #launch_tut_rate_limit}
 
-1. Inicie sesión en {{site.data.keyword.Bluemix_notm}}: [https://console.ng.bluemix.net/login ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.ng.bluemix.net/login){:new_window}.
+1. Inicie sesión en {{site.data.keyword.Bluemix_notm}}: [https://console.ng.bluemix.net/login ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.ng.bluemix.net/login){: #new_window}.
 2. Una vez que haya iniciado sesión en {{site.data.keyword.Bluemix_notm}}, desplácese hasta **Todos los servicios**, y pulse en **API Connect**.
 3. Pulse en **API Connect** para iniciar el servicio de {{site.data.keyword.apiconnect_short}}.
 
 ## Explorar el plan predeterminado
+{: #explore_tut_rate_limit}
+
 1. En el panel de navegación de {{site.data.keyword.apiconnect_short}}, seleccione **Borradores**. (Si el panel de navegación no está abierto, pulse **>>** para abrirlo).
 2. Seleccione el **separador Productos**, y debería ver el producto Weather Provider API en la lista.
 
@@ -59,6 +74,7 @@ Complete las guías de aprendizaje siguientes antes de empezar esta guía de apr
 
    
 ## Creación de un nuevo Plan de tarifas limitadas
+{: #create_tut_rate_limit}
 
 Ahora que hemos visto qué aspecto tiene el Plan predeterminado, vamos a crear un nuevo Plan con límites de velocidad más restrictivos, para demostrar lo que sucede cuando un consumidor de la API excede los límites de un Plan. 
 1. Pulse el botón para añadir un Plan nuevo.
@@ -78,8 +94,9 @@ Ahora que hemos visto qué aspecto tiene el Plan predeterminado, vamos a crear u
 
 
 ## Transferir y publicar un Producto actualizado en el Catálogo del recinto de pruebas
+{: #stage_tut_rate_limit}
 
-En ejemplos anteriores, puede haber publicado el Producto utilizando la herramienta de prueba, lo que llama a la API con las credenciales de la aplicación de prueba suministradas anteriormente. Sin embargo, esta aplicación de prueba no está sujeta a límites de velocidad, por lo que necesitaremos crear una aplicación nueva aquí para limitar la velocidad. Consulte el [contenido de IBM Knowledge Center para API Connect ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){:new_window} para obtener más información.
+En ejemplos anteriores, puede haber publicado el Producto utilizando la herramienta de prueba, lo que llama a la API con las credenciales de la aplicación de prueba suministradas anteriormente. Sin embargo, esta aplicación de prueba no está sujeta a límites de velocidad, por lo que necesitaremos crear una aplicación nueva aquí para limitar la velocidad. Consulte el [contenido de IBM Knowledge Center para API Connect ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){: #new_window} para obtener más información.
 
 1. Pulse el icono Publicar para *transferir* el Producto al Catálogo de **recinto de pruebas**. Esta acción añade los cambios del Producto de borrador al Catálogo seleccionado. Necesitamos *publicar* los cambios del Producto a continuación, para ponerlos a disposición de los consumidores a través del Portal del desarrollador.
    ![](./images/stageproduct.png) 
@@ -91,13 +108,15 @@ En ejemplos anteriores, puede haber publicado el Producto utilizando la herramie
 
 
 ## Registrar una nueva aplicación (consumidor) en el Portal del desarrollador
-Los desarrolladores de aplicaciones descubren y utilizan las API utilizando el Portal del desarrollador. Para obtener más información sobre el Portal del desarrollador, consulte este [tema de IBM Knowledge Center ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){:new_window}.
+{: #reg_tut_rate_limit}
+
+Los desarrolladores de aplicaciones descubren y utilizan las API utilizando el Portal del desarrollador. Para obtener más información sobre el Portal del desarrollador, consulte este [tema de IBM Knowledge Center ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){: #new_window}.
 
 Si esta es la primera vez que trabaja con el Portal del desarrollador, deberá suministrar un Portal del desarrollador para el Catálogo del recinto de pruebas. La cuenta en la que está registrado cuando suministra el Portal será la cuenta de administrador para dicho Portal. A continuación, con el fin de explorar y probar API, deberá crear e iniciar sesión con una nueva cuenta de desarrollador (utilizando una dirección de correo electrónico distinta) a la cuenta de administrador.
 
 Las siguientes instrucciones le guiarán a través de estos pasos.
 
-1. Inicie el Portal del desarrollador. Si no conoce el URL, puede encontrarlo en el separador Configuración del Catálogo del recinto de pruebas. Para suministrar el Portal del desarrollador por primera vez, consulte [Establecimiento y configuración del Portal del desarrollador](tut_config_dev_portal.html).
+1. Inicie el Portal del desarrollador. Si no conoce el URL, puede encontrarlo en el separador Configuración del Catálogo del recinto de pruebas. Para suministrar el Portal del desarrollador por primera vez, consulte [Establecimiento y configuración del Portal del desarrollador](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal).
     - Esto puede tardar hasta una hora en completarse. Cuando el Portal del desarrollador del recinto de pruebas esté listo, recibirá un correo electrónico
 con un enlace a su nuevo sitio de Portal del desarrollador. El enlace es un enlace de un solo uso para la cuenta de administrador.
 2. Inicie sesión en el Portal utilizando las credenciales de desarrollador de apps (**no** su ID de IBM). ***(Cree una nueva cuenta de desarrollador si es necesario, utilizando una dirección distinta de su ID de IBM).***
@@ -115,6 +134,7 @@ con un enlace a su nuevo sitio de Portal del desarrollador. El enlace es un enla
 
 
 ## Suscribirse a un Producto de API
+{: #subscr_tut_rate_limit}
 
 1. Pulse el enlace **Productos de API** en la barra de herramientas. El Producto Weather Provider API aparecerá listado. 
 
@@ -127,6 +147,7 @@ con un enlace a su nuevo sitio de Portal del desarrollador. El enlace es un enla
 Estamos listos para probar este comportamiento y observar lo que ocurre cuando la aplicación supera la velocidad especificada.
 
 ## Llamar a una API de velocidad limitada
+{: #call_tut_rate_limit}
 
 1. En la página Producto de Weather Provider API del Portal del desarrollador, pulse el enlace de la API.
 
@@ -147,13 +168,15 @@ Estamos listos para probar este comportamiento y observar lo que ocurre cuando l
 
 
 ## Conclusión
+{: #conclusion_tut_rate_limit}
 
 Felicidades. Ha creado correctamente un Plan de limitación de velocidad, lo ha asociado con su API segura, y ha verificado que su API sólo responda a solicitudes dentro de los parámetros que haya especificado.
 
 ---
 
 ## Paso siguiente
+{: #next_tut_rate_limit}
 
-Empiece por socializar su API mediante [establecimiento y configuración de un portal del desarrollador](tut_config_dev_portal.html).
+Empiece por socializar su API mediante [establecimiento y configuración de un portal del desarrollador](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal).
 
 Crear > Gestionar > **Proteger** > Socializar > Analizar
