@@ -1,8 +1,12 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-15"
+  years: 2018
+lastupdated: "2019-01-17"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
 
 ---
 
@@ -21,74 +25,21 @@ Sie können API Connect zum Verwalten der APIs in {{site.data.keyword.Bluemix}} 
 Wenn Sie ein Kunde sind, können Sie die Verwendung in der API Manager-Benutzerschnittstelle verwalten, nachdem ein Entwickler eine API erstellt und das Produkt anhand einer Push-Operation an {{site.data.keyword.Bluemix_notm}} übertragen hat. In den folgenden Abschnitten werden die Vorgehensweisen zum Erstellen und Verwalten von Produkten in {{site.data.keyword.apiconnect_short}} beschrieben.
 
 ## Lokale APIs über einen sicheren Gateway verfügbar machen
-{: #expose_apis_sec_gate}
+{: #expose_apis_sec_gate_managing_apis}
 
 Sie können ein sicheres Gateway erstellen, um lokale APIs sicher in {{site.data.keyword.apiconnect_full}} bereitzustellen.
 
-Wenn Sie ein sicheres Gateway erstellen, integrieren Sie die Funktionen des {{site.data.keyword.Bluemix_notm}}
-{{site.data.keyword.SecureGateway}}-Service in {{site.data.keyword.apiconnect_short}}. Das bedeutet, dass Sie eine sichere Möglichkeit haben,
-von {{site.data.keyword.apiconnect_short}} über eine sichere Passage auf Ihre lokalen APIs zuzugreifen, ohne eine separate Instanz des
-{{site.data.keyword.SecureGateway}}-Service bereitstellen zu müssen. Effektiv erstellen Sie einen Tunnel
-zu {{site.data.keyword.apiconnect_short}} in einer öffentlichen Umgebung, ohne Ihre lokalen Daten
-zugänglich zu machen. Dazu müssen Sie nur das Gateway erstellen und es einer API
-zuordnen. Die Erstellung eines Ziels, eines SSL-Profils und der Zertifikate wird ausgeführt.
-Weitere Informationen zum {{site.data.keyword.SecureGateway}}-Service finden Sie unter [Informationen zu {{site.data.keyword.SecureGateway}}](../../services/SecureGateway/sg_overview.html#sg_overview).
-Führen Sie zum Erstellen einer Secure Gateway-Instanz die Schritte in den folgenden Abschnitten durch.
+Wenn Sie ein sicheres Gateway erstellen und dann eine Adresse für den zugehörigen Client bzw. Cloud-`<host>:<port>` angeben, integrieren Sie die Funktionen des {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.SecureGateway}}-Service in {{site.data.keyword.apiconnect_short}}. Das bedeutet, dass Sie eine sichere Möglichkeit haben, von {{site.data.keyword.apiconnect_short}} über eine sichere Passage auf Ihre lokalen APIs zuzugreifen. Effektiv erstellen Sie einen Tunnel zu {{site.data.keyword.apiconnect_short}} in einer öffentlichen Umgebung, ohne Ihre lokalen Daten zugänglich zu machen. Dazu müssen Sie nur den Secure Gateway-Service in der IBM Cloud erstellen und konfigurieren und in einer API eine Adresse für ihn angeben. 
 
-### Sicheres Gateway erstellen
-{: #create_sec_gate notoc}
-
-Wenn Sie ein sicheres Gateway erstellen, werden eine Gateway-ID und ein Sicherheitstoken für Sie generiert.
-Sie können auch in Ihrer lokalen Unternehmensumgebung einen Secure Gateway-Client für die Verbindung mit {{site.data.keyword.apiconnect_short}} einrichten. Nach dem Einrichten des Clients stellen Sie anhand der Gateway-ID und des Sicherheitstokens eine Verbindung mit dem Client her, damit Sie auf Ihre
-lokalen APIs zugreifen können.
-
-Führen Sie die folgenden Schritte aus, um ein Gateway zu erstellen:
-
-1. Klicken Sie auf **Navigieren zu** <img alt="Symbol 'Navigieren zu'" src="images/navigate_to_icon.png"> > **Admin** > **Secure Gateways**.
-Die Seite `Secure Gateways` wird geöffnet und in einer Ecke der Benutzerschnittstelle wird eine geführte Tour
-für den Secure Gateway-Service angezeigt.
-
-2. **Optional**:
-Klicken Sie auf jeden Schritt der geführten Tour, um Ihre Gateway-Einrichtung durchzuführen.
-
-3. Klicken Sie auf **Hinzufügen**.
-Das Dialogfeld `Secure Gateway erstellen` wird angezeigt.
-
-4. Geben Sie einen Namen für Ihr Gateway an.
-    **Hinweis:** Nur alphanumerische Zeichen und Unterstriche sind zulässig.
-
-5. Klicken Sie auf **Speichern**.
-Das Gateway wird gemeinsam mit der Gateway-ID und dem Sicherheitstoken angezeigt.
-
-6. Klicken Sie auf **Einrichten**.
-Durch Klicken auf **Einrichten** haben Sie die Möglichkeit, einen Secure Gateway-Client auf Ihren lokalen Arbeitsplatz herunterzuladen und dort zu
-installieren, um eine Verbindung zwischen einem fernen Netz und einem sicheren Gateway im Bluemix&reg;-Netz herzustellen.
-
-    Das Fenster `Secure Gateway-Clients einrichten` wird angezeigt.
-
-7. Klicken Sie in den folgenden Optionen auf den Client, den Sie verwenden wollen:
-
-    - IBM&reg; Installationsprogramme
-    - Docker
-    - IBM DataPower&reg;
-
-8. Befolgen Sie die Anweisungen am Bildschirm, um den ausgewählten Client zu installieren und auszuführen.
-Weitere Informationen zum Einrichten eines Secure Gateway-Clients finden Sie unter [Client einrichten](../../services/SecureGateway/sg_021.html#sg_021).
-
-9. Wenn Sie die Installation des Clients beendet haben, schließen Sie das Fenster **Secure Gateway-Clients einrichten**.
-
-10. Aktualisieren Sie die Seite.
-
-Die Verbindung zum Client wird hergestellt und die ID und der Status des Gateways werden angezeigt. Sie haben die Gateway-Konfiguration abgeschlossen und ein sicheres Gateway erstellt.
-Verwenden Sie als Nächstes das sichere Gateway für den Zugriff auf Ihre lokalen APIs.
+Weitere Informationen zum {{site.data.keyword.SecureGateway}}-Service und zu dessen Einrichtung finden Sie unter [Informationen zu {{site.data.keyword.SecureGateway}}![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/docs/services/SecureGateway?topic=index#getting-started-with-sg){: #new_window}.
 
 ### Sicheres Gateway mit den APIs verwenden
-{: #using_sec_gate_apis notoc}
+{: #using_sec_gate_apis_managing_apis notoc}
 
 Nachdem Sie das Gateway konfiguriert haben, können Sie es mit den APIs verwenden.
 {:shortdesc}
 
-Führen Sie die folgenden Schritte aus, um das sichere Gateway mit APIs zu verwenden:
+Führen Sie die folgenden Schritte aus, um das sichere Gateway mit APIs zu verwenden.
 1. Erstellen Sie Ihre API und Ihr Produkt, wie in den folgenden Schritten beschrieben.
   - Klicken Sie auf **Navigieren zu** <img src="images/navigate_to_icon.png" alt="Symbol 'Navigieren zu'" /> > **Entwürfe** > **APIs** > **Hinzufügen**.
   - Wählen Sie den Typ der API aus, die Sie erstellen möchten.
@@ -102,42 +53,32 @@ Führen Sie die folgenden Schritte aus, um das sichere Gateway mit APIs zu verwe
 **Einschränkung:** Logische Schalter, z. B. `Switch`, `Operation Switch` oder `If`
 können nicht mit APIs verwendet werden, die ein sicheres Gateway nutzen.
 
-4. Wählen Sie **Zugriff auf URL über Secure Gateway** aus.
+4. Wählen Sie das Kontrollkästchen **Zugriff auf URL über Secure Gateway** **NICHT** aus.
+**WICHTIG**: Dieses Kontrollkästchen gibt es bei einer veralteten Version, die für Produktionsumgebungen nicht unterstützt und die in Zukunft entfernt wird. Stattdessen geben Sie für die Secure Gateway-URL direkt eine Adresse an, ohne dieses Kontrollkästchen auszuwählen.
 
-5. Aktualisieren Sie im URL-Feld die Ziel-URL (`target-url`) mit dem lokalen Hostnamen und der
-lokalen Portnummer. Beispiel:
+5. Aktualisieren Sie im URL-Feld die Ziel-URL (`target-url`) mit dem Cloud-Host-Namen und der Portnummer; Beispiel:
 ```
-target-url: http://onpremdb2.rtp.raleigh.ibm.com:3055$(request.path)$(request.search)
+target-url: cap-sg-prd-5.securegateway.appdomain.cloud:18579
 ```
 
 6. Klicken Sie auf **Speichern** <img src="images/icon_save.png" alt="Symbol 'Speichern'" />.
 
-7. Klicken Sie auf die Registerkarte **Quelle**.  Versehen Sie das Feld `secure-gateway` mit dem Wert `true`.
+7. Klicken Sie auf **Alle APIs** > **Produkte** und wählen Sie das zuvor erstellte Produkt aus.
 
-8. Klicken Sie auf **Alle APIs** > **Produkte** und wählen Sie das zuvor erstellte Produkt aus.
+8. Klicken Sie auf **Veröffentlichen**, um das Produkt in einem ausgewählten Katalog bereitzustellen.
 
-9. Klicken Sie auf das Symbol **Veröffentlichen**, um das Produkt in einem ausgewählten Katalog bereitzustellen.
+9. Wählen Sie den Katalog aus, den Sie verwenden möchten.
 
-10. Wählen Sie den Katalog aus, den Sie verwenden möchten.
+10. Wählen Sie das bereitgestellte Produkt aus.
 
-11. Wählen Sie das bereitgestellte Produkt aus.
+11. Klicken Sie auf **Veröffentlichen**.
 
-12. Klicken Sie auf **Veröffentlichen** und wählen Sie **Secure Gateway-Zuweisungen** aus.
-
-Sie haben Ihre lokale API sicher auf {{site.data.keyword.apiconnect_short}} bereitgestellt. Alle TLS-Profile, die einem Ziel zugeordnet sind, werden
-hinzugefügt. Klicken Sie zum Überprüfen der TLS-Profile auf **Navigieren zu**
-<img src="images/navigate_to_icon.png" alt="Symbol 'Navigieren zu'" /> > **Admin** > **Sicherheit** > **TLS-Profile**.
-Für jede API können mehrere Gateways eingerichtet werden. Welches Gateway verwendet werden soll, entscheiden Sie beim Veröffentlichen der API. Wenn Sie den
-{{site.data.keyword.SecureGateway}}-Service bereits bereitgestellt haben, haben Sie die Möglichkeit, Ihre Ziele im
-{{site.data.keyword.SecureGateway}}-Dashboard zu überwachen. Sie können jedoch keine {{site.data.keyword.apiconnect_short}}-Ziele bearbeiten, die vom
-{{site.data.keyword.apiconnect_short}}-Service erstellt wurden.
-Testen Sie als Nächstes die {{site.data.keyword.SecureGateway}}-API.
+Sie haben Ihre lokale API sicher auf {{site.data.keyword.apiconnect_short}} bereitgestellt. Testen Sie als Nächstes die {{site.data.keyword.SecureGateway}}-API.
 
 ### Secure Gateway-API testen
-{: test_sec_gate notoc}
+{: test_sec_gate_managing_apis notoc}
 
-Nachdem Sie das Gateway mit einer API verbunden haben, können Sie die API testen, um sicherzustellen, dass das Gateway ordnungsgemäß funktioniert
-und die richtige Antwort zurückgibt.
+Nachdem Sie für das {{site.data.keyword.SecureGateway}} in einer API eine Adresse angegeben habenb, können Sie die API testen, um sicherzustellen, dass das Gateway ordnungsgemäß funktioniert und die richtige Antwort zurückgibt.
 
 Um eine API mit dem sicheren Gateway zu testen, führen Sie die folgenden Schritte aus:
 
@@ -148,10 +89,10 @@ Um eine API mit dem sicheren Gateway zu testen, führen Sie die folgenden Schrit
 
 3. Wählen Sie aus der bereitgestellten Liste einen zu testenden Katalog aus.
 
-4. Wählen Sie aus der bereitgestellten Liste ein sicheres Gateway aus, das getestet werden soll.
+4. Stellen Sie sicher, dass die URL eine Adresse für den korrekten `<cloud_host>:<port>` von Secure Gateway enthält und dass das Secure Gateway-Serviceziel korrekt konfiguriert wurde, wie in der Dokumentation zu [{{site.data.keyword.SecureGateway}}![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/docs/services/SecureGateway?topic=index#getting-started-with-sg){: #new_window} beschrieben. 
 
 5. Wählen Sie ein vorhandenes Produkt aus der bereitgestellten Liste aus und klicken Sie anschließend auf
-**Produkt erneut veröffentlichen** aus.
+**Produkt erneut veröffentlichen**.
    **Wichtig:** Wenn dieses Produkt bereits in einem Katalog veröffentlicht ist, wird das Produkt mit dem
    neuen Gateway erneut veröffentlicht.
 
@@ -168,7 +109,7 @@ und veröffentlichen**.
 Die Testergebnisse werden angezeigt.
 
 ## LoopBack-Anwendung per Staging bereitstellen und veröffentlichen
-{: #stage_publish_lb_app}
+{: #stage_publish_lb_app_managing_apis}
 
 1. Klicken Sie im Navigationsbereich von API Designer auf **Produkte**.
 Die Registerkarte 'Produkte' wird geöffnet.
@@ -239,7 +180,7 @@ Führen Sie die folgenden Schritte aus, um zu testen, ob das Veröffentlichen er
 1. Stellen Sie sicher, dass die {{site.data.keyword.Bluemix_notm}}-App
 aktiv ist.
 
-2. Öffnen Sie ein Browserfenster und navigieren Sie zur API-Ziel-URL.
+2. Öffnen Sie ein Browserfenster und navigieren Sie zur API-URL.
 Die Anwendung wird durch Client-Validierung geschützt. Wenn Sie nicht das korrekte Clientzertifikat
 angeben, wird der Prozess wegen Fehlern beendet (dies ist die erwartete Funktionsweise).
 
@@ -252,6 +193,7 @@ https://<domäne>/<Bluemix-organisation>-<Bluemix-bereich>/<katalogkennung>/api/
 Eine Antwort aus der Serie 200 wird angezeigt.
 
 ## Katalog konfigurieren
+{: #config_cat_managing_apis}
 
 Sie können API Manager-Kataloge erstellen und konfigurieren. Kataloge sind nützlich, um Produkte und APIs zum Testen voneinander zu trennen,
 bevor Sie sie Developer-Organisationen verfügbar machen.
@@ -307,7 +249,7 @@ Katalognamen enthält.
 		    - Sie müssen einen DNS-Eintrag konfigurieren, über den die Zuordnung Ihres angepassten Hostnamens mitsamt Domäne zur Standard-Gateway-URL
       erfolgt.
 		    - Damit die Endpunkte einer API Ihre Standard-Gateway-URL widerspiegeln, müssen Sie die API so konfigurieren, dass sie durch das
-      API Connect-Gateway umgesetzt wird. Weitere Informationen finden Sie unter [Specifying an alternative host for an API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+      API Connect-Gateway umgesetzt wird. Weitere Informationen finden Sie unter [Specifying an alternative host for an API ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 		    - Stellen Sie sicher, dass eine einzige angepasste Gateway-URL nicht etwa auf mehrere Kataloge angepasst wird, denn das Verhalten für ein derartiges
 		    Szenario ist nicht definiert.
 	        **Tipp:** Wenn Sie die API aufrufen, können Sie auch den HTTP-Host-Header für die API-Anforderung auf den Wert festlegen, den Sie
@@ -329,7 +271,7 @@ Katalognamen enthält.
      die Produktion veröffentlicht, um die Adresse der API zugänglich zu machen.
 
 	    **Hinweis:** Wenn Sie eine angepasste API-URL für einen Katalog angeben, so hat diese Vorrang vor jeglichem Hostnamen, den Sie
-     beim Konfigurieren der API angeben. Weitere Informationen finden Sie unter [Specifying an alternative host for an API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window}.
+     beim Konfigurieren der API angeben. Weitere Informationen finden Sie unter [Specifying an alternative host for an API ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window}.
 
 	    - **Hostname für Aufrufe der Developer Portal-API:**
      Geben Sie im Fensterbereich für den Port-API-Endpunkt einen Hostnamen für Aufrufe der Developer Portal-API ein. Bei dem Hostnamen,
@@ -342,6 +284,7 @@ Katalognamen enthält.
 7. Klicken Sie auf das Symbol **Speichern**.
 
 ## Katalog in Bereiche aufteilen
+{: #part_cat_managing_apis}
 
 Um die Syndikationsfunktion in {{site.data.keyword.apiconnect_short}} verwenden zu können, müssen Sie Bereiche in allen Katalogen
 aktivieren, in denen die Syndikationsfunktionalität benötigt wird.
@@ -358,10 +301,10 @@ Link **Bereiche** wird zum Navigationsbereich hinzugefügt. Sie können Ihre Ber
 Für den Katalog werden Bereiche aktiviert und ein Standardbereich namens 'Neuer Bereich' wird
 erstellt.
 
-Weitere Informationen zur Verwendung der Syndikation finden Sie in den Abschnitten im Knowledge Center unter [Verwendung der Syndikation in IBM API Connect ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window}.
+Weitere Informationen zur Verwendung der Syndikation finden Sie in den Abschnitten im Knowledge Center unter [Verwendung der Syndikation in IBM API Connect ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){: #new_window}.
 
 ## Developer Portal konfigurieren
-{: #config_dev_portal}
+{: #config_dev_portal_managing_apis}
 
 In einem Developer Portal werden Ihre Pläne veröffentlicht, um sie für Anwendungsentwickler
 zugänglich und nutzbar zu machen.
@@ -392,10 +335,10 @@ Betreffzeile der E-Mail-Nachricht enthalten, die Sie empfangen haben. Sie finden
 von API Manager, indem Sie auf **Portal** > **Einstellungen** klicken.
 
 Weitere Informationen zu den Tasks, die Sie in Developer Portal ausführen, finden Sie in den Abschnitten des
-Knowledge Center zu [Developer Portal ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.html){:new_window}.
+Knowledge Center zu [Developer Portal ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.html){: #new_window}.
 
 ## Berechtigungen für Rollen konfigurieren
-{: #config_permissions_roles}
+{: #config_permissions_roles_managing_apis}
 
 Um die Berechtigungen für die Rollen in API Manager zu konfigurieren, führen Sie die
 folgenden Schritte aus.

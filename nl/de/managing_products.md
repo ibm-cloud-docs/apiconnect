@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,11 +17,12 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # Produkte verwalten
+{: #managing_products}
 
-Detaillierte Informationen zur Vorgehensweise beim Verwalten Ihrer Produkte finden Sie in der IBM&reg; Knowledge Center-Dokumentation unter [Managing your Products ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){:new_window}.
+Detaillierte Informationen zur Vorgehensweise beim Verwalten Ihrer Produkte finden Sie in der IBM&reg; Knowledge Center-Dokumentation unter [Managing your Products ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){: #new_window}.
 
 ## Produktlebenszyklus
-{: #prod_lifecycle}
+{: #prod_lifecycle_managing_products}
 
 Während des Verwaltungsprozesses durchlaufen Ihre Produktversionen verschiedene Lebenszyklusstatus -
 angefangen mit dem Bereitstellen einer ersten Entwurfsversion des Produkts in einer Umgebung über das Veröffentlichen,
@@ -65,6 +72,7 @@ APIs sind gestoppt. Die Produktversion wird nicht standardmäßig auf der Seite 
 </table>
 
 ### Produktlebenszyklusabläufe
+{: #prod_lifecycle_flows_managing_products}
 
 Das folgende Diagramm zeigt die möglichen Lebenszyklusstatus für eine Produktversion sowie die Produktverwaltungsoperationen beim Übergang einer
 Produktversion von einem Lebenszyklusstatus in einen anderen. Beispielsweise versetzt die Operation 'Zurückziehen' eine Produktversion aus dem Status
@@ -74,7 +82,7 @@ Produktversion von einem Lebenszyklusstatus in einen anderen. Beispielsweise ver
 
 
 ## Produkt erstellen
-{: #create_product}
+{: #create_product_managing_products}
 
 Erstellen Sie ein Produkt, um mehrere APIs und Pläne zu einem Angebot zusammenzufassen, das
 Sie Ihren Entwicklern zur Verfügung stellen möchten. Ein Plan enthält Einstellungen für Quotenbegrenzungen,
@@ -124,7 +132,7 @@ können Sie im Feld **Typ zum Hinzufügen** nach den Developer-Organisationen od
     Um nach Developer-Organisationen oder -Communitys zu suchen, muss das Produkt den Status
     'Bereitgestellt', 'Veröffentlicht' oder 'Veraltet' aufweisen. Wenn es sich bei dem Katalog, in dem das bereitgestellte,
     veröffentlichte oder veraltete Produkt enthalten ist, nicht um einen Sandbox-Katalog handelt, können Sie keine weiteren Änderungen
-    an dem Produkt vornehmen, solange es eine dieser Statusangaben aufweist. Weitere Informationen finden Sie unter [Produktlebenszyklus](#prod_lifecycle).
+    an dem Produkt vornehmen, solange es eine dieser Statusangaben aufweist. Weitere Informationen finden Sie unter [Produktlebenszyklus](#prod_lifecycle_managing_products).
 
 8. Geben Sie an, welche Benutzer das Produkt abonnieren können. Auswahlmöglichkeiten sind **Authentifizierte
 Benutzer** oder **Angepasst**. Wenn Sie **Angepasst** auswählen,
@@ -191,11 +199,11 @@ erreicht ist. Andernfalls wird eine Warnung ausgegeben.
 
 Sie haben ein Produkt erstellt und eine Gruppe von APIs und Plänen zu einem Angebot zusammengefasst,
 das Sie nun für Ihre Entwickler verfügbar machen können.
-Stellen Sie als Nächstes Ihr Produkt in einem Katalog bereit. Weitere Informationen finden Sie unter [Produkt bereitstellen](#stage_product}).
+Stellen Sie als Nächstes Ihr Produkt in einem Katalog bereit; dieser Vorgang wird im nächsten Abschnitt [Produkt bereitstellen](#stage_product_managing_products}) erläutert.
 
 
 ## Produkt bereitstellen
-{: #stage_product}
+{: #stage_product_managing_products}
 
 Stellen Sie ein Produkt bereit, um vor dem Veröffentlichen eine bestimmte Version des Produkts
 in einem Katalog zu erstellen. Ein Produkt mit dem Status 'Bereitgestellt' ist noch nicht für Entwickler sichtbar
@@ -241,12 +249,11 @@ für das Dashboard aus und klicken Sie auf den betreffenden Katalog. Für das Pr
 
 - Öffnen Sie das {{site.data.keyword.Bluemix_notm}} **-Dashboard**. Die Kachel für die Anwendung wird im Bereich 'Anwendungen' angezeigt.
 
-Öffnen Sie API Manager, um Ihr Produkt in einer Community zu veröffentlichen, damit Anwendungsentwickler
-im Developer Portal darauf zugreifen können. Weitere Informationen finden Sie unter [Produkt veröffentlichen](#publish_proj}).
+Öffnen Sie API Manager, um Ihr Produkt in einer Community zu veröffentlichen, von wo aus Anwendungsentwickler im Developer Portal darauf zugreifen können; dieser Vorgang wird im nächsten Abschnitt [Produkt veröffentlichen](#publish_proj_managing_products}) erläutert.
 
 
 ## Produkt veröffentlichen
-{: #publish_proj}
+{: #publish_proj_managing_products}
 
 Beim Veröffentlichen eines Plans werden APIs für Anwendungsentwickler sichtbar und zugänglich gemacht.
 Beim Veröffentlichen eines Produkts wird das betreffende Produkt im {{site.data.keyword.Bluemix_short}}-**Katalog**
@@ -254,10 +261,10 @@ und im integrierten Developer Portal für Anwendungsentwickler sichtbar und
 verwendbar.
 
 ### Voraussetzungen
-{: #prereq_publish_proj}
+{: #prereq_publish_proj_managing_products}
 
 Sie müssen ein Produkt zunächst bereitstellen, damit es veröffentlicht werden kann. Weitere Informationen zum Bereitstellen von Produkten
-finden Sie unter [Produkt bereitstellen](#stage_product).
+finden Sie unter [Produkt bereitstellen](#stage_product_managing_products).
 
 Führen Sie die folgenden Schritte aus, um ein Produkt zu veröffentlichen:
 
@@ -292,14 +299,16 @@ von Ihnen akzeptiert oder abgelehnt werden.
 
 
 ## Produkt in Bluemix veröffentlichen
+{: #pub_to_bm_managing_products}
 
 Führen Sie die folgenden Schritte aus, um die Produkte im Abschnitt **APIs durchsuchen** des {{site.data.keyword.apiconnect_short}}-Dashboards anzuzeigen.
 
 ### Voraussetzungen
+{: #prereq_pub_bm_managing_products}
 
 Vor dem Veröffentlichen einer REST-API, die mit LoopBack implementiert wurde, müssen Sie sicherstellen, dass
 die Laufzeit Ihrer App veröffentlicht ist und Ihr Produkt so bereitgestellt wurde, dass der Aufruf-Proxy auf die
-neue App verweist. Weitere Informationen hierzu finden Sie in [Loopback-Anwendung bereitstellen und veröffentlichen](managing_apis.html#stage_publish_lb_app).
+neue App verweist. Weitere Informationen hierzu finden Sie in [Loopback-Anwendung bereitstellen und veröffentlichen](/docs/services/apiconnect?topic=apiconnect-managing_apis#stage_publish_lb_app_managing_apis).
 
 1. Klicken Sie in der Benutzerschnittstelle von API Manager auf **Hinzufügen** > **Katalog**. Das Fenster **Katalog hinzufügen** wird angezeigt.
 

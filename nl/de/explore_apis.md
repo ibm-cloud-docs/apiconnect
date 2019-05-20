@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
-lastupdated: "2017-07-11"
+lastupdated: "2017-09-05"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -22,7 +28,9 @@ die in Ihrer {{site.data.keyword.Bluemix_short}}-Organisation für die gemeinsam
 
 3. Um eine API zu abonnieren, klicken Sie auf ein API-Produkt.
 Das Developer Portal wird geöffnet und Sie können einen Plan abonnieren, um auf
-eine API zuzugreifen.
+eine API zuzugreifen. 
+
+  **Hinweis**: Wenn der von Ihnen ausgewählte Plan kostenpflichtig ist, müssen Sie eine Kreditkartennummer für Ihre Organisation angeben. Dazu müssen Sie über Berechtigungen als Eigner verfügen.
 
 ## APIs in Developer Portal anzeigen und testen
 {: #view_test_apis_dev_port}
@@ -76,6 +84,8 @@ Das Dialogfeld 'Diesen Plan verwenden' wird angezeigt.
 5. Wählen Sie die Anwendung aus, die Sie mit diesem Plan verwenden möchten, und klicken Sie
 anschließend auf **Speichern**.
 Die Anwendungsdetails werden angezeigt.
+
+  **Hinweis**: Wenn der von Ihnen ausgewählte Plan kostenpflichtig ist, müssen Sie eine Kreditkartennummer für Ihre Organisation angeben. Dazu müssen Sie über Berechtigungen als Eigner verfügen.
 
 6. Um die Operationen für die APIs anzuzeigen, die in den von der Anwendung abonnierten Plänen
 enthalten sind, klicken Sie auf den Namen der API.

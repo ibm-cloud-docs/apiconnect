@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,12 +17,13 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # APIs importieren
+{: #importing_apis}
 
 Sie können die Swagger-Definitionsdatei verwenden, um eine REST-API hinzuzufügen.
 {:shortdesc}
 
 ## Voraussetzungen
-{: #prereq_import_swagger}
+{: #prereq_import_swagger_importing_apis}
 
 Stellen Sie vor Beginn sicher, dass Ihre Datei der Version 2.0 der Swagger-Spezifikation
 entspricht. Die Datei kann im JSON-Format oder im YAML-Format vorliegen.
@@ -53,7 +60,7 @@ Nach dem Importieren wird die API-Definition in der Liste der API-Definitionen i
 Als Nächstes können Sie Ihre API-Definition bearbeiten wie jede andere REST-API-Definition.
 
 ## APIs aus IBM Integration Bus importieren
-{: #tut_import_iib_apic}
+{: #tut_import_iib_apic_importing_apis}
 
 Mithilfe dieses Lernprogramms können Sie REST-APIs, die Sie mit IBM Integration Bus erstellen, in {{site.data.keyword.apiconnect_full}} importieren, wodurch sich deren Verwaltung und Veröffentlichung vereinfachen lässt. 
 {: shortdesc}
@@ -69,14 +76,14 @@ In der folgenden Liste sind einige Vorteile der Verwaltung Ihrer APIs in {{site.
 * Sie können die Anzahl der Aufrufe Ihrer API steuern.
 * Sie können mehrere Versionen einer API pflegen.
 
-Weitere Vorteile finden Sie unter [APIs verwalten](managing_apis.html).
+Weitere Vorteile finden Sie unter [APIs verwalten](/docs/services/apiconnect?topic=apiconnect-managing_apis).
 
 Führen Sie die folgenden Schritte aus, um eine REST-API in IBM Integration Bus zu erstellen
 und sie in {{site.data.keyword.apiconnect_short}} zu
 importieren:
 1. Erstellen Sie die REST-API mithilfe von IBM Integration Bus. Einschränkung: Sie können eine REST-API nur mit dem IBM Integration Toolkit erstellen; dieses Toolkit wird mit der installierten Version von IBM Integration Bus bereitgestellt.
 	1. Erstellen Sie eine REST-API mithilfe von IBM Integration
-Toolkit. Weitere Informationen zur Durchführung der Tasks zur Erstellung einer REST-API mit IBM Integration Bus finden Sie im IBM Knowledge Center unter [Integrationslösungen mithilfe von REST-APIs entwickeln ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bi12016_.htm){: new_window}.
+Toolkit. Weitere Informationen zur Durchführung der Tasks zur Erstellung einer REST-API mit IBM Integration Bus finden Sie im IBM Knowledge Center unter [Integrationslösungen mithilfe von REST-APIs entwickeln ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bi12016_.htm){: #new_window}.
 		
 	2. Öffnen Sie den Assistenten zum Erstellen einer REST-API; wählen Sie hierfür **Datei** > **Neu** > **REST-API** aus.
 		
@@ -109,7 +116,7 @@ Ihrem Integrationsablauf zugewiesen hat. Wählen Sie **Vollständige URL anzeige
 6. Kopieren Sie die vollständige URL für diese Operation in die Zwischenablage. Diese URL ist für die Konfiguration der API zur Verwendung in {{site.data.keyword.apiconnect_short}} erforderlich. Wenn Sie die Basisauthentifizierung aktiviert haben, müssen Sie außerdem den zugewiesenen Benutzernamen und das Kennwort notieren.
 
 ### IBM Integration Bus in API Connect integrieren
-{: #integrateiibapic}
+{: #integrateiibapic_importing_apis}
 
 1. Importieren Sie die Swagger-Datei, die dem REST-API-Projekt in IBM Integration Toolkit zugeordnet ist, in den {{site.data.keyword.apiconnect_short}}-Service. 
 	1. Melden Sie sich am {{site.data.keyword.apiconnect_short}} {{site.data.keyword.Bluemix_notm}}-Service an.
@@ -134,14 +141,15 @@ Ihrem Integrationsablauf zugewiesen hat. Wählen Sie **Vollständige URL anzeige
 	5. Wählen Sie **Aufrufen** aus.
 	6. Stellen Sie sicher, dass Sie von der API die erwartete Antwort erhalten. 
 	
-Wurde die API-Definition importiert und integriert, können Sie die APIs so verwalten und regeln wie Sie es mit anderen REST-API-Definitionen tun. Weitere Informationen zu den APIs finden Sie in [APIs verwalten](managing_apis.html).
+Wurde die API-Definition importiert und integriert, können Sie die APIs so verwalten und regeln wie Sie es mit anderen REST-API-Definitionen tun. Weitere Informationen zu den APIs finden Sie in [APIs verwalten](/docs/services/apiconnect?topic=apiconnect-managing_apis).
 
 ## Mit IBM App Connect Professional erstellte APIs in IBM API Connect veröffentlichen
+{: #publish_importing_apis}
 
 Mithilfe dieses Lernprogramms können Sie REST-APIs, die Sie mit IBM App Connect Professional erstellen, in {{site.data.keyword.apiconnect_full}} veröffentlichen und verwalten.
 
 ### Voraussetzungen
-{: #prereq_pub_api_appconn}
+{: #prereq_pub_api_appconn_importing_apis}
 
 Sie benötigen gültige Konten für IBM App Connect
 Professional on Cloud und für {{site.data.keyword.apiconnect_short}}, um dieses Lernprogramm auszuführen. Stellen Sie sicher,
@@ -158,14 +166,14 @@ In der folgenden Liste sind einige Vorteile der Verwaltung Ihrer APIs in {{site.
 - Sie können die Anzahl der Aufrufe Ihrer API steuern.
 - Sie können mehrere Versionen einer API pflegen.
 
-Weitere Vorteile finden Sie unter [APIs verwalten](managing_apis.html).
+Weitere Vorteile finden Sie unter [APIs verwalten](/docs/services/apiconnect?topic=apiconnect-managing_apis).
 Führen Sie die folgenden Schritte aus, um eine REST-API in IBM App Connect Professional
 zu erstellen und diese in {{site.data.keyword.apiconnect_short}}
 zu veröffentlichen:
 
 1. Erstellen Sie die REST-API mit IBM App
 Connect Professional.
-  - Melden Sie sich mit Ihrer IBMid an der [Web-Management-Konsole für App Connect Professional ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://appconnect.ibmcloud.com/professional/){:new_window} an. Weitere Informationen zur Durchführung der Tasks zur Erstellung einer REST-API mit der Web-Management-Konsole für IBM App Connect Professional finden Sie in [Informationen zu den Einstellungen für die Managementkonsole![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window} im IBM Knowledge Center.
+  - Melden Sie sich mit Ihrer IBMid an der [Web-Management-Konsole für App Connect Professional ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud/app-connect){:new_window} an. Weitere Informationen zur Durchführung der Tasks zur Erstellung einer REST-API mit der Web-Management-Konsole für IBM App Connect Professional finden Sie in [Informationen zu den Einstellungen für die Managementkonsole![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS3LC4_7.5.2.0/com.ibm.wci.appliance.doc/About_the_WMC/consoleSettings.html){:new_window} im IBM Knowledge Center.
   - Wählen Sie die Registerkarte für die Produktion aus, falls diese nicht bereits ausgewählt ist.
   - Wählen Sie im Navigationsfenster **Repository** > **Konfigurationen** aus.
   - Wählen Sie in der Projektkonfigurationsanzeige das Projekt aus, das Sie in {{site.data.keyword.apiconnect_short}} veröffentlichen möchten.  Die Konfigurationsdetails des zu veröffentlichenden Projekts werden angezeigt.
@@ -213,6 +221,7 @@ Im Standardbrowser wird eine neue Browserregisterkarte geöffnet, auf der die AP
 Ordnen Sie die IBM App Connect-API {{site.data.keyword.apiconnect_short}} zu.
 
 #### Swagger-API-Definition importieren
+{: #import_sw_importing_apis}
 
 Führen Sie die folgenden Schritte aus, um die Swagger-Datei, die dem REST-API-Projekt in IBM App Connect zugeordnet ist, in den {{site.data.keyword.apiconnect_short}}-Service zu importieren:
 
@@ -239,7 +248,7 @@ Konfigurationseinstellungen zu modifizieren.
 8. Konfigurieren Sie die Einstellung 'host/basePath' für das URL-Feld mit den folgenden Informationen:
 
 - **Hostname**: Einstellung, die von der jeweiligen Cloudinstanz abhängig ist. Weitere Informationen zu dieser Einstellung finden Sie in
-[IBM App Connect Professional ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://provide.castiron.ibmcloud.com){:new_window}.
+[IBM App Connect Professional ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SS3LC4_7.5.2.0/mapfiles/ic_home.html){:new_window}.
 
 - **Basispfad**: Pfad, den Sie im Anforderungshinweis 'httpReceive' in der App Connect Professional-Orchestrierung angeben.
 
@@ -247,6 +256,7 @@ Konfigurationseinstellungen zu modifizieren.
 die Sie für App Connect Professional verwenden, hinzu und speichern Sie sie.
 
 #### API testen
+{: #test_importing_apis}
 
 Führen Sie die folgenden Schritte aus, um die API zu testen:
 
@@ -258,6 +268,6 @@ Führen Sie die folgenden Schritte aus, um die API zu testen:
 6. Stellen Sie sicher, dass Sie von der API die erwartete Antwort erhalten.
 
 Wurde die API-Definition importiert und integriert, können Sie die APIs
-so verwalten und regeln wie Sie es mit anderen REST-API-Definitionen tun. Weitere Informationen zu den APIs finden Sie in [APIs verwalten](managing_apis.html).
+so verwalten und regeln wie Sie es mit anderen REST-API-Definitionen tun. Weitere Informationen zu den APIs finden Sie in [APIs verwalten](/docs/services/apiconnect?topic=apiconnect-managing_apis).
 
 

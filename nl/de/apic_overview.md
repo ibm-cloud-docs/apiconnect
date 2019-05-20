@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-18"
+lastupdated: "2017-09-14"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
 
 ---
 
@@ -14,11 +18,12 @@ lastupdated: "2017-07-18"
 {:pre: .pre}
 
 # Informationen zu IBM API Connect
+{: #about_apic_overview}
 
 Mit dem Service {{site.data.keyword.apiconnect_full}} können Sie
 in kurzer Zeit APIs und Mikroservices erstellen, die auf Node.js und Java-Laufzeitumgebungen basieren. Anschließend können Sie
 die erstellten APIs mit geschäftsrelevanten Steuerelementen verwalten, indem Sie verschiedene
-Sicherheitsstufen, Sichtbarkeitseinstellungen und Quotenbegrenzungen für die gemeinsame Nutzung der APIs mit Anwendungsentwicklern festlegen. Darüber hinaus stellt der Service {{site.data.keyword.apiconnect_short}}
+Sicherheitsstufen, Sichtbarkeitseinstellungen, Abrechnungspläne und Quotenbegrenzungen für die gemeinsame Nutzung der APIs mit Anwendungsentwicklern festlegen. Darüber hinaus stellt der Service {{site.data.keyword.apiconnect_short}}
 Tools zum Umgestalten und Erweitern Ihres Geschäfts anhand von Rückschlüssen aus detaillierten Analysen
 mit strukturierten gefilterten Suchprozessen bereit.
 
@@ -32,6 +37,7 @@ data="https://www.youtube.com/v/lmxyiNMER5Y?version=3&amp;hl=en_US">
 </object>
 
 ## API-Erstellung
+{: #creation_apic_overview}
 
 Mit {{site.data.keyword.apiconnect_short}} können Sie APIs aus Swagger-Definitionen
 importieren oder mithilfe einer Proxy-URL bzw. durch Zusammenstellen von Daten aus HTTP-Datenquellen
@@ -68,30 +74,36 @@ Die LoopBack-App wird in der {{site.data.keyword.Bluemix_short}}-Laufzeit Ihrer 
 
 <img src="images/Deployed.png" alt="Diagramm, in dem dargestellt wird, an welcher Position die LoopBack-App, die API und das Produkt bereitgestellt werden."/>
 
-Weitere Informationen zu den Tasks, die zum Erstellen von APIs erforderlich sind, finden Sie in [APIs erstellen](creating_apis.html).
+Weitere Informationen zu den Tasks, die zum Erstellen von APIs erforderlich sind, finden Sie in [APIs erstellen](/docs/services/apiconnect?topic=apiconnect-creating_apis).
 
 ## Übersicht über API-Verwaltung
 
-Nachdem ein Produkt bereitgestellt und veröffentlicht wurde, können Sie mit API Manager die Sicherheit, die Quotenbegrenzungen und die Richtlinien verwalten und das Produkt anschließend in einem Developer Portal veröffentlichen.
+Nachdem ein Produkt bereitgestellt und veröffentlicht wurde, können Sie mit API Manager die Sicherheit, die Quotenbegrenzungen, die Richtlinien und die Abrechnungsinformationen verwalten und das Produkt anschließend in einem Developer Portal veröffentlichen.
 
-Ein Produkt enthält einen Plan, der wiederum eine API beinhaltet, wie im folgenden Diagramm dargestellt.
+Ein Produkt enthält einen Plan, der wiederum mindestens eine API beinhaltet, wie im folgenden Diagramm dargestellt.
 
 <img src="images/Product.png" alt="Diagramm des Inhalts eines Produkt"/>
 
 ### Pläne
+{: #plans_apic_overview}
 
 Eine API, die für einen Kunden bereitgestellt werden soll, muss in einem Plan enthalten sein. Pläne ermöglichen das Bereitstellen unterschiedlicher Produktangebote. Dabei können Pläne APIs gemeinsam nutzen; ob eine Genehmigung für das Abonnement erforderlich ist, hängt jedoch von dem Plan selbst ab. Darüber hinaus können Sie mithilfe von Plänen Quotenbegrenzungen durchsetzen oder mithilfe von Operationen in den APIs eines Plans die Quotenbegrenzung für diesen Plan außer Kraft setzen.
 
+In Plänen können auch Abrechnungsaufwände für Kunden angegeben werden, die Ihre Produkte nutzen. Sie können beispielsweise drei unterschiedliche Pläne für ein einziges Produkt definieren. Jeder Plan kann unterschiedliche Kosten für ein Abonnement und eine unterschiedliche Quotenbegrenzung aufweisen, mit unterschiedlichen Kunden als Ziel.  
+
 ### Produkte
+{: #products_apic_overview}
 
 Pläne und APIs werden in Produkten zusammengefasst. Produkte ermöglichen das Verwalten der Verfügbarkeit und Sichtbarkeit von APIs und Plänen. Mit API Designer können Sie Ihr Produkt erstellen, bearbeiten und bereitstellen. Verwenden Sie API Manager, um den Lebenszyklus Ihres Produkts zu verwalten.
 
 Das folgende Diagramm veranschaulicht die Beziehungen zwischen Produkten, Plänen und APIs. Dabei wird deutlich, dass Pläne nur einem Produkt zugeordnet sind, sie können jedoch verschiedene APIs für andere Pläne beinhalten und APIs mit Plänen aus jedem beliebigen Produkt gemeinsam nutzen. In der Abbildung wird die Hierarchie der Produkte, Pläne und APIs dargestellt. <img src="images/plan_product_hierarchy.png" alt="Abbildung der Hierarchie der Produkte, Pläne und APIs."/>
 
-Pläne können nur innerhalb von Produkten erstellt werden und diese Produkte werden dann in einem Katalog veröffentlicht. In einem Lebenszyklusmanager kann die Verfügbarkeit und Sichtbarkeit von APIs  und Plänen mit API Manager gesteuert werden. Anschließend kann der Kunde im Developer Portal einen der für ihn verfügbaren Pläne abonnieren. Die Verfügbarkeit wird in API Manager festgelegt. Der Benutzer kann lediglich einen Plan aus
-einem bestimmten Produkt abonnieren. Mehrere Pläne innerhalb eines Produkts können nützlich sein, um ähnliche Zielsetzungen mit verschiedenen Leistungsanforderungen zu realisieren. Beispielsweise können Sie einen "Demoplan" verwenden, der eine bestimmte API zur Verfügung stellt, und einen "Vollständigen Plan", der mehrere APIs zur Verfügung stellt.
+Pläne können nur innerhalb von Produkten erstellt werden und diese Produkte werden dann in einem Katalog veröffentlicht. In einem Lebenszyklusmanager kann die Verfügbarkeit und Sichtbarkeit von APIs  und Plänen mit API Manager gesteuert werden. Anschließend kann der Kunde im Developer Portal einen der für ihn verfügbaren Pläne abonnieren. Die Verfügbarkeit wird in API Manager festgelegt. Falls es sich um einen kostenpflichtigen Plan handelt, muss der Kunde beim Abonnementabschluss Kreditkarteninformationen angeben. Der Benutzer kann lediglich einen Plan aus
+einem bestimmten Produkt abonnieren. Mehrere Pläne innerhalb eines Produkts können nützlich sein, um ähnliche Zielsetzungen mit verschiedenen Leistungsanforderungen und Kosten zu realisieren. Beispielsweise können Sie einen "Demoplan" verwenden, der eine bestimmte API zur Verfügung stellt, und einen "Vollständigen Plan", der mehrere APIs zur Verfügung stellt.
 
 Pläne können jedoch nicht nur steuern, welche APIs ein Kunde nutzen kann, sondern auch Quotenbegrenzungen umsetzen. Eine Quotenbegrenzung kann als Standardrate für einen ganzen Plan implementiert werden, oder um bestimmte Operationen einer API innerhalb des Plans von der Quotenbegrenzung auszuschließen. Verschiedene Pläne können über verschiedene Quotenbegrenzungen verfügen, sowohl zwischen Operationen als auch für die Gesamtbegrenzung. Auf diese Weise können verschiedene Servicestufen für Kunden bereitgestellt werden. Beispiel: Für einen "Demoplan" kann eine Quotenbegrenzung von 10 Aufrufen pro Minute gelten, während ein "Vollständiger Plan" bis zu 1.000 Aufrufe pro Minute zulässt.
+
+Schlussendlich können unterschiedliche Pläne für die Zuweisung von Abrechnungsaufwänden verwendet werden. Ein Plan kann als gebührenfreier Plan oder als kostenpflichtiger Plan festgelegt werden. Kostenpflichtige Pläne können in Verbindung mit Quotenbegrenzungen verwendet werden, um für Kunden unterschiedliche Servicestufen festzulegen. Beispiel: Für einen "Demoplan" kann eine Quotenbegrenzung von 10 Aufrufen pro Minute zu einem Preis von 5,00 $ pro Monat gelten, während ein "Vollständiger Plan" bis zu 1.000 Aufrufe pro Minute zu einem Preis von 20,00 $ pro Monat zulässt.
 
 **Hinweis:** Durch das Anwenden einer Quotenbegrenzung auf Planebene wird eine Standardquotenbegrenzung erstellt, die für jede Operation in dem betreffenden Plan gilt. Wenn Sie bestimmte Quotenbegrenzungen für bestimmte Operationen festlegen möchten, müssen Sie diese Begrenzungen innerhalb der Operationen angeben, damit diese Einstellungen die Begrenzung auf Planebene außer Kraft setzen.
 
@@ -99,15 +111,17 @@ IBM API Connect unterstützt auch die Implementierung von mehreren Produktversio
 
 **Hinweis:** Die Version eines Produkts unterscheidet sich von den Versionen der APIs, die in den zugehörigen Plänen enthalten sind. Für Pläne können keine spezifischen Versionen erstellt werden; sie verwenden die Version des übergeordneten Produkts.
 
-Weitere Informationen zu den Tasks, die zum Verwalten von APIs erforderlich sind, finden Sie in [APIs verwalten](managing_apis.html).
+Weitere Informationen zu den Tasks, die zum Verwalten von APIs erforderlich sind, finden Sie in [APIs verwalten](/docs/services/apiconnect?topic=apiconnect-managing_apis).
 
 ### Kataloge
+{: #catalogs_apic_overview}
 
 Produkte müssen in einem Katalog bereitgestellt und anschließend in Developer-Organisationen veröffentlicht werden, damit sie für Anwendungsentwickler zur Verfügung gestellt werden können. In {{site.data.keyword.apiconnect_short}} können Sie mehrere Kataloge erstellen. Kataloge sind nützlich, um Produkte und APIs zum Testen voneinander zu trennen, bevor Sie sie Developer-Organisationen verfügbar machen.
 
 Ein Katalog ist ein Bereitstellungsziel und verhält sich wie eine logische Partition des Gateway und des Developer Portal. Die URL für API-Aufrufe und für das Developer Portal ist für einen bestimmten Katalog spezifisch. In einer Standardkonfiguration verwendet eine API-Provider-Organisation einen Entwicklungskatalog zum Testen von APIs, die sich in der Entwicklung befinden, und einen Produktionskatalog für das Hosten von APIs, die für eine umfassende Verwendung bereit sind. Ein allgemeiner Ansatz ist das Vorhandensein einer Entwicklungscloud mit einem Entwicklungskatalog, einige Testkataloge und eine Produktionscloud mit einem eigenen Testkatalog.
 
 #### Katalogeinstellungen
+{: #cat_set_apic_overview}
 
 Sie können die folgenden Einstellungen auf einen Katalog anwenden:
 
@@ -117,9 +131,10 @@ Sie können die folgenden Einstellungen auf einen Katalog anwenden:
 
 - **Standard**: Sie können einen Ihrer Kataloge als Standardkatalog festlegen. Dann können Aufrufe an die APIs, die in diesem Katalog veröffentlicht sind, eine kürzere URL verwenden, die nicht den Katalognamen enthält.
 
-Weitere Informationen zur Verwendung des Developer Portal finden Sie in [Developer Portal: Erkennen und Verwenden von APIs](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.dita).
+Weitere Informationen zur Verwendung des Developer Portal finden Sie in [Erkennen und Verwenden von APIs ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.devportal.doc/capim_devportal_overview.dita){: #new_window}.
 
 ### Syndikation
+{: #syn_apic_overview}
 
 Mit der Syndikationsfunktion von {{site.data.keyword.apiconnect_full}}
 können Sie Ihre Kataloge in Bereiche aufteilen. Jeder Bereich wird von einem anderen
@@ -138,4 +153,4 @@ Beispielsweise kann ein Entwickler im Team 'Flights' nur APIs im Bereich 'Flight
 **Hinweis:** Bereiche sind in einem Katalog standardmäßig inaktiviert. Sie können Bereiche durch das Ändern
 der Katalogeinstellungen aktivieren.
 
-Informationen zum Aufteilen eines Katalogs finden Sie in [Katalog in Bereiche aufteilen](create_catalog.html#apic_spaces).
+Informationen zum Aufteilen eines Katalogs finden Sie in [Katalog in Bereiche aufteilen](/docs/services/apiconnect?topic=apiconnect-create_catalog#apic_spaces).
