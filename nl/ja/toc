@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="apiconnect" audience="service" arm="327" href="/docs/services/apiconnect/getting-started.html"}
+{: .toc subcollection="apiconnect" service-name="API Connect" audience="service" arm="327" href="/docs/services/apiconnect?topic=apiconnect-getting-started" path="services/apiconnect"}
 API Connect
 
     
@@ -9,7 +9,7 @@ API Connect
     getting-started.md
     
     {: .topicgroup}
-    Getting started tutorials
+    入門チュートリアル
         tutorials/tut_create_api_node.md
         tutorials/tut_rest_landing.md
             tutorials/tut_import_openapi_rest_bm.md

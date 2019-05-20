@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2017-12-15"
 
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 
@@ -19,24 +23,24 @@ lastupdated: "2017-12-15"
 デベロッパーズ・ツールキットをダウンロードし、コマンド・ライン・インターフェース (CLI) または API Designer を使用して、API を作成できます。
 
 ## デベロッパーズ・ツールキット CLI
-{: #dev_tk_cli notoc}
+{: #dev_tk_cli_creating_apis notoc}
 
 デベロッパーズ・ツールキットで提供されるコマンド・ライン・インターフェースを使用して、API を {{site.data.keyword.apiconnect_long}} に公開することができます。
 API を製品に含めた後にその製品を公開することで、API を公開します。 ローカル・ファイル・システムに YAML 定義ファイルを作成して検証することで、API と製品を定義します。 その後、ツールキットのコマンドを使用して、{{site.data.keyword.apiconnect_long}} と対話式に操作を実行できます。
 
 ## API Designer
-{: #designer notoc}
+{: #designer_creating_apis notoc}
 
 API Designer は、デベロッパーズ・ツールキット内のオフラインのグラフィカル・ユーザー・インターフェースです。これは、API の作成および構成のための機能を提供します。
 API Designer は、コマンド・ライン・インターフェースから edit コマンドを使用することで実行されます。 edit コマンドが使用されると、API Designer は、デフォルト・ブラウザーで開くか、そのコマンドを実行すると表示されるローカル・ホスト・ポートからアクセスできます。
 
 ## デベロッパーズ・ツールキットのインストール
-{: #install_dev_tk}
+{: #install_dev_tk_creating_apis}
 
 ### 前提条件
-{: #prereq_install_dev_tk}
+{: #prereq_install_dev_tk_creating_apis}
 
-始めに、ツールキットを使用するマシンに [Node.js ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://nodejs.org/en/){:new_window} をインストールし、
+始めに、ツールキットを使用するマシンに [Node.js ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://nodejs.org/en/){: #new_window} をインストールし、
 `node` が `PATH` にあることを確認する必要があります。
 
 デベロッパーズ・ツールキットをインストールすると、以下の項目がインストールされます。
@@ -71,59 +75,46 @@ API Designer は、コマンド・ライン・インターフェースから edi
 	{: codeblock}
 	
 ## LoopBack コネクターのインストール
-{: #install_lb_conn}
+{: #install_lb_conn_creating_apis}
 
 LoopBack データ・ソースを使用して、データベースなどのバックエンド・システム内のデータにアクセスするには、その前に、データ・ソース・コネクターをインストールする必要があります。 メモリー内のコネクターと E メール・コネクターは LoopBack に組み込まれているため、インストールする必要はありません。
 
 ### 前提条件
-{: #prereq_install_lb_conn}
+{: #prereq_install_lb_conn_creating_apis}
 
-Oracle、DB2、および SQLLite の各コネクターでは、バイナリー拡張子をビルドしてインストールするために、C コンパイラー・ツールが必要です。 次の表に記述されているように、正確な要件はオペレーティング・システムによって異なります。
+Oracle、DB2、および SQLLite の各コネクターでは、バイナリー拡張子をビルドしてインストールするために、C コンパイラー・ツールが必要です。 次のリストに記述されているように、正確な要件はオペレーティング・システムによって異なります。
 
-<table summary="" id="apic_028__table_pre_reqs" class="defaultstyle style-scope doc-content">
-<caption>表 1. オペレーティング・システム固有のインストール要件</caption>
-<thead>
-<tr>
-<th style="width: 33.3%" id="th_d70e208" class="thleft style-scope doc-content">Windows</th>
-<th style="width: 33.3%" id="th_d70e210" class="thleft style-scope doc-content">Linux</th>
-<th style="width: 33.3%" id="th_d70e212" class="thleft style-scope doc-content">MAC OS X</th>
-</tr>
-</thead>
-<tbody >
-<tr class="style-scope doc-content doc-tr-odd">
-<td style="width: 33.3%" > [Microsoft .NET Framework 4 ![外部リンク・アイコン](../../icons/launch-glyph.svg "External link icon")](https://www.microsoft.com/en-us/download/details.aspx?id=17851)</td>
-<td style="width: 33.3%">Python v2.7 (v3.x はサポートされません)</td>
-<td style="width: 33.3%" > [Python Releases for Mac OS X ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.python.org/downloads/mac-osx/)</td>
-</tr>
-<tr><td style="width: 33.3%" > [Visual Studio ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.visualstudio.com/downloads/download-visual-studio-vs)</td>
-<td style="width: 33.3%">
-<code>make</code>
-</td>
-<td style="width: 33.3%" > [Xcode ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716)</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" > [Python v2.7.10 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.python.org/downloads/release/python-2710/)</td>
-<td style="width: 33.3%">C/C++ コンパイラー・ツールチェーン (例えば、GCC バージョン 4.2 以降)。 </td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-<tr><td style="width: 33.3%" > [Microsoft Windows SDK for Windows 7 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279)</td>
-<td style="width: 33.3%">Debian または Debian 派生ディストリビューション (Ubuntu、Mint など) では、以下のコマンドを使用します。
+**Linux**
+- Python v2.7 (v3.x はサポートされません)
+
+- <code>make</code>
+
+- C/C++ コンパイラー・ツールチェーン (例えば、GCC バージョン 4.2 以降)。
+
+- Debian または Debian 派生ディストリビューション (Ubuntu、Mint など) では、以下のコマンドを使用します。
 <pre class="codeblock style-scope doc-content"><code>apt-get install build-essential</code></pre>
-</td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 33.3%" >npm バージョン 3。次の注を参照してください。</td>
-<td style="width: 33.3%">&nbsp;</td>
-<td style="width: 33.3%" >&nbsp;</td>
-</tr>
-</tbody>
-</table>
 
-**注:** Windows インストール済み環境の場合:
+**Mac OS X**
+- [Python Releases for Mac OS X ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.python.org/downloads/mac-osx/){: #new_window}
 
-- Visual Studio Enterprise を購入しない場合は、Visual Studio Community を使用してください。 インストーラーを実行し、「プログラミング言語」の下の「Visual C++」にチェック・マークを付けて、デフォルトのインストール場所を受け入れます。
+- [Xcode ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716){: #new_window}
 
-- Node.js およびネイティブ・モジュールの 64 ビット・ビルドの場合は、Windows&trade; 7 の 64 ビット SDK も必要です。 インストールが失敗した場合は、最初にインストールした C++ 2010 x64&amp;x86 再配布可能パッケージをアンインストールしてみてください。 64 ビット・コンパイラーがインストールされていないというエラーが表示された場合は、Windows&trade; SDK 7.1 用のコンパイラー更新も必要である可能性があります。
-- 以下のコマンドを入力して、npm バージョン 3 をインストールします。
+**Windows**
+- [Microsoft .NET Framework 4 ![外部リンク・アイコン](../icons/launch-glyph.svg "External link icon")](https://www.microsoft.com/en-us/download/details.aspx?id=17851){: #new_window}
+
+- [Visual Studio ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.visualstudio.com/downloads/download-visual-studio-vs){: #new_window}
+
+- [Python v2.7.10 ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.python.org/downloads/release/python-2710/){: #new_window}
+
+- [Microsoft Windows SDK for Windows 7 ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279){: #new_window}
+
+- npm バージョン 3: 次の注を参照してください。
+
+**注**: Visual Studio Enterprise を購入しない場合は、Visual Studio Community を使用してください。 インストーラーを実行し、「プログラミング言語」の下の「Visual C++」にチェック・マークを付けて、デフォルトのインストール場所を受け入れます。
+
+Node.js およびネイティブ・モジュールの 64 ビット・ビルドの場合は、Windows&trade; 7 の 64 ビット SDK も必要です。 インストールが失敗した場合は、最初にインストールした C++ 2010 x64&amp;x86 再配布可能パッケージをアンインストールしてみてください。 64 ビット・コンパイラーがインストールされていないというエラーが表示された場合は、Windows&trade; SDK 7.1 用のコンパイラー更新も必要である可能性があります。
+
+以下のコマンドを入力して、npm バージョン 3 をインストールします。
   ```
   npm install -g npm
   ```
@@ -145,10 +136,10 @@ API Designer を使用している場合は、新しいシェル・ウィンド�
 npm install --save <connector-package>
 ```
 {: codeblock}
-ここで、`<connector-package>` は、LoopBack コネクターの npm パッケージの名前 (次の表を参照) です。
+ここで、`<connector-package>` は、LoopBack コネクターの npm パッケージの名前 (次の表 1 を参照) です。
 
 <table summary="" id="apic_connectors_table_pre_reqs" class="defaultstyle style-scope doc-content">
-<caption>表 3. LoopBack コネクター</caption>
+<caption>表 1. LoopBack コネクター</caption>
 <thead>
 <tr class="style-scope doc-content doc-tr-even">
 <th style="width: 50%" id="th_new_d70e1489" class="thleft style-scope doc-content">データ・ソース</th>
@@ -192,14 +183,15 @@ npm install --save <connector-package>
 </tbody>
 </table>
 
+
 ## CLI を使用した LoopBack API の作成
-{: #create_lb_api}
+{: #create_lb_api_creating_apis}
 
 以下の手順では、コマンド・ライン・インターフェースを使用して LoopBack&reg; API を作成する方法を説明します。
 
 
 ### 前提条件
-{: #prereq_create_lb_api}
+{: #prereq_create_lb_api_creating_apis}
 
 始めに、使用するカタログのカタログ ID を手許に用意します。 カタログ ID を取得するには、以下の手順を実行します。  
 
@@ -234,7 +226,7 @@ CLI で LoopBack API を作成する場合は、以下の手順を実行しま�
   ```
     
     ツールで、プロジェクトを作成するディレクトリーの名前を入力するように求めるプロンプトが出されます。
-```
+    ```
     ? Enter name of the directory to contain the project: (<project directory name>)
     ```
     
@@ -251,13 +243,13 @@ CLI で LoopBack API を作成する場合は、以下の手順を実行しま�
 この処理にはある程度時間がかかることがあります。
 
 5. モデルを作成するには、その前に、現行作業ディレクトリーがプロジェクトの最上位ディレクトリーになっていることを確認する必要があります。 これを行うには、以下のコマンドを入力します。
-```
+    ```
     cd <project directory name>
     ```
     {: codeblock}
 
 6. モデルを作成するには、以下のコマンドを入力します。
-```
+    ```
     apic create --type model
     ```
     {: codeblock}
@@ -271,12 +263,12 @@ CLI で LoopBack API を作成する場合は、以下の手順を実行しま�
 7. モデルの名前を入力します。
     一般的に、モデル名では任意の英数字、ダッシュ、および下線を使用できます。
     プロジェクトに追加したすべてのデータ・ソースがリストされ、ツールにより、使用するデータ・ソースを選択するように求める以下のようなプロンプトが出されます。
-```
+    ```
     ? Select the data-source to attach item to: (Use arrow keys)
     ```
 
 8. 使用するデータ・ソースを選択して、**「Enter」**キーを押します。 以下のように、ツールで、モデルの基本クラスを選択するように求めるプロンプトが出されます。
-```
+    ```
     ? Select model's base class (Use arrow keys)
        Model
     < PersistedModel
@@ -287,7 +279,7 @@ CLI で LoopBack API を作成する場合は、以下の手順を実行しま�
       Checkpoint
     (Move up and down to reveal more choices)
     ```
-    各オプションについて詳しくは、[Using built-in models ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){:new_window} を参照してください。
+    各オプションについて詳しくは、[Using built-in models ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){: #new_window} を参照してください。
 
 9. 基本クラスを選択して、**「Enter」**キーを押します。 ツールで、モデルの REST API を公開するかどうかを選択するように求められます。
 ```
@@ -381,7 +373,7 @@ Install loopback-connector-<connector>?
 5. `Yes` を入力します。
 ツールにより、コネクターがインストールされます。
 
-注: Oracle コネクターを選択した場合、Oracle アプリを開始するには、{{site.data.keyword.Bluemix_notm}} で環境変数を設定する必要があります。 これを行うには、以下の手順を実行します。
+**注**: Oracle コネクターを選択した場合、Oracle アプリを開始するには、{{site.data.keyword.Bluemix_notm}} で環境変数を設定する必要があります。 これを行うには、以下の手順を実行します。
 
 1. {{site.data.keyword.Bluemix_notm}} UI で、**「コンピュート」**を選択します。
 
@@ -400,7 +392,7 @@ Install loopback-connector-<connector>?
 8. **「保存」**をクリックします。
 
 ### LoopBack プロジェクトのテスト
-{: #test_lb_proj}
+{: #test_lb_proj_creating_apis}
 
 LoopBack プロジェクトをテストするには、以下の手順を実行します。
 
@@ -429,7 +421,7 @@ Web ブラウザーを使用して API をロードする場合、ブラウザ�
 ```
 
 ### CLI から {{site.data.keyword.Bluemix_notm}} への LoopBack アプリケーションの公開
-{: #pub_lb_app_cli}
+{: #pub_lb_app_cli_creating_apis}
 
 コマンド・ラインから {{site.data.keyword.Bluemix_short}} に LoopBack アプリケーションを公開するには、以下の手順を実行します。
 
@@ -463,7 +455,7 @@ apic organizations -s <region>.apiconnect.ibmcloud.com
   ご使用の地域が分からない場合は、メニュー・バーの「{{site.data.keyword.avatar}}」アイコン <img src="images/i-avatar-icon.svg" alt="アバター・アイコン"/> をクリックして「アカウントとサポート」ウィジェットを開くと、地域フィールドで確認できます。
 7. 以下のコマンドを入力して、アプリケーションを {{site.data.keyword.Bluemix_notm}} に公開します。
 ```
-apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
+apic apps:publish –app <app> -o <org> -s <region>.apiconnect.ibmcloud.com
 ```
 ここで、
   * `<app>` は、アプリの名前です。
@@ -490,27 +482,26 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
     6. **「呼び出し」**をダブルクリックします。
     7. ステップ 7 で取得した値を使用して、以下のフィールドを更新します。
         - **呼び出し URL**: API ターゲット URL を挿入します。 セキュア・プロトコル HTTPS を指定する必要があります。 例えば、次のようになります。
-```
+        ```
         https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<Bluemix org>-<Bluemix space>.apic.<domain name>$(request.path)
         ```
         この値をメモしていなかった場合は、ステップ 7 で返された管理 URL にアクセスして取得できます。また、{{site.data.keyword.Bluemix_notm}} にログインし、アプリ情報を確認して取得することもできます。
-
         - **TLS プロファイル**: 「API 呼び出し TLS プロファイル」を挿入します。 例えば、次のようになります。
-```
+        ```
         client:Loopback-client
         ```
     8. **「保存」**をクリックして API を保存します。
 
 ## API Designer を使用した LoopBack API の作成
-{: #create_lb_api_design}
+{: #create_lb_api_design_creating_apis}
 
 以下の手順では、API Designer を使用して LoopBack API を作成する方法を説明します。
 {:shortdesc}
 
 ### 前提条件
-{: #prereq_create_lb_api_design}
+{: #prereq_create_lb_api_design_creating_apis}
 
-**注**: 以下の手順は、最新バージョンのデベロッパーズ・ツールキットを使用することを想定しています。 最新バージョンを確認するには、[npm ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.npmjs.com/package/apiconnect){:new_window} パッケージのページを参照してください。
+**注**: 以下の手順は、最新バージョンのデベロッパーズ・ツールキットを使用することを想定しています。 最新バージョンを確認するには、[npm ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.npmjs.com/package/apiconnect){: #new_window} パッケージのページを参照してください。
 
 最初に、CLI を使用して LoopBack プロジェクトを作成する必要があります。 これを行うには、以下の手順を実行します。
 
@@ -526,7 +517,7 @@ apic apps:publish –a <app> -o <org> -s <region>.apiconnect.ibmcloud.com
   ```
     
     ツールで、プロジェクトを作成するディレクトリーの名前を入力するように求めるプロンプトが出されます。
-```
+    ```
     ? Enter name of the directory to contain the project: (<project directory name>)
     ```
     
@@ -556,9 +547,9 @@ apic edit
 ```
     しばらくしてから、以下のメッセージが表示されます。
     ```
-        Express server listening on http://127.0.0.1:9000
+    Express server listening on http://127.0.0.1:9000
     ```
-        API Designer がデフォルトの Web ブラウザーで開きます。
+    API Designer がデフォルトの Web ブラウザーで開きます。
 
 2. ログイン・ページで、{{site.data.keyword.Bluemix_notm}} ID とパスワードを入力します。 **「サインイン」**をクリックします。
 
@@ -601,7 +592,7 @@ npm install --save <connector-package>
 **注:** メモリー内コネクターと E メール・コネクターは LoopBack に組み込まれているため、インストールする必要はありません。
 
 <table>
-<caption>表 3. LoopBack コネクター</caption>
+<caption>表 2. LoopBack コネクター</caption>
 <thead>
 <tr class="style-scope doc-content doc-tr-even">
 <th style="width: 50%" id="3rd_d70e1489" class="thleft style-scope doc-content">データ・ソース</th>
@@ -645,7 +636,7 @@ npm install --save <connector-package>
 </tbody>
 </table>
 
-詳しくは、[LoopBack Documentation - Building a connector ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){:new_window} を参照してください。
+詳しくは、[LoopBack Documentation - Building a connector ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){: #new_window} を参照してください。
 
 **注:** Oracle コネクターを選択した場合、Oracle アプリを開始するには、{{site.data.keyword.Bluemix_notm}} で環境変数を設定する必要があります。 これを行うには、以下の手順を実行します。
 
@@ -678,17 +669,17 @@ http://localhost:<4001/>Running
 {"started":"2017-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-次に、製品を作成する必要があります。 詳しくは、[製品の作成](managing_products.html#create_product)を参照してください。
+次に、製品を作成する必要があります。 詳しくは、[製品の作成](/docs/services/apiconnect?topic=apiconnect-managing_products#create_product_managing_products)を参照してください。
 **ヒント**: 新しいコマンド・プロンプトを開始する際には、必ず、現行作業ディレクトリーがプロジェクトの最上位ディレクトリーになっていることを確認する必要があります。 これを行うには、以下のコマンドを入力します。
 ```
 cd <project directory name>
 ```
 
 ## デベロッパーズ・ツールキットのアンインストール
-{: #uninstall_dev_tk}
+{: #uninstall_dev_tk_creating_apis}
 
 ### 前提条件
-{: #prereq_uninstall_dev_tk}
+{: #prereq_uninstall_dev_tk_creating_apis}
 
 始めに、以下のコマンドを入力して、ローカルで実行されているアプリをすべて停止する必要があります。
 ```

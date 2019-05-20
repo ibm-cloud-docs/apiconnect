@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2017-06-05"
 
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -13,6 +17,7 @@ lastupdated: "2017-06-05"
 {:pre: .pre}
 
 # 用語集
+{: #glossary_apic_glossary}
 
 これは、{{site.data.keyword.apiconnect_short}} で使用される用語とその定義を示す用語集です。
 

@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-24"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,6 +17,7 @@ lastupdated: "2017-10-24"
 {:pre: .pre}
 
 # カタログの構成
+{: #create_catalog}
 
 API Manager カタログを作成して構成できます。 カタログは、製品と API を開発者組織に提供する前にテストのために分離する場合に役に立ちます。
 API Manager に用意されているデフォルトの API URL を使用せずに済むように、カタログを構成する際にカスタム・ブランドを構成することもできます。
@@ -25,7 +32,7 @@ API Manager に用意されているデフォルトの API URL を使用せず�
 3.  **「表示名 (Display Name)」**フィールドに、新しいカタログの名前を入力します。
 
 4. **「名前」**フィールドに、URL のカタログ・セグメントを形成するテキストを入力します。
-	**注:** **「名前」**フィールドには、小文字の英数字 (a-z と 0-9)、またはハイフン文字 (-) のみを含めることができます。 名前の開始文字や終了文字としてハイフンを使用することはできません。
+	**注:** **「名前」**フィールドには、小文字の英数字 (a-z と 0-9)、またはハイフン文字 (-) のみを含めることができます。名前の開始文字や終了文字としてハイフンを使用することはできません。
 
 5. **「追加」**をクリックします。 カタログが作成され、ダッシュボードに表示されます。
 
@@ -41,13 +48,13 @@ API Manager に用意されているデフォルトの API URL を使用せず�
   4. **オプション**: **「エンドポイント」**をクリックして、以下のフィールドにデータを追加します。
         - **カスタム・ゲートウェイ URL**: 「カスタム・ゲートウェイ URL (Custom Gateway URL)」テキスト・フィールドに URL を入力します。 API Manager が生成したデフォルトの URL を使用せずに、{{site.data.keyword.apiconnect_short}} にデプロイされている API の URL のカスタム・ブランドを行う場合は、カスタム・ゲートウェイ URL を使用します。
         デフォルトでは、{{site.data.keyword.apiconnect_short}} ゲートウェイ URL は以下の形式です。
-```
+        ```
         https://gateway_cluster_hostname/organization_name/Catalog_name
         ```
         しかし、自社に適した URL (例えば `https://api.mycompany.com`) を指定してデフォルトをオーバーライドできます。 そうすると、開発者ポータルに表示されるすべての API エンドポイントに、指定した URL が反映されます。
 			**注:**
 		    - カスタムのホスト名およびドメインをデフォルトのゲートウェイ URL にマップする DNS 項目を構成する必要があります。
-		    - API のエンドポイントにカスタム・ゲートウェイ URL を反映させるには、API Connect ゲートウェイによって適用されるように API を構成しなければなりません。 詳細については、[Specifying an alternative host for an API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window} を参照してください。
+		    - API のエンドポイントにカスタム・ゲートウェイ URL を反映させるには、API Connect ゲートウェイによって適用されるように API を構成しなければなりません。 詳細については、[Specifying an alternative host for an API ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window} を参照してください。
 		    - 同じカスタム・ゲートウェイ URL を複数のカタログに適用しないでください。このようなシナリオでの動作は不明確です。
 				**ヒント**: API を呼び出すときに、API 要求の HTTP ホスト・ヘッダーに「カスタム・ゲートウェイ URL」フィールドで指定した値を設定することもできます。
 
@@ -58,7 +65,7 @@ API Manager に用意されているデフォルトの API URL を使用せず�
 
 	    このカタログでサード・パーティーのゲートウェイまたは外部ロード・バランサーを使用している場合は、このフィールドに URL を指定します。 そうすると、開発者ポータルに表示されるすべての API エンドポイントに、指定した URL が反映されます。 これらのエンドポイントは、サード・パーティーのゲートウェイまたはロード・バランサー上に存在し、API コンシューマーに公開される仮想アドレスを提示します。このアドレスは、ゲートウェイ上の API プロキシーまたは API アセンブリー・エンドポイントにマップされます。 カスタム API URL から派生したエンドポイントは、通常、実動開発者ポータルで公開されて、API のアドレスを公表します。
 
-	    **注:** カタログにカスタム API URL を指定すると、API の構成時に指定したホスト名より優先されます。 詳細については、[Specifying an alternative host for an API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){:new_window} を参照してください。
+	    **注:** カタログにカスタム API URL を指定すると、API の構成時に指定したホスト名より優先されます。 詳細については、[Specifying an alternative host for an API ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: #new_window} を参照してください。
 
 	    - **開発者ポータル API 呼び出しのホスト名**:
 	    「ポート API エンドポイント (Port API Endpoint)」ウィンドウ領域で、開発者ポータル API 呼び出しのホスト名を入力します。 入力するホスト名は、管理サービスのホスト名にすることができます。 開発者ポータルのコンテキスト内で開発者ポータル API にアクセスするには、開発者ポータル API 呼び出し用に基本ホスト名を構成しなければなりません。 このアクションにより、API Manager でホスト名をプロバイダー組織と開発者ポータル API 呼び出しのカタログにマッピングできるようになるため、ユーザーがそれらを取得して呼び出しに含める必要がなくなります。
@@ -66,7 +73,7 @@ API Manager に用意されているデフォルトの API URL を使用せず�
 7. **「保存」**アイコンをクリックします。
 
 ## カタログのパーティション化
-{: #apic_spaces}
+{: #apic_spaces_create_catalog}
 
 {{site.data.keyword.apiconnect_short}} のシンジケーション・フィーチャーを使用するには、シンジケーション機能を必要とするカタログ内でスペースを有効にする必要があります。
 
@@ -80,4 +87,4 @@ API Manager に用意されているデフォルトの API URL を使用せず�
 
 カタログでスペースが有効になり、「New Space」というデフォルトのスペースが作成されます。
 
-シンジケーションの使用について詳しくは、Knowledge Center のトピック、[Using syndication in IBM API Connect ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){:new_window} を参照してください。
+シンジケーションの使用について詳しくは、Knowledge Center のトピック、[Using syndication in IBM API Connect ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/capic_syndication_using.html){: #new_window} を参照してください。
