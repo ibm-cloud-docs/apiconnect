@@ -520,8 +520,8 @@ The following output is returned:
   ...building package for deploy
   ...uploading package
   Runtime published successfully.
-  Management URL: https://new-console.stage1.ng.bluemix.net/apps/3aa7087d-b454-4e13-bbc5-8228ebe00eef
-  API target urls: apiconnect-3aa7087d-b454-4e13-bbc5-8228ebe00eef.pszetousibmcom-dev.apic.stage1.mybluemix.net
+  Management URL: https://test.cloud.ibm.com/apps/3aa7087d-b454-4e13-bbc5-8228ebe00eef
+  API target urls: apiconnect-3aa7087d-b454-4e13-bbc5-8228ebe00eef.pszetousibmcom-dev.apic.test.cloud.ibm.com/
   API invoke tls-profile: client:Loopback-client
   ```
 
@@ -537,7 +537,7 @@ The following output is returned:
         - **Invoke URL**: Insert the API target URL. You must specify the secure protocol HTTPS. For
         example:
         ```
-        https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<Bluemix org>-<Bluemix space>.apic.<domain name>$(request.path)
+        https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<IBM Cloud org>-<IBM Cloud space>.apic.<domain name>$(request.path)
         ```
         If you did not make a note of this value, you can retrieve by going to the management URL returned in
         step 7. You can also retrieve it by logging in to {{site.data.keyword.Bluemix_notm}} and viewing your app information.

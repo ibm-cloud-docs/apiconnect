@@ -18,7 +18,7 @@ subcollection: apiconnect
 {:pre: .pre}
 
 # Getting started with the IBM Cloud API Connect service
-{: #index}
+{: #getting-started}
 
 Use the {{site.data.keyword.apiconnect_full}} service to
 quickly create APIs and microservices based on Node.js and Java runtimes. You can also manage your APIs by setting varying levels of security, visibility, billing information, and rate limits while sharing APIs with application developers. The {{site.data.keyword.apiconnect_short}} service also lets you transform and grow your business with insights through detailed analytics with structured filtered searches.
