@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-20"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,11 +17,21 @@ lastupdated: "2017-11-20"
 {:pre: .pre}
 
 # 探索 API
+{: #tut_discover_apis}
+
 **持續時間**：25 分鐘  
 **技能水準**：初學者  
 
+## 目標
+{: #object_tut_discover_apis}
+
+在本指導教學中，您將學習到入口網站使用者在「{{site.data.keyword.apiconnect_full}} 開發人員入口網站」中取用 API 的方式。您將瞭解入口網站使用者如何探索產品及 API、檢視及測試 API，以及訂閱 API。
+
+ 
 
 ## 必要條件
+{: #prereq_tut_discover_apis}
+
 本指導教學沒有必要條件。身為入口網站管理者，您可以在導覽開發人員入口網站以體驗入口網站使用者如何導覽您的開發人員入口網站時，同時完成本指導教學。請謹記，所有開發人員入口網站都有不同的外觀。
 
  
@@ -23,12 +39,9 @@ lastupdated: "2017-11-20"
 如果您沒有現有開發人員入口網站，可以先在 {{site.data.keyword.Bluemix_short}} 中設定並配置開發人員入口網站，然後再繼續本指導教學。
 
 
-## 目標
-在本指導教學中，您將學習到入口網站使用者在「{{site.data.keyword.apiconnect_full}} 開發人員入口網站」中取用 API 的方式。您將瞭解入口網站使用者如何探索產品及 API、檢視及測試 API，以及訂閱 API。
-
- 
-
 ## 探索產品及 API
+{: #explore_tut_discover_apis}
+
 本節顯示入口網站使用者在開發人員入口網站中探索產品及 API 的方式。
 
 1. 在瀏覽器中，導覽至 **API Connect 開發人員入口網站**。![API Connect 開發人員入口網站](images/11-developer-portal.png)
@@ -50,6 +63,8 @@ lastupdated: "2017-11-20"
 ---
 
 ## 檢視及測試 API
+{: #view_tut_discover_apis}
+
 本節顯示入口網站使用者檢視及測試產品可用 API 的方式。 
 
 1. 如上一節所概述，在「{{site.data.keyword.apiconnect_short}} 開發人員入口網站」中導覽至 API 詳細資料。  
@@ -70,6 +85,8 @@ lastupdated: "2017-11-20"
 ---
 
 ## 訂閱 API
+{: #subscr_tut_discover_apis}
+
 本節顯示入口網站使用者在開發人員入口網站中訂閱 API 的方式。 
 
 1. 選取**建立帳戶**。
@@ -104,14 +121,16 @@ lastupdated: "2017-11-20"
   ![應用程式訂閱成功](images/310-subscribe-success.png) 
 
 ## 結論
+{: #conclusion_tut_discover_apis}
 
 在本指導教學中，您學習到入口網站使用者如何探索產品及 API、檢視及測試 API，以及訂閱 API。 
 
 ---
 
 ## 下一步
+{: #next_tut_discover_apis}
 
-學習[如何從基本分析瞭解](tut_insights_analytics.html)。
+學習[如何從基本分析瞭解](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics)。
 
 建立 >管理> 安全 > ** 社交化 ** > 分析  
 

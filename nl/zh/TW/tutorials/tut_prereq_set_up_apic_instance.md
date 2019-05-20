@@ -1,7 +1,13 @@
 ---
+
 copyright:
-  years: 2017
-lastupdated: "2017-10-31"
+  years: 2019
+lastupdated: "2019-3-14"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,11 +17,15 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # 設定 API Connect 實例
+{: #tut_prereq_set_up_apic_instance}
+
 **持續時間**：15 分鐘  
 **技能水準**：初學者  
 
 
-## 需要的項目：
+## 必要條件
+{: #prereq_tut_prereq_set_up_apic_instance}
+
 1. IBM ID
 2. {{site.data.keyword.Bluemix_short}} 帳戶
 3. 具有至少一個_精簡_ 方案的 {{site.data.keyword.apiconnect_full}} 實例
@@ -32,18 +42,18 @@ lastupdated: "2017-10-31"
 ---
 
 
-1. 在下列 URL 註冊您的 IBM ID：[https://console.ng.bluemix.net/registration/ ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.ng.bluemix.net/registration/){:new_window}。
+1. 在下列 URL 註冊您的 IBM Cloud ID：[https://cloud.ibm.com/registration/ ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/registration/){: #new_window}。
 
-	已具有 IBM ID？則跳過登錄，並且只在下列 URL 建立免費 {{site.data.keyword.Bluemix_short}} 帳戶：[https://console.ng.bluemix.net/ ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.ng.bluemix.net/){:new_window}。  
+	已具有 IBM ID？則跳過登錄，並且只在下列 URL 建立免費 {{site.data.keyword.Bluemix_short}} 帳戶：[https://cloud.ibm.com/ ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/){: #new_window}。  
 
 2. 具有 IBM ID 及 {{site.data.keyword.Bluemix_notm}} 帳戶時，請建立 {{site.data.keyword.apiconnect_short}} 實例。  
-  a. 登入 {{site.data.keyword.Bluemix_notm}}：[https://new-console.ng.bluemix.net/login ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://new-console.ng.bluemix.net/login){:new_window}。  
-  ![](images/prereqs-1.png)  
+  a. 登入 {{site.data.keyword.Bluemix_notm}}：[https://cloud.ibm.com/login ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/login){: #new_window}。  
+  ![](images/cloud_login_page.png)  
   b. 在 {{site.data.keyword.Bluemix_notm}} 中，建立_組織_。第一次登入時，系統會提示您執行此作業。  
   ![](images/prereqs-2.png)
   c. 建立_空間_。  
   ![](images/prereqs-3.png)
-  d. 造訪 [https://console.ng.bluemix.net/catalog/services/api-connect ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.ng.bluemix.net/catalog/services/api-connect){:new_window}。  
+  d. 造訪 [https://console.ng.bluemix.net/catalog/services/api-connect ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://console.ng.bluemix.net/catalog/services/api-connect){: #new_window}。  
   ![](images/prereqs-4.png)  
   e. 選取_精簡_ 定價方案（免費），然後按一下**建立**以開始使用。  
   ![](images/lite-plan.png)  

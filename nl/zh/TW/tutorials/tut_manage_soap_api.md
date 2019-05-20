@@ -1,7 +1,13 @@
 ---
+
 copyright:
-  years: 2017
-lastupdated: "2017-12-15"
+  years: 2019
+lastupdated: "2019-3-11"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 
@@ -13,31 +19,33 @@ lastupdated: "2017-12-15"
 
 
 # 管理 SOAP 服務
+{: #tut_manage_soap_api}
+
 **持續時間**：15 分鐘
 **技能水準**：初學者
 
 ---
 ## 目標
+{: #object_tut_manage_soap_api}
+
 在本指導教學中，您將使用 API Manager 來建立 SOAP API，以作為 SOAP 型天氣服務的 Proxy。
 
 ## 必要條件
-- 開始之前，您需要[設定 {{site.data.keyword.apiconnect_short}} 實例](tut_prereq_set_up_apic_instance.html)。
-- 開始之前，請將 [weatherprovider.wsdl 測試 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} 檔案複製到本端檔案系統。附註：您可以按一下**原始**，然後將產生的頁面以 `.wsdl` 檔案形式儲存在本端系統上。顧名思義，此 SOAP 服務會在給定郵遞區號時傳回天氣資料。
+{: #prereq_tut_manage_soap_api}
+
+- 開始之前，您需要[設定 {{site.data.keyword.apiconnect_short}} 實例](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance)。
+- 開始之前，請將 [weatherprovider.wsdl 測試 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: #new_window} 檔案複製到本端檔案系統。
+	附註：您可以按一下**原始**，然後將產生的頁面以 `.wsdl` 檔案形式儲存在本端系統上。顧名思義，此 SOAP 服務會在給定郵遞區號時傳回天氣資料。
 
 ---
 ## 設定 SOAP API 定義
-1. 登入 {{site.data.keyword.Bluemix_short}}：[https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window}。
+{: #setup_tut_manage_soap_api}
 
-2. 在 {{site.data.keyword.Bluemix_notm}} **儀表板**中，向下捲動至**所有服務**。
-
-3. 選取 **API Connect**，以啟動 {{site.data.keyword.apiconnect_short}} 服務。 
-  
-4. 導覽至「草稿」頁面（如果您尚未處於該處）：  
-    a. 在 {{site.data.keyword.apiconnect_short}} 介面中，按一下 >> 以開啟導覽畫面。
-    b. 按一下導覽畫面中的**草稿**。
-    c. 移至 **API** 標籤。
-
-5. 在 API 標籤中，按一下`新增 +`。
+1. 登入 {{site.data.keyword.Bluemix_short}}：`https://cloud.ibm.com`。
+2. 在 {{site.data.keyword.Bluemix_notm}} **儀表板**中，按一下 **Cloud Foundry 服務**。 
+3. 啟動 {{site.data.keyword.apiconnect_short}} 服務。 
+4. 在 {{site.data.keyword.apiconnect_short}} 中，確定左側的導覽畫面已開啟。否則，請按一下 **>>** 將它開啟。  
+5. 在導覽畫面中，選取**草稿**。   
 
 6. 在下拉功能表中，從 SOAP 服務中選取 **API**。
   ![新建 API](images/newapi-menu2.png)
@@ -54,15 +62,13 @@ lastupdated: "2017-12-15"
    _在「來源」標籤中，您會看到 WSDL 包在 OpenAPI 定義內。_
   ![「API 編輯器」頁面](images/designpage2.png)
 
-11. 向下捲動至**安全**標籤，然後按一下刪除圖示，以移除在建立服務時自動產生的 `clientIDHeader（API 金鑰）`。
-   _在下一個指導教學中，您將瞭解使用 API 金鑰的安全。_
+11. 按一下 ![儲存](images/save.png) 圖示，以儲存變更。隨即會出現「API 已儲存」確認通知。
 
-12. 按一下 ![儲存](images/save.png) 圖示，以儲存變更。隨即會出現「API 已儲存」確認通知。
-
-13. 在具有儲存圖示的功能表列中，**設計**標籤會指出您的呈現位置。接下來，您會找到**來源**標籤，您可以透過此標籤直接檢視代表 API 的 Swagger (2.0) 檔案。再接著，您會找到**組合**標籤，此標籤會帶領您前往拖放介面以進行 API 處理。按一下**組合**。
+12. 在具有儲存圖示的功能表列中，**設計**標籤會指出您的呈現位置。接下來，您會找到**來源**標籤，您可以透過此標籤直接檢視代表 API 的 Swagger (2.0) 檔案。再接著，您會找到**組合**標籤，此標籤會帶領您前往拖放介面以進行 API 處理。按一下**組合**。
   ![「組合」標籤](images/assemble-clean.png)  
 
 ## 測試 SOAP API 定義
+{: #test_tut_manage_soap_api}
 
 1. 在**組合**標籤中，按一下**其他動作**（三點）圖示，然後從功能表中選取**產生預設產品**。  
    ![「其他動作」功能表、已開啟](images/gen-default-prod.png)
@@ -70,7 +76,7 @@ lastupdated: "2017-12-15"
 2. 接受**新建產品**對話框蹦現畫面中的預設選項，然後選取**建立產品**。即會建立 **weatherService 產品 1.0.0**，並將其發佈至「沙盤推演」型錄。  
   ![建立新的產品](images/12a-chooseproduct.png)
  
-  _在 {{site.data.keyword.apiconnect_short}} 中，**產品**提供一種用來對特定用途的 API 進行分組的機制。產品會發佈至**型錄**。參照：[{{site.data.keyword.apiconnect_short}} 名詞解釋](../apic_glossary.html)_
+  _在 {{site.data.keyword.apiconnect_short}} 中，**產品**提供一種用來對特定用途的 API 進行分組的機制。產品會發佈至**型錄**。參照：[{{site.data.keyword.apiconnect_short}} 名詞解釋](docs/services/apiconnect/tutorials/tut_expose_soap_service/apic_glossary.html)_
 
 3. 儲存變更。  
 
@@ -95,14 +101,15 @@ lastupdated: "2017-12-15"
    </soap:Body>
   </soap:Envelope>
   ```
-  {: codeblock}  
+ 
   ![要求](images/14-enterrequest.png)
 
-9. 向下捲動（必要的話），然後按一下**呼叫**。
-API 會傳回包含現行天氣的「回應**內文**」。  
+9. 向下捲動（必要的話），然後按一下 **Invoke**。API 會傳回包含現行天氣的「回應**內文**」。  
   ![](images/15-success.png)
 
-## 您在本指導教學中執行的作業
+## 結論
+{: #conclusion_tut_manage_soap_api}
+
 在本指導教學中，您已完成下列作業：
 1. 已設定 SOAP API 定義
 2. 已測試 API 定義
@@ -111,7 +118,8 @@ API 會傳回包含現行天氣的「回應**內文**」。
 ---
 
 ## 下一步
+{: #next_tut_manage_soap_api}
 
-[將服務公開為 REST API](tut_expose_soap_service.html)，或使用[速率限制](tut_rate_limit.html)、[用戶端 ID 及密碼](tut_secure_landing.html)或[使用 OAuth 2.0 保護](tut_secure_oauth_2.html)來保護 API。
+[將服務公開為 REST API](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_expose_soap_service) 或利用[使用 OAuth 2.0 進行保護](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2)來保護您的 API。
 
 建立 > **管理** > 安全 > 社交化 > 分析

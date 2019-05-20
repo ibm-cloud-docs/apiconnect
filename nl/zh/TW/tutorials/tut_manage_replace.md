@@ -1,8 +1,12 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-31"
+  years: 2019
+lastupdated: "2017-3-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
 
 ---
 
@@ -14,34 +18,36 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # 取代 API 產品
+{: #tut_manage_replace}
+
 **持續時間**：15 分鐘  
 **技能水準**：初學者  
 
+## 目標
+{: #object_tut_manage_replace}
+在本指導教學中，您會將現有 API 產品取代為較新的 API 產品，以進行更新。取代 API 產品時，變更會立即生效，並會自動更新所有應用程式訂閱。  
 
+---
 ## 必要條件
+{: #prereq_tut_manage_replace}
 
-1. [設定 {{site.data.keyword.apiconnect_full}} 實例](tut_prereq_set_up_apic_instance.html)。
+1. [設定 {{site.data.keyword.apiconnect_full}} 實例](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance)。
 
 2. 完成下列其中一個指導教學：
  
-    - [匯入 OpenAPI2.0 規格並對現有 REST 服務進行 Proxy 處理](tut_rest_landing.html)**或**  
-    - [新增 API 規格並呼叫現有 REST 服務](tut_rest_landing.html)。
+    - [匯入 OpenAPI2.0 規格並對現有 REST 服務進行 Proxy 處理](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)**或**  
+    - [新增 API 規格並呼叫現有 REST 服務](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)。
 
 ---
-## 目標
-在本指導教學中，您會將現有 API 產品取代為較新的 API 產品，以進行更新。取代 API 產品時，變更會立即生效，並會自動更新所有應用程式訂閱。  
 
-
----
 ## 取代 API 產品
-{: #repl_api_prod}
+{: #repl_api_prod_tut_manage_replace}}
 
-1. 登入 {{site.data.keyword.Bluemix_short}}：[https://console.ng.bluemix.net/login ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.ng.bluemix.net/login){:new_window}。
+1. 登入 {{site.data.keyword.Bluemix_short}}：`https://cloud.ibm.com`。
+2. 在 {{site.data.keyword.Bluemix_notm}} **儀表板**中，按一下 **Cloud Foundry 服務**。啟動 {{site.data.keyword.apiconnect_short}} 服務。 
+3. 在 {{site.data.keyword.apiconnect_short}} 中，確定導覽畫面已開啟。否則，請按一下 **>>** 將它開啟。  
 
-2. 在「{{site.data.keyword.Bluemix_notm}} 儀表板」中，啟動 {{site.data.keyword.apiconnect_short}} 服務。
-![](images/Bluemix.png)
-
-3. 在 API Manager 中，如果您先前未固定使用者介面導覽窗格，請按一下**導覽至**圖示 ![](images/navigate-to.png)。即會開啟 API Manager 使用者介面導覽窗格。若要固定「使用者介面導覽」窗格，請按一下**固定功能表**圖示 ![](images/pinned.png)。
+  ![](images/cloud-apic-dashboard.png)
 
 4. 按一下**草稿** > **API**。
 
@@ -90,7 +96,8 @@ lastupdated: "2017-10-31"
  ![](images/rep-prod-retired.png)
 
 
-## 您在本指導教學中達成的作業
+## 結論
+{: #conclusion_tut_manage_replace}
 
 在本指導教學中，您已完成下列活動：
 1. 已更新 API 產品。

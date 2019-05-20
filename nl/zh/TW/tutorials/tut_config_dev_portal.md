@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,18 +17,26 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # 設定及配置開發人員入口網站
+{: #tut_config_dev_portal}
+
 **持續時間**：30 分鐘  
 **技能水準**：初學者  
 
-## 必要條件
-開始之前，您需要[匯入 API 規格並對現有 REST 服務進行 Proxy 處理](tut_rest_landing.html)。
-
 ## 目標
+{: #object_tut_config_dev_portal}
+
 本指導教學將協助您快速開始配置 **API Connect 開發人員入口網站**。 
+
+## 必要條件
+{: #prereq_tut_config_dev_portal}
+
+開始之前，您需要[匯入 API 規格並對現有 REST 服務進行 Proxy 處理](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)。
 
 ---
 
 ## 建立開發人員入口網站
+{: #create_prereq_tut_config_dev_portal}
+
 在此章節中，您將建立型錄的開發人員入口網站。
 
 *型錄* 是適用於不同環境的 IBM 術語。例如，您將針對測試、編譯打包及正式作業環境建立不同的型錄。您應會有一個稱為「沙盤推演」的型錄。請任意使用此型錄來建立開發人員入口網站，或建立新的型錄，並將它命名為您想要的名稱。
@@ -50,6 +64,8 @@ lastupdated: "2017-10-31"
 ---
 
 ## 探索開發人員入口網站
+{: #explore_prereq_tut_config_dev_portal}
+
 在本節中，您將熟悉您在先前步驟中建立的開發人員入口網站。
 
 1. 在配置型錄的開發人員入口網站之後，您會收到一封內含一次性登入鏈結的電子郵件。選取此鏈結可啟動開發人員入口網站。
@@ -65,7 +81,7 @@ lastupdated: "2017-10-31"
   
 |標籤              |說明| 
 |:---------------- | -------------------- | 
-|_首頁_       |「首頁」是開發人員入口網站的歡迎使用頁面。您可以[自訂頁面](tut_custom_dev_portal.html)，以符合您的需要。| 
+|_首頁_       |「首頁」是開發人員入口網站的歡迎使用頁面。您可以[自訂頁面](/docs/service/apiconnect/tutorials?topic=apiconnect-tut_custom_dev_portal)，以符合您的需要。| 
 |_開始使用_       |「開始使用」頁面用來指示開發人員如何開始使用開發人員入口網站。|
 |_API 產品_ |「API 產品」頁面由開發人員用來探索及訂閱入口網站上可用的 API。| 
 |_應用程式_ |「應用程式」頁面會顯示使用 API 的應用程式。| 
@@ -78,12 +94,15 @@ lastupdated: "2017-10-31"
   ![API 產品](images/27-api-products.png)
 
 ### 結論
+{: #conclusion_prereq_tut_config_dev_portal}
+
 在本指導教學中，您學習到如何設定及配置 {{site.data.keyword.apiconnect_short}} 開發人員入口網站。您也已探索開發人員入口網站。
 
 ---
 
 ## 下一步
+{: #next_prereq_tut_config_dev_portal}
 
-[自訂開發人員入口網站並選取佈景主題](tut_custom_dev_portal.html)。
+[自訂開發人員入口網站並選取佈景主題](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_custom_dev_portal)。
 
 建立 >管理> 安全 > ** 社交化 ** > 分析

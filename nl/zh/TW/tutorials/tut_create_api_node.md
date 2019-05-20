@@ -4,23 +4,27 @@ copyright:
   years: 2018
 lastupdated: "2018-02-22"
 
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
-
-{:new_window: target="_blank"}
+{:new_window: target="blank"}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-
 # 以 Node.js 建立 API
+{: #tut_create_api_node}
 
 **持續時間**：20 分鐘  
 **技能水準**：初學者  
 
 ---
 ## 目標
+{: #object_tut_create_api_node}
 
 本指導教學會引導您使用 LoopBack 架構以 Node.js 建立 API。本指導教學說明如何進行下列作業：
 1. 建立新的 LoopBack 專案。
@@ -29,18 +33,21 @@ lastupdated: "2018-02-22"
 
 ---
 ## 必要條件
+{: #prereq_tut_create_api_node}
 
-開始之前，請[安裝 {{site.data.keyword.apiconnect_short}} Toolkit](tut_prereq_install_toolkit.html)。如果已經安裝工具箱，請確定您執行的是 5.0.8.1 版或更新版本。您可以在指令行上輸入下列指令來進行此驗證：
+開始之前，請[安裝 {{site.data.keyword.apiconnect_short}} Toolkit](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_install_toolkit)。如果已經安裝工具箱，請確定您執行的是 5.0.8.1 版或更新版本。您可以在指令行上輸入下列指令來進行此驗證：
 	```
 	apic -v
 	```
 
 ---
 ## 建立 Loopback 專案
+{: #create_tut_create_api_node}
 
 您可以使用 {{site.data.keyword.apiconnect_short}} Developer Toolkit 指令行介面或 API Designer 介面來建立 Loopback 專案。 
  
 ### 使用 Toolkit 指令行來建立 LoopBack 專案
+{: #create_cli_tut_create_api_node}
 
 若要使用 {{site.data.keyword.apiconnect_short}} Toolkit 指令行來建立 LoopBack 專案，請完成下列步驟：
 1.  從指令行介面中，輸入下列指令。它用來建立及管理 LoopBack 應用程式。
@@ -83,6 +90,7 @@ lastupdated: "2018-02-22"
 
 
 ### 使用 API Designer 介面來建立 LoopBack 專案
+{: #create_apid_tut_create_api_node}
 
 若要使用 API Designer 來建立 LoopBack 專案，請完成下列步驟：
 1.  從指令行介面中，輸入下列指令來啟動 API Designer：
@@ -90,7 +98,7 @@ lastupdated: "2018-02-22"
 	apic edit
 	```
 	![](images/api-designer-1.png)
->![info]
+	>![info]
 	>上述指令會起始設定 {{site.data.keyword.apiconnect_short}} 工具箱，並在完成時使用預設瀏覽器啟動 API Designer。
 	>![info]
 	>在本指導教學中，您將建立稱為 weather-data 的專案。
@@ -115,10 +123,13 @@ lastupdated: "2018-02-22"
 
 ---
 ## 新增資料來源及模型
+{: #add_tut_create_api_node}
 
 若要使用 API Designer 將新的模型及資料來源新增至 LoopBack 專案，請完成下列步驟：
 
 ### 新增資料來源
+{: #add_ds_tut_create_api_node}
+
 若要使用 API Designer 將新的資料來源新增至 LoopBack 專案，請完成下列步驟。
 1. 您也必須建立 LoopBack 專案（"weather-data" 專案）（如`從指令行建立 LoopBack 專案`所述），並確定現行工作目錄是專案根目錄：
 	```bash
@@ -143,11 +154,12 @@ lastupdated: "2018-02-22"
 6. 按一下**新建**。
 7. 依預設，**連接器**設定會顯示 **In-memory db**，其他設定則為空白。保留現在的預設值，API Designer 會自動儲存新的資料來源。
 	>![info]
-	>記憶體內資料來源建置於 LoopBack 中，並且只適用於開發及起始測試。當您準備好將模型連接至實際資料來源（例如資料庫伺服器）時，請相應地變更**連接器**設定，並遵循[安裝 LoopBack 連接器 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tapim-connector-install.html#task_i2p_dnw_vv){:new_window} 中的指示來安裝資料來源連接器。在「連接器類型」中，視情況輸入連接器設定（主機名稱、埠、資料庫名稱、使用者名稱、密碼），然後按一下**儲存**圖示 ![](images/save-icon.png)。API Designer 會自動測試與資料來源的連線。如果測試成功，則會顯示此訊息：**成功 - 資料來源連線測試成功**。
+	>記憶體內資料來源建置於 LoopBack 中，並且只適用於開發及起始測試。當您準備好將模型連接至實際資料來源（例如資料庫伺服器）時，請相應地變更**連接器**設定，並遵循 IBM Knowledge Center 主題 [Installing LoopBack connectors ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tapim-connector-install.html#task_i2p_dnw_vv){: #new_window} 中適合您連接器類型的指示，安裝資料來源連接器，然後按一下**儲存**圖示 ![](images/save-icon.png)。API Designer 會自動測試與資料來源的連線。如果測試成功，則會顯示此訊息：**成功 - 資料來源連線測試成功**。
 8. 按一下「測試連線」圖示 ![](images/db-test-icon.png)，測試資料來源連線。即會顯示此訊息：「資料來源連線測試成功」。
 9. 按一下**所有資料來源**。資料來源將會出現在資料來源清單中，而且編輯器會將 server/datasources.json 檔案更新為新資料來源的設定。
 
 ### 新增模型
+{: #add_model_tut_create_api_node}
 
 若要使用 API Designer 將新的模型新增至 LoopBack 專案，請完成下列步驟：
 1. 按一下**模型**圖示 ![](images/models-icon.png)。
@@ -172,6 +184,7 @@ lastupdated: "2018-02-22"
 ---
 
 ## 測試 LoopBack 專案
+{: #test_tut_create_api_node}
 
 >![info]
 	>如果您在完成「新增模型及資料來源」小節之後未結束 {{site.data.keyword.apiconnect_short}} 設計程式，則可以直接移至下面的步驟 2。
@@ -206,7 +219,7 @@ lastupdated: "2018-02-22"
 	>若要將它重新啟動，請按一下**重新啟動伺服器**圖示 ![](images/restart-icon.png)：
 	>![](images/restart-server-1.png)
 	
-4. 按一下**探索**圖示 ![](images/explore-icon.png)，以查看 API Designer「探索」工具。資訊看板會顯示 API 中 LoopBack 模型的所有 REST 作業。依預設，基於 PersistedModel 的模型具有[一組標準的建立、讀取、更新及刪除作業 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){:new_window}。
+4. 按一下**探索**圖示 ![](images/explore-icon.png)，以查看 API Designer「探索」工具。資訊看板會顯示 API 中 LoopBack 模型的所有 REST 作業。依預設，基於 PersistedModel 的模型具有[一組標準的建立、讀取、更新及刪除作業 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){: new_window}，如 Loopback 文件中所解釋。
 
 5. 在左窗格中按一下 **weather.create** 作業，以顯示端點。
 ![](images/explore-test-1.png)
@@ -238,6 +251,8 @@ lastupdated: "2018-02-22"
 ---
 
 ### 您在本指導教學中達成的作業
+{: #conclusion_tut_create_api_node}
+
 在本指導教學中，您已完成下列作業：
 1. 使用 {{site.data.keyword.apiconnect_short}} Toolkit 指令行建立新的 LoopBack 專案。
 2. 使用 {{site.data.keyword.apiconnect_short}} Toolkit 中的 API Designer，將新的模型及資料來源新增至 LoopBack 專案。
@@ -247,8 +262,9 @@ lastupdated: "2018-02-22"
 ---
 
 ## 下一步
+{: #next_tut_create_api_node}
 
-[管理 REST 服務](tut_rest_landing.html)或[管理 SOAP 服務](tut_manage_soap_api.html)。
+[管理 REST 服務](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)或[管理 SOAP 服務](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_soap_api)。
 
 建立 > **管理** > 安全 > 社交化 > 分析
 

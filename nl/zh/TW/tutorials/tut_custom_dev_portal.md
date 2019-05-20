@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,22 +17,29 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # 自訂開發人員入口網站並選取佈景主題
+{: #tut_custom_dev_portal}
+
 **持續時間**：30 分鐘  
 **技能水準**：初學者  
 
 
 ## 目標
+{: #object_tut_custom_dev_portal}
+
 本指導教學將協助您快速自訂「{{site.data.keyword.apiconnect_full}} 開發人員入口網站」，並選取符合您需求的佈景主題。
 
 ---
 
 ## 必要條件
+{: #prereq_tut_custom_dev_portal}
 
-開始本指導教學之前，您應該已完成[設定及配置開發人員入口網站](tut_config_dev_portal.html)指導教學，並已使用入口網站管理者身分登入。
+開始本指導教學之前，您應該已完成[設定及配置開發人員入口網站](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal)指導教學，並已使用入口網站管理者身分登入。
 
 ---
 
 ## 自訂開發人員入口網站
+{: #cust_tut_custom_dev_portal}
+
 在建立開發人員入口網站之後，即可自訂其外觀與操作方式。
 
 1. 讓我們從修改「歡迎使用橫幅」開始。在頂端功能表中，選取**內容**，然後選取**區塊**。  
@@ -49,6 +62,8 @@ lastupdated: "2017-10-31"
 ---
 
 ## 自訂開發人員入口網站的佈景主題
+{: #cust_theme_tut_custom_dev_portal}
+
 開發人員入口網站容許您修改佈景主題，以變更其外觀與操作方式。
 
 1. 若要修改佈景主題，請從頂端功能表中選取**外觀**，選取**設定**，然後選取 **IBM API Connect 佈景主題**。這是您建立開發人員入口網站時的預設佈景主題。
@@ -72,6 +87,8 @@ lastupdated: "2017-10-31"
 ---
 
 ## 選取開發人員入口網站的不同佈景主題
+{: #diff_theme_tut_custom_dev_portal}
+
 開發人員入口網站隨附其他佈景主題，可供您選擇並自訂，以變更其外觀與操作方式。
 
 1. 若要啟用不同的佈景主題，請選取「外觀設定」頂端的**清單**標籤。
@@ -92,14 +109,16 @@ lastupdated: "2017-10-31"
 ---
 
 ## 安裝開發人員入口網站的新佈景主題
+{: #new_theme_tut_custom_dev_portal}
+
 如果修改現有佈景主題並不符合您的需要，則「開發人員入口網站」也容許您安裝佈景主題來變更其外觀與操作方式。
 
-1. 您可以使用從 [drupal.org ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://drupal.org){:new_window} 下載的模組或佈景主題來自訂開發人員入口網站，也可以自行建立。
+1. 您可以使用從 [drupal.org ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://drupal.org){: #new_window} 下載的模組或佈景主題來自訂開發人員入口網站，也可以自行建立。
 
 2. 若要將佈景主題安裝至開發人員入口網站，請從頂端功能表中選取**外觀**，然後選取**安裝新的佈景主題**。  
   ![安裝新的佈景主題](images/62-install-new.png)
 
-3. 您可以使用 URL 直接從 [drupal.org ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://drupal.org){:new_window} 安裝佈景主題，也可以依序按一下**選擇檔案**及**安裝**來上傳所下載或建立的佈景主題。  
+3. 您可以使用 URL 直接從 [drupal.org ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://drupal.org){: #new_window} 安裝佈景主題，也可以依序按一下**選擇檔案**及**安裝**來上傳所下載或建立的佈景主題。  
   ![安裝](images/63-install.png) 
 
 4. 上傳完成時，您需要啟用佈景主題。請選取**啟用最近新增的佈景主題**。  
@@ -112,7 +131,8 @@ lastupdated: "2017-10-31"
 
 ---
 
-## 摘要
+## 結論
+{: #conclusion_tut_custom_dev_portal}
 恭喜，您已完成本指導教學。在本指導教學中，您已學習到如何進行下列作業：
 
 * 自訂開發人員入口網站歡迎使用頁面
@@ -123,8 +143,9 @@ lastupdated: "2017-10-31"
 ---
 
 ## 下一步
+{: #next_tut_custom_dev_portal}
 
-學習[使用者如何導覽開發人員入口網站](tut_discover_apis.html)或[如何從基本分析瞭解](tut_insights_analytics.html)。
+學習[使用者如何導覽開發人員入口網站](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_discover_apis)或[如何從基本分析瞭解](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics)。
 
 建立 >管理> 安全 > ** 社交化 ** > 分析  
 

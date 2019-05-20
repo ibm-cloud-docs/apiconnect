@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,25 +17,28 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # 使用 {{site.data.keyword.Bluemix_notm}} 搭配用戶端 ID 及用戶端密碼來保護 API
+{: #tut_secure_id_secret_bm}
 
 **持續時間**：10 分鐘  
 **技能水準**：初學者
 
 
 ## 目標
-
+{: #object_tut_secure_id_secret_bm}
 本指導教學將引導您使用「用戶端 ID」及「用戶端密碼」來保護 API。在「開發人員入口網站」中登錄應用程式時，會產生用來識別應用程式的「用戶端 ID」。也可以選擇性地產生「用戶端密碼」（作為密碼）。應用程式需要提供產生的「用戶端 ID」及「用戶端密碼」金鑰，才能存取您的 API。
 
 
 ## 必要條件
+{: #prereq_tut_secure_id_secret_bm}
 
 開始之前，您必須已完成下列其中一個指導教學： 
-- [匯入 OpenAPI2.0 規格並對現有 REST 服務進行 Proxy 處理](tut_rest_landing.html)  
+- [匯入 OpenAPI2.0 規格並對現有 REST 服務進行 Proxy 處理](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)  
 **或**  
-- [新增 API 規格並呼叫現有 REST 服務](tut_rest_landing.html)
+- [新增 API 規格並呼叫現有 REST 服務](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 
 
 ## 設定 API 的識別機制
+{: #set_id_tut_secure_id_secret_bm}
 
 1. 導覽至 API 的「設計」視圖：  
    a. 在左側導覽畫面中，按一下**草稿**  
@@ -53,6 +62,7 @@ lastupdated: "2017-10-31"
 
 
 ## 測試對 API 所做的變更
+{: #test_tut_secure_id_secret_bm}
 
 1. 在「組合」標籤中，按一下按鈕來測試變更。
 
@@ -67,15 +77,16 @@ lastupdated: "2017-10-31"
   ![](images/test_api_keys_1.png)
 
 5. 進一步向下捲動，並輸入郵遞區號（例如：90210）。 
-6. 按一下**呼叫**。_您應該會收到 200 OK 回應，以及傳回天氣資訊的訊息內文。_
+6. 按一下 **Invoke**。_您應該會收到 200 OK 回應，以及傳回天氣資訊的訊息內文。_
 7. 現在，向上捲回至「用戶端 ID」欄位。 
 8. 將「用戶端 ID」值取代為隨機值。
-9. 按一下**呼叫**，以重新執行測試。_您會看到「401 未獲授權」回應，以及「未登錄用戶端 ID」訊息。_  
+9. 按一下 **Invoke**，以重新執行測試。_您會看到「401 未獲授權」回應，以及「未登錄用戶端 ID」訊息。_  
 
     ![](images/test_api_keys_3.png)  
 
 
 ## 使用用戶端 ID 及用戶端密碼來呼叫 API
+{: #call_tut_secure_id_secret_bm}
 
 也可以使用明確呼叫 Proxy 端點的「探索」工具來測試安全設定，並將「用戶端 ID」及「用戶端密碼」金鑰作為標頭值傳遞。
 
@@ -90,12 +101,15 @@ lastupdated: "2017-10-31"
 ---
 
 ## 結論
+{: #conclusion_tut_secure_id_secret_bm}
+
 在本指導教學中，您學習到如何設定 API 的識別機制、測試對 API 所做的變更，以及使用「用戶端 ID」及「用戶端密碼」來呼叫 API。 
 
 ---
 
 ## 下一步
+{: #next_tut_secure_id_secret_bm}
 
-[設定及配置開發人員入口網站](tut_config_dev_portal.html)，以開始進行 API 社交化。
+[設定及配置開發人員入口網站](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal)，以開始進行 API 社交化。
 
 建立 >管理> ** 安全 ** > 社交化 > 分析

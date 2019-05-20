@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-02"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,11 +17,15 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # 設定速率限制
+{: #tut_rate_limit}
+
 **持續時間**：15 分鐘  
 **技能水準**：初學者  
 
 
 ## 目標
+{: #object_tut_rate_limit}
+
 本指導教學顯示如何設定 API 的速率限制。設定速率限制可讓您管理 API 的網路資料流量，以及 API 內特定作業的網路資料流量。速率限制是在特定時間間隔內容許的呼叫數目上限。
 
 在 {{site.data.keyword.apiconnect_full}} 中，*產品* 提供一種將 API 分組到特定使用案例或目標讀者的套件的方式。「產品」也包含*方案*，其說明您願意提供給 API 消費者的期限。更精確地說，「方案」定義與 API 訂閱相關聯的規則：API 速率限制，以及是否需要核准訂閱。
@@ -28,21 +38,26 @@ lastupdated: "2017-11-02"
 
 
 ## 必要條件
-您必須已在使用至少一個「API 金鑰」保護的 {{site.data.keyword.apiconnect_short}} 中建立 API。在下列指示中，我們是從使用[用戶端 ID 及密碼](tut_secure_landing.html)所保護的 [Weather Provider API 範例檔案 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window} 開始。
+{: #prereq_tut_rate_limit}
+
+您必須已在使用至少一個「API 金鑰」保護的 {{site.data.keyword.apiconnect_short}} 中建立 API。在下列指示中，我們是從使用[用戶端 ID 及密碼](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing)所保護的 [Weather Provider API 範例檔案 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){: #new_window} 開始。
 
 開始本指導教學之前，請完成下列指導教學：
-- [匯入 API 規格並對現有 REST 服務進行 Proxy 處理](tut_rest_landing.html)。
-- [使用用戶端 ID 及密碼來保護 API](tut_secure_landing.html)。
+- [匯入 API 規格並對現有 REST 服務進行 Proxy 處理](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)。
+- [使用用戶端 ID 及密碼來保護 API](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing)。
 
 
 ---
 ## 啟動 API Connect
+{: #launch_tut_rate_limit}
 
-1. 登入 {{site.data.keyword.Bluemix_notm}}：[https://console.ng.bluemix.net/login ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.ng.bluemix.net/login){:new_window}。
+1. 登入 {{site.data.keyword.Bluemix_notm}}：[https://console.ng.bluemix.net/login ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.ng.bluemix.net/login){: #new_window}。
 2. 登入 {{site.data.keyword.Bluemix_notm}} 之後，請向下捲動至**所有服務**，然後按一下 **API Connect**。
 3. 按一下 **API Connect**，以啟動 {{site.data.keyword.apiconnect_short}} 服務。
 
 ## 探索預設方案
+{: #explore_tut_rate_limit}
+
 1. 在 {{site.data.keyword.apiconnect_short}} 導覽畫面中，選取**草稿**（如果導覽畫面未開啟，請按一下 **>>** 將它開啟）。
 2. 選取**產品標籤**，您應該會看到列出 Weather Provider API 產品。
 
@@ -58,6 +73,7 @@ lastupdated: "2017-11-02"
 
    
 ## 建立新的速率限制方案
+{: #create_tut_rate_limit}
 
 現在，我們已看到預設「方案」的樣子，讓我們建立具有更高限制性之速率限制的新「方案」，以示範在 API 消費者超出「方案」限制時會發生什麼情況。 
 1. 按一下按鈕以新增「方案」。
@@ -77,8 +93,9 @@ lastupdated: "2017-11-02"
 
 
 ## 將已更新的產品編譯打包及發佈至沙盤推演型錄
+{: #stage_tut_rate_limit}
 
-在先前的範例中，您可能已使用測試工具來發佈「產品」，而測試工具會使用預先提供的測試應用程式認證來呼叫您的 API。不過，這個測試應用程式不受限於速率限制，因此我們需要在這裡建立新的應用程式，以達到速率限制。如需相關資訊，請參閱 [IBM Knowledge Center 的 API Connect 內容 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){:new_window}。
+在先前的範例中，您可能已使用測試工具來發佈「產品」，而測試工具會使用預先提供的測試應用程式認證來呼叫您的 API。不過，這個測試應用程式不受限於速率限制，因此我們需要在這裡建立新的應用程式，以達到速率限制。如需相關資訊，請參閱 [IBM Knowledge Center 的 API Connect 內容 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){: #new_window}。
 
 1. 按一下「發佈」圖示，以將「產品」*編譯打包* 到**沙盤推演**「型錄」。此動作會將您的草稿「產品」變更新增至選取的「型錄」。我們接下來需要*發佈*「產品」變更，以透過「開發人員入口網站」讓消費者可以使用它們。
    ![](./images/stageproduct.png) 
@@ -90,13 +107,15 @@ lastupdated: "2017-11-02"
 
 
 ## 在開發人員入口網站中登錄新的（消費者）應用程式
-應用程式開發人員會使用「開發人員入口網站」來探索及使用您的 API。如需「開發人員入口網站」的相關資訊，請參閱此 [IBM Knowledge Center 主題 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){:new_window}。
+{: #reg_tut_rate_limit}
+
+應用程式開發人員會使用「開發人員入口網站」來探索及使用您的 API。如需「開發人員入口網站」的相關資訊，請參閱此 [IBM Knowledge Center 主題 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){: #new_window}。
 
 如果這是您第一次使用「開發人員入口網站」，則需要為「沙盤推演型錄」佈建「開發人員入口網站」。您在佈建「入口網站」時用來登入的帳戶將會是該「入口網站」的管理帳戶。然後，為了能夠探索及測試 API，您需要使用不同於管理帳戶的新開發人員帳戶來建立及登入（使用不同的電子郵件位址）。
 
 下列指示將引導您完成這些步驟。
 
-1. 啟動「開發人員入口網站」。如果您不知道 URL，可以在「沙盤推演型錄」的「設定」標籤中找到它。若要第一次佈建「開發人員入口網站」，請參閱[查看設定及配置開發人員入口網站](tut_config_dev_portal.html)。
+1. 啟動「開發人員入口網站」。如果您不知道 URL，可以在「沙盤推演型錄」的「設定」標籤中找到它。若要第一次佈建「開發人員入口網站」，請參閱[查看設定及配置開發人員入口網站](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal)。
 
     - 這最多可能需要一個小時才能完成。「沙盤推演開發人員入口網站」備妥時，您就會收到內含新「開發人員入口網站」鏈結的電子郵件。此鏈結是提供給管理者帳戶的僅限單次使用鏈結。
 2. 使用應用程式開發人員認證（**非** IBM ID）來登入「入口網站」***（必要的話，請使用不同於您 IBM ID 的位址來建立新的開發人員帳戶）。***
@@ -114,6 +133,7 @@ lastupdated: "2017-11-02"
 
 
 ## 訂閱 API 產品
+{: #subscr_tut_rate_limit}
 
 1. 按一下工具列上的 **API 產品**鏈結。即會列出「Weather Provider API 產品」！ 
 
@@ -126,6 +146,7 @@ lastupdated: "2017-11-02"
 我們已準備好測試此行為，並觀察在應用程式超出指定速率時會發生什麼情況。
 
 ## 呼叫速率限制 API
+{: #call_tut_rate_limit}
 
 1. 在「開發人員入口網站」的「Weather Provider API 產品」頁面上，按一下 API 鏈結。
 
@@ -146,13 +167,15 @@ lastupdated: "2017-11-02"
 
 
 ## 結論
+{: #conclusion_tut_rate_limit}
 
 恭喜！您已順利建立速率限制「方案」、將它與安全 API 相關聯，並驗證 API 只回應您指定之參數內的要求。
 
 ---
 
 ## 下一步
+{: #next_tut_rate_limit}
 
-[設定及配置開發人員入口網站](tut_config_dev_portal.html)，以開始進行 API 社交化。
+[設定及配置開發人員入口網站](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal)，以開始進行 API 社交化。
 
 建立 >管理> ** 安全 ** > 社交化 > 分析
