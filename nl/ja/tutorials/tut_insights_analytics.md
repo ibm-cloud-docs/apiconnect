@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,20 +17,28 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # 基本的な分析を行って洞察を深める
+{: #tut_insights_analytics}
+
 所要時間: 30 分  
 スキル・レベル: ビギナー
 
 ## 目標
+{: #object_tut_insights_analytics}
+
 ここでは、{{site.data.keyword.apiconnect_full}}での API 分析の基本的な概要を取り上げます。 独自の API を使用しながら、用意されている分析ダッシュボードの機能を確認してください。
 
 
 ## 前提条件
+{: #prereq_tut_insights_analytics}
+
 独自の API による分析結果を表示するには、API 製品を作成して公開しておく必要があります。 さらに、その API を何度か呼び出して分析用のデータを生成することも必要です。可能なら、あらかじめ用意されているテスト・アプリケーションではなく、登録済みのアプリケーションのクライアント ID を使用してください。
 
 このチュートリアルで使用するデータを生成するために、Postman の *Collection Runner* を使用して、別々のデータとクライアント ID によって API を数回呼び出しました。 似たようなツール (Firefox 用の HttpRequester など) を使用することもできれば、cURL を使用してコマンド・ラインから API を複数回呼び出すことも可能です。 {{site.data.keyword.apiconnect_short}} で**「探索」**リンクをクリックして、API のサンプル要求を取得することもできます。
 
 ## カタログ分析の概要
-API の所有者には、提供する API の正常な動作やパフォーマンスを評価するための方法が必要です。 そのような分析を行えるのは、主にカタログ・レベルです。 カタログの概要をまだつかんでいない場合は、IBM Knowledge Center の[カタログの処理![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){:new_window} を参照してください。 
+{: #intro_tut_insights_analytics}
+
+API の所有者には、提供する API の正常な動作やパフォーマンスを評価するための方法が必要です。 そのような分析を行えるのは、主にカタログ・レベルです。 カタログの概要をまだつかんでいない場合は、IBM Knowledge Center の[カタログの処理![外部リンクのアイコン](../../icons/launch-glyph.svg "外部リンクのアイコン")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){: #new_window} を参照してください。 
 
 このチュートリアルを実行する人もアプリケーション開発者も、開発者ポータルでアプリケーション固有の分析結果にアクセスできますが、ここではカタログ分析に焦点を合わせます。
 
@@ -38,6 +52,8 @@ API の所有者には、提供する API の正常な動作やパフォーマ�
 
 
 ## アクティビティー 1: すぐに使用可能な分析機能による結果の表示
+{: #act1_tut_insights_analytics}
+
 1. {{site.data.keyword.Bluemix_short}} の {{site.data.keyword.apiconnect_short}} サービスでダッシュボードを起動し、開きたいカタログを選択します。 
 2. *「分析」*タブをクリックします。
 
@@ -65,6 +81,7 @@ API の所有者には、提供する API の正常な動作やパフォーマ�
 
 
 ## アクティビティー 2: イベントの詳細の表示
+{: #act2_tut_insights_analytics}
 
 視覚化機能を使用すれば、データの概要を分かりやすく表示できますが、グラフに取り込まれたデータの元になっているイベント・レコードに移動するための手段も必要です。
 
@@ -77,6 +94,7 @@ API の所有者には、提供する API の正常な動作やパフォーマ�
 ダッシュボードの視覚化機能を編集、移動、削除できます。
 
 ## アクティビティー 3: 新しいダッシュボードの作成
+{: #act3_tut_insights_analytics}
 
 API のトラフィック・パターンを表示する新しいダッシュボードを作成します。 どのパターンにも、組み込みの視覚化機能を使用して対応できます。 
 
@@ -101,6 +119,8 @@ API のトラフィック・パターンを表示する新しいダッシュボ�
 
 
 ## アクティビティー 4: 新しい視覚化機能の作成
+{: #act4_tut_insights_analytics}
+
 作成した Subscriber Dashboard に、1 日あたりの API 呼び出し数を表示する組み込みの視覚化機能を組み込みました。 そのような集計情報を見ると、アプリケーションごとの使用状況も確認したくなります。 それで、その情報を表示する新しい視覚化機能を作成します。
 
 1. **「新規視覚化」**をクリックし、**「視覚化の作成」**リンクを選択します。
@@ -135,6 +155,7 @@ API のトラフィック・パターンを表示する新しいダッシュボ�
 API 呼び出しや呼び出し元などに関する詳細情報を視覚化するのに役立つ情報は、他にもあります。 全 API イベントのリストは、API Connect の Knowledge Center にありますし、視覚化機能の作成時に条件のリストで確認することもできます。
 
 ## まとめ
+{: #conclusion_tut_insights_analytics}
 
 API 分析の結果をさまざまなスタイルの組み合わせによって視覚化すると、何かの結論を引き出したり API データをさらに深く掘り下げたりすることができます。 その洞察結果を活用すれば、どの API を提供するか、API の置換や廃棄をいつ行うか、API をだれが利用しているか、といったことを判別しやすくなります。
 
@@ -147,7 +168,7 @@ ACME は、ここで作成したような視覚化機能を駆使して、その
 ---
 
 ## 次のステップ
-
-[API およびバージョン管理の方法](tut_manage_version_landing.html)を学習します。
+{: #next_tut_insights_analytics}
+[API およびバージョン管理の方法](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_version_landing)を学習します。
 
 作成 > 管理 > 保護 > ソーシャル化 > **分析**  

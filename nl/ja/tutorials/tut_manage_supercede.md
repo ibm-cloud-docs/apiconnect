@@ -1,8 +1,13 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-31"
+  years: 2019
+lastupdated: "2017-3-18"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 
 ---
 
@@ -13,30 +18,34 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # API 製品の取り替え
+{: #tut_manage_supercede}
+
 **所要時間**: 15 分  
 **スキル・レベル**: ビギナー  
 
-## 前提条件
-
-1. [{{site.data.keyword.apiconnect_full}} インスタンスをセットアップします](tut_prereq_set_up_apic_instance.html)。
-
-2. [API 製品の置換のチュートリアル](tut_manage_replace.html)を完了します。
-
----
 ## 目標
+{: #object_tut_manage_supercede}
+
 このチュートリアルでは、既存の API を新しい API に取り替えます。
 
 ---
+## 前提条件
+{: #prereq_tut_manage_supercede}
+
+1. [{{site.data.keyword.apiconnect_full}} インスタンスをセットアップ](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance)します。
+
+2. [API 製品の置換のチュートリアル](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_replace)を完了します。
+
+---
+
 ## API 製品の取り替え
-1. {{site.data.keyword.Bluemix_short}} にログインします ([https://console.ng.bluemix.net/login) ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://console.ng.bluemix.net/login){:new_window}。
+{: #super_tut_manage_supercede}
 
-2. {{site.data.keyword.Bluemix_notm}} ダッシュボードで {{site.data.keyword.apiconnect_short}} サービスを起動します。
-![](images/Bluemix.png)
+1. {{site.data.keyword.Bluemix_short}} (https://cloud.ibm.com) にログインします。
+2. {{site.data.keyword.Bluemix_notm}} の**ダッシュボード**で、**「Cloud Foundary サービス (Cloud Foundary Services)」**をクリックします。{{site.data.keyword.apiconnect_short}} サービスを起動します。 
+3. {{site.data.keyword.apiconnect_short}} でナビゲーション・パネルが開いていることを確認します。 表示されていない場合は、**「>>」**をクリックして開きます。  
 
-3. 以前に UI ナビゲーション・ペインをピン留めしていなかった場合は、API Manager で**「ナビゲート」**アイコン ![](images/navigate-to.png) をクリックします。 API Manager UI ナビゲーション・ペインが開きます。 UI ナビゲーション・ペインをピン留めするには、**「メニューのピン留め」**アイコン ![](images/pinned.png) をクリックします。
-
-4. **「サンドボックス」**をクリックして、サンドボックス・カタログを開きます。 **注**: カタログのリストではなくタイルが画面に表示されることもあります。
-![](images/del-sandbox-list.png)
+  ![](images/cloud-apic-dashboard.png)
 
 4. **「ドラフト」** > **「API」**をクリックします。
 
@@ -101,7 +110,9 @@ lastupdated: "2017-10-31"
  
 
  
-## このチュートリアルで学習したこと
+## まとめ
+{: #conclusion_tut_manage_supercede}
+
 このチュートリアルでは、以下のアクティビティーを実行しました。
 
 1. API 製品を更新しました。

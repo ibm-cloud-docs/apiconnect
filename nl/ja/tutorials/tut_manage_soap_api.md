@@ -1,7 +1,13 @@
 ---
+
 copyright:
-  years: 2017
-lastupdated: "2017-12-15"
+  years: 2019
+lastupdated: "2019-3-11"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 
@@ -13,32 +19,33 @@ lastupdated: "2017-12-15"
 
 
 # SOAP サービスの管理
+{: #tut_manage_soap_api}
+
 **所要時間**: 15 分
 **スキル・レベル**: ビギナー
 
 ---
 ## 目標
+{: #object_tut_manage_soap_api}
+
 このチュートリアルでは、API Manager を使用して、SOAP ベースの天候サービスのプロキシーとしての役割を果たす SOAP API を作成します。
 
 ## 前提条件
-- 始める前に、[{{site.data.keyword.apiconnect_short}} インスタンスのセットアップ](tut_prereq_set_up_apic_instance.html)が必要です。
-- 始める前に、[weatherprovider.wsdl テスト ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} ファイルをローカル・ファイル・システムにコピーしてください。
+{: #prereq_tut_manage_soap_api}
+
+- 始める前に、[{{site.data.keyword.apiconnect_short}} インスタンスのセットアップ](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance)を行う必要があります。
+- 始める前に、[weatherprovider.wsdl テスト ![外部リンクのアイコン](../../icons/launch-glyph.svg "外部リンクのアイコン")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: #new_window} ファイルをローカル・ファイル・システムにコピーしてください。
 注: **「未加工 (Raw)」**をクリックし、結果のページを `.wsdl` ファイルとしてローカル・システムに保存することもできます。 この SOAP サービスは、名前のとおり、郵便番号の入力に対して天候データを返します。
 
 ---
 ## SOAP API 定義のセットアップ
-1. {{site.data.keyword.Bluemix_short}} にログインします ([https://new-console.ng.bluemix.net/login](https://new-console.ng.bluemix.net/login){:new_window})。
+{: #setup_tut_manage_soap_api}
 
-2. {{site.data.keyword.Bluemix_notm}} **ダッシュボード**で**「すべてのサービス」**までスクロールダウンします。
-
-3. **「API Connect」**を選択して、{{site.data.keyword.apiconnect_short}} サービスを起動します。 
-  
-4. 「ドラフト」ページがまだ表示されていなければ、そのページに移動します。  
-    a. {{site.data.keyword.apiconnect_short}} インターフェースで「>>」をクリックしてナビゲーション・パネルを開きます。
-    b. ナビゲーション・パネルで**「ドラフト」** をクリックします。
-    c. **「API」**タブに進みます。
-
-5. 「API」タブで`「追加 +」`をクリックします。
+1. {{site.data.keyword.Bluemix_short}} (https://cloud.ibm.com) にログインします。
+2. {{site.data.keyword.Bluemix_notm}} の**ダッシュボード**で、**「Cloud Foundary サービス (Cloud Foundary Services)」**をクリックします。 
+3. {{site.data.keyword.apiconnect_short}} サービスを起動します。 
+4. {{site.data.keyword.apiconnect_short}} で、左側にナビゲーション・パネルが開いていることを確認します。 表示されていない場合は、**「>>」**をクリックして開きます。  
+5. ナビゲーション・パネルで**「ドラフト」** を選択します。   
 
 6. ドロップダウン・メニューで**「SOAP サービスからの API」**を選択します。
 ![新規 API](images/newapi-menu2.png)
@@ -55,15 +62,13 @@ lastupdated: "2017-12-15"
    _「ソース」タブで、WSDL が OpenAPI 定義の中にラップされていることを確認できます。
 _![API エディター・ページ](images/designpage2.png)
 
-11. **「セキュリティー」**タブまでスクロールダウンし、削除アイコンをクリックして、サービスの作成時に自動的に生成された `clientIDHeader (API キー)` を削除します。
-   _API キーによるセキュリティーについては、次のチュートリアルで学びます。_
+11. ![「保存」](images/save.png)アイコンをクリックして、変更内容を保存します。 「API が保存されました」という確認通知が一瞬表示されます。
 
-12. ![「保存」](images/save.png)アイコンをクリックして、変更内容を保存します。 「API が保存されました」という確認通知が一瞬表示されます。
-
-13. **「設計」**タブでは、保存アイコンのあるメニュー・バーで現在の場所を確認できます。 その横にある**「ソース」**タブでは、API を示す Swagger (2.0) ファイルを直接確認できます。その横にある**「アセンブル」**タブでは、ドラッグ・アンド・ドロップ・インターフェースで API を処理できます。 **「アセンブル」**をクリックします。
+12. **「設計」**タブでは、保存アイコンのあるメニュー・バーで現在の場所を確認できます。 その横にある**「ソース」**タブでは、API を示す Swagger (2.0) ファイルを直接確認できます。その横にある**「アセンブル」**タブでは、ドラッグ・アンド・ドロップ・インターフェースで API を処理できます。 **「アセンブル」**をクリックします。
 ![「アセンブル」タブ](images/assemble-clean.png)  
 
 ## SOAP API 定義のテスト
+{: #test_tut_manage_soap_api}
 
 1. **「アセンブル」**タブで、**「その他のアクション」**(3 つのドット) アイコンをクリックし、メニューから**「デフォルト製品の生成」**を選択します。  
    ![「その他のアクション」メニューを開く](images/gen-default-prod.png)
@@ -71,7 +76,7 @@ _![API エディター・ページ](images/designpage2.png)
 2. **「新規製品」**ダイアログ・ポップアップでデフォルト・オプションを受け入れ、**「製品の作成」**を選択します。 **weatherService product 1.0.0** が作成され、サンドボックス・カタログに公開されます。  
   ![新しい製品の作成](images/12a-chooseproduct.png)
  
-  _{{site.data.keyword.apiconnect_short}} では、**製品**という形で、API を用途ごとにグループ分けできます。 製品は**カタログ**に公開されます。 [{{site.data.keyword.apiconnect_short}} 用語集](../apic_glossary.html)を参照してください_
+  _{{site.data.keyword.apiconnect_short}} では、**製品**という形で、API を用途ごとにグループ分けできます。 製品は**カタログ**に公開されます。 参照: [{{site.data.keyword.apiconnect_short}} 用語集](docs/services/apiconnect/tutorials/tut_expose_soap_service/apic_glossary.html)_
 
 3. 変更を保存します。  
 
@@ -96,14 +101,16 @@ _![API エディター・ページ](images/designpage2.png)
    </soap:Body>
   </soap:Envelope>
   ```
-  {: codeblock}  
+ 
   ![要求](images/14-enterrequest.png)
 
 9. 必要ならスクロールダウンして、**「呼び出し」**をクリックします。
 現在の天候を示す応答の**本文**が API から返されます。  
   ![](images/15-success.png)
 
-## このチュートリアルで学習した内容
+## まとめ
+{: #conclusion_tut_manage_soap_api}
+
 このチュートリアルでは、以下を実行しました。
 1. SOAP API 定義をセットアップしました
 2. API 定義をテストしました
@@ -112,7 +119,8 @@ _![API エディター・ページ](images/designpage2.png)
 ---
 
 ## 次のステップ
+{: #next_tut_manage_soap_api}
 
-[サービスを REST API として公開する](tut_expose_soap_service.html)か、[レート制限](tut_rate_limit.html)、[クライアント ID と秘密鍵](tut_secure_landing.html)、[OAuth 2.0 を使用した保護](tut_secure_oauth_2.html)のいずれかを使用して API を保護します。
+[サービスを REST API として公開する](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_expose_soap_service)か、[OAuth 2.0 を使用した保護](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2)を用いて API を保護します。
 
 作成 > **管理** > 保護 > ソーシャル化 > 分析

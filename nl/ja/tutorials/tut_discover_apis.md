@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-20"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,19 +17,26 @@ lastupdated: "2017-11-20"
 {:pre: .pre}
 
 # API の検出
+{: #tut_discover_apis}
+
 **所要時間**: 25 分  
 **スキル・レベル**: ビギナー  
 
+## 目標
+{: #object_tut_discover_apis}
+
+このチュートリアルでは、{{site.data.keyword.apiconnect_full}} 開発者ポータルでポータル・ユーザーが API を利用する方法を学習します。 ポータル・ユーザーが製品や API を探索したり、API を表示してテストしたり、API をサブスクライブしたりする方法を学習します。 
 
 ## 前提条件
+{: #prereq_tut_discover_apis}
+
 このチュートリアルに前提条件はありません。 ポータル管理者も、このチュートリアルで開発者ポータル内をナビゲートすることによって、ポータル・ユーザーが開発者ポータル内をナビゲートする方法を実際に体験できます。 ただし、開発者ポータルごとにスキンが違うことに留意してください。 
 
 既存の開発者ポータルがない場合は、このチュートリアルの作業を進める前に、{{site.data.keyword.Bluemix_short}} で開発者ポータルをセットアップして構成できます。
 
-## 目標
-このチュートリアルでは、{{site.data.keyword.apiconnect_full}} 開発者ポータルでポータル・ユーザーが API を利用する方法を学習します。 ポータル・ユーザーが製品や API を探索したり、API を表示してテストしたり、API をサブスクライブしたりする方法を学習します。 
-
 ## 製品と API の探索
+{: #explore_tut_discover_apis}
+
 このセクションでは、開発者ポータルでポータル・ユーザーが製品および API を探索する方法を取り上げます。
 
 1. ブラウザーで、**API Connect 開発者ポータル**に移動します。![API Connect 開発者ポータル](images/11-developer-portal.png)
@@ -45,6 +58,8 @@ lastupdated: "2017-11-20"
 ---
 
 ## API の表示とテスト
+{: #view_tut_discover_apis}
+
 このセクションでは、ポータル・ユーザーが製品で使用できる API を表示してテストする方法を取り上げます。 
 
 1. {{site.data.keyword.apiconnect_short}} 開発者ポータルで API の詳細ページに移動します (前のセクションを参照)。  
@@ -65,6 +80,8 @@ lastupdated: "2017-11-20"
 ---
 
 ## API のサブスクライブ
+{: #subscr_tut_discover_apis}
+
 このセクションでは、開発者ポータルでポータル・ユーザーが API をサブスクライブする方法を取り上げます。 
 
 1. **「アカウントの作成」**を選択します。
@@ -99,14 +116,16 @@ lastupdated: "2017-11-20"
   ![アプリケーションでのサブスクライブの成功](images/310-subscribe-success.png) 
 
 ## まとめ
+{: #conclusion_tut_discover_apis}
 
 このチュートリアルでは、ポータル・ユーザーが製品や API を探索したり、API を表示してテストしたり、API をサブスクライブしたりする方法を学習しました。 
 
 ---
 
 ## 次のステップ
+{: #next_tut_discover_apis}
 
-[基本的な分析を行って洞察を深める方法](tut_insights_analytics.html)を学習します。
+[基本的な分析を行って洞察を深める方法](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics)を学習します。
 
 作成 > 管理 > 保護 > **ソーシャル化** > 分析  
 

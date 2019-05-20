@@ -1,8 +1,12 @@
 ---
 
 copyright:
-years: 2017
-lastupdated: "2017-11-14"
+years: 2019
+lastupdated: "2019-3-12"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
 
 ---
 
@@ -14,28 +18,41 @@ lastupdated: "2017-11-14"
  
 
 # SOAP サービスを REST API として公開する
+{: #tut_expose_soap_service}
+
 **所要時間**: 20 分  
 **スキル・レベル**: ビギナー  
 
 ---
 ## 目標
+{: #object_tut_expose_soap_service}
+
 API Manager で、既存の SOAP サービスにアクセスしてそのサービスを REST API として公開するための REST API を作成します。
 
 ## 前提条件
-1. 始める前に、[{{site.data.keyword.apiconnect_full}} インスタンスのセットアップ](tut_prereq_set_up_apic_instance.html)が必要です。
-2. 始める前に、[weatherprovider.wsdl テスト ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){:new_window} ファイルをローカル・ファイル・システムにコピーしてください。
->![images/info.png]
+{: #prereq_tut_expose_soap_service}
+
+1. 始める前に、[{{site.data.keyword.apiconnect_full}} インスタンスのセットアップ](/docs/services/apiconnect?topic=apiconnect-tut_prereq_set_up_apic_instance)が必要です。
+2. 始める前に、[weatherprovider.wsdl テスト ![外部リンクのアイコン](../../icons/launch-glyph.svg "外部リンクのアイコン")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: #new_window} ファイルをローカル・ファイル・システムにコピーしてください。
+	>![images/info.png]
 	>**「未加工 (Raw)」**をクリックし、結果のページを `.wsdl` ファイルとしてローカル・システムに保存することもできます。
 
 ---
 ## REST API 定義のセットアップ
-1. {{site.data.keyword.Bluemix_short}} にログインします ([https://new-console.ng.bluemix.net/login) ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://new-console.ng.bluemix.net/login){:new_window}。
-2. {{site.data.keyword.Bluemix_notm}} **ダッシュボード**で、スクロールダウンして {{site.data.keyword.apiconnect_short}} を選択します。 あるいは、メニュー・アイコンから**「サービス」**を選択し、**「API」**を選択して**「API での作業」**ウィンドウを表示し、**「API Connect」**を選択することもできます。 **「API Connect」**ページでそのまま`「作成」`を押すことも、デフォルト設定を調整することもできます。 この演習では、インスタンスをバインドしないでおき、サービス名を後で見分けやすい名前に調整します。 一例として、`API Connect-weather-exercise` などの名前が考えられます。
-`「作成」`ボタンを押して {{site.data.keyword.apiconnect_short}} サービスを起動します。  
-新着情報を記述したアラートや**「ドラフト API」**通知スプラッシュ・ページが表示されることもあります。 情報を確認したら、**「OK」**アイコンをクリックして API Manager を表示します。
-3. 以前に UI ナビゲーション・ペインをピン留めしていなかった場合は、{{site.data.keyword.apiconnect_short}} で**「ナビゲート」**アイコン ![](images/navigate-to.png) をクリックします。 API Manager UI ナビゲーション・ペインが開きます。 UI ナビゲーション・ペインをピン留めするには、**「メニューのピン留め」**アイコン ![](images/pinned.png) をクリックします。
-4. UI ナビゲーション・ペインで**「ドラフト」**を選択し、**「API」**タブをクリックします。 **「API」**タブが開きます。![](images/drafts-api-1.png)
+{: #setup_tut_expose_soap_service}
+
+1. {{site.data.keyword.Bluemix_short}} (https://cloud.ibm.com) にログインします。
+2. {{site.data.keyword.Bluemix_notm}} の**ダッシュボード**で、**「Cloud Foundary サービス (Cloud Foundary Services)」**をクリックします。{{site.data.keyword.apiconnect_short}} サービスを起動します。 
+3. {{site.data.keyword.apiconnect_short}} でナビゲーション・パネルが開いていることを確認します。 表示されていない場合は、**「>>」**をクリックして開きます。  
+
+  ![](images/cloud-apic-dashboard.png)
+
+4. ナビゲーション・パネルで**「ドラフト」** を選択します。
 5. **「追加 +」**>**「新規 API」**を選択します。
+
+    ![](images/cloud-add-api-new.png)  
+
+	
 6. API に関する基本情報を指定します。
 	- **「タイトル」**フィールドに `Weather Data` と入力します。
 	- タイトルを入力すると、**「名前」**フィールドに `weather-data` という名前が取り込まれます。この名前はそのままにしておきます。	
@@ -52,18 +69,25 @@ API Manager で、既存の SOAP サービスにアクセスしてそのサー�
 	- **「この製品をカタログに公開」**チェック・ボックスを選択し、ターゲット・カタログとして**「サンドボックス」**を選択します。
 ![](images/new-api-2.png)
 	- **「API の作成」**をクリックします。 API 定義のドラフト用の**「設計」**タブが開きます。
-9. API が作成されます。 「設計」ページが表示されます。 ナビゲーション・バーで**「セキュリティー」**をクリックします。
-![](images/api-security-1.png)
-10. **「クライアント ID」**オプションのチェック・マークを外します。
-![](images/api-security-2.png)
-	>![](images/info.png)
-	>ディスク保存アイコンの横に黄色の三角形のアイコンが表示されることもあります。  これは、まだ使用されていない定義があるかもしれないという意味の警告です。 (API 定義には影響ありません。)
-11. **「定義」**セクションで**「定義の追加」**アイコン ![](images/add-icon.png) をクリックし、新しい定義をクリックして展開します。
+9. API が作成されます。 「設計」ページが表示されます。
+
+   ![](images/design-new-1.png)
+
+10. ナビゲーション・バーの**「定義」**をクリックします。**「定義の追加」**アイコン![](images/add-icon.png)をクリックします。
+
+11. 新しい定義をクリックして展開します。
 12. その定義の名前を `Weather Data Output` にします。
 13. その定義には 5 つのプロパティーがあります。 **「プロパティーの追加」**を 4 回クリックして、さらにプロパティーを追加します。 以下の説明を参考にして`「プロパティー名」`を名前変更し、`「説明」`、`「タイプ」`、`「例」`でデフォルトを使用します。
-![](images/definition-new-1.png)
-14. **「パス」**セクションで**「パスの追加」**アイコン ![](images/add-icon.png) をクリックします。
-15. 新しく作成したパスの**「パス」**フィールドの内容を `/getweatherdata` に置き換えます。
+    a. **Weather Data Output** 定義に新しいプロパティーを追加します。    
+       - 名前: zip         /  タイプ: ストリング   
+       - 名前: temperature /  タイプ: 整数   
+       - 名前: humidity    /  タイプ: 整数   
+       - 名前: city        /  タイプ: ストリング   
+       - 名前: state       /  タイプ: ストリング   
+
+	![](images/definition-new-1.png)
+14. ナビゲーション・バーの**「パス」**をクリックします。**「パスの追加」**アイコン![](images/add-icon.png)をクリックします。
+15. 新しく作成したパスの**「タイトル」**を `/getweatherdata` に設定します。
 16. **GET /getweatherdata** 操作をクリックして展開します。
 ![](images/path-new-1.png)
 17. **GET /getweatherdata** 操作で**「パラメーターの追加」**をクリックし、**「新規パラメーターの追加」**をクリックします。
@@ -74,6 +98,8 @@ API Manager で、既存の SOAP サービスにアクセスしてそのサー�
 
 ---
 ## Web サービス呼び出しの追加および構成
+{: #add_web_tut_expose_soap_service}
+
 Web サービスを API 定義に統合する invoke ポリシーと map ポリシーを追加して構成するには、以下の手順を実行します。
 1. **「サービス」**セクションで**「サービスの追加」**アイコン ![](images/add-icon.png) をクリックします。 `「WSDL による Web サービスのインポート」`ウィンドウが開きます。
 ![](images/upload-file-1.png)
@@ -108,6 +134,8 @@ Web サービス呼び出しをアセンブリーに組み込み、入力パラ�
 
 ---
 ## API 定義のテスト
+{: #test_tut_expose_soap_service}
+
 API Manager テスト・ツールを使用して API 定義をテストするには、以下の手順を実行します。
 1. **「アセンブリー」**タブにある**「テスト」**アイコン ![](images/test-icon.png) をクリックして、テスト・ペインを表示します。
 ![](images/test-pane-1.png)
@@ -118,13 +146,15 @@ API Manager テスト・ツールを使用して API 定義をテストするに
 5. **「次へ」**をクリックします。
 6. 操作のリストから `get /getweatherdata` を選択します。  
 	![](images/select-operation-1.png)
-7. **zip_code** フィールドまでスクロールダウンして、`90210` と入力します。  
+7. **zip_code** フィールドまでスクロールダウンし、`10504` と入力します。  
 	![](images/test-api-1.png)
 8. **「呼び出し」**をクリックします。 API から現在の天候が返されます。  
-	![](images/test-api-2.png)
+	![](images/test-wdata-result.png)
 
 ---
-## このチュートリアルで学習した内容
+## まとめ
+{: #conclusion_tut_expose_soap_service}
+
 このチュートリアルでは、以下のアクティビティーを実行しました。
 1. REST API 定義をセットアップしました
 2. 既存の Web サービスを呼び出して出力を返すように API を構成しました
@@ -133,8 +163,9 @@ API Manager テスト・ツールを使用して API 定義をテストするに
 ---
 
 ## 次のステップ
+{: #next_tut_expose_soap_service}
 
-[レート制限](tut_rate_limit.html)、[クライアント ID と秘密鍵](tut_secure_landing.html)、[OAuth 2.0 を使用した保護](tut_secure_oauth_2.html)のいずれかを使用して API を保護します。
+[OAuth 2.0 を使用した保護](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2)によって API を保護します。
 
 作成 > **管理** > 保護 > ソーシャル化 > 分析
 

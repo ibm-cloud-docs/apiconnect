@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,32 +17,39 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # API 仕様のインポートと既存の REST サービスへのプロキシー作成 (デベロッパーズ・ツールキットを使用する場合)
+{: #tut_import_openapi_rest_tk}
+
 所要時間: 5 分  
 スキル・レベル: ビギナー  
 
 
 ## 目標
+{: #object_tut_import_openapi_rest_tk}
+
 このチュートリアルでは、{{site.data.keyword.apiconnect_full}} によって既存の API を管理制御下に置くため方法を取り上げます。 このチュートリアルでは、OpenAPI 仕様をインポートしてから、既存の REST サービスのパススルー API プロキシーを作成します。
 
 ## 前提条件
+{: #prereq_tut_import_openapi_rest_tk}
+
 始める前に、[API Connect インスタンスのセットアップ](tut_prereq_set_up_apic_instance.html)と [API Connect ツールキットのインストール](tut_prereq_install_toolkit.html)が必要です。
 
 ---
 
 
 ## サンプル・アプリケーションの探索とターゲット・エンドポイントのテスト
+{: #explore_tut_import_openapi_rest_tk}
 
-このチュートリアルで使用する _Weather Provider_ サンプル・アプリケーションは、作成されています。 対応する API 仕様 (Swagger 2.0) は、[weather-provider-api_1.yaml ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window} ファイルにあります。
+このチュートリアルで使用する _Weather Provider_ サンプル・アプリケーションは、作成されています。 対応する API 仕様 (Swagger 2.0) は、[weather-provider-api_1.yaml ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){: #new_window} ファイルにあります。
 
-1. アプリケーションを探索するために、[http://gettingstartedweatherapp.mybluemix.net/ ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](http://gettingstartedweatherapp.mybluemix.net/){:new_window} に移動します。  
+1. アプリケーションを探索するために、[http://gettingstartedweatherapp.mybluemix.net/ ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](http://gettingstartedweatherapp.mybluemix.net/){: #new_window} に移動します。  
 2. アメリカの有効な 5 桁の郵便番号を入力して、_**現在の天候**_ と_**今日の予報**_ を入手します。  
-![](images/explore-weatherapp-1.png)
+![](images/explore-weatherapp-1.png)S
 
-3. 上の天候サンプル・アプリケーションは、天候データを提供する API を使用して作成されています。 **現在の**天候データを取得するエンドポイントは、`https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}` です。 [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window} にアクセスして、テストしてください。  
+3. 上の天候サンプル・アプリケーションは、天候データを提供する API を使用して作成されています。 **現在の**天候データを取得するエンドポイントは、`https://myweatherprovider.mybluemix.net/current?zipcode={zipcode}` です。 [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![外部リンクのアイコン](../../icons/launch-glyph.svg "外部リンクのアイコン")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: #new_window} にアクセスして、テストしてください。  
 
   ![](images/explore-weatherapp-2.png)
 
-4. また、**今日の**予報データを取得するエンドポイントは、`https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}` です。 [https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){:new_window} にアクセスして、テストしてください。  
+4. また、**今日の**予報データを取得するエンドポイントは、`https:// myweatherprovider.mybluemix.net/today?zipcode={zipcode}` です。[https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![外部リンクのアイコン](../../icons/launch-glyph.svg "外部リンクのアイコン")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: #new_window} にアクセスして、テストしてください。  
 
   ![](images/explore-weatherapp-3.png)
 
@@ -45,6 +58,8 @@ lastupdated: "2017-10-31"
 ---
 
 ## サンプル・アプリケーションの OpenAPI 仕様のインポートと REST API プロキシーの作成
+{: #import_tut_import_openapi_rest_tk}
+
 1. **API Designer** を起動します。 端末ウィンドウで、`apic edit` コマンドを入力します。
 2. IBMid を使用してログインします。
     ![](images/screenshot_apic-edit_login.png)
@@ -64,6 +79,7 @@ _「ホスト」の値は `$(catalog.host)`_ に設定されています。 こ�
 
 
 ## API プロキシーのテスト
+{: #test_tut_import_openapi_rest_tk}
 
 1. **「サーバーの開始」**アイコンを選択して、ローカル・テスト・サーバーを開始します。 ゲートウェイが開始すると、状況が自動的に_**「実行中」**_に更新されます。
 ![](images/screenshot_start-server-1.png)
@@ -86,13 +102,15 @@ _「ホスト」の値は `$(catalog.host)`_ に設定されています。 こ�
 
 
 ## まとめ
+{: #conclusion_tut_import_openapi_rest_tk}
 
 このチュートリアルでは、API パススルー・プロキシーによって既存の REST サービスを呼び出す方法を確認しました。 まず、Web ブラウザーでサンプル・サービスを利用できるかどうかを確認しました。 次に、{{site.data.keyword.apiconnect_short}} で API プロキシーを作成し、そのプロキシーを呼び出し対象のサンプル・サービスにリンクしました。 最後に、{{site.data.keyword.apiconnect_short}} の内部テスト・ツールでこのサービスをテストしました。
 
 ---
 
 ## 次のステップ
+{: #next_tut_import_openapi_rest_tk}
 
-[レート制限](tut_rate_limit.html)、[クライアント ID と秘密鍵](tut_secure_landing.html)、[OAuth 2.0 を使用した保護](tut_secure_oauth_2.html)のいずれかを使用して API を保護します。
+[レート制限](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rate_limit)、[クライアント ID と秘密鍵](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing)、[OAuth 2.0 を使用した保護](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2)のいずれかを使用して API を保護します。
 
 作成 > **管理** > 保護 > ソーシャル化 > 分析

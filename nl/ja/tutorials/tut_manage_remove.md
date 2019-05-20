@@ -1,8 +1,13 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-10"
+  years: 2019
+lastupdated: "2019-3-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 
 ---
 
@@ -13,27 +18,33 @@ lastupdated: "2017-10-10"
 {:pre: .pre}
 
 # API 製品のアーカイブ保存と削除
+{: #tut_manage_remove}
+
 **所要時間**: 15 分  
 **スキル・レベル**: ビギナー 
 
-## 前提条件
-
-1. [{{site.data.keyword.apiconnect_full}} インスタンスをセットアップします](tut_prereq_set_up_apic_instance.html)。
-
-2. [API 製品の取り替えのチュートリアル](tut_manage_supercede.html)を完了します。
-
----
 ## 目標
+{: #object_tut_manage_remove}
 このチュートリアルでは、API の削除、アーカイブ保存、廃棄の方法を取り上げます。
 
 ---
+## 前提条件
+{: #prereq_tut_manage_remove}
+
+1. [{{site.data.keyword.apiconnect_full}} インスタンスをセットアップ](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance)します。
+
+2. [API 製品の取り替えのチュートリアル](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede)を完了します。
+
+---
+
 ## API 製品の削除
-1. {{site.data.keyword.Bluemix_short}} にログインします ([https://console.ng.bluemix.net/login) ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://console.ng.bluemix.net/login){:new_window}。
+{: #delete_tut_manage_remove}
 
-2. {{site.data.keyword.Bluemix_short}} ダッシュボードで {{site.data.keyword.apiconnect_short}} サービスを起動します。
-![](images/Bluemix.png)
+1. {{site.data.keyword.Bluemix_short}} (https://cloud.ibm.com) にログインします。
+2. {{site.data.keyword.Bluemix_notm}} の**ダッシュボード**で、**「Cloud Foundary サービス (Cloud Foundary Services)」**をクリックします。{{site.data.keyword.apiconnect_short}} サービスを起動します。 
+3. {{site.data.keyword.apiconnect_short}} でナビゲーション・パネルが開いていることを確認します。 表示されていない場合は、**「>>」**をクリックして開きます。  
 
-3. 以前に UI ナビゲーション・ペインをピン留めしていなかった場合は、API Manager で**「ナビゲート」**アイコン ![](images/navigate-to.png) をクリックします。 API Manager UI ナビゲーション・ペインが開きます。 UI ナビゲーション・ペインをピン留めするには、**「メニューのピン留め」**アイコン ![](images/pinned.png) をクリックします。
+  ![](images/cloud-apic-dashboard.png)
 
 4. **「サンドボックス」**をクリックして、サンドボックス・カタログを開きます。 **注**: 使用可能なカタログを確認するために、ダッシュボードに戻らなければならない場合もあります。 ダッシュボード・ページで、カタログがリスト形式ではなくタイル形式で表示されることもあります。
 ![](images/del-sandbox-list.png)
@@ -50,6 +61,8 @@ lastupdated: "2017-10-10"
 
 
 ## API 製品のアーカイブ保存
+{: #archive_tut_manage_remove}
+
 1. **Weather Provider API 2.0.0** の行にある縦の省略符号をクリックします。  
 ![](images/del-prod-list2.png)
 
@@ -85,7 +98,9 @@ lastupdated: "2017-10-10"
 
  
  
-## このチュートリアルで学習したこと
+## まとめ
+{: #conclusion_tut_manage_remove}
+
 このチュートリアルでは、以下のアクティビティーを実行しました。
 
 1. API 製品を削除しました

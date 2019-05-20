@@ -19,7 +19,11 @@ paths:
           description: 有効な 5 桁の米国の郵便番号
           required: true
           type: string
-      responses: '200': 説明: 正常なスキーマ: $ref: '#/definitions/Current'
+      responses:
+        '200':
+          description: 成功
+          schema:
+            $ref: '#/definitions/Current'
   /today:
     get:
       summary: "今日の天候"
@@ -29,7 +33,11 @@ paths:
           description: 有効な 5 桁の米国の郵便番号
           required: true
           type: string
-      responses: '200': 説明: ユーザー・スキーマのプロファイル情報: $ref: '#/definitions/Today'
+      responses:
+        '200':
+          description: ユーザーのプロファイル情報
+          schema:
+            $ref: '#/definitions/Today'
 definitions:
   Today:
     type: object 

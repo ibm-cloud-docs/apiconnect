@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,22 +17,29 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # 開発者ポータルのカスタマイズとテーマの選択
+{: #tut_custom_dev_portal}
+
 **所要時間**: 30 分  
 **スキル・レベル**: ビギナー  
 
 
 ## 目標
+{: #object_tut_custom_dev_portal}
+
 このチュートリアルでは、{{site.data.keyword.apiconnect_full}} 開発者ポータルを短時間でカスタマイズしたり、それぞれのニーズに適したテーマを選択したりする方法を取り上げます。
 
 ---
 
 ## 前提条件
+{: #prereq_tut_custom_dev_portal}
 
-このチュートリアルを始める前に、[開発者ポータルのセットアップと構成](tut_config_dev_portal.html)のチュートリアルを完了し、ポータル管理者としてログインしておく必要があります。
+このチュートリアルを始める前に、[開発者ポータルのセットアップと構成](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal)のチュートリアルを完了し、ポータル管理者としてログインしておく必要があります。
 
 ---
 
 ## 開発者ポータルのカスタマイズ
+{: #cust_tut_custom_dev_portal}
+
 開発者ポータルを作成したら、その外観をカスタマイズできます。
 
 1. 最初に、ようこそバナーを変更します。 トップ・メニューで**「コンテンツ」**を選択し、**「ブロック」**を選択します。  
@@ -49,6 +62,8 @@ lastupdated: "2017-10-31"
 ---
 
 ## 開発者ポータルのテーマのカスタマイズ
+{: #cust_theme_tut_custom_dev_portal}
+
 開発者ポータルの外観を変えるために、テーマを変更できます。
 
 1. テーマを変更するには、トップ・メニューから**「外観」**を選択し、**「設定」**を選択し、**「IBM API Connect のテーマ」**を選択します。 これが、開発者ポータル作成時のデフォルトのテーマです。
@@ -72,6 +87,8 @@ lastupdated: "2017-10-31"
 ---
 
 ## 開発者ポータルで使用する別のテーマの選択
+{: #diff_theme_tut_custom_dev_portal}
+
 開発者ポータルに用意されている追加のテーマを選択して、外観をカスタマイズすることもできます。
 
 1. 別のテーマを使用可能にするには、「外観」設定の上部にある**「リスト」**タブを選択します。
@@ -92,14 +109,16 @@ lastupdated: "2017-10-31"
 ---
 
 ## 開発者ポータルで使用する新しいテーマのインストール
+{: #new_theme_tut_custom_dev_portal}
+
 既存のテーマの変更ではニーズに対応できない場合は、開発者ポータルの外観を変更するためにテーマをインストールすることもできます。
 
-1. [drupal.org ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](http://drupal.org){:new_window} からダウンロードしたモジュールやテーマを使用して開発者ポータルをカスタマイズすることもできれば、独自のモジュールやテーマを作成することもできます。
+1. [drupal.org ![外部リンクのアイコン](../../icons/launch-glyph.svg "外部リンクのアイコン")](http://drupal.org){: #new_window} からダウンロードしたモジュールやテーマを使用して開発者ポータルをカスタマイズすることもできれば、独自のモジュールやテーマを作成することもできます。
 
 2. 開発者ポータルにテーマをインストールするには、トップ・メニューから**「外観」**を選択し、**「新規テーマのインストール」**を選択します。  
   ![新規テーマのインストール](images/62-install-new.png)
 
-3. URL を使用して [drupal.org ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](http://drupal.org){:new_window} からテーマを直接インストールすることもできれば、**「ファイルの選択」**、**「インストール」**の順にクリックすることによって、ダウンロードまたは作成したテーマをアップロードすることもできます。  
+3. URL を使用して [drupal.org ![外部リンクのアイコン](../../icons/launch-glyph.svg "外部リンクのアイコン")](http://drupal.org){: #new_window} からテーマを直接インストールすることもできれば、**「ファイルの選択」**、**「インストール」**の順にクリックすることによって、ダウンロードまたは作成したテーマをアップロードすることもできます。  
   ![インストール](images/63-install.png) 
 
 4. アップロードが完了したら、テーマを使用可能にする必要があります。 **「新規追加されたテーマを使用可能にする」**を選択します。  
@@ -112,7 +131,8 @@ lastupdated: "2017-10-31"
 
 ---
 
-## サマリー
+## まとめ
+{: #conclusion_tut_custom_dev_portal}
 このチュートリアルが完了しました。 このチュートリアルでは、以下の方法を学習しました。
 
 * 開発者ポータルのウェルカム・ページのカスタマイズ
@@ -123,8 +143,9 @@ lastupdated: "2017-10-31"
 ---
 
 ## 次のステップ
+{: #next_tut_custom_dev_portal}
 
-[開発者ポータル内でユーザーがナビゲートする方法](tut_discover_apis.html)または[基本的な分析を行って洞察を深める方法](tut_insights_analytics.html)を学習します。
+[開発者ポータル内でユーザーがナビゲートする方法](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_discover_apis)または[基本的な分析を行って洞察を深める方法](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics)を学習します。
 
 作成 > 管理 > 保護 > **ソーシャル化** > 分析  
 

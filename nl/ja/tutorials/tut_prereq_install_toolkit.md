@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,10 +17,14 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # API Connect ツールキットのインストール
+{: #tut_prereq_install_toolkit}
+
 **所要時間**: 15 分  
 **スキル・レベル**: ビギナー  
 
-## 必要なもの
+## 前提条件
+{: #prereq_tut_prereq_install_toolkit}
+
 1. Node.js
 2. ノード・プロダクト・マネージャー (NPM)
 3. {{site.data.keyword.apiconnect_full}} _Lite_
@@ -28,10 +38,12 @@ lastupdated: "2017-10-31"
 
 
 ## node.js のインストール
+{: #nodejs_tut_prereq_install_toolkit}
+
 1. 以下の 2 つのソースのいずれかから node.js をダウンロードしてインストールします。
-   * [https://nodejs.org/en/download/ ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://nodejs.org/en/download/){:new_window} (注: 最新バージョンではなく、ご使用のプラットフォームに該当する LTS バージョンをダウンロードしてください。そうしないと、エラーになる場合もあります。)
+   * [https://nodejs.org/en/download/ ![外部リンクのアイコン](../icons/launch-glyph.svg "外部リンクのアイコン")](https://nodejs.org/en/download/){: #new_window} (注: 最新バージョンではなく、ご使用のプラットフォームに該当する LTS バージョンをダウンロードしてください。そうしないと、エラーになる場合もあります。)
       **または**
-   * [https://developer.ibm.com/node/sdk/v6/ ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://developer.ibm.com/node/sdk/v6/){:new_window}  
+   * [https://developer.ibm.com/node/sdk/v6/ ![外部リンクのアイコン](../icons/launch-glyph.svg "外部リンクのアイコン")](https://developer.ibm.com/node/sdk/v6/){: #new_window}  
 
     _node.js をインストールすると、**npm** (ノード・パッケージ・マネージャー) もインストールされます_。
 
@@ -48,6 +60,8 @@ lastupdated: "2017-10-31"
 
 
 ## API Connect ツールキットと Microgateway のインストール
+{: #tk_micro_tut_prereq_install_toolkit}
+
 1. npm config を更新して、信頼されていない証明書の使用を許可します。  
    `npm config -g set strict-ssl false`  
 

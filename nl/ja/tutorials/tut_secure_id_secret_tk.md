@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,25 +17,29 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # クライアント ID とクライアント秘密鍵による API の保護 (デベロッパーズ・ツールキットを使用する場合)
-
+{: #tut_secure_id_secret_tk}
 
 **所要時間:** 10 分  
 **スキル・レベル:** ビギナー
 
 
 ## 目標
+{: #object_tut_secure_id_secret_tk}
 
 このチュートリアルでは、クライアント ID とクライアント秘密鍵によって API を保護する手順を取り上げます。 開発者ポータルにアプリケーションを登録すると、そのアプリケーションを識別するためのクライアント ID が生成されます。 オプションとして、パスワードの役割を果たすクライアント秘密鍵を生成することもできます。 アプリケーションから API にアクセスするには、生成されたクライアント ID とクライアント秘密鍵を指定する必要があります。
 
 
 ## 前提条件
+{: #prereq_tut_secure_id_secret_tk}
+
 始める前に、以下のチュートリアルのいずれかを完了しておく必要があります。
-- [OpenAPI2.0 仕様のインポートと既存の REST サービスへのプロキシー作成](tut_rest_landing.html)
+- [OpenAPI2.0 仕様のインポートと既存の REST サービスへのプロキシー作成](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
        **または**  
-- [新しい API 仕様の追加と既存の REST サービスの呼び出し](tut_rest_landing.html)
+- [新しい API 仕様の追加と既存の REST サービスの呼び出し](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 
 
 ## API の識別メカニズムの設定
+{: #set_id_tut_secure_id_secret_tk}
 
 1. API Designer をまだ開いていなかった場合は、起動します。  
    a. 端末を開きます。  
@@ -60,6 +70,7 @@ lastupdated: "2017-10-31"
     ![](images/3a.png) 
 
 ## API に対する変更のテスト
+{: #test_tut_secure_id_secret_tk}
 
 1. 「アセンブル」タブで「►」をクリックして、変更をテストします。
 2. テスト・パネルで **get /current** 操作をクリックします。
@@ -76,6 +87,7 @@ lastupdated: "2017-10-31"
   
 
 ## クライアント ID とクライアント秘密鍵を使用した API の呼び出し
+{: #call_tut_secure_id_secret_tk}
 
 セキュリティー設定のテストは、「探索」ツールでも行えます。そのツールでは、プロキシー・エンドポイントを明示的に呼び出し、クライアント ID とクライアント秘密鍵をヘッダーの値として渡します。
 
@@ -91,11 +103,14 @@ lastupdated: "2017-10-31"
 ---
 
 ### まとめ
+{: #conclusion_tut_secure_id_secret_tk}
+
 このチュートリアルでは、API の識別メカニズムを設定する方法、API に対する変更をテストする方法、クライアント ID とクライアント秘密鍵を使用して API を呼び出す方法を学習しました。 
 
 ---
 
 ## 次のステップ
+{: #next_tut_secure_id_secret_tk}
 
 [開発者ポータルのセットアップと構成](tut_config_dev_portal.html)に進んで、API のソーシャル化を開始します。
 

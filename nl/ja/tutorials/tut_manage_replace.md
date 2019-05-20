@@ -1,8 +1,12 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-31"
+  years: 2019
+lastupdated: "2017-3-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
 
 ---
 
@@ -14,35 +18,37 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # API 製品の置換
+{: #tut_manage_replace}
+
 **所要時間**: 15 分  
 **スキル・レベル**: ビギナー  
 
+## 目標
+{: #object_tut_manage_replace}
+このチュートリアルでは、既存の API 製品を新しい製品に置換して更新します。 API 製品を置換すると、変更内容がすぐに有効になり、すべてのアプリケーションのサブスクリプションが自動的に更新されます。  
 
+---
 ## 前提条件
+{: #prereq_tut_manage_replace}
 
-1. [{{site.data.keyword.apiconnect_full}} インスタンスをセットアップします](tut_prereq_set_up_apic_instance.html)。
+1. [{{site.data.keyword.apiconnect_full}} インスタンスをセットアップ](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance)します。
 
 2. 以下のいずれかのチュートリアルを完了します。
  
-    - [OpenAPI2.0 仕様のインポートと既存の REST サービスへのプロキシー作成](tut_rest_landing.html)
+    - [OpenAPI2.0 仕様のインポートと既存の REST サービスへのプロキシー作成](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
        **または**  
-    - [新しい API 仕様の追加と既存の REST サービスの呼び出し](tut_rest_landing.html)
+    - [新しい API 仕様の追加と既存の REST サービスの呼び出し](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 
 ---
-## 目標
-このチュートリアルでは、既存の API 製品を新しい製品に置換して更新します。 API 製品を置換すると、変更内容がすぐに有効になり、すべてのアプリケーションのサブスクリプションが自動的に更新されます。  
 
-
----
 ## API 製品の置換
-{: #repl_api_prod}
+{: #repl_api_prod_tut_manage_replace}}
 
-1. {{site.data.keyword.Bluemix_short}} にログインします ([https://console.ng.bluemix.net/login) ![外部リンクのアイコン](../../../icons/launch-glyph.svg "外部リンクのアイコン")](https://console.ng.bluemix.net/login){:new_window}。
+1. {{site.data.keyword.Bluemix_short}} (https://cloud.ibm.com) にログインします。
+2. {{site.data.keyword.Bluemix_notm}} の**ダッシュボード**で、**「Cloud Foundary サービス (Cloud Foundary Services)」**をクリックします。{{site.data.keyword.apiconnect_short}} サービスを起動します。 
+3. {{site.data.keyword.apiconnect_short}} でナビゲーション・パネルが開いていることを確認します。 表示されていない場合は、**「>>」**をクリックして開きます。  
 
-2. {{site.data.keyword.Bluemix_notm}} ダッシュボードで {{site.data.keyword.apiconnect_short}} サービスを起動します。
-![](images/Bluemix.png)
-
-3. 以前に UI ナビゲーション・ペインをピン留めしていなかった場合は、API Manager で**「ナビゲート」**アイコン ![](images/navigate-to.png) をクリックします。 API Manager UI ナビゲーション・ペインが開きます。 UI ナビゲーション・ペインをピン留めするには、**「メニューのピン留め」**アイコン ![](images/pinned.png) をクリックします。
+  ![](images/cloud-apic-dashboard.png)
 
 4. **「ドラフト」** > **「API」**をクリックします。
 
@@ -91,7 +97,8 @@ lastupdated: "2017-10-31"
  ![](images/rep-prod-retired.png) 
  
 
-## このチュートリアルで学習したこと
+## まとめ
+{: #conclusion_tut_manage_replace}
 
 このチュートリアルでは、以下のアクティビティーを実行しました。
 1. API 製品を更新しました。
