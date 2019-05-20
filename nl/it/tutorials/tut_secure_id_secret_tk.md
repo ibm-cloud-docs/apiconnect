@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,25 +17,29 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Proteggi la tua API con il segreto e l'ID client utilizzando il toolkit sviluppatori
-
+{: #tut_secure_id_secret_tk}
 
 **Durata:** 10 minuti  
 **Livello di competenza:** Principiante
 
 
 ## Obiettivo
+{: #object_tut_secure_id_secret_tk}
 
 Questa esercitazione ti guiderà su come proteggere la tua API con il segreto e l'ID client. Quando le applicazioni vengono registrate nel tuo portale sviluppatori, viene generato un ID client per identificare l'applicazione. Facoltativamente, un segreto client, che funge da password, può essere generato. Le applicazioni dovranno fornire le chiavi del segreto e dell'ID client per poter accedere alla tua API.
 
 
 ## Prerequisiti
+{: #prereq_tut_secure_id_secret_tk}
+
 Prima di iniziare, devi aver completato una delle seguenti esercitazioni:
-- [Importa una specifica OpenAPI2.0 e collegati tramite proxy a un servizio REST esistente](tut_rest_landing.html)
+- [Importa una specifica OpenAPI2.0 e collegati tramite proxy a un servizio REST esistente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
        **o**  
-- [Aggiungi una nuova specifica API e richiama un servizio REST esistente](tut_rest_landing.html)
+- [Aggiungi una nuova specifica API e richiama un servizio REST esistente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 
 
 ## Configura il meccanismo di identificazione della tua API
+{: #set_id_tut_secure_id_secret_tk}
 
 1. Avvia API Designer (se non è già aperto):  
    a. Apri il tuo terminale.  
@@ -60,6 +70,7 @@ Prima di iniziare, devi aver completato una delle seguenti esercitazioni:
     ![](images/3a.png) 
 
 ## Verifica le modifiche apportate alla tua API
+{: #test_tut_secure_id_secret_tk}
 
 1. Nella scheda di assemblaggio, fai clic su ► per verificare le tue modifiche.
 2. Nel pannello di verifica, fai clic sull'operazione **get /current**.
@@ -76,6 +87,7 @@ Prima di iniziare, devi aver completato una delle seguenti esercitazioni:
   
 
 ## Richiama la tua API utilizzando il segreto e l'ID client
+{: #call_tut_secure_id_secret_tk}
 
 Le impostazioni di sicurezza possono inoltre essere verificate utilizzando lo strumento Explore che richiama esplicitamente l'endpoint proxy e passa le chiavi segreto e ID client come valori di intestazione.
 
@@ -91,11 +103,14 @@ Le impostazioni di sicurezza possono inoltre essere verificate utilizzando lo st
 ---
 
 ### Conclusioni
+{: #conclusion_tut_secure_id_secret_tk}
+
 In questa esercitazione, hai imparato come configurare il meccanismo di identificazione, verificare le modifiche apportate alla tua API e richiamato la tua API utilizzando il segreto e l'ID client. 
 
 ---
 
 ## Passo successivo
+{: #next_tut_secure_id_secret_tk}
 
 Inizia a socializzare con la tua API [configurando un portale sviluppatori](tut_config_dev_portal.html).
 

@@ -1,8 +1,12 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-31"
+  years: 2019
+lastupdated: "2017-3-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
 
 ---
 
@@ -14,35 +18,37 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Sostituzione di un prodotto API
+{: #tut_manage_replace}
+
 **Durata**: 15 minuti  
 **Livello di competenza**: Principiante  
 
+## Obiettivo
+{: #object_tut_manage_replace}
+In questa esercitazione, aggiornerai un prodotto API esistente sostituendolo con uno nuovo. Quando un prodotto API viene sostituito, le modifiche hanno effetto immediatamente e tutte le sottoscrizioni alle applicazioni vengono aggiornate automaticamente.  
 
+---
 ## Prerequisiti
+{: #prereq_tut_manage_replace}
 
-1. [Configura la tua istanza {{site.data.keyword.apiconnect_full}}](tut_prereq_set_up_apic_instance.html).
+1. [Configura la tua istanza {{site.data.keyword.apiconnect_full}}](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
 
 2. Completa una delle seguenti esercitazioni:
  
-    - [Importa una specifica OpenAPI2.0 e collegati tramite proxy a un servizio REST esistente](tut_rest_landing.html)
+    - [Importa una specifica OpenAPI2.0 e collegati tramite proxy a un servizio REST esistente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
        **o**  
-    - [Aggiungi una nuova specifica API e richiama un servizio REST esistente](tut_rest_landing.html).
+    - [Aggiungi una nuova specifica API e richiama un servizio REST esistente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
 
 ---
-## Obiettivo
-In questa esercitazione, aggiornerai un prodotto API esistente sostituendolo con uno nuovo. Quando un prodotto API viene sostituito, le modifiche hanno effetto immediatamente e tutte le sottoscrizioni alle applicazioni vengono aggiornate automaticamente.  
 
-
----
 ## Sostituzione di un prodotto API
-{: #repl_api_prod}
+{: #repl_api_prod_tut_manage_replace}}
 
-1. Accedi a {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://console.ng.bluemix.net/login){:new_window}.
+1. Accedi a {{site.data.keyword.Bluemix_short}}: https://cloud.ibm.com.
+2. Nel **Dashboard** {{site.data.keyword.Bluemix_notm}}, fai clic su **Cloud Foundary Services**. Avvia il servizio {{site.data.keyword.apiconnect_short}}. 
+3. In {{site.data.keyword.apiconnect_short}}, assicurati che il pannello di navigazione sia aperto. Se non lo è, fai clic su **>>** per aprirlo.  
 
-2. Nel dashboard {{site.data.keyword.Bluemix_notm}}, avvia il servizio {{site.data.keyword.apiconnect_short}}.
-![](images/Bluemix.png)
-
-3. In API Manager, se non hai precedentemente bloccato il riquadro di navigazione della IU fai clic sull'icona **Navigate to** ![](images/navigate-to.png). Viene aperto il pannello di navigazione della IU API Manager. Per bloccare il pannello di navigazione della IU, fai clic sull'icona **Pin menu** ![](images/pinned.png).
+  ![](images/cloud-apic-dashboard.png)
 
 4. Fai clic su **Drafts** > **APIs**.
 
@@ -91,7 +97,8 @@ In questa esercitazione, aggiornerai un prodotto API esistente sostituendolo con
  ![](images/rep-prod-retired.png) 
  
 
-## Cosa hai fatto in questa esercitazione
+## Conclusioni
+{: #conclusion_tut_manage_replace}
 
 In questa esercitazione, hai completato le seguenti attività:
 1. Aggiornato un prodotto API.

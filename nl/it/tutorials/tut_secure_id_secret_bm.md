@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,25 +17,28 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Proteggi la tua API con il segreto e l'ID client utilizzando {{site.data.keyword.Bluemix_notm}}
+{: #tut_secure_id_secret_bm}
 
 **Durata:** 10 minuti  
 **Livello di competenza:** Principiante
 
 
 ## Obiettivo
-
+{: #object_tut_secure_id_secret_bm}
 Questa esercitazione ti guiderà su come proteggere la tua API con il segreto e l'ID client. Quando le applicazioni vengono registrate nel tuo portale sviluppatori, viene generato un ID client per identificare l'applicazione. Facoltativamente, un segreto client, che funge da password, può essere generato. Le applicazioni dovranno fornire le chiavi del segreto e dell'ID client per poter accedere alla tua API.
 
 
 ## Prerequisiti
+{: #prereq_tut_secure_id_secret_bm}
 
 Prima di iniziare, devi aver completato una delle seguenti esercitazioni: 
-- [Importa una specifica OpenAPI2.0 e collegati tramite proxy a un servizio REST esistente](tut_rest_landing.html)  
+- [Importa una specifica OpenAPI2.0 e collegati tramite proxy a un servizio REST esistente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)  
 **o**  
-- [Aggiungi una nuova specifica API e richiama un servizio REST esistente](tut_rest_landing.html)
+- [Aggiungi una nuova specifica API e richiama un servizio REST esistente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 
 
 ## Configura il meccanismo di identificazione della tua API
+{: #set_id_tut_secure_id_secret_bm}
 
 1. Passa alla vista di progettazione della tua API:  
    a. Fai clic su **Drafts** nel pannello di navigazione di sinistra  
@@ -53,6 +62,7 @@ Prima di iniziare, devi aver completato una delle seguenti esercitazioni:
 
 
 ## Verifica le modifiche apportate alla tua API
+{: #test_tut_secure_id_secret_bm}
 
 1. Nella scheda di assemblaggio, fai clic sul pulsante ► per verificare le tue modifiche.
 
@@ -67,7 +77,7 @@ Prima di iniziare, devi aver completato una delle seguenti esercitazioni:
   ![](images/test_api_keys_1.png)
 
 5. Scorri più in basso e immetti un codice postale (ad es. 90210). 
-6. Fai clic su **Richiama**. _Dovresti ricevere una risposta 200 OK, con il corpo del messaggio contenente le informazioni meteo._
+6. Fai clic su **Invoke**. _Dovresti ricevere una risposta 200 OK, con il corpo del messaggio contenente le informazioni meteo._
 7. Ora ritorna al campo ID client. 
 8. Sostituisci il valore ID client con un valore a caso.
 9. Riesegui la verifica facendo clic su **Invoke**. _Riceverai una risposta 401 Unauthorized, insieme al messaggio "Client ID not registered"._  
@@ -76,6 +86,7 @@ Prima di iniziare, devi aver completato una delle seguenti esercitazioni:
 
 
 ## Richiama la tua API utilizzando il segreto e l'ID client
+{: #call_tut_secure_id_secret_bm}
 
 Le impostazioni di sicurezza possono inoltre essere verificate utilizzando lo strumento Explore che richiama esplicitamente l'endpoint proxy e passa le chiavi segreto e ID client come valori di intestazione.
 
@@ -90,12 +101,15 @@ Le impostazioni di sicurezza possono inoltre essere verificate utilizzando lo st
 ---
 
 ## Conclusioni
+{: #conclusion_tut_secure_id_secret_bm}
+
 In questa esercitazione, hai imparato come configurare il meccanismo di identificazione, verificare le modifiche apportate alla tua API e richiamato la tua API utilizzando il segreto e l'ID client. 
 
 ---
 
 ## Passo successivo
+{: #next_tut_secure_id_secret_bm}
 
-Inizia a socializzare con la tua API [configurando un portale sviluppatori](tut_config_dev_portal.html).
+Inizia a socializzare con la tua API [configurando un portale sviluppatori](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal).
 
 Create > Manage > **Secure** > Socialize > Analyze

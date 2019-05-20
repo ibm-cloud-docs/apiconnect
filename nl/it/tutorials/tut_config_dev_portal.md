@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,18 +17,26 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Impostazione e configurazione del portale sviluppatori
+{: #tut_config_dev_portal}
+
 **Durata**: 30 minuti  
 **Livello di competenza**: Principiante  
 
-## Prerequisiti
-Prima di iniziare, dovrai [importare la tua specifica API e collegarti tramite proxy a un servizio REST esistente](tut_rest_landing.html).
-
 ## Obiettivo
+{: #object_tut_config_dev_portal}
+
 Questa esercitazione di aiuterà ad iniziare a configurare velocemente il tuo **Portale sviluppatori API Connect**. 
+
+## Prerequisiti
+{: #prereq_tut_config_dev_portal}
+
+Prima di iniziare, dovrai [importare la tua specifica API e collegarti tramite proxy a un servizio REST esistente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
 
 ---
 
 ## Crea il tuo portale sviluppatori
+{: #create_prereq_tut_config_dev_portal}
+
 In questa sezione, creerai un portale sviluppatori per un catalogo.
 
 *Cataloghi* è un termine di IBM per ambienti diversi. Ad esempio, puoi creare diversi cataloghi per gli ambienti di test, preparazione e produzione. Dovresti avere un catalogo denominato Sandbox. Sentiti libero di utilizzare questo catalogo per creare il tuo portale sviluppatori o crea un nuovo catalogo e denominalo come preferisci.
@@ -51,6 +65,8 @@ In questa sezione, creerai un portale sviluppatori per un catalogo.
 ---
 
 ## Esplora il tuo portale sviluppatori
+{: #explore_prereq_tut_config_dev_portal}
+
 In questa sezione, prenderai familiarità con il portale sviluppatori che hai creato nei passi precedenti.
 
 1. Dopo aver configurato il portale sviluppatori per il tuo catalogo, riceverai un'email con un link per un accesso monouso. Seleziona il link per avviare il portale sviluppatori.
@@ -66,7 +82,7 @@ In questa sezione, prenderai familiarità con il portale sviluppatori che hai cr
   
 | Scheda              | Descrizione          | 
 |:---------------- | -------------------- | 
-| _Home_       | La homepage è la pagina di benvenuto del tuo portale sviluppatori. Puoi [personalizzare la pagina](tut_custom_dev_portal.html) per soddisfare i tuoi bisogni. | 
+| _Home_       | La homepage è la pagina di benvenuto del tuo portale sviluppatori. Puoi [personalizzare la pagina](/docs/service/apiconnect/tutorials?topic=apiconnect-tut_custom_dev_portal) per soddisfare i tuoi bisogni. | 
 | _Getting Started_       | La pagina Getting started viene utilizzata per indicare agli sviluppatori come iniziare ad utilizzare il tuo portale sviluppatori. |
 | _API Products_ | La pagina API Products viene utilizzata dagli sviluppatori per esplorare e sottoscriversi alle API disponibili nel tuo portale. | 
 | _Apps_ | La pagina Apps visualizza le applicazioni che stanno utilizzando le tue API. | 
@@ -79,12 +95,15 @@ Nota: nella pagina API Products, puoi selezionare uno dei prodotti per visualizz
   ![Prodotti API](images/27-api-products.png)
 
 ### Conclusioni
+{: #conclusion_prereq_tut_config_dev_portal}
+
 In questa esercitazione hai imparato come configurare il tuo portale sviluppatori {{site.data.keyword.apiconnect_short}}. Hai anche esplorato il portale sviluppatori.
 
 ---
 
 ## Passo successivo
+{: #next_prereq_tut_config_dev_portal}
 
-[Personalizza il tuo portale sviluppatori e seleziona un tema](tut_custom_dev_portal.html).
+[Personalizza il tuo portale sviluppatori e seleziona un tema](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_custom_dev_portal).
 
 Create >Manage> Secure > ** Socialize ** > Analyze

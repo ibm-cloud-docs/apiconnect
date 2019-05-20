@@ -1,8 +1,13 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-10"
+  years: 2019
+lastupdated: "2019-3-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 
 ---
 
@@ -13,27 +18,33 @@ lastupdated: "2017-10-10"
 {:pre: .pre}
 
 # Archiviazione ed eliminazione dei prodotti API
+{: #tut_manage_remove}
+
 **Durata**: 15 minuti  
 **Livello di competenza**: Principiante 
 
-## Prerequisiti
-
-1. [Configura la tua istanza {{site.data.keyword.apiconnect_full}}](tut_prereq_set_up_apic_instance.html).
-
-2. Completa la [Esercitazione sulla sostituzione di un prodotto API](tut_manage_supercede.html).
-
----
 ## Obiettivo
+{: #object_tut_manage_remove}
 In questa esercitazione, eliminerai, archivierai e ritirerai un'API.
 
 ---
+## Prerequisiti
+{: #prereq_tut_manage_remove}
+
+1. [Configura la tua istanza {{site.data.keyword.apiconnect_full}}](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
+
+2. Completa la [Esercitazione sulla sostituzione di un prodotto API](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede).
+
+---
+
 ## Eliminazione di un prodotto API
-1. Accedi a {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://console.ng.bluemix.net/login){:new_window}.
+{: #delete_tut_manage_remove}
 
-2. Nel dashboard {{site.data.keyword.Bluemix_short}}, avvia il servizio {{site.data.keyword.apiconnect_short}}.
-![](images/Bluemix.png)
+1. Accedi a {{site.data.keyword.Bluemix_short}}: https://cloud.ibm.com.
+2. Nel **Dashboard** {{site.data.keyword.Bluemix_notm}}, fai clic su **Cloud Foundary Services**. Avvia il servizio {{site.data.keyword.apiconnect_short}}. 
+3. In {{site.data.keyword.apiconnect_short}}, assicurati che il pannello di navigazione sia aperto. Se non lo è, fai clic su **>>** per aprirlo.  
 
-3. In API Manager, se non hai precedentemente bloccato il riquadro di navigazione della IU fai clic sull'icona **Navigate to** ![](images/navigate-to.png). Viene aperto il pannello di navigazione della IU API Manager. Per bloccare il pannello di navigazione della IU, fai clic sull'icona **Pin menu** ![](images/pinned.png).
+  ![](images/cloud-apic-dashboard.png)
 
 4. Fai clic su **Sandbox** per aprire il catalogo Sandbox. **Nota**: potresti dover ritornare al dashboard per visualizzare i cataloghi disponibili. Inoltre, la tua pagina del dashboard potrebbe mostrare i cataloghi come tile invece che come un elenco.
 ![](images/del-sandbox-list.png)
@@ -50,6 +61,8 @@ In questa esercitazione, eliminerai, archivierai e ritirerai un'API.
 
 
 ## Archiviazione di un prodotto API
+{: #archive_tut_manage_remove}
+
 1. Fai clic sulle ellissi verticali nella riga **Weather Provider API 2.0.0**.  
 ![](images/del-prod-list2.png)
 
@@ -85,7 +98,9 @@ In questa esercitazione, eliminerai, archivierai e ritirerai un'API.
 
  
  
-## Cosa hai fatto in questa esercitazione
+## Conclusioni
+{: #conclusion_tut_manage_remove}
+
 In questa esercitazione, hai completato le seguenti attività:
 
 1. Eliminato un prodotto API

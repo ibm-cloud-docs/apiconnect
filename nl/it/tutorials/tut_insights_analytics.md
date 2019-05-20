@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-12-15"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,20 +17,28 @@ lastupdated: "2017-12-15"
 {:pre: .pre}
 
 # Ottieni informazioni approfondite dalle analisi di base
+{: #tut_insights_analytics}
+
 Durata: 30 minuti  
 Livello di competenza: Principiante
 
 ## Obiettivo
+{: #object_tut_insights_analytics}
+
 Questa è un'introduzione di base alle analisi API in {{site.data.keyword.apiconnect_full}}. Faremo un tour dei dashboard di analisi disponibili e che puoi seguire con le tue proprie API.
 
 
 ## Prerequisiti
+{: #prereq_tut_insights_analytics}
+
 Per poter visualizzare la tue proprie analisi API, devi disporre di un prodotto API creato e pubblicato. In aggiunta, dovrai richiamare la tua API più volte per generare alcuni dati di analisi, preferibilmente utilizzando un ID client da un'applicazione registrata (non l'applicazione di test con pre-provisioning).
 
 Per generare i dati in questa esercitazione, abbiamo utilizzato *Collection Runner* di Postman per richiamare un'API più volte, con dati e ID client differenti. Puoi utilizzare uno strumento simile (come HttpRequester per Firefox) o utilizzare cURL per richiamare la tua API più volte dalla riga di comando. Puoi ottenere le richieste di esempio per la tua API facendo clic sul link **Explore** in {{site.data.keyword.apiconnect_short}}.
 
 ## Introduzione alle analisi del catalogo
-Come proprietario di un'API, hai bisogno di un modo per valutare l'esito e le prestazioni delle API che offri. Il luogo principale in cui ricercherai le analisi è al livello del catalogo. Se non hai ricevuto un'introduzione ai cataloghi, consulta [Working with Catalogs ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){:new_window} nel IBM Knowledge Center per un'introduzione. 
+{: #intro_tut_insights_analytics}
+
+Come proprietario di un'API, hai bisogno di un modo per valutare l'esito e le prestazioni delle API che offri. Il luogo principale in cui ricercherai le analisi è al livello del catalogo. Se non hai ricevuto un'introduzione ai cataloghi, consulta [Working with Catalogs ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){: #new_window} nel IBM Knowledge Center per un'introduzione. 
 
 Tu e i tuoi sviluppatori dell'API potete inoltre accedere alle analisi specifiche per l'applicazione nel portale sviluppatori, ma in questa esercitazione, ci concentreremo sulle analisi del catalogo.
 
@@ -38,6 +52,8 @@ Questa esercitazione è composta di quattro attività che ti mostrano come compl
 
 
 ## Attività 1: visualizzazione delle analisi della casella
+{: #act1_tut_insights_analytics}
+
 1. Nel tuo servizio {{site.data.keyword.apiconnect_short}} in {{site.data.keyword.Bluemix_short}}, avvia il tuo dashboard e seleziona il catalogo che vuoi aprire. 
 2. Fai clic sulla scheda *Analytics*.
 
@@ -65,6 +81,7 @@ Questo dashboard dispone di una serie di visualizzazioni differenti che visualiz
 
 
 ## Attività 2: visualizzazione dei dettagli dell'evento
+{: #act2_tut_insights_analytics}
 
 Le visualizzazioni sono un ottimo modo di ottenere una panoramica sui dati utile, ma hai anche bisogno di un modo di navigare tra i record dell'evento che popolano i grafici.
 
@@ -77,6 +94,7 @@ Le visualizzazioni sono un ottimo modo di ottenere una panoramica sui dati utile
 Puoi modificare, spostare ed eliminare le visualizzazioni nel tuo dashboard.
 
 ## Attività 3: creazione di nuovi dashboard
+{: #act3_tut_insights_analytics}
 
 Ora, creiamo un nuovo dashboard che fornirà la visualizzazione dei modelli di traffico dell'API. Questi sono tutti disponibili utilizzando le visualizzazioni integrate. 
 
@@ -102,6 +120,8 @@ esempio:
 
 
 ## Attività 4: creazione di nuove visualizzazioni
+{: #act4_tut_insights_analytics}
+
 Nel dashboard Subscriber che abbiamo creato, abbiamo incluso la visualizzazione integrata che mostra le chiamate API al giorno. Quando guardiamo tutte le informazioni presentate insieme, ci piacerebbe davvero vedere l'utilizzo per applicazione. Creiamo una nuova visualizzazione che mostra queste informazioni.
 
 1. Fai clic su **New Visualization** e seleziona il link **Create Visualizations**.
@@ -136,6 +156,7 @@ Questo grafico (finora) mostra una serie temporale delle chiamate API. Noi vogli
 Esistono altre informazioni disponibili per la visualizzazione dei dettagli delle chiamate API, i chiamanti e così via. Un elenco completo di eventi API è disponibile nel API Connect Knowledge Center o nell'elenco dei termini quando crei le visualizzazioni.
 
 ## Conclusioni
+{: #conclusion_tut_insights_analytics}
 
 La capacità di visualizzare le analisi API in combinazioni e stili differenti ti fornisce un'opportunità di trarre conclusioni o andare più a fondo nei tuoi dati API. Puoi utilizzare queste informazioni approfondite per prendere decisioni su quali API offrire, quando sostituire o ritirare un'API, su chi sta utilizzando le tue API e così via.
 
@@ -148,7 +169,7 @@ In questa esercitazione, abbiamo eseguito diverse attività per aiutarti a crear
 ---
 
 ## Passo successivo
-
-Impara [come gestire le tue API e le versioni](tut_manage_version_landing.html).
+{: #next_tut_insights_analytics}
+Impara [come gestire le tue API e le versioni](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_version_landing).
 
 Create > Manage > Secure > Socialize > **Analyze**  

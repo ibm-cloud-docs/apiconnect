@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,22 +17,29 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Personalizzazione del portale sviluppatori e selezione di un tema
+{: #tut_custom_dev_portal}
+
 **Durata**: 30 minuti  
 **Livello di competenza**: Principiante  
 
 
 ## Obiettivo
+{: #object_tut_custom_dev_portal}
+
 Questa esercitazione ti aiuterà a personalizzare velocemente il tuo portale sviluppatori {{site.data.keyword.apiconnect_full}} e a selezionare un tema che soddisfi i tuoi bisogni.
 
 ---
 
 ## Prerequisiti
+{: #prereq_tut_custom_dev_portal}
 
-Prima di iniziare con questa esercitazione, devi aver completato l'esercitazione [Impostazione e configurazione del portale sviluppatori](tut_config_dev_portal.html) e aver eseguito l'accesso come amministratore del portale.
+Prima di iniziare con questa esercitazione, devi aver completato l'esercitazione [Impostazione e configurazione del portale sviluppatori](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal) e aver eseguito l'accesso come amministratore del portale.
 
 ---
 
 ## Personalizza il tuo portale sviluppatori
+{: #cust_tut_custom_dev_portal}
+
 Dopo aver creato il tuo portale sviluppatori, puoi personalizzarne l'aspetto.
 
 1. Iniziamo modificando il banner di benvenuto. Nel menu in alto seleziona **Content** e **Blocks**.  
@@ -49,6 +62,8 @@ Dopo aver creato il tuo portale sviluppatori, puoi personalizzarne l'aspetto.
 ---
 
 ## Personalizza il tema del tuo portale sviluppatori
+{: #cust_theme_tut_custom_dev_portal}
+
 Il portale sviluppatori ti consente di modificare il tema cambiandone l'aspetto.
 
 1. Per modificare il tema, seleziona **Appearance** dal menu in alto, poi **Settings** e **IBM API Connect Theme**. Questo è il tema predefinito quando hai creato il tuo portale sviluppatori.
@@ -72,6 +87,8 @@ Il portale sviluppatori ti consente di modificare il tema cambiandone l'aspetto.
 ---
 
 ## Seleziona un tema diverso per il tuo portale sviluppatori
+{: #diff_theme_tut_custom_dev_portal}
+
 Il portale sviluppatori viene fornito con temi aggiuntivi che puoi scegliere e personalizzare per modificarne l'aspetto.
 
 1. Per abilitare un tema differente, seleziona la scheda **List** all'inizio dell'impostazione dell'aspetto.
@@ -92,14 +109,16 @@ Il portale sviluppatori viene fornito con temi aggiuntivi che puoi scegliere e p
 ---
 
 ## Installare un nuovo tema nel tuo portale sviluppatori
+{: #new_theme_tut_custom_dev_portal}
+
 Se modificando un tema non soddisfi i tuoi bisogni, il portale sviluppatori ti consente inoltre di installare un tema per modificarne l'aspetto.
 
-1. Puoi utilizzare i moduli o i temi scaricati da [drupal.org ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://drupal.org){:new_window} per personalizzare il tuo portale sviluppatori o puoi crearne di tuoi.
+1. Puoi utilizzare i moduli o i temi scaricati da [drupal.org ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://drupal.org){: #new_window} per personalizzare il tuo portale sviluppatori o puoi crearne di tuoi.
 
 2. Per installare un tema nel portale sviluppatori, seleziona **Appearance** dal menu in alto e **Install new theme**.  
   ![Installa nuovo tema](images/62-install-new.png)
 
-3. Puoi installare i temi direttamente da [drupal.org ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://drupal.org){:new_window} utilizzando un URL o puoi caricare un tema che hai scaricato o creato facendo clic su **Choose File** e **Install**.  
+3. Puoi installare i temi direttamente da [drupal.org ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://drupal.org){: #new_window} utilizzando un URL o puoi caricare un tema che hai scaricato o creato facendo clic su **Choose File** e **Install**.  
   ![Installa](images/63-install.png) 
 
 4. Quando il caricamento è completo, devi abilitare il tema. Seleziona **Enable newly added themes**.  
@@ -112,7 +131,8 @@ Se modificando un tema non soddisfi i tuoi bisogni, il portale sviluppatori ti c
 
 ---
 
-## Riepilogo
+## Conclusioni
+{: #conclusion_tut_custom_dev_portal}
 Congratulazioni, hai completato questa esercitazione. In questa esercitazione hai imparato come:
 
 * Personalizzare la pagina di benvenuto del tuo portale sviluppatori
@@ -123,8 +143,9 @@ Congratulazioni, hai completato questa esercitazione. In questa esercitazione ha
 ---
 
 ## Passo successivo
+{: #next_tut_custom_dev_portal}
 
-Impara [come un utente naviga nel portale sviluppatori](tut_discover_apis.html) o [come ottenere informazioni approfondite da analisi di base](tut_insights_analytics.html).
+Impara [come un utente naviga nel portale sviluppatori](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_discover_apis) o [come ottenere informazioni approfondite da analisi di base](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics).
 
 Create >Manage> Secure > ** Socialize ** > Analyze  
 

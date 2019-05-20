@@ -4,23 +4,27 @@ copyright:
   years: 2018
 lastupdated: "2018-02-22"
 
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
-
-{:new_window: target="_blank"}
+{:new_window: target="blank"}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-
 # Creazione di un'API in Node.js
+{: #tut_create_api_node}
 
 **Durata**: 20 minuti  
 **Livello di competenza**: Principiante  
 
 ---
 ## Obiettivo
+{: #object_tut_create_api_node}
 
 Questa esercitazione di guida nella creazione di un'API in Node.js utilizzando il framework LoopBack. L'esercitazione descrive come:
 1. Creare un nuovo progetto LoopBack.
@@ -29,18 +33,21 @@ Questa esercitazione di guida nella creazione di un'API in Node.js utilizzando i
 
 ---
 ## Prerequisiti
+{: #prereq_tut_create_api_node}
 
-Prima di iniziare, [installa il toolkit {{site.data.keyword.apiconnect_short}}](tut_prereq_install_toolkit.html). Se il toolkit è già installato, assicurati che stai eseguendo la versione 5.0.8.1 o successiva. Puoi verificarlo immettendo il seguente comando nella riga di comando:
+Prima di iniziare, [installa il toolkit {{site.data.keyword.apiconnect_short}}](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_install_toolkit). Se il toolkit è già installato, assicurati che stai eseguendo la versione 5.0.8.1 o successiva. Puoi verificarlo immettendo il seguente comando nella riga di comando:
 	```
 	apic -v
 	```
 
 ---
 ## Crea progetto LoopBack.
+{: #create_tut_create_api_node}
 
 Puoi creare un progetto Loopback utilizzando l'interfaccia riga di comando del toolkit sviluppatori {{site.data.keyword.apiconnect_short}} o l'interfaccia API Designer. 
  
 ### Crea un progetto LoopBack utilizzando la riga di comando del toolkit
+{: #create_cli_tut_create_api_node}
 
 Per creare un LoopBack utilizzando la riga di comando del toolkit {{site.data.keyword.apiconnect_short}}, completa la seguente procedura:
 1.  Dall'interfaccia riga di comando, immetti il seguente comando. Viene utilizzato per creare e gestire le applicazioni LoopBack.
@@ -83,6 +90,7 @@ Un progetto LoopBack vuoto contiene le seguenti directory:
 
 
 ### Crea un progetto LoopBack utilizzando l'interfaccia API Designer
+{: #create_apid_tut_create_api_node}
 
 Per creare un LoopBack utilizzando API Designer, completa la seguente procedura:
 1.  Dall'interfaccia riga di comando, immetti il seguente comando per avviare API Designer:
@@ -116,10 +124,13 @@ Per creare un LoopBack utilizzando API Designer, completa la seguente procedura:
 
 ---
 ## Aggiungi un nuovo modello e una nuova origine dati
+{: #add_tut_create_api_node}
 
 Per aggiungere un nuovo modello e una nuova origine dati a un progetto LoopBack utilizzando API Designer, completa la seguente procedura:
 
 ### Aggiungi un'origine dati
+{: #add_ds_tut_create_api_node}
+
 Per aggiungere una nuova origine dati a un progetto LoopBack utilizzando API Designer, completa la seguente procedura.
 1. Devi inoltre creare un progetto LoopBack (il progetto "weather-data") come descritto in `Create a LoopBack project from the command line` e assicurarti che la directory di lavoro corrente sia la directory root del progetto:
 	```bash
@@ -144,36 +155,38 @@ Per aggiungere una nuova origine dati a un progetto LoopBack utilizzando API Des
 6. Fai clic su **Nuovo**.
 7. Per impostazione predefinita, l'impostazione **Connector** visualizza **In-memory db** e le altre impostazioni sono vuote. Conserva le impostazioni predefinite per ora, API Designer salva automaticamente la nuova origine dati.
 	>![info]
-	>L'origine dati in memoria è integrata in LoopBack ed è adatta solo per lo sviluppo e la verifica iniziale. Quando sei pronto a collegare i tuoi modelli a un'origine dati reale come un server di database, modifica l'impostazione **Connector** di conseguenza e installa il connettore dell'origine dati seguendo le istruzioni in [Installing LoopBack connectors ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tapim-connector-install.html#task_i2p_dnw_vv){:new_window}. Immetti le impostazioni del connettore appropriate (nome host, porta, nome database, nome utente, password) per il tuo tipo di connettore e fai clic sull'icona **Save** ![](images/save-icon.png). API Designer verifica automaticamente il collegamento all'origine dati. Se la verifica ha esito positivo, viene visualizzato il messaggio **Success - Data source connection test succeeded**.
+	>L'origine dati in memoria è integrata in LoopBack ed è adatta solo per lo sviluppo e la verifica iniziale. Quando sei pronto a connettere i tuoi modelli a un'origine dati reale come un server di database, modifica l'impostazione **Connector** di conseguenza e installa il connettore dell'origine dati seguendo le istruzioni nell'argomento dell'IBM Knowledge Center, <https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tapim-connector-install.html#task_i2p_dnw_vv>Installing LoopBack connectors ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno") come appropriato per il tuo tipo di connettore, e fai clic sull'icona **Salva** ![](images/save-icon.png). API Designer verifica automaticamente il collegamento all'origine dati. Se la verifica ha esito positivo, viene visualizzato il messaggio **Success - Data source connection test succeeded**.
 8. Fai clic sull'icona Test Connection ![](images/db-test-icon.png) per verificare il collegamento all'origine dati. Viene visualizzato il messaggio "Data source connection test succeeded".
-9. Fai clic su **All Data Sources**. L'origine dati verrà visualizzata nell'elenco di origini dati e l'editor aggiorna il file server/datasources.json con le impostazioni per la nuova origine dati.
+9. Fai clic su All Data Sources. L'origine dati verrà visualizzata nell'elenco di origini dati e l'editor aggiorna il file server/datasources.json con le impostazioni per la nuova origine dati.
 
 ### Aggiungi un modello
+{: #add_model_tut_create_api_node}
 
 Per aggiungere un nuovo modello a un progetto LoopBack utilizzando API Designer, completa la seguente procedura:
-1. Fai clic sull'icona **Models** ![](images/models-icon.png).
-2. Fai clic su **Aggiungi**. Viene visualizzata la finestra Nuovo modello LoopBack.
-3. Immetti `weather` nel campo di testo **Name** e fai clic su **New**.
-4. Nel campo **Data Source**, seleziona **weatherDS**.
+1. Fai clic sull'icona Models ![](images/models-icon.png).
+2. Fai clic su Aggiungi. Viene visualizzata la finestra Nuovo modello LoopBack.
+3. Immetti weather nel campo di testo Name e fai clic su New.
+4. Nel campo Data Source, seleziona weatherDS.
 	![](images/new-model-1.png)
-5. In **Properties**, fai clic sull'icona **Add property** ![](images/add-icon.png).
-6. Nel campo di testo **Property Name**, immetti `zip_code`.
-7. Per **Type**, seleziona **number**.
-8. Seleziona **Required** per rendere la proprietà obbligatoria. Questo significa che deve avere un valore quando aggiungi o aggiorni l'istanza del modello. 
-9. Seleziona **ID** per assicurarti che la proprietà abbia un identificativo univoco. Per ora, mantieni i valori predefiniti per le altre impostazioni:
-	- **Is Array**: se la proprietà è un array JavaScript con elementi del tipo specificato.
-	- **Index**: se la proprietà rappresenta una colonna (campo) che è un indice del database.
-	- **Description**: descrizione del testo della proprietà.
-9. Fai nuovamente clic sull'icona **Add property** ![](images/add-icon.png) per aggiungere un'altra proprietà.  Fai riferimento alla seguente tabella per completare le proprietà rimanenti:
+5. In Properties, fai clic sull'icona Add property ![](images/add-icon.png).
+6. Nel campo di testo Property Name, immetti zip_code.
+7. Per Type, seleziona number.
+8. Seleziona Required per rendere la proprietà obbligatoria. Questo significa che deve avere un valore quando aggiungi o aggiorni l'istanza del modello. 
+9. Seleziona ID per assicurarti che la proprietà abbia un identificativo univoco. Per ora, mantieni i valori predefiniti per le altre impostazioni:
+	- Is Array: se la proprietà è un array JavaScript con elementi del tipo specificato.
+	- Index: se la proprietà rappresenta una colonna (campo) che è un indice del database.
+	- Description: descrizione del testo della proprietà.
+9. Fai nuovamente clic sull'icona Add property ![](images/add-icon.png) per aggiungere un'altra proprietà.  Fai riferimento alla seguente tabella per completare le proprietà rimanenti:
 	![](images/new-model-property-1.png)
-10. Fai clic sull'icona **Save** ![](images/save-icon.png) per salvare le tue modifiche.
-11. Fai clic su **All Models** per terminare la modifica del modello.
+10. Fai clic sull'icona Save ![](images/save-icon.png) per salvare le tue modifiche.
+11. Fai clic su All Models per terminare la modifica del modello.
 
 Questo completa l'aggiunta di una nuova origine dati e di un nuovo modello al progetto LoopBack weather-data.
 
 ---
 
 ## Verifica il tuo nuovo progetto LoopBack
+{: #test_tut_create_api_node}
 
 >![info]
 	>Puoi andare direttamente al seguente passo 2 se non se sei uscito dal designer {{site.data.keyword.apiconnect_short}} dopo aver completato la sezione "Add a new model and data source".
@@ -208,7 +221,7 @@ Per verificare i tuoi endpoint API utilizzando lo strumento API Designer Explore
 	>Per riavviarlo, fai clic sull'icona **Restart the servers** ![](images/restart-icon.png):
 	>![](images/restart-server-1.png)
 	
-4. Fai clic sull'icona **Explore** ![](images/explore-icon.png) per visualizzare lo strumento API Designer Explore. La barra laterale mostra tutte le operazioni REST per i modelli LoopBack nell'API. I modelli che sono basati su PersistedModel dispongono di una [serie standard di operazioni di creazione, lettura, aggiornamento ed eliminazione ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){:new_window}.
+4. Fai clic sull'icona **Explore** ![](images/explore-icon.png) per visualizzare lo strumento API Designer Explore. La barra laterale mostra tutte le operazioni REST per i modelli LoopBack nell'API. I modelli che sono basati su PersistedModel dispongono, per impostazione predefinita, di una [erie standard di operazioni di creazione, lettura, aggiornamento ed eliminazione ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){: new_window} come spiegato nella documentazione di Loopback.
 
 5. Fai clic sull'operazione **weather.create** nel pannello di sinistra per visualizzare l'endpoint.
 ![](images/explore-test-1.png)
@@ -241,6 +254,8 @@ Il pannello centrale visualizza le informazioni di riepilogo sull'endpoint, incl
 ---
 
 ### Cosa hai fatto in questa esercitazione
+{: #conclusion_tut_create_api_node}
+
 In questa esercitazione, hai completato quanto segue:
 1. Creato un nuovo progetto LoopBack utilizzando la riga di comando del toolkit {{site.data.keyword.apiconnect_short}}.
 2. Aggiunto un nuovo modello e una nuova origine dati a un progetto LoopBack utilizzando API Designer nel toolkit {{site.data.keyword.apiconnect_short}}.
@@ -250,8 +265,9 @@ In questa esercitazione, hai completato quanto segue:
 ---
 
 ## Passo successivo
+{: #next_tut_create_api_node}
 
-[Gestisci un servizio REST](tut_rest_landing.html) o [Gestisci un servizio SOAP](tut_manage_soap_api.html).
+[Gestisci un servizio REST](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing) o [Gestisci un servizio SOAP](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_soap_api).
 
 Create > **Manage** > Secure > Socialize > Analyze
 

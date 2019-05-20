@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-20"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,19 +17,26 @@ lastupdated: "2017-11-20"
 {:pre: .pre}
 
 # Rilevamento API
+{: #tut_discover_apis}
+
 **Durata**: 25 minuti  
 **Livello di competenza**: Principiante  
 
+## Obiettivo
+{: #object_tut_discover_apis}
+
+In questa esercitazione, imparerai come un utente del portale può utilizzare le API nel portale sviluppatori {{site.data.keyword.apiconnect_full}}. Imparerai come un utente del portale esplora i prodotti e le API, visualizza le API di test e si sottoscrive ad esse. 
 
 ## Prerequisito
+{: #prereq_tut_discover_apis}
+
 Nessun prerequisito per questa esercitazione. Come amministratore del portale, puoi anche completare questa esercitazione mentre navighi nel tuo portale sviluppatori per provare come navigano i tuoi utenti del portale. Tieni presente che tutti i portali sviluppatori hanno diverse interfacce. 
 
 Se non disponi di un portale sviluppatori esistente, puoi configurarne uno in {{site.data.keyword.Bluemix_short}} prima di procedere con questa esercitazione.
 
-## Obiettivo
-In questa esercitazione, imparerai come un utente del portale può utilizzare le API nel portale sviluppatori {{site.data.keyword.apiconnect_full}}. Imparerai come un utente del portale esplora i prodotti e le API, visualizza le API di test e si sottoscrive ad esse. 
-
 ## Esplora prodotti e API
+{: #explore_tut_discover_apis}
+
 Questa sezione illustra come un utente del portale esplorerà i prodotti e le API nel portale sviluppatori.
 
 1. In un browser, passa a **Portale sviluppatori API Connect**.
@@ -47,6 +60,8 @@ Questa sezione illustra come un utente del portale esplorerà i prodotti e le AP
 ---
 
 ## Visualizza e verifica le API
+{: #view_tut_discover_apis}
+
 Questa sezione illustra come un utente del portale visualizzerà e verificherà le API disponibili per un prodotto. 
 
 1. Passa ai dettagli dell'API nel portale sviluppatori {{site.data.keyword.apiconnect_short}} come descritto nella precedente sezione.  
@@ -68,6 +83,8 @@ e viene visualizzato il corpo del messaggio, che indicano che la chiamata dell'o
 ---
 
 ## Sottoscriversi alle API
+{: #subscr_tut_discover_apis}
+
 Questa sezione illustra come un utente del portale si sottoscriverà alle API nel portale sviluppatori. 
 
 1. Seleziona **Create an account**.
@@ -102,14 +119,16 @@ Questa sezione illustra come un utente del portale si sottoscriverà alle API ne
   ![Sottoscrizione applicazione positiva](images/310-subscribe-success.png) 
 
 ## Conclusioni
+{: #conclusion_tut_discover_apis}
 
 In questa esercitazione, hai imparato come i tuoi utenti del portale potrebbero esplorare i prodotti e le API, visualizzare le API di test e sottoscriversi ad esse. 
 
 ---
 
 ## Passo successivo
+{: #next_tut_discover_apis}
 
-Impara [come ottenere informazioni approfondite da analisi di base](tut_insights_analytics.html).
+Impara [come ottenere informazioni approfondite da analisi di base](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics).
 
 Create >Manage> Secure > ** Socialize ** > Analyze  
 

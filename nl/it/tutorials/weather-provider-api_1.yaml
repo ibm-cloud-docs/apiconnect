@@ -19,17 +19,25 @@ paths:
           description: Un codice postale US di cinque cifre valido
           required: true
           type: string
-      responses: '200': description: Success schema: $ref: '#/definitions/Current'
+      responses:
+        '200':
+          description: Esito positivo 
+          schema:
+            $ref: '#/definitions/Current'
   /today:
     get:
-      summary: "Meteo di oggi "
+      summary: "Meteo di oggi"
       parameters: 
         - name: zipcode
           in: query
           description: Un codice postale US di cinque cifre valido
           required: true
           type: string
-      responses: '200': description: Profile information for a user schema: $ref: '#/definitions/Today'
+      responses:
+        '200':
+          description: Informazioni sul profilo per un utente
+          schema:
+            $ref: '#/definitions/Today'
 definitions:
   Today:
     type: object

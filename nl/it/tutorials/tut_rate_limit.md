@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-02"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,11 +17,15 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # Impostazione dei limiti di frequenza
+{: #tut_rate_limit}
+
 **Durata**: 15 minuti  
 **Livello di competenza**: Principiante  
 
 
 ## Obiettivo
+{: #object_tut_rate_limit}
+
 Questa esercitazione ti illustra come limitare la frequenza delle tue API. Configurando i limiti di frequenza puoi gestire il traffico di rete delle tue API
 e per operazioni specifiche al loro interno. Un limite di frequenza è il numero massimo di chiamate che desideri consentire in un particolare intervallo di tempo.
 
@@ -29,21 +39,26 @@ In questa esercitazione, farai quanto segue:
 
 
 ## Prerequisiti
-Devi aver già creato un'API in {{site.data.keyword.apiconnect_short}} e averla protetta con almeno una chiave API. Nelle seguenti istruzioni, il nostro punto di partenza è il file di esempio [Weather Provider API ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window} protetto utilizzando [segreto e ID client](tut_secure_landing.html).
+{: #prereq_tut_rate_limit}
+
+Devi aver già creato un'API in {{site.data.keyword.apiconnect_short}} e averla protetta con almeno una chiave API. Nelle seguenti istruzioni, il nostro punto di partenza è il file di esempio [Weather Provider API ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){: #new_window} protetto utilizzando [segreto e ID client](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing).
 
 Completa le seguenti esercitazioni prima di iniziare questa esercitazione:
-- [Importa la tua specifica API e collegati tramite proxy a un servizio REST esistente](tut_rest_landing.html).
-- [Proteggi la tua API con un segreto e un ID client](tut_secure_landing.html).
+- [Importa la tua specifica API e collegati tramite proxy a un servizio REST esistente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
+- [Proteggi la tua API con un segreto e un ID client](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing).
 
 
 ---
 ## Avvio di API Connect
+{: #launch_tut_rate_limit}
 
-1. Accedi a {{site.data.keyword.Bluemix_notm}}: [https://console.ng.bluemix.net/login ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://console.ng.bluemix.net/login){:new_window}.
+1. Accedi a {{site.data.keyword.Bluemix_notm}}: [https://console.ng.bluemix.net/login ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://console.ng.bluemix.net/login){: #new_window}.
 2. Una volta collegato a {{site.data.keyword.Bluemix_notm}}, scorri fino a **All Services** e fai clic su **API Connect**.
 3. Fai clic su **API Connect** per avviare il servizio {{site.data.keyword.apiconnect_short}}.
 
 ## Esplorazione del piano predefinito
+{: #explore_tut_rate_limit}
+
 1. Nel pannello di navigazione {{site.data.keyword.apiconnect_short}}, seleziona **Drafts**. (Se il pannello di navigazione non è aperto, fai clic su **>>** per aprirlo.)
 2. Seleziona la **scheda Products** per visualizzare elencato il prodotto API Weather Provider.
 
@@ -59,6 +74,7 @@ Completa le seguenti esercitazioni prima di iniziare questa esercitazione:
 
    
 ## Creazione di un nuovo piano limitato per frequenza
+{: #create_tut_rate_limit}
 
 Ora che hai visto a cosa assomiglia un piano predefinito, creiamo un nuovo piano con limiti di frequenza più restrittivi, per dimostrare cosa succede quando un'API supera i limiti del piano. 
 1. Fai clic sul pulsante per aggiungere un nuovo piano.
@@ -78,8 +94,9 @@ Ora che hai visto a cosa assomiglia un piano predefinito, creiamo un nuovo piano
 
 
 ## Preparazione e pubblicazione di un prodotto aggiornato nel catalogo Sandbox
+{: #stage_tut_rate_limit}
 
-Nei precedenti esempi, potresti aver pubblicato il tuo prodotto utilizzando lo strumento di test, che richiama la tua API con le credenziali dell'applicazione di test pre-fornite. Tuttavia, questa applicazione di test non è soggetta ai limiti di frequenza, per cui dovremo creare una nuova applicazione qui per scopi di limite di frequenza. Consulta [IBM Knowledge Center content for API Connect ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){:new_window} per ulteriori informazioni.
+Nei precedenti esempi, potresti aver pubblicato il tuo prodotto utilizzando lo strumento di test, che richiama la tua API con le credenziali dell'applicazione di test pre-fornite. Tuttavia, questa applicazione di test non è soggetta ai limiti di frequenza, per cui dovremo creare una nuova applicazione qui per scopi di limite di frequenza. Consulta [IBM Knowledge Center content for API Connect ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){: #new_window} per ulteriori informazioni.
 
 1. Fai clic sull'icona di pubblicazione per *preparare* il prodotto nel catalogo **Sandbox**. Questa azione aggiunge le tue modifiche del prodotto della bozza al catalogo selezionato. Abbiamo bisogno di *pubblicare* le modifiche del prodotto successivamente, per renderle disponibili ai clienti tramite il portale sviluppatori.
    ![](./images/stageproduct.png) 
@@ -91,13 +108,15 @@ Nei precedenti esempi, potresti aver pubblicato il tuo prodotto utilizzando lo s
 
 
 ## Registrazione di una nuova applicazione (cliente) nel portale sviluppatori
-Gli sviluppatori dell'applicazione rilevano e utilizzano le tue API tramite il portale sviluppatori. Per ulteriori informazioni sul portale sviluppatori, controlla questo argomento [IBM Knowledge Center ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){:new_window}.
+{: #reg_tut_rate_limit}
+
+Gli sviluppatori dell'applicazione rilevano e utilizzano le tue API tramite il portale sviluppatori. Per ulteriori informazioni sul portale sviluppatori, controlla questo argomento [IBM Knowledge Center ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){: #new_window}.
 
 Se questa è la prima volta che utilizzi il portale sviluppatori, dovrai eseguire il provisioning di un portale sviluppatori per il tuo catalogo Sandbox. L'account a cui hai eseguito l'accesso quando hai eseguito il provisioning del portale sarà l'account di gestione di tale portale. Quindi, per poter esplorare le API di test, dovrai creare e accedere con un nuovo account sviluppatore (utilizzando un indirizzo email diverso) da quello dell'account di gestione.
 
 Le seguenti istruzioni ti guideranno attraverso questi passi.
 
-1. Avvia il portale sviluppatori. Se non conosci l'URL, puoi trovarlo nella scheda delle impostazioni del catalogo Sandbox. Per eseguire il provisioning del portale sviluppatori per la prima volta, consulta [consulta impostazione e configurazione del portale sviluppatori](tut_config_dev_portal.html).
+1. Avvia il portale sviluppatori. Se non conosci l'URL, puoi trovarlo nella scheda delle impostazioni del catalogo Sandbox. Per eseguire il provisioning del portale sviluppatori per la prima volta, consulta [consulta impostazione e configurazione del portale sviluppatori](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal).
     - Questa operazione potrebbe richiedere fino a un'ora per completarsi. Come il portale sviluppatori Sandbox è pronto, riceverai un'email
 con un link al tuo nuovo sito del portale sviluppatori. Il link è un link a utilizzo singolo per l'account amministratore.
 2. Accedi al portale utilizzando le tue credenziali di sviluppatore dell'applicazione (**non** il tuo ID IBM). ***(Crea un nuovo account sviluppatore se necessario, utilizzando un indirizzo differente da quello del tuo ID IBM.)***
@@ -115,6 +134,7 @@ con un link al tuo nuovo sito del portale sviluppatori. Il link è un link a uti
 
 
 ## Sottoscrizione a un prodotto API
+{: #subscr_tut_rate_limit}
 
 1. Fai clic sul link **API Products** nella barra degli strumenti. Il prodotto API Weather Provider viene elencato! 
 
@@ -127,6 +147,7 @@ con un link al tuo nuovo sito del portale sviluppatori. Il link è un link a uti
 Siamo pronti a verificare questo comportamento e a osservare cosa succede quando l'applicazione supera la frequenza specificata.
 
 ## Richiamo di un'API limitata per frequenza
+{: #call_tut_rate_limit}
 
 1. Nella pagina del prodotto dell'API Weather Provider nel portale sviluppatori, fai clic sul link dell'API.
 
@@ -147,13 +168,15 @@ Siamo pronti a verificare questo comportamento e a osservare cosa succede quando
 
 
 ## Conclusioni
+{: #conclusion_tut_rate_limit}
 
 Congratulazioni! Hai correttamente creato un piano di limitazione della frequenza, lo hai associato alle tue API sicure e verificato che la tua API risponda solo alle richieste all'interno dei parametri che hai specificato.
 
 ---
 
 ## Passo successivo
+{: #next_tut_rate_limit}
 
-Inizia a socializzare con la tua API [configurando un portale sviluppatori](tut_config_dev_portal.html).
+Inizia a socializzare con la tua API [configurando un portale sviluppatori](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal).
 
 Create > Manage > **Secure** > Socialize > Analyze

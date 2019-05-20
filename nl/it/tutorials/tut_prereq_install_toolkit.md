@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,10 +17,14 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Installazione del toolkit API Connect
+{: #tut_prereq_install_toolkit}
+
 **Durata**: 15 minuti  
 **Livello di competenza**: Principiante  
 
-## Cosa ti serve
+## Prerequisiti
+{: #prereq_tut_prereq_install_toolkit}
+
 1. Node.js
 2. Node Product Manager (NPM)
 3. {{site.data.keyword.apiconnect_full}} _Lite_
@@ -28,10 +38,12 @@ lastupdated: "2017-10-31"
 
 
 ## Installa node.js
+{: #nodejs_tut_prereq_install_toolkit}
+
 1. Scarica ed installa node.js da una di queste due risorse:
-   * [https://nodejs.org/en/download/ ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://nodejs.org/en/download/){:new_window} (Nota: scarica la versione LTS per la tua piattaforma, non l'ultima o potresti riscontrare degli errori.)
+   * [https://nodejs.org/en/download/ ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://nodejs.org/en/download/){: #new_window} (Nota: scarica la versione LTS per la tua piattaforma, non l'ultima o potresti riscontrare degli errori.)
       **OR**
-   * [https://developer.ibm.com/node/sdk/v6/ ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/node/sdk/v6/){:new_window}  
+   * [https://developer.ibm.com/node/sdk/v6/ ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/node/sdk/v6/){: #new_window}  
 
     _Installando node.js si installa anche **npm** (Node Package Manager)_.
 
@@ -48,6 +60,8 @@ lastupdated: "2017-10-31"
 
 
 ## Installa il toolkit API Connect e Microgateway
+{: #tk_micro_tut_prereq_install_toolkit}
+
 1. Aggiorna la configurazione di npm per consentire l'utilizzo di certificati non attendibili.  
    `npm config -g set strict-ssl false`  
 

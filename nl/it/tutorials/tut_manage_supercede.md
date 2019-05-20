@@ -1,8 +1,13 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-31"
+  years: 2019
+lastupdated: "2017-3-18"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 
 ---
 
@@ -13,30 +18,34 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Sostituzione dei prodotto API
+{: #tut_manage_supercede}
+
 **Durata**: 15 minuti  
 **Livello di competenza**: Principiante  
 
-## Prerequisiti
-
-1. [Configura la tua istanza {{site.data.keyword.apiconnect_full}}](tut_prereq_set_up_apic_instance.html).
-
-2. Completa la [Esercitazione sulla sostituzione di un prodotto API](tut_manage_replace.html).
-
----
 ## Obiettivo
+{: #object_tut_manage_supercede}
+
 In questa esercitazione, rimpiazzerai un prodotto API esistente con uno nuovo.
 
 ---
+## Prerequisiti
+{: #prereq_tut_manage_supercede}
+
+1. [Configura la tua istanza {{site.data.keyword.apiconnect_full}}](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
+
+2. Completa la [Esercitazione sulla sostituzione di un prodotto API](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_replace).
+
+---
+
 ## Sostituzione di un prodotto API
-1. Accedi a {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://console.ng.bluemix.net/login){:new_window}.
+{: #super_tut_manage_supercede}
 
-2. Nel dashboard {{site.data.keyword.Bluemix_notm}}, avvia il servizio {{site.data.keyword.apiconnect_short}}.
-![](images/Bluemix.png)
+1. Accedi a {{site.data.keyword.Bluemix_short}}: https://cloud.ibm.com.
+2. Nel **Dashboard** {{site.data.keyword.Bluemix_notm}}, fai clic su **Cloud Foundary Services**. Avvia il servizio {{site.data.keyword.apiconnect_short}}. 
+3. In {{site.data.keyword.apiconnect_short}}, assicurati che il pannello di navigazione sia aperto. Se non lo è, fai clic su **>>** per aprirlo.  
 
-3. In API Manager, se non hai precedentemente bloccato il riquadro di navigazione della IU fai clic sull'icona **Navigate to** ![](images/navigate-to.png). Viene aperto il pannello di navigazione della IU API Manager. Per bloccare il pannello di navigazione della IU, fai clic sull'icona **Pin menu** ![](images/pinned.png).
-
-4. Fai clic su **Sandbox** per aprire il catalogo Sandbox. **Nota**: la tua schermata potrebbe visualizzare i tile invece di un elenco di cataloghi.
-![](images/del-sandbox-list.png)
+  ![](images/cloud-apic-dashboard.png)
 
 4. Fai clic su **Drafts** > **APIs**.
 
@@ -101,7 +110,9 @@ In questa esercitazione, rimpiazzerai un prodotto API esistente con uno nuovo.
  
 
  
-## Cosa hai fatto in questa esercitazione
+## Conclusioni
+{: #conclusion_tut_manage_supercede}
+
 In questa esercitazione, hai completato le seguenti attività:
 
 1. Aggiornato un prodotto API.

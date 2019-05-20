@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-02"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="blank"}
@@ -11,35 +17,45 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # Aggiungi una nuova specifica API e richiama un servizio REST esistente utilizzando il toolkit sviluppatori
+{: #tut_add_openapi_rest_tk}
+
 **Durata**: 15 minuti  
 **Livello di competenza**: Principiante  
 
 ## Obiettivo
+{: #object_tut_add_openapi_rest_tk}
+
 Questa esercitazione ti aiuta ad iniziare ad utilizzare velocemente {{site.data.keyword.apiconnect_full}} illustrando come puoi portare la tua API esistente nel controllo di gestione. Inizierai creando una nuova specifica OpenAPI e poi creando un proxy API passthrough per un servizio REST esistente.
 
 ## Prerequisito
-Prima di iniziare, dovrai [configurare la tua istanza API Connect](tut_prereq_set_up_apic_instance.html) e [installare il toolkit API Connect](tut_prereq_install_toolkit.html).
+{: #prereq_tut_add_openapi_rest_tk}
+
+Prima di iniziare, dovrai [configurare la tua istanza API Connect](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance) e [installare il toolkit API Connect](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_install_toolkit).
 
 ---
 
 
 ## Esplora l'applicazione di esempio e verifica gli endpoint di destinazione
+{: #expl_test_tut_add_openapi_rest_tk}
+
 È stata creata un'applicazione _weather provider_ di esempio per questa esercitazione.
-1. Per esplorare l'applicazione, vai a [http://gettingstartedweatherapp.mybluemix.net/ ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://gettingstartedweatherapp.mybluemix.net/){:new_window}.  
+1. Per esplorare l'applicazione, vai a [http://gettingstartedweatherapp.mybluemix.net/ ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://gettingstartedweatherapp.mybluemix.net/){: #new_window}.  
 2. Immetti un codice postale U.S. di 5 cifre valido per ottenere il tuo _**meteo corrente**_ e le _**previsioni di oggi**_.  
 ![](images/explore-weatherapp-1.png)
 
-3. La precedente applicazione di esempio meteo è stata creata utilizzando API che forniscono dati meteo. L'endpoint per ottenere i dati meteo **correnti** è _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Verifica visitando [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){:new_window}.  
+3. La precedente applicazione di esempio meteo è stata creata utilizzando API che forniscono dati meteo. L'endpoint per ottenere i dati meteo **correnti** è _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Eseguine la verifica visitando [https://myweatherprovider.mybluemix.net/current?zipcode=90210](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: #new_window}.  
 
   ![](images/explore-weatherapp-2.png)
 
-4. In modo simile, l'endpoint per ottenere i dati della previsione **di oggi** è `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`. Verifica visitando [https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){:new_window}.  
+4. In modo simile, l'endpoint per ottenere i dati della previsione **di oggi** è `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`. Eseguine la verifica andando a [https://myweatherprovider.mybluemix.net/today?zipcode=90210](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: #new_window}.  
 
   ![](images/explore-weatherapp-3.png)
 
 ---
 
 ## Aggiungi una nuova specifica OpenAPI e richiama un servizio REST esistente
+{: #add_spec_tut_add_openapi_rest_tk}
+
 1. Avvia **API Designer**. Nel tuo terminale, immetti `apic edit`.
 2. Accedi utilizzando il tuo ID IBM.
     ![](images/screenshot_apic-edit_login.png)
@@ -129,8 +145,11 @@ _(Visiteremo la sicurezza con le chiavi API nella prossima esercitazione.)_
 ---
 
 ## Verifica il tuo proxy API
+{: #test_tut_add_openapi_rest_tk}
 
-### Verifica con _API Manager test tool_.
+### Verifica con lo _strumento di test API Manager_
+{: #test_apimgr_tut_add_openapi_rest_tk}
+
 1. Avvia il server di test locale facendo clic sull'icona di avvio dei server (>) nella parte in basso sinistra del designer. Una volta che il gateway è stato avviato, visualizzerai lo stato automaticamente aggiornato con in esecuzione.
 
     ![](images/screenshot_start-server-1.png)
@@ -150,7 +169,9 @@ _(Visiteremo la sicurezza con le chiavi API nella prossima esercitazione.)_
 
 _Se riscontri un errore CORS, segui le istruzioni nel messaggio di errore. Fai clic sul link nell'errore per aggiungere l'eccezione al tuo browser e quindi nuovamente sul pulsante "invoke"._
 
-### Verifica con _Explore tool_.  
+### Verifica con lo _strumento Explore_
+{: #test_explore_tut_add_openapi_rest_tk}
+
 1. Per verificare i tuoi endpoint del proxy dell'API, seleziona _Explore_.
 2. Seleziona l'operazione **GET /current** dalla tavolozza.
 3. Immetti un codice postale U.S. valido (ad es. 90210) nella casella di test.
@@ -160,13 +181,16 @@ _Se riscontri un errore CORS, segui le istruzioni nel messaggio di errore. Fai c
 ---
 
 ## Conclusioni
+{: #conclusion_tut_add_openapi_rest_tk}
+
 In questa esercitazione hai visto come può essere richiamato un servizio REST esistente tramite un proxy passthrough dell'API. Hai iniziato verificando la disponibilità del servizio di esempio tramite il browser web. Poi hai creato una nuova specifica OpenAPI in {{site.data.keyword.apiconnect_short}} e l'hai collegata al servizio di esempio da richiamare. Infine, hai verificato il proxy dell'API con lo strumento di verifica integrato.
 
 ---
 
 ## Passo successivo
+{: #next_tut_add_openapi_rest_tk}
 
-Proteggi la tua API utilizzando [la limitazione di frequenza](tut_rate_limit.html), [il segreto e l'ID client](tut_secure_landing.html) o [la protezione tramite OAuth 2.0](tut_secure_oauth_2.html).
+Proteggi la tua API utilizzando [la limitazione di frequenza](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rate_limit), [il segreto e l'ID client](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing) o [la protezione tramite OAuth 2.0](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
 
 Create > **Manage** > Secure > Socialize > Analyze
 
