@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2017-10-10"
 
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 
@@ -14,6 +18,7 @@ lastupdated: "2017-10-10"
 {:pre: .pre}
 
 # Gerenciando as versões de API e Produto
+{: #tut_manage_version_landing}
 
 Depois de publicar uma API e o produto que a contém, os provedores de API geralmente desejam ou precisam atualizar esses produtos e APIs. A atualização de um produto de API pode acontecer de diferentes maneiras.  
 
@@ -29,9 +34,9 @@ Depois de substituir uma API, é possível tirar um produto de API do serviço e
 
 Nesta série de tutoriais, você moverá os produtos de API de todos estes estados. Conclua os tutoriais na ordem a seguir:
 
-1. [Substituir um produto de API](tut_manage_replace.html)
-2. [Suplantar um produto de API](tut_manage_supercede.html)
-3. [Arquivar e excluir um produto de API](tut_manage_remove.html)
+1. [Substituir um produto de API](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_replace)
+2. [Suplantar um produto de API](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede)
+3. [Arquivar e excluir um produto de API](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_remove)
 
 
 

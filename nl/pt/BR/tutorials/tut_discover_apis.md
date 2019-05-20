@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-20"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,19 +17,26 @@ lastupdated: "2017-11-20"
 {:pre: .pre}
 
 # Descobrindo APIs
+{: #tut_discover_apis}
+
 **Duração**: 25 min  
 **Nível de qualificação**: iniciante  
 
+## Objetivo
+{: #object_tut_discover_apis}
+
+Neste tutorial, você aprenderá como um usuário do portal pode consumir as APIs no {{site.data.keyword.apiconnect_full}} Developer Portal. Você entenderá como um usuário do portal exploraria produtos e APIs, visualizar e testar APIs e assinar as APIs. 
 
 ## Pré-requisito
+{: #prereq_tut_discover_apis}
+
 Não há nenhum pré-requisito para este tutorial. Como um administrador do portal, também é possível concluir este tutorial enquanto navega pelo portal do desenvolvedor para vivenciar como seus usuários do portal navegam por seu portal do desenvolvedor. Tenha em mente que todos os portais do desenvolvedor têm aparências diferentes. 
 
 Se você não tiver um portal do desenvolvedor existente, será possível configurar um portal do desenvolvedor no {{site.data.keyword.Bluemix_short}} antes de continuar com este tutorial.
 
-## Objetivo
-Neste tutorial, você aprenderá como um usuário do portal pode consumir as APIs no {{site.data.keyword.apiconnect_full}} Developer Portal. Você entenderá como um usuário do portal exploraria produtos e APIs, visualizar e testar APIs e assinar as APIs. 
-
 ## Explorar produtos & e APIs
+{: #explore_tut_discover_apis}
+
 Essa seção mostra como um usuário do portal exploraria os produtos e as APIs no Portal do Desenvolvedor.
 
 1. Em um navegador, navegue para o **API Connect Developer Portal**.
@@ -47,6 +60,8 @@ Essa seção mostra como um usuário do portal exploraria os produtos e as APIs 
 ---
 
 ## Visualizar e testar as APIs
+{: #view_tut_discover_apis}
+
 Esta seção mostra como um usuário do portal que visualizar e testar as APIs disponíveis para um produto. 
 
 1. Navegue para os detalhes da API no Portal do Desenvolvedor do {{site.data.keyword.apiconnect_short}}, conforme descrito na seção anterior.  
@@ -67,6 +82,8 @@ Esta seção mostra como um usuário do portal que visualizar e testar as APIs d
 ---
 
 ## Assinar APIs
+{: #subscr_tut_discover_apis}
+
 Esta seção mostra como um usuário do portal assinaria as APIs no portal do desenvolvedor. 
 
 1. Selecione **Criar uma conta**.
@@ -101,14 +118,16 @@ Esta seção mostra como um usuário do portal assinaria as APIs no portal do de
 ![Sucesso da assinatura do app](images/310-subscribe-success.png) 
 
 ## Conclusão
+{: #conclusion_tut_discover_apis}
 
 Neste tutorial, você aprendeu como os usuários do portal poderiam explorar os produtos e APIs, visualizar e testar as APIs e assinar as APIs. 
 
 ---
 
 ## Próxima etapa
+{: #next_tut_discover_apis}
 
-Saiba [como obter insights de analítica básica](tut_insights_analytics.html).
+Saiba [como obter insights de analítica básica](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics).
 
 Criar > Gerenciar> Assegurar > **Socializar** > Analisar  
 

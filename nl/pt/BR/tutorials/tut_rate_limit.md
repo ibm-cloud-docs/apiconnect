@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-11-02"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="_blank"}
@@ -11,11 +17,15 @@ lastupdated: "2017-11-02"
 {:pre: .pre}
 
 # Configurando limites de taxa
+{: #tut_rate_limit}
+
 **Duração**: 15 min  
 **Nível de qualificação**: iniciante  
 
 
 ## Objetivo
+{: #object_tut_rate_limit}
+
 Este tutorial mostra como configurar o limite de taxa de suas APIs. Configurar os limites de taxa permite gerenciar o tráfego de rede para suas
 APIs e para operações específicas dentro de suas APIs. Um limite de taxa é o número máximo de chamadas que você deseja permitir em um intervalo de tempo específico.
 
@@ -29,21 +39,26 @@ Neste tutorial, você fará o seguinte:
 
 
 ## Pré-requisito
-Deve-se já ter criado uma API no {{site.data.keyword.apiconnect_short}}, protegida com pelo menos uma Chave API. Nas instruções a seguir, o nosso ponto de início é o [Arquivo de exemplo do Weather Provider API![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){:new_window}, protegido usando um [ID de cliente e o segredo](tut_secure_landing.html).
+{: #prereq_tut_rate_limit}
+
+Deve-se já ter criado uma API no {{site.data.keyword.apiconnect_short}}, protegida com pelo menos uma Chave API. Nas instruções a seguir, o nosso ponto de início é o [Arquivo de exemplo do Weather Provider API![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){: #new_window}, protegido usando um [ID de cliente e o segredo](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing).
 
 Conclua os tutoriais a seguir antes de iniciar este tutorial:
-- [Importar a especificação de API e usar proxy de um serviço REST existente](tut_rest_landing.html).
-- [Proteger sua API com um ID de cliente e o segredo](tut_secure_landing.html).
+- [Importar sua especificação de API e configurar o proxy de um serviço REST existente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
+- [Proteger sua API com um ID de cliente e o segredo](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing).
 
 
 ---
 ## Ativando o API Connect
+{: #launch_tut_rate_limit}
 
-1. Efetue login no {{site.data.keyword.Bluemix_notm}}: [https://console.ng.bluemix.net/login ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://console.ng.bluemix.net/login){:new_window}.
+1. Efetue login no {{site.data.keyword.Bluemix_notm}}: [https://console.ng.bluemix.net/login ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://console.ng.bluemix.net/login){: #new_window}.
 2. Depois de efetuar login no {{site.data.keyword.Bluemix_notm}}, role para baixo para **Todos os serviços** e clique em **API Connect**.
 3. Clique em **API Connect** para ativar o serviço {{site.data.keyword.apiconnect_short}}.
 
 ## Explorando o Plano padrão
+{: #explore_tut_rate_limit}
+
 1. No painel de navegação do {{site.data.keyword.apiconnect_short}}, selecione **Rascunhos**. (Se o painel de navegação não estiver aberto, clique em **> >** para abri-lo.)
 2. Selecione a **guia Produtos** e você deverá ver o produto Weather Provider API listado.
 
@@ -59,6 +74,7 @@ Conclua os tutoriais a seguir antes de iniciar este tutorial:
 
    
 ## Criando um novo Plano de taxa limitada
+{: #create_tut_rate_limit}
 
 Agora que vimos a aparência do Plano padrão, vamos criar um novo Plano com limites de taxa mais restritivos, para demonstrar o que acontece quando um consumidor de API excede os limites de um Plano. 
 1. Clique no botão para incluir um novo Plano.
@@ -78,8 +94,9 @@ Agora que vimos a aparência do Plano padrão, vamos criar um novo Plano com lim
 
 
 ## Montando e publicando um Produto atualizado para o catálogo Ambiente de simulação
+{: #stage_tut_rate_limit}
 
-Em exemplos anteriores, você pode ter publicado o seu Produto usando a ferramenta de teste, que chama sua API com as credenciais de um aplicativo de teste pré-fornecido. No entanto, esse aplicativo de teste não está sujeito a limites de taxa, então vamos precisar criar um novo aplicativo aqui para propósitos de limitação de taxa. Veja o [conteúdo do IBM Knowledge Center para o API Connect ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){:new_window} para obter mais informações.
+Em exemplos anteriores, você pode ter publicado o seu Produto usando a ferramenta de teste, que chama sua API com as credenciais de um aplicativo de teste pré-fornecido. No entanto, esse aplicativo de teste não está sujeito a limites de taxa, então vamos precisar criar um novo aplicativo aqui para propósitos de limitação de taxa. Veja o [conteúdo do IBM Knowledge Center para o API Connect ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_create_product.html){: #new_window} para obter mais informações.
 
 1. Clique no ícone Publicar para *montar* o Produto no catálogo **Ambiente de simulação**. Essa ação inclui suas mudanças do Produto de rascunho no Catálogo selecionado. Precisamos *publicar* as mudanças do Produto em seguida, para torná-las disponíveis para os consumidores por meio do Portal do Desenvolvedor.    ![](./images/stageproduct.png) 
 2. Clique no botão >> para abrir o menu de navegação.
@@ -90,13 +107,15 @@ Em exemplos anteriores, você pode ter publicado o seu Produto usando a ferramen
 
 
 ## Registrando um novo aplicativo (consumidor) no Portal do Desenvolvedor
-Os desenvolvedores de aplicativos descobrem e usam suas APIs usando o Portal do Desenvolvedor. Para obter mais informações sobre o Portal do Desenvolvedor, verifique este [tópico do IBM Knowledge Center ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){:new_window}.
+{: #reg_tut_rate_limit}
+
+Os desenvolvedores de aplicativos descobrem e usam suas APIs usando o Portal do Desenvolvedor. Para obter mais informações sobre o Portal do Desenvolvedor, verifique este [tópico do IBM Knowledge Center ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.devportal.doc/tapim_tutorial_using_ADP.html){: #new_window}.
 
 Se esta for sua primeira vez trabalhando com o Portal do Desenvolvedor, você precisará provisionar um Portal do Desenvolvedor para seu catálogo Ambiente de simulação. A conta em que você efetuou login ao provisionar o Portal será a conta do administrador para esse Portal. Em seguida, a fim de explorar e testar APIs, você precisará criar e efetuar login com uma nova conta do desenvolvedor, usando um endereço de e-mail diferente daquele da conta do administrador.
 
 As instruções a seguir guiarão você por estas etapas.
 
-1. Ative o Portal do Desenvolvedor. Se você não sabe a URL, é possível localizá-la na guia Configurações do catálogo Ambiente de simulação. Para provisionar o Portal do Desenvolvedor pela primeira vez, consulte [Instalando e configurando o Portal do Desenvolvedor](tut_config_dev_portal.html).
+1. Ative o Portal do Desenvolvedor. Se você não sabe a URL, é possível localizá-la na guia Configurações do catálogo Ambiente de simulação. Para provisionar o Portal do Desenvolvedor pela primeira vez, consulte [Instalando e configurando o Portal do Desenvolvedor](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal).
     - Isso pode levar até uma hora para ser concluído. Quando seu Portal do Desenvolvedor do Ambiente de simulação estiver pronto, você receberá um e-mail
 com um link para seu novo site do Portal do Desenvolvedor. Esse é um link somente de uso único para a conta do administrador.
 2. Efetue login no Portal usando suas credenciais do desenvolvedor de aplicativo (**não** seu IBMid). ***(Crie uma nova conta do desenvolvedor, se necessário, usando um endereço diferente do seu IBMid.)***
@@ -114,6 +133,7 @@ com um link para seu novo site do Portal do Desenvolvedor. Esse é um link somen
 
 
 ## Assinando um Produto de API
+{: #subscr_tut_rate_limit}
 
 1. Clique no link **Produtos de API** na barra de ferramentas. Seu Weather Provider API Product é listado! 
 
@@ -126,6 +146,7 @@ com um link para seu novo site do Portal do Desenvolvedor. Esse é um link somen
 Estamos prontos para testar esse comportamento e observar o que acontece quando o aplicativo excede a taxa especificada.
 
 ## Chamando uma API de taxa limitada
+{: #call_tut_rate_limit}
 
 1. Na página Weather Provider API Product no Portal do Desenvolvedor, clique no link da API.
 
@@ -146,13 +167,15 @@ Estamos prontos para testar esse comportamento e observar o que acontece quando 
 
 
 ## Conclusão
+{: #conclusion_tut_rate_limit}
 
 Parabéns! Você criou com êxito um Plano de limitação de taxa, o associou às suas APIs seguras e verificou se sua API responde somente a solicitações dentro dos parâmetros especificados.
 
 ---
 
 ## Próxima etapa
+{: #next_tut_rate_limit}
 
-Comece a socializar sua API [instalando e configurando um portal do desenvolvedor](tut_config_dev_portal.html).
+Comece a socializar sua API [instalando e configurando um portal do desenvolvedor](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal).
 
 Criar > Gerenciar > **Assegurar** > Socializar > Analisar

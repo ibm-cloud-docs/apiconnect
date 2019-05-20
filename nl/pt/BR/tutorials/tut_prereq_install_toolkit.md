@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,10 +17,14 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Instalando o kit de ferramentas do API Connect
+{: #tut_prereq_install_toolkit}
+
 **Duração**: 15 min  
 **Nível de qualificação**: iniciante  
 
-## O que você precisará
+## Pré-requisito
+{: #prereq_tut_prereq_install_toolkit}
+
 1. Node.js
 2. Node Product Manager (NPM)
 3. {{site.data.keyword.apiconnect_full}} _Lite_
@@ -28,10 +38,12 @@ lastupdated: "2017-10-31"
 
 
 ## Instalar o node.js
+{: #nodejs_tut_prereq_install_toolkit}
+
 1. Faça download e instale o node.js de uma das duas origens:
-   * [https://nodejs.org/en/download/ ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://nodejs.org/en/download/){:new_window} (Nota: faça download da versão LTS para sua plataforma, não a mais recente ou você poderá ter erros.)
+   * [https://nodejs.org/en/download/ ![External link icon](../icons/launch-glyph.svg "External link icon")](https://nodejs.org/en/download/){: #new_window} (Nota: faça download da versão LTS para sua plataforma, não a mais recente ou você poderá ter erros.)
       **OU**
-   * [https://developer.ibm.com/node/sdk/v6/ ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/node/sdk/v6/){:new_window}  
+   * [https://developer.ibm.com/node/sdk/v6/ ![External link icon](../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/node/sdk/v6/){: #new_window}  
 
     _Instalando o node.js também instala o **npm** (Node Package Manager)_.
 
@@ -48,6 +60,8 @@ lastupdated: "2017-10-31"
 
 
 ## Instalar o kit de ferramentas do API Connect e o Microgateway
+{: #tk_micro_tut_prereq_install_toolkit}
+
 1. Atualize a configuração npm para permitir o uso de certificados não confiáveis.  
    `npm config -g set strict-ssl false`  
 

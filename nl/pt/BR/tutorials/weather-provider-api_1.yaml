@@ -21,7 +21,7 @@ paths:
           type: string
       responses:
         '200':
-          description: Success
+          description: Bem-Sucedido
           schema:
             $ref: '#/definitions/Current'
   /today:
@@ -35,7 +35,7 @@ paths:
           type: string
       responses:
         '200':
-          description: Profile information for a user
+          description: Informações de perfil para um usuário
           schema:
             $ref: '#/definitions/Today'
 definitions:

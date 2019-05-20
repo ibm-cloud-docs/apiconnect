@@ -1,8 +1,13 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-31"
+  years: 2019
+lastupdated: "2017-3-18"
+
+subcollection: apiconnect
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+
 
 ---
 
@@ -13,29 +18,34 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Suplantando produtos de API
+{: #tut_manage_supercede}
+
 **Duração**: 15 min  
 **Nível de qualificação**: iniciante  
 
-## Pré-requisito
-
-1. [Configure sua instância do {{site.data.keyword.apiconnect_full}}](tut_prereq_set_up_apic_instance.html).
-
-2. Conclua o [tutorial Substituir um produto de API](tut_manage_replace.html).
-
----
 ## Objetivo
+{: #object_tut_manage_supercede}
+
 Neste tutorial, você irá suplantar uma API existente por uma nova.
 
 ---
+## Pré-requisito
+{: #prereq_tut_manage_supercede}
+
+1. [Configure sua instância do {{site.data.keyword.apiconnect_full}}](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
+
+2. Conclua o [tutorial Substituir um produto de API](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_replace).
+
+---
+
 ## Suplantando uma API de Produto
-1. Efetue login no {{site.data.keyword.Bluemix_short}}: [https://console.ng.bluemix.net/login ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://console.ng.bluemix.net/login){:new_window}.
+{: #super_tut_manage_supercede}
 
-2. No Painel do {{site.data.keyword.Bluemix_notm}}, ative o serviço {{site.data.keyword.apiconnect_short}}. ![](images/Bluemix.png)
+1. Efetue login no {{site.data.keyword.Bluemix_short}}: https://cloud.ibm.com.
+2. No **Painel** do {{site.data.keyword.Bluemix_notm}}, clique em **Serviços do Cloud Foundry**. Ative o serviço {{site.data.keyword.apiconnect_short}}. 
+3. No {{site.data.keyword.apiconnect_short}}, certifique-se de que o painel de navegação esteja aberto. Caso contrário, clique em **>>** para abri-la.  
 
-3. No API Manager, se você não tiver fixado anteriormente a área de janela de navegação da UI, clique no ícone **Navegar para** ![](images/navigate-to.png). A área de janela de navegação da UI do API Manager é aberta. Para fixar a área de janela de navegação da UI, clique no ícone do **menu Fixar** ![](images/pinned.png).
-
-4. Clique em **Ambiente de simulação** para abrir o catálogo Ambiente de simulação. **Nota**: sua tela pode mostrar tiles em vez de uma lista de catálogos.
-![](images/del-sandbox-list.png)
+  ![](images/cloud-apic-dashboard.png)
 
 4. Clique em **Rascunhos** > **APIs**.
 
@@ -100,7 +110,9 @@ Neste tutorial, você irá suplantar uma API existente por uma nova.
  
 
  
-## O que você realizou neste tutorial
+## Conclusão
+{: #conclusion_tut_manage_supercede}
+
 Neste tutorial, você concluiu as atividades a seguir:
 
 1. Atualizou um produto de API.

@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,26 +17,29 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Protegendo sua API com ID de cliente e Segredo do cliente usando {{site.data.keyword.Bluemix_notm}}
+{: #tut_secure_id_secret_bm}
 
 **Duração:** 10 min  
 **Nível de qualificação:** iniciante
 
 
 ## Objetivo
-
+{: #object_tut_secure_id_secret_bm}
 Este tutorial fornecerá orientação durante a proteção de sua API com o Identificador de cliente e o Segredo do cliente. Quando os aplicativos são registrados no Portal do Desenvolvedor, um Identificador de cliente é gerado para identificar o aplicativo. Opcionalmente, um Segredo do cliente, que serve como uma senha, também pode ser gerado. Os aplicativos precisariam fornecer as chaves Identificador de cliente e Segredo do cliente para acessar a API.
 
 
 ## Pré-requisito
+{: #prereq_tut_secure_id_secret_bm}
 
 Antes de iniciar, deve-se ter concluído um dos tutoriais a seguir: 
-- [Importar uma especificação OpenAPI2.0 e usar proxy de um serviço REST existente](tut_rest_landing.html)  
+- [Importar uma especificação do OpenAPI2.0 e configurar o proxy de um serviço REST existente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)  
 **ou 
 **  
-- [Incluir uma nova especificação de API e chamar um serviço REST existente](tut_rest_landing.html)
+- [Incluir uma nova especificação de API e chamar um serviço REST existente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 
 
 ## Configure o mecanismo de identificação de sua API
+{: #set_id_tut_secure_id_secret_bm}
 
 1. Navegue para a visualização Design de sua API:  
    a. Clique em **Rascunhos** no painel de navegação esquerdo  
@@ -54,6 +63,7 @@ Antes de iniciar, deve-se ter concluído um dos tutoriais a seguir:
 
 
 ## Teste as mudanças feitas em sua API
+{: #test_tut_secure_id_secret_bm}
 
 1. Na guia Montar, clique no botão ► para testar suas mudanças.
 
@@ -77,6 +87,7 @@ Antes de iniciar, deve-se ter concluído um dos tutoriais a seguir:
 
 
 ## Chame sua API usando o Identificador de cliente e o Segredo do cliente
+{: #call_tut_secure_id_secret_bm}
 
 As configurações de segurança também podem ser testadas usando a ferramenta Explorar que chama explicitamente o terminal de proxy e passa as chaves Identificador de cliente e Segredo do cliente como valores de cabeçalho.
 
@@ -91,12 +102,15 @@ As configurações de segurança também podem ser testadas usando a ferramenta 
 ---
 
 ## Conclusão
+{: #conclusion_tut_secure_id_secret_bm}
+
 Neste tutorial, você aprendeu como configurar o mecanismo de identificação de sua API, testar mudanças feitas na API e chamar sua API usando o ID de cliente e Segredo do cliente. 
 
 ---
 
 ## Próxima etapa
+{: #next_tut_secure_id_secret_bm}
 
-Comece a socializar sua API [instalando e configurando um portal do desenvolvedor](tut_config_dev_portal.html).
+Comece a socializar sua API [instalando e configurando um portal do desenvolvedor](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal).
 
 Criar > Gerenciar > **Assegurar** > Socializar > Analisar

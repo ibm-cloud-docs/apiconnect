@@ -1,7 +1,13 @@
 ---
+
 copyright:
   years: 2017
 lastupdated: "2017-10-31"
+
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+
+subcollection: apiconnect
+
 ---
 
 {:new_window: target="blank"}
@@ -11,24 +17,29 @@ lastupdated: "2017-10-31"
 {:pre: .pre}
 
 # Protegendo sua API com ID de cliente e Segredo do cliente usando o Developer Toolkit
-
+{: #tut_secure_id_secret_tk}
 
 **Duração:** 10 min  
 **Nível de qualificação:** iniciante
 
 
 ## Objetivo
+{: #object_tut_secure_id_secret_tk}
 
 Este tutorial fornecerá orientação durante a proteção de sua API com o Identificador de cliente e o Segredo do cliente. Quando os aplicativos são registrados no Portal do Desenvolvedor, um Identificador de cliente é gerado para identificar o aplicativo. Opcionalmente, um Segredo do cliente, que serve como uma senha, também pode ser gerado. Os aplicativos precisariam fornecer as chaves Identificador de cliente e Segredo do cliente para acessar a API.
 
 
 ## Pré-requisito
+{: #prereq_tut_secure_id_secret_tk}
+
 Antes de iniciar, deve-se ter concluído um dos tutoriais a seguir:
-- [Importar uma especificação OpenAPI2.0 e transmitir por proxy um serviço REST existente](tut_rest_landing.html) **ou**  
-- [Incluir uma nova especificação de API e chamar um serviço REST existente](tut_rest_landing.html)
+- [Importar uma especificação do OpenAPI2.0 e configurar o proxy de um serviço REST existente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
+**ou**  
+- [Incluir uma nova especificação de API e chamar um serviço REST existente](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
 
 
 ## Configure o mecanismo de identificação de sua API
+{: #set_id_tut_secure_id_secret_tk}
 
 1. Ative o API Designer (se ainda não estiver aberto):  
    a. Abra seu terminal.  
@@ -59,6 +70,7 @@ Antes de iniciar, deve-se ter concluído um dos tutoriais a seguir:
     ![](images/3a.png) 
 
 ## Teste as mudanças feitas em sua API
+{: #test_tut_secure_id_secret_tk}
 
 1. Na guia Montar, clique em ► para testar suas mudanças.
 2. No painel de teste, clique na operação **get /current**.
@@ -75,6 +87,7 @@ Antes de iniciar, deve-se ter concluído um dos tutoriais a seguir:
   
 
 ## Chame sua API usando o Identificador de cliente e o Segredo do cliente
+{: #call_tut_secure_id_secret_tk}
 
 As configurações de segurança também podem ser testadas usando a ferramenta Explorar que chama explicitamente o terminal de proxy e passa as chaves Identificador de cliente e Segredo do cliente como valores de cabeçalho.
 
@@ -90,11 +103,14 @@ As configurações de segurança também podem ser testadas usando a ferramenta 
 ---
 
 ### Conclusão
+{: #conclusion_tut_secure_id_secret_tk}
+
 Neste tutorial, você aprendeu como configurar o mecanismo de identificação de sua API, testar mudanças feitas na API e chamar sua API usando o ID de cliente e Segredo do cliente. 
 
 ---
 
 ## Próxima etapa
+{: #next_tut_secure_id_secret_tk}
 
 Comece a socializar sua API [instalando e configurando um portal do desenvolvedor](tut_config_dev_portal.html).
 
