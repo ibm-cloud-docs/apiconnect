@@ -126,7 +126,7 @@ In this tutorial, you saw how an existing REST service can be invoked through an
 ## Next step
 {: #next_tut_import_openapi_rest_bm}
 
-Secure your API using OAuth 2.0](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
+Secure your API using [OAuth 2.0](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
 
 Create > **Manage** > Secure > Socialize > Analyze
 
