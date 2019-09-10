@@ -49,7 +49,6 @@ API Connect
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    apic_glossary.md
     apic_troubleshoot.md
 
     {: .topicgroup}
