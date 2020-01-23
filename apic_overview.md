@@ -154,3 +154,5 @@ developer in the Flights team is able to stage APIs only to the Flights Space.
 settings.
 
 To partition a catalog, see [Partitioning a catalog](/docs/services/apiconnect?topic=apiconnect-create_catalog#apic_spaces).
+
+
