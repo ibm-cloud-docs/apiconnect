@@ -40,7 +40,3 @@ Select one of the following boxes to view the tutorial for that topic.  You can 
 {: #moregetstart_index}
 
 <a href="/docs/services/apiconnect?topic=apiconnect-about_apic_overview"> <img src="/images/art_apic_overview.png" width="150" alt="Link to overview materials for API Connect."></a>
-
-
-
-
