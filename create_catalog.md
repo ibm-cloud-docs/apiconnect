@@ -62,53 +62,39 @@ subscription**.
      **Note:** You can select **Default** for one Catalog.
 	
    d. **Optional**: Click **Endpoints**, and populate the following fields:
-        - **Custom Gateway URL**: In the Custom Gateway URL text field, enter a URL. You use the Custom Gateway URL if you want to
-        achieve custom branding of URLs for APIs that are deployed to {{site.data.keyword.apiconnect_short}}, rather than using the default URL
+
+      - **Custom Gateway URL**: In the Custom Gateway URL text field, enter a URL. You use the Custom Gateway URL if you want to
+         achieve custom branding of URLs for APIs that are deployed to {{site.data.keyword.apiconnect_short}}, rather than using the default URL
         that API Manager generates.
-        By default, the {{site.data.keyword.apiconnect_short}} gateway
-        URL has the following format:
+        By default, the {{site.data.keyword.apiconnect_short}} gateway URL has the following format:
+		
         ```
         https://gateway_cluster_hostname/organization_name/Catalog_name
         ```
         However, you can override the default by specifying a URL that is more appropriate for your enterprise; for
         example, `https://api.mycompany.com`. Any API endpoints that are displayed in the
         Developer Portal reflect the custom URL.
-			**Notes:**
-			- This option is not available for the Lite plan.
-			- To set up the URL redirect, contact {{site.data.keyword.apiconnect_short}} Support.
-		    - You must configure a DNS entry that maps your custom host name and domain to the default gateway
-		    URL.
-		    - If you want the endpoints of an API to reflect your custom gateway URL, configure the API to be
-		    enforced by the API Connect gateway. For more information, see [Specifying an alternative host for an API](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: external}.
-		    - Ensure that the same custom gateway URL is not applied to multiple Catalogs as the behavior in
-		    that scenario is undefined.
-				**TIP**: When you call the API, you can also set the HTTP host header on the API request to the value that you specified in the Custom Gateway URL field.
+		
+		**Notes:**
+        - This option is not available for the Lite plan.
+        - To set up the URL redirect, contact {{site.data.keyword.apiconnect_short}} Support.
+        - You must configure a DNS entry that maps your custom host name and domain to the default gateway URL.
+        - If you want the endpoints of an API to reflect your custom gateway URL, configure the API to be enforced by the API Connect gateway. For more information, see [Specifying an alternative host for an API](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: external}.
+        - Ensure that the same custom gateway URL is not applied to multiple Catalogs as the behavior in that scenario is undefined.
+           **TIP**: When you call the API, you can also set the HTTP host header on the API request to the value that you specified in the Custom Gateway URL field.
 
-	    - **Custom API URL**
-	    In the Custom API URL text field, enter the URL. You use the Custom API URL to specify the URL
-	    for APIs that are deployed to a third-party gateway.
+      - **Custom API URL**
+         In the Custom API URL text field, enter the URL. You use the Custom API URL to specify the URL for APIs that are deployed to a third-party gateway.
 
-	    The Custom API URL represents the endpoint by which the API is known externally. The
-	    endpoint is published to the developer portal and used by an application developer to invoke or
-	    advertise the API.
+         The Custom API URL represents the endpoint by which the API is known externally. The endpoint is published to the developer portal and used by an application developer to invoke or advertise the API.
 
-	    If you are using a third-party gateway or external load balancer in this Catalog, supply the URL
-	    in this field. Any API endpoints that are displayed in the developer portal reflect the
-	    custom URL. These endpoints exist on the third-party gateway or load balancer and project a
-	    virtual address that is mapped to the API proxy or API assembly endpoints
-	    on the gateway. The endpoints that are derived from the custom API URL are typically published in
-	    production developer portals to advertise the address of the API.
+        If you are using a third-party gateway or external load balancer in this Catalog, supply the URL in this field. Any API endpoints that are displayed in the developer portal reflect the custom URL. These endpoints exist on the third-party gateway or load balancer and project a
+	    virtual address that is mapped to the API proxy or API assembly endpoints on the gateway. The endpoints that are derived from the custom API URL are typically published in production developer portals to advertise the address of the API.
 
-	    **Note:** If you specify a custom API URL for a Catalog, it takes precedence over any host name that you
-	    specify when you configure the API. For more information, see [Specifying an alternative host for an API](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: external}.
+        **Note:** If you specify a custom API URL for a Catalog, it takes precedence over any host name that you specify when you configure the API. For more information, see [Specifying an alternative host for an API](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: external}.
 
-	    - **Hostname for Developer Portal API Calls**:
-	    In the Port API Endpoint window area, enter a host name for Developer Portal API calls. The host
-	    name that you enter can be the host name of your Management service. To access the Developer
-	    Portal API within the context of a Developer Portal, you must configure the base host name for the
-	    Developer Portal API calls. This action allows API Manager to map your host name to the
-	    provider organization and Catalog of the Developer Portal API calls. Your calls don't need to include the information.
-	 
+      - **Hostname for Developer Portal API Calls**:
+         In the Port API Endpoint window area, enter a host name for Developer Portal API calls. The host name that you enter can be the host name of your Management service. To access the Developer Portal API within the context of a Developer Portal, you must configure the base host name for the Developer Portal API calls. This action allows API Manager to map your host name to the provider organization and Catalog of the Developer Portal API calls. Your calls don't need to include the information.
 
 7. Click the **Save** icon.
 
