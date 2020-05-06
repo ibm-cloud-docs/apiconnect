@@ -46,11 +46,11 @@ API Connect
     managing_products.md
     create_catalog.md
     explore_apis.md
-    try_next.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
     apic_troubleshoot.md
+    get_help.md 
 
     {: .topicgroup}
     Related topics in IBM Knowledge Center
