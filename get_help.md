@@ -28,11 +28,11 @@ Need help with your {{site.data.keyword.appconservicefull}} service instance? Vi
 
 2. On the Create a Case page, look in the "Services" list and click {{site.data.keyword.apiconnect_short}}.
 
-      It's important to create your case with the correct service so that IBM Support can track the case and assign the appropriate people to help you. The list of services depends on your {{site.data.keyword.cloud_notm}} account. If you don't see {{site.data.keyword.apiconnect_short}} in the "Services" list, you can locate it as follows:
+   It's important to create your case with the correct service so that IBM Support can track the case and assign the appropriate people to help you. The list of services depends on your {{site.data.keyword.cloud_notm}} account. If you don't see {{site.data.keyword.apiconnect_short}} in the "Services" list, you can locate it as follows:
    
-      a. Locate the "What do you need help with?" section.
-      b. Review the text in that section and click the **view all services** link.
-      c. In the complete list of services, locate {{site.data.keyword.apiconnect_short}} and click it (services are listed in alphabetic order).
+   a. Locate the "What do you need help with?" section.
+   b. Review the text in that section and click the **view all services** link.
+   c. In the complete list of services, locate {{site.data.keyword.apiconnect_short}} and click it (services are listed in alphabetic order).
 
 3. Describe your problem.
 
