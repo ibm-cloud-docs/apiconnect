@@ -4,7 +4,7 @@ copyright:
   years: 2019, 2020
 lastupdated: "2020-05-06"
 
-keywords: IBM Cloud, API Connect, API management, support, help
+keywords: IBM Cloud, API Connect, API management, support, help, Support Center
 
 subcollection: apiconnect
 
@@ -18,7 +18,7 @@ subcollection: apiconnect
 {:tip: .tip}
 {:note: .note}
 
-# Getting help
+# Using the Support Center
 {: #get_help}
 
 Need help with your {{site.data.keyword.appconservicefull}} service instance? Visit the {{site.data.keyword.cloud_notm}} [Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter) to file a case. 
