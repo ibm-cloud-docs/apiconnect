@@ -31,7 +31,7 @@ You can create a secure gateway to securely expose on-premises APIs to {{site.da
 
 When you create a secure gateway and then provide an address for its client or Cloud `<host>:<port>`, you integrate the features of the {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.SecureGateway}} service with {{site.data.keyword.apiconnect_short}}. This means that you have a secure way to access your on-premises APIs from {{site.data.keyword.apiconnect_short}} through a secure passage. Effectively you create a tunnel to {{site.data.keyword.apiconnect_short}} on a public environment without exposing your on-premises data. All that you need to do is create and configure the secure gateway service on IBM Cloud and provide an address for it in an API.
 
-For more information about the {{site.data.keyword.SecureGateway}} service, and how to set it up, see [About {{site.data.keyword.SecureGateway}}![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs/services/SecureGateway?topic=index#getting-started-with-sg){: #new_window}.
+For more information about the {{site.data.keyword.SecureGateway}} service, and how to set it up, see [About {{site.data.keyword.SecureGateway}}![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs/SecureGateway?topic=SecureGateway-getting-started-with-sg){: #new_window}.
 
 ### Using the secure gateway with your APIs
 {: #using_sec_gate_apis_managing_apis notoc}
