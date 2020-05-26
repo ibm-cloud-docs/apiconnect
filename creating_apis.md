@@ -1,30 +1,31 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-15"
+  years: 2017, 2019
+lastupdated: "2019-12-31"
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+keywords: IBM Cloud, API Connect, API management, APIs, API, lifecycle, develop, create, API Connect Enterprise, API Connect Hybrid, API Connect Lite
 
 subcollection: apiconnect
 
 ---
 
-
-{:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
-{:screen: .screen}
+{:external: target="_blank" .external}
 {:codeblock: .codeblock}
 {:pre: .pre}
+{:screen: .screen}
+{:tip: .tip}
+{:note: .note}
 
 # Creating APIs
 {: #creating_apis}
 
-You can create APIs by downloading the developer toolkit and by using the command line
-interface (CLI) or API Designer.
+You can create APIs in the Lite, Enterprise, and Hybrid plans by downloading the developer toolkit and by using the command line interface (CLI) or API Designer.
+{: shortdesc}
 
 ## The developer toolkit CLI
-{: #dev_tk_cli_creating_apis notoc}
+{: #dev_tk_cli-creating_apis notoc}
 
 The developer toolkit provides a command line interface that you can use to publish APIs to
 {{site.data.keyword.apiconnect_long}}.
@@ -34,7 +35,7 @@ can then interact with {{site.data.keyword.apiconnect_long}} by
 using the toolkit commands.
 
 ## API Designer
-{: #designer_creating_apis notoc}
+{: #designer-creating_apis notoc}
 
 The API Designer is an offline graphical user interface within the developer toolkit and provides
 functions for the creation and configuration of APIs.
@@ -43,12 +44,12 @@ command is used, the API Designer opens in your default browser or can be access
 host port that is displayed when you run the command.
 
 ## Installing the developer toolkit
-{: #install_dev_tk_creating_apis}
+{: #install_dev_tk-creating_apis}
 
 ### Prerequisites
-{: #prereq_install_dev_tk_creating_apis}
+{: #prereq_install_dev_tk-creating_apis}
 
-Before you begin, You must install [Node.js ![External link icon](../icons/launch-glyph.svg "External link icon")](https://nodejs.org/en/){: #new_window} on the machine on which
+Before you begin, You must install [Node.js](https://nodejs.org/en/){: external} on the machine on which
 you want to use the toolkit, and ensure that `node` is in your `PATH`.
 
 The following items are installed when you install the developer toolkit.
@@ -85,14 +86,14 @@ command.
 	{: codeblock}
 	
 ## Installing LoopBack connectors
-{: #install_lb_conn_creating_apis}
+{: #install_lb_conn-creating_apis}
 
 Before you can use a LoopBack data source to access data in a backend system such as a
 database, you must install the data source connector. The In-memory and email connectors are built
 in to LoopBack, so you don't need to install them.
 
 ### Prerequisites
-{: #prereq_install_lb_conn_creating_apis}
+{: #prereq_install_lb_conn-creating_apis}
 
 The Oracle, DB2, and SQLLite connectors require C compiler tools to build and install binary
 extensions. The exact requirements depend on your operating system as described in the following
@@ -101,26 +102,25 @@ list.
 **Linux**
 - Python v2.7 (v3.x is not supported)
 
-- <code>make</code>
+- `make`
 
 - A C/C++ compiler toolchain, for example GCC version 4.2 or later.
 
-- On Debian and Debian-derived distributions (Ubuntu, Mint etc), use the command:
-<pre class="codeblock style-scope doc-content"><code>apt-get install build-essential</code></pre>
+- On Debian and Debian-derived distributions (Ubuntu, Mint etc), use the command: `apt-get install build-essential`
 
 **Mac OS X**
-- [Python Releases for Mac OS X ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.python.org/downloads/mac-osx/){: #new_window}
+- [Python Releases for Mac OS X](https://www.python.org/downloads/mac-osx/){: external}
 
-- [Xcode ![External link icon](../icons/launch-glyph.svg "External link icon")](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716){: #new_window}
+- [Xcode](https://developer.apple.com/xcode/?cm_mc_uid=46449280653414622613810&amp;cm_mc_sid_50200000=1459433716){: external}
 
 **Windows**
-- [Microsoft .NET Framework 4 ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.microsoft.com/en-us/download/details.aspx?id=17851){: #new_window}
+- [Microsoft .NET Framework 4](https://www.microsoft.com/en-us/download/details.aspx?id=17851){: external}
 
-- [Visual Studio ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.visualstudio.com/downloads/download-visual-studio-vs){: #new_window}
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/){: external}
 
-- [Python v2.7.10 ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.python.org/downloads/release/python-2710/){: #new_window}
+- [Python v2.7.10](https://www.python.org/downloads/release/python-2710/){: external}
 
-- [Microsoft Windows SDK for Windows 7 ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.microsoft.com/en-gb/download/details.aspx?id=8279){: #new_window}
+- [Microsoft Windows SDK for Windows 10](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk){: external}
 
 - npm version 3: See the following note.
 
@@ -157,60 +157,30 @@ npm install --save <connector-package>
 {: codeblock}
 where `<connector-package>` is the name of the npm package for the LoopBack connector, as shown in the Table 1:
 
-<table summary="" id="apic_connectors_table_pre_reqs" class="defaultstyle style-scope doc-content">
-<caption>Table 1. LoopBack Connectors</caption>
-<thead>
-<tr class="style-scope doc-content doc-tr-even">
-<th style="width: 50%" id="th_new_d70e1489" class="thleft style-scope doc-content">Data source</th>
-<th style="width: 50%" id="th_new_d70e1491" class="thleft style-scope doc-content">Connector Package</th>
-</tr>
-</thead>
-<tbody>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 50%" headers="d70e1489 ">Cloudant</td>
-<td style="width: 50%">loopback-connector-cloudant</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-even"><td style="width: 50%" headers="d70e1489 ">DashDB</td>
-<td style="width: 50%">loopback-connector-dashdb</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 50%" headers="d70e1489 ">DB2</td>
-<td style="width: 50%">loopback-connector-db2</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-even"><td style="width: 50%" headers="d70e1489 ">DB2 for zOS</td>
-<td style="width: 50%">loopback-connector-db2z</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 50%" headers="d70e1489 ">Microsoft SQL Server</td>
-<td style="width: 50%">loopback-connector-mssql</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-even"><td style="width: 50%" headers="d70e1489 ">MongoDB</td>
-<td style="width: 50%">loopback-connector-mongodb</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 50%" headers="d70e1489 ">MySQL</td>
-<td style="width: 50%">loopback-connector-mysql</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-even"><td style="width: 50%" headers="d70e1489 ">Oracle</td>
-<td style="width: 50%">loopback-connector-oracle</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 50%" headers="d70e1489 ">PostgreSQL</td>
-<td style="width: 50%">loopback-connector-postgresql</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-even"><td style="width: 50%" headers="d70e1489 ">SOAP web services</td>
-<td style="width: 50%">loopback-connector-soap</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 50%" headers="d70e1489 ">REST web services</td>
-<td style="width: 50%">loopback-connector-rest</td>
-</tr>
-</tbody>
-</table>
+| Data source | Connector Package |
+| ----------- | ----------------- |
+| Cloudant | loopback-connector-cloudant |
+| DashDB | loopback-connector-dashdb |
+| DB2 | loopback-connector-db2 |
+| DB2 for zOS | loopback-connector-db2z |
+| Microsoft SQL Server | loopback-connector-mssql |
+| MongoDB | loopback-connector-mongodb |
+| MySQL | loopback-connector-mysql |
+| Oracle | loopback-connector-oracle |
+| PostgreSQL | loopback-connector-postgresql |
+| SOAP web services | loopback-connector-soap |
+| REST web services | loopback-connector-rest |
+{: caption="Table 1. LoopBack Connectors" caption-side="top"}
 
 
 ## Creating a LoopBack API by using the CLI
-{: #create_lb_api_creating_apis}
+{: #create_lb_api-creating_apis}
 
 The following procedure describes how to create a LoopBack&reg; API by using the command line interface.
 
 
 ### Prerequisites
-{: #prereq_create_lb_api_creating_apis}
+{: #prereq_create_lb_api-creating_apis}
 
 Before you begin, have the catalog
 identifier for the catalog that you want to use to hand. To get the catalog identifier, complete the
@@ -218,8 +188,7 @@ following steps:
 
 1. Go to the {{site.data.keyword.apiconnect_short}} **Dashboard**.
 
-2. For the catalog that you want to use, click the **Show catalog identifier** 
-icon <img alt="Chain link icon to display the catalog identifier" src="images/chain_link_icon.png">.
+2. For the catalog that you want to use, click ![Chain link icon](images/chain_link_icon.png "Chain link icon") to display the catalog identifier.
 
 3. Copy the catalog identifier. For example:  
   ```
@@ -228,9 +197,9 @@ icon <img alt="Chain link icon to display the catalog identifier" src="images/ch
   {: codeblock}
     where:
 
-    - `<region>` is the {{site.data.keyword.Bluemix_notm}} region.
+    - `<region>` is the {{site.data.keyword.cloud_notm}} region.
 
-    - `<username_string>` is your {{site.data.keyword.Bluemix_notm}} org ID without any symbols. For example,
+    - `<username_string>` is your {{site.data.keyword.cloud_notm}} org ID without any symbols. For example,
     `joe@mycompany.com` would be `joemycompanycom`
 
     - `<catalog>` is the name of your catalog  
@@ -311,7 +280,7 @@ class:
       Checkpoint
     (Move up and down to reveal more choices)
     ```
-    For more information about each option, see [Using built-in models ![External link icon](../icons/launch-glyph.svg "External link icon")](https://loopback.io/doc/en/lb3/Using-built-in-models.html){: #new_window}.
+    For more information about each option, see [Using built-in models](https://loopback.io/doc/en/lb3/Using-built-in-models.html){: external}.
 
 9. Select a base class and press **Enter**. The tool asks whether you want to expose the model's REST
 API.
@@ -420,10 +389,10 @@ Install loopback-connector-<connector>?
 The tool installs the connector.
 
 **Note**: If you selected the Oracle connector, you must set an environment variable in
-{{site.data.keyword.Bluemix_notm}} for the Oracle app to start. To
+ {{site.data.keyword.cloud_notm}} for the Oracle app to start. To
 do this, complete the following steps:
 
-1. In the {{site.data.keyword.Bluemix_notm}} UI, select
+1. In the {{site.data.keyword.cloud_notm}} UI, select
 **Compute**.
 
 2. In CF Applications, select the application that you want to work with.
@@ -442,7 +411,7 @@ do this, complete the following steps:
 8. Click **Save**.
 
 ### Testing a LoopBack project
-{: #test_lb_proj_creating_apis}
+{: #test_lb_proj-creating_apis}
 
 To test a LoopBack project, complete the following steps.
 
@@ -473,16 +442,16 @@ If you want to load the API by using a web browser, open
 {"started":"2016-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-### Publishing a LoopBack application to {{site.data.keyword.Bluemix_notm}} from the CLI
-{: #pub_lb_app_cli_creating_apis}
+### Publishing a LoopBack application to {{site.data.keyword.cloud_notm}} from the CLI
+{: #pub_lb_app_cli-creating_apis}
 
-To publish a LoopBack application to {{site.data.keyword.Bluemix_short}} from the command line, complete the following steps:
+To publish a LoopBack application to {{site.data.keyword.cloud_notm}} from the command line, complete the following steps:
 
 1. Enter the following command to ensure that you are in the Loopback project directory.
 ```
 cd <loopback-project-dir>
 ```
-2. Enter the following command to log in to {{site.data.keyword.apiconnect_short}} and {{site.data.keyword.Bluemix_notm}}.
+2. Enter the following command to log in to {{site.data.keyword.apiconnect_short}} and {{site.data.keyword.cloud_notm}}.
 ```
 apic login --server  <region>.apiconnect.ibmcloud.com -u <username> -p <password>
 ```
@@ -500,27 +469,28 @@ Logged into <region>.apiconnect.ibmcloud.com successfully
 apic organizations -s <region>.apiconnect.ibmcloud.com
 ```
 where:
-  * `<region>` is the {{site.data.keyword.Bluemix_notm}} region. For example:
-  * `eu` if you are using {{site.data.keyword.Bluemix_notm}} London.
-  * `us` if you are using {{site.data.keyword.Bluemix_notm}} Dallas.
-  * `au` if you are using {{site.data.keyword.Bluemix_notm}} Sydney.
+  * `<region>` is the {{site.data.keyword.cloud_notm}} region. For example:
+  * `eu` if you are using {{site.data.keyword.cloud_notm}} London.
+  * `us` if you are using {{site.data.keyword.cloud_notm}} Dallas.
+  * `au` if you are using {{site.data.keyword.cloud_notm}} Sydney.
 
-  If you are unsure, you can locate your region by clicking the {{site.data.keyword.avatar}} icon <img src="images/i-avatar-icon.svg" alt="avatar icon"/> in the menu bar to open the Account and Support widget and check the region field.
-7. Enter the following command to publish your application to {{site.data.keyword.Bluemix_notm}}.
+  If you are unsure, you can locate your region by clicking ![Avatar icon](images/i-avatar-icon.svg "Avatar icon") in the menu bar to open the Account and Support widget and check the region field.
+  
+7. Enter the following command to publish your application to {{site.data.keyword.cloud_notm}}.
 ```
 apic apps:publish –app <app> -o <org> -s <region>.apiconnect.ibmcloud.com
 ```
 where:
   * `<app>` is the name of your app
-  * `<org>` is the name of your {{site.data.keyword.Bluemix_notm}} organization
-  * `<region>` is the {{site.data.keyword.Bluemix_notm}} region
+  * `<org>` is the name of your {{site.data.keyword.cloud_notm}} organization
+  * `<region>` is the {{site.data.keyword.cloud_notm}} region
 The following output is returned:
   ```
   ...preparing project
   ...building package for deploy
   ...uploading package
   Runtime published successfully.
-  Management URL: https://test.cloud.ibm.com/apps/3aa7087d-b454-4e13-bbc5-8228ebe00eef
+  Management URL: https://<region>.cloud.ibm.com/apps/3aa7087d-b454-4e13-bbc5-8228ebe00eef
   API target urls: apiconnect-3aa7087d-b454-4e13-bbc5-8228ebe00eef.pszetousibmcom-dev.apic.test.cloud.ibm.com/
   API invoke tls-profile: client:Loopback-client
   ```
@@ -537,10 +507,10 @@ The following output is returned:
         - **Invoke URL**: Insert the API target URL. You must specify the secure protocol HTTPS. For
         example:
         ```
-        https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<IBM Cloud org>-<IBM Cloud space>.apic.<domain name>$(request.path)
+        https://apiconnect-33e7b062-092b-4227-af97-047499dab2e7.<IBM_Cloud_org>-<IBM_Cloud_space>.apic.<domain_name>$(request.path)
         ```
         If you did not make a note of this value, you can retrieve by going to the management URL returned in
-        step 7. You can also retrieve it by logging in to {{site.data.keyword.Bluemix_notm}} and viewing your app information.
+        step 7. You can also retrieve it by logging in to {{site.data.keyword.cloud_notm}} and viewing your app information.
         - **TLS Profile**: Insert the API invoke tls-profile. For example:
         ```
         client:Loopback-client
@@ -548,16 +518,16 @@ The following output is returned:
     8. Click **Save** to save the API.
 
 ## Creating a LoopBack API by using the API Designer
-{: #create_lb_api_design_creating_apis}
+{: #create_lb_api_design-creating_apis}
 
 The following procedure describes how to create a LoopBack API by using the API Designer.
 {:shortdesc}
 
 ### Prerequisites
-{: #prereq_create_lb_api_design_creating_apis}
+{: #prereq_create_lb_api_design-creating_apis}
 
 **Note**: The following instructions assume that you are using the latest version of
-the developer toolkit. To check the latest version, see the [npm ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.npmjs.com/package/apiconnect){: #new_window} package page.
+the developer toolkit. To check the latest version, see the [npm](https://www.npmjs.com/package/apiconnect){: external} package page.
 
 First, you need to create a LoopBack project using the CLI. Complete the following steps to do this:
 
@@ -615,7 +585,7 @@ apic edit
     ```
     The API Designer opens in your default web browser.
 
-2. In the login page, enter your {{site.data.keyword.Bluemix_notm}} ID and password. Click **Sign In**.
+2. In the login page, enter your {{site.data.keyword.cloud_notm}} ID and password. Click **Sign In**.
 
 3. Click **Models**.
 
@@ -655,62 +625,32 @@ the following command:
 ```
 npm install --save <connector-package>
 ```
-    where `<connector-package>` is the name of the npm package for the LoopBack connector you selected. See the following table for a list of connector packages.
+    where `<connector-package>` is the name of the npm package for the LoopBack connector you selected. See Table 2 for a list of connector packages.
 
 **Note:** The in-memory and email connectors are built in to LoopBack, so you do not need to install them.
 
-<table>
-<caption>Table 2. LoopBack Connectors</caption>
-<thead>
-<tr class="style-scope doc-content doc-tr-even">
-<th style="width: 50%" id="3rd_d70e1489" class="thleft style-scope doc-content">Data source</th>
-<th style="width: 50%" id="3rd_d70e1491" class="thleft style-scope doc-content">Connector Package</th>
-</tr>
-</thead>
-<tbody>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 50%" headers="d70e1489 ">Cloudant</td>
-<td style="width: 50%">loopback-connector-cloudant</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-even"><td style="width: 50%" headers="d70e1489 ">DashDB</td>
-<td style="width: 50%">loopback-connector-dashdb</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 50%" headers="d70e1489 ">DB2</td>
-<td style="width: 50%">loopback-connector-db2</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-even"><td style="width: 50%" headers="d70e1489 ">DB2 for zOS</td>
-<td style="width: 50%">loopback-connector-db2z</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 50%" headers="d70e1489 ">Microsoft SQL Server</td>
-<td style="width: 50%">loopback-connector-mssql</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-even"><td style="width: 50%" headers="d70e1489 ">MongoDB</td>
-<td style="width: 50%">loopback-connector-mongodb</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 50%" headers="d70e1489 ">MySQL</td>
-<td style="width: 50%">loopback-connector-mysql</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-even"><td style="width: 50%" headers="d70e1489 ">Oracle</td>
-<td style="width: 50%">loopback-connector-oracle</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 50%" headers="d70e1489 ">PostgreSQL</td>
-<td style="width: 50%">loopback-connector-postgresql</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-even"><td style="width: 50%" headers="d70e1489 ">SOAP web services</td>
-<td style="width: 50%">loopback-connector-soap</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd"><td style="width: 50%" headers="d70e1489 ">REST web services</td>
-<td style="width: 50%">loopback-connector-rest</td>
-</tr>
-</tbody>
-</table>
+| Data source | Connector Package |
+| ----------- | ----------------- |
+| Cloudant | loopback-connector-cloudant |
+| DashDB | loopback-connector-dashdb |
+| DB2 | loopback-connector-db2 |
+| DB2 for zOS | loopback-connector-db2z |
+| Microsoft SQL Server | loopback-connector-mssql |
+| MongoDB | loopback-connector-mongodb |
+| MySQL | loopback-connector-mysql |
+| Oracle | loopback-connector-oracle |
+| PostgreSQL | loopback-connector-postgresql |
+| SOAP web services | loopback-connector-soap |
+| REST web services | loopback-connector-rest |
+{: caption="Table 2. LoopBack Connectors" caption-side="top"}
 
-For more information, see [LoopBack Documentation - Building a connector ![External link icon](../icons/launch-glyph.svg "External link icon")](https://loopback.io/doc/en/lb3/Defining-data-sources.html){: #new_window}.
+For more information, see [LoopBack Documentation - Building a connector](https://loopback.io/doc/en/lb3/Defining-data-sources.html){: external}.
 
 **Note:** If you selected the Oracle connector, you must set an environment variable in
-{{site.data.keyword.Bluemix_notm}} for the Oracle app to start. To
+ {{site.data.keyword.cloud_notm}} for the Oracle app to start. To
 do this, complete the following steps:
 
-1. In the {{site.data.keyword.Bluemix_notm}} UI, select
+1. In the {{site.data.keyword.cloud_notm}} UI, select
 **Compute**.
 
 2. In CF Applications, select the application that you want to work with.
@@ -745,7 +685,8 @@ something like this:
 {"started":"2017-03-07T22:24:55.322Z","uptime":35.839}
 ```
 
-Next, you need to create a Product. For more information, see [Creating a Product](/docs/services/apiconnect?topic=apiconnect-managing_products#create_product_managing_products).
+Next, you need to create a Product. For more information, see [Creating a Product](/docs/apiconnect?topic=apiconnect-managing_products#create_product-managing_products).
+
 **Tip**: Whenever you start a new command prompt, make sure that your current working
 directory is the project top-level directory. To do this, enter the following
 command:
@@ -754,26 +695,22 @@ cd <project directory name>
 ```
 
 ## Uninstalling the developer toolkit
-{: #uninstall_dev_tk_creating_apis}
+{: #uninstall_dev_tk-creating_apis}
 
-### Prerequisites
-{: #prereq_uninstall_dev_tk_creating_apis}
+To uninstall the developer toolkit, complete the following steps:
 
-Before you begin, you must stop any apps that are running locally by entering the following
-command:
+1. Stop any apps that are running locally by running the following command:
 ```
 apic stop --all
 ```
 
-To uninstall the developer toolkit, complete the following steps:
-
-1. Enter the following command:
+2. Enter the following command:
 ```
 npm rm -g apiconnect
 ```
 {: codeblock}
 
-2. Clear your npm cache:
+3. Clear your npm cache:
 ```
 npm cache clean
 ```
@@ -781,5 +718,6 @@ npm cache clean
   
 If you are using Windows:
 
-3. Delete all files whose names begin with `npm-` in `C:\Users\username\AppData\Local\Temp`
-4. Delete the directory `<home_dir>\.apiconnect`, where `<home_dir>` is the home directory of the user account under which the toolkit was previously installed.
+4. Delete all files whose names begin with `npm-` in `C:\Users\username\AppData\Local\Temp`
+
+5. Delete the directory `<home_dir>\.apiconnect`, where `<home_dir>` is the home directory of the user account under which the toolkit was previously installed.

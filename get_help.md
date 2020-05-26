@@ -30,13 +30,13 @@ Need help with your {{site.data.keyword.appconservicefull}} service instance? Vi
 
    It's important to create your case with the correct service so that IBM Support can track the case and assign the appropriate people to help you. The list of services depends on your {{site.data.keyword.cloud_notm}} account. If you don't see {{site.data.keyword.apiconnect_short}} in the "Services" list, you can locate it as follows:
    
-   a. Locate the "What do you need help with?" section.
-   b. Review the text in that section and click the **view all services** link.
-   c. In the complete list of services, locate {{site.data.keyword.apiconnect_short}} and click it (services are listed in alphabetic order).
+   - Locate the "What do you need help with?" section.
+   - Review the text in that section and click the **view all services** link.
+   - In the complete list of services, locate {{site.data.keyword.apiconnect_short}} and click it (services are listed in alphabetic order).
 
 3. Describe your problem.
 
-   Use the fields on the "Create a Case" page to explain your problem. The following list describes important information that will assist us with resolving issues that you are having in {{site.data.keyword.apiconnect_short}}:
+   Use the fields on the "Create a Case" page to explain your problem. The following list describes important information that assists us with resolving issues that you are having in {{site.data.keyword.apiconnect_short}}:
 
    - For all issues, include the following information:
 
@@ -53,19 +53,19 @@ Need help with your {{site.data.keyword.appconservicefull}} service instance? Vi
 
    - For Portal-based issues, additionally include the user name of person who encountered the problem
 
-   - For issues invoking APIs, additionally include:
+   - For issues with invoking APIs, additionally include:
 
-      - Full API URL impacted - the host name should contain apiconnect.ibmcloud.com
+      - Full API URL impacted - the host name should contain `apiconnect.ibmcloud.com`
       - HTTP method used
-      - Frequency and time (with timezone) of the issue
+      - Frequency and time (with time zone) of the issue
       - Expected result
       - Actual (incorrect) result
-      - Evidence from analytics to show that the API issue is not a problem with the customer's down-stream system; for more information, see the _IBM Developer_ article [Why isn’t my API working](https://developer.ibm.com/apiconnect/why-isnt-my-api-working/){: external}
-      - Complete cURL example for recreating the call (include all Information required for the call, including headers, client ID/secret)
+      - Evidence from analytics to show that the API issue is not a problem with the customer's down-stream system. For more information, see the _IBM Developer_ article [Why isn’t my API working](https://developer.ibm.com/apiconnect/why-isnt-my-api-working/){: external}
+      - Complete cURL example for recreating the call (include all information required for the call, including headers, client ID, and client secret)
 
    Optionally attach files to help explain your issue (for example, screen captures). Click the Information icon next to "Supported file types" to see the complete list of allowed file types. Helpful attachments include:
    
-   - A (compressed) CSV file containing exported analytics for failing APIs, to ensure we see the correct calls and the failure patterns
+   - A (compressed) CSV file that contains exported analytics for failing APIs, to ensure we see the correct calls and the failure patterns
    - A copy of the API YAML file, with personal data such as IDs, secrets, tokens, and passwords removed
    - A copy of a browser HAR trace file, if the problem is related to the behavior of the API Connect UI
     

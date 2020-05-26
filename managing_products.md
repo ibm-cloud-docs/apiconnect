@@ -1,28 +1,33 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-15"
+  years: 2017, 2019
+lastupdated: "2019-12-31"
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+keywords: IBM Cloud, API Connect, API management, APIs, API, products, lifecycle, API Connect Enterprise, API Connect Hybrid
 
 subcollection: apiconnect
 
 ---
 
-{:new_window: target="blank"}
 {:shortdesc: .shortdesc}
-{:screen: .screen}
+{:external: target="_blank" .external}
 {:codeblock: .codeblock}
 {:pre: .pre}
+{:screen: .screen}
+{:tip: .tip}
+{:note: .note}
 
 # Managing Products
 {: #managing_products}
 
-For details of the ways in which you can manage your Products, see the IBM&reg; Knowledge Center documentation [Managing your Products ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){: #new_window}.
+Create, stage, and manage the lifecycle of products in the Lite, Enterprise, and Hybrid plans.
+{: shortdesc}
+
+For details of the ways in which you can manage your Products, see [Managing your Products](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.apionprem.doc/task_product_management.html){: external} in the API Connect knowledge center. 
 
 ## Product lifecycle
-{: #prod_lifecycle_managing_products}
+{: #prod_lifecycle-managing_products}
 
 When you manage your Product versions, you move them through a series of lifecycle
 states, from initially staging a draft Product version to an environment, through to publishing to
@@ -30,59 +35,36 @@ make the Product version available to your application developers, and to eventu
 archiving. The following table and diagram describe the various Product lifecycle states for a
 Product version.
 
-<table summary="" id="apic_004__table_lym_rxj_gv" class="defaultstyle"><caption class="style-scope doc-content">Table 1. API Management Product lifecycle states</caption>
-<thead class="style-scope doc-content">
-<tr class="style-scope doc-content doc-tr-even">
-<th style="width: 11.25%" id="d3569e1968" class="thleft thbot style-scope doc-content">State</th>
-<th style="width: 88.75%" id="d3569e1970" class="thleft thbot style-scope doc-content">Description</th>
-</tr>
-</thead>
-<tbody class="style-scope doc-content">
-<tr class="style-scope doc-content doc-tr-odd">
-<td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">Draft</td>
-<td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">Product is not deployed and is not associated with an API Connect Catalog.</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-even">
-<td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">Staged</td>
-<td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">An immutable copy of the Product version is deployed to the target
+| State | Description |
+| ----- | ----------- |
+| Draft | Product is not deployed and is not associated with an API Connect Catalog. |
+| Staged | An immutable copy of the Product version is deployed to the target
 environment. Staged is the initial state when you stage from a draft Product. When a Product is in
-the staged state, it is not yet visible to, or subscribable by, any developers.</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd">
-<td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">Published</td>
-<td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">The Product version is visible to, and subscribable by, the targeted
-developers or communities.</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-even">
-<td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">Deprecated</td>
-<td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">The Product version is visible only to developers whose applications are
-currently subscribed. No new subscriptions to the Product are possible.</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-odd">
-<td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">Retired</td>
-<td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">The Product version cannot be viewed or subscribed to, and all of the
+the staged state, it is not yet visible to, or subscribable by, any developers. |
+| Published | The Product version is visible to, and subscribable by, the targeted
+developers or communities. |
+| Deprecated | The Product version is visible only to developers whose applications are
+currently subscribed. No new subscriptions to the Product are possible. |
+| Retired | The Product version cannot be viewed or subscribed to, and all of the
 associated APIs are stopped. A retired Product version is displayed by default in the
-Products page in the API Manager UI.</td>
-</tr>
-<tr class="style-scope doc-content doc-tr-even"><td style="width: 11.25%" headers="d3569e1968 " class="style-scope doc-content">Archived</td>
-<td style="width: 88.75%" headers="d3569e1970 " class="style-scope doc-content">The Product version cannot be viewed or subscribed to, and all of the
-associated APIs are stopped. The Product version is not displayed by default in the Products page in the API Manager UI.</td>
-</tr>
-</tbody>
-</table>
+Products page in the API Manager UI. |
+| Archived | The Product version cannot be viewed or subscribed to, and all of the
+associated APIs are stopped. The Product version is not displayed by default in the Products page in the API Manager UI. |
+{: caption="Table 1. API Management Product lifecycle states" caption-side="top"}
+
 
 ### Product lifecycle flows
-{: #prod_lifecycle_flows_managing_products}
+{: #prod_lifecycle_flows-managing_products}
 
 The following diagram shows the possible lifecycle states for a Product version, and the Product management operations that move a Product version from
 one lifecycle state to another; for example, the Retire operation moves a Product version from the
 Published to the Retired state.
 
-<img alt="Lifecycle state diagram for Product version" src="images/apic_plan_lifecycle.png">
+![Lifecycle state diagram for Product version](images/apic_plan_lifecycle.png "Lifecycle state diagram for Product version")
 
 
 ## Creating a Product
-{: #create_product_managing_products}
+{: #create_product-managing_products}
 
 Create a Product to collect a set of APIs and Plans into one offering that you make
 available to your developers. A Plan includes rate limit settings that can be applied to the Plan as
@@ -104,7 +86,7 @@ apic edit
 ```
 The API Designer opens in your default browser.
 
-2. In the navigation pane of the API Designer, click **Products**.
+2. In the navigation list of the API Designer, click **Products**.
 The Products tab opens.
 
 3. Click **Add** and then click **New Product**.
@@ -132,7 +114,7 @@ communities that you want the Plans in the Product to be visible to.
     To search for developer organizations or communities, the Product must be in the staged,
     published, or deprecated state. If the Catalog in which it is staged, published, or deprecated is
     not a sandbox Catalog, you cannot make other changes to the Product while it is in one of these
-    states. For more information, see [Product lifecycle](#prod_lifecycle_managing_products).
+    states. For more information, see [Product lifecycle](#prod_lifecycle-managing_products).
 
 8. Specify the users that can subscribe to the Product. You can choose **Authenticated
 users** or **Custom**. If you select **Custom**, use
@@ -199,11 +181,11 @@ warning will be presented.
 
 You have created a Product, and specified a set of APIs and Plans into one offering that you
 can now make available to your developers.
-Next, stage your poduct to a catalog as explained in the next section, [Staging a Product](#stage_product_managing_products}).
+Next, stage your poduct to a catalog as explained in the next section, Staging a Product.
 
 
 ## Staging a Product
-{: #stage_product_managing_products}
+{: #stage_product-managing_products}
 
 Stage a Product to create a specific version of that Product in a Catalog, before
 publishing. When a Product is in the staged state, it is not yet visible to, or subscribable by, any
@@ -212,7 +194,7 @@ developers.
 **Note:** The API Manager UI also includes the ability to stage Products, however the preferred method
 for these tasks is by using the API Designer UI, as described in the following procedure.
 
-1. In the navigation pane of the API Designer, click **Products**.
+1. In the navigation list of the API Designer, click **Products**.
 The Products tab opens.
 
 2. Click the **Product** that you want to work with. If you have more than one
@@ -228,10 +210,10 @@ staged.
 
 5. If the Catalog to which you want to stage the Product is not shown in the list:
     1. Click **Add and Manage Targets**.
-    2. Click **Add {{site.data.keyword.Bluemix_notm}} target**.
-    3. Select the {{site.data.keyword.Bluemix_short}}
+    2. Click **Add {{site.data.keyword.cloud_notm}} target**.
+    3. Select the {{site.data.keyword.cloud_notm}}
 **Region** that you want to publish to.
-    4. Select the {{site.data.keyword.Bluemix_notm}}
+    4. Select the {{site.data.keyword.cloud_notm}}
 **Organization** that you want to publish to.
     5. A list of Catalogs is displayed. Select the Catalog that you want to publish to.
     6. Click **Next**.
@@ -244,30 +226,30 @@ Otherwise, select **None**.
     12. Click **Publish**.
 
 Your Product has been staged to a Catalog. To view the state of the Product in the Catalog, open
-the API Manager UI, select the Dashboard section in the navigation pane, and click on the required
+the API Manager UI, select the Dashboard section in the navigation list, and click on the required
 Catalog. The Product is shown with a state of Staged.
 
-- Open the {{site.data.keyword.Bluemix_notm}} **Dashboard**. You will see the application tile in the Applications section.
+- Open the {{site.data.keyword.cloud_notm}} **Dashboard**. You will see the application tile in the Applications section.
 
-Open the API Manager to publish your product to a community where application developers can access it through the Developer Portal as explained in the next section, [Publishing a Product](#publish_proj_managing_products}).
+Open the API Manager to publish your product to a community where application developers can access it through the Developer Portal as explained in the next section, Publishing a Product.
 
 
 ## Publishing a Product
-{: #publish_proj_managing_products}
+{: #publish_proj-managing_products}
 
 APIs are made visible and accessible to application developers when a plan is published.
-Publishing a Product makes it visible in the {{site.data.keyword.Bluemix_short}}
+Publishing a Product makes it visible in the {{site.data.keyword.cloud_notm}}
 **Catalog** and built-in Developer Portal for application developers to
 use.
 
 ### Prerequisites
-{: #prereq_publish_proj_managing_products}
+{: #prereq_publish_proj-managing_products}
 
-You must stage a Product before it can be published. For more information about staging Products, see [Staging a Product](#stage_product_managing_products).
+You must stage a Product before it can be published. For more information about staging Products, see [Staging a Product](#stage_product-managing_products).
 
 To publish a Product, complete the following steps:
 
-1. In the navigation pane of the API Manager, expand the **Catalogs** section
+1. In the navigation list of the API Manager, expand the **Catalogs** section
 and select the Catalog that you want to work with. The Products tab of the Catalog opens, and all of
 the Products available in that Catalog are displayed. You can select which states are shown by using
 the filter check boxes on the right of the screen.
@@ -296,17 +278,17 @@ to use your Product are displayed on the Approvals tab in the containing Catalog
 decline or accept the request.
 
 
-## Publishing a Product to Bluemix
-{: #pub_to_bm_managing_products}
+## Publishing a Product to IBM Cloud
+{: #pub_to_cloud-managing_products}
 
 To see your Products in the **Explore APIs** section of the {{site.data.keyword.apiconnect_short}} Dashboard, complete the following steps.
 
 ### Prerequisites
-{: #prereq_pub_bm_managing_products}
+{: #prereq_pub_cloud-managing_products}
 
 Before you begin, if you want to publish a REST API implemented with LoopBack, ensure that
 you have published your app run time, and staged your product with the invoke proxy pointing to the
-new app. For more information about how to do this, see [Staging and publishing a LoopBack Application](/docs/services/apiconnect?topic=apiconnect-managing_apis#stage_publish_lb_app_managing_apis).
+new app. For more information about how to do this, see [Staging and publishing a LoopBack Application](/docs/apiconnect?topic=apiconnect-managing_apis#stage_publish_lb_app-managing_apis).
 
 1. In the API Manager UI, click **Add** > **Catalog**. The **Add Catalog** window is displayed.
 
@@ -327,20 +309,20 @@ you want to use.
 6. In the User Registry and Invitation section, click the **User Registry**
 arrow and select **SAML**.
 
-7. In the navigation pane, click the **Developers** icon.
+7. In the navigation list, click the **Developers** icon.
 
 8. Click **Add IBM Cloud Organization**.
 
-9. Add your {{site.data.keyword.Bluemix_short}} user email
+9. Add your {{site.data.keyword.cloud_notm}} user email
 address and click **Add**.
 
 10. An invitation is sent to your email address.
 
 11. Click the link in the email to accept the invitation.
-The {{site.data.keyword.Bluemix_notm}} UI
+The {{site.data.keyword.cloud_notm}} UI
 opens.
 
-12. Select your {{site.data.keyword.Bluemix_notm}} org and click
+12. Select your {{site.data.keyword.cloud_notm}} org and click
 **Confirm**.
 
 13. In the API Manager UI, click the **Products** icon.

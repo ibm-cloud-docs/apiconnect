@@ -1,42 +1,69 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-31"
+  years: 2017, 2019
+lastupdated: "2019-12-31"
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
+keywords: IBM Cloud, API Connect, API management, APIs, API, lifecycle, intro, API Connect Enterprise, API Connect Hybrid, API Connect Lite
 
 subcollection: apiconnect
 
 ---
 
-
-{:new_window: target="_blank"}
+{:external: target="_blank" .external} 
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
 {:pre: .pre}
+{:note: .note}
 
-# Getting started with the IBM Cloud API Connect service
+# Getting started
 {: #getting-started}
 
-Use the {{site.data.keyword.apiconnect_full}} service to
-quickly create APIs and microservices based on Node.js and Java runtimes. You can also manage your APIs by setting varying levels of security, visibility, billing information, and rate limits while sharing APIs with application developers. The {{site.data.keyword.apiconnect_short}} service also lets you transform and grow your business with insights through detailed analytics with structured filtered searches.
+Use {{site.data.keyword.apiconnect_full}} to quickly create APIs and microservices based on Node.js and Java runtimes. 
+{: shortdesc}
 
-**Note**: These topics contain a brief introduction to {{site.data.keyword.apiconnect_short}} and a set of tutorials that you can complete to get up and running with the service quickly. See the [IBM Knowledge Center documentation ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSFS6T/mapfiles/getting_started_bluemix.html){: #new_window} for the complete content collection.
+You can manage your APIs by setting varying levels of security, visibility, billing information, and rate limits. The {{site.data.keyword.apiconnect_short}} service also lets you transform and grow your business with insights through detailed analytics with structured filtered searches.
+
+## Before you begin
+{: #prereq_getting-started}
+
+Register with {{site.data.keyword.cloud_notm}}, review the {{site.data.keyword.apiconnect_short}} pricing plans, and create your service instance.
+{: shortdesc}
+
+### Step 1. Register with {{site.data.keyword.cloud_notm}}
+{: #step1_getting-started}
+
+Navigate to [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/registration/){: external} and create your {{site.data.keyword.cloud_notm}} account. 
+
+If you already have an IBMid, you can use it to register with {{site.data.keyword.cloud_notm}}; otherwise, you can create an IBMid during registration.
+{: tip}
+
+### Step 2. Select an {{site.data.keyword.apiconnect_short}} pricing plan and create your service
+{: #step2_getting-started}
+
+1. If you are not already logged in to {{site.data.keyword.cloud_notm}}, log in now at the [{{site.data.keyword.cloud_notm}} login page](https://cloud.ibm.com/login/){: external}.
+
+2. Visit the [{{site.data.keyword.apiconnect_short}} Pricing Plans](https://cloud.ibm.com/catalog/services/api-connect){: external} page.
+
+3. Click a plan to select it.
+
+4. Click **Create** to create your service instance.
+
+When you want to return to your service later, open your Resource listing in the {{site.data.keyword.cloud_notm}} [Dashboard](https://cloud.ibm.com/resources){: external}, look in the **Cloud Foundry services** section, and click your {{site.data.keyword.apiconnect_short}} service.
+{: tip}
 
 ## Where would you like to begin?
-{: #starting_point_index}
+{: #starting-point_getting-started}
 
-Select one of the following boxes to view the tutorial for that topic.  You can complete all of the tutorials, or only complete the ones that apply to your role with APIs.
+For an overview of the product, see [Overview of {{site.data.keyword.apiconnect_short}}](/docs/apiconnect?topic=apiconnect-apic_overview).
 
-| Create an API | Manage an API | Discover APIs | Configure a Developer Portal | 
-|---------------|------------------------|---------------|-----------------|
-| <a href="/docs/services/apiconnect/tutorials?topic=apiconnect-tut_create_api_node"> <img src="/images/art_create_api_node.png" width="200" alt="Create an API with Node.js" /></a> | <a href="/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing"> <img src="/images/art_manage_rest_service.png" width="200" alt="Manage a REST service" /></a> | <a href="/docs/services/apiconnect/tutorials?topic=apiconnect-tut_discover_apis"> <img src="/images/art_discover_apis.png" width="200" alt="Discover APIs" /></a> | <a href="/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal"> <img src="/images/art_configure_dev_portal.png" width="200" alt="Configure a Developer Portal" /></a> | 
-| | <a href="/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_soap_api"> <img src="/images/art_manage_soap_service.png" width="200" alt="Manage a SOAP service" /></a> | | |
-{: caption="IBM Cloud API Connect service getting started tutorials" caption-side="top"}
+For an in-depth introduction to {{site.data.keyword.apiconnect_short}}, you can work through a complete set of tutorials for the Lite, Enterprise, and Hybrid plans. You can choose to complete all of the tutorials, or only the tutorials that apply to a particular task. The following tutorials offer an overview of the capabilities of {{site.data.keyword.apiconnect_short}}:
 
-## API Connect overview
-{: #moregetstart_index}
+- [Creating an API](/docs/apiconnect/tutorials?topic=apiconnect-tut_create_api_node)
 
-<a href="/docs/services/apiconnect?topic=apiconnect-about_apic_overview"> <img src="/images/art_apic_overview.png" width="150" alt="Link to overview materials for API Connect."></a>
+- [Managing an API](/docs/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
+
+- [Discovering APIs](/docs/apiconnect/tutorials?topic=apiconnect-tut_discover_apis)
+
+- [Configuring a Developer Portal](/docs/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal)

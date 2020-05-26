@@ -18,10 +18,10 @@ subcollection: apiconnect
 {:tip: .tip}
 {:note: .note}
 
-# Troubleshooting Lite - Enterprise - Hybrid
+# Troubleshooting
 {: #apic_troubleshoot}
 
-Here are the answers to common troubleshooting questions about using {{site.data.keyword.apiconnect_long}} with the Lite, Enterprise, and Hybrid plans.
+Here are the answers to common troubleshooting questions about using {{site.data.keyword.apiconnect_long}}.
 {:shortdesc}
 
 ## Username and password required when adding the {{site.data.keyword.apiconnect_short}} service

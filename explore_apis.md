@@ -10,7 +10,7 @@ subcollection: apiconnect
 
 ---
 
-{:new_window: target="blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -19,10 +19,10 @@ subcollection: apiconnect
 # Exploring APIs and Products
 {: #explore_prods_apis}
 
-1. To view APIs that have been shared with your {{site.data.keyword.Bluemix_short}} org, go to the APIs landing screen and
+1. To view APIs that have been shared with your {{site.data.keyword.cloud_notm}} org, go to the APIs landing screen and
 click **Explore APIs**.
 
-<img alt="APIs landing page with the Explore APIs tab highlighted" src="images/ExploreAPIs_tab.png">
+![Explore APIs tab](images/ExploreAPIs_tab.png "Explore APIs tab")
 
 2. Expand the API to view more information about it.
 

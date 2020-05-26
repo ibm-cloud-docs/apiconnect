@@ -10,7 +10,7 @@ API Connect
     getting-started.md
     
     {: .topicgroup}
-    Getting started tutorials
+    Tutorials
         tutorials/tut_create_api_node.md
         tutorials/tut_rest_landing.md
         tutorials/tut_import_openapi_rest_bm.md
@@ -46,6 +46,10 @@ API Connect
     managing_products.md
     create_catalog.md
     explore_apis.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    call_apim_apis.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
