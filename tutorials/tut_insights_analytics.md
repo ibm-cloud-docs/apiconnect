@@ -10,7 +10,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 
 ---
 
-{:new_window: target="blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -38,7 +38,7 @@ To generate the data in this tutorial, we used Postman's *Collection Runner* to 
 ## Introduction to catalog analytics
 {: #intro_tut_insights_analytics}
 
-As an API owner, you need a way to assess the success and performance of the APIs you offer. The main place you'll look for analytics is at the catalog level. If you have not been introduced to catalogs, see [Working with Catalogs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){: #new_window} in the IBM Knowledge Center for an introduction. 
+As an API owner, you need a way to assess the success and performance of the APIs you offer. The main place you'll look for analytics is at the catalog level. If you have not been introduced to catalogs, see [Working with Catalogs](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/conref_working_with_env.html){: external} in the IBM Knowledge Center for an introduction. 
 
 You and your App developers can also access app-specific analytics in the Developer Portal, but we'll focus on Catalog Analytics in this tutorial.
 
@@ -54,7 +54,7 @@ This tutorial consists of four activities that show you how to complete the foll
 ## Activity 1: Viewing out of the box analytics
 {: #act1_tut_insights_analytics}
 
-1. In your {{site.data.keyword.apiconnect_short}} service on {{site.data.keyword.Bluemix_short}}, launch your Dashboard and select the Catalog that you want to open. 
+1. In your {{site.data.keyword.apiconnect_short}} service on {{site.data.keyword.cloud_notm}}, launch your Dashboard and select the Catalog that you want to open. 
 2. Click the *Analytics* tab.
 
    ![](./images/analyticstab.png) 
@@ -169,6 +169,6 @@ In this tutorial, we walked through a number of activities to help you create us
 
 ## Next step
 {: #next_tut_insights_analytics}
-Learn [how to manage your APIs and versioning](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_version_landing).
+Learn [how to manage your APIs and versioning](/docs/apiconnect/tutorials?topic=apiconnect-tut_manage_version_landing).
 
 Create > Manage > Secure > Socialize > **Analyze**  

@@ -1,5 +1,4 @@
 ---
-
 copyright:
   years: 2018
 lastupdated: "2018-02-22"
@@ -10,11 +9,13 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 
 ---
 
-{:new_window: target="blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
 {:pre: .pre}
+{:note: .note}
+
 
 # Creating an API in Node.js
 {: #tut_create_api_node}
@@ -27,15 +28,15 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 {: #object_tut_create_api_node}
 
 This tutorial guides you through creating an API in Node.js using the LoopBack framework. The tutorial describes how to:
-1. Create a new LoopBack project.
-2. Add a new data source and model to a LoopBack project using the API Designer in the {{site.data.keyword.apiconnect_full}} toolkit.
-3. Test your API endpoints using the API Designer Explore tool.
+1. Create a LoopBack project.
+2. Use API Designer in the {{site.data.keyword.apiconnect_full}} toolkit to add a data source and model to a LoopBack project.
+3. Use API Designer Explore tool to test your API endpoints .
 
 ---
 ## Prerequisites
 {: #prereq_tut_create_api_node}
 
-Before you begin, [install the {{site.data.keyword.apiconnect_short}} toolkit](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_install_toolkit). If the toolkit is already installed, ensure that you are running version 5.0.8.1, or later. You can verify this by entering the following command on the command-line:
+Before you begin, [install the {{site.data.keyword.apiconnect_short}} toolkit](/docs/apiconnect/tutorials?topic=apiconnect-tut_prereq_install_toolkit) version 5.0.8.1, or later. Check the version of an existing toolkit by opening a command window and running the following command::
 	```
 	apic -v
 	```
@@ -44,24 +45,24 @@ Before you begin, [install the {{site.data.keyword.apiconnect_short}} toolkit](/
 ## Create a Loopback project
 {: #create_tut_create_api_node}
 
-You can create a Loopback project using either the {{site.data.keyword.apiconnect_short}} developer toolkit command-line interface or the API Designer interface. 
+You can create a Loopback project with either the {{site.data.keyword.apiconnect_short}} developer toolkit command line interface (CLI) or API Designer interface. 
  
-### Create a LoopBack project using the toolkit command line
+### Create a LoopBack project with the toolkit CLI
 {: #create_cli_tut_create_api_node}
 
-To create a LoopBack project using the {{site.data.keyword.apiconnect_short}} toolkit command line, complete the following steps:
-1.  From the command-line interface, enter the following command. It is used to create and manage LoopBack applications.
+To create a LoopBack project with the {{site.data.keyword.apiconnect_short}} toolkit CLI, complete the following steps:
+1.  Run the following command to create a LoopBack application.
 	```bash 
 	apic loopback
 	```
-	>![info]
-	>For this tutorial, you will create a project called weather-data.
+	For this tutorial, you will create a project called weather-data.
 2.  At the prompt, enter `weather-data` as the project name and press **Enter**.
 	```bash
 	? What's the name of your application? weather-data
 	```
-  	>![important]
-  	>In general, a project name can contain any characters except blank space (" "), forward slash ("/"), ampersand ("&"), at ("@"), plus ("+"), percent ("%"), and colon (":").
+
+  	A project name can contain any characters except blank space (" "), forward slash ("/"), ampersand ("&"), at ("@"), plus ("+"), percent ("%"), and colon (":").
+	
 3.  Enter the name of the directory in which to create the project. Press **Enter** to use a directory with the same name as the project, or type a new name and press **Enter**.
 	```bash
 	? Enter name of the directory to contain the project: weather-data
@@ -89,50 +90,46 @@ An empty LoopBack project contains the following directories:
 - node_modules: created by node.js
 
 
-### Create a LoopBack project using the API Designer interface
+### Create a LoopBack project using API Designer
 {: #create_apid_tut_create_api_node}
 
-To create a LoopBack project using the API Designer, complete the following steps:
-1.  From the command-line interface, enter the following command to start the API Designer:
+To create a LoopBack project using API Designer, complete the following steps:
+1.  Run the following command to start API Designer:
 	```bash
 	apic edit
 	```
 	![](images/api-designer-1.png)
-	>![info]
-	>The above command initializes the {{site.data.keyword.apiconnect_short}} toolkit and launches the API Designer in the default browser when it is done.
-	>![info]
-	>In this tutorial, you will create a project called weather-data.
-2.  If you have not previously pinned the UI navigation pane, click the Navigate to icon ![](images/navigate-to.png). The API Manager UI navigation pane opens. To pin the UI navigation pane, click the Pin menu icon ![](images/pinned.png).
-3.  In the side bar, click the Projects Plus icon ![](images/add-icon.png).
+	The command initializes the {{site.data.keyword.apiconnect_short}} toolkit and opens API Designer in the default browser.
+2.  Pin the UI navigation pane by clicking ![Navigate icon](images/navigate-to.png "Navigate icon"). When the API Manager UI navigation pane opens, click ![Pin icon](images/pinned.png "Pin icon").
+3.  In the side bar, click ![Projects Plus icon](images/add-icon.png "Projects Plus icon").
 4.  Click **Create LoopBack Project**. You'll see the **Add new LoopBack project ** dialog.
 5.  Select **empty-server** as the project template.
 6.  For **LoopBack Version**, select version 3.x (the current version).
 7.  Enter `weather-data` for the Display Name and Name fields.
-8.  For the **Project Directory**, select the `weather-data` folder created in step 1 by clicking the **Browse** button.
+8.  For the **Project Directory**, select the `weather-data` folder created in step 1 by clicking **Browse**.
 	![](images/api-designer-2.png)
-9. Click **Add** to add the project.
-	>![info]
-	>A number of messages will be displayed in the **Add new LoopBack project** window as it creates the project directory and adds a number of directories and files to it. It also runs npm install to install all the project dependencies, as specified in package.json. This process creates a node_modules directory and might take some time.
+9.  Click **Add** to add the project.
+	A number of messages display in the **Add new LoopBack project** window as it creates the project directory and adds a number of directories and files to it. It also runs npm install to install all the project dependencies, as specified in package.json. This process creates a node_modules directory and might take some time.
 	
-	>An empty LoopBack project contains the following directories:
+	An empty LoopBack project contains the following directories:
 	- server: contains server model and data source definitions, and other server code
 	- definitions: contains YAML definition files
 	- node_modules: created by node.js
 10. Click **Finished** to close the **Add new LoopBack project** dialog box.
-11. Exit **API Designer** by going back to the command line in step 1 and entering `Ctrl + C`.  Type `Y` to confirm the exit.
+11. Exit API Designer by returning to the command window and entering `Ctrl + C`. Type `Y` to confirm the exit.
 12. Close the browser session.
 
 ---
-## Add a new data source and model
+## Add a data source and model
 {: #add_tut_create_api_node}
 
-To add a new model and data source to a LoopBack project using the API Designer, complete the following steps:
+To add a model and data source to a LoopBack project using API Designer, complete the following steps:
 
 ### Add a data source
 {: #add_ds_tut_create_api_node}
 
-To add a new data source to a LoopBack project using the API Designer, complete the following steps.
-1. You must also create a LoopBack project (the "weather-data" project) as described in `Create a LoopBack project from the command line` and make sure the current working directory is the project root directory:
+To add a data source to a LoopBack project using API Designer, complete the following steps.
+1. You must also create a LoopBack project (the "weather-data" project) as described in `Create a LoopBack project from the command line` and make sure that the current working directory is the project root directory:
 	```bash
 	cd weather-data
 	```
@@ -144,31 +141,33 @@ To add a new data source to a LoopBack project using the API Designer, complete 
 	```bash
 	Express server listening on http://127.0.0.1:9000
 	```
-	The API Designer opens in your default web browser, initially displaying the login page if you haven't logged in recently.  
-	>![info]
-	>You can log in using your {{site.data.keyword.Bluemix}} account or create one.
-3. Click the **Data Sources** icon ![](images/datasource-icon.png).
-4. Click **Add**. The New LoopBack Data Source window opens.
+	API Designer opens in your default web browser, initially displaying the login page if you haven't logged in recently.  
+	You can log in using your {{site.data.keyword.cloud_notm}} account or create one.
+3. Click ![Data Sources icon](images/datasource-icon.png "Data Sources icon").
+4. Click **Add**. The "New LoopBack Data Source" window opens.
 5. Enter `weatherDS` in the **Name** text field.
-	>![info]
-	>You can use any alphanumeric characters, dashes, and underscores in a data source name.
+	Use any alphanumeric characters, dashes, and underscores in a data source name.
 6. Click **New**.
 7. By default, the **Connector** setting shows **In-memory db** and the other settings are blank. Keep the default settings for now, and API Designer automatically saves the new data source.
-	>![info]
-	>The In-memory data source is built into LoopBack and is suitable only for development and initial testing. When you are ready to connect your models to a real data source such as a database server, change the **Connector** setting accordingly and install the data source connector by following the instructions in the IBM Knowledge Center topic, [Installing LoopBack connectors ![External link icon](../../icons/launch-glyph.svg "External link icon"](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tapim-connector-install.html#task_i2p_dnw_vv){: #new_window}. Enter the connector settings (host name, port, database name, user name, password) as appropriate for your Connector type, and click the **Save** icon ![](images/save-icon.png). API Designer automatically tests the connection to the data source. If the test is successful, it displays the message **Success - Data source connection test succeeded**.
-8. Click the Test Connection icon ![](images/db-test-icon.png) to test the data source connection. The message "Data source connection test succeeded" is displayed.
+	The In-memory data source is built into LoopBack and is suitable only for development and initial testing. When you are ready to connect your models to a real data source such as a database server:
+	- Change the **Connector** setting.
+    - Install the data source connector as explained in the IBM Knowledge Center topic, [Installing LoopBack connectors](https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.toolkit.doc/tapim-connector-install.html#task_i2p_dnw_vv){: external}.
+    - Enter the connector settings (host name, port, database name, user name, password) as appropriate for your Connector type, and click ![Save icon](images/save-icon.png "Save icon"). 
+	
+	API Designer automatically tests the connection to the data source. A successful test displays the message **Success - Data source connection test succeeded**.
+8. Click ![Test Connection icon](images/db-test-icon.png "Test Connection icon") to test the data source connection. The message "Data source connection test succeeded" is displayed.
 9. Click **All Data Sources**. The data source will appear in the list of data sources, and the editor updates the server/datasources.json file with settings for the new data source.
 
 ### Add a model
 {: #add_model_tut_create_api_node}
 
-To add a new model to a LoopBack project using the API Designer, complete the following steps:
-1. Click the **Models** icon ![](images/models-icon.png).
+To add a model to a LoopBack project using API Designer, complete the following steps:
+1. Click ![Models icon](images/models-icon.png "Models icon").
 2. Click **Add**. The New LoopBack Model window opens.
 3. Enter `weather` in the **Name** text field, then click **New**.
 4. In the **Data Source** field, select **weatherDS**.
 	![](images/new-model-1.png)
-5. In the **Properties**, click the **Add property** icon ![](images/add-icon.png).
+5. In the **Properties**, click ![Add property icon](images/add-icon.png 'Add property icon").
 6. In the **Property Name** text field, enter `zip_code`.
 7. For **Type**, select **number**.
 8. Select **Required** to make the property required. This means that it must have a value when you add or update a model instance. 
@@ -176,22 +175,22 @@ To add a new model to a LoopBack project using the API Designer, complete the fo
 	- **Is Array**: Whether the property is a JavaScript array with elements of the specified type.
 	- **Index**: Whether the property represents a column (field) that is a database index.
 	- **Description**: Text description of the property.
-9. Click the **Add property** icon ![](images/add-icon.png) again to add another property.  Reference the table below to complete the remaining properties:
+9. Click ![Add property icon](images/add-icon.png 'Add property icon") again to add another property.  Reference the table below to complete the remaining properties:
 	![](images/new-model-property-1.png)
-10. Click the **Save** icon ![](images/save-icon.png) to save your changes.
+10. Click ![Save icon](images/save-icon.png "Save icon") to save your changes.
 11. Click **All Models** to finish editing the model.
 
-This completes adding a new data source and model to the weather-data LoopBack project.
+This completes adding a data source and model to the weather-data LoopBack project.
 
 ---
 
 ## Test your LoopBack project
 {: #test_tut_create_api_node}
 
->![info]
-	>You can go directly to step 2 below if you did not exit {{site.data.keyword.apiconnect_short}} designer after completing the "Add a new model and data source" section.
+Skip to step 2 if you did not exit {{site.data.keyword.apiconnect_short}} designer after completing the "Add a model and data source" section.
+{: note}
 	
-To test your API endpoints using the API Designer Explore tool, complete the following steps:
+To test your API endpoints using API Designer Explore tool, complete the following steps:
 1. From the command line, enter the following command:
 	```bash
 	apic edit
@@ -200,51 +199,50 @@ To test your API endpoints using the API Designer Explore tool, complete the fol
 	```bash
 	Express server listening on http://127.0.0.1:9000
 	```
-	The API Designer opens in your default web browser, initially displaying the login page if you haven't logged in recently.
+	API Designer opens in your default web browser, initially displaying the login page if you haven't logged in recently.
 	
 2. Start the local test servers.
 	a. In the test console at the bottom of the screen, click the **Start the servers** icon ![](images/test-icon.png):
 	![](images/start-server-1.png)
-	b. Wait until the Running message is displayed:
+	b. Wait until the "Running" message is displayed:
 	![](images/running-server-1.png)
 
-	>![info]
-	>Depending on your project configuration and whether other processes are running, different port numbers might be displayed.
-3. Click **http://127.0.0.1:port_number** to display the API root endpoint. For the default LoopBack (empty or hello-world) project, you'll see something like this:
+	Depending on your project configuration and whether other processes are running, different port numbers might be displayed.
+3. Click `http://127.0.0.1:port_number` to display the API root endpoint. For the default LoopBack (empty or hello-world) project, you'll see something like this:
 	```bash
 	{"started":"2017-05-24T19:21:47.807Z","uptime":80.876}
 	```
-	>![info]
-	>To stop your project, click the **Stop the servers** icon ![](images/stop-icon.png):
-	>![](images/stop-server-1.png)
+	To stop your project, click ![Stop the servers icon](images/stop-icon.png "Stop the servers icon"):
 	
-	>To restart it, click the **Restart the servers** icon ![](images/restart-icon.png):
-	>![](images/restart-server-1.png)
+	To restart it, click ![Restart the servers icon](images/restart-icon.png "Restart the servers icon"):
 	
-4. Click the **Explore** icon ![](images/explore-icon.png) to see the API Designer Explore tool. The sidebar shows all of the REST operations for the LoopBack models in the API. Models that are based on PersistedModel by default have a [standard set of create, read, update, and delete operations ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){: new_window} as explained in the Loopback documentation.
+4. Click ![Explore icon](images/explore-icon.png "Explore icon") to see API Designer Explore tool. The sidebar shows all of the REST operations for the LoopBack models in the API. Models that are based on PersistedModel by default have a [standard set of create, read, update, and delete operations](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){: external} as explained in the LoopBack documentation.
 
 5. Click the operation **weather.create** in the left pane to display the endpoint.
 ![](images/explore-test-1.png)
 The center pane displays summary information about the endpoint, including its parameters, security, model instance data, and response codes. The right pane provides template code to call the endpoint using the curl command, and languages such as Ruby, Python, Java, and Node.
 
-6. To test the REST endpoints in the API Designer Explore tool, complete the following steps:
-    1. On the right pane, click **Try it**. If there is an `id` data element, remove it from the generated data before running the test. 
+6. To test the REST endpoints in API Designer Explore tool, complete the following steps:
+    1. If there is an `id` data element, remove it from the generated data.
+	
+	2. On the right pane, click **Try it**.  
 	
 	2. Scroll down to **Parameters**, and click **Generate** to generate some dummy data. By default, the generated data includes the `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low`, and `tonight_humidity_high` properties.
 	
 	3. Click **Call operation**.
 	![](images/explore-test-2.png)
 	
->![troubleshooting]
->If you see an error message due to an untrusted certificate for localhost, click the link provided in the error message in API Designer Explore tool to accept the certificate, then proceed to call the operations in your web browser. The exact procedure depends on the web browser you are using. If you load the REST endpoints directly in your browser, you will see the message: {"name":"PreFlowError","message":"unable to process the request"}. You must use the API Designer Explore tool to test REST endpoints in your browser because it includes the requisite headers and other request parameters.
->
->![troubleshooting]
->If you get a response code of **422 - Unprocessable Entity** with the following payload:
->![](images/explore-test-3.png)
->
->ensure that there is not an `id` data element that has not been removed from the generated data. If there is an ID element, remove it and re-run the test.
->![troubleshooting]
->If you get the error **failed to parse request body**, you have to remove the comma following the last `humidity_high` number.
+   _Troubleshooting:_
+   
+   If you see an error message due to an untrusted certificate for localhost, click the link provided in the error message in API Designer Explore tool to accept the certificate, then proceed to call the operations in your web browser. The exact procedure depends on the web browser you are using. If you load the REST endpoints directly in your browser, you will see the message: {"name":"PreFlowError","message":"unable to process the request"}. You must use API Designer Explore tool to test REST endpoints in your browser because it includes the requisite headers and other request parameters.
+
+   If you see a response code of **422 - Unprocessable Entity** with the following payload:
+   ![](images/explore-test-3.png)
+
+   then make sure that there is not an `id` data element in the generated data. Run the test again.
+
+   If you see the error **failed to parse request body**, remove the comma following the last `humidity_high` number.
+
 7. Edit the values in the JSON shown in the **data** section. Try changing the generated dummy data, and click **Call operation** again. You should see the request and response parameters, along with the JSON instance data that you entered.
 ![](images/explore-test-4.png)
 
@@ -257,9 +255,9 @@ The center pane displays summary information about the endpoint, including its p
 {: #conclusion_tut_create_api_node}
 
 In this tutorial, you completed the following:
-1. Created a new LoopBack project using the {{site.data.keyword.apiconnect_short}} toolkit command line.
-2. Added a new model and data source to a LoopBack project by using the API Designer in {{site.data.keyword.apiconnect_short}} toolkit.
-3. Tested your API endpoints by using the API Designer Explore tool.
+1. Created a LoopBack project using the {{site.data.keyword.apiconnect_short}} toolkit command line.
+2. Added a model and data source to a LoopBack project by using API Designer in {{site.data.keyword.apiconnect_short}} toolkit.
+3. Tested your API endpoints by using API Designer Explore tool.
 
 
 ---
@@ -267,12 +265,8 @@ In this tutorial, you completed the following:
 ## Next step
 {: #next_tut_create_api_node}
 
-[Manage a REST service](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing) or [Manage a SOAP service](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_soap_api).
+[Manage a REST service](/docs/apiconnect/tutorials?topic=apiconnect-tut_rest_landing) or [Manage a SOAP service](/docs/apiconnect/tutorials?topic=apiconnect-tut_manage_soap_api).
 
 Create > **Manage** > Secure > Socialize > Analyze
 
  
-[important]: ./images/important.png "Important!"
-[info]: ./images/info.png "Information"
-[troubleshooting]: ./images/troubleshooting.png "Troubleshooting" 
-

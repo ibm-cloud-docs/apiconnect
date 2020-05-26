@@ -11,7 +11,7 @@ subcollection: apiconnect
 ---
 
 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -24,15 +24,15 @@ These tutorials provide procedures for how you can secure your APIs.
 
 To secure an API with a Client ID and Client Secret, you must select a method for your process.
 
-## {{site.data.keyword.Bluemix_notm}}
+## IBM Cloud
 {: #secure_tut_secure_landing}
 
-- [Securing your API with Client ID and Client Secret by using {{site.data.keyword.Bluemix_notm}}](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_id_secret_bm)
+- [Securing your API with Client ID and Client Secret by using {{site.data.keyword.cloud_notm}}](/docs/apiconnect/tutorials?topic=apiconnect-tut_secure_id_secret_bm)
 
 ## Developer Toolkit
 {: #tk_tut_secure_landing}
 
-- [Securing your API with Client ID and Client Secret by using the Developer Toolkit](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_id_secret_tk)
+- [Securing your API with Client ID and Client Secret by using the Developer Toolkit](/docs/apiconnect/tutorials?topic=apiconnect-tut_secure_id_secret_tk)
 
 
 

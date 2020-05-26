@@ -10,7 +10,7 @@ subcollection: apiconnect
 
 ---
 
-{:new_window: target="blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -27,33 +27,33 @@ subcollection: apiconnect
 {: #prereq_tut_prereq_set_up_apic_instance}
 
 1. An IBMid
-2. A {{site.data.keyword.Bluemix_short}} account
+2. A {{site.data.keyword.cloud_notm}} account
 3. An {{site.data.keyword.apiconnect_full}} instance with at least a _Lite_ plan
 
 
 <table>
   <tr><td><b>IBMid</b>: Used to access all of IBM's apps, communities, support and more
     <br>
-    <b>{{site.data.keyword.Bluemix_notm}}</b>: IBM's cloud platform that hosts {{site.data.keyword.apiconnect_short}} along with other apps and services<br>
-    <b>{{site.data.keyword.apiconnect_short}} Lite</b>: A free version of {{site.data.keyword.apiconnect_short}} hosted on {{site.data.keyword.Bluemix_notm}}</td></tr>
+    <b>{{site.data.keyword.cloud_notm}}</b>: IBM's cloud platform that hosts {{site.data.keyword.apiconnect_short}} along with other apps and services<br>
+    <b>{{site.data.keyword.apiconnect_short}} Lite</b>: A free version of {{site.data.keyword.apiconnect_short}} hosted on {{site.data.keyword.cloud_notm}}</td></tr>
   </table>  
 
 
 ---
 
 
-1. Sign up for your IBM Cloud ID at the following URL: [https://cloud.ibm.com/registration/ ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/registration/){: #new_window}.
+1. Sign up for your IBM Cloud ID at the following URL: [https://cloud.ibm.com/registration/](https://cloud.ibm.com/registration/){: external}.
 
-	Already have an IBMid? Then skip the registration, and just create your free {{site.data.keyword.Bluemix_short}} account at the following URL: [https://cloud.ibm.com/ ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: #new_window}.  
+	Already have an IBMid? Then skip the registration, and just create your free {{site.data.keyword.cloud_notm}} account at the following URL: [https://cloud.ibm.com/](https://cloud.ibm.com/){: external}.  
 
-2. When you have your IBMid and {{site.data.keyword.Bluemix_notm}} account, create your {{site.data.keyword.apiconnect_short}} instance.  
-  a. Log in to {{site.data.keyword.Bluemix_notm}}: [https://cloud.ibm.com/login ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){: #new_window}.  
+2. When you have your IBMid and {{{site.data.keyword.cloud_notm}} account, create your {{site.data.keyword.apiconnect_short}} instance.  
+  a. Log in to {{site.data.keyword.cloud_notm}} : [https://cloud.ibm.com/login](https://cloud.ibm.com/login){: external}.  
   ![](images/cloud_login_page.png)  
-  b. Create your _organization_ in {{site.data.keyword.Bluemix_notm}}. You will be prompted to do this the first time that you log in.  
+  b. Create your _organization_ in {{site.data.keyword.cloud_notm}}. You will be prompted to do this the first time that you log in.  
   ![](images/prereqs-2.png)
   c. Create your _space_.  
   ![](images/prereqs-3.png)
-  d. Go to [https://console.ng.bluemix.net/catalog/services/api-connect ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.ng.bluemix.net/catalog/services/api-connect){: #new_window}.  
+  d. Go to [https://cloud.ibm.com/catalog/services/api-connect](https://cloud.ibm.com/catalog/services/api-connect){: external}.  
   ![](images/prereqs-4.png)  
   e. Select the _Lite_ pricing plan (free), and click **Create** to get started.  
   ![](images/lite-plan.png)  

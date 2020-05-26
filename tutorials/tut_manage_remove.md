@@ -11,7 +11,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 
 ---
 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -31,17 +31,17 @@ In this tutorial, you will delete, archive, and retire an API.
 ## Prerequisites
 {: #prereq_tut_manage_remove}
 
-1. [Set up your {{site.data.keyword.apiconnect_full}} instance](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
+1. [Set up your {{site.data.keyword.apiconnect_full}} instance](/docs/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
 
-2. Complete the [Supercede an API product tutorial](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede).
+2. Complete the [Supercede an API product tutorial](/docs/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede).
 
 ---
 
 ## Deleting an API Product
 {: #delete_tut_manage_remove}
 
-1. Log in to {{site.data.keyword.Bluemix_short}}: https://cloud.ibm.com.
-2. In the {{site.data.keyword.Bluemix_notm}} **Dashboard**, click **Cloud Foundary Services**. Launch the {{site.data.keyword.apiconnect_short}} service. 
+1. Log in to{{site.data.keyword.cloud_notm}}: https://cloud.ibm.com.
+2. In the {{site.data.keyword.cloud_notm}} **Dashboard**, click **Cloud Foundry Services**. Launch the {{site.data.keyword.apiconnect_short}} service. 
 3. In {{site.data.keyword.apiconnect_short}}, make sure the navigation panel is open. If not, click **>>** to open it.  
 
   ![](images/cloud-apic-dashboard.png)

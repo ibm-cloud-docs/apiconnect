@@ -11,7 +11,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 ---
 
 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -31,21 +31,21 @@ In this tutorial, you will update an existing API product by replacing it with a
 ## Prerequisites
 {: #prereq_tut_manage_replace}
 
-1. [Set up your {{site.data.keyword.apiconnect_full}} instance](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
+1. [Set up your {{site.data.keyword.apiconnect_full}} instance](/docs/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
 
 2. Complete one of the following tutorials:
  
-    - [Import an OpenAPI2.0 spec and proxy an existing REST service](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
+    - [Import an OpenAPI2.0 spec and proxy an existing REST service](/docs/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
        **or**  
-    - [Add a New API Spec and Invoke an Existing REST Service](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
+    - [Add a New API Spec and Invoke an Existing REST Service](/docs/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
 
 ---
 
 ## Replacing an API Product
 {: #repl_api_prod_tut_manage_replace}}
 
-1. Log in to {{site.data.keyword.Bluemix_short}}: https://cloud.ibm.com.
-2. In the {{site.data.keyword.Bluemix_notm}} **Dashboard**, click **Cloud Foundary Services**. Launch the {{site.data.keyword.apiconnect_short}} service. 
+1. Log in to {{site.data.keyword.cloud_notm}}: https://cloud.ibm.com.
+2. In the {{site.data.keyword.cloud_notm}} **Dashboard**, click **Cloud Foundry Services**. Launch the {{site.data.keyword.apiconnect_short}} service. 
 3. In {{site.data.keyword.apiconnect_short}}, make sure the navigation panel is open. If not, click **>>** to open it.  
 
   ![](images/cloud-apic-dashboard.png)

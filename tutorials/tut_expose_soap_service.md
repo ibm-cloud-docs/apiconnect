@@ -10,7 +10,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 
 ---
 
-{:new_window: target="blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -27,22 +27,21 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 ## Objective
 {: #object_tut_expose_soap_service}
 
-In API Manager, you will create a REST API that will accesses a existing SOAP Service and expose it as a REST API.
+In API Manager, create a REST API that accesses an existing SOAP Service and expose it as a REST API.
 
 ## Prerequisites
 {: #prereq_tut_expose_soap_service}
 
-1. Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_full}} instance](/docs/services/apiconnect?topic=apiconnect-tut_prereq_set_up_apic_instance).
-2. Before you begin, copy the [weatherprovider.wsdl test ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: #new_window} file to your local filesystem.
-	>![images/info.png]
-	>You can click **Raw** and then save the resulting page on your local system as a `.wsdl` file.
+1. Before you begin, [set up your {{site.data.keyword.apiconnect_full}} instance](/docs/apiconnect?topic=apiconnect-tut_prereq_set_up_apic_instance).
+2. Before you begin, copy the [weatherprovider.wsdl test](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: external} file to your local file system.
+	Click **Raw** and then save the page on your local system as a `.wsdl` file.
 
 ---
 ## Setting up a REST API definition
 {: #setup_tut_expose_soap_service}
 
 1. Log in to {{site.data.keyword.Bluemix_short}}: https://cloud.ibm.com.
-2. In the {{site.data.keyword.Bluemix_notm}} **Dashboard**, click **Cloud Foundary Services**. Launch the {{site.data.keyword.apiconnect_short}} service. 
+2. In the {{site.data.keyword.Bluemix_notm}} **Dashboard**, click **Cloud Foundry Services**. Launch the {{site.data.keyword.apiconnect_short}} service. 
 3. In {{site.data.keyword.apiconnect_short}}, make sure the navigation panel is open. If not, click **>>** to open it.  
 
   ![](images/cloud-apic-dashboard.png)
@@ -77,14 +76,19 @@ In API Manager, you will create a REST API that will accesses a existing SOAP Se
 
 11. Expand the new definition by clicking it.
 12. Name the definition `Weather Data Output`.
-13. The definition will have five properties. Click **Add Property** four times to add the additional properties. Rename the `Property Name` using the following as a guide and use the default for the `Description`, `Type` and `Example`:
-    a. Add new properties for the **Weather Data Output** definition.    
-       - Name: zip         /  Type: string   
-       - Name: temperature /  Type: integer   
-       - Name: humidity    /  Type: integer   
-       - Name: city        /  Type: string   
-       - Name: state       /  Type: string   
+13. The definition uses five properties. Click **Add Property** four times to add rows, and define the properties shown in Table 1. 
 
+    You can ignore the `Description` and `Example` fields.
+	   	   
+	   |    Name    |   Type   |
+	   | ---------- | -------- |
+	   |zip         |string    |
+	   |temperature |integer   |
+	   |humidity    |integer   |
+	   |city        |string    |
+	   |state       |string    |
+	   {: caption="Table 1. Properties for the Weather Data Output definition" caption-side="top"}
+	   
 	![](images/definition-new-1.png)
 14. Click **Paths** in the navigation bar. Click the **Add Path** icon ![](images/add-icon.png).
 15. Set the **Title** of your newly created Path to `/getweatherdata`.
@@ -92,7 +96,7 @@ In API Manager, you will create a REST API that will accesses a existing SOAP Se
 	![](images/path-new-1.png)
 17. For your **GET /getweatherdata** operation, click **Add Parameter**, and then click **Add new parameter**.
 18. Name your new parameter `zip_code` and leave the rest as default.
-19. In the **Schema** column of the **200 OK** response in the **Responses** section, select your **Weather Data Output** definition. For the response to the API call, the object define in by the **Weather Data Output** will be the response object.
+19. In the **Schema** column of the **200 OK** response in the **Responses** section, select your **Weather Data Output** definition. For the response to the API call, the object defined by the **Weather Data Output** is the response object.
 	![](images/path-new-2.png)
 20. Click the Save icon ![](images/save-icon.png) to save your changes.
 
@@ -165,10 +169,7 @@ In this tutorial, you completed the following activities:
 ## Next step
 {: #next_tut_expose_soap_service}
 
-Secure your API using [securing using OAuth 2.0](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
+[Secure your API using OAuth 2.0](/docs/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
 
 Create > **Manage** > Secure > Socialize > Analyze
 
-[important]: ./images/important.png "Important!"
-[info]: ./images/info.png "Information"
-[troubleshooting]: ./images/troubleshooting.png "Troubleshooting" 

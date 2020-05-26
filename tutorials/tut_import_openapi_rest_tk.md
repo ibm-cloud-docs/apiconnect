@@ -10,7 +10,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 
 ---
 
-{:new_window: target="blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -31,7 +31,7 @@ This tutorial illustrates how you can bring your existing API under management c
 ## Prerequisites
 {: #prereq_tut_import_openapi_rest_tk}
 
-Before you begin, you will need to [set up your API Connect Instance](tut_prereq_set_up_apic_instance.html) and [install the API Connect toolkit](tut_prereq_install_toolkit.html).
+Before you begin, you will need to [set up your API Connect Instance](/docs/apiconnect?topic=apiconnect-tut_prereq_set_up_apic_instance) and [install the API Connect toolkit](/docs/apiconnect?topic=apiconnect-tut_prereq_install_toolkit).
 
 ---
 
@@ -39,17 +39,17 @@ Before you begin, you will need to [set up your API Connect Instance](tut_prereq
 ## Explore the sample app and test the target endpoints
 {: #explore_tut_import_openapi_rest_tk}
 
-A sample _weather provider_ app has been created for this tutorial. The corresponding API specification (Swagger 2.0) is in the [weather-provider-api_1.yaml ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){: #new_window} file.
+A sample _weather provider_ app has been created for this tutorial. The corresponding API specification (OpenAPI 2.0) is in the [weather-provider-api_1.yaml](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){: external} file.
 
-1. To explore the app, go to [http://gettingstartedweatherapp.mybluemix.net/ ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://gettingstartedweatherapp.mybluemix.net/){: #new_window}.  
+1. To explore the app, go to [http://gettingstartedweatherapp.mybluemix.net/](http://gettingstartedweatherapp.mybluemix.net/){: external}.  
 2. Enter a valid 5-digit U.S. zipcode to get the _**current weather**_ and _**today's forecast**_.  
 ![](images/explore-weatherapp-1.png)S
 
-3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is `https:// myweatherprovider.mybluemix.net/current?zipcode={zipcode}`. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: #new_window}.  
+3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is `https:// myweatherprovider.mybluemix.net/current?zipcode={zipcode}`. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: external}.  
 
   ![](images/explore-weatherapp-2.png)
 
-4. Similarly, the Endpoint to get **today's** forecast data is `https:// myweatherprovider.mybluemix.net/today?zipcode={zipcode}`. Test it out by going to [https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: #new_window}.  
+4. Similarly, the Endpoint to get **today's** forecast data is `https:// myweatherprovider.mybluemix.net/today?zipcode={zipcode}`. Test it out by going to [https://myweatherprovider.mybluemix.net/today?zipcode=90210](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: external}.  
 
   ![](images/explore-weatherapp-3.png)
 
@@ -112,6 +112,6 @@ In this tutorial, you saw how an existing REST service can be invoked through an
 ## Next step
 {: #next_tut_import_openapi_rest_tk}
 
-Secure your API using [rate limiting](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rate_limit), [client ID and secret](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_landing), or [securing using OAuth 2.0](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
+Secure your API using [rate limiting](/docs/apiconnect/tutorials?topic=apiconnect-tut_rate_limit), [client ID and secret](/docs/apiconnect/tutorials?topic=apiconnect-tut_secure_landing), or [securing using OAuth 2.0](/docs/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
 
 Create > **Manage** > Secure > Socialize > Analyze

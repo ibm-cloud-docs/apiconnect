@@ -10,13 +10,15 @@ subcollection: apiconnect
 
 ---
 
-{:new_window: target="blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
 {:pre: .pre}
+{:note: .note}
 
-# Securing your API with Client ID and Client Secret using {{site.data.keyword.Bluemix_notm}}
+
+# Securing your API with Client ID and Client Secret using IBM Cloud
 {: #tut_secure_id_secret_bm}
 
 **Duration:** 10 mins  
@@ -25,62 +27,66 @@ subcollection: apiconnect
 
 ## Objective
 {: #object_tut_secure_id_secret_bm}
-This tutorial will guide you through securing your API with Client ID and Client Secret. When applications are registered in your Developer Portal, a Client ID is generated to identify the application. Optionally, a Client Secret, which serves as a password, can also be generated. Applications would need to supply the generated Client ID and Client Secret keys in order to access your API.
+This tutorial guides you through securing your API with a Client ID and a Client Secret. When applications are registered in your Developer Portal, a Client ID is generated to identify the application. Optionally, a Client Secret (which serves as a password) can also be generated. Applications need to supply the Client ID and Client Secret keys when they call your API.
 
 
 ## Prerequisites
 {: #prereq_tut_secure_id_secret_bm}
 
-Before you begin, you must have completed one of the following tutorials: 
-- [Import an OpenAPI2.0 spec and proxy an existing REST service](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)  
-**or**  
-- [Add a New API Spec and Invoke an Existing REST Service](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
+Before you begin, complete one of the following tutorials: 
+- [Import an OpenAPI2.0 spec and proxy an existing REST service](/docs/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
+- [Add a New API Spec and Invoke an Existing REST Service](/docs/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
 
 
 ## Set the identification mechanism of your API
 {: #set_id_tut_secure_id_secret_bm}
 
 1. Navigate to your API's Design view:  
-   a. Click on **Drafts** in the left-navigation panel  
-   b. Then click on the **APIs** tab  
-   c. Click on the _Weather Provider API_ that you created in the previous tutorial. This opens the API's **Design** view.  
+   a. Click **Drafts** in the navigation panel.
+   b. Click the **APIs** tab. 
+   c. Click the _Weather Provider API_ that you created in a previous tutorial. 
+      The API opens to the **Design** view.  
    ![](images/1_goto_drafts_api.png)  
 
 2. In the Design view:
-    a. Scroll down to **Security Definitions**.  
-    b. Click the **Add Security Definitions** icon (+), then click **API Key**.  
-    c. Add the two new API keys shown below. For both new keys, ensure that the "Located In" field is set to "Header".  
+    a. In the **Security Definitions** section, click **Add Security Definitions** (the + icon), and then click **API Key**.  
+    b. Add the following two API keys: 
+       For both keys, ensure that the "Located In" field is set to "Header".	
       - Name: Client ID;  Parameter name: X-IBM-Client-Id  
       - Name: Client Secret;  Parameter name: X-IBM-Client-Secret    
         ![](images/2_security_definitions.png)  
 
-3. Scroll down to the **Security** panel and add a new security option.  
-    a. Select the newly created Client ID and Client Secret keys.  
+3. In the "Security" section, add a new security option:  
+    a. Select the Client ID and Client Secret keys.  
     b. Save your API.  
-    c. Switch over to the **Assemble** tab.  
+    c. Click the **Assemble** tab.  
     ![](images/3_security_option.png)  
 
 
 ## Test the changes made to your API
 {: #test_tut_secure_id_secret_bm}
 
-1. In the Assemble tab, click the ► button to test your changes.
+1. In the Assemble tab, click the Test icon to test your changes.
 
-2. In the Test / Setup panel, click on **Republish product** to get the latest changes. 
-> This option updates your API product, and also publishes it to the Sandbox catalog.
+2. In the Test page's Setup panel, click **Republish product** to get the latest changes. 
+  This option updates your API product, and also publishes it to the Sandbox catalog.
 
-3. After the product has been republished, click on the **get /current** operation in the test panel.
-4. Scroll down in the Test panel, and notice that the Client ID and Client Secret values have already been populated. 
-> These are test values that are generated for your sandbox, and represent the keys of the application that will be using your API.
-> **Note:** The Client ID and Client Secret keys can also be found under Dashboard > Catalog > Settings > Endpoints]_   
+3. When the product is republished, click the **get /current** operation in the test panel.
+4. Look in the Test panel, and notice that the Client ID and Client Secret values have already been populated. 
+   These are test values that are generated for your sandbox, and represent the keys of the application that will be using your API.
+  
+   The Client ID and Client Secret keys can also be found under Dashboard > Catalog > Settings > Endpoints. 
+   {: Note}
   
   ![](images/test_api_keys_1.png)
 
-5. Scroll further down and enter a zip code (e.g. 90210). 
-6. Click **Invoke**. _You should get a 200 OK response, along with the message body returning the weather information._
-7. Now scroll back up to the Client ID field. 
-8. Replace the Client ID value with a random one.
-9. Rerun the test by clicking **Invoke**. _You'll see a 401 Unauthorized response, together with the message "Client ID not registered"._  
+5. Enter a valid US zip code (for example, 90210). 
+6. Click **Invoke**.
+   The API returns `200 OK` response, along with the message body returning the weather information.
+7. Return to the Client ID field. 
+8. Replace the Client ID with a random value.
+9. Run the test again by clicking **Invoke**. 
+   This time, you receive the `401 Unauthorized` response with the message "Client ID not registered". 
 
     ![](images/test_api_keys_3.png)  
 
@@ -88,14 +94,14 @@ Before you begin, you must have completed one of the following tutorials:
 ## Call your API using the Client ID and Client Secret
 {: #call_tut_secure_id_secret_bm}
 
-The security settings can also be tested using the Explore tool that explicitly calls the proxy endpoint, and passes the Client ID and Client Secret keys as header values.
+The security settings can also be tested using the Explore tool. The Explore tool explicitly calls the proxy endpoint, and passes the Client ID and Client Secret keys as header values.
 
 1. Click **Explore**, then click **Sandbox**.
     ![](images/explore_1.png)
 
-2. Click on the **GET /current** operation from the list.
+2. Click the **GET /current** operation from the list.
 
-3. In the right-hand column, click **Call operation** to rerun the test.
+3. Click **Call operation** to run the test.
     ![](images/explore_3.png)
 
 ---
@@ -110,6 +116,6 @@ In this tutorial, you learned how to set the identification mechanism of your AP
 ## Next step
 {: #next_tut_secure_id_secret_bm}
 
-Start to socialize your API by [setting up and configuring a developer portal](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal).
+Start to socialize your API by [setting up and configuring a developer portal](/docs/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal).
 
 Create > Manage > **Secure** > Socialize > Analyze

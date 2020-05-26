@@ -10,7 +10,7 @@ subcollection: apiconnect
 
 ---
 
-{:new_window: target="blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -25,34 +25,26 @@ subcollection: apiconnect
 ## Prerequisites
 {: #prereq_tut_prereq_install_toolkit}
 
-1. Node.js
-2. Node Product Manager (NPM)
-3. {{site.data.keyword.apiconnect_full}} _Lite_
-
-<table>
-  <tr><td><b>Node.js</b>: An asychronous event driven JavaScript runtime used to build and run scalable network applications
-    <br>
-    <b>Node Product Manager</b>: JavaScript package manager and software registry<br>
-    <b>{{site.data.keyword.apiconnect_short}} _Lite_</b>: A free version of {{site.data.keyword.apiconnect_short}} that is hosted on your laptop</td></tr>
-  </table>  
+1. Node.js: An asynchronous, event-driven JavaScript runtime that is used to build and run scalable network applications.
+2. Node package manager (npm): A JavaScript package manager and software registry.
+3. {{site.data.keyword.apiconnect_full}} _Lite_: A free version of {{site.data.keyword.apiconnect_short}} that is hosted on your laptop.
 
 
 ## Install node.js
 {: #nodejs_tut_prereq_install_toolkit}
 
-1. Download and install node.js from one of the two sources:
-   * [https://nodejs.org/en/download/ ![External link icon](../icons/launch-glyph.svg "External link icon")](https://nodejs.org/en/download/){: #new_window} (Note: Download the LTS version for your platform, not the latest, or you might experience errors.)
-      **OR**
-   * [https://developer.ibm.com/node/sdk/v6/ ![External link icon](../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/node/sdk/v6/){: #new_window}  
+1. Download and install node.js from one of the following sources:
+   * [https://nodejs.org/en/download/](https://nodejs.org/en/download/){: external} (Note: Download the LTS version for your platform, not the latest, or you might experience errors.)
+   * [https://developer.ibm.com/node/sdk/v6/)](https://developer.ibm.com/node/sdk/v6/){: external}  
 
-    _Installing node.js also installs **npm** (Node Package Manager)_.
+    _Installing node.js also installs the **npm** (Node Package Manager)_.
 
-2.  Once Node.js is downloaded and install, check to make sure it is in your _PATH_.
+2.  Make sure that node.js is in your _PATH_.
     ![](images/verify-path.png)  
 
-3. Update **npm**. In a command line, enter `npm install -g npm`.  
-   **Note:** Setting npm `--engine-strict` or `npm config set engine-strict true` prevents installation from completing.
-
+3. Update **npm** by running the following commnad: `npm install -g npm` 
+   Setting npm `--engine-strict` or `npm config set engine-strict true` prevents the installation from completing.
+   {: note}
 
 4. Check the installed version and path.
    ![](images/screenshot_install_apic-1.png)  
@@ -71,6 +63,6 @@ subcollection: apiconnect
 3. Check the installed version.  
     `apic -v`
 
-4. Enter the following command on the command line: `npm install -g microgateway`.
+4. Run the following command: `npm install -g microgateway`
 
-We will use the Microgateway as a local test server.
+The Microgateway functions as a local test server.

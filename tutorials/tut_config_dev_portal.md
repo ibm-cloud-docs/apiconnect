@@ -10,7 +10,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 
 ---
 
-{:new_window: target="blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -30,7 +30,7 @@ This tutorial will help you quickly get started with configuring your **API Conn
 ## Prerequisites
 {: #prereq_tut_config_dev_portal}
 
-Before you begin, you will need to [import your API spec and proxy an existing REST service](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
+Before you begin, you will need to [import your API spec and proxy an existing REST service](/docs/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
 
 ---
 
@@ -41,8 +41,8 @@ In this section, you will create a developer portal for a catalog.
 
 *Catalogs* are an IBM term for different environments. For example, you would create different catalogs for your testing, staging, and production enviornments. You should have a catalog called Sandbox. Feel free to use this catalog to create your developer portal, or create a new catalog and name it whatever you want.
 
-1. In your {{site.data.keyword.Bluemix_short}} dashboard, select your **API Connect** service to launch the {{site.data.keyword.apiconnect_short}} dashboard.
-![API Connect Service](images/11-Bluemix-Dashboard.png)
+1. In your {{site.data.keyword.cloud_notm}} dashboard, select your **API Connect** service to launch the {{site.data.keyword.apiconnect_short}} dashboard.
+![API Connect Service](images/11-Dashboard.png)
 
 2. In the {{site.data.keyword.apiconnect_short}} dashboard, select the catalog for which you want to create a developer portal. For example, **Sandbox**.
 ![Catalog](images/12-APIC-Dashboard.png)
@@ -82,7 +82,7 @@ In this section, you will get acquainted with the developer portal you created i
   
 | Tab              | Description          | 
 |:---------------- | -------------------- | 
-| _Home_       | The Home page is the welcome page to your developer portal. You can [customize the page](/docs/service/apiconnect/tutorials?topic=apiconnect-tut_custom_dev_portal) to suit your needs. | 
+| _Home_       | The Home page is the welcome page to your developer portal. You can [customize the page](/docs/apiconnect/tutorials?topic=apiconnect-tut_custom_dev_portal) to suit your needs. | 
 | _Getting Started_       | The Getting started page is used to instruct developers how to get started using your developer portal. |
 | _API Products_ | The API Products page is used by developers to explore and subscribe to the APIs that are available on your portal. | 
 | _Apps_ | The Apps page displays the applications that are using your APIs. | 
@@ -104,6 +104,6 @@ In this tutorial, you learned how to set up and configure your {{site.data.keywo
 ## Next step
 {: #next_prereq_tut_config_dev_portal}
 
-[Customize your Developer Portal and select a theme](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_custom_dev_portal).
+[Customize your Developer Portal and select a theme](/docs/apiconnect/tutorials?topic=apiconnect-tut_custom_dev_portal).
 
 Create > Manage > Secure > **Socialize** > Analyze

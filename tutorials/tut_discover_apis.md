@@ -10,7 +10,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 
 ---
 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -32,7 +32,7 @@ In this tutorial, you will learn how a portal user might consume the APIs in the
 
 There is no prerequisite for this tutorial. As a portal administrator, you can also complete this tutorial while you navigate your developer portal to experience how your portal users navigate your developer portal. Keep in mind that all developer portals have different skins. 
 
-If you do not have an existing developer portal, you can set up and configure a developer portal in {{site.data.keyword.Bluemix_short}} before proceeding with this tutorial.
+If you do not have an existing developer portal, you can set up and configure a developer portal in {{site.data.keyword.cloud_notm}} before proceeding with this tutorial.
 
 ## Explore Products & APIs
 {: #explore_tut_discover_apis}
@@ -67,8 +67,8 @@ This section shows how a portal user would view and test the available APIs for 
 1. Navigate to the API details in the {{site.data.keyword.apiconnect_short}} Developer Portal as outlined in the previous section.  
   ![API Details](images/21-details.png) 
 
-2. You can download and view the APIs Swagger yaml information by selecting **Open API**.  
-  ![Download Swagger yaml](images/22-swagger.png) 
+2. You can download and view the APIs OpenAPI (Swagger) yaml information by selecting **Open API**.  
+  ![Download OpenAPI yaml](images/22-OpenAPI.png) 
 
 3. Scroll down to one of the operations to view its details. You can also click on the operations link to jump to it on the page. 
 ![Operation](images/23-operation.png)
@@ -127,7 +127,7 @@ In this tutorial, you learned how your portal users would explore products and A
 ## Next step
 {: #next_tut_discover_apis}
 
-Learn [how to gain insights from basic analytics](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics).
+Learn [how to gain insights from basic analytics](/docs/apiconnect/tutorials?topic=apiconnect-tut_insights_analytics).
 
 Create > Manage > Secure > **Socialize** > Analyze  
 

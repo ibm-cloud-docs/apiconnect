@@ -10,13 +10,13 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 
 ---
 
-{:new_window: target="blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Import your API spec and proxy an existing REST service with {{site.data.keyword.Bluemix_notm}}
+# Import your API spec and proxy an existing REST service with {{site.data.keyword.cloud_notm}}
 {: #tut_import_openapi_rest_bm}
 
 Duration: 5 mins  
@@ -30,7 +30,7 @@ This tutorial helps you get started quickly with {{site.data.keyword.apiconnect_
 ## Prerequisites
 {: #prereq_tut_import_openapi_rest_bm}
 
-Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_short}} instance](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
+Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_short}} instance](/docs/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
 
 ---
 
@@ -38,17 +38,17 @@ Before you begin, you will need to [set up your {{site.data.keyword.apiconnect_s
 ## Explore the sample app and test the target endpoints
 {: #explore_tut_import_openapi_rest_bm}
 
-A sample _weather provider_ app has been created for this tutorial. The corresponding API specification (Swagger 2.0) is in the [weather-provider-api_1.yaml ![External link icon](../icons/launch-glyph.svg "External link icon")](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){: #new_window} file.
+A sample _weather provider_ app has been created for this tutorial. The corresponding API specification (OpenAPI 2.0) is in the [weather-provider-api_1.yaml](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml){: external} file.
 
-1. To explore the app, go to [http://gettingstartedweatherapp.mybluemix.net/ ![External link icon](../icons/launch-glyph.svg "External link icon")](http://gettingstartedweatherapp.mybluemix.net/){: #new_window}.  
+1. To explore the app, go to [http://gettingstartedweatherapp.mybluemix.net/](http://gettingstartedweatherapp.mybluemix.net/){: external}.  
 2. Enter a valid 5-digit U.S. zipcode to get the _**current weather**_ and _**today's forecast**_.  
 ![](images/explore-weatherapp-1.png)
 
-3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is `https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}`. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210 ![External link icon](../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: #new_window}.  
+3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is `https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}`. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: external}.  
 
   ![](images/explore-weatherapp-2.png)
 
-4. Similarly, the Endpoint to get **today's** forecast data is `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`. Test it out by going to [https://myweatherprovider.mybluemix.net/today?zipcode=90210 ![External link icon](../icons/launch-glyph.svg "External link icon")](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: #new_window}.  
+4. Similarly, the Endpoint to get **today's** forecast data is `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`. Test it out by going to [https://myweatherprovider.mybluemix.net/today?zipcode=90210](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: external}.  
 
   ![](images/explore-weatherapp-3.png)
 
@@ -59,7 +59,7 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 {: #import_tut_import_openapi_rest_bm}
 
 1. Log in to {{site.data.keyword.Bluemix_short}}: https://cloud.ibm.com.
-2. In the {{site.data.keyword.Bluemix_notm}} **Dashboard**, click **Cloud Foundary Services**. Launch the {{site.data.keyword.apiconnect_short}} service. 
+2. In the {{site.data.keyword.Bluemix_notm}} **Dashboard**, click **Cloud Foundry Services**. Launch the {{site.data.keyword.apiconnect_short}} service. 
 3. In {{site.data.keyword.apiconnect_short}}, make sure the navigation panel on the left side is open. If not, click **>>** to open it.  
 4. Select **Drafts** in the navigation panel.   
 5. In the **APIs** tab, click **Add**. From the dropdown menu, select **Import API from a file or URL**.  
@@ -87,7 +87,7 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
   ![](images/generate-default-product-2.png)  
 
 
-  _In {{site.data.keyword.apiconnect_short}}, **Products** provide a way to group APIs that are intended for a particular use. Products are published to a **Catalog**.  [{{site.data.keyword.apiconnect_short}} glossary](../apic_glossary.html)_
+   In {{site.data.keyword.apiconnect_short}}, **Products** provide a way to group APIs that are intended for a particular use. Products are published to a **Catalog**.
 
 3. In the Assemble tab, click the play icon to test your API proxy's target invocation.
 
@@ -126,7 +126,7 @@ In this tutorial, you saw how an existing REST service can be invoked through an
 ## Next step
 {: #next_tut_import_openapi_rest_bm}
 
-Secure your API using [OAuth 2.0](/docs/services/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
+Secure your API using [OAuth 2.0](/docs/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
 
 Create > **Manage** > Secure > Socialize > Analyze
 
