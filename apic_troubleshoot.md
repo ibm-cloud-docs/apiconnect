@@ -66,7 +66,7 @@ Possible issue with the server, which might be corrected with a fresh login.
 2. Wait several minutes to ensure the logout operation completes.
 3. Log in again and try to complete the tasks.
 
-If the permissons issue still persists, contact {{site.data.keyword.apiconnect_short}} Support.
+If the permissons issue still persists, contact [{{site.data.keyword.apiconnect_short}} Support](https://cloud.ibm.com/docs/get-support?topic=get-support-getting-customer-support){: external}.
 
 ## Unable to install the developer toolkit
 {: #unable_tk-apic_troubleshoot}
