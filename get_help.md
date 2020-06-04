@@ -21,7 +21,7 @@ subcollection: apiconnect
 # Using the Support Center
 {: #get_help}
 
-Need help with your {{site.data.keyword.appconservicefull}} service instance? Visit the {{site.data.keyword.cloud_notm}} [Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter) to file a case. 
+Need help with your {{site.data.keyword.apiconnect_short}} service instance? Visit the {{site.data.keyword.cloud_notm}} [Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter) to file a case. 
 {: shortdesc}
 
 1. On the Support Center page, look in the "Contact support" section and click **Create a case**. 
