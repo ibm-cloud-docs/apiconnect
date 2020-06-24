@@ -53,7 +53,7 @@ Customize the portal by modifying the banner and headings, and then applying a v
 
 4. Add an image to the home screen. Locate the "Image" heading and click **Choose File**. Browse for na image and click **Upload**. 
 
-   Supported image formats include: png, gif, jpg, and jpeg. If you don't have an image, you can use [this one](images/Cloudy_Day.png).  
+   Supported image formats include: png, gif, jpg, and jpeg. If you don't have an image, you can use ![this one](images/Cloudy_Day.png).  
   ![Upload Image](images/34-image.png)
 
    If you want to remove the image, click **Remove**.  
