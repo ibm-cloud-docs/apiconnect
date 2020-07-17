@@ -17,6 +17,7 @@ subcollection: apiconnect
 {:screen: .screen}
 {:tip: .tip}
 {:note: .note}
+{:important: .important}
 
 # Using the Support Center
 {: #get_help}
@@ -36,7 +37,9 @@ Need help with your {{site.data.keyword.apiconnect_short}} service instance? Vis
 
 3. Describe your problem.
 
-   Use the fields on the "Create a Case" page to explain your problem. The following list describes important information that assists us with resolving issues that you are having in {{site.data.keyword.apiconnect_short}}:
+   Use the fields on the "Create a Case" page to explain your problem. The following list describes important information that assists us with resolving issues that you are having in {{site.data.keyword.apiconnect_short}}.
+   
+   {: important} Do not include your private key in the support request.
 
    - For all issues, include the following information:
 
