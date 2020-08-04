@@ -19,7 +19,7 @@ subcollection: apiconnect
 {:note: .note}
 
 # Overview of {{site.data.keyword.apiconnect_short}}
-{: #about_apic_overview}
+{: #about_apic_overview} 
 
 Use the {{site.data.keyword.apiconnect_full}} service to quickly create APIs and microservices based on Node.js and Java runtimes. 
 {: shortdesc}
