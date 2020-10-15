@@ -2,15 +2,20 @@
 {:topicgroup: .topicgroup}
 {:external: target="_blank" .external}
 
-{: .toc subcollection="apiconnect" category="integration" audience="service" href="/docs/apiconnect?topic=apiconnect-getting-started" path="apiconnect"}
+{: .toc subcollection="apiconnect" category="integration" audience="service" href="/docs/apiconnect?topic=apiconnect-getting-started" console-page="/apis/services" product-page="https://www.ibm.com/cloud/api-connect" path="apiconnect"}
 API Connect
-
     
     {: .navgroup id="learn"}
-    getting-started.md
-    
-    {: .topicgroup}
-    Tutorials
+	getting-started.md
+	getting-started-admin.md
+    getting-started-v5.md		
+    {: .navgroup-end}
+
+    {: .navgroup id="tutorial"}	
+	ri_tutorials.md
+
+	{: .topicgroup}
+    API Connect V5 tutorials
         tutorials/tut_create_api_node.md
         tutorials/tut_rest_landing.md
         tutorials/tut_import_openapi_rest_bm.md
@@ -34,32 +39,54 @@ API Connect
         tutorials/tut_discover_apis.md
         tutorials/tut_config_dev_portal.md
         tutorials/tut_custom_dev_portal.md
-
-    apic_overview.md
-    apic_029.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    creating_apis.md
-    importing_apis.md
-    managing_apis.md
-    managing_products.md
-    create_catalog.md
-    explore_apis.md
+    {: .topicgroup}
+	Using API Connect Reserved Instance
+		ri-user-over.md
+        ri-develop-api.md
+        ri-mng-prod-cat.md
+        ri-analytics.md
+        ri-devportal.md
+
+    {: .topicgroup}
+    Administering API Connect Reserved Instance
+        ri-admin-over.md
+		ri-mng-users.md
+		ri-reg-gwy.md
+		ri-mng-gwy.md
+
+        {: .topicgroup}
+        Enhancing security
+		    iam.md
+
+    {: .topicgroup}
+    Using API Connect V5
+        apic_overview.md
+        creating_apis.md
+        importing_apis.md
+        managing_apis.md
+        managing_products.md
+        create_catalog.md
+        explore_apis.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    call_apim_apis.md
+	[Accessibility](/overview/overview-accessibility-platform#features-platform)
+    responsibilities.md
+	ha-dr.md
+	call_apim_apis.md
+
+    {: .topicgroup}
+    Related links
+        [Learn about API Connect](https://cloud.ibm.com/apis/overview)
+        [Why use API Connect?](https://developer.ibm.com/apiconnect/)
+        [Knowledge Center for API Connect V10 Reserved Instance](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud) 
+        [Knowledge Center for API Connect V5 Cloud](https://www.ibm.com/support/knowledgecenter/SSFS6T)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    apic_troubleshoot.md
+	apic_troubleshoot.md
     get_help.md 
-
-    {: .topicgroup}
-    Related topics in IBM Knowledge Center
-        [Getting Started with API Connect for IBM Cloud](https://www.ibm.com/support/knowledgecenter/SSFS6T/mapfiles/getting_started_ibmcloud.html){: external}
-        [API Connect for IBM Cloud components](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.overview.doc/capim_overview_apiconnectcomponents.html){: external}
-        [API Connect for IBM Cloud concepts](https://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.overview.doc/capim_overview_apiconnectconcepts.html){: external}
     {: .navgroup-end}
-		

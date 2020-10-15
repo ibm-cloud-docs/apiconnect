@@ -32,7 +32,7 @@ This requirement applies only to the APIs that are provided by {{site.data.keywo
 
 
 ## Obtaining an {{site.data.keyword.cloud_notm}} API key
-{: #obtain_apikey-call_apim_apis}
+{: #obtain-apikey_call_apim_apis}
 
 To obtain an {{site.data.keyword.cloud_notm}} API Key, complete the following steps.
 
@@ -47,12 +47,12 @@ To obtain an {{site.data.keyword.cloud_notm}} API Key, complete the following st
    After you close the message box, you cannot access the key. If you lose it or failed to copy it, you must obtain a new key.
  
 ## Using the API key to invoke APIs
-{: #use_apikey-call_apim_apis}
+{: #use-apikey_call_apim_apis}
 
 After you obtain an {{site.data.keyword.cloud_notm}} API key, use that key to generate a token that you can use to invoke the APIs provided by {{site.data.keyword.apiconnect_short}}.
  
 ### Using the API key to generate a token
-{: #get_token-call_apim_apis}
+{: #get-token_call_apim_apis}
 
 Call the {{site.data.keyword.apiconnect_short}} token service with your {{site.data.keyword.cloud_notm}} API key.
 
@@ -63,8 +63,31 @@ Format the request as shown in the following example.
 The API responds with a JSON payload. Use the value of the `jwt` property as your token.
   
 ### Invoking APIs with the token
-{: #invoke_api-call_apim_apis}
+{: #invoke_api_call_apim_apis}
 
 When you invoke an API provided by {{site.data.keyword.apiconnect_short}}, use the token as the authorization header; for example:
 
 `curl https://us.apiconnect.ibmcloud.com/v1/me -H ‘Authorization: Bearer <token>’`
+
+## API key best practices
+{: #apikey-practices_call-apic-apis}
+
+API keys are used as the method of authentication to your service, so they must be kept secure. The following best practices help you maintain a secure API key and reduce the chance of publicly exposing credentials that compromise your application.
+
+- Use an API key with the role that is appropriate for the function that you are using.
+  When you create an application, consider using an API key with the role Reader for all calls to GET API methods. The Reader role can't perform any destructive or additive functions to the service instance.
+
+- Do not embed the API key directly in code.
+  API keys that are embedded in code might be exposed to your users. Instead of embedding the API keys in your application code, consider storing them either in environment variables or in files outside of your source code control system.
+
+- Do not store an API key in files inside your application's source code control system.
+  If you store API keys in files, keep the files outside of your application's source code. This practice is important if you use a public source-code management system such as GitHub.
+
+- Regenerate your API keys periodically.
+  You can create new credentials at any time.
+
+  1. From the resource list, select a service instance.
+  2. In the navigation list, click **Service credentials**.
+
+  When you migrate your application to the new credentials, don't forget to delete the old credentials by using the trashcan icon for the credentials that you want to delete.
+  {: tip}

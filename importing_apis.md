@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2019
+  years: 2017, 2020
 lastupdated: "2019-12-31"
 
 keywords: IBM Cloud, API Connect, API management, APIs, API, import, develop, API Connect Enterprise, API Connect Hybrid
@@ -60,6 +60,7 @@ A new REST API definition is created, including Paths and HTTP operations.
 When the API definition has been imported, it is shown in the list of API definitions in the
 **APIs** tab of the **Drafts** page.
 Next, you can edit your API definition as you would any other REST API definition.
+
 
 ## Importing APIs from IBM Integration Bus
 {: #import_iib-importing_apis}
@@ -151,6 +152,7 @@ to your integration flow. Select **Show full URL** to view the complete URL for 
    6. Verify that you receive the expected response from the API. 
 	
 When the API definition is imported and integrated, you can manage and govern the APIs as you with any other REST API definition. For more information about the APIs, see [Managing APIs](/docs/apiconnect?topic=apiconnect-managing_apis).
+
 
 ## Publishing APIs created with IBM App Connect Professional in IBM API Connect
 {: #publish-importing_apis}

@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-12-31"
+  years: 2020
+lastupdated: "2020-10-15"
 
-keywords: IBM Cloud, API Connect, API management, APIs, API, lifecycle, intro, API Connect Enterprise, API Connect Hybrid, API Connect Lite
+keywords: IBM Cloud, API Connect, V10, Reserved plan, lifecycle, develop, create, manage, API
 
 subcollection: apiconnect
 
@@ -12,58 +12,72 @@ subcollection: apiconnect
 
 {:external: target="_blank" .external} 
 {:shortdesc: .shortdesc}
-{:screen: .screen}
 {:codeblock: .codeblock}
 {:pre: .pre}
+{:screen: .screen}
+{:tip: .tip}
+{:important: .important}
 {:note: .note}
 
-# Getting started
+# Getting started as a user in {{site.data.keyword.apiconnect_short}} V10 Reserved
 {: #getting-started}
 
-Use {{site.data.keyword.apiconnect_full}} to quickly create APIs and microservices based on Node.js and Java runtimes. 
+See how easy it is to create, manage, secure, and share APIs.
 {: shortdesc}
 
-You can manage your APIs by setting varying levels of security, visibility, billing information, and rate limits. The {{site.data.keyword.apiconnect_short}} service also lets you transform and grow your business with insights through detailed analytics with structured filtered searches.
+{{site.data.keyword.apiconnect_short}} V10 Reserved plan is the cloud-based edition of IBM {{site.data.keyword.apiconnect_short}}. The Reserved plan offers a comparable set of features for managing the lifecycle of APIs, hosted in {{site.data.keyword.cloud_notm}}. {{site.data.keyword.apiconnect_short}} makes it easy to create, securely expose, manage, and monetize APIs so that you and your customers can power digital applications and spur innovation. 
 
-## Before you begin
-{: #prereq_getting-started}
+If you are an administrator, see [Getting started as an administrator](/docs/apiconnect?topic=apiconnect-getting-started-admin) for instructions on configuring your new Reserved plan and adding users.
+{: note}
 
-Register with {{site.data.keyword.cloud_notm}}, review the {{site.data.keyword.apiconnect_short}} pricing plans, and create your service instance.
-{: shortdesc}
+In this tutorial, you verify your access to {{site.data.keyword.apiconnect_short}}, then open the API Manager and create an API. Ready to get started? 
 
-### Step 1. Register with {{site.data.keyword.cloud_notm}}
-{: #step1_getting-started}
 
-Navigate to [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/registration/){: external} and create your {{site.data.keyword.cloud_notm}} account. 
+## Step 1. Log in to {{site.data.keyword.apiconnect_short}} with your provider organization
+{: #open-apim_getting-started}
 
-If you already have an IBMid, you can use it to register with {{site.data.keyword.cloud_notm}}; otherwise, you can create an IBMid during registration.
-{: tip}
+To use the API Manager, you must be invited to a provider organization in {{site.data.keyword.apiconnect_short}}. An administrator from your company creates the provider organization, defines access settings, and then adds users. 
 
-### Step 2. Select an {{site.data.keyword.apiconnect_short}} pricing plan and create your service
-{: #step2_getting-started}
+You can log into the {{site.data.keyword.apiconnect_short}} with your provider organization by completing the following steps:
 
-1. If you are not already logged in to {{site.data.keyword.cloud_notm}}, log in now at the [{{site.data.keyword.cloud_notm}} login page](https://cloud.ibm.com/login/){: external}.
+1. [Log in](https://cloud.ibm.com/login/){: external} to {{site.data.keyword.cloud_notm}} using your IBM ID.
 
-2. Visit the [{{site.data.keyword.apiconnect_short}} Pricing Plans](https://cloud.ibm.com/catalog/services/api-connect){: external} page.
+2. On the {{site.data.keyword.cloud_notm}} Dashboard, click ![Menu icon](images_v10/icon_cloud_menu.png "Menu icon") and select **API Management**.
 
-3. Click a plan to select it.
+3. In the navigation list, expand **API Connect** and click **Services**.
 
-4. Click **Create** to create your service instance.
+4. On the Services page, expand the row for your company's {{site.data.keyword.apiconnect_short}} Reserved plan.
 
-When you want to return to your service later, open your Resource listing in the {{site.data.keyword.cloud_notm}} [Dashboard](https://cloud.ibm.com/resources){: external}, look in the **Cloud Foundry services** section, and click your {{site.data.keyword.apiconnect_short}} service.
-{: tip}
+   Provider organizations belong to Reserved plans, so you need to expand the Reserved plan service to see the list of associated provider organizations. Each provider organization is labelled as "Provider Organization" in the "Plan" column. If your company has multiple Reserved plans and you don't know which one to use, expand each one until you see your provider organization.
+   
+5. Click the name of a provider organization to start the {{site.data.keyword.apiconnect_short}} API Manager.
 
-## Where would you like to begin?
-{: #starting-point_getting-started}
+   Your administrator can tell you which provider organization you belong to if it's not clear to you. When you click the provider organization to start API Manager, you are automatically logged in.
+   
+   If you belong to multiple provider organizations and want to log in with a different one, log out of API Manager. Then, return to the {{site.data.keyword.apiconnect_short}} Services page and log in with another provider organization.
+   
+   Whenever you want to work in API Manager, return to the Services page and select your provider organization. 
 
-For an overview of the product, see [Overview of {{site.data.keyword.apiconnect_short}}](/docs/apiconnect?topic=apiconnect-apic_overview).
+When you see the {{site.data.keyword.apiconnect_short}} Home page, you're ready to proceed.
 
-For an in-depth introduction to {{site.data.keyword.apiconnect_short}}, you can work through a complete set of tutorials for the Lite, Enterprise, and Hybrid plans. You can choose to complete all of the tutorials, or only the tutorials that apply to a particular task. The following tutorials offer an overview of the capabilities of {{site.data.keyword.apiconnect_short}}:
 
-- [Creating an API](/docs/apiconnect/tutorials?topic=apiconnect-tut_create_api_node)
+## Step 2. Create an API
+{: #create-api_getting-started}
 
-- [Managing an API](/docs/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
+See how easy it is to create an API by importing a YAML definition. 
 
-- [Discovering APIs](/docs/apiconnect/tutorials?topic=apiconnect-tut_discover_apis)
+Complete the tutorial [Importing an API](https://rtpdoc01.rtp.raleigh.ibm.com:9443/kc/v10_cloud_test/com.ibm.apic.apionprem.doc/tutorial_apionprem_import_api.html){: external} in the {{site.data.keyword.apiconnect_short}} V10 Reserved Knowledge Center.
 
-- [Configuring a Developer Portal](/docs/apiconnect/tutorials?topic=apiconnect-tut_config_dev_portal)
+
+## Next steps
+{: #next-steps_getting-started}
+
+For more step-by-step examples on creating, securing, and testing APIs, see the additional [API Manager tutorials](https://rtpdoc01.rtp.raleigh.ibm.com:9443/kc/v10_cloud_test/com.ibm.apic.apionprem.doc/tapim_management_tutorials.html){: external} in the {{site.data.keyword.apiconnect_short}} V10 Reserved Knowledge Center.
+
+If you're ready to focus on specific tasks, see the topics in the [Using API Connect Reserved](/docs/apiconnect?topic=apiconnect-ri-user-over) section for more information on working with APIs and products, catalogs, event analytics, and the Developer Portal.
+
+
+## About your personal data
+{: #personal-data_getting-started}
+
+The {{site.data.keyword.apiconnect_short}} service processes but doesn't store user data. You don't need to take any action to manage or delete your data.

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2020
+  years: 2019, 2020, 2020
 lastupdated: "2020-05-06"
 
 keywords: IBM Cloud, API Connect, API management, support, help, Support Center
@@ -37,10 +37,9 @@ Need help with your {{site.data.keyword.apiconnect_short}} service instance? Vis
 
 3. Describe your problem.
 
-   Use the fields on the "Create a Case" page to explain your problem. The following list describes important information that assists us with resolving issues that you are having in {{site.data.keyword.apiconnect_short}}. 
+   Use the fields on the "Create a Case" page to explain your problem. The following list describes important information that assists us with resolving issues that you are having in {{site.data.keyword.apiconnect_short}}.
    
-    Do not include your private key in the support request.
-   {: important}   
+   {: important} Do not include your private key in the support request.
 
    - For all issues, include the following information:
 
@@ -48,7 +47,7 @@ Need help with your {{site.data.keyword.apiconnect_short}} service instance? Vis
       - Component impacted: API Manager, API calls, Portal
       - URL where error is being seen
 	  - For Dedicated, identify the customer environment
-	  - For Reserved Instance, use a prefix in the Subject field to indicate the version and p-org. For more information, see [Getting help](https://www.ibm.com/support/knowledgecenter/SSMNED_cloud/com.ibm.apic.overview.doc/rapic_ibm_support_ri.html){: external} in the Reserved Instance documentation
+	  - For Reserved plan, use a prefix in the Subject field to indicate the version and p-org. For more information, see [Getting help](https://www.ibm.com/support/knowledgecenter/SSMNED_cloud/com.ibm.apic.overview.doc/rapic_ibm_support_ri.html){: external} in the Reserved plan documentation
 
    - For API Manager UI-based issues, additionally include:
 
