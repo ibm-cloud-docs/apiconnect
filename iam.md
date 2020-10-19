@@ -50,8 +50,7 @@ Table 1 details actions that are mapped to platform management roles, and which 
 | ---------------------------- | ------------------------ | ----------------------------------------------------------------------------------- |
 | Viewer                       | Viewer                   | View (but not edit) APIs, members, settings, and organizations. |
 | Operator                     | Community Manager        | View data and settings. Edit Products and APIs. Manage Consumer organizations, apps, subscriptions, and analytics. |
-| Editor                       | API Administrator        | View data and settings. Edit Products and APIs.
-Manage Consumer organizations, apps, subscriptions, and analytics. |
+| Editor                       | API Administrator        | View data and settings. Edit Products and APIs. Manage Consumer organizations, apps, subscriptions, and analytics. |
 | Administrator                | Administrator            | View data and settings. Manage members, settings, and Provider organizations. Edit Products and APIs. Manage Consumer organizations, apps, subscriptions, and analytics. Manage the service instance and plan. Manage users in the cloud account. |
 {: caption="Table 1. IAM user roles and actions" caption-side="top"}
 
