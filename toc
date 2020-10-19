@@ -43,7 +43,7 @@ API Connect
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-	Using API Connect Reserved Instance
+	Using API Connect Reserved
 		ri-user-over.md
         ri-develop-api.md
         ri-mng-prod-cat.md
@@ -51,7 +51,7 @@ API Connect
         ri-devportal.md
 
     {: .topicgroup}
-    Administering API Connect Reserved Instance
+    Administering API Connect Reserved
         ri-admin-over.md
 		ri-mng-users.md
 		ri-reg-gwy.md
@@ -59,6 +59,7 @@ API Connect
 
         {: .topicgroup}
         Enhancing security
+		    at-events.md
 		    iam.md
 
     {: .topicgroup}
@@ -82,7 +83,7 @@ API Connect
     Related links
         [Learn about API Connect](https://cloud.ibm.com/apis/overview)
         [Why use API Connect?](https://developer.ibm.com/apiconnect/)
-        [Knowledge Center for API Connect V10 Reserved Instance](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud) 
+        [Knowledge Center for API Connect V10 Reserved](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud) 
         [Knowledge Center for API Connect V5 Cloud](https://www.ibm.com/support/knowledgecenter/SSFS6T)
     {: .navgroup-end}
 
