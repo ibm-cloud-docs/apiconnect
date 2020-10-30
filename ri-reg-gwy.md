@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-10-15"
+lastupdated: "2020-10-30"
 
 keywords: management, Reserved plan, administer
 
@@ -29,14 +29,14 @@ subcollection: apiconnect
 
 You might want to deploy additional API Gateways for your Reserved plan; for example, to distribute API endpoints for different purposes. And gateways that you deploy are considered _remote_ because they are external to your Reserved plan.
 
-To register a remote API Gateway with your Reserved plan, complete the following tasks:
+To register a remote API Gateway with your Reserved plan, click the **Download Gateway** tile on the administration Home page, and complete the following steps:
 
-1. [Install the API Gateway](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.install.doc/tapic_install_datapower_files.html){: external}
+Step 1: Download - Select your environment and download the package. 
 
-2. [Set up certificates for the new gateway](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.install.doc/ri_gwy_certs.html){: external}
+Step 2: Install - Select your environment to see the installation instructions for the gateway.
 
-3. [Configure the gateway](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.install.doc/tapic_install_datapower_gateway_apigwy..html){: external}
+Step 3: Configure - Follow the instructions in [Adding remote gateways in V10 Reserved](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.install.doc/ri_gwy_intro.html){: external} to set up certificates and configure the new gateway.
 
-4. [Register the gateway](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.install.doc/ri_gwy_reg.html){: external}
+Step 4: Register - Click the link to register the new gateway with your API Connect Reserved plan. For instructions, see  [Registering a gateway with V10 Reserved](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.install.doc/ri_gwy_reg.html){: external}
 
 After the gateway is registered, it is available for use in your Reserved plan. You can manage the gateways availability to users as explained in [Managing gateways](/docs/apiconnect?topic=apiconnect-ri-mng-gwy).
