@@ -42,7 +42,7 @@ You can log into the {{site.data.keyword.apiconnect_short}} with your provider o
 
 1. [Log in](https://cloud.ibm.com/login/){: external} to {{site.data.keyword.cloud_notm}} using your IBM ID.
 
-2. On the {{site.data.keyword.cloud_notm}} Dashboard, click ![Menu icon](images_v10/icon_cloud_menu.png "Menu icon") and select **API Management**.
+2. On the {{site.data.keyword.cloud_notm}} Dashboard, click ![Menu icon](images/icon_cloud_menu.png "Menu icon") and select **API Management**.
 
 3. In the navigation list, expand **API Connect** and click **Services**.
 
