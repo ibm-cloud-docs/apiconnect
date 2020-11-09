@@ -47,9 +47,6 @@ Start the Administration console by completing the following steps:
 3. In the navigation list, expand **API Connect** and click **Services**.
 
    The "Services" page lists all of your {{site.data.keyword.apiconnect_short}} services. 
-   
-   If you have not created an {{site.data.keyword.apigw_short}} yet, you can create it now by clicking **Create Service**.
-   {: tip}
 
 4. On the "Services" page, click your Reserved plan name to start it.
 
