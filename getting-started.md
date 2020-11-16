@@ -66,7 +66,7 @@ When you see the {{site.data.keyword.apiconnect_short}} Home page, you're ready 
 
 See how easy it is to create an API by importing a YAML definition. 
 
-Complete the tutorial [Importing an API](https://rtpdoc01.rtp.raleigh.ibm.com:9443/kc/v10_cloud_test/com.ibm.apic.apionprem.doc/tutorial_apionprem_import_api.html){: external} in the {{site.data.keyword.apiconnect_short}} V10 Reserved Knowledge Center.
+Complete the tutorial [Importing an API](https://www.ibm.com/support/knowledgecenter/SSMNED_v10/com.ibm.apic.apionprem.doc/tutorial_apionprem_import_api.html){: external} in the {{site.data.keyword.apiconnect_short}} V10 Reserved Knowledge Center.
 
 
 ## Next steps
