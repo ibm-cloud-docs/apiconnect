@@ -80,4 +80,4 @@ If you're ready to focus on specific tasks, see the topics in the [Using API Con
 ## About your personal data
 {: #personal-data_getting-started}
 
-The {{site.data.keyword.apiconnect_short}} service processes but doesn't store user data. You don't need to take any action to manage or delete your data.
+The {{site.data.keyword.apiconnect_short}} service processes but doesn't store user data. You don't need to take any action to manage or delete your data.  
