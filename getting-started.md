@@ -74,7 +74,7 @@ Complete the tutorial [Importing an API](https://www.ibm.com/support/knowledgece
 
 For more step-by-step examples on creating, securing, and testing APIs, see the additional [API Manager tutorials](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/tapim_management_tutorials.html){: external} in the {{site.data.keyword.apiconnect_short}} V10 Reserved Knowledge Center.
 
-If you're ready to focus on specific tasks, see the topics in the [Using API Connect Reserved](/docs/apiconnect?topic=apiconnect-ri-user-over) section for more information on working with APIs and products, catalogs, event analytics, and the Developer Portal.
+If you're ready to focus on specific tasks, see the topics in the [Using API Connect Reserved](/docs/apiconnect?topic=apiconnect-ri-user-over) section for more information on working with APIs and products, catalogs, event analytics, and the Developer Portal.  
 
 
 ## About your personal data
