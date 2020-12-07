@@ -27,14 +27,6 @@ Use the {{site.data.keyword.apiconnect_full}} service to quickly create APIs and
 You can manage your APIs with business-level controls by setting varying levels of security,
 visibility, billing plans, and rate limits. The {{site.data.keyword.apiconnect_short}} service also provides you with the tools to transform and grow your business with insights through detailed analytics with structured filtered searches.
 
-<object height="315" type="application/x-shockwave-flash" width="560"
-data="https://www.youtube.com/v/lmxyiNMER5Y?version=3&amp;hl=en_US">
-<desc>This video provides an overview of the {{site.data.keyword.apiconnect_short}} service</desc>
-<param name="movie" value="https://www.youtube.com/v/lmxyiNMER5Y?version=3&amp;hl=en_US"/>
-<param name="allowFullScreen" value="true"/>
-<param name="allowscriptaccess" value="always"/>
-<param name="scale" value="noScale"/>
-</object>
 
 ## API creation
 {: #creation-apic_overview}
