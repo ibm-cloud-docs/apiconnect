@@ -37,7 +37,7 @@ In {{site.data.keyword.apiconnect_short}}, permissions to use features and asset
 
 To decide what type of access each of your users requires, review Table 1 to see how suggested jobs in {{site.data.keyword.apiconnect_short}} map to access roles in IAM. Then decide how many access groups you should create, and which IAM roles should be assigned to each access group. When you configure the access groups, you can assign them to one or more provider organizations for your {{site.data.keyword.apiconnect_short}} Reserved plan.
 
-{{site.data.keyword.apiconnect_short}} job | Needs this IAM role | Allowed actions |
+| {{site.data.keyword.apiconnect_short}} job | Needs this IAM role | Allowed actions |
 | ----------------- | ------------------------------------------- |
 | API Developer     | Service: Writer                    | Create, edit, and publish APIs                              |
 | API Administrator	| Service: Manager, Platform: Editor | Create, edit, and publish APIs; Full control over data within the service; Modify the service instance |
