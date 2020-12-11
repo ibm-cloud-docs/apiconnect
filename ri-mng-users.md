@@ -74,19 +74,13 @@ All of the members of a provider organization have some level of access to the a
   
    b. On the Dashboard, click ![Menu icon](images/icon_cloud_menu.png "Menu icon") and select **API Management**.
 
-     ![Select API Management](images/select_api_mgt.png "Select API Management")
-
    c. In the navigation list, expand **API Connect** and click **Services**.
-
-      ![Services page](images/ri_select_service.png "Services page")
 
       The "Services" page lists all of your {{site.data.keyword.apiconnect_short}} services. 
    
    d. On the "Services" page, click your Reserved plan name to start it.
 
       {{site.data.keyword.apiconnect_short}} opens to the administration console.
-	  
-	  ![Administration console](images/ri_admin_home.png "Administration console")
    
 2. On the administration console's home page, click the **Provider organizations** tile.
 
