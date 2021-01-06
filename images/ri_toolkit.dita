@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//IBM//DTD DITA IBM Task//EN" "ibm-task.dtd">
+<task id="ri_toolkit" xml:lang="en-us">
+<title>Setting up the toolkit for V10 Reserved Instance</title>
+<shortdesc>Install the toolkit that provides CLI commands, and the <ph
+conref="../buildfiles/conref_api_overview.dita#conref_api_overview/designer"/> user interface, for
+<ph conref="../buildfiles/conref_api_overview.dita#conref_api_overview/product"/>.</shortdesc>
+<taskbody>
+<context>
+<p>With the toolkit, you can choose how you want to work with to work:</p>
+<ul>
+<li><ph conref="../buildfiles/conref_api_overview.dita#conref_api_overview/designer"/> offers a
+graphical interface similar to API Manager. Because you work locally, not all API Manager features
+are available in <ph conref="../buildfiles/conref_api_overview.dita#conref_api_overview/designer"
+/>.</li>
+<li>The CLI (Command Line Interface) lets you work in a command window instead of using the
+graphical interface.</li>
+</ul>
+<p>Setting up the toolkit involves the following tasks:<ul>
+<li><xref href="#ri_tk_download" format="dita"/></li>
+<li><xref href="#ri_tk_login" format="dita"/></li>
+</ul></p>
+</context>
+</taskbody>
+<task id="ri_tk_download">
+<title>Downloading the toolkit</title>
+<taskbody>
+<context>
+<p>Download and save the toolkit and related credentials files.</p>
+</context>
+<steps>
+<step>
+<cmd>Download the toolkit from API Manager in <ph
+conref="../buildfiles/conref_api_overview.dita#conref_api_overview/product"/> Reserved on IBM
+Cloud.</cmd>
+<substeps>
+<substep>
+<cmd>Log in to <xref href="https://cloud.ibm.com/login/" format="html" scope="external">IBM
+Cloud</xref>.</cmd>
+</substep>
+<substep>
+<cmd>On the Dashboard, click <menucascade>
+<uicontrol><image href="icon_cloud_menu.png">
+<alt>Dashboard Menu icon</alt>
+</image></uicontrol>
+<uicontrol>API Management</uicontrol>
+<uicontrol>API Connect</uicontrol>
+<uicontrol>Services</uicontrol>
+</menucascade>.</cmd>
+</substep>
+<substep>
+<cmd>In the list of services, expand the Reserved service and click a provider organization to open
+the <ph conref="../buildfiles/conref_api_overview.dita#conref_api_overview/product"/> API
+Manager.</cmd>
+</substep>
+<substep>
+<cmd>On the API Manager home page, click the <uicontrol>Download Toolkit</uicontrol> tile.</cmd>
+</substep>
+<substep>
+<cmd>In the "Step 1: Download toolkit" section of the <wintitle>Install API Connect
+Toolkit</wintitle> window, select the type of package you want to download and click the link for
+your operating system.</cmd>
+<info>
+<p>
+<ul>
+<li><uicontrol>CLI</uicontrol>: provides a command line environment for working with <ph
+conref="../buildfiles/conref_api_overview.dita#conref_api_overview/product"/>.</li>
+<li><uicontrol>CLI + LoopBack + Designer</uicontrol>: provides a command-line environment for
+working with <ph conref="../buildfiles/conref_api_overview.dita#conref_api_overview/product"/> with
+<ph conref="../buildfiles/conref_api_overview.dita#conref_api_overview/loopback"/> support, plus the
+<ph conref="../buildfiles/conref_api_overview.dita#conref_api_overview/designer"/> user
+interface.</li>
+</ul>
+</p>
+</info>
+</substep>
+</substeps>
+</step>
+<step id="step_download_creds">
+<cmd>In the "Step 2: Download credentials" section, download both credentials files:</cmd>
+<substeps>
+<substep>
+<cmd>Click the <uicontrol>Download</uicontrol> option for <uicontrol>Credential</uicontrol> and save
+the <filepath>credentials.json</filepath> file to your local file system.</cmd>
+</substep>
+<substep>
+<cmd>Click the <uicontrol>Download</uicontrol> option for the <uicontrol>API Designer
+Credentials</uicontrol> and save the <filepath>designer_credentials.json</filepath> file to your
+local file system.</cmd>
+</substep>
+</substeps>
+</step>
+<step>
+<cmd>In the "Step 3: Run commands" section, copy the <ph
+conref="../buildfiles/conref_api_overview.dita#conref_api_overview/product"/>
+<uicontrol>Management Server Endpoint URL</uicontrol>.</cmd>
+<info>
+<p>You will use the URL every time you log in to the toolkit from the CLI, so save a copy where you
+can easily locate it.</p>
+<p>You will run the commands from this section in the next steps, so you can close the
+<wintitle>Install API Connect Toolkit</wintitle> window.</p>
+</info>
+</step>
+<step>
+<cmd>Locate the downloaded toolkit compressed file and extract the contents to a folder of your
+choice.</cmd>
+<info>
+<note type="tip">Add the folder location of your CLI file to your <filepath>PATH</filepath> variable
+so that you can run CLI commands from anywhere in your file system.</note>
+</info>
+</step>
+<step>
+<cmd id="install_creds">Install both of the credentials files:</cmd>
+<substeps>
+<substep>
+<cmd>Install the toolkit credentials by opening a terminal window (command window) and running the
+following command</cmd>
+<info>
+<codeblock>apic client-creds:set <varname>toolkit_credentials_file_path</varname>/credentials.json</codeblock>
+<p>where <varname>credentials_file_path</varname> is the location where you downloaded the toolkit
+credentials JSON file. The toolkit uses these new credentials to authenticate with the management
+server. The response displays the Management Server Endpoint URL and the credentials file's
+name:</p>
+<p><systemoutput><varname>management-server-endpoint</varname>.cloud.ibm.com:
+credentials.json</systemoutput></p>
+<note>You can only install one set of toolkit credentials at a time. If you later want to log in to
+a different management server, install that server's toolkit credentials to replace the current
+credentials.</note>
+</info>
+</substep>
+<substep>
+<cmd>Install the <ph conref="../buildfiles/conref_api_overview.dita#conref_api_overview/designer"/>
+credentials by setting the <codeph>APIC_DESIGNER_CREDENTIALS</codeph> environment variable to the
+credentials download location, using the mechanism appropriate for your operating system.</cmd>
+<info>
+<p>For example:<ul>
+<li>Mac OS X: Run the following
+command:<codeblock>launchctl setenv APIC_DESIGNER_CREDENTIALS <varname>designer_credentials_file_path</varname>/designer_credentials.json</codeblock>where
+<varname>designer_credentials_file_path</varname> is the location to which you downloaded the <ph
+conref="../buildfiles/conref_api_overview.dita#conref_api_overview/designer"/> credentials JSON
+file.</li>
+<li><tm trademark="Windows" tmtype="tm">Windows</tm>: In Windows Settings, add the following
+environment variable:
+<p><codeph>APIC_DESIGNER_CREDENTIALS=<varname>designer_credentials_file_path</varname>\designer_credentials.json</codeph></p></li>
+</ul></p>
+</info>
+</substep>
+</substeps>
+</step>
+</steps>
+</taskbody>
+</task>
+<task id="ri_tk_login">
+<title>Logging in to the toolkit</title>
+<taskbody>
+<context>
+<p>Log in to the <ph conref="../buildfiles/conref_api_overview.dita#conref_api_overview/product"/>
+management server with the toolkit.</p>
+</context>
+<steps>
+<step>
+<cmd>Clear the toolkit credentials from any previous login by running the following command:</cmd>
+<info>
+<codeblock>apic client-creds:clear</codeblock>
+<p>The response confirms that the credentials were deleted:
+<codeblock>Deleted client credentials</codeblock></p>
+<p>Clearing the credentials ensures that you do not inadvertently log in with the wrong set of
+credentials (for example, from a different product release or environment). There is no need to
+clear the API Designer credentials.</p>
+</info>
+</step>
+<step id="step_login">
+<cmd>Enter the following login command:</cmd>
+<info>
+<codeblock>apic login --server <varname>mgmt_endpoint_url</varname> --sso</codeblock>
+<p>where <codeph><varname>mgmt_endpoint_url</varname></codeph> is the endpoint URL that you noted
+when you downloaded the toolkit. </p>
+</info>
+</step>
+<step>
+<cmd>When the toolkit prompts for the context, type <codeph>provider</codeph> and press Enter:</cmd>
+<info>
+<codeblock>Context? provider</codeblock>
+</info>
+<stepresult>
+<p>The server responds with the following message, which includes a lengthy URL: </p>
+<codeblock>Warning: Using default toolkit credentials.
+Please copy and paste the url https://<varname>mgmt_endpoint_url</varname>/auth/manager/sign-in/?from=TOOLKIT to a browser to start the authentication process.
+Do you want to open the url in default browser? [y/n]: y</codeblock>
+</stepresult>
+</step>
+<step>
+<cmd>Respond by typing <codeph>y</codeph> and pressing Enter.</cmd>
+<info>
+<p>The following message displays: <codeph>API Key?</codeph></p>
+<p>Then, the URL in the response is copied directly into the address bar of a new browser tab, and
+opens the <wintitle>IBM API Connect Reserved</wintitle> passcode page where you can obtain an API
+key:</p>
+<image placement="break" href="ri_tk_login_passcode.png">
+<alt>Passcode page</alt>
+</image>
+</info>
+</step>
+<step>
+<cmd>Copy the provided passcode and paste it into the terminal (command window) at the <codeph>API
+Key?</codeph> prompt, and then press Enter.</cmd>
+<info>
+<p>If the response indicates an error, check for the following problems:<ul>
+<li>You pasted the API key value more than 5 minutes after it was generated, so it expired. <p>In
+this case, <xref href="#ri_tk_login/step_login" format="dita">start the login process</xref> again
+and make sure to copy and paste the API key passcode within the 5-minute time limit.</p></li>
+<li>There's a problem with the toolkit credentials; for example, you did not download them or
+install them correctly.<p>In this case, <xref href="#ri_tk_download/step_download_creds"
+format="dita">download and install the credentials</xref> again, then restart the login
+process.</p></li>
+</ul></p>
+</info>
+<stepresult>
+<p>When the API key is validated and you are successfully logged in to the toolkit, the following
+message displays:</p>
+<codeblock>Warning: Using default toolkit credentials.
+Logged into <varname>mgmt_endpoint_url</varname> successfully</codeblock>
+</stepresult>
+</step>
+<step>
+<cmd>To log out of the toolkit, use the following command:</cmd>
+<info>
+<codeblock>apic logout --server <varname>mgmt_endpoint_url</varname></codeblock>
+<p>The response confirms your
+logout:<codeblock>Successfully logged out of <varname>mgmt_endpoint_url</varname></codeblock></p>
+</info>
+</step>
+</steps>
+</taskbody>
+</task>
+</task>
