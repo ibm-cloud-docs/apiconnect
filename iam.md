@@ -65,3 +65,4 @@ Table 2 details actions that are mapped to service access roles, and which {{sit
 {: caption="Table 2. IAM service access roles and actions" caption-side="top"}
 
 For more information about assigning user roles in the IAM service, see [Managing access to resources](/docs/account?topic=iam-iammanidaccser#iammanidaccser).
+   
