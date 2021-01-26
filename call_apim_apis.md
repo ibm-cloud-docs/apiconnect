@@ -67,7 +67,7 @@ The API responds with a JSON payload. Use the value of the `jwt` property as you
 
 When you invoke an API provided by {{site.data.keyword.apiconnect_short}}, use the token as the authorization header; for example:
 
-`curl https://us.apiconnect.ibmcloud.com/v1/me -H ‘Authorization: Bearer <token>’`
+`curl https://apimanager.us-south.apiconnect.cloud.ibm.com/v1/me -H ‘Authorization: Bearer <token>’`
 
 ## API key best practices
 {: #apikey-practices_call-apic-apis}
