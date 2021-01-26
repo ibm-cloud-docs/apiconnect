@@ -22,8 +22,6 @@ subcollection: apiconnect
 1. To view APIs that have been shared with your {{site.data.keyword.cloud_notm}} org, go to the APIs landing screen and
 click **Explore APIs**.
 
-![Explore APIs tab](images/ExploreAPIs_tab.png "Explore APIs tab")
-
 2. Expand the API to view more information about it.
 
 3. To subscribe to an API, click an API product.
