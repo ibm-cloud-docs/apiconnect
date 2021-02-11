@@ -47,8 +47,8 @@ Need help with your {{site.data.keyword.apiconnect_short}} service instance? Vis
       - Component impacted: API Manager, API calls, Portal
       - URL where error is being seen
 	  - For Dedicated, identify the customer environment
-	  - For Reserved plan, use a prefix in the Subject field to indicate the version and p-org. For more information, see [Getting help](https://www.ibm.com/support/knowledgecenter/SSMNED_cloud/com.ibm.apic.overview.doc/rapic_ibm_support_ri.html){: external} in the Reserved plan documentation
-
+	  - For Reserved plan, use a prefix in the Subject field to indicate the version (e.g. v5, v2018 or v10) and provider-org. For example [v10 - providerOrg]. 
+	  
    - For API Manager UI-based issues, additionally include:
 
       - All error codes returned
