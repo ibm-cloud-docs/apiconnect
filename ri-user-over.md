@@ -66,6 +66,6 @@ Jobs can be assigned to people based on their expertise; for example, administer
 
 - **Consumer**
 
-   _Consumers_ are your customers, and are not members of your provider organization. When your organization publishes products that contain APIs, consumers subscribe to the products so they can use the APIs in their applications. A consumer can subscribe to use APIs and products that are developed by different provider organizations. Each provider organization assigns one or more Product Managers to manage the relationshop with its consumers. The Product Manager creates _consumer organizations_ and adds customers to give them access to the developer portal.
+   _Consumers_ are your customers, and are not members of your provider organization. When your organization publishes products that contain APIs, consumers subscribe to the products so they can use the APIs in their applications. A consumer can subscribe to use APIs and products that are developed by different provider organizations. Each provider organization assigns one or more Product Managers to manage the relationship with its consumers. The Product Manager creates _consumer organizations_ and adds customers to give them access to the developer portal.
    
 For more information on working in {{site.data.keyword.apiconnect_short}}, see [Understanding {{site.data.keyword.apiconnect_short}}](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.overview.doc/capic_whatis.html){: external} in the V10 Reserved Knowledge Center.
