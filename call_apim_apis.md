@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2019
-lastupdated: "2021-01-26"
+  years:  2019, 2021
+lastupdated: "2021-03-15"
 
 keywords: IBM Cloud, API Connect, authentication, IAM, access management, API Management, API key, token service, API Manager
 
@@ -20,14 +20,14 @@ subcollection: apiconnect
 {:note: .note}
 {:download: .download}
 
-# Calling APIs provided by {{site.data.keyword.apiconnect_short}}
+# Calling APIs provided by {{site.data.keyword.apiconnect_short}} V5
 {: #call_apim_apis}
 
 The REST APIs provided by {{site.data.keyword.apiconnect_short}} must be accessed with token-based authentication. To generate the token, obtain an {{site.data.keyword.cloud_notm}} API key and use it to call the {{site.data.keyword.apiconnect_short}} token service. After you get a token, you can use it in the header when you invoke {{site.data.keyword.apiconnect_short}} APIs.
 
-If you previously called these APIs with Basic authentication, you must update your code to use Token authentication instead. On 15 August, 2018, {{site.data.keyword.apiconnect_short}} discontinued the use of Basic authentication and began requiring the use of Token authentication to ensure that your API calls are secure. For more information, see [Changes to Authentication for API Connect on Cloud](https://developer.ibm.com/apiconnect/2018/08/07/changes-authentication-api-connect-management-apis-public-cloud-regions/){: external}.
-
 This requirement applies only to the APIs that are provided by {{site.data.keyword.apiconnect_short}}. You do not need the token for calling APIs that you imported or created. The token is intended for use with the IBM ID and might not work with other user registries. 
+
+This topic applies only to {{site.data.keyword.apiconnect_short}} V5. For information on calling {{site.data.keyword.apiconnect_short}} APIs in the V10 Reserved edition, see [Calling APIs provided by V10 Reserved](/docs/apiconnect?topic=apiconnect-ri-call-apim-apis).
 {: note}
 
 
@@ -36,7 +36,7 @@ This requirement applies only to the APIs that are provided by {{site.data.keywo
 
 To obtain an {{site.data.keyword.cloud_notm}} API Key, complete the following steps.
 
-1. Visit [ {{site.data.keyword.cloud_notm}} API Keys](https://cloud.ibm.com/iam/apikeys){: external}.
+1. Visit [{{site.data.keyword.cloud_notm}} API Keys](https://cloud.ibm.com/iam/apikeys){: external}.
 
 2. Click **Create an {{site.data.keyword.cloud_notm}} API key**.
 

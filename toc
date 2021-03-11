@@ -12,7 +12,7 @@ API Connect
     {: .navgroup-end}
 
     {: .navgroup id="tutorial"}	
-	ri_tutorials.md
+	ri-tutorials.md
 
 	{: .topicgroup}
     API Connect V5 tutorials
@@ -49,6 +49,7 @@ API Connect
         ri-mng-prod-cat.md
         ri-analytics.md
         ri-devportal.md
+		ri-call-apim-apis.md
 
     {: .topicgroup}
     Administering API Connect Reserved
@@ -56,6 +57,7 @@ API Connect
 		ri-mng-users.md
 		ri-reg-gwy.md
 		ri-mng-gwy.md
+		ri-upgrade.md
 
         {: .topicgroup}
         Enhancing security
@@ -71,13 +73,13 @@ API Connect
         managing_products.md
         create_catalog.md
         explore_apis.md
+		call_apim_apis.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
 	[Accessibility](/overview/overview-accessibility-platform#features-platform)
     responsibilities.md
 	ha-dr.md
-	call_apim_apis.md
 
     {: .topicgroup}
     Related links
