@@ -31,4 +31,4 @@ Tutorials are included in the {{site.data.keyword.apiconnect_short}} V10 Reserve
 For tutorials on developing and managing APIs and products, see the [API Manager tutorials](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/tapim_management_tutorials.html){: external}.
 
 For tutorials on setting up and using a developer portal, see [Developer Portal tutorials](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.devportal.doc/tutorials_devportal_home.html){: external}.
-  
+    
