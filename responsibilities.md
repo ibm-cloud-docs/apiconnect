@@ -59,8 +59,8 @@ Most of the responsibility for {{site.data.keyword.apiconnect_short}} features i
 | API subscriptions            | Enable API subscriptions as an identification/authentication method for a REST APIs and distribute appropriate keys to API subscribers | Generate and authenticate API keys |
 | API security               | Enable IBM-supported security mechanisms (e.g. OAuth provider/consumer, basic auth, etc) as an authentication method for a REST API | Protect published APIs via OAuth tokens, basic auth, etc |
 | Actions             | Configure | Integrate, generate, and activate |
-| Monitoring          | Monitor individual API uptime and configure necessary alerts | Integrate with {{site.data.keyword.cloud_notm}} Log Analysis with LogDNA to provide customer-accessible API operational logs |
-| Rate limiting       | Define appropriate rate limiting rules via the API Connect Product and API YAML specifications | Enforce rate limits |
+| Monitoring          | Monitor individual API uptime and configure necessary alerts | Integrate with {{site.data.keyword.cloud_notm}} Log Analysis to provide customer-accessible API operational logs |
+| Rate limiting       | Define appropriate rate limiting rules via the {{site.data.keyword.apiconnect_short}} Product and API YAML specifications | Enforce rate limits |
 | API management | Configure {{site.data.keyword.apiconnect_short}} using the provided interfaces and supported design specifications. | Host, provision, integrate, and implement your APIs using your {{site.data.keyword.apiconnect_short}}-compatible specifications |
 {: caption="Table 2. Feature responsibility" caption-side="top"}
 
