@@ -4,7 +4,7 @@ copyright:
   years: 2020
 lastupdated: "2020-10-15"
 
-keywords: activity tracker, LogDNA, event, security, audit logs, viewing events, management, Reserved plan
+keywords: activity tracker, event, security, audit logs, viewing events, management, Reserved plan
 
 subcollection: apiconnect
 
