@@ -4,7 +4,7 @@ copyright:
   years: 2020
 lastupdated: "2020-10-15"
 
-keywords: IBM Cloud, API Connect, V10, Reserved plan, lifecycle, develop, create, manage, API
+keywords: IBM Cloud, API Connect, V10, Reserved instance, lifecycle, develop, create, manage, API
 
 subcollection: apiconnect
 
@@ -25,7 +25,7 @@ subcollection: apiconnect
 Set up {{site.data.keyword.apiconnect_short}} so your users can develop APIs, publish them to consumers, and manage usage and lifecycles. 
 {: shortdesc}
 
-When you provision your Reserved service, API Connect is configured with your administrator account and a default gateway service for controlling access to APIs. Just add users!
+When you provision your Reserved instance, API Connect is configured with your administrator account and a default gateway service for controlling access to APIs. Just add users!
 
 If you're not an admin, see [Getting started as a user](/docs/apiconnect?topic=apiconnect-getting-started) for instructions on signing in to {{site.data.keyword.apiconnect_short}}.
 {: note}
@@ -34,7 +34,7 @@ If you're not an admin, see [Getting started as a user](/docs/apiconnect?topic=a
 ## Step 1. Open your administration console
 {: #start-service_getting-started}
 
-In {{site.data.keyword.cloud_notm}}, {{site.data.keyword.apiconnect_short}} V10 Reserved provides two components: the administration console and the API Manager. Use the administration console to configure the Reserved service for your users, who work with features in the API Manager.
+In {{site.data.keyword.cloud_notm}}, {{site.data.keyword.apiconnect_short}} V10 Reserved provides two components: the administration console and the API Manager. Use the administration console to configure the Reserved instance for your users, who work with features in the API Manager.
 
 All admins in your IBM Cloud account automatically have admin access to {{site.data.keyword.apiconnect_short}} and can use the features in the administration console.
 
@@ -52,13 +52,13 @@ Start the administration console by completing the following steps:
 
    The "Services" page lists all of your {{site.data.keyword.apiconnect_short}} services. 
    
-4. On the "Services" page, click your Reserved service's name to start it.
+4. On the "Services" page, click your Reserved instance's name to start it.
 
    {{site.data.keyword.apiconnect_short}} opens to the administration console.
 
    ![Administration console](images/ri_admin_home.png "Administration console")
 
-As an {{site.data.keyword.apiconnect_short}} admin, you control the Reserved service by configuring gateways for API access and managing users. Whenever you want to perform admin tasks, return to the "Services" page to open the administration console. 
+As an {{site.data.keyword.apiconnect_short}} admin, you control the Reserved instance by configuring gateways for API access and managing users. Whenever you want to perform admin tasks, return to the "Services" page to open the administration console. 
 
 
 ## Step 2. Configure user access

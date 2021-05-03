@@ -26,7 +26,7 @@ subcollection: apiconnect
 The REST APIs provided by {{site.data.keyword.apiconnect_short}} V10 Reserved require authentication for use. To call an API interactively, you can log into the toolkit CLI with an option to generate the API key. To call an API programmatically, you can generate an API key and then exchange it for an IBM Cloud IAM Bearer token. 
 {: shortdesc}
 
-This requirement applies only to the APIs that are provided by {{site.data.keyword.apiconnect_short}}. You do not need the token for calling APIs that you imported or created. The token is intended for use with the IBM ID and might not work with other user registries. 
+This requirement applies only to the APIs that are provided by {{site.data.keyword.apiconnect_short}}. You do not need the API key for calling APIs that you imported or created. The API key is intended for use with the IBM ID and might not work with other user registries. 
 
 This topic applies only to the V10 Reserved edition of {{site.data.keyword.apiconnect_short}}. For information on calling {{site.data.keyword.apiconnect_short}} APIs in V5, see [Calling APIs provided by API Connect V5](/docs/apiconnect?topic=apiconnect-call_apim_apis).
 {: note}
@@ -43,7 +43,7 @@ apic login --server {mgmt_endpoint_url} --sso
 
 Follow the displayed instructions to generate an IBM Cloud API key, copy it from the IBM API Connect Reserved passcode page, and submit the API key on the command line to complete the login. The authentication lasts for the duration of your CLI session. You do not need to provide the API key with API calls during the session.
 
-For more information on logging in to the toolkit, see [Setting up the toolkit for V10 Reserved](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/ri_toolkit.html#ri_tk_login).
+For more information on logging in to the toolkit, see [Setting up the toolkit for V10 Reserved](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/ri_toolkit.html#ri_tk_login) in the extended V10 Reserved documentation.
 
 
 ## Calling an {{site.data.keyword.apiconnect_short}} API programmatically in V10 Reserved
@@ -102,19 +102,19 @@ curl -X POST \
   --data-urlencode 'apikey={api_key}'
 ```
   
-where `{api_key}` is your API key. The response looks like the following example:
+where `{api_key}` is the value of your API key. The response looks like the following example:
 
 ```
-{"access_token":"[_access token value_]","refresh_token":"not_supported","token_type":"Bearer","expires_in":3600,"expiration":1615370557,"scope":"ibm openid"}
+{"access_token":"[_access-token-value_]","refresh_token":"not_supported","token_type":"Bearer","expires_in":3600,"expiration":1615370557,"scope":"ibm openid"}
 ```
 
 Now you can use the IAM access token in your API calls; for example:
 
 ```
-curl https://{{ api_host }}/api/orgs \
+curl https://{api_host}/api/orgs \
   -H "Accept: application/json" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer [access_token]
+  -H "Authorization: Bearer _access-token-value_"
 
 {
   "total_results": 2,

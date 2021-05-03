@@ -4,7 +4,7 @@ copyright:
   years: 2020
 lastupdated: "2020-10-15"
 
-keywords: IBM Cloud, API Connect, V10, Reserved plan, lifecycle, develop, create, manage, API, user, role, access, group
+keywords: IBM Cloud, API Connect, V10, Reserved instance, lifecycle, develop, create, manage, API, user, role, access, group
 
 subcollection: apiconnect
 
@@ -22,16 +22,16 @@ subcollection: apiconnect
 # Managing gateways
 {: #ri-mng-gwy}
 
-Manage gateways in {{site.data.keyword.apiconnect_short}} by defining whether they are available to users, and whether they are included in new catalogs.
+Manage gateways in {{site.data.keyword.apiconnect_short}} Reserved by defining whether they are available to users, and whether they are included in new catalogs.
 {: shortdesc}
 
 
 ## Controlling a gateway's visibility
-{: #visible-ri-mng-gwy}
+{: #visible_ri-mng-gwy}
 
 A gateway's visibility setting determines which provider organizations can use the gateway. If you deploy multiple gateways, you might want to assign each gateway to a specific set of provider organizations.
 
-1. On the administration console's home page, click the **Gateways** tile.
+1. On the administration console's home page, click **Gateways**.
 
 2. On the "Gateways" page, locate the gateway in the table. At the end of the row, click ![Menu icon](images/icon_options.png "Menu icon") > **Set visibility**.
 
@@ -49,11 +49,11 @@ A gateway's visibility setting determines which provider organizations can use t
 
 
 ## Specifying default gateways for catalogs
-{: #default-ri-mng-gwy}
+{: #default_ri-mng-gwy}
 
 Members of a provider organization publish APIs by adding them to a product and then publishing the product to a catalog. The catalog must be assigned at least one gateway so that the APIs can be called using the gateway endpoint. To ensure that new catalogs have access to gateways, you can assign _default gateways_ that are automatically added to every new catalog. 
 
-1. On the administration console's home page, click the **Settings** tile.
+1. On the administration console's home page, click **Settings**.
 
 2. On the "Default gateways" page, click **Edit**.
 
@@ -61,4 +61,4 @@ Members of a provider organization publish APIs by adding them to a product and 
 
 4. Click **Save** to apply the new setting.
 
-Existing catalogs are not affected when you change this setting. You can update a catalog later in API Manager to remove unwanted gateways or add new gateways. For information on working with catalog settings, see [Creating and configuring catalogs](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/create_env.html){: external}.
+Existing catalogs are not affected when you change this setting. You can update a catalog later in API Manager to remove unwanted gateways or add new gateways. For information on working with catalog settings, see [Creating and configuring catalogs](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/create_env.html){: external} in the extended V10 Reserved documentation.

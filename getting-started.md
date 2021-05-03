@@ -4,7 +4,7 @@ copyright:
   years: 2020
 lastupdated: "2020-10-15"
 
-keywords: IBM Cloud, API Connect, V10, Reserved plan, lifecycle, develop, create, manage, API
+keywords: IBM Cloud, API Connect, V10, Reserved instance, lifecycle, develop, create, manage, API
 
 subcollection: apiconnect
 
@@ -25,9 +25,9 @@ subcollection: apiconnect
 See how easy it is to create, manage, secure, and share APIs.
 {: shortdesc}
 
-{{site.data.keyword.apiconnect_short}} V10 Reserved plan is the cloud-based edition of IBM {{site.data.keyword.apiconnect_short}}. The Reserved plan offers a comparable set of features for managing the lifecycle of APIs, hosted in {{site.data.keyword.cloud_notm}}. {{site.data.keyword.apiconnect_short}} makes it easy to create, securely expose, manage, and monetize APIs so that you and your customers can power digital applications and spur innovation. 
+{{site.data.keyword.apiconnect_short}} V10 Reserved service is the cloud-based edition of IBM {{site.data.keyword.apiconnect_short}}. The Reserved service offers a comparable set of features for managing the lifecycle of APIs, hosted in {{site.data.keyword.cloud_notm}}. {{site.data.keyword.apiconnect_short}} makes it easy to create, securely expose, manage, and monetize APIs so that you and your customers can power digital applications and spur innovation. 
 
-If you are an administrator, see [Getting started as an administrator](/docs/apiconnect?topic=apiconnect-getting-started-admin) for instructions on configuring your new Reserved plan and adding users.
+If you are an administrator, see [Getting started as an administrator](/docs/apiconnect?topic=apiconnect-getting-started-admin) for instructions on configuring your new Reserved service instance and adding users.
 {: note}
 
 In this tutorial, you verify your access to {{site.data.keyword.apiconnect_short}}, then open the API Manager and create an API. Ready to get started? 
@@ -46,9 +46,9 @@ You can log into the {{site.data.keyword.apiconnect_short}} with your provider o
 
 3. In the navigation list, expand **API Connect** and click **Services**.
 
-4. On the Services page, expand the row for your company's {{site.data.keyword.apiconnect_short}} Reserved plan.
+4. On the Services page, display the provider organizations for your company's {{site.data.keyword.apiconnect_short}} Reserved service by expanding the row that displays the service name. Your administrator can tell you which provider organization you belong to.
 
-   Provider organizations belong to Reserved plans, so you need to expand the Reserved plan service to see the list of associated provider organizations. Each provider organization is labelled as "Provider Organization" in the "Plan" column. If your company has multiple Reserved plans and you don't know which one to use, expand each one until you see your provider organization.
+   Provider organizations belong to Reserved instances, so you need to expand your Reserved instance to see the list of associated provider organizations. Each provider organization is labelled as "Provider Organization" in the "Plan" column. If your company has multiple Reserved instances and you don't know which one to use, just expand each one until you see your provider organization.
    
 5. Click the name of a provider organization to start the {{site.data.keyword.apiconnect_short}} API Manager.
 
@@ -66,15 +66,15 @@ When you see the {{site.data.keyword.apiconnect_short}} Home page, you're ready 
 
 See how easy it is to create an API by importing a YAML definition. 
 
-Complete the tutorial [Importing an API](https://www.ibm.com/support/knowledgecenter/SSMNED_v10/com.ibm.apic.apionprem.doc/tutorial_apionprem_import_api.html){: external} in the {{site.data.keyword.apiconnect_short}} V10 Reserved Knowledge Center.
+Complete the tutorial [Importing an API](https://www.ibm.com/support/knowledgecenter/SSMNED_v10/com.ibm.apic.apionprem.doc/tutorial_apionprem_import_api.html){: external} in the extended {{site.data.keyword.apiconnect_short}} V10 Reserved documentation.
 
 
 ## Next steps
 {: #next-steps_getting-started}
 
-For more step-by-step examples on creating, securing, and testing APIs, see the additional [API Manager tutorials](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/tapim_management_tutorials.html){: external} in the {{site.data.keyword.apiconnect_short}} V10 Reserved Knowledge Center.
+For more step-by-step examples on creating, securing, and testing APIs, see the additional [API Manager tutorials](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/tapim_management_tutorials.html){: external} in the extended {{site.data.keyword.apiconnect_short}} V10 Reserved documentation.
 
-If you're ready to focus on specific tasks, see the topics in the [Using API Connect Reserved](/docs/apiconnect?topic=apiconnect-ri-user-over) section for more information on working with APIs and products, catalogs, event analytics, and the Developer Portal.  
+If you're ready to focus on specific tasks, see the topics in the [Using API Connect Reserved](/docs/apiconnect?topic=apiconnect-ri-user-over) section for more information on working with APIs and products, catalogs, event analytics, and the Developer Portal.
 
 
 ## About your personal data

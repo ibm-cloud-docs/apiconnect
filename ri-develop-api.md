@@ -4,7 +4,7 @@ copyright:
   years: 2020
 lastupdated: "2020-10-15"
 
-keywords: management, Reserved plan
+keywords: management, Reserved instance
 
 subcollection: apiconnect
 
@@ -29,7 +29,7 @@ Developing APIs in {{site.data.keyword.apiconnect_full}} involves a series of ta
 ## API development tasks in {{site.data.keyword.apiconnect_short}}
 {: #tasks-docs_ri-develop-api}
 
-An API developer creates new APIs and updates existing APIs as needed. The API developer can configure policies that define security restrictions, logging rules, and quotas that control access to your company’s resources. Developers should read the topics in the "Developing APIs and products" section of the V10 Reserved documentation in IBM Knowledge Center.
+An API developer creates new APIs and updates existing APIs as needed. The API developer can configure policies that define security restrictions, logging rules, and quotas that control access to your company’s resources. Developers should read the topics in the "Developing APIs and products" section of the extended V10 Reserved documentation.
 
 In particular, API developers should review the following topics:
 
