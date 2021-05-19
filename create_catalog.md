@@ -46,9 +46,20 @@ The **Add Catalog** window is displayed.
 6. To configure the Catalog, click the name of the Catalog, then click **Settings** > **Info**, and proceed with the following steps:
 
    a. If the new Catalog is a development Catalog, select **Development mode**.
-      If you select the development mode, staging and publishing actions are forced. If you republish a Product, it is overwritten without warning. If conflicts are found, they are automatically resolved by the system. Unpublish actions happen automatically.
+	
+      Development and Production catalogs behave differently:
 
-      **Note:** Approval boxes are not displayed for development Catalogs. You cannot enable the approval process for lifecycles.
+      - Development catalog:
+
+        If you select the development mode, staging and publishing actions are forced. If you republish a Product, it is overwritten without warning. If conflicts are found, they are automatically resolved by the system. Unpublish actions happen automatically.
+
+        **Note:** Approval boxes are not displayed for development Catalogs. You cannot enable the approval process for lifecycles.
+
+      - Production catalog:
+
+        You will be prevented from publishing a Product to a Production Catalog if there is already a Product in the Catalog with the same name and version; you must create a new version of the Product for publication. If Spaces are enabled in a production Catalog, you cannot publish a Product with the same name and version to more than one Space in the Catalog.
+
+        If you create a new Product that contains one or more modified APIs, you must create new versions of those APIs for inclusion in the Product. If the Product contains a modified API and there is already a published API with the same name and version, your changes will not be published.
 	
    b. If you want to enable automatic subscription for the Catalog, select **Automatic
 subscription**.
