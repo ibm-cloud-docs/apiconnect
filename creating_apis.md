@@ -408,7 +408,7 @@ do this, complete the following steps:
 7. In the **Value** field, enter
 `$LD_LIBRARY_PATH:/home/vcap/app/node_modules/instantclient`.
 
-8. Click **Save**.
+8. Click **Save**.  
 
 ### Testing a LoopBack project
 {: #test_lb_proj-creating_apis}
