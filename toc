@@ -61,8 +61,12 @@ API Connect
 
         {: .topicgroup}
         Enhancing security
-		    at-events.md
 		    iam.md
+
+        {: .topicgroup}
+        Logging and monitoring
+		    at-events.md
+			ri-logs.md
 
     {: .topicgroup}
     Using API Connect V5

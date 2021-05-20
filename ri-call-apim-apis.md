@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2021
+  years: 2021
 lastupdated: "2021-03-15"
 
 keywords: IBM Cloud, API Connect, Reserved, authentication, IAM, access management, API key, token service, CLI

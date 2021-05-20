@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2020, 2020
+  years: 2019, 2021, 2021
 lastupdated: "2020-05-06"
 
 keywords: IBM Cloud, API Connect, API management, support, help, Support Center

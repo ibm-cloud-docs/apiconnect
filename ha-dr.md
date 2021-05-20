@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2020
+  years: 2020, 2021
 lastupdated: "2020-10-15"
 
 keywords: API management, HA, high availability, disaster recovery, downtime, down time, failure, catasrophe, region, multizone region, MZR
@@ -35,5 +35,5 @@ In the case of a complete region failure, the instance servers and APIS in the r
 
 For critical API traffic, IBM recommends that you deploy an API in at least two regions and globally load balance the regions. You can configure global load balancing with a technology such as {{site.data.keyword.cis_full}} ({{site.data.keyword.cis_short}}). {{site.data.keyword.cis_short}} provides health checking and routing rules to ensure that API traffic is automatically routed to the nearest healthy region. For more information about global load balancing, see the [Global Load Balancer (GLB) documentation](/docs/infrastructure/cis?topic=cis-global-load-balancer-glb-concepts).
 
-For information about high availability and disaster recovery standards in {{site.data.keyword.Bluemix_notm}}, see [How do I ensure zero downtime?](/docs/overview?topic=overview-zero-downtime#zero-downtime). You can also find information about [Service Level Agreements](/docs/overview?topic=overview-zero-downtime#SLAs).
+For information about high availability and disaster recovery standards in {{site.data.keyword.Bluemix_notm}}, see [How IBM Cloud ensures high availability and disaster recovery](/docs/overview?topic=overview-zero-downtime#zero-downtime). You can also find information about [Service Level Agreements](/docs/overview?topic=overview-zero-downtime#SLAs).
 

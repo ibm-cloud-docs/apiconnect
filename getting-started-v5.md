@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2020
+  years: 2017, 2021, 2021
 lastupdated: "2019-12-31"
 
 keywords: IBM Cloud, API Connect, API management, APIs, API, lifecycle, intro, API Connect Enterprise, API Connect Hybrid, API Connect Lite
@@ -59,7 +59,7 @@ When you want to return to your service later, open your Resource listing in the
 ## Where would you like to begin?
 {: #starting-point_getting-started-v5}
 
-For an overview of the product, see [Overview of {{site.data.keyword.apiconnect_short}}](/docs/apiconnect?topic=apiconnect-apic_overview).
+For an overview of the product, see [Overview of {{site.data.keyword.apiconnect_short}}](/docs/apiconnect?topic=apiconnect-about_apic_overview).
 
 For an in-depth introduction to {{site.data.keyword.apiconnect_short}}, you can work through a complete set of tutorials for the Lite, Enterprise, and Hybrid plans. You can choose to complete all of the tutorials, or only the tutorials that apply to a particular task. The following tutorials offer an overview of the capabilities of {{site.data.keyword.apiconnect_short}}:
 

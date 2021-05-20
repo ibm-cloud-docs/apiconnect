@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2020
+  years: 2017, 2021, 2021
 lastupdated: "2019-12-31"
 
 keywords: IBM Cloud, API Connect, API management, APIs, API, lifecycle, develop, create, API Connect Enterprise, API Connect Hybrid, API Connect Lite
@@ -408,7 +408,7 @@ do this, complete the following steps:
 7. In the **Value** field, enter
 `$LD_LIBRARY_PATH:/home/vcap/app/node_modules/instantclient`.
 
-8. Click **Save**.  
+8. Click **Save**.
 
 ### Testing a LoopBack project
 {: #test_lb_proj-creating_apis}

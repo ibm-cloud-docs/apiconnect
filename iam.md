@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2020
+  years: 2020, 2021
 lastupdated: "2020-10-19"
 
 keywords: IBM Cloud, API Connect, API management, Reserved instance, authentication, IAM, access management, service ID, API key, user roles, user actions

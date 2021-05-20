@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2020
+  years: 2020, 2021
 lastupdated: "2020-10-15"
 
 keywords: public isolation for API Connect Reserved instance, compute isolation for API Connect Reserved instance, API Connect Reserved instance architecture, workload isolation in API Connect Reserved instance

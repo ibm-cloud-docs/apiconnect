@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2020
+  years: 2017, 2021, 2021
 lastupdated: "2020-02-24"
 
 keywords: IBM Cloud, API Connect, API management, API, APIs, lifecycle, catalog, API Connect Enterprise, API Connect Hybrid

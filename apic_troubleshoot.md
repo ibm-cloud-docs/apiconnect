@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2020
+  years: 2017, 2021, 2021
 lastupdated: "2020-08-27"
 
 keywords: IBM Cloud, API Connect, API management, API, APIs, lifecycle, troubleshooting, trouble, troubleshoot, API Connect Enterprise, API Connect Hybrid
@@ -60,7 +60,7 @@ Take these steps:
 1. Wait several minutes to ensure the logout operation completes.
 1. Log in again and try to complete the tasks.
 
-If the permissons issue still persists, contact [{{site.data.keyword.apiconnect_short}} Support](https://cloud.ibm.com/docs/get-support?topic=get-support-getting-customer-support){: external}.
+If the permissons issue still persists, contact [{{site.data.keyword.apiconnect_short}} Support](/docs/get-support?topic=get-support-using-avatar).
 
 ## Unable to install the developer toolkit
 {: #unable_tk-apic_troubleshoot}
