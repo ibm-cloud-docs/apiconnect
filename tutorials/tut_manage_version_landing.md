@@ -1,12 +1,12 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017, 2021
 lastupdated: "2017-10-10"
 
 subcollection: apiconnect
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial, API Connect V5
 
 ---
 
@@ -17,7 +17,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Managing API and Product versions
+# Managing API and Product versions in API Connect V5
 {: #tut_manage_version_landing}
 
 After publishing an API and the product that contains it, API providers typically need to update those products and APIs. Updating an API product can happen in different ways; for example:  

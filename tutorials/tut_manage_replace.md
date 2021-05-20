@@ -1,12 +1,12 @@
 ---
 
 copyright:
-  years: 2019
+  years: 2019, 2021
 lastupdated: "2017-3-15"
 
 subcollection: apiconnect
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial, API Connect V5
 
 ---
 
@@ -25,7 +25,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 
 ## Objective
 {: #object_tut_manage_replace}
-In this tutorial, you will update an existing API product by replacing it with a newer one. When an API product is replaced, the changes take effect immediately and all application subscriptions are updated automatically.  
+In this tutorial, you will update an existing API product by replacing it with a newer one in API Connect V5. When an API product is replaced, the changes take effect immediately and all application subscriptions are updated automatically.  
 
 ---
 ## Prerequisites

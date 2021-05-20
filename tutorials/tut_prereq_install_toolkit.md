@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017, 2021
 lastupdated: "2017-10-31"
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials, API Connect V5
 
 subcollection: apiconnect
 
@@ -16,7 +16,7 @@ subcollection: apiconnect
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Installing the API Connect Toolkit
+# Installing the API Connect V5 Toolkit
 {: #tut_prereq_install_toolkit}
 
 **Duration**: 15 mins  

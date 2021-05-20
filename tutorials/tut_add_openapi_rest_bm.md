@@ -1,11 +1,11 @@
 ---
 copyright:
-  years: 2019
+  years: 2019, 2021
 lastupdated: "2019-3-9"
 
 subcollection: apiconnect
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+keywords: IBM Cloud, APIs, API Connect V5, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
 
 ---
 
@@ -23,7 +23,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 ## Objective
 {: #object_tut_add_openapi_rest_bm}
 
-This tutorial helps you get started quickly with {{site.data.keyword.apiconnect_full}}. You will build a new API in a few minutes that acts as a pass-through API proxy for an existing REST service.  The API that you build provides security and monitoring.
+This tutorial helps you get started quickly with {{site.data.keyword.apiconnect_full}} V5. You will build a new API in a few minutes that acts as a pass-through API proxy for an existing REST service.  The API that you build provides security and monitoring.
 
 ## Prerequisite
 {: #prereq_tut_add_openapi_rest_bm}

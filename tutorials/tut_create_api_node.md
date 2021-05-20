@@ -1,11 +1,11 @@
 ---
 copyright:
-  years: 2018
-lastupdated: "2018-02-22"
+  years: 2018,2021
+lastupdated: "2020-12-21"
 
 subcollection: apiconnect
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial, API Connect V5
 
 ---
 
@@ -27,10 +27,9 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 ## Objective
 {: #object_tut_create_api_node}
 
-This tutorial guides you through creating an API in Node.js using the LoopBack framework. The tutorial describes how to:
+This tutorial guides you through creating an API in Node.js using the LoopBack framework with API Connect V5. The tutorial describes how to:
 1. Create a LoopBack project.
 2. Use API Designer in the {{site.data.keyword.apiconnect_full}} toolkit to add a data source and model to a LoopBack project.
-3. Use API Designer Explore tool to test your API endpoints .
 
 ---
 ## Prerequisites
@@ -184,80 +183,12 @@ This completes adding a data source and model to the weather-data LoopBack proje
 
 ---
 
-## Test your LoopBack project
-{: #test_tut_create_api_node}
-
-Skip to step 2 if you did not exit {{site.data.keyword.apiconnect_short}} designer after completing the "Add a model and data source" section.
-{: note}
-	
-To test your API endpoints using API Designer Explore tool, complete the following steps:
-1. From the command line, enter the following command:
-	```bash
-	apic edit
-	```
-	After a brief pause, the console displays this message:
-	```bash
-	Express server listening on http://127.0.0.1:9000
-	```
-	API Designer opens in your default web browser, initially displaying the login page if you haven't logged in recently.
-	
-2. Start the local test servers.
-	a. In the test console at the bottom of the screen, click the **Start the servers** icon ![](images/test-icon.png):
-	![](images/start-server-1.png)
-	b. Wait until the "Running" message is displayed:
-	![](images/running-server-1.png)
-
-	Depending on your project configuration and whether other processes are running, different port numbers might be displayed.
-3. Click `http://127.0.0.1:port_number` to display the API root endpoint. For the default LoopBack (empty or hello-world) project, you'll see something like this:
-	```bash
-	{"started":"2017-05-24T19:21:47.807Z","uptime":80.876}
-	```
-	To stop your project, click ![Stop the servers icon](images/stop-icon.png "Stop the servers icon"):
-	
-	To restart it, click ![Restart the servers icon](images/restart-icon.png "Restart the servers icon"):
-	
-4. Click ![Explore icon](images/explore-icon.png "Explore icon") to see API Designer Explore tool. The sidebar shows all of the REST operations for the LoopBack models in the API. Models that are based on PersistedModel by default have a [standard set of create, read, update, and delete operations](http://loopback.io/doc/en/lb2/PersistedModel-REST-API){: external} as explained in the LoopBack documentation.
-
-5. Click the operation **weather.create** in the left pane to display the endpoint.
-![](images/explore-test-1.png)
-The center pane displays summary information about the endpoint, including its parameters, security, model instance data, and response codes. The right pane provides template code to call the endpoint using the curl command, and languages such as Ruby, Python, Java, and Node.
-
-6. To test the REST endpoints in API Designer Explore tool, complete the following steps:
-    1. If there is an `id` data element, remove it from the generated data.
-	
-	2. On the right pane, click **Try it**.  
-	
-	2. Scroll down to **Parameters**, and click **Generate** to generate some dummy data. By default, the generated data includes the `zip_code`, `current_temperature`, `current_humidity`, `tonight_temperature_low`, `tonight_temperature_high`, `tonight_humidity_low`, and `tonight_humidity_high` properties.
-	
-	3. Click **Call operation**.
-	![](images/explore-test-2.png)
-	
-   _Troubleshooting:_
-   
-   If you see an error message due to an untrusted certificate for localhost, click the link provided in the error message in API Designer Explore tool to accept the certificate, then proceed to call the operations in your web browser. The exact procedure depends on the web browser you are using. If you load the REST endpoints directly in your browser, you will see the message: {"name":"PreFlowError","message":"unable to process the request"}. You must use API Designer Explore tool to test REST endpoints in your browser because it includes the requisite headers and other request parameters.
-
-   If you see a response code of **422 - Unprocessable Entity** with the following payload:
-   ![](images/explore-test-3.png)
-
-   then make sure that there is not an `id` data element in the generated data. Run the test again.
-
-   If you see the error **failed to parse request body**, remove the comma following the last `humidity_high` number.
-
-7. Edit the values in the JSON shown in the **data** section. Try changing the generated dummy data, and click **Call operation** again. You should see the request and response parameters, along with the JSON instance data that you entered.
-![](images/explore-test-4.png)
-
-8. To confirm that the operation added a model instance, click **weather.find**. Click **Call operation** to display all weather instances. For example (with two model instances):
-
-	![](images/explore-test-5.png)
----
-
-### What you accomplished in this tutorial
+## What you accomplished in this tutorial
 {: #conclusion_tut_create_api_node}
 
 In this tutorial, you completed the following:
 1. Created a LoopBack project using the {{site.data.keyword.apiconnect_short}} toolkit command line.
 2. Added a model and data source to a LoopBack project by using API Designer in {{site.data.keyword.apiconnect_short}} toolkit.
-3. Tested your API endpoints by using API Designer Explore tool.
 
 
 ---

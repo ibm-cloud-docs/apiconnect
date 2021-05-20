@@ -1,12 +1,12 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017, 2021
 lastupdated: "2017-11-20"
 
 subcollection: apiconnect
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial, API Connect V5
 
 ---
 
@@ -25,7 +25,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 ## Objective
 {: #object_tut_discover_apis}
 
-In this tutorial, you will learn how a portal user might consume the APIs in the {{site.data.keyword.apiconnect_full}} Developer Portal. You will gain an understanding of how a portal user would explore products and APIs, view and test APIs, and subscribe to APIs. 
+In this tutorial, you will learn how a portal user might consume the APIs in the {{site.data.keyword.apiconnect_full}} V5 Developer Portal. You will gain an understanding of how a portal user would explore products and APIs, view and test APIs, and subscribe to APIs. 
 
 ## Prerequisite
 {: #prereq_tut_discover_apis}

@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017, 2021
 lastupdated: "2017-10-31"
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials, API Connect V5
 
 subcollection: apiconnect
 
@@ -17,7 +17,7 @@ subcollection: apiconnect
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Managing a REST Service
+# Managing a REST Service in API Connect V5
 {: #tut_rest_landing}
 
 These tutorials provide options on how you can manage existing APIs.

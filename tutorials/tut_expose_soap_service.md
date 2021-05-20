@@ -1,7 +1,7 @@
 ---
 
 copyright:
-years: 2019
+years: 2019, 2021
 lastupdated: "2019-3-12"
 
 subcollection: apiconnect
@@ -27,7 +27,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 ## Objective
 {: #object_tut_expose_soap_service}
 
-In API Manager, create a REST API that accesses an existing SOAP Service and expose it as a REST API.
+In the API Connect V5 API Manager, create a REST API that accesses an existing SOAP Service and expose it as a REST API.
 
 ## Prerequisites
 {: #prereq_tut_expose_soap_service}

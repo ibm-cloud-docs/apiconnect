@@ -1,12 +1,12 @@
 ---
 
 copyright:
-  years: 2019
+  years: 2019, 2021
 lastupdated: "2019-3-14"
 
 subcollection: apiconnect
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial, API Connect V5
 
 ---
 
@@ -25,7 +25,7 @@ Skill level: Beginner
 ## Objective
 {: #object_tut_secure_oauth_2}
 
-This tutorial will guide you through securing your API using a two-legged OAuth 2.0 flow. In this application flow, the OAuth client initiates a request with the authorization server, and received an access token. The OAuth client can then use the token to access protected resources through your API.
+This tutorial will guide you through securing your API using a two-legged OAuth 2.0 flow in API Connect V5. In this application flow, the OAuth client initiates a request with the authorization server, and received an access token. The OAuth client can then use the token to access protected resources through your API.
 
 ## Prerequisites
 {: #prereq_tut_secure_oauth_2}

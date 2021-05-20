@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017, 2021
 lastupdated: "2017-11-02"
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials, API Connect V5
 
 subcollection: apiconnect
 
@@ -16,7 +16,7 @@ subcollection: apiconnect
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Setting up rate limits
+# Setting up rate limits in API Connect V5
 {: #tut_rate_limit}
 
 **Duration**: 15 mins  

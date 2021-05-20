@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017, 2021
 lastupdated: "2017-10-31"
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials, API Connect V5
 
 subcollection: apiconnect
 
@@ -27,7 +27,7 @@ subcollection: apiconnect
 
 ## Objective
 {: #object_tut_secure_id_secret_bm}
-This tutorial guides you through securing your API with a Client ID and a Client Secret. When applications are registered in your Developer Portal, a Client ID is generated to identify the application. Optionally, a Client Secret (which serves as a password) can also be generated. Applications need to supply the Client ID and Client Secret keys when they call your API.
+This tutorial guides you through securing your API in API Connect V5 with a Client ID and a Client Secret. When applications are registered in your Developer Portal, a Client ID is generated to identify the application. Optionally, a Client Secret (which serves as a password) can also be generated. Applications need to supply the Client ID and Client Secret keys when they call your API.
 
 
 ## Prerequisites

@@ -1,12 +1,12 @@
 ---
 
 copyright:
-  years: 2019
+  years: 2019, 2021
 lastupdated: "2019-3-15"
 
 subcollection: apiconnect
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial, API Connect V5
 
 
 ---
@@ -25,7 +25,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 
 ## Objective
 {: #object_tut_manage_remove}
-In this tutorial, you will delete, archive, and retire an API.
+In this tutorial, you will delete, archive, and retire an API in API Connect V5.
 
 ---
 ## Prerequisites

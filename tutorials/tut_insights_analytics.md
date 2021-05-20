@@ -1,12 +1,12 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017, 2021
 lastupdated: "2017-12-15"
 
 subcollection: apiconnect
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial, API Connect V5
 
 ---
 
@@ -25,7 +25,7 @@ Skill level: Beginner
 ## Objective
 {: #object_tut_insights_analytics}
 
-This is a basic introduction to API analytics in {{site.data.keyword.apiconnect_full}}. We'll tour the available analytics dashboards, and you can follow along with your own APIs.
+This is a basic introduction to API analytics in {{site.data.keyword.apiconnect_full}} V5. We'll tour the available analytics dashboards, and you can follow along with your own APIs.
 
 
 ## Prerequisites

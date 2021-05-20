@@ -1,12 +1,12 @@
 ---
 
 copyright:
-  years: 2019
+  years: 2019, 2021
 lastupdated: "2017-3-18"
 
 subcollection: apiconnect
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial, API Connect V5
 
 
 ---
@@ -26,7 +26,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 ## Objective
 {: #object_tut_manage_supercede}
 
-In this tutorial, you will supersede an existing API with a new one.
+In this tutorial, you will supersede an existing API with a new one in API Connect V5.
 
 ---
 ## Prerequisites

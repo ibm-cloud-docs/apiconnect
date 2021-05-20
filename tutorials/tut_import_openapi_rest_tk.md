@@ -1,12 +1,12 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-31"
+  years: 2017, 2021, 2021
+lastupdated: "2020-12-21"
 
 subcollection: apiconnect
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial, API Connect V5
 
 ---
 
@@ -26,7 +26,7 @@ Skill level: Beginner
 ## Objective
 {: #object_tut_import_openapi_rest_tk}
 
-This tutorial illustrates how you can bring your existing API under management control with {{site.data.keyword.apiconnect_full}}. In this tutorial, you will import an OpenAPI spec, and create a passthrough API proxy for an existing REST service.
+This tutorial illustrates how you can bring your existing API under management control with {{site.data.keyword.apiconnect_full}} V5. In this tutorial, you will import an OpenAPI spec, and create a passthrough API proxy for an existing REST service.
 
 ## Prerequisites
 {: #prereq_tut_import_openapi_rest_tk}
@@ -53,8 +53,6 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 
   ![](images/explore-weatherapp-3.png)
 
-
-
 ---
 
 ## Import the sample app's OpenAPI spec to create a REST API proxy
@@ -76,30 +74,6 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 
 After you import the OpenAPI spec, you are taken to the Design view of the API. Here you can view various sections of the OpenAPI definition. Scroll to explore, and especially note the Host value. Also you can view the OpenAPI under the Source tab. 
 _You'll see that the Host value is set to _ `$(catalog.host)` _. This is the base URL for your API proxy._
- 
-
-
-## Test your API proxy
-{: #test_tut_import_openapi_rest_tk}
-
-1. Start the local test server by selecting the **Start servers** icon. When the Gateway is started, you will see the status update automatically to _**Running**_.
-    ![](images/screenshot_start-server-1.png)
-
-2. Select the **Assemble** tab.
-
-3. Click the play icon (>) to test your API proxy's target invocation.
-   _For this tutorial, we will use the embedded Micro Gateway, so ensure **Micro Gateway Policies** is selected.
-    ![](images/screenshot_test-0.png)
-
-4. In the test panel:
-  - Select the **get /current** operation.  
-  - Zipcode is a required parameter for this operation, so enter a valid U.S. zip code (for example, 90210).  
-  - Select **invoke**, and verify the response.
-
-    _If you run into a CORS error, follow the instructions in the error message. Click the link in the error to add the exception to your browser, and then click **invoke** again.
-  
-  - The expected response is a **200 OK** response and the current weather data for zip code 90210.
-    ![](images/screenshot_test-1.png)    
 
 
 ## Conclusion

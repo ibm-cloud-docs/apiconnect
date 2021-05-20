@@ -1,12 +1,12 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017, 2021
 lastupdated: "2017-10-31"
 
 subcollection: apiconnect
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial, API Connect V5
 
 ---
 
@@ -26,7 +26,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 ## Objective
 {: #object_tut_custom_dev_portal}
 
-This tutorial helps you to quickly customize your {{site.data.keyword.apiconnect_full}} Developer Portal and select a theme that suits your needs.
+This tutorial helps you to quickly customize your {{site.data.keyword.apiconnect_full}} V5 Developer Portal and select a theme that suits your needs.
 
 ---
 

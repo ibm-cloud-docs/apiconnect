@@ -1,12 +1,12 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-11-02"
+  years: 2017, 2021, 2021
+lastupdated: "2020-12-21"
 
 subcollection: apiconnect
 
-keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial
+keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorial, API Connect V5
 
 ---
 
@@ -25,7 +25,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 ## Objective
 {: #object_tut_add_openapi_rest_tk}
 
-This tutorial helps you get started quickly with {{site.data.keyword.apiconnect_full}} by illustrating how you can bring your existing API under management control. You'll start by creating a new OpenAPI spec, and then create a pass-through API proxy for an existing REST service.
+This tutorial helps you get started quickly with {{site.data.keyword.apiconnect_full}} V5 by illustrating how you can bring your existing API under management control. You'll start by creating a new OpenAPI spec, and then create a pass-through API proxy for an existing REST service.
 
 ## Prerequisite
 {: #prereq_tut_add_openapi_rest_tk}
@@ -154,31 +154,6 @@ _(We'll visit security with API Keys in the next tutorial.)_
 ---
 
 ## Test your API proxy
-{: #test_tut_add_openapi_rest_tk}
-
-### Test with the _API Manager test tool_
-{: #test_apimgr_tut_add_openapi_rest_tk}
-
-1. Start the local test server by clicking the start servers icon (>). When the Gateway starts, you'll see the status update to "Running".
-
-    ![](images/screenshot_start-server-1.png)
-
-2. In the **Assemble** tab, click the play icon (>) to test your API proxy’s target invocation. _For this tutorial, we'll use the embedded Micro Gateway, so ensure that **Micro Gateway Policies** is selected._
-
-    ![](images/screenshot_test-0.png)
-
-3. In the test panel, select the **get /current** operation.  
-  a. `zipcode` is a required parameter for this operation, so enter a valid US zip code (for example, 90210).  
-  b. Click **invoke**, and verify that you see:
-  ```
-  200 OK response
-  Current weather data for 90210  
-  ```
-    ![](images/screenshot_test-2.png)  
-
-_If you run into a CORS error, follow the instructions in the error message. Click the link in the error to add the exception to your browser, and then hit the "invoke" button again._
-
-### Test with the _Explore tool_
 {: #test_explore_tut_add_openapi_rest_tk}
 
 1. To test your API proxy endpoints, select _Explore_.
