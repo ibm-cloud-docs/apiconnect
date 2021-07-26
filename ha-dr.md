@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2020-10-15"
+lastupdated: "2021-07-26"
 
 keywords: API management, HA, high availability, disaster recovery, downtime, down time, failure, catasrophe, region, multizone region, MZR
 
@@ -23,7 +23,7 @@ subcollection: apiconnect
 {{site.data.keyword.cloud_notm}} provides high-availability and disaster-recovery solutions to ensure that your APIs remain accessible.
 {: shortdesc}
 
-{{site.data.keyword.apiconnect_short}} instances are deployed in either a multi-zone region (e.g. Dallas, Frankfurt, London, Sydney, Tokyo, and Washington), or a single zone region / point-of-presence (e.g. Oslo, Seoul, and Chennai). Each instance is deployed in a highly-available configuration. That is, configuration data is replicated onto more than one server and multiple instances of each component are simultaneously active. This provides resiliency in the event of failures within a datacenter or rack.
+{{site.data.keyword.apiconnect_short}} instances are deployed in multi-zone regions (e.g. Dallas, Frankfurt, London, Sydney, Tokyo, and Washington). Each instance is deployed in a highly-available configuration. That is, configuration data is replicated onto more than one server and multiple instances of each component are simultaneously active. This provides resiliency in the event of failures within a datacenter or rack.
 
 In multi-zone regions, instance members are distributed across different data centers, or zones.
 In single-zone regions, instance members are distributed across different hosts within the same data center.
