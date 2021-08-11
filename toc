@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 {:external: target="_blank" .external}
 
-{: .toc subcollection="apiconnect" version="2" category="integration" audience="service" href="/docs/apiconnect?topic=apiconnect-getting-started" console-page="/apis/services" product-page="https://www.ibm.com/cloud/api-connect" path="apiconnect"}
+{: .toc subcollection="apiconnect" category="integration" audience="service" href="/docs/apiconnect?topic=apiconnect-getting-started" console-page="/apis/services" product-page="https://www.ibm.com/cloud/api-connect" path="apiconnect"}
 API Connect
      
     {: .navgroup id="learn"}
