@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2021, 2021
-lastupdated: "2019-12-31"
+   years: 2017, 2021
+lastupdated: "2021-06-01"
 
 keywords: IBM Cloud, API Connect, API management, APIs, API, manage, API Connect Enterprise, API Connect Hybrid
 
@@ -31,6 +31,9 @@ If you are a customer, you can manage how it is used within the API Manager UI a
 ## Exposing on-premises APIs through a Secure Gateway
 {: #expose_apis_sec_gate-managing_apis}
 
+IBM Cloud Secure Gateway is deprecated and replaced with [IBM Cloud Satellite](https://www.ibm.com/cloud/satellite){: external}. For more information, see the [IBM Cloud Secure Gateway Deprecation](https://www.ibm.com/cloud/blog/ibm-cloud-secure-gateway-deprecation){: external} notice.
+{: note}
+
 You can create a secure gateway to securely expose on-premises APIs to {{site.data.keyword.apiconnect_full}}.
 
 When you create a secure gateway and then provide a target address for its client or Cloud `<host>:<port>`, you integrate the features of the {{site.data.keyword.cloud_notm}} {{site.data.keyword.SecureGateway}} service with {{site.data.keyword.apiconnect_short}}. This means that you have a secure way to access your on-premises APIs from {{site.data.keyword.apiconnect_short}} through a secure passage. Effectively you create a tunnel to {{site.data.keyword.apiconnect_short}} on a public environment without exposing your on-premises data. All that you need to do is create and configure the secure gateway service on IBM Cloud and provide an address for it in an API.
@@ -41,7 +44,7 @@ For more information about the {{site.data.keyword.SecureGateway}} service, and 
 {: #using_sec_gate_apis-managing_apis notoc}
 
 When you have configured the gateway, you can use it with your APIs.
-{:shortdesc}
+{: shortdesc}
 
 To use your secure gateway with APIs, complete the following steps.
 
@@ -50,7 +53,7 @@ To use your secure gateway with APIs, complete the following steps.
    
    **IMPORTANT**: Do not publish the Product yet.
 
-  The API is displayed in the `Design` View.
+   The API is displayed in the `Design` View.
   
 2. Click **Assemble**.
 
@@ -127,21 +130,21 @@ product**.
 
 6. Select the {{site.data.keyword.cloud_notm}} **Organization** that you want to publish to.
 
-7.  A list of Catalogs is displayed. Select the Catalog that you want to publish to.
+7. A list of Catalogs is displayed. Select the Catalog that you want to publish to.
 
-8.  Click **Next**.
+8. Click **Next**.
 
 9. Select the LoopBack application that you want to publish.
    If this is the first time that you are deploying the run time to {{site.data.keyword.cloud_notm}}, add a name and click the **Add** icon.
 
-10.  Click **Save**.
+10. Click **Save**.
 
-11.  Click **Publish** again and select **Publish application**.
+11. Click **Publish** again and select **Publish application**.
 
-12.  Click **Publish**.
+12. Click **Publish**.
 
 13. In the command line, the API Target URL and API invoke tls-profile is specified for the API.
-   Make a note of this information. The API invoke tls-profile is always `client:Loopback-client`, but you can retrieve the API Target URL as described in the following step.
+    Make a note of this information. The API invoke tls-profile is always `client:Loopback-client`, but you can retrieve the API Target URL as described in the following step.
     ```
     Deploying to IBM Cloud
     ...preparing project
@@ -163,13 +166,13 @@ product**.
     5. Select **DataPower Gateway policies**.
     6. Click **Save** to save the API.
 
-15.  Next, you need to publish to the API Manager. Click **Publish**.
+15. Next, you need to publish to the API Manager. Click **Publish**.
     1. Select **Publish application** then choose one of the following options:
-	    - **Replace existing app**: If you have a published application, select this option to overwrite the existing app.
+	     - **Replace existing app**: If you have a published application, select this option to overwrite the existing app.
         - **As a brand new app (using the existing route)**: Select this option to create a new app and provide a name for it in the **New app** field. The service is not interrupted.
 
     2. Select the following options:
-	    - Stage or Publish products
+	     - Stage or Publish products
         - Select specific products
         - _your product_
  
@@ -203,7 +206,7 @@ Complete the following steps to create your Catalog:
 2. Click **+ Add** > **Catalog **.
    The **Add Catalog** window is displayed.
 
-3.  Enter the name of your new Catalog in the **Display Name** field.
+3. Enter the name of your new Catalog in the **Display Name** field.
 
 4. Enter the text that you want to form the Catalog segment of the URL, in the
    **Name** field.
@@ -239,8 +242,8 @@ Complete the following steps to create your Catalog:
          **Notes:**
          - You must configure a DNS entry that maps your custom host name and domain to the default gateway URL.
 	     - For the endpoints of an API to reflect your custom gateway URL, you must configure the API to be enforced by the API Connect gateway. For more information, see [Specifying an alternative host for an API](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html#task_tq2_11r_xt__enforce_step){: external}.
-         - Ensure that the same custom gateway URL is not applied to multiple Catalogs as the behavior in that scenario is undefined.
-	     - When you call the API, you can also set the HTTP host header on the API request to the value that you specified in the Custom Gateway URL field.
+      - Ensure that the same custom gateway URL is not applied to multiple Catalogs as the behavior in that scenario is undefined.
+	   - When you call the API, you can also set the HTTP host header on the API request to the value that you specified in the Custom Gateway URL field.
 
       - **Custom API URL**
 	    In the Custom API URL text field, enter the URL. You use the Custom API URL to specify the URL for APIs that are deployed to a third party gateway.

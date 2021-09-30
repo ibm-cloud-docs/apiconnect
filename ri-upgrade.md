@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2020, 2021, 2021
+   years: 2020, 2021
 lastupdated: "2021-02-12"
 
 keywords: IBM Cloud, API Connect, V10, Reserved instance, lifecycle, develop, create, manage, API, user, role, access, group, upgrade
@@ -28,6 +28,7 @@ You can perform an upgrade of your {{site.data.keyword.apiconnect_short}} Reserv
 
 ## Is an upgrade available?
 {: #avail_ri-upgrade}
+
 When an upgrade is available for your Reserved instance, the "(Upgrade available)" message displays on the {{site.data.keyword.apiconnect_short}} services page, next to the instance's status. 
 
 To learn more about the upgrade, click the overflow menu on the same row of the services table, and select **Apply upgrade**.

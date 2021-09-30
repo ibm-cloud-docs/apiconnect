@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021, 2021
+   years: 2017, 2021
 lastupdated: "2020-08-27"
 
 keywords: IBM Cloud, API Connect, API management, API, APIs, lifecycle, troubleshooting, trouble, troubleshoot, API Connect Enterprise, API Connect Hybrid
@@ -56,6 +56,7 @@ Possible issue with the server, which might be corrected with a fresh login.
 
 Take these steps:
  {: tsResolve}
+
 1. Log out.
 1. Wait several minutes to ensure the logout operation completes.
 1. Log in again and try to complete the tasks.
@@ -69,6 +70,7 @@ After you provision the {{site.data.keyword.apiconnect_short}} service, you try 
 
 The following errors are displayed during the developer toolkit installation:
 {: tsSymptoms}
+
 ```
 npm ERR! Error: EACCES, mkdir '/usr/local/lib/node_modules/apiconnect'
 ...
@@ -81,6 +83,7 @@ You don't have the required rights to create files or directories.
 
 Change the rights for the specified directories, or run the command using `sudo`.
 {: tsResolve}
+
 On a local development system, it is better to fix the directory rights as follows:
 ```
 sudo chown -R $USER /usr/local
@@ -125,6 +128,7 @@ After you provision the {{site.data.keyword.apiconnect_short}} service, you try 
 
 The following errors are displayed during the developer toolkit installation:
 {: tsSymptoms}
+
 ```
 Agreeing to the Xcode/iOS license requires admin 
 privileges, please re-run as root via sudo
@@ -134,6 +138,7 @@ You recently upgraded or installed Xcode and have not agreed to the license yet.
 
 1. Enter the following command to validate your Xcode license:
 {: tsResolve}
+
 ```
 sudo xcode-select
 ```
@@ -149,6 +154,7 @@ After you provision the {{site.data.keyword.apiconnect_short}} service, you try 
 
 The following errors are displayed during the developer toolkit installation:
 {: tsSymptoms}
+
 ```
 sqlite3@3.1.1 install /usr/local/lib/node_modules/strong-pm/node_modules/minkelite/node_modules/sqlite3 
 node-pre-gyp install --fallback-to-build 
@@ -161,6 +167,7 @@ npm ERR! not ok code 0
 
 Enter the following command to resolve the problem:
 {: tsResolve}
+
 ```
 $ update-alternatives --install /usr/bin/node node /usr/bin/nodejs 99
 ```
@@ -183,6 +190,7 @@ You enter the command `apic edit` and the API Designer does not open.
 
 You are unable to open an instance of the API Designer after you enter the command:
 {: tsSymptoms}
+
 ```
 apic edit
 ```
@@ -211,8 +219,8 @@ Terminate Batch job (Y/N)?
 
 Some of the billing information is not available to configure or commit to production.
 
-  - When you look at the Admin section of your Product, the Billing tab is not displayed. {: tsSymptoms}
-  - When you try to publish a Product with the billing information specified, you get an error. 
+- When you look at the Admin section of your Product, the Billing tab is not displayed. {: tsSymptoms}
+- When you try to publish a Product with the billing information specified, you get an error. 
 
 You must have the correct {{site.data.keyword.apiconnect_short}} account and permissions to enable billing information.
 {: tsCauses}
@@ -245,4 +253,4 @@ When using the forums to ask a question, tag your question so that it is seen by
 - For questions about the service and getting stated instructions, use the IBM DeveloperWorks dW Answers forum. Include the "ibm cloud" and "api connect" tags.
 See Getting help for more details about using the forums. 
 
-For information about opening an IBM support ticket, or about support levels and ticket severities, see Contacting support.
+For information about opening an IBM support ticket, or about support levels and ticket severities, see [Contacting support](/docs/get-support?topic=get-support-getting-customer-support).

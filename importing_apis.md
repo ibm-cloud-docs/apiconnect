@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021, 2021
+   years: 2017, 2021
 lastupdated: "2019-12-31"
 
 keywords: IBM Cloud, API Connect, API management, APIs, API, import, develop, API Connect Enterprise, API Connect Hybrid
@@ -22,7 +22,7 @@ subcollection: apiconnect
 {: #importing_apis}
 
 You can use a OpenAPI definition file to add a REST API in the Lite, Enterprise, and Hybrid plans.
-{:shortdesc}
+{: shortdesc}
 
 ## Prerequisites
 {: #prereq-importing_apis}
@@ -85,7 +85,7 @@ To create a REST API in IBM Integration Bus and import it into {{site.data.keywo
 1. Create the REST API by using IBM Integration Bus. Restriction: You can create a REST API only with the IBM Integration Toolkit, which is provided with the installed version of IBM Integration Bus.
 
    1. Create a REST API by using the IBM Integration Toolkit.
-	  For more information about how to complete the tasks for creating a REST API with IBM Integration Bus, see [Developing integration solutions by using REST APIs](https://www.ibm.com/support/knowledgecenter/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bi12016_.htm){: external} in the IBM Knowledge Center.
+	   For more information about how to complete the tasks for creating a REST API with IBM Integration Bus, see [Developing integration solutions by using REST APIs](https://www.ibm.com/support/knowledgecenter/SSMKHH_10.0.0/com.ibm.etools.mft.doc/bi12016_.htm){: external} in the IBM Knowledge Center.
 		
    2. Open the Create a REST API wizard by selecting **File** > **New** > **REST API**.
 		
@@ -198,8 +198,8 @@ following steps:
 | Port | Specifies the port number that is needed to connect to the Management Cluster, Server, or Cloud address. |
 | User ID | Specifies the authentication user name that is used for accessing the Management Cluster, Server, or Cloud address. This is most likely your IBMid, which you use to log in to {{site.data.keyword.cloud_notm}}. |
 | Password | Specifies the authentication password that is used for accessing the Management Cluster,
-  Server, or Cloud address. This is most likely your IBMid password, which you use to log in to
-  {{site.data.keyword.cloud_notm}}. |
+ Server, or Cloud address. This is most likely your IBMid password, which you use to log in to
+ {{site.data.keyword.cloud_notm}}. |
 {: caption="Table 1. Connection information for API publishing to {{site.data.keyword.apiconnect_short}}" caption-side="top"}
 
 2. Select **Load Organizations** to populate the list of organizations that are
@@ -255,10 +255,8 @@ To test the API, follow these steps:
 1. In the Assemble tab of your API, select ![Test icon](images/a_play_button.jpg "Test icon").
 2. Select **Republish product**.
 3. Select the Operation.
-4.  Enter the required parameters.
+4. Enter the required parameters.
 5. Select **Invoke**.
 6. Verify that you receive the expected response from the API.
 
 When the API definition is imported and integrated, you can manage and govern the APIs as you would with any other REST API definition. For more information about the APIs, see [Managing APIs](/docs/apiconnect?topic=apiconnect-managing_apis).
-
-

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021, 2021
+   years: 2017, 2021
 lastupdated: "2019-12-31"
 
 keywords: IBM Cloud, API Connect, API management, APIs, API, lifecycle, develop, create, API Connect Enterprise, API Connect Hybrid, API Connect Lite
@@ -133,16 +133,18 @@ x64&amp;x86 redistributable that you have installed first. If you get errors tha
 compilers are not installed, you might also need the compiler update for the Windows&trade; SDK 7.1.
 
 Enter the following command to install npm version 3:
-  ```
-  npm install -g npm
-  ```
-  {: codeblock}
-  Then ensure that the npm command uses the correct version:
-  ```
-  npm -v
-  ```
-  {: codeblock}
-  If the version shown is not 3.x.x, then edit your system PATH to ensure that `C:\Users\username\AppData\Roaming\npm` supersedes any other entries.
+    ```
+    npm install -g npm
+    ```
+{: codeblock}
+
+Then ensure that the npm command uses the correct version:
+    ```
+    npm -v
+    ```
+{: codeblock}
+
+If the version shown is not 3.x.x, then edit your system PATH to ensure that `C:\Users\username\AppData\Roaming\npm` supersedes any other entries.
 
 
 1. **Optional**:
@@ -151,10 +153,11 @@ If you are using the API Designer, open a new shell window.
 2. When you have installed the compiler tools that are required for your operating system, install
 the connector by entering the following command in the project root directory.
 
-```
-npm install --save <connector-package>
-```
+    ```
+    npm install --save <connector-package>
+    ```
 {: codeblock}
+
 where `<connector-package>` is the name of the npm package for the LoopBack connector, as shown in the Table 1:
 
 | Data source | Connector Package |
@@ -184,18 +187,19 @@ The following procedure describes how to create a LoopBack&reg; API by using the
 
 Before you begin, have the catalog
 identifier for the catalog that you want to use to hand. To get the catalog identifier, complete the
-following steps:  
+following steps: 
 
 1. Go to the {{site.data.keyword.apiconnect_short}} **Dashboard**.
 
 2. For the catalog that you want to use, click ![Chain link icon](images/chain_link_icon.png "Chain link icon") to display the catalog identifier.
 
 3. Copy the catalog identifier. For example:  
-  ```
-  apic config:set catalog=apic-catalog://<region>.apiconnect.ibmcloud.com/orgs/<username_string>-dev/catalogs/<catalog>
-  ```
-  {: codeblock}
-    where:
+```
+apic config:set catalog=apic-catalog://<region>.apiconnect.ibmcloud.com/orgs/<username_string>-dev/catalogs/<catalog>
+```
+{: codeblock}
+
+where:
 
     - `<region>` is the {{site.data.keyword.cloud_notm}} region.
 
@@ -207,16 +211,16 @@ following steps:
 To create a LoopBack API by using the CLI, complete the following steps:
 
 1. To create a project, open a command line and enter:
-  ```
-  apic loopback
-  ```
-  {: codeblock}
+```
+apic loopback
+```
+{: codeblock}
 
 2. In the prompt that follows, you are asked to name your application. Type a name then press
 **Enter**.
-  ```
-  ? What's the name of your application? (<application name>)
-  ```
+```
+? What's the name of your application? (<application name>)
+```
     
     The tool prompts you to enter the name of the directory in which to create the
     project.
@@ -228,7 +232,7 @@ To create a LoopBack API by using the CLI, complete the following steps:
 create:
 ```
 ? What kind of application do you have in mind? (Use arrow keys)
-  empty-server (An empty LoopBack API, without any configured models or datasources)
+   empty-server (An empty LoopBack API, without any configured models or datasources)
 > hello-world (A project containing a basic working example, including a memory database)
 ```
 
@@ -356,6 +360,7 @@ By default, a LoopBack; project comes configured with an in-memory data source, 
 apic create --type datasource
 ```
 {: codeblock}
+
 The tool prompts you for the name of the data source.
 ```
 ? Enter the data-source name:
@@ -456,8 +461,8 @@ cd <loopback-project-dir>
 apic login --server  <region>.apiconnect.ibmcloud.com -u <username> -p <password>
 ```
 where:
-  * `<username>` is your {{site.data.keyword.apiconnect_short}} org ID.
-  * `<password>` is your {{site.data.keyword.apiconnect_short}} password.
+   * `<username>` is your {{site.data.keyword.apiconnect_short}} org ID.
+   * `<password>` is your {{site.data.keyword.apiconnect_short}} password.
 3. Press the space bar to automatically open the **One time passcode** browser page.
 4. Click **Regenerate** and copy the one time passcode.
 5. Back in the CLI, paste the passcode to complete your login. The following message is displayed:
@@ -469,31 +474,31 @@ Logged into <region>.apiconnect.ibmcloud.com successfully
 apic organizations -s <region>.apiconnect.ibmcloud.com
 ```
 where:
-  * `<region>` is the {{site.data.keyword.cloud_notm}} region. For example:
-  * `eu` if you are using {{site.data.keyword.cloud_notm}} London.
-  * `us` if you are using {{site.data.keyword.cloud_notm}} Dallas.
-  * `au` if you are using {{site.data.keyword.cloud_notm}} Sydney.
+   * `<region>` is the {{site.data.keyword.cloud_notm}} region. For example:
+   * `eu` if you are using {{site.data.keyword.cloud_notm}} London.
+   * `us` if you are using {{site.data.keyword.cloud_notm}} Dallas.
+   * `au` if you are using {{site.data.keyword.cloud_notm}} Sydney.
 
-  If you are unsure, you can locate your region by clicking ![Avatar icon](images/i-avatar-icon.svg "Avatar icon") in the menu bar to open the Account and Support widget and check the region field.
+   If you are unsure, you can locate your region by clicking ![Avatar icon](images/i-avatar-icon.svg "Avatar icon") in the menu bar to open the Account and Support widget and check the region field.
   
 7. Enter the following command to publish your application to {{site.data.keyword.cloud_notm}}.
 ```
 apic apps:publish –app <app> -o <org> -s <region>.apiconnect.ibmcloud.com
 ```
 where:
-  * `<app>` is the name of your app
-  * `<org>` is the name of your {{site.data.keyword.cloud_notm}} organization
-  * `<region>` is the {{site.data.keyword.cloud_notm}} region
+   * `<app>` is the name of your app
+   * `<org>` is the name of your {{site.data.keyword.cloud_notm}} organization
+   * `<region>` is the {{site.data.keyword.cloud_notm}} region
 The following output is returned:
-  ```
-  ...preparing project
-  ...building package for deploy
-  ...uploading package
-  Runtime published successfully.
-  Management URL: https://<region>.cloud.ibm.com/apps/3aa7087d-b454-4e13-bbc5-8228ebe00eef
-  API target urls: apiconnect-3aa7087d-b454-4e13-bbc5-8228ebe00eef.pszetousibmcom-dev.apic.test.cloud.ibm.com/
-  API invoke tls-profile: client:Loopback-client
-  ```
+   ```
+   ...preparing project
+   ...building package for deploy
+   ...uploading package
+   Runtime published successfully.
+   Management URL: https://<region>.cloud.ibm.com/apps/3aa7087d-b454-4e13-bbc5-8228ebe00eef
+   API target urls: apiconnect-3aa7087d-b454-4e13-bbc5-8228ebe00eef.pszetousibmcom-dev.apic.test.cloud.ibm.com/
+   API invoke tls-profile: client:Loopback-client
+   ```
 
 8. Next, you must modify the Product definitions with the values that are returned during the publish time. To do this complete the following steps:
 
@@ -532,16 +537,16 @@ the developer toolkit. To check the latest version, see the [npm](https://www.np
 First, you need to create a LoopBack project using the CLI. Complete the following steps to do this:
 
 1. To create a project, open a command line and enter:
-  ```
-  apic loopback
-  ```
-  {: codeblock}
+   ```
+   apic loopback
+   ```
+   {: codeblock}
 
 2. In the prompt that follows, you are asked to name your application. Type a name then press
 **Enter**.
-  ```
-  ? What's the name of your application? (<application name>)
-  ```
+   ```
+   ? What's the name of your application? (<application name>)
+   ```
     
     The tool prompts you to enter the name of the directory in which to create the
     project.
@@ -553,7 +558,7 @@ First, you need to create a LoopBack project using the CLI. Complete the followi
 create:
 ```
 ? What kind of application do you have in mind? (Use arrow keys)
-  empty-server (An empty LoopBack API, without any configured models or datasources)
+   empty-server (An empty LoopBack API, without any configured models or datasources)
 > hello-world (A project containing a basic working example, including a memory database)
 ```
 
