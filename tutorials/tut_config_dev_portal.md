@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021
+   years: 2017, 2021
 lastupdated: "2017-10-31"
 
 subcollection: apiconnect
@@ -48,19 +48,19 @@ In this section, you will create a developer portal for a catalog.
 ![Catalog](images/12-APIC-Dashboard.png)
 
 3. In the catalog, select the **Settings** tab.  
-  ![Catalog Settings](images/13-catalog-settings.png)
+    ![Catalog Settings](images/13-catalog-settings.png)
 
 4. In the Settings tab, select **Portal**.  
-  ![Portal configuration](images/14-catalog-portal.png)
+    ![Portal configuration](images/14-catalog-portal.png)
 
 5. On the Portal Configuration page, select **IBM Developer Portal** from the Select Portal dropdown. 
-  ![IBM Developer Portal](images/15-IBM-developer-portal.png) 
+    ![IBM Developer Portal](images/15-IBM-developer-portal.png) 
 
 6. Take note of your **Portal URL**, then save your changes.  
-  ![Save settings](images/16-save-settings.png)
+    ![Save settings](images/16-save-settings.png)
   
 7. As noted in the dialog box, it typically takes a few minutes to create your developer portal. You will receive an email when it has finished. Select **OK** to acknowledge the dialog message.  
-  ![OK](images/17-OK.png)
+    ![OK](images/17-OK.png)
 
 ---
 
@@ -75,10 +75,10 @@ In this section, you will get acquainted with the developer portal you created i
 ![Login](images/22-login.png)
 
 3. Enter a new password and click **Save**.  
-  ![Enter new password](images/23-password.png)
+    ![Enter new password](images/23-password.png)
 
 4. Now that you've set your password, let's explore the developer portal, starting with **Home** at the top of the page.  
-  ![Home menu](images/24-pwsaved.png)
+    ![Home menu](images/24-pwsaved.png)
   
 | Tab              | Description          | 
 |:---------------- | -------------------- | 
@@ -92,7 +92,7 @@ In this section, you will get acquainted with the developer portal you created i
 
 Note: On the API Products page, you can select one of the products to view the Product page for an API and the available plans. It enables developers to subscribe to and view the API details. 
 
-  ![API Products](images/27-api-products.png)
+![API Products](images/27-api-products.png)
 
 ### Conclusion
 {: #conclusion_prereq_tut_config_dev_portal}

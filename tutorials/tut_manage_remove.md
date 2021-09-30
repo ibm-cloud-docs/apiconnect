@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2021
+   years: 2019, 2021
 lastupdated: "2019-3-15"
 
 subcollection: apiconnect
@@ -25,6 +25,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 
 ## Objective
 {: #object_tut_manage_remove}
+
 In this tutorial, you will delete, archive, and retire an API in API Connect V5.
 
 ---
@@ -44,7 +45,7 @@ In this tutorial, you will delete, archive, and retire an API in API Connect V5.
 2. In the {{site.data.keyword.cloud_notm}} **Dashboard**, click **Cloud Foundry Services**. Launch the {{site.data.keyword.apiconnect_short}} service. 
 3. In {{site.data.keyword.apiconnect_short}}, make sure the navigation panel is open. If not, click **>>** to open it.  
 
-  ![](images/cloud-apic-dashboard.png)
+   ![](images/cloud-apic-dashboard.png)
 
 4. Click **Sandbox** to open the Sandbox catalog. **Note**: You may need to return to the Dashboard to see the available catalogs. Also, your dashboard page may show catalogs as tiles rather than a list.
 ![](images/del-sandbox-list.png)
@@ -107,13 +108,3 @@ In this tutorial, you completed the following activities:
 2. Retired an API Product
 3. Archived an API Product
 4. Unarchived an API Product
-
----
-
-
-
-
-
-
-
-

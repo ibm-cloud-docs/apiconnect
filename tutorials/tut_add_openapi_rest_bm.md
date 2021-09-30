@@ -1,6 +1,6 @@
 ---
 copyright:
-  years: 2019, 2021
+   years: 2019, 2021
 lastupdated: "2019-3-9"
 
 subcollection: apiconnect
@@ -42,11 +42,11 @@ A sample _weather provider_ app was created for this tutorial.
 
 3. The sample weather app was built with APIs that provide the weather data. The endpoint to get the **current** weather data is `https://myweatherprovider.mybluemix.net/current?zipcode={zipcode}`. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: external}.  
 
-  ![](images/explore-weatherapp-2.png)
+   ![](images/explore-weatherapp-2.png)
 
 4. Similarly, the endpoint to get **today's** forecast data is `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`. Test it out by going to [https://myweatherprovider.mybluemix.net/today?zipcode=90210](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: external}.  
 
-  ![](images/explore-weatherapp-3.png)
+   ![](images/explore-weatherapp-3.png)
 
 
 ---
@@ -58,14 +58,14 @@ A sample _weather provider_ app was created for this tutorial.
 2. In the {{site.data.keyword.cloud_notm}} **Dashboard**, click **Cloud Foundry Services**. Launch the {{site.data.keyword.apiconnect_short}} service. 
 3. In {{site.data.keyword.apiconnect_short}}, make sure that the navigation panel is open. If not, click **>>** to open it.  
 
-  ![](images/cloud-apic-dashboard.png)
+   ![](images/cloud-apic-dashboard.png)
 
 4. Select **Drafts** in the navigation panel.
 5. In the **APIs** tab, click **Add** > **New API**.    
-  ![](images/cloud-add-api-new.png)  
+   ![](images/cloud-add-api-new.png)  
 6. In the *New API* window, enter `New Weather Provider API` for the title.
 _The Name and Base Path are auto-populated_.  
-  ![](images/bluemix-add-new-api2.png)
+   ![](images/bluemix-add-new-api2.png)
 7. Click **Create API** to complete the wizard.  
 8. After you create your API, the **Design** tab is selected. 
 9. Scroll to the **Host** panel. Enter `$(catalog.host)` as the value if the field is not automatically completed.
@@ -164,9 +164,9 @@ _The Name and Base Path are auto-populated_.
 
 2. Accept the default options in the **New Product** dialog box, and click **Create Product**. The Weather Provider API product is created and published to the Sandbox catalog. A message indicating successful product generation is displayed.  
 
-  ![](images/generate-default-product-new-weather.png) 
+   ![](images/generate-default-product-new-weather.png) 
 
-  In {{site.data.keyword.apiconnect_short}}, **Products** provide a way to group APIs that are intended for a particular use. Products are published to a **Catalog**.
+   In {{site.data.keyword.apiconnect_short}}, **Products** provide a way to group APIs that are intended for a particular use. Products are published to a **Catalog**.
 
 3. In the Assemble tab, click the play icon to test your API proxy's target invocation.
 

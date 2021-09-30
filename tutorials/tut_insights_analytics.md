@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021
+   years: 2017, 2021
 lastupdated: "2017-12-15"
 
 subcollection: apiconnect
@@ -104,12 +104,12 @@ Now, let's create a new dashboard that will provide view of API traffic patterns
     A list of available visualizations is displayed.
 
 2. Select a few visualizations to add to your dashboard.  For example:
-  * Subscribed Apps
-  * Apps per Plan 
-  * Success Rate
-  * API Calls per Day
+   * Subscribed Apps
+   * Apps per Plan 
+   * Success Rate
+   * API Calls per Day
   
-  **Tip** When you select each visualization, the selection tab blocks your dashboard view, so you may not realize that the visualization was added to the dashboard. Select one visualization at a time and close the selection tab each time to see the changes to your dashboard.
+   **Tip** When you select each visualization, the selection tab blocks your dashboard view, so you may not realize that the visualization was added to the dashboard. Select one visualization at a time and close the selection tab each time to see the changes to your dashboard.
 
 3. Click **Save** and give your dashboard a name: `Subscriber Dashboard`.
 
@@ -169,6 +169,7 @@ In this tutorial, we walked through a number of activities to help you create us
 
 ## Next step
 {: #next_tut_insights_analytics}
+
 Learn [how to manage your APIs and versioning](/docs/apiconnect/tutorials?topic=apiconnect-tut_manage_version_landing).
 
 Create > Manage > Secure > Socialize > **Analyze**  

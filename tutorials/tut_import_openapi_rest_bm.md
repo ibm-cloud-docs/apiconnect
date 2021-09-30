@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2021
+   years: 2019, 2021
 lastupdated: "2019-3-8"
 
 subcollection: apiconnect
@@ -46,11 +46,11 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 
 3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is `https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}`. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: external}.  
 
-  ![](images/explore-weatherapp-2.png)
+   ![](images/explore-weatherapp-2.png)
 
 4. Similarly, the Endpoint to get **today's** forecast data is `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`. Test it out by going to [https://myweatherprovider.mybluemix.net/today?zipcode=90210](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: external}.  
 
-  ![](images/explore-weatherapp-3.png)
+   ![](images/explore-weatherapp-3.png)
 
 
 ---
@@ -81,10 +81,10 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 {: #test_apimgr_tut_import_openapi_rest_bm}
 
 1. In the **Assemble** tab, click the icon for more actions, then select **Generate a default product**.  
-  ![](images/generate-default-product-3.png)   
+   ![](images/generate-default-product-3.png)   
 
 2. Accept the default options in the **New Product** dialog box, and click **Create Product**. The **Weather Provider API product** is created and published to the Sandbox catalog. A message indicating successful product generation is displayed.  
-  ![](images/generate-default-product-2.png)  
+   ![](images/generate-default-product-2.png)  
 
 
    In {{site.data.keyword.apiconnect_short}}, **Products** provide a way to group APIs that are intended for a particular use. Products are published to a **Catalog**.
@@ -110,7 +110,7 @@ _The Explore Tool allows users to test the correct operation of the API by enfor
 3. Select the **GET /current** operation from the palette.
 4. Select "Try it".  
 5. Enter a valid U.S. zipcode (e.g. 10504) in the test box.
-  ![](images/test-explore-2.png)
+   ![](images/test-explore-2.png)
 6. Click **Call operation** to see the response.
 
     ![](images/test-explore-3h.png)
@@ -129,4 +129,3 @@ In this tutorial, you saw how an existing REST service can be invoked through an
 Secure your API using [OAuth 2.0](/docs/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
 
 Create > **Manage** > Secure > Socialize > Analyze
-

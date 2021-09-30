@@ -1,6 +1,6 @@
 ---
 copyright:
-  years: 2018,2021
+   years: 2018, 2021
 lastupdated: "2020-12-21"
 
 subcollection: apiconnect
@@ -50,36 +50,36 @@ You can create a Loopback project with either the {{site.data.keyword.apiconnect
 {: #create_cli_tut_create_api_node}
 
 To create a LoopBack project with the {{site.data.keyword.apiconnect_short}} toolkit CLI, complete the following steps:
-1.  Run the following command to create a LoopBack application.
+1. Run the following command to create a LoopBack application.
 	```bash 
 	apic loopback
 	```
 	For this tutorial, you will create a project called weather-data.
-2.  At the prompt, enter `weather-data` as the project name and press **Enter**.
+2. At the prompt, enter `weather-data` as the project name and press **Enter**.
 	```bash
 	? What's the name of your application? weather-data
 	```
 
   	A project name can contain any characters except blank space (" "), forward slash ("/"), ampersand ("&"), at ("@"), plus ("+"), percent ("%"), and colon (":").
 	
-3.  Enter the name of the directory in which to create the project. Press **Enter** to use a directory with the same name as the project, or type a new name and press **Enter**.
+3. Enter the name of the directory in which to create the project. Press **Enter** to use a directory with the same name as the project, or type a new name and press **Enter**.
 	```bash
 	? Enter name of the directory to contain the project: weather-data
 	```
-4.  Select the version of LoopBack to use. Choose the current production version: 3.x.
+4. Select the version of LoopBack to use. Choose the current production version: 3.x.
 	```bash
 	? Which version of LoopBack would you like to use? 
   	2.x (long term support) 
 	? 3.x (current) 
 	```
-5.  Specify the kind of application that you want to create by using the arrow keys to select **empty-server**.
+5. Specify the kind of application that you want to create by using the arrow keys to select **empty-server**.
 	```bash
 	? What kind of application do you have in mind? (Use arrow keys)
 	? empty-server (An empty LoopBack API, without any configured models or datasources) 
   	hello-world (A project containing a basic working example, including a memory database) 
   	notes (A project containing a basic working example, including a memory database)
 	```
-6.  Press **Enter** to create an empty LoopBack API. 
+6. Press **Enter** to create an empty LoopBack API. 
 
 The tool displays a number of messages as it creates the project directory and adds a number of directories and files to it. It also runs npm install to install all the project dependencies, as specified in package.json. This process creates a node_modules directory and might take some time.
 
@@ -93,21 +93,21 @@ An empty LoopBack project contains the following directories:
 {: #create_apid_tut_create_api_node}
 
 To create a LoopBack project using API Designer, complete the following steps:
-1.  Run the following command to start API Designer:
+1. Run the following command to start API Designer:
 	```bash
 	apic edit
 	```
 	![](images/api-designer-1.png)
 	The command initializes the {{site.data.keyword.apiconnect_short}} toolkit and opens API Designer in the default browser.
-2.  Pin the UI navigation pane by clicking ![Navigate icon](images/navigate-to.png "Navigate icon"). When the API Manager UI navigation pane opens, click ![Pin icon](images/pinned.png "Pin icon").
-3.  In the side bar, click ![Projects Plus icon](images/add-icon.png "Projects Plus icon").
-4.  Click **Create LoopBack Project**. You'll see the **Add new LoopBack project ** dialog.
-5.  Select **empty-server** as the project template.
-6.  For **LoopBack Version**, select version 3.x (the current version).
-7.  Enter `weather-data` for the Display Name and Name fields.
-8.  For the **Project Directory**, select the `weather-data` folder created in step 1 by clicking **Browse**.
+2. Pin the UI navigation pane by clicking ![Navigate icon](images/navigate-to.png "Navigate icon"). When the API Manager UI navigation pane opens, click ![Pin icon](images/pinned.png "Pin icon").
+3. In the side bar, click ![Projects Plus icon](images/add-icon.png "Projects Plus icon").
+4. Click **Create LoopBack Project**. You'll see the **Add new LoopBack project ** dialog.
+5. Select **empty-server** as the project template.
+6. For **LoopBack Version**, select version 3.x (the current version).
+7. Enter `weather-data` for the Display Name and Name fields.
+8. For the **Project Directory**, select the `weather-data` folder created in step 1 by clicking **Browse**.
 	![](images/api-designer-2.png)
-9.  Click **Add** to add the project.
+9. Click **Add** to add the project.
 	A number of messages display in the **Add new LoopBack project** window as it creates the project directory and adds a number of directories and files to it. It also runs npm install to install all the project dependencies, as specified in package.json. This process creates a node_modules directory and might take some time.
 	
 	An empty LoopBack project contains the following directories:
@@ -199,5 +199,3 @@ In this tutorial, you completed the following:
 [Manage a REST service](/docs/apiconnect/tutorials?topic=apiconnect-tut_rest_landing) or [Manage a SOAP service](/docs/apiconnect/tutorials?topic=apiconnect-tut_manage_soap_api).
 
 Create > **Manage** > Secure > Socialize > Analyze
-
- 

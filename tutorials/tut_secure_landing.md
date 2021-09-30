@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021
+   years: 2017, 2021
 lastupdated: "2017-10-31"
 
 keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials, API Connect V5
@@ -33,11 +33,3 @@ To secure an API with a Client ID and Client Secret, you must select a method fo
 {: #tk_tut_secure_landing}
 
 - [Securing your API with Client ID and Client Secret by using the Developer Toolkit](/docs/apiconnect/tutorials?topic=apiconnect-tut_secure_id_secret_tk)
-
-
-
-
-
-
-
-

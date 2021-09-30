@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021
+   years: 2017, 2021
 lastupdated: "2017-11-02"
 
 keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials, API Connect V5

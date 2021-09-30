@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021, 2021
+   years: 2017, 2021
 lastupdated: "2020-12-21"
 
 subcollection: apiconnect
@@ -47,11 +47,11 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 
 3. The above sample weather app was built using APIs that provide the weather data. The endpoint to get the **current** weather data is `https:// myweatherprovider.mybluemix.net/current?zipcode={zipcode}`. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: external}.  
 
-  ![](images/explore-weatherapp-2.png)
+    ![](images/explore-weatherapp-2.png)
 
 4. Similarly, the Endpoint to get **today's** forecast data is `https:// myweatherprovider.mybluemix.net/today?zipcode={zipcode}`. Test it out by going to [https://myweatherprovider.mybluemix.net/today?zipcode=90210](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: external}.  
 
-  ![](images/explore-weatherapp-3.png)
+    ![](images/explore-weatherapp-3.png)
 
 ---
 
@@ -66,7 +66,7 @@ A sample _weather provider_ app has been created for this tutorial. The correspo
 5. Go to the **APIs** tab.
 6. In the APIs tab, click **Add**.
 7. From the drop-down menu, click **Import API from a file or URL**.
-   ![](images/toolkit-import-1.png)
+    ![](images/toolkit-import-1.png)
 8. There is an OpenAPI 2.0 definition of the weather API that you will use for this tutorial. In the "Import OpenAPI (Swagger)" dialog box, enter this URL:
 `https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weather-provider-api_1.yaml`.
 9. Leave the _Add a product_ option unchecked and click **Import**.  

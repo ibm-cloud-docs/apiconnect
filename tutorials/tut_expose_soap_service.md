@@ -1,7 +1,7 @@
 ---
 
 copyright:
-years: 2019, 2021
+   years: 2019, 2021
 lastupdated: "2019-3-12"
 
 subcollection: apiconnect
@@ -44,7 +44,7 @@ In the API Connect V5 API Manager, create a REST API that accesses an existing S
 2. In the {{site.data.keyword.Bluemix_notm}} **Dashboard**, click **Cloud Foundry Services**. Launch the {{site.data.keyword.apiconnect_short}} service. 
 3. In {{site.data.keyword.apiconnect_short}}, make sure the navigation panel is open. If not, click **>>** to open it.  
 
-  ![](images/cloud-apic-dashboard.png)
+    ![](images/cloud-apic-dashboard.png)
 
 4. Select **Drafts** in the navigation panel.
 5. Select **Add +** > **New API**.
@@ -70,7 +70,7 @@ In the API Connect V5 API Manager, create a REST API that accesses an existing S
 	- Click **Create API**. The **Design** tab for the draft of your API definition opens.
 9. Your API is now created. The Design page displays.
 
-   ![](images/design-new-1.png)
+    ![](images/design-new-1.png)
 
 10. Click **Definitions** on the navigation bar. Click the **Add Definition** icon ![](images/add-icon.png).
 
@@ -172,4 +172,3 @@ In this tutorial, you completed the following activities:
 [Secure your API using OAuth 2.0](/docs/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
 
 Create > **Manage** > Secure > Socialize > Analyze
-

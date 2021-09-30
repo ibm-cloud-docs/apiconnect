@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2021
+   years: 2019, 2021
 lastupdated: "2019-3-14"
 
 keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials, API Connect V5
@@ -40,13 +40,14 @@ subcollection: apiconnect
 	Already have an IBMid? Then skip the registration, and just create your free {{site.data.keyword.cloud_notm}} account at the following URL: [https://cloud.ibm.com/](https://cloud.ibm.com/){: external}.  
 
 2. When you have your IBMid and {{site.data.keyword.cloud_notm}} account, create your {{site.data.keyword.apiconnect_short}} instance.  
-  a. Log in to {{site.data.keyword.cloud_notm}} : [https://cloud.ibm.com/login](https://cloud.ibm.com/login){: external}.  
-  ![](images/cloud_login_page.png)  
-  b. Create your _organization_ in {{site.data.keyword.cloud_notm}}. You will be prompted to do this the first time that you log in.  
-  ![](images/prereqs-2.png)
-  c. Create your _space_.  
-  ![](images/prereqs-3.png)
-  d. Go to [https://cloud.ibm.com/catalog/services/api-connect](https://cloud.ibm.com/catalog/services/api-connect){: external}.  
-  ![](images/prereqs-4.png)  
-  e. Select the _Lite_ pricing plan (free), and click **Create** to get started.  
-  ![](images/lite-plan.png)  
+   a. Log in to {{site.data.keyword.cloud_notm}} : [https://cloud.ibm.com/login](https://cloud.ibm.com/login){: external}.  
+   ![](images/cloud_login_page.png)  
+   b. Create your _organization_ in {{site.data.keyword.cloud_notm}}. You will be prompted to do this the first time that you log in.  
+   ![](images/prereqs-2.png)
+   c. Create your _space_.  
+   ![](images/prereqs-3.png)
+   d. Go to [https://cloud.ibm.com/catalog/services/api-connect](https://cloud.ibm.com/catalog/services/api-connect){: external}.  
+   ![](images/prereqs-4.png)  
+   e. Select the _Lite_ pricing plan (free), and click **Create** to get started.  
+   ![](images/lite-plan.png)  
+   

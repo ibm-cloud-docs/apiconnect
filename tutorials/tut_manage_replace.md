@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2021
+   years: 2019, 2021
 lastupdated: "2017-3-15"
 
 subcollection: apiconnect
@@ -25,6 +25,7 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 
 ## Objective
 {: #object_tut_manage_replace}
+
 In this tutorial, you will update an existing API product by replacing it with a newer one in API Connect V5. When an API product is replaced, the changes take effect immediately and all application subscriptions are updated automatically.  
 
 ---
@@ -48,7 +49,7 @@ In this tutorial, you will update an existing API product by replacing it with a
 2. In the {{site.data.keyword.cloud_notm}} **Dashboard**, click **Cloud Foundry Services**. Launch the {{site.data.keyword.apiconnect_short}} service. 
 3. In {{site.data.keyword.apiconnect_short}}, make sure the navigation panel is open. If not, click **>>** to open it.  
 
-  ![](images/cloud-apic-dashboard.png)
+![](images/cloud-apic-dashboard.png)
 
 4. Click **Drafts** > **APIs**.
 
@@ -103,13 +104,3 @@ In this tutorial, you will update an existing API product by replacing it with a
 In this tutorial, you completed the following activities:
 1. Updated an API product.
 2. Replaced an existing API product with an updated API product.
-
----
-
-
-
-
-
-
-
-

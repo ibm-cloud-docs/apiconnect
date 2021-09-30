@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2021
+   years: 2019, 2021
 lastupdated: "2019-3-11"
 
 subcollection: apiconnect
@@ -36,7 +36,7 @@ Use the API Connect V5 API Manager to create a SOAP API that is a proxy for a SO
 - [Set up your {{site.data.keyword.apiconnect_short}} instance](/docs/apiconnect/tutorials?topic=apiconnect-tut_prereq_set_up_apic_instance).
 - Copy the [weatherprovider.wsdl test](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: external} file to your local file system.
 
-  Click **Raw** and then save the page on your local system as a `.wsdl` file.
+   Click **Raw** and then save the page on your local system as a `.wsdl` file.
 
 ---
 ## Setting up a SOAP API definition
@@ -49,23 +49,23 @@ Use the API Connect V5 API Manager to create a SOAP API that is a proxy for a SO
 5. Select **Drafts** in the navigation panel.   
 
 6. In the menu, select **API from a SOAP service**.
-  ![New API](images/newapi-menu2.png "[New API")
+   ![New API](images/newapi-menu2.png "[New API")
 
 7. The New API from WSDL dialog box opens. Click **Upload File**.
-  ![Upload the .wsdl file](images/4-uploadwsdl.png "Upload the .wsdl file")
+   ![Upload the .wsdl file](images/4-uploadwsdl.png "Upload the .wsdl file")
 
 8. Select the `weatherprovider.wsdl` file that you saved previously.
 
 9. The New API from WSDL dialog box reappears. Check the **weatherService** check box. Click **Done**.
-  ![Select weather service](images/newapi2.png "Select weather service")
+   ![Select weather service](images/newapi2.png "Select weather service")
 
 10. The Design view of the API opens. 
-  ![API Editor page](images/designpage2.png "API Editor page")
+   ![API Editor page](images/designpage2.png "API Editor page")
 
 11. Click ![Save](images/save.png "Save icon") icon to save your changes. An "API Saved" confirmation notification appears momentarily.
 
 12. In the page header, the **Design** tab indicates your present location. The **Source** tab displays the OopenAPI file that represents your API, and the **Assemble** tab provides a graphical interface for API processing. Click **Assemble**.
-  ![Assemble tab](images/assemble-clean.png "Assemble tab")  
+   ![Assemble tab](images/assemble-clean.png "Assemble tab")  
 
 ## Testing the SOAP API definition
 {: #test_tut_manage_soap_api}
@@ -74,39 +74,39 @@ Use the API Connect V5 API Manager to create a SOAP API that is a proxy for a SO
    ![More actions menu, open](images/gen-default-prod.png "More actions menu, open")
 
 2. Accept the default options in the **New Product** dialog pop-up, and select **Create Product**. The **weatherService product 1.0.0** is created and published to the default Sandbox catalog.  
-  ![Create a product](images/12a-chooseproduct.png "Create a product")
+   ![Create a product](images/12a-chooseproduct.png "Create a product")
  
-  In {{site.data.keyword.apiconnect_short}}, **Products** provides a mechanism to group APIs that are intended for a particular use. Products are published to a **Catalog**.
+   In {{site.data.keyword.apiconnect_short}}, **Products** provides a mechanism to group APIs that are intended for a particular use. Products are published to a **Catalog**.
   
 3. Save your changes.  
 
 4. Click the test icon to test the API service. The Setup menu appears.
 
 5. From the Products list, select `weatherService product 1.0.0`.  
-  ![Select weather service](images/12-chooseproduct.png "Select weather service")
+   ![Select weather service](images/12-chooseproduct.png "Select weather service")
 
 6. Click **Next**.
 
 7. In the list of Operations, select `post /weatherRequest`.  
-  ![Post a request](images/13-selectoperation.png "Post a request")
+   ![Post a request](images/13-selectoperation.png "Post a request")
 
 8. Enter the following xml in the body field. You can select and copy the following example XML, then click the **body** field to activate the field and paste the example XML.  
-  ```
-  <?xml version="1.0" encoding="UTF-8"?>
-  <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   ```
+   <?xml version="1.0" encoding="UTF-8"?>
+   <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
    <soap:Body>
-  <wdata:WeatherRequest xmlns:wdata="http://www.ibm.com/wdata">
+   <wdata:WeatherRequest xmlns:wdata="http://www.ibm.com/wdata">
        <zipcode>10504</zipcode>
-  </wdata:WeatherRequest>
-   </soap:Body>
-  </soap:Envelope>
-  ```
+   </wdata:WeatherRequest>
+    </soap:Body>
+   </soap:Envelope>
+   ```
  
-  ![The request](images/14-enterrequest.png "The request")
+   ![The request](images/14-enterrequest.png "The request")
 
 9. Click **Invoke**.
 The API returns a Response **body** that contains information about the current weather.  
-  ![](images/15-success.png)
+   ![](images/15-success.png)
 
 ## Conclusion
 {: #conclusion_tut_manage_soap_api}

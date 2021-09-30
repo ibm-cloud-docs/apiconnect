@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021
+   years: 2017, 2021
 lastupdated: "2017-10-31"
 
 keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials, API Connect V5
@@ -27,6 +27,7 @@ subcollection: apiconnect
 
 ## Objective
 {: #object_tut_secure_id_secret_bm}
+
 This tutorial guides you through securing your API in API Connect V5 with a Client ID and a Client Secret. When applications are registered in your Developer Portal, a Client ID is generated to identify the application. Optionally, a Client Secret (which serves as a password) can also be generated. Applications need to supply the Client ID and Client Secret keys when they call your API.
 
 
@@ -69,7 +70,7 @@ Before you begin, complete one of the following tutorials:
 1. In the Assemble tab, click the Test icon to test your changes.
 
 2. In the Test page's Setup panel, click **Republish product** to get the latest changes. 
-  This option updates your API product, and also publishes it to the Sandbox catalog.
+   This option updates your API product, and also publishes it to the Sandbox catalog.
 
 3. When the product is republished, click the **get /current** operation in the test panel.
 4. Look in the Test panel, and notice that the Client ID and Client Secret values have already been populated. 
@@ -78,7 +79,7 @@ Before you begin, complete one of the following tutorials:
    The Client ID and Client Secret keys can also be found under Dashboard > Catalog > Settings > Endpoints. 
    {: Note}
   
-  ![](images/test_api_keys_1.png)
+   ![](images/test_api_keys_1.png)
 
 5. Enter a valid US zip code (for example, 90210). 
 6. Click **Invoke**.

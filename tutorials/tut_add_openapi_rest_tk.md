@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021, 2021
+   years: 2017, 2021
 lastupdated: "2020-12-21"
 
 subcollection: apiconnect
@@ -45,11 +45,11 @@ A sample _weather provider_ app was created for this tutorial.
 
 3. The sample weather app was built with APIs that provide the weather data. The endpoint to get the **current** weather data is _**https:// myweatherprovider<span></span>.mybluemix.net/current?zipcode={zipcode}**_. Test it out by visiting [https://myweatherprovider.mybluemix.net/current?zipcode=90210](https://myweatherprovider.mybluemix.net/current?zipcode=90210){: external}.  
 
-  ![](images/explore-weatherapp-2.png)
+    ![](images/explore-weatherapp-2.png)
 
 4. Similarly, the endpoint to get **today's** forecast data is `https:// myweatherprovider<span></span>.mybluemix.net/today?zipcode={zipcode}`. Test it out by going to [https://myweatherprovider.mybluemix.net/today?zipcode=90210](https://myweatherprovider.mybluemix.net/today?zipcode=90210){: external}.  
 
-  ![](images/explore-weatherapp-3.png)
+    ![](images/explore-weatherapp-3.png)
 
 ---
 
@@ -59,10 +59,10 @@ A sample _weather provider_ app was created for this tutorial.
 1. Launch the **API Designer**. In your terminal, enter `apic edit`.
 2. Log in using your IBMid.
     ![](images/screenshot_apic-edit_login.png)
-3.   In the API Designer, ensure that the navigation panel is open. If not, click >> to open it. In the **API Designer** navigation panel, select **Drafts > APIs**.
+3.  In the API Designer, ensure that the navigation panel is open. If not, click >> to open it. In the **API Designer** navigation panel, select **Drafts > APIs**.
 4. In the **APIs** panel, select **Add > New API**.
 5. In the New API window, enter "Weather Provider API" for the title. _The Name and Base Path are auto-populated_.  
-  ![](images/toolkit-add-new-api.png)   
+    ![](images/toolkit-add-new-api.png)   
 6. Click **Create API** to complete the wizard.  
 
 7. After your API is created, the **Design** tab is selected.
@@ -73,9 +73,9 @@ A sample _weather provider_ app was created for this tutorial.
 _(We'll visit security with API Keys in the next tutorial.)_  
 
 10. In the **Paths** panel, create a path by clicking **+**.
-  a. Name the new path "**/current**".  
-  b. In the same **Paths** panel, select the **GET /current** section.  
-  c. In the **GET /current** section, add a **Parameter**. As you noticed while exploring the sample app, the weather service requires zipcode as a parameter.
+    a. Name the new path "**/current**".  
+    b. In the same **Paths** panel, select the **GET /current** section.  
+    c. In the **GET /current** section, add a **Parameter**. As you noticed while exploring the sample app, the weather service requires zipcode as a parameter.
       - Name: `zipcode`  
       - Located in: Query  
       - Required: Yes  
@@ -85,10 +85,10 @@ _(We'll visit security with API Keys in the next tutorial.)_
 
 11. With your query parameters defined in the previous step, you are ready to define the response object, which is returned when you invoke the weather API. Scroll to the **Definitions** panel.
 
-  1. Add a new definition. 
-  2. Name the new definition _Current_.
-  3. Set the Type of _Object_.
-  4. Add new properties for the **Current** definition as shown in Table 1.
+    1. Add a new definition. 
+    2. Name the new definition _Current_.
+    3. Set the Type of _Object_.
+    4. Add new properties for the **Current** definition as shown in Table 1.
 	   |    Name    |   Type   |
 	   | ---------- | -------- |
 	   |zip         |string    |
@@ -100,12 +100,12 @@ _(We'll visit security with API Keys in the next tutorial.)_
 
     ![](images/definition-current-1.png)
 
-  5. Save your API.  
+    5. Save your API.  
 
 12. In the previous step, you defined the response object. Next you'll need to ensure the response object is associated with the **get /current** path. In the navigation, scroll back up to the **Paths** panel.
-  a. Open the **GET /current** operation, and scroll to the **Responses** section.
-  b. Change the schema of the 200OK response from "object" to "**Current**".
-  c. Save your API.
+    a. Open the **GET /current** operation, and scroll to the **Responses** section.
+    b. Change the schema of the 200OK response from "object" to "**Current**".
+    c. Save your API.
 
 13. The GET /current path and operation get the current weather data. Now you'll need to create a similar path and operation to get today's weather data. Similar to how you created the **/current** path in step 11, create a new path: **/today**. 
 
@@ -160,7 +160,7 @@ _(We'll visit security with API Keys in the next tutorial.)_
 2. Select the **GET /current** operation from the palette.
 3. Enter a valid US zip code (for example, 90210) in the test box.
 4. Click **Call operation** to see the response.  
-  ![](images/screenshot_explore.png)  
+    ![](images/screenshot_explore.png)  
   
 ---
 
@@ -177,4 +177,3 @@ In this tutorial, you saw how an existing REST service can be invoked through an
 Secure your API using [rate limiting](/docs/apiconnect/tutorials?topic=apiconnect-tut_rate_limit), [client ID and secret](/docs/apiconnect/tutorials?topic=apiconnect-tut_secure_landing), or [securing using OAuth 2.0](/docs/apiconnect/tutorials?topic=apiconnect-tut_secure_oauth_2).
 
 Create > **Manage** > Secure > Socialize > Analyze
-

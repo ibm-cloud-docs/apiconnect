@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2021
+   years: 2019, 2021
 lastupdated: "2017-3-18"
 
 subcollection: apiconnect
@@ -45,7 +45,7 @@ In this tutorial, you will supersede an existing API with a new one in API Conne
 2. In the {{site.data.keyword.cloud_notm}} **Dashboard**, click **Cloud Foundry Services**. Launch the {{site.data.keyword.apiconnect_short}} service. 
 3. In {{site.data.keyword.apiconnect_short}}, make sure the navigation panel is open. If not, click **>>** to open it.  
 
-  ![](images/cloud-apic-dashboard.png)
+![](images/cloud-apic-dashboard.png)
 
 4. Click **Drafts** > **APIs**.
 
@@ -118,13 +118,3 @@ In this tutorial, you completed the following activities:
 1. Updated an API product.
 2. Superceded an existing API product with an updated API Product.
 3. Migrated the subscription to the existing API Product to the updated API Product.
-
----
-
-
-
-
-
-
-
-

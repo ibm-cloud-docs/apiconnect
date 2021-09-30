@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021
+   years: 2017, 2021
 lastupdated: "2017-10-31"
 
 keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal, tutorials, API Connect V5
@@ -92,7 +92,7 @@ Before you begin, complete one of the following tutorials:
 7. Replace the Client ID with a random value.
 8. Run the test again by clicking **Invoke**. 
    This time, you receive the `401 Unauthorized` response with the message "Client ID not registered". 
-  ![](images/test_api_keys_3.png)  
+   ![](images/test_api_keys_3.png)  
   
 
 ## Call your API using the Client ID and Client Secret

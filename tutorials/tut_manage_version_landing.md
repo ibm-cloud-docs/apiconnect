@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021
+   years: 2017, 2021
 lastupdated: "2017-10-10"
 
 subcollection: apiconnect
@@ -37,11 +37,3 @@ In this series of tutorials, you will move API products through all of these sta
 1. [Replace an API product](/docs/apiconnect/tutorials?topic=apiconnect-tut_manage_replace).
 2. [Supersede an API product](/docs/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede).
 3. [Archive and delete an API product](/docs/apiconnect/tutorials?topic=apiconnect-tut_manage_remove).
-
-
-
-
-
-
-
-
