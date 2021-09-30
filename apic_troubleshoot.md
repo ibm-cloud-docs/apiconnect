@@ -88,7 +88,7 @@ On a local development system, it is better to fix the directory rights as follo
 ```
 sudo chown -R $USER /usr/local
 ```
-{:codeblock}
+{: codeblock}
 
 This command makes your user account the owner of the `/usr/local` directory. Then, you will not need to use sudo to install Node or install packages globally with npm. 
     **Note:** Changing directory ownership is appropriate only on a local development system. Never do this on a server system.
@@ -99,7 +99,7 @@ If you have to use `sudo`, use the following command:
 ```
 sudo npm install -g --unsafe-perm install apiconnect
 ```
-{:codeblock}
+{: codeblock}
 
 ## Unable to install the developer toolkit on Windows
 {: #unable_tk_win-apic_troubleshoot}
@@ -142,7 +142,7 @@ You recently upgraded or installed Xcode and have not agreed to the license yet.
 ```
 sudo xcode-select
 ```
-{:codeblock}
+{: codeblock}
 
 2. Reinstall the developer toolkit.
 

@@ -526,7 +526,7 @@ The following output is returned:
 {: #create_lb_api_design-creating_apis}
 
 The following procedure describes how to create a LoopBack API by using the API Designer.
-{:shortdesc}
+{: shortdesc}
 
 ### Prerequisites
 {: #prereq_create_lb_api_design-creating_apis}
@@ -719,7 +719,7 @@ npm rm -g apiconnect
 ```
 npm cache clean
 ```
-{:codeblock}
+{: codeblock}
   
 If you are using Windows:
 
