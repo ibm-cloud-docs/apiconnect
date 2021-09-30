@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2020, 2021
+   years: 2020, 2021
 lastupdated: "2020-10-15"
 
 keywords: API management, API, gateway, support, responsibility, responsible
@@ -63,4 +63,3 @@ Most of the responsibility for {{site.data.keyword.apiconnect_short}} features i
 | Rate limiting       | Define appropriate rate limiting rules via the {{site.data.keyword.apiconnect_short}} Product and API YAML specifications | Enforce rate limits |
 | API management | Configure {{site.data.keyword.apiconnect_short}} using the provided interfaces and supported design specifications. | Host, provision, integrate, and implement your APIs using your {{site.data.keyword.apiconnect_short}}-compatible specifications |
 {: caption="Table 2. Feature responsibility" caption-side="top"}
-

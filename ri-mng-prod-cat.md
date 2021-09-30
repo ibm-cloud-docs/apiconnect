@@ -90,4 +90,3 @@ Restrict a product to specific consumers or endpoints, or remove a product from 
 - [Deprecate a product](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/task_deprecate_product.html){: external}
 - [Retire a product](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/task_retire_product.html){: external}
 - [Remove a product](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/task_unpublish_product.html){: external}
-

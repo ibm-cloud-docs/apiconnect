@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021, 2021
+   years: 2017, 2021
 lastupdated: "2017-09-05"
 
 keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev portal
@@ -28,7 +28,7 @@ click **Explore APIs**.
 The Developer Portal opens and you can subscribe to a Plan to access an
 API. 
 
-  **Note**: If the Plan that you select has billing, you must provide a credit card number for your organization. That requires that you have owner privileges.
+   **Note**: If the Plan that you select has billing, you must provide a credit card number for your organization. That requires that you have owner privileges.
 
 ## Viewing and testing APIs in the Developer Portal
 {: #view_test_apis_dev_port}
@@ -83,7 +83,7 @@ The Use this Plan dialog box is displayed.
 **Save**.
 The application details are displayed.
 
-  **Note**: If the Plan that you select has billing, you must provide a credit card number for your organization. That requires that you have owner privileges.
+   **Note**: If the Plan that you select has billing, you must provide a credit card number for your organization. That requires that you have owner privileges.
 
 6. To view the operations for the APIs that are included in the Plans to which the application is
 subscribed, click the name of the API.
@@ -91,6 +91,3 @@ subscribed, click the name of the API.
 7. If the Plan is not restricted, you can use it immediately. If the Plan is restricted, the Plan
 is shown as `Pending Approval`, and you cannot use the requested Plan until the administrator
 approves your request.
-
-
-

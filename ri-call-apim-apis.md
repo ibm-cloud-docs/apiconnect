@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2021
+   years: 2021
 lastupdated: "2021-03-15"
 
 keywords: IBM Cloud, API Connect, Reserved, authentication, IAM, access management, API key, token service, CLI
@@ -72,21 +72,21 @@ The API key does not expire; however, after you close the message box, you canno
 API keys are used as the method of authentication to your service, so they must be kept secure. The following best practices help you maintain a secure API key and reduce the chance of publicly exposing credentials that compromise your application.
 
 - Use an API key with the role that is appropriate for the function that you are using.
-  When you create an application, consider using an API key with the role Reader for all calls to GET API methods. The Reader role can't perform any destructive or additive functions to the service instance.
+   When you create an application, consider using an API key with the role Reader for all calls to GET API methods. The Reader role can't perform any destructive or additive functions to the service instance.
 
 - Do not embed the API key directly in code.
-  API keys that are embedded in code might be exposed to your users. Instead of embedding the API keys in your application code, consider storing them either in environment variables or in files outside of your source code control system.
+   API keys that are embedded in code might be exposed to your users. Instead of embedding the API keys in your application code, consider storing them either in environment variables or in files outside of your source code control system.
 
 - Do not store an API key in files inside your application's source code control system.
-  If you store API keys in files, keep the files outside of your application's source code. This practice is important if you use a public source-code management system such as GitHub.
+   If you store API keys in files, keep the files outside of your application's source code. This practice is important if you use a public source-code management system such as GitHub.
 
 - Regenerate your API keys periodically.
-  You can create new credentials at any time.
+   You can create new credentials at any time.
 
-  1. From the resource list, select a service instance.
-  2. In the navigation list, click **Service credentials**.
+   1. From the resource list, select a service instance.
+   2. In the navigation list, click **Service credentials**.
 
-  When you migrate your application to the new credentials, don't forget to delete the old credentials.
+   When you migrate your application to the new credentials, don't forget to delete the old credentials.
 
 ### Exchange the API key for an IBM Cloud IAM access token
 {: #iam-token_ri-call-apim-apis}
@@ -95,11 +95,11 @@ To exchange your API key for an IAM access token, use the following command:
 
 ```
 curl -X POST \
-  "https://iam.cloud.ibm.com/identity/token" \
-  --header 'Content-Type: application/x-www-form-urlencoded' \
-  --header 'Accept: application/json' \
-  --data-urlencode 'grant_type=urn:ibm:params:oauth:grant-type:apikey' \
-  --data-urlencode 'apikey={api_key}'
+   "https://iam.cloud.ibm.com/identity/token" \
+   --header 'Content-Type: application/x-www-form-urlencoded' \
+   --header 'Accept: application/json' \
+   --data-urlencode 'grant_type=urn:ibm:params:oauth:grant-type:apikey' \
+   --data-urlencode 'apikey={api_key}'
 ```
   
 where `{api_key}` is the value of your API key. The response looks like the following example:
@@ -112,9 +112,9 @@ Now you can use the IAM access token in your API calls; for example:
 
 ```
 curl https://{api_host}/api/orgs \
-  -H "Accept: application/json" \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer _access-token-value_"
+   -H "Accept: application/json" \
+   -H "Content-Type: application/json" \
+   -H "Authorization: Bearer _access-token-value_"
 
 {
   "total_results": 2,

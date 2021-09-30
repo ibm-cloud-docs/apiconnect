@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2020, 2021
+   years: 2020, 2021
 lastupdated: "2020-10-15"
 
 keywords: management, Reserved instance
@@ -40,4 +40,3 @@ In particular, API developers should review the following topics:
 - [Securing an API](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/tapim_sec_api_config.html){: external}
 - [Testing an API](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/test_api_overview.html){: external}
 - [Developing products](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/capim_products.html){: external}
-

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2020, 2021
+   years: 2020, 2021
 lastupdated: "2020-10-15"
 
 keywords: management, Reserved plan, develop, manage, use, publish, socialize, customer, consumer, lifecycle
@@ -29,7 +29,7 @@ subcollection: apiconnect
 ## Managing the API lifecycle in {{site.data.keyword.apiconnect_short}}
 {: #lifecycle_ri-user-over}
 
-{{site.data.keyword.apiconnect_short}} enables you to manage the lifecyle of your APIs with a set of integrated features. Use the  {{site.data.keyword.apiconnect_short}} Reserved plan to host your APIs in the cloud and easily complete the tasks needed for all phases of an API's life:
+{{site.data.keyword.apiconnect_short}} enables you to manage the lifecyle of your APIs with a set of integrated features. Use the {{site.data.keyword.apiconnect_short}} Reserved plan to host your APIs in the cloud and easily complete the tasks needed for all phases of an API's life:
 
 - Develop APIs, bundle them into consumable products, and deploy them to production environments.
 

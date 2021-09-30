@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021, 2021
+   years: 2017, 2021
 lastupdated: "2019-12-31"
 
 keywords: IBM Cloud, API Connect, API management, APIs, API, lifecycle, intro, API Connect Enterprise, API Connect Hybrid, API Connect Lite
@@ -54,6 +54,17 @@ If you already have an IBMid, you can use it to register with {{site.data.keywor
 
 When you want to return to your service later, open your Resource listing in the {{site.data.keyword.cloud_notm}} [Dashboard](https://cloud.ibm.com/resources){: external}, look in the **Cloud Foundry services** section, and click your {{site.data.keyword.apiconnect_short}} service.
 {: tip}
+
+## Referencing your region in URLs
+{: #regions_getting-started-v5}
+
+When a command requires you to include the URL that points to your service instance, include the region where your instance is deployed; for example:
+
+- api.us-south.apiconnect.appdomain.cloud
+- api.us-east.apiconnect.appdomain.cloud			
+- api.eu-gb.apiconnect.appdomain.cloud
+- api.eu-de.apiconnect.appdomain.cloud
+- api.au-syd.apiconnect.appdomain.cloud	
 
 
 ## Where would you like to begin?

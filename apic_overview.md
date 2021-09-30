@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2017, 2021, 2021
+   years: 2017, 2021
 lastupdated: "2019-12-31"
 
-keywords: IBM Cloud, API Connect, API management, API, APIs, lifecycle, catalog, manage, toolkit, develop, overview, API Connect Enterprise, API Connect Hybrid
+keywords: API Connect, API management, API, lifecycle, catalog, manage, toolkit, develop, overview, API Connect Enterprise, API Connect Hybrid
 
 subcollection: apiconnect
 
@@ -92,7 +92,7 @@ As well as controlling which APIs a customer can use, different Plans can be use
 
 Finally, different Plans can be used to assign a billing cost. A Plan can be set as a free Plan, or as a Plan with billing. Plans with billing can be used with rate limits to set different levels of service to customers. For example, a "Demo Plan" might enforce a rate limit of 10 calls per minute for a cost of $5 per month, while a "Full Plan" might permit up to 1000 calls per minute for a cost of $20 per month.
 
-**Note:**  Applying a rate limit at the Plan level, creates a default rate limit that applies to each operation within the Plan. If you need to set specific rate limits for specific operations, you must set them within the operations themselves and this setting overrides the setting at the Plan level.
+**Note:** Applying a rate limit at the Plan level, creates a default rate limit that applies to each operation within the Plan. If you need to set specific rate limits for specific operations, you must set them within the operations themselves and this setting overrides the setting at the Plan level.
 
 IBM API Connect also supports the implementation of multiple versions of Products. You can choose version numbers and use them to aid the development of your Products and Plans.
 

@@ -1,0 +1,123 @@
+toc:
+  properties:
+    subcollection: apiconnect
+    version: 2
+    category: integration
+    audience: service
+    href: /docs/apiconnect
+    console-page: /apis/services
+    product-page: https://www.ibm.com/cloud/api-connect
+    path: apiconnect
+    label: API Connect
+
+  entries:
+  - navgroup:
+      id: learn
+      topics:
+      - getting-started.md
+      - getting-started-admin.md
+      - getting-started-v5.md
+
+  - navgroup:
+      id: tutorial
+      topics:
+      - ri-tutorials-portal.md
+      - topicgroup:
+          label: API Connect V5 tutorials
+          topics:
+          - tutorials/tut_create_api_node.md
+          - tutorials/tut_rest_landing.md
+          - tutorials/tut_import_openapi_rest_bm.md
+          - tutorials/tut_add_openapi_rest_bm.md
+          - tutorials/tut_import_openapi_rest_tk.md
+          - tutorials/tut_add_openapi_rest_tk.md
+          - tutorials/tut_prereq_install_toolkit.md
+          - tutorials/tut_prereq_set_up_apic_instance.md
+          - tutorials/tut_expose_soap_service.md
+          - tutorials/tut_manage_soap_api.md
+          - tutorials/tut_secure_landing.md
+          - tutorials/tut_secure_id_secret_bm.md
+          - tutorials/tut_secure_id_secret_tk.md
+          - tutorials/tut_rate_limit.md
+          - tutorials/tut_secure_oauth_2.md
+          - tutorials/tut_insights_analytics.md
+          - tutorials/tut_manage_version_landing.md
+          - tutorials/tut_manage_replace.md
+          - tutorials/tut_manage_supercede.md
+          - tutorials/tut_manage_remove.md
+          - tutorials/tut_discover_apis.md
+          - tutorials/tut_config_dev_portal.md
+          - tutorials/tut_custom_dev_portal.md
+
+  - navgroup:
+      id: howto
+      topics:
+      - topicgroup:
+          label: Using API Connect Reserved
+          topics:
+          - ri-user-over.md
+          - ri-develop-api.md
+          - ri-mng-prod-cat.md
+          - ri-analytics.md
+          - ri-devportal.md
+          - ri-call-apim-apis.md
+      - topicgroup:
+          label: Administering API Connect Reserved
+          topics:
+          - ri-admin-over.md
+          - ri-mng-users.md
+          - ri-reg-gwy.md
+          - ri-mng-gwy.md
+      - topicgroup:
+          label: Enhancing security
+          topics:
+          - iam.md
+      - topicgroup:
+          label: Logging and monitoring
+          topics:
+          - at-events.md
+          - ri-logs.md
+      - topicgroup:
+          label: Using API Connect V5
+          topics:
+          - apic_overview.md
+          - creating_apis.md
+          - importing_apis.md
+          - managing_apis.md
+          - managing_products.md
+          - create_catalog.md
+          - explore_apis.md
+          - call_apim_apis.md
+
+  - navgroup:
+      id: reference
+      topics:
+      - responsibilities.md
+      - ha-dr.md
+      - link:
+          label: Accessibility features
+          href: https://cloud.ibm.com/docs/overview?topic=overview-accessibility-platform
+      - topicgroup:
+          label: Related links
+          topics:
+          - link:
+              label: Learn about API Connect
+              href: https://cloud.ibm.com/apis/overview
+          - link:
+              label: Why use API Connect?
+              href: https://developer.ibm.com/apiconnect/
+          - link:
+              label: Documentation for API Connect V10 Reserved (knowledge center)
+              href: https://www.ibm.com/docs/en/api-connect/10_reserved_instance
+          - link:
+              label: Documentation for API Connect V5 Cloud (knowledge center)
+              href: https://www.ibm.com/docs/en/acfc
+
+  - navgroup:
+      id: help
+      topics:
+      - get_help.md
+      - topicgroup:
+          label: Troubleshooting V5
+          topics:
+          - apic_troubleshoot.md

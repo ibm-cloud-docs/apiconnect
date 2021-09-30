@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2020, 2021
+   years: 2020, 2021
 lastupdated: "2020-10-15"
 
 keywords: management, Reserved instance

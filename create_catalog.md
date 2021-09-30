@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021, 2021
+   years: 2017, 2021
 lastupdated: "2020-02-24"
 
 keywords: IBM Cloud, API Connect, API management, API, APIs, lifecycle, catalog, API Connect Enterprise, API Connect Hybrid
@@ -34,7 +34,7 @@ Complete the following steps to create your Catalog:
 2. Click **+ Add** > **Catalog**.
 The **Add Catalog** window is displayed.
 
-3.  Enter the name of your new Catalog in the **Display Name** field.
+3. Enter the name of your new Catalog in the **Display Name** field.
 
 4. Enter the text that you want to form the Catalog segment of the URL, in the
 **Name** field.
@@ -118,9 +118,9 @@ Catalog in which you require syndication capabilities.
 To enable Spaces in a Catalog, complete the following steps:
 1. On the Dashboard of the API Manager UI, select the Catalog that you want to work with.
 
-1. Click **Settings** > **Overview**, and click the **Spaces** slider control.
+2. Click **Settings** > **Overview**, and click the **Spaces** slider control.
 
-1. In the **Enable Spaces** window, click **Enable**, then click ![Save icon](images/icon_save.png "Save icon").
+3. In the **Enable Spaces** window, click **Enable**, then click ![Save icon](images/icon_save.png "Save icon").
 A **Manage spaces** link is displayed beneath the **Spaces** slider control, and a **Spaces** link is added to
 the navigation list. You can manage your Spaces by clicking either of these links.
 

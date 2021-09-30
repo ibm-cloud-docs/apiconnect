@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2021, 2021
+   years: 2017, 2021
 lastupdated: "2019-12-31"
 
 keywords: IBM Cloud, API Connect, API management, APIs, API, products, lifecycle, API Connect Enterprise, API Connect Hybrid
@@ -177,7 +177,7 @@ limit that you want to apply. If the **Enforce hard limit** check box is selecte
 the Plan will stop applications from calling the API after reaching the rate limit, otherwise a
 warning will be presented.
 
-- Click the **Save** icon  to save your changes.
+- Click the **Save** icon to save your changes.
 
 You have created a Product, and specified a set of APIs and Plans into one offering that you
 can now make available to your developers.
@@ -229,7 +229,7 @@ Your Product has been staged to a Catalog. To view the state of the Product in t
 the API Manager UI, select the Dashboard section in the navigation list, and click on the required
 Catalog. The Product is shown with a state of Staged.
 
-- Open the {{site.data.keyword.cloud_notm}} **Dashboard**. You will see the application tile in the Applications section.
+Open the {{site.data.keyword.cloud_notm}} **Dashboard**. You will see the application tile in the Applications section.
 
 Open the API Manager to publish your product to a community where application developers can access it through the Developer Portal as explained in the next section, Publishing a Product.
 
@@ -255,7 +255,7 @@ the Products available in that Catalog are displayed. You can select which state
 the filter check boxes on the right of the screen.
 
 2. Alongside the Product version that you want to work with, click the
-**Manage** icon  and then click **Publish**. The Edit
+**Manage** icon and then click **Publish**. The Edit
 visibility and subscribers dialog box is displayed.
 
 3. Specify the following options:
@@ -345,5 +345,5 @@ approval is not required, the Product version is published immediately, and move
 state.
 
 Your product is displayed in the **Explore APIs** tab of the {{site.data.keyword.apiconnect_short}}
-**Dashboard**. If you click the Product  link, it will take you to the Product in
+**Dashboard**. If you click the Product link, it will take you to the Product in
 the Developer Portal.
