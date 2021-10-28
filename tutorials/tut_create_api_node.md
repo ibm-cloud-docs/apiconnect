@@ -1,4 +1,5 @@
 ---
+
 copyright:
    years: 2018, 2021
 lastupdated: "2020-12-21"
@@ -16,39 +17,36 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 {:pre: .pre}
 {:note: .note}
 
-
-# Creating an API in Node.js
-{: #tut_create_api_node}
+ 
+# Creating an API in Node.js 
+{: #tut_create_api_node} 
 
 **Duration**: 20 mins  
 **Skill level**: Beginner  
-
----
-## Objective
-{: #object_tut_create_api_node}
-
+ 
+## Objective 
+{: #object_tut_create_api_node} 
+ 
 This tutorial guides you through creating an API in Node.js using the LoopBack framework with API Connect V5. The tutorial describes how to:
 1. Create a LoopBack project.
 2. Use API Designer in the {{site.data.keyword.apiconnect_full}} toolkit to add a data source and model to a LoopBack project.
-
----
-## Prerequisites
-{: #prereq_tut_create_api_node}
-
+ 
+## Prerequisites 
+{: #prereq_tut_create_api_node} 
+ 
 Before you begin, [install the {{site.data.keyword.apiconnect_short}} toolkit](/docs/apiconnect/tutorials?topic=apiconnect-tut_prereq_install_toolkit) version 5.0.8.1, or later. Check the version of an existing toolkit by opening a command window and running the following command::
 	```
 	apic -v
 	```
-
----
-## Create a Loopback project
-{: #create_tut_create_api_node}
-
+ 
+## Create a Loopback project 
+{: #create_tut_create_api_node} 
+ 
 You can create a Loopback project with either the {{site.data.keyword.apiconnect_short}} developer toolkit command line interface (CLI) or API Designer interface. 
  
 ### Create a LoopBack project with the toolkit CLI
 {: #create_cli_tut_create_api_node}
-
+ 
 To create a LoopBack project with the {{site.data.keyword.apiconnect_short}} toolkit CLI, complete the following steps:
 1. Run the following command to create a LoopBack application.
 	```bash 
@@ -88,10 +86,10 @@ An empty LoopBack project contains the following directories:
 - definitions: contains YAML definition files
 - node_modules: created by node.js
 
-
+ 
 ### Create a LoopBack project using API Designer
 {: #create_apid_tut_create_api_node}
-
+ 
 To create a LoopBack project using API Designer, complete the following steps:
 1. Run the following command to start API Designer:
 	```bash
@@ -117,16 +115,15 @@ To create a LoopBack project using API Designer, complete the following steps:
 10. Click **Finished** to close the **Add new LoopBack project** dialog box.
 11. Exit API Designer by returning to the command window and entering `Ctrl + C`. Type `Y` to confirm the exit.
 12. Close the browser session.
-
----
+ 
 ## Add a data source and model
 {: #add_tut_create_api_node}
-
+ 
 To add a model and data source to a LoopBack project using API Designer, complete the following steps:
-
-### Add a data source
-{: #add_ds_tut_create_api_node}
-
+ 
+### Add a data source 
+{: #add_ds_tut_create_api_node} 
+ 
 To add a data source to a LoopBack project using API Designer, complete the following steps.
 1. You must also create a LoopBack project (the "weather-data" project) as described in `Create a LoopBack project from the command line` and make sure that the current working directory is the project root directory:
 	```bash
@@ -156,10 +153,10 @@ To add a data source to a LoopBack project using API Designer, complete the foll
 	API Designer automatically tests the connection to the data source. A successful test displays the message **Success - Data source connection test succeeded**.
 8. Click ![Test Connection icon](images/db-test-icon.png "Test Connection icon") to test the data source connection. The message "Data source connection test succeeded" is displayed.
 9. Click **All Data Sources**. The data source will appear in the list of data sources, and the editor updates the server/datasources.json file with settings for the new data source.
-
+ 
 ### Add a model
 {: #add_model_tut_create_api_node}
-
+ 
 To add a model to a LoopBack project using API Designer, complete the following steps:
 1. Click ![Models icon](images/models-icon.png "Models icon").
 2. Click **Add**. The New LoopBack Model window opens.
@@ -181,21 +178,18 @@ To add a model to a LoopBack project using API Designer, complete the following 
 
 This completes adding a data source and model to the weather-data LoopBack project.
 
----
-
+ 
 ## What you accomplished in this tutorial
 {: #conclusion_tut_create_api_node}
-
+ 
 In this tutorial, you completed the following:
 1. Created a LoopBack project using the {{site.data.keyword.apiconnect_short}} toolkit command line.
 2. Added a model and data source to a LoopBack project by using API Designer in {{site.data.keyword.apiconnect_short}} toolkit.
 
-
----
-
+ 
 ## Next step
 {: #next_tut_create_api_node}
-
+ 
 [Manage a REST service](/docs/apiconnect/tutorials?topic=apiconnect-tut_rest_landing) or [Manage a SOAP service](/docs/apiconnect/tutorials?topic=apiconnect-tut_manage_soap_api).
 
 Create > **Manage** > Secure > Socialize > Analyze

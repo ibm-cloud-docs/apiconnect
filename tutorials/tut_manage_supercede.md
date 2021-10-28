@@ -28,7 +28,6 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 
 In this tutorial, you will supersede an existing API with a new one in API Connect V5.
 
----
 ## Prerequisites
 {: #prereq_tut_manage_supercede}
 
@@ -36,7 +35,6 @@ In this tutorial, you will supersede an existing API with a new one in API Conne
 
 2. Complete the [Replace an API product tutorial](/docs/apiconnect/tutorials?topic=apiconnect-tut_manage_replace).
 
----
 
 ## Superceding an API Product
 {: #super_tut_manage_supercede}

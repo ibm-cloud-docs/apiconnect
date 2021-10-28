@@ -48,7 +48,6 @@ Complete the following tutorials to set up the prerequisite conditions for this 
 - [Secure your API with a client ID and secret](/docs/apiconnect/tutorials?topic=apiconnect-tut_secure_landing).
 
 
----
 ## Launching API Connect
 {: #launch_tut_rate_limit}
 

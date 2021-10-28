@@ -24,7 +24,6 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 **Duration**: 15 mins
 **Skill level**: Beginner
 
----
 ## Objective
 {: #object_tut_manage_soap_api}
 
@@ -38,7 +37,6 @@ Use the API Connect V5 API Manager to create a SOAP API that is a proxy for a SO
 
    Click **Raw** and then save the page on your local system as a `.wsdl` file.
 
----
 ## Setting up a SOAP API definition
 {: #setup_tut_manage_soap_api}
 
@@ -116,7 +114,6 @@ In this tutorial, you completed the following tasks:
 2. Test your API definition by invoking an API that requests weather data.
 3. Receive a Response **body** from the weather API endpoint indicating the result of your request.
 
----
 
 ## Next step
 {: #next_tut_manage_soap_api}

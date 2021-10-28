@@ -23,7 +23,6 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 **Duration**: 20 mins  
 **Skill level**: Beginner  
 
----
 ## Objective
 {: #object_tut_expose_soap_service}
 
@@ -36,7 +35,6 @@ In the API Connect V5 API Manager, create a REST API that accesses an existing S
 2. Before you begin, copy the [weatherprovider.wsdl test](https://raw.githubusercontent.com/IBM-Bluemix-Docs/apiconnect/master/tutorials/weatherprovider.wsdl){: external} file to your local file system.
 	Click **Raw** and then save the page on your local system as a `.wsdl` file.
 
----
 ## Setting up a REST API definition
 {: #setup_tut_expose_soap_service}
 
@@ -100,7 +98,6 @@ In the API Connect V5 API Manager, create a REST API that accesses an existing S
 	![](images/path-new-2.png)
 20. Click the Save icon ![](images/save-icon.png) to save your changes.
 
----
 ## Adding and configuring your web service invocation
 {: #add_web_tut_expose_soap_service}
 
@@ -136,7 +133,6 @@ To add and configure the invoke and map policies that integrate your web service
 
 You have included the web service invocation in your assembly and mapped an input parameter to the appropriate part of the SOAP request and mapped the appropriate part of the SOAP response to a JSON output.
 
----
 ## Testing your API definition
 {: #test_tut_expose_soap_service}
 
@@ -155,7 +151,6 @@ To test your API definition by using the API Manager test tool, complete the ste
 8. Click **Invoke**. The API returns the current weather.  
 	![](images/test-wdata-result.png)
 
----
 ## Conclusion
 {: #conclusion_tut_expose_soap_service}
 
@@ -164,7 +159,6 @@ In this tutorial, you completed the following activities:
 2. Configured an API to invoke an existing web service and return its output
 3. Tested your API definition
 
----
 
 ## Next step
 {: #next_tut_expose_soap_service}

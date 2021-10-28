@@ -28,7 +28,6 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 
 In this tutorial, you will update an existing API product by replacing it with a newer one in API Connect V5. When an API product is replaced, the changes take effect immediately and all application subscriptions are updated automatically.  
 
----
 ## Prerequisites
 {: #prereq_tut_manage_replace}
 
@@ -39,8 +38,6 @@ In this tutorial, you will update an existing API product by replacing it with a
     - [Import an OpenAPI2.0 spec and proxy an existing REST service](/docs/apiconnect/tutorials?topic=apiconnect-tut_rest_landing)
        **or**  
     - [Add a New API Spec and Invoke an Existing REST Service](/docs/apiconnect/tutorials?topic=apiconnect-tut_rest_landing).
-
----
 
 ## Replacing an API Product
 {: #repl_api_prod_tut_manage_replace}}

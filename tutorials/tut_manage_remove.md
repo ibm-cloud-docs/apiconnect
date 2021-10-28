@@ -28,7 +28,6 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 
 In this tutorial, you will delete, archive, and retire an API in API Connect V5.
 
----
 ## Prerequisites
 {: #prereq_tut_manage_remove}
 
@@ -36,7 +35,6 @@ In this tutorial, you will delete, archive, and retire an API in API Connect V5.
 
 2. Complete the [Supercede an API product tutorial](/docs/apiconnect/tutorials?topic=apiconnect-tut_manage_supercede).
 
----
 
 ## Deleting an API Product
 {: #delete_tut_manage_remove}
