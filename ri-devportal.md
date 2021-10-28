@@ -47,7 +47,7 @@ Communicate with your consumers, enable or disable their applications, and manag
 - [Send messages to your consumers](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/task_apionprem_send_message_consumer.html){: external}
 - [Manage consumer applications](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/manage_dev_app.html){: external}
 - [Manager consumer subscriptions](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/tapic_subscriptions_manage.html){: external}
-				
+
 ## Managing consumer accounts and access
 {: #mng-accounts_ri-portal}
 
@@ -56,7 +56,6 @@ Create and manage consumer organizations to control customer access to your deve
 - [Create consumer org](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/apionprem_manage_consumerorgs.html){: external}
 - [Create consumer org groups](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/tapic_consumer_org_groups.html){: external}
 
-				
 ## Using the Developer Portal
 {: #using_ri-portal}
 
