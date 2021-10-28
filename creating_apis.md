@@ -65,7 +65,6 @@ command.
     ```
     npm install -g apiconnect
     ```
-    {: codeblock}
 
     **Note:** During installation, you might see errors from the `node-gyp` module. These
     errors are from an optional dependency and the installation will complete successfully.
@@ -75,7 +74,6 @@ command.
     ```
     apic
     ```
-	{: codeblock}
 
 3. To view usage help for any command, use the `--help` option.
     For example:
@@ -83,7 +81,6 @@ command.
     ```
     apic validate --help
     ```
-	{: codeblock}
 	
 ## Installing LoopBack connectors
 {: #install_lb_conn-creating_apis}
@@ -136,13 +133,11 @@ Enter the following command to install npm version 3:
     ```
     npm install -g npm
     ```
-{: codeblock}
 
 Then ensure that the npm command uses the correct version:
     ```
     npm -v
     ```
-{: codeblock}
 
 If the version shown is not 3.x.x, then edit your system PATH to ensure that `C:\Users\username\AppData\Roaming\npm` supersedes any other entries.
 
@@ -156,7 +151,6 @@ the connector by entering the following command in the project root directory.
     ```
     npm install --save <connector-package>
     ```
-{: codeblock}
 
 where `<connector-package>` is the name of the npm package for the LoopBack connector, as shown in the Table 1:
 
@@ -197,7 +191,6 @@ following steps:
 ```
 apic config:set catalog=apic-catalog://<region>.apiconnect.ibmcloud.com/orgs/<username_string>-dev/catalogs/<catalog>
 ```
-{: codeblock}
 
 where:
 
@@ -214,7 +207,6 @@ To create a LoopBack API by using the CLI, complete the following steps:
 ```
 apic loopback
 ```
-{: codeblock}
 
 2. In the prompt that follows, you are asked to name your application. Type a name then press
 **Enter**.
@@ -247,13 +239,11 @@ project top-level directory. To do this, enter the following command:
     ```
     cd <project directory name>
     ```
-    {: codeblock}
 
 6. To create a model, enter the following command:
     ```
     apic create --type model
     ```
-    {: codeblock}
 
     The tool prompts you for the name of the model.
 
@@ -359,7 +349,6 @@ By default, a LoopBack; project comes configured with an in-memory data source, 
 ```
 apic create --type datasource
 ```
-{: codeblock}
 
 The tool prompts you for the name of the data source.
 ```
@@ -540,7 +529,6 @@ First, you need to create a LoopBack project using the CLI. Complete the followi
    ```
    apic loopback
    ```
-   {: codeblock}
 
 2. In the prompt that follows, you are asked to name your application. Type a name then press
 **Enter**.
@@ -713,13 +701,11 @@ apic stop --all
 ```
 npm rm -g apiconnect
 ```
-{: codeblock}
 
 3. Clear your npm cache:
 ```
 npm cache clean
 ```
-{: codeblock}
   
 If you are using Windows:
 

@@ -16,12 +16,16 @@ subcollection: apiconnect
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:note: .note}
+{:important: .important}
 
 # Getting started with {{site.data.keyword.apiconnect_short}} V5
 {: #getting-started-v5}
 
 Use {{site.data.keyword.apiconnect_full}} V5 to quickly create APIs and microservices based on Node.js and Java runtimes. 
 {: shortdesc}
+
+{{site.data.keyword.apiconnect_full}} will be temporarily pausing all new sign-ups to the Lite and Enterprise plans on 31 October 2021. If you currently have an instance of this plan provisioned, the service will not be interrupted and we will continue to support you, but you will not be able to create a new instance. New users will, instead, be directed to use the {{site.data.keyword.apiconnect_short}} V10 Reserved instance (paid service). Please do not hesitate to reach out to an IBM sales representative with any questions.
+{: important}
 
 You can manage your APIs by setting varying levels of security, visibility, billing information, and rate limits. The {{site.data.keyword.apiconnect_short}} service also lets you transform and grow your business with insights through detailed analytics with structured filtered searches.
 
