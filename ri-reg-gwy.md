@@ -32,8 +32,9 @@ You might want to deploy additional API Gateways for your Reserved instance; for
 To register a remote API Gateway with your Reserved instance, click the **Download Gateway** tile on the administration Home page, and complete the following steps:
 
 Step 1: Download - Select your environment and download the package. 
+If you use VMware and don't have a Passport Advantage contract, contact IBM Cloud Support to obtain the package.
 
-Step 2: Install - Select your environment to see the installation instructions for the gateway.
+Step 2: Install - Select your environment to see the installation instructions for the gateway. 
 
 Step 3: Configure - Follow the instructions in [Adding remote gateways in V10 Reserved](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.install.doc/ri_gwy_intro.html){: external} to set up certificates and configure the new gateway.
 
