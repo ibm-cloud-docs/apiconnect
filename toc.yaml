@@ -68,15 +68,15 @@ toc:
           - ri-mng-users.md
           - ri-reg-gwy.md
           - ri-mng-gwy.md
-      - topicgroup:
-          label: Enhancing security
-          topics:
-          - iam.md
-      - topicgroup:
-          label: Logging and monitoring
-          topics:
-          - at-events.md
-          - ri-logs.md
+          - topicgroup:
+            label: Enhancing security
+            topics:
+            - iam.md
+          - topicgroup:
+            label: Logging and monitoring
+            topics:
+            - at-events.md
+            - ri-logs.md
       - topicgroup:
           label: Using API Connect V5
           topics:
