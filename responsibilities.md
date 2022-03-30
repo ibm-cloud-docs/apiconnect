@@ -55,11 +55,12 @@ Most of the responsibility for {{site.data.keyword.apiconnect_short}} features i
 | Feature             | Your Responsibility           | IBM's Responsibility           |
 | --------------------| ----------------------------- | -------------------------------|
 | API and Product creation        | Provide REST API and API Product specifications using OpenAPI files, the {{site.data.keyword.apiconnect_short}} APIs, and the {{site.data.keyword.apiconnect_short}} user interface | Provision and deploy the REST API using the your specifications |
-| Networking      | Provide the endpoints for routing API traffic; deploy and manageremote DataPower API Gateways (if desired) | Expose the API to a public or private network via the IBM managed or a self-managed DataPower API Gateway |
+| Networking      | Provide the endpoints for routing API traffic; deploy and manage remote DataPower API Gateways (if desired) | Expose the API to a public or private network via the IBM managed or a self-managed DataPower API Gateway |
 | API subscriptions            | Enable API subscriptions as an identification/authentication method for a REST APIs and distribute appropriate keys to API subscribers | Generate and authenticate API keys |
 | API security               | Enable IBM-supported security mechanisms (e.g. OAuth provider/consumer, basic auth, etc) as an authentication method for a REST API | Protect published APIs via OAuth tokens, basic auth, etc |
 | Actions             | Configure | Integrate, generate, and activate |
 | Monitoring          | Monitor individual API uptime and configure necessary alerts | Integrate with {{site.data.keyword.cloud_notm}} Log Analysis to provide customer-accessible API operational logs |
 | Rate limiting       | Define appropriate rate limiting rules via the {{site.data.keyword.apiconnect_short}} Product and API YAML specifications | Enforce rate limits |
 | API management | Configure {{site.data.keyword.apiconnect_short}} using the provided interfaces and supported design specifications. | Host, provision, integrate, and implement your APIs using your {{site.data.keyword.apiconnect_short}}-compatible specifications |
+| Developer Portal |Configure authentication, manage Drupal modules, and administer Portal sites |Apply scheduled upgrades and fixes, and ensure the general availability of the Portal subsystem |
 {: caption="Table 2. Feature responsibility" caption-side="top"}
