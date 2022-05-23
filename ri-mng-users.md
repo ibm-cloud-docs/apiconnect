@@ -79,12 +79,12 @@ After you create a provider organization in {{site.data.keyword.apiconnect_short
 
 For each provider organization, you need to create an IAM access group and assign the appropriate permissions. To decide what type of permissions each access group (provider organization) requires, review Table 1 to see how suggested jobs in {{site.data.keyword.apiconnect_short}} map to access roles in IAM. 
 
-| {{site.data.keyword.apiconnect_short}} job | Needs this IAM role | Allowed actions |
-| ----------------- | ------------------------------------------- |
-| API Developer     | Service: Writer                    | Create, edit, and publish APIs                              |
-| API Administrator	| Service: Manager, Platform: Editor | Create, edit, and publish APIs; Full control over data within the service; Modify the service instance |
-| Product Manager	| Platform: Operator                 | Create, edit, and publish APIs |
-| Administrator	    | Platform: Administrator            | Full control of the service instance |
+| API Connect job   | Needs this IAM role                | Allowed actions                                                                                        |
+| ----------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| API Developer     | Service: Writer                    | Create, edit, and publish APIs                                                                         |
+| API Administrator | Service: Manager, Platform: Editor | Create, edit, and publish APIs; Full control over data within the service; Modify the service instance |
+| Product Manager	  | Platform: Operator                 | Create, edit, and publish APIs                                                                         |
+| Administrator     | Platform: Administrator            | Full control of the service instance                                                                   |
 {: caption="Table 1. Mapping {{site.data.keyword.apiconnect_short}} jobs to IAM roles" caption-side="top"}
 
 IAM provides roles for both the platform (the service instance itself) and the service (the product features provided in the service instance). {{site.data.keyword.apiconnect_short}} administrators and API administrators perform tasks that use the platform roles; for example, provisioning a service instance and managing user access to it. Other users perform tasks that use the service roles; for example, creating an API or viewing event analytics.
