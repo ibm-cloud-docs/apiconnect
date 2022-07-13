@@ -1,6 +1,7 @@
 toc:
   properties:
     subcollection: apiconnect
+    service-name: apiconnect
     version: 2
     category: integration
     audience: service
