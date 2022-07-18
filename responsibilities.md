@@ -47,7 +47,7 @@ While most of the {{site.data.keyword.apiconnect_short}} resources are managed b
 {: caption="Table 1. Resource responsibility" caption-side="top"}
 
 
-## Responsibility for {{site.data.keyword.apiconnect_short}} features
+## Responsibility for {{site.data.keyword.apiconnect_short}} product features
 {: #features_responsibilities}
 
 Most of the responsibility for {{site.data.keyword.apiconnect_short}} features is shared between you and IBM. Table 2 specifies each party's responsibilities for features.
