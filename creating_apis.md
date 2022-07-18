@@ -485,7 +485,7 @@ The following output is returned:
    ...uploading package
    Runtime published successfully.
    Management URL: https://<region>.cloud.ibm.com/apps/3aa7087d-b454-4e13-bbc5-8228ebe00eef
-   API target urls: apiconnect-3aa7087d-b454-4e13-bbc5-8228ebe00eef.pszetousibmcom-dev.apic.test.cloud.ibm.com/
+   API target urls: apiconnect-3aa7087d-b454-4e13-bbc5-8228ebe00eef.pszetousibmcom-dev.apic.cloud.ibm.com/
    API invoke tls-profile: client:Loopback-client
    ```
 
