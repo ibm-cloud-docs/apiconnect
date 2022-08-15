@@ -1,8 +1,8 @@
 ---
 
 copyright:
-   years: 2017, 2021
-lastupdated: "2019-12-31"
+   years: 2017, 2022
+lastupdated: "2022-08-15"
 
 keywords: IBM Cloud, API Connect, API management, APIs, API, lifecycle, intro, API Connect Enterprise, API Connect Hybrid, API Connect Lite
 
@@ -21,11 +21,14 @@ subcollection: apiconnect
 # Getting started with {{site.data.keyword.apiconnect_short}} V5
 {: #getting-started-v5}
 
-Use {{site.data.keyword.apiconnect_full}} V5 to quickly create APIs and microservices based on Node.js and Java runtimes. 
+{{site.data.keyword.apiconnect_full}} V5 is the public cloud edition of {{site.data.keyword.apiconnect_short}}.
 {: shortdesc}
 
-{{site.data.keyword.apiconnect_full}} will be temporarily pausing all new sign-ups to the Lite and Enterprise plans on 31 October 2021. If you currently have an instance of this plan provisioned, the service will not be interrupted and we will continue to support you, but you will not be able to create a new instance. New users will, instead, be directed to use the {{site.data.keyword.apiconnect_short}} V10 Reserved instance (paid service). Please do not hesitate to reach out to an IBM sales representative with any questions.
+{{site.data.keyword.apiconnect_full}} V5 will End of Support on July 31, 2023. For details, see the [End of Support announcement](/docs/apiconnect?topic=apiconnect-v5-eos).
 {: important}
+
+## Overview
+{: #overview_getting-started-v5}
 
 You can manage your APIs by setting varying levels of security, visibility, billing information, and rate limits. The {{site.data.keyword.apiconnect_short}} service also lets you transform and grow your business with insights through detailed analytics with structured filtered searches.
 

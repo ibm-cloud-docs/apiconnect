@@ -81,6 +81,7 @@ toc:
       - topicgroup:
           label: Using API Connect V5
           topics:
+          - v5-eos.md
           - apic_overview.md
           - creating_apis.md
           - importing_apis.md
