@@ -22,7 +22,7 @@ The API Connect on IBM Cloud service plans listed below will End of Support on J
 
 **Plans (Based on V5 of API Connect):**
 - Lite, Enterprise Paygo, Enterprise 25M 
-- Enterprise 1B, Professional Paygo, Professional 5M, Professional 25M 
+- Essential, Enterprise 1B, Professional Paygo, Professional 5M, Professional 25M 
 
 
 **Timeline:**
