@@ -34,7 +34,8 @@ You must assign a predefined role to each user to ensure they can access your re
 
 ![Resource hierarchy](images/ri-resource-hierarchy.png "Resource hierarchy")
 
-To grant users permissions to the {{site.data.keyword.apiconnect_short}} resources owned by a particular provider organization, add the users to that provider organization. The role that a user is assigned to for the provider organization is inherited by the catalogs within it, and by the spaces within each catalog. You can override this access at the lower levels by assigning the user to a different role. For example, if you only want the user to have Edit access in a particular space, assign the user to the Reader role for the provider organization, and then assign the user to a role with Edit access on the selected space. The user will still have only Reader access to the catalog owning the space, to all other spaces within the same catalog, and to all other catalogs and spaces owned by the provider organization.
+To grant users permissions to the {{site.data.keyword.apiconnect_short}} resources owned by a particular provider organization, add the users to that provider organization. The role that a user is assigned to for the provider organization is inherited by the catalogs within it, and by the spaces within each catalog. You can override this access at the lower levels by assigning the user to a different role. For example, if you only want the user to have Edit access in a particular space, assign the user to the Reader role for the provider organization, and then assign the user to a role with Edit access on the selected space. The user will still have only Reader access to the catalog owning the space, to all other spaces within the same catalog, and to alwildcard
+l other catalogs and spaces owned by the provider organization.
 
 At a minimum, each user must be assigned at least Reader role on the Reserved instance and on each provider organization that they are allowed to view. Then you can decide what additional roles each should be be assigned to on the provider organization and to each of the catalogs and spaces within it.
 
@@ -159,7 +160,7 @@ An IAM access policy assigns roles (each role represents a set of permissions) t
    
    - In the first list, select **string equals**.  
 	  
-   - In the second (resources) list, select or type the name of the catalog where you want to apply the access policy. You can use wildcards for strings (*) and numbers (?). For example, to apply the access to all catalogs beginning with "catalog-1" followed by a single letter (as in catalog-1a, catalog-1b), type "catalog-1*".
+   - In the second (resources) list, select or type the name of the catalog where you want to apply the access policy. You can use wildcards for strings (*) and numbers (?). For example, to apply the access to all catalogs beginning with "catalog-1" followed by any character (as in catalog-1a, catalog-1b), type "catalog-1*".
    
    Specify catalog names rather than display titles.
    
