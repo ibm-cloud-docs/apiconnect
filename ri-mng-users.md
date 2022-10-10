@@ -1,10 +1,10 @@
 ---
 
 copyright:
-   years: 2020, 2021
-lastupdated: "2020-12-22"
+   years: 2020, 2022
+lastupdated: "2022-10-01"
 
-keywords: IBM Cloud, API Connect, V10, Reserved instance, lifecycle, develop, create, manage, API, user, role, access, group
+keywords: IBM Cloud, API Connect, V10, Reserved instance, lifecycle, develop, create, manage, API, user, role, access, group, catalog, space, provider organization, resource, permission
 
 subcollection: apiconnect
 
@@ -22,18 +22,29 @@ subcollection: apiconnect
 # Managing users
 {: #ri-mng-users} 
  
-Create provider organizations to manage {{site.data.keyword.apiconnect_short}}, and map them to {{site.data.keyword.cloud_notm}} IAM access groups to specify user permissions.
+Create provider organizations to manage {{site.data.keyword.apiconnect_short}}, and map them to {{site.data.keyword.cloud_notm}} IAM access groups to specify user permissions to the Catalogs and Spaces contained in each provider organization.
 {: shortdesc}
 
-In {{site.data.keyword.apiconnect_short}} V10 Reserved, user access is managed with the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) service. When a user logs in to a Reserved instance, their permissions are determined by IAM settings and overwrite any role definitions set in the API Connect UI.
+In {{site.data.keyword.apiconnect_short}} Reserved, users are grouped into _provider organizations_. Each provider organization owns a set of assets including APIs, products, catalogs, spaces, and developer portals, and the users who are members of that provider organization can be assigned to roles that determine their level of access to the those assets. User access is managed with the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) service. When a user logs in to a Reserved instance, their permissions are determined by the IAM settings and overwrite any role definitions set in the API Connect UI. 
 
-Complete the following steps to grant members of your {{site.data.keyword.cloud_notm}} account the appropriate access to your Reserved instance.
+Custom roles are not supported by the IAM service, so if you create custom roles in {{site.data.keyword.apiconnect_short}}, they are deleted the next time each user logs in and their permissions sync with the IAM service. 
+{: note}
+
+You must assign a predefined role to each user to ensure they can access your resources. In {{site.data.keyword.apiconnect_short}}, resources are managed in the following hierarchy:
+
+![Resource hierarchy](images/ri-resource-hierarchy.png "Resource hierarchy")
+
+To grant users permissions to the {{site.data.keyword.apiconnect_short}} resources owned by a particular provider organization, add the users to that provider organization. The role that a user is assigned to for the provider organization is inherited by the catalogs within it, and by the spaces within each catalog. You can override this access at the lower levels by assigning the user to a different role. For example, if you only want the user to have Edit access in a particular space, assign the user to the Reader role for the provider organization, and then assign the user to a role with Edit access on the selected space. The user will still have only Reader access to the catalog owning the space, to all other spaces within the same catalog, and to all other catalogs and spaces owned by the provider organization.
+
+At a minimum, each user must be assigned at least Reader role on the Reserved instance and on each provider organization that they are allowed to view. Then you can decide what additional roles each should be be assigned to on the provider organization and to each of the catalogs and spaces within it.
+
+Complete the following tasks to grant members of your {{site.data.keyword.cloud_notm}} account the appropriate access to resources in your Reserved instance.
 
 
 ## Creating provider organizations
 {: #porg_ri-mng-users}
 
-In {{site.data.keyword.apiconnect_short}} Reserved, users are grouped into _provider organizations_. Each provider organization owns a set of assets including APIs, products, catalogs, and developer portals. You can create a single provider organization (for example, in a small company) or create multiple provider organizations (for example, different departments in a large company). Some users might belong to multiple provider organizations, and might receive different levels of access with each.
+You can create a single provider organization (for example, in a small company) or create multiple provider organizations (for example, different departments in a large company). Some users might belong to multiple provider organizations, and might receive different levels of access with each.
 
 
 ### Decide how many provider organizations you need
@@ -79,6 +90,10 @@ After you create a provider organization in {{site.data.keyword.apiconnect_short
 
 For each provider organization, you need to create an IAM access group and assign the appropriate permissions. To decide what type of permissions each access group (provider organization) requires, review Table 1 to see how suggested jobs in {{site.data.keyword.apiconnect_short}} map to access roles in IAM. 
 
+Each user must be assigned to at least the Reader role on the Reserved instance and on each provider organization that they are allowed to see. If a user can see a provider organization, they can also see all catalogs and spaces within it. Although the user can see all of the catalogs and spaces within the provider organization, they cannot make changes unless you assign them to a role that provides the needed level of permissions for that resource.
+
+Table 1 suggests IAM roles for typical {{site.data.keyword.apiconnect_short}} jobs that users perform. For a complete list of the IAM roles and how they are used in {{site.data.keyword.apiconnect_short}} V10 Reserved, see [Managing access](/docs/apiconnect?topic=apiconnect-iam).
+
 | API Connect job   | Needs this IAM role                | Allowed actions                                                                                        |
 | ----------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | API Developer     | Service: Writer                    | Create, edit, and publish APIs                                                                         |
@@ -87,16 +102,13 @@ For each provider organization, you need to create an IAM access group and assig
 | Administrator     | Platform: Administrator            | Full control of the service instance                                                                   |
 {: caption="Table 1. Mapping {{site.data.keyword.apiconnect_short}} jobs to IAM roles" caption-side="top"}
 
-IAM provides roles for both the platform (the service instance itself) and the service (the product features provided in the service instance). {{site.data.keyword.apiconnect_short}} administrators and API administrators perform tasks that use the platform roles; for example, provisioning a service instance and managing user access to it. Other users perform tasks that use the service roles; for example, creating an API or viewing event analytics.
-
-Table 1 suggests IAM roles for typical {{site.data.keyword.apiconnect_short}} jobs. For a complete list of the IAM roles and how they are used in {{site.data.keyword.apiconnect_short}}, see [Managing access](/docs/apiconnect?topic=apiconnect-iam).
-{: note}
+The IAM service provides roles for both the "platform" (the Reserved instance itself) and the "service" (the product features provided in the Reserved instance). {{site.data.keyword.apiconnect_short}} administrators and API administrators perform tasks that use the platform roles; for example, provisioning a service instance and managing user access to it. Other users perform tasks that use the service roles; for example, creating an API or viewing event analytics.
 
 
 ### Create access groups in IAM
 {: #access-create-group_ri-mng-users}
 
-In IAM, an access group contains a set of users that are assigned to the same access roles for the same {{site.data.keyword.cloud_notm}} resource. For your purposes, each access group represents a provider organization and should be assigned to the appropriate access roles for those users.
+In IAM, an access group contains a set of users that are assigned to the same access roles for the same {{site.data.keyword.cloud_notm}} resource. For your purposes, each access group represents a provider organization and should be assigned to the appropriate access roles for that provider organization.
 
 1. [Log in](https://cloud.ibm.com/login/){: external} to {{site.data.keyword.cloud_notm}}.
   
@@ -121,33 +133,49 @@ An IAM access policy assigns roles (each role represents a set of permissions) t
    
 2. On the "Access policies" tab, click **Assign access**.
   
-3. On the "Assign access" page, select the following options to assign access roles to your provider organization:
-
-   a. Select **IAM services**.
+3. On the "Assign access" page, select **IAM services**.
 
       You are only defining access to {{site.data.keyword.apiconnect_short}}, which is an IAM-enabled service.  
 
-   b. For "What type of access do you want to assign?" select **API Connect** from the list.
+4. For "What type of access do you want to assign?" select **API Connect** from the list.
    
       Your provider organizations only apply to {{site.data.keyword.apiconnect_short}} Reserved.
+	  
+5. Select a provider organization:
 
-   c. For "Which services do you want to assign access to?", select **Services based on attributes**.
+   a. For "Which services do you want to assign access to?", select **Services based on attributes**.
    
-   d. For "Add attributes" select **Service Instance**, plus:
+   b. For "Add attributes" select **Service Instance**, plus:
    
       - In the first list, select **string equals**.  
 	  
-      - In the "Service Instance" list, select the name of the provider organization where you want to apply the access policy.
+      - In the second (service instances) list, select the name of the provider organization where you want to apply the access policy.
 
-      The new access group applies only to the specified provider organization. Mapping the policy directly to a provider organization ensures that you don't accidentally grant users a wider range of permissions to the Reserved instance.
+      The new access policy applies only to the specified provider organization. Mapping the policy directly to a provider organization ensures that you don't accidentally grant users a wider range of permissions to the Reserved instance.
 
-   e. Select the roles that you want to assign to the members of this access group. 
-  
-      Click the number next to each role to see the detailed list of permissions that are available with that role.
-	  
-   f. Select **Add** to add the selected roles to the access group.
+6. Optionally select one or more catalogs owned by the provider organization.
+
+   If you want to assign access only to particular catalogs (instead of all catalogs within that provider organization), select **Resource**, plus:
    
-   g. Review the access in the "Access summary" section and click **Assign** to save the access groups with the access policies.
+   - In the first list, select **string equals**.  
+	  
+   - In the second (resources) list, select or type the name of the catalog where you want to apply the access policy. You can use wildcards for strings (*) and numbers (?). For example, to apply the access to all catalogs beginning with "catalog-1" followed by a single letter (as in catalog-1a, catalog-1b), type "catalog-1*".
+   
+   Specify catalog names rather than display titles.
+   
+7. Optionally select one or more spaces within a specified catalog.
+
+   If you want to assign access only to particular spaces within a selected catalog, append "/" plus the space name to the catalog name. Specify space names rather than display titles. You can use wildcards for letters and numbers.
+   
+   For example, if you specified catalog-1a in the previous step and now want to include only space-1a within that catalog, update the resource name to "catalog-1a/space-1a".
+   
+8. Select the roles that you want to assign to the members of this access group. 
+  
+   Click the number next to each role to see the detailed list of permissions that are available with that role.
+	  
+9. Select **Add** to add the selected roles to the access group.
+   
+10. Review the "Access summary" section and click **Assign** to save the access groups with the access policies.
    
 Next, add users to the access group so that the permissions you just configured can be assigned to them.
 
@@ -178,6 +206,8 @@ When you set up IAM access for your users, there is no automatic notification. A
 - The name of the provider organization that the user is assigned to
 - Where to find documentation: https://cloud.ibm.com/docs/apiconnect
 
+Each user must log out from IBM Cloud and then log in again for the permission changes to take effect.
+![IBM Cloud log out](images/cloud_logout.png "IBM Cloud log out")
 
 ## Managing provider organizations
 {: #mng-porg_ri-mng-users}

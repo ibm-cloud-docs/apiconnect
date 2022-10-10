@@ -1,8 +1,8 @@
 ---
 
 copyright:
-   years: 2020, 2021
-lastupdated: "2020-10-19"
+   years: 2020, 2022
+lastupdated: "2022-10-01"
 
 keywords: IBM Cloud, API Connect, API management, Reserved instance, authentication, IAM, access management, service ID, API key, user roles, user actions
 
@@ -62,6 +62,9 @@ Table 2 details actions that are mapped to service access roles, and which {{sit
 | Reader                  | Viewer                   | View (but not edit) APIs, members, settings, and organizations. |
 | Writer                  | Developer                | View data and settings. Edit Products and APIs. Manage apps, subscriptions, and analytics. | 
 | Manager                 | API Administrator        | View data and settings. Edit Products and APIs. Manage Consumer organizations, apps, subscriptions, and analytics. | 
+| API Administrator 	  | API Administrator        | View data and settings. Edit Products and APIs. Manage Consumer organizations, apps, subscriptions, and analytics. |
+| Community Manager 	  | Community Manager        | View data and settings. Edit Products and APIs. Manage Consumer organizations, apps, subscriptions, and analytics. |
+| API Developer 	      | Developer                | Create and edit Products and APIs. Stage and publish Products. |
 {: caption="Table 2. IAM service access roles and actions" caption-side="top"}
 
 For more information about assigning user roles in the IAM service, see [Giving access to resources in resource groups](/docs/account?topic=account-rgs_manage_access).
