@@ -66,6 +66,7 @@ toc:
           label: Administering API Connect Reserved
           topics:
           - ri-admin-over.md
+          - ri-usage.md
           - ri-mng-users.md
           - ri-reg-gwy.md
           - ri-mng-gwy.md
