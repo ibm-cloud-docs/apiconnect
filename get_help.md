@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2021
+  years: 2019, 2023
 lastupdated: "2020-05-06"
 
 keywords: IBM Cloud, API Connect, API management, support, help, Support Center
@@ -46,8 +46,8 @@ Need help with your {{site.data.keyword.apiconnect_short}} service instance? Vis
       - Region and customer service instance impacted
       - Component impacted: API Manager, API calls, Portal
       - URL where error is being seen
-	  - For Dedicated, identify the customer environment
-	  - For Reserved plan, use a prefix in the Subject field to indicate the version (such as v5, v2018 or v10) and provider-org. For example: \[v10 - providerOrg]. 
+	   - For Dedicated, identify the customer environment
+	   - For Reserved plan, use a prefix in the Subject field to indicate the version (such as v5, v2018 or v10) and provider-org. For example: "[v10 providerOrg]".
 
    - For API Manager UI-based issues, additionally include:
 

@@ -75,12 +75,14 @@ Secure access to your organization's APIs by configuring an OAuth provider. When
 A _product_ is a set of APIs and the _plans_ that specify usage rules such as rate limits. You publish a product to your organization's _developer portal_ where customers can _subscribe_ to use the APIs contained in each product. Every product has a lifecycle spanning its initial publication through its removal from the Developer Portal. You can manage the stages in the product lifecycle in {{site.data.keyword.apiconnect_short}}. For information on working with products, see the following topics in the extended V10 Reserved documentation:
 
 #### Publishing a product
+{: #publish-docs_ri-manage-assets}
 
 - [Publish a new product](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/task_publishing_a_product.html){: external}
 - [Replace a product](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/task_replacing_a_product.html){: external}
 - [Supercede a product](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/task_superseding_a_product.html){: external}
              
 #### Changing product availability
+{: #change-docs_ri-manage-assets}
 
 Restrict a product to specific consumers or endpoints, or remove a product from the developer portal.
 
