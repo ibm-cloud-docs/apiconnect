@@ -137,7 +137,6 @@ If modifying an existing theme doesn't suit your needs, you can install a new th
 
 ## Conclusion
 {: #conclusion_tut_custom_dev_portal}
-
 Congratulations, you have completed this tutorial. In this tutorial you learned how to:
 
 * Customize your developer portal welcome page

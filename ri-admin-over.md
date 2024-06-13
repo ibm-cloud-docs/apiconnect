@@ -25,7 +25,6 @@ subcollection: apiconnect
 Use the administration console to manage users and register additional gateways for {{site.data.keyword.apiconnect_short}} V10 Reserved.
 {: shortdesc}
 
-
 ## Managing users
 {: #users_ri-admin-over}
 

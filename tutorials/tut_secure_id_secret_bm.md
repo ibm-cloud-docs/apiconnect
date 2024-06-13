@@ -27,7 +27,6 @@ subcollection: apiconnect
 
 ## Objective
 {: #object_tut_secure_id_secret_bm}
-
 This tutorial guides you through securing your API in API Connect V5 with a Client ID and a Client Secret. When applications are registered in your Developer Portal, a Client ID is generated to identify the application. Optionally, a Client Secret (which serves as a password) can also be generated. Applications need to supply the Client ID and Client Secret keys when they call your API.
 
 

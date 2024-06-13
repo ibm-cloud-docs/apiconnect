@@ -67,7 +67,7 @@ For more information about the tasks that are required to create APIs, see [Crea
 
 After a Product is staged and published, you can open the API Manager to manage security, rate limits, policies, and billing information, and then publish the Product to a Developer Portal.
 
-As displayed in the following diagram, a Product contains a plan, which contains one or more APIs.
+As displayed in the following diagram, a product contains a plan, which contains one or more APIs.
 
 ![Diagram showing what is contained in a Product](images/Product.png "Product")
 

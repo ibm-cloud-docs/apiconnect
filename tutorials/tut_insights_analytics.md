@@ -169,7 +169,6 @@ In this tutorial, we walked through a number of activities to help you create us
 
 ## Next step
 {: #next_tut_insights_analytics}
-
 Learn [how to manage your APIs and versioning](/docs/apiconnect/tutorials?topic=apiconnect-tut_manage_version_landing).
 
 Create > Manage > Secure > Socialize > **Analyze**  

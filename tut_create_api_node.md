@@ -18,29 +18,29 @@ keywords: IBM Cloud, APIs, lifecycle, catalog, manage, toolkit, develop, dev por
 {:note: .note}
 
  
-# Creating an API in Node.js
-{: #tut_create_api_node}
+# Creating an API in Node.js 
+{: #tut_create_api_node} 
 
 **Duration**: 20 mins  
 **Skill level**: Beginner  
  
-## Objective
-{: #object_tut_create_api_node}
+## Objective 
+{: #object_tut_create_api_node} 
  
 This tutorial guides you through creating an API in Node.js using the LoopBack framework with API Connect V5. The tutorial describes how to:
 1. Create a LoopBack project.
 2. Use API Designer in the {{site.data.keyword.apiconnect_full}} toolkit to add a data source and model to a LoopBack project.
  
-## Prerequisites
-{: #prereq_tut_create_api_node}
+## Prerequisites 
+{: #prereq_tut_create_api_node} 
  
 Before you begin, [install the {{site.data.keyword.apiconnect_short}} toolkit](/docs/apiconnect/tutorials?topic=apiconnect-tut_prereq_install_toolkit) version 5.0.8.1, or later. Check the version of an existing toolkit by opening a command window and running the following command::
 	```
 	apic -v
 	```
  
-## Create a Loopback project
-{: #create_tut_create_api_node}
+## Create a Loopback project 
+{: #create_tut_create_api_node} 
  
 You can create a Loopback project with either the {{site.data.keyword.apiconnect_short}} developer toolkit command line interface (CLI) or API Designer interface. 
  
@@ -121,8 +121,8 @@ To create a LoopBack project using API Designer, complete the following steps:
  
 To add a model and data source to a LoopBack project using API Designer, complete the following steps:
  
-### Add a data source
-{: #add_ds_tut_create_api_node}
+### Add a data source 
+{: #add_ds_tut_create_api_node} 
  
 To add a data source to a LoopBack project using API Designer, complete the following steps.
 1. You must also create a LoopBack project (the "weather-data" project) as described in `Create a LoopBack project from the command line` and make sure that the current working directory is the project root directory:

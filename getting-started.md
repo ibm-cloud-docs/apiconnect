@@ -10,7 +10,7 @@ subcollection: apiconnect
 
 ---
 
-{:external: target="_blank" .external}
+{:external: target="_blank" .external} 
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:pre: .pre}
