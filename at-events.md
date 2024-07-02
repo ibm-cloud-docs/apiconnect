@@ -4,7 +4,7 @@ copyright:
   years: 2020, 2024
 lastupdated: "2024-07-02"
 
-keywords: activity tracker, event, security, audit logs, viewing events, management
+keywords: activity tracker, event, security, audit logs, viewing events, management, API Connect
 
 subcollection: apiconnect
 
@@ -12,11 +12,11 @@ subcollection: apiconnect
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Activity tracking events for {{site.data.keyword.apiconnect_short}} V10 Reserved
+# Activity tracking events for {{site.data.keyword.apiconnect_short}} Reserved
 {: #at_events}
 
 
-{{site.data.keyword.cloud_notm}} services, such as {{site.data.keyword.apiconnect_short}} V10 Reserved, generate activity tracking events.
+{{site.data.keyword.cloud_notm}} services, such as {{site.data.keyword.apiconnect_short}} Reserved, generate activity tracking events.
 {: shortdesc}
 
 Activity tracking events report on activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use the events to investigate abnormal activity and critical actions and to comply with regulatory audit requirements.
@@ -33,7 +33,7 @@ As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecate
 ## Locations where activity tracking events are generated
 {: #at-locations}
 
-{{site.data.keyword.apiconnect_short}} V10 Reserved generates activity tracking events in all regions where the {{site.data.keyword.apiconnect_short}} V10 Reserved service is available.
+{{site.data.keyword.apiconnect_short}} Reserved generates activity tracking events in all regions where the {{site.data.keyword.apiconnect_short}} Reserved service is available.
 
 
 ## Locations where activity tracking events are sent to {{site.data.keyword.at_full_notm}} hosted event search
@@ -41,21 +41,21 @@ As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecate
 
 
 
-{{site.data.keyword.apiconnect_short}} V10 Reserved sends activity tracking events to {{site.data.keyword.at_full_notm}} hosted event search in all regions where the {{site.data.keyword.apiconnect_short}} V10 Reserved service is available.
+{{site.data.keyword.apiconnect_short}} Reserved sends activity tracking events to {{site.data.keyword.at_full_notm}} hosted event search in all regions where the {{site.data.keyword.apiconnect_short}} Reserved service is available.
 
 ## Locations where activity tracking events are sent by {{site.data.keyword.atracker_full_notm}}
 {: #atracker-locations}
 
 
 
-{{site.data.keyword.apiconnect_short}} V10 Reserved sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in all regions where the {{site.data.keyword.apiconnect_short}} V10 Reserved service is available.
+{{site.data.keyword.apiconnect_short}} Reserved sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in all regions where the {{site.data.keyword.apiconnect_short}} Reserved service is available.
 
-## Enabling activity tracking events for{{site.data.keyword.apiconnect_short}} V10 Reserved
+## Enabling activity tracking events for{{site.data.keyword.apiconnect_short}} Reserved
 {: #at-enable}
 
-Activity tracking is automatically enabled in your {{site.data.keyword.apiconnect_short}} V10 Reserved service instance.
+Activity tracking is automatically enabled in your {{site.data.keyword.apiconnect_short}} Reserved service instance.
 
-## Viewing activity tracking events for {{site.data.keyword.apiconnect_short}} V10 Reserved
+## Viewing activity tracking events for {{site.data.keyword.apiconnect_short}} Reserved
 {: #at-viewing}
 
 
@@ -73,7 +73,7 @@ For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [L
 ## List of events
 {: #at_actions_events}
 
-The following table describes the actions that generate activity tracking events in {{site.data.keyword.apiconnect_short}} V10 Reserved service for APIs, subscriptions, and domains. 
+The following table describes the actions that generate activity tracking events in {{site.data.keyword.apiconnect_short}} Reserved service for APIs, subscriptions, and domains. 
 
 | Action                          | Description     | 
 |---------------------------------|-----------------|
