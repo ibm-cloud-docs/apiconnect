@@ -160,7 +160,7 @@ An IAM access policy assigns roles (each role represents a set of permissions) t
    
    - In the first list, select **string equals**.  
 	  
-   - In the second (resources) list, select or type the name of the catalog where you want to apply the access policy. You can use wildcards for strings (*) and numbers (?). For example, to apply the access to all catalogs beginning with "catalog-1" followed by any character (as in catalog-1a, catalog-1b), type "catalog-1*".
+   - In the second (resources) list, select or type the name of the catalog where you want to apply the access policy. You can use wildcards for strings (\*) and numbers (?). For example, to apply the access to all catalogs beginning with "catalog-1" followed by any character (as in catalog-1a, catalog-1b), type "catalog-1*".
    
    Specify catalog names rather than display titles.
    

@@ -42,7 +42,7 @@ Start the administration console by completing the following steps:
 
 1. [Log in](https://cloud.ibm.com/login/){: external} to {{site.data.keyword.cloud_notm}}.
   
-2. On the Dashboard, click ![Menu icon](images/icon_cloud_menu.png "Menu icon") and select **API Management**.
+2. On the Dashboard, click ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") and select **API Management**.
 
    ![Select API Management](images/select_api_mgt.png "Select API Management")
 

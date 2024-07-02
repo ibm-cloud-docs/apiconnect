@@ -40,24 +40,24 @@ Need help with your {{site.data.keyword.apiconnect_short}} service instance? Vis
    Use the fields on the "Create a Case" page to explain your problem. The following list describes important information that assists us with resolving issues that you are having in {{site.data.keyword.apiconnect_short}}.
    
    Important: Do not include your private key in the support request.
-
+   
    - For all issues, include the following information:
 
       - Region and customer service instance impacted
       - Component impacted: API Manager, API calls, Portal
       - URL where error is being seen
 	   - For Dedicated, identify the customer environment
-	   - For Reserved plan, use a prefix in the Subject field to indicate the version (such as v5, v2018 or v10) and provider-org. For example: "[v10 providerOrg]".
-
+	   - Use a prefix in the Subject field to indicate the version and provider-org; for example: "[v10 providerOrg]"
+   
    - For API Manager UI-based issues, additionally include:
-
+   
       - All error codes returned
       - Time (including time zone) that the problem occurred
-
+   
    - For Portal-based issues, additionally include the user name of person who encountered the problem
-
+   
    - For issues with invoking APIs, additionally include:
-
+   
       - Full API URL impacted - the host name should contain `apiconnect.ibmcloud.com`
       - HTTP method used
       - Frequency and time (with time zone) of the issue
@@ -65,9 +65,9 @@ Need help with your {{site.data.keyword.apiconnect_short}} service instance? Vis
       - Actual (incorrect) result
       - Evidence from analytics to show that the API issue is not a problem with the customer's down-stream system. For more information, see the _IBM Developer_ article [Why isn’t my API working](https://developer.ibm.com/apiconnect/why-isnt-my-api-working/){: external}
       - Complete cURL example for recreating the call (include all information required for the call, including headers, client ID, and client secret)
-
-   Optionally attach files to help explain your issue (for example, screen captures). Click the Information icon next to "Supported file types" to see the complete list of allowed file types. Helpful attachments include:
    
+   Optionally attach files to help explain your issue (for example, screen captures). Click the Information icon next to "Supported file types" to see the complete list of allowed file types. Helpful attachments include:
+
    - A (compressed) CSV file that contains exported analytics for failing APIs, to ensure we see the correct calls and the failure patterns
    - A copy of the API YAML file, with personal data such as IDs, secrets, tokens, and passwords removed
    - A copy of a browser HAR trace file, if the problem is related to the behavior of the API Connect UI
