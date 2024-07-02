@@ -1,79 +1,38 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-07-02"
+   years: 2020, 2024
+lastupdated: "2022-05-13"
 
-keywords: activity tracker, event, security, audit logs, viewing events, management
+keywords: activity tracker, event, security, audit logs, viewing events, management, Reserved plan
 
 subcollection: apiconnect
 
 ---
 
-{{site.data.keyword.attribute-definition-list}}
+{:external: target="_blank" .external} 
+{:shortdesc: .shortdesc}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
 
-# Activity tracking events for {{site.data.keyword.apiconnect_short}} V10 Reserved
-{: #at_events}
+# Auditing events
+{: #old-at_events}
 
-
-{{site.data.keyword.cloud_notm}} services, such as {{site.data.keyword.apiconnect_short}} V10 Reserved, generate activity tracking events.
+As a security officer, auditor, or manager, you can use the Activity Tracker service to track how users and applications interact with the {{site.data.keyword.apiconnect_full}} V10 Reserved instance service in {{site.data.keyword.cloud}}.
 {: shortdesc}
 
-Activity tracking events report on activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use the events to investigate abnormal activity and critical actions and to comply with regulatory audit requirements.
+{{site.data.keyword.at_full_notm}} records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use this service to investigate abnormal activity and critical actions and to comply with regulatory audit requirements. In addition, you can be alerted about actions as they happen. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard. For more information, see the [getting started tutorial for {{site.data.keyword.at_full_notm}}](/docs/activity-tracker?topic=activity-tracker-getting-started).
 
-You can use {{site.data.keyword.atracker_full_notm}}, a platform service, to route auditing events in your account to destinations of your choice by configuring targets and routes that define where activity tracking events are sent. For more information, see [About {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-about).
-
-You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
-
-
-
-As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecated and will no longer be supported as of 30 March 2025. Customers will need to migrate to {{site.data.keyword.logs_full_notm}} before 30 March 2025. During the migration period, customers can use {{site.data.keyword.at_full_notm}} along with {{site.data.keyword.logs_full_notm}}. Activity tracking events are the same for both services. For information about migrating from {{site.data.keyword.at_full_notm}} to {{site.data.keyword.logs_full_notm}} and running the services in parallel, see [migration planning](/docs/cloud-logs?topic=cloud-logs-migration-intro).
-{: important}
-
-## Locations where activity tracking events are generated
-{: #at-locations}
-
-{{site.data.keyword.apiconnect_short}} V10 Reserved generates activity tracking events in all regions where the {{site.data.keyword.apiconnect_short}} V10 Reserved service is available.
-
-
-## Locations where activity tracking events are sent to {{site.data.keyword.at_full_notm}} hosted event search
-{: #at-legacy-locations}
-
-
-
-{{site.data.keyword.apiconnect_short}} V10 Reserved sends activity tracking events to {{site.data.keyword.at_full_notm}} hosted event search in all regions where the {{site.data.keyword.apiconnect_short}} V10 Reserved service is available.
-
-## Locations where activity tracking events are sent by {{site.data.keyword.atracker_full_notm}}
-{: #atracker-locations}
-
-
-
-{{site.data.keyword.apiconnect_short}} V10 Reserved sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in all regions where the {{site.data.keyword.apiconnect_short}} V10 Reserved service is available.
-
-## Enabling activity tracking events for{{site.data.keyword.apiconnect_short}} V10 Reserved
-{: #at-enable}
-
-Activity tracking is automatically enabled in your {{site.data.keyword.apiconnect_short}} V10 Reserved service instance.
-
-## Viewing activity tracking events for {{site.data.keyword.apiconnect_short}} V10 Reserved
-{: #at-viewing}
-
-
-
-You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
-
-### Launching {{site.data.keyword.logs_full_notm}} from the Observability page
-{: #log-launch-standalone}
-
-
-
-For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [Launching the UI in the {{site.data.keyword.logs_full_notm}} documentation.](/docs/cloud-logs?topic=cloud-logs-instance-launch)
-
+IBM Cloud Activity Tracker Event Routing and IBM Cloud Logs replaces IBM Cloud Activity Tracker, which is deprecated and will be removed from support in March 2025.
+{: note}
 
 ## List of events
-{: #at_actions_events}
+{: #at_events-actions}
 
-The following table describes the actions that generate activity tracking events in {{site.data.keyword.apiconnect_short}} V10 Reserved service for APIs, subscriptions, and domains. 
+Table 1 describes the actions that the {{site.data.keyword.apiconnect_short}} V10 Reserved service provides for APIs, subscriptions, and domains. 
 
 | Action                          | Description     | 
 |---------------------------------|-----------------|
@@ -484,3 +443,11 @@ The following table describes the actions that generate activity tracking events
 | apiconnect.me_signOut.create | Sign out |
 | apiconnect.webhook_updateCatalogScope.update | Update the Webhook object by name or ID |
 {: caption="Table 1. Actions that generate events" caption-side="top"}
+
+
+## Viewing events
+{: #at_events-ui}
+
+Events that are generated by an {{site.data.keyword.apiconnect_short}} Reserved instance are automatically forwarded to the {{site.data.keyword.at_full_notm}} service instance that is available in the same location.
+
+{{site.data.keyword.at_full_notm}} can have only one instance per location. To view events, you must access the web UI of the {{site.data.keyword.at_full_notm}} service in the same location where your service instance is available. For more information, see [Launching the web UI through the IBM Cloud UI](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-launch#launch_step2).

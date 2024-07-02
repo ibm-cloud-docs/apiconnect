@@ -26,3 +26,6 @@ subcollection: apiconnect
 
 To monitor the logs for V10 Reserved, you must configure a logging instance in a region. For information, see [Configuring IBM Cloud platform logs](/docs/log-analysis?topic=log-analysis-config_svc_logs). 
 
+IBM Cloud Logs Routing and IBM Cloud Logs replaces IBM Log Analysis, which is deprecated and will be removed from support in March 2025.
+{: note}
+
