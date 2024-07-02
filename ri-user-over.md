@@ -35,13 +35,13 @@ subcollection: apiconnect
 In {{site.data.keyword.apiconnect_short}}, users are grouped into provider organizations, and are assigned permissions that control access to resources based on the job that each person typically performs.
 {: shortdesc}
 
-Jobs can be assigned to people based on their expertise; for example, administering users, developing APIs, and monitoring event analytics. In a small company, one or two people might perform all of the work in creating and managing APIs. In a large company, a different person (or even multiple people) might be assigned to each job. When you read the {{site.data.keyword.apiconnect_short}}, you'll see that information about tasks and features is often organized based on the following jobs that people are typically assigned to perform:
+Jobs can be assigned to people based on their expertise; for example, administering users, developing APIs, and monitoring event analytics. In a company with only a few employees, one or two people might perform all of the work in creating and managing APIs. In a company with many employees, a different person (or even multiple people) might be assigned to each job. When you read the {{site.data.keyword.apiconnect_short}}, you'll see that information about tasks and features is often organized based on the following jobs that people are typically assigned to perform:
 
 - **{{site.data.keyword.apiconnect_short}} Administrator**
 
    Everyone who has administrator privileges in your company's IBM Cloud account is automatically assigned the role of {{site.data.keyword.apiconnect_short}} Administrator. The Administrator provisions and manages your company's {{site.data.keyword.apiconnect_short}} Reserved plan. The Admin adds users to {{site.data.keyword.apiconnect_short}} and configures services such as the gateways that control customer access to your APIs.
 
-   One of the Admin's main jobs is to set up provider organizations and add users. A _provider organization_ is a group of people who use the API Manager component of {{site.data.keyword.apiconnect_short}}. _Members_ of the provider organization create and manage APIs, products, and related assets. {{site.data.keyword.apiconnect_short}} Admins create the provider organizations, add members, and define the roles that control user access.
+   One of the Admin's main jobs is to set up provider organizations and add users. A provider organization is a group of people who use the API Manager component of {{site.data.keyword.apiconnect_short}}. _Members_ of the provider organization create and manage APIs, products, and related assets. {{site.data.keyword.apiconnect_short}} Admins create the provider organizations, add members, and define the roles that control user access.
 
 - **API Developer**
 
@@ -49,14 +49,14 @@ Jobs can be assigned to people based on their expertise; for example, administer
 
 - **API Administrator**
 
-   After an API developer creates a set of APIs, the API administrator manages the distribution. The API administrator defines _plans_ that determine access to the APIs, bundles a set of related APIs and plans into _products_, and _publishes_ them to the _developer portal_ where customers can find them. The API administrator also manages the _catalogs_ and _spaces_ where API developers create and test APIs.
+   After an API developer creates a set of APIs, the API administrator manages the distribution. The API administrator defines _plans_ that determine access to the APIs, bundles a set of related APIs and plans into products, and publishes them to the developer portal where customers can find them. The API administrator also manages the catalogs and spaces where API developers create and test APIs.
 
 - **Product Manager**
 
-   A product manager controls access to the Developer Portal where consumers can _subscribe_ to APIs, which they use in their applications. For each group of customers, the product manager creates a _consumer organization_ that controls access to the Developer Portal. The product manager uses the Analytics feature to track API usage and performance, which helps determine when APIs should be updated or retired.
+   A product manager controls access to the Developer Portal where consumers can subscribe to APIs, which they use in their applications. For each group of customers, the product manager creates a_consumer organization that controls access to the Developer Portal. The product manager uses the Analytics feature to track API usage and performance, which helps determine when APIs should be updated or retired.
 
 - **Consumer**
 
-   _Consumers_ are your customers, and are not members of your provider organization. When your organization publishes products that contain APIs, consumers subscribe to the products so they can use the APIs in their applications. A consumer can subscribe to use APIs and products that are developed by different provider organizations. Each provider organization assigns one or more Product Managers to manage the relationship with its consumers. The Product Manager creates _consumer organizations_ and adds customers to give them access to the developer portal.
+   Consumers are your customers, and are not members of your provider organization. When your organization publishes products that contain APIs, consumers subscribe to the products so they can use the APIs in their applications. A consumer can subscribe to use APIs and products that are developed by different provider organizations. Each provider organization assigns one or more Product Managers to manage the relationship with its consumers. The Product Manager creates consumer organizations and adds customers to give them access to the developer portal.
 
-For more information on working in {{site.data.keyword.apiconnect_short}}, see [Understanding {{site.data.keyword.apiconnect_short}}](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.overview.doc/capic_whatis.html){: external} in the V10 Reserved Knowledge Center.
+For more information on working in {{site.data.keyword.apiconnect_short}}, see [Understanding {{site.data.keyword.apiconnect_short}}](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.overview.doc/capic_whatis.html){: external} in the extended V10 Reserved documentation.

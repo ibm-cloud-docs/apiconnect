@@ -43,7 +43,7 @@ To learn more about the upgrade, click the overflow menu on the same row of the 
    - **Now** Select this option to start the upgrade immediately.
    - **Schedule** Select the date, time, and timezone to start the upgrade. You will receive an email reminder several days before the upgrade.
 
-4. If the upgrade will disrupt service, you must indicate your agreement by selecting "I understand that my {{site.data.keyword.apiconnect_short}} service will be disrupted".
+4. If the upgrade will disrupt service, you must indicate your agreement by selecting **I understand that my {{site.data.keyword.apiconnect_short}} service will be disrupted**.
 
    You cannot start the upgrade until you acknowledge the potential disruption to service.
 

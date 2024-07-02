@@ -18,7 +18,7 @@ subcollection: apiconnect
 Create provider organizations to manage {{site.data.keyword.apiconnect_short}}, and map them to {{site.data.keyword.cloud_notm}} IAM access groups to specify user permissions to the Catalogs and Spaces contained in each provider organization.
 {: shortdesc}
 
-In {{site.data.keyword.apiconnect_short}} Reserved, users are grouped into _provider organizations_. Each provider organization owns a set of assets including APIs, products, catalogs, spaces, and developer portals, and the users who are members of that provider organization can be assigned to roles that determine their level of access to the those assets. User access is managed with the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) service. When a user logs in to a Reserved instance, their permissions are determined by the IAM settings and overwrite any role definitions set in the API Connect UI.
+In {{site.data.keyword.apiconnect_short}} Reserved, users are grouped into provider organizations. Each provider organization owns a set of assets including APIs, products, catalogs, spaces, and developer portals, and the users who are members of that provider organization can be assigned to roles that determine their level of access to the those assets. User access is managed with the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) service. When a user logs in to a Reserved instance, their permissions are determined by the IAM settings and overwrite any role definitions set in the API Connect UI.
 
 Custom roles are not supported by the IAM service, so if you create custom roles in {{site.data.keyword.apiconnect_short}}, they are deleted the next time each user logs in and their permissions sync with the IAM service.
 {: note}
@@ -37,7 +37,7 @@ Complete the following tasks to grant members of your {{site.data.keyword.cloud_
 ## Creating provider organizations
 {: #porg_ri-mng-users}
 
-You can create a single provider organization (for example, in a small company) or create multiple provider organizations (for example, different departments in a large company). Some users might belong to multiple provider organizations, and might receive different levels of access with each.
+You can create a single provider organization (for example, in a company with only a few employees) or create multiple provider organizations (for example, different departments in a company with many employees). Some users might belong to multiple provider organizations, and might receive different levels of access with each.
 
 ### Decide how many provider organizations you need
 {: #porg-decide_ri-mng-users}
@@ -57,15 +57,15 @@ Use the {{site.data.keyword.apiconnect_short}} administration console to create 
 
    c. In the navigation list, expand **API Connect** and click **Services**.
   
-   d. On the "Services" page, click your Reserved instance's name to open its administration console.
+   d. On the **Services** page, click your Reserved instance's name to open its administration console.
 
-      On the "Services" page, a Reserved instance is labeled as "infrastructure".
+      On the **Services** page, a Reserved instance is labeled as "infrastructure".
 
 2. On the administration console's home page, click the **Provider organizations** tile.
 
-3. On the "Provider organizations" page, click **Create provider organization**.
+3. On the **Provider organizations** page, click **Create provider organization**.
 
-4. On the "Create provider organization" page, provide a **Title**, select a **Resource group**, and then click **Create**.
+4. On the **Create provider organization** page, provide a **Title**, select a **Resource group**, and then click **Create**.
 
    The title is the display name of your provider organization; a lowercase version of the title is automatically generated as the provider organization's name for internal use.
 
@@ -106,11 +106,11 @@ In IAM, an access group contains a set of users that are assigned to the same ac
 
    The IAM service dashboard opens to the [Access (IAM)](https://cloud.ibm.com/iam) page.
 
-3. On the "Access (IAM)" page, look in the navigation menu and click **Access groups**.
+3. On the **Access (IAM)** page, look in the navigation menu and click **Access groups**.
 
-4. On the "Access groups" page, click **Create**.
+4. On the **Access groups** page, click **Create**.
 
-5. In the "Create access group" box, provide a name and description for the new access group, and then click **Create**.
+5. In the **Create access group** box, provide a name and description for the new access group, and then click **Create**.
 
 Repeat steps 4 and 5 for each access group.
 
@@ -121,21 +121,21 @@ An IAM access policy assigns roles (each role represents a set of permissions) t
 
 1. On the page for your access group, click the **Access policies** tab.
 
-2. On the "Access policies" tab, click **Assign access**.
+2. On the **Access policies** tab, click **Assign access**.
   
-3. On the "Assign access" page, select **IAM services**.
+3. On the **Assign access** page, select **IAM services**.
 
       You are only defining access to {{site.data.keyword.apiconnect_short}}, which is an IAM-enabled service.  
 
-4. For "What type of access do you want to assign?" select **API Connect** from the list.
+4. For **What type of access do you want to assign?** select **API Connect** from the list.
 
       Your provider organizations only apply to {{site.data.keyword.apiconnect_short}} Reserved.
 
 5. Select a provider organization:
 
-   a. For "Which services do you want to assign access to?", select **Services based on attributes**.
+   a. For **Which services do you want to assign access to?**, select **Services based on attributes**.
 
-   b. For "Add attributes" select **Service Instance**, plus:
+   b. For **Add attributes** select **Service Instance**, plus:
 
       - In the first list, select **string equals**.  
 
@@ -176,7 +176,7 @@ Adding users to an access group maps them to the provider organization that is a
 
 1. On the page for your access group, click the **Users** tab.
 
-2. On the "Users" tab, click **Add users**.
+2. On the **Users** tab, click **Add users**.
 
    The names of all of the users who belong to your company's {{site.data.keyword.cloud_notm}} account display.
 

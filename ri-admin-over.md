@@ -21,11 +21,11 @@ Use the administration console to manage users and register additional gateways 
 ## Managing users
 {: #users_ri-admin-over}
 
-In {{site.data.keyword.apiconnect_short}}, users are grouped into _provider organizations_. Each provider organization owns a set of assets includeing APIs, products, catalogs, and developer portals. You can create a single provider organization (for example, in a small company) or create multiple provider organizations (for example, different departments in a large company).
+In {{site.data.keyword.apiconnect_short}}, users are grouped into _provider organizations_. Each provider organization owns a set of assets includeing APIs, products, catalogs, and developer portals. You can create a single provider organization (for example, in a company with only a few employees) or create multiple provider organizations (for example, different departments in a company with many employees).
 
 In {{site.data.keyword.cloud_notm}}, user access is managed with the Identity and Access Management (IAM) service. You can define access groups with policies that determine permissions within each provider organization in {{site.data.keyword.apiconnect_short}}, and then you can add members of your company's {{site.data.keyword.cloud_notm}} to the appropriate access groups, which results in the users becoming members of the provider organization.
 
-For more information on managing users in your Reserved instance, see [Managing users](/docs/apiconnect?apiconnect-ri-mng-users).
+For more information on managing users in your Reserved instance, see [Managing users](/docs/apiconnect?topic=apiconnect-ri-mng-users).
 
 ## Adding and managing gateways
 {: #gwys_ri-admin-over}
@@ -34,7 +34,7 @@ For more information on managing users in your Reserved instance, see [Managing 
 
 {{site.data.keyword.apiconnect_short}} V10 Reserved deploys with the IBM DataPower API gateway by default. You can deploy additional DataPower gateways for use with your Reserved instance; for example, to distribute API endpoints for different purposes.
 
-For more information on adding gateways to your Reserved instance, see [Adding remote gateways](/docs/apiconnect?apiconnect-ri-reg-gwy). For information on managing user access to gateways, see [Managing gateways](/docs/apiconnect?apiconnect-ri-mng-gwy).
+For more information on adding gateways to your Reserved instance, see [Adding remote gateways](/docs/apiconnect?topic=apiconnect-ri-reg-gwy). For information on managing user access to gateways, see [Managing gateways](/docs/apiconnect?topic=apiconnect-ri-mng-gwy).
 
 ## Using the toolkit
 {: #toolkit_ri-admin-over}

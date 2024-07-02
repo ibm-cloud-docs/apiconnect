@@ -17,9 +17,6 @@ subcollection: apiconnect
 
 {{site.data.keyword.apiconnect_short}} V10 Reserved uses {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) to securely authenticate users and control access to service instances on the {{site.data.keyword.cloud_notm}} platform.
 
-{{site.data.keyword.apiconnect_short}} V5 does not support IAM roles and actions. You can still use the IAM site to obtain an {{site.data.keyword.cloud_notm}} API key, which is needed for generating a token for use when [Calling APIs provided by {{site.data.keyword.apiconnect_short}}](/docs/apiconnect?topic=apiconnect-call_apim_apis).
-{: note}
-
 ## Identity and Access Management roles and actions
 {: #apic-roles-actions_iam}
 

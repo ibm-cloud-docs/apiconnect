@@ -23,7 +23,7 @@ Managing APIs, catalogs, and products in {{site.data.keyword.apiconnect_full}} i
 
 Every provider organization has its own set of APIs, catalogs, and products. While the API Developer creates APIs and products, the API Administrator manages them, along with the catalogs where development work takes place.
 
-After an API developer creates a set of APIs, the API administrator manages the distribution. The API administrator defines _Plans_ that determine access to the APIs, bundles a set of related APIs and Plans into _Products_, and _publishes_ them to the consumer _Developer Portals_. The API administrator also manages the _Catalogs_ and _Spaces_ where API developers create and test APIs. API Administrators should read the topics in the "Managing catalogs and products" section of the extended V10 Reserved documentation.
+After an API developer creates a set of APIs, the API administrator manages the distribution. The API administrator defines Plans that determine access to the APIs, bundles a set of related APIs and Plans into Products, and publishes them to the consumer Developer Portals. The API administrator also manages the Catalogs and Spaces where API developers create and test APIs. API Administrators should read the topics in the _Managing catalogs and products_ section of the extended V10 Reserved documentation.
 
 You can perform API management tasks in the API Manager interface, or in the toolkit command-line interface. For information on working with the toolkit, see [Setting up your toolkit](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/ri_toolkit.html){: external} in the extended V10 Reserved documentation.
 

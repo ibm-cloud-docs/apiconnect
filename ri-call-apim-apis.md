@@ -20,9 +20,6 @@ The REST APIs provided by {{site.data.keyword.apiconnect_short}} V10 Reserved re
 
 This requirement applies only to the APIs that are provided by {{site.data.keyword.apiconnect_short}}. You do not need the API key for calling APIs that you imported or created. The API key is intended for use with the IBM ID and might not work with other user registries.
 
-This topic applies only to the V10 Reserved edition of {{site.data.keyword.apiconnect_short}}. For information on calling {{site.data.keyword.apiconnect_short}} APIs in V5, see [Calling APIs provided by API Connect V5](/docs/apiconnect?topic=apiconnect-call_apim_apis).
-{: note}
-
 ## Calling an {{site.data.keyword.apiconnect_short}} API interactively in V10 Reserved
 {: #cli_ri-call-apim-apis}
 
@@ -50,9 +47,9 @@ To obtain an {{site.data.keyword.cloud_notm}} API Key, complete the following st
 
 2. Click **Create an {{site.data.keyword.cloud_notm}} API key**.
 
-3. In the "Create API key" dialog box, provide a name and description for the key, and then click **Create**.
+3. In the **Create API key** dialog box, provide a name and description for the key, and then click **Create**.
 
-4. **Important** In the "API key successfully created" message box, click **Download** to save a copy of the key as a file called `apikey.json`.
+4. **Important** In the **API key successfully created** message box, click **Download** to save a copy of the key as a file called `apikey.json`.
 
 The API key does not expire; however, after you close the message box, you cannot access the key. If you lose the key or failed to copy it, you must obtain a new API key.
 

@@ -7,7 +7,7 @@ toc:
     audience: service
     href: /docs/apiconnect
     console-page: /apis/services
-    product-page: https://www.ibm.com/cloud/api-connect
+    product-page: https://www.ibm.com/products/api-connect
     path: apiconnect
     label: API Connect
   entries:
@@ -65,10 +65,10 @@ toc:
               label: Learn about API Connect
               href: https://cloud.ibm.com/apis/overview
           - link:
-              label: Why use API Connect?
-              href: https://developer.ibm.com/apiconnect/
+              label: API Connect topics in the IBM Integration Community
+              href: https://community.ibm.com/community/user/integration/communities/community-home?CommunityKey=2106cca0-a9f9-45c6-9b28-01a28f4ce947
           - link:
-              label: Documentation for API Connect V10 Reserved (knowledge center)
+              label: Complete documentation for API Connect V10 Reserved
               href: https://www.ibm.com/docs/en/api-connect/10_reserved_instance
   - navgroup:
       id: help

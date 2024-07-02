@@ -25,11 +25,11 @@ A gateway's visibility setting determines which provider organizations can use t
 
 1. On the administration console's home page, click **Gateways**.
 
-2. On the "Gateways" page, locate the gateway in the table. At the end of the row, click ![Menu icon](images/icon_options.png "Menu icon") > **Set visibility**.
+2. On the **Gateways** page, locate the gateway in the table. At the end of the row, click ![Menu icon](images/icon_options.png "Menu icon") > **Set visibility**.
 
-3. On the "Set visibility of gateway" page, select the visibility level for the current gateway.
+3. On the **Set visibility of gateway** page, select the visibility level for the current gateway.
 
-4. If you selected the **Custom** option, use the "Provider organizations" panel to specify which provider organizations can use the gateway:
+4. If you selected the **Custom** option, use the **Provider organizations** panel to specify which provider organizations can use the gateway:
 
    a. Locate a provider organization:
       - Click the **Search for provider organizations** field to display a list of provider organizations.
@@ -46,9 +46,9 @@ Members of a provider organization publish APIs by adding them to a product and 
 
 1. On the administration console's home page, click **Settings**.
 
-2. On the "Default gateways" page, click **Edit**.
+2. On the **Default gateways** page, click **Edit**.
 
-3. In the "Specify default gateways" page, select all of the gateways that you want to be available to new catalogs.
+3. In the **Specify default gateways** page, select all of the gateways that you want to be available to new catalogs.
 
 4. Click **Save** to apply the new setting.
 
