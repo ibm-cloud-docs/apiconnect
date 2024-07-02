@@ -13,7 +13,6 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Viewing API event analytics
-
 {: #ri-analytics}
 
 The Product Manager uses the Analytics feature to track API usage and performance, which helps determine when APIs should be updated or retired.

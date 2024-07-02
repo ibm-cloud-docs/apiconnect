@@ -13,7 +13,6 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Activity tracking events for {{site.data.keyword.apiconnect_short}} Reserved
-
 {: #at_events}
 
 {{site.data.keyword.cloud_notm}} services, such as {{site.data.keyword.apiconnect_short}} Reserved, generate activity tracking events.
@@ -31,13 +30,11 @@ As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecate
 {: important}
 
 ## Locations where activity tracking events are generated
-
 {: #at-locations}
 
 {{site.data.keyword.apiconnect_short}} Reserved generates activity tracking events in all regions where the {{site.data.keyword.apiconnect_short}} Reserved service is available.
 
 ## Locations where activity tracking events are sent to {{site.data.keyword.at_full_notm}} hosted event search
-
 {: #at-legacy-locations}
 
 
@@ -45,7 +42,6 @@ As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecate
 {{site.data.keyword.apiconnect_short}} Reserved sends activity tracking events to {{site.data.keyword.at_full_notm}} hosted event search in all regions where the {{site.data.keyword.apiconnect_short}} Reserved service is available.
 
 ## Locations where activity tracking events are sent by {{site.data.keyword.atracker_full_notm}}
-
 {: #atracker-locations}
 
 
@@ -53,13 +49,11 @@ As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecate
 {{site.data.keyword.apiconnect_short}} Reserved sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in all regions where the {{site.data.keyword.apiconnect_short}} Reserved service is available.
 
 ## Enabling activity tracking events for{{site.data.keyword.apiconnect_short}} Reserved
-
 {: #at-enable}
 
 Activity tracking is automatically enabled in your {{site.data.keyword.apiconnect_short}} Reserved service instance.
 
 ## Viewing activity tracking events for {{site.data.keyword.apiconnect_short}} Reserved
-
 {: #at-viewing}
 
 
@@ -67,7 +61,6 @@ Activity tracking is automatically enabled in your {{site.data.keyword.apiconnec
 You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
 
 ### Launching {{site.data.keyword.logs_full_notm}} from the Observability page
-
 {: #log-launch-standalone}
 
 
@@ -75,7 +68,6 @@ You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on event
 For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [Launching the UI in the {{site.data.keyword.logs_full_notm}} documentation.](/docs/cloud-logs?topic=cloud-logs-instance-launch)
 
 ## List of events
-
 {: #at_actions_events}
 
 The following table describes the actions that generate activity tracking events in {{site.data.keyword.apiconnect_short}} Reserved service for APIs, subscriptions, and domains.

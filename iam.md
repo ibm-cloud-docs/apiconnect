@@ -13,7 +13,6 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Managing access
-
 {: #iam}
 
 {{site.data.keyword.apiconnect_short}} V10 Reserved uses {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) to securely authenticate users and control access to service instances on the {{site.data.keyword.cloud_notm}} platform.
@@ -22,7 +21,6 @@ subcollection: apiconnect
 {: note}
 
 ## Identity and Access Management roles and actions
-
 {: #apic-roles-actions_iam}
 
 Access to Reserved instances for users in your account is controlled by {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM).

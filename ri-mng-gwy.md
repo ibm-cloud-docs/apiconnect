@@ -13,14 +13,12 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Managing gateways
-
 {: #ri-mng-gwy}
 
 Manage gateways in {{site.data.keyword.apiconnect_short}} Reserved by defining whether they are available to users, and whether they are included in new catalogs.
 {: shortdesc}
 
 ## Controlling a gateway's visibility
-
 {: #visible_ri-mng-gwy}
 
 A gateway's visibility setting determines which provider organizations can use the gateway. If you deploy multiple gateways, you might want to assign each gateway to a specific set of provider organizations.
@@ -42,7 +40,6 @@ A gateway's visibility setting determines which provider organizations can use t
 5. Click **Save** to save the visibility settings.
 
 ## Specifying default gateways for catalogs
-
 {: #default_ri-mng-gwy}
 
 Members of a provider organization publish APIs by adding them to a product and then publishing the product to a catalog. The catalog must be assigned at least one gateway so that the APIs can be called using the gateway endpoint. To ensure that new catalogs have access to gateways, you can assign _default gateways_ that are automatically added to every new catalog.

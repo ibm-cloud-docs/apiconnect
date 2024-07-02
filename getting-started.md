@@ -13,7 +13,6 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Getting started as a user in {{site.data.keyword.apiconnect_short}} Reserved
-
 {: #getting-started}
 
 See how easy it is to create, manage, secure, and share APIs.
@@ -27,7 +26,6 @@ If you are an administrator, see [Getting started as an administrator](/docs/api
 In this tutorial, you verify your access to {{site.data.keyword.apiconnect_short}}, then open the API Manager and create an API. Ready to get started? 
 
 ## Log in to {{site.data.keyword.apiconnect_short}} with your provider organization
-
 {: #open-apim_getting-started}
 
 To use the API Manager, you must be invited to a provider organization in {{site.data.keyword.apiconnect_short}}. An administrator from your company creates the provider organization, defines access settings, and then adds users.
@@ -55,7 +53,6 @@ You can log into the {{site.data.keyword.apiconnect_short}} with your provider o
 When you see the {{site.data.keyword.apiconnect_short}} Home page, you're ready to proceed.
 
 ## Next steps
-
 {: #next-steps_getting-started}
 
 Now that you're ready to work in {{site.data.keyword.apiconnect_short}}, see the topics in the [Using API Connect Reserved](/docs/apiconnect?topic=apiconnect-ri-user-over) section for more information on working with APIs and products, catalogs, event analytics, and the Developer Portal.

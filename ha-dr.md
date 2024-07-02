@@ -13,7 +13,6 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Understanding high availability and disaster recovery for {{site.data.keyword.apiconnect_short}}
-
 {: #ha-dr}
 
 {{site.data.keyword.cloud_notm}} provides high-availability and disaster-recovery solutions to ensure that your APIs remain accessible.

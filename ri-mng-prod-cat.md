@@ -13,14 +13,12 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Managing APIs, products, and catalogs
-
 {: #ri-manage-assets}
 
 Managing APIs, catalogs, and products in {{site.data.keyword.apiconnect_full}} involves a series of tasks to maintain catalogs where developers can create and test APIs, and to manage the lifecycle of the products containing APIs that are published for customer use.
 {: shortdesc}
 
 ## API administration tasks in {{site.data.keyword.apiconnect_short}}
-
 {: #tasks-docs_ri-manage-assets}
 
 Every provider organization has its own set of APIs, catalogs, and products. While the API Developer creates APIs and products, the API Administrator manages them, along with the catalogs where development work takes place.
@@ -30,7 +28,6 @@ After an API developer creates a set of APIs, the API administrator manages the 
 You can perform API management tasks in the API Manager interface, or in the toolkit command-line interface. For information on working with the toolkit, see [Setting up your toolkit](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/ri_toolkit.html){: external} in the extended V10 Reserved documentation.
 
 ### Managing catalogs
-
 {: #catalog-docs_ri-manage-assets}
 
 A _catalog_ is a staging target where developers can create and test APIs before publishing them for customers to use. Each provider organization can create multiple catalogs. Catalogs are useful for organizing products and APIs for testing before you make them available to consumer organizations. For more information on managing catalogs, see the following topics in the extended V10 documentation:
@@ -41,7 +38,6 @@ A _catalog_ is a staging target where developers can create and test APIs before
 You can partition a catalog into _spaces_ and then assign a different team of developers to work in each space.
 
 #### Using spaces in a catalog
-
 {: #space-docs_ri-manage-assets}
 
 Each space is used by a different team of developers, and has its own set of management capabilities relating specifically to the APIs that are developed by associated team. Using spaces enables each development team to manage their APIs independently. For information on working with spaces, see the following topics in the extended V10 Reserved documentation:
@@ -54,7 +50,6 @@ Each space is used by a different team of developers, and has its own set of man
    3. [Add users to the space](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/tapic_syndication_spaces_members_manage.html){: external}
 
 ### Configuring OAuth providers for APIs
-
 {: #oauth-docs_ri-manage-assets}
 
 Secure access to your organization's APIs by configuring an OAuth provider. When a customer's application calls your API, the app must obtain a token from the OAuth provider and pass it to {{site.data.keyword.apiconnect_short}} to prove that it has authorization to use the API. For information on working with OAuth, see the following topics in the extended V10 Reserved documentation:
@@ -64,13 +59,11 @@ Secure access to your organization's APIs by configuring an OAuth provider. When
 - [Creating a third-party OAuth provider](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/oauth_thirdparty_apim.html){: external}
 
 ### Managing product lifecycles
-
 {: #product-docs_ri-manage-assets}
 
 A _product_ is a set of APIs and the _plans_ that specify usage rules such as rate limits. You publish a product to your organization's _developer portal_ where customers can _subscribe_ to use the APIs contained in each product. Every product has a lifecycle spanning its initial publication through its removal from the Developer Portal. You can manage the stages in the product lifecycle in {{site.data.keyword.apiconnect_short}}. For information on working with products, see the following topics in the extended V10 Reserved documentation:
 
 #### Publishing a product
-
 {: #publish-docs_ri-manage-assets}
 
 - [Publish a new product](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/task_publishing_a_product.html){: external}
@@ -78,7 +71,6 @@ A _product_ is a set of APIs and the _plans_ that specify usage rules such as ra
 - [Supercede a product](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/task_superseding_a_product.html){: external}
 
 #### Changing product availability
-
 {: #change-docs_ri-manage-assets}
 
 Restrict a product to specific consumers or endpoints, or remove a product from the developer portal.

@@ -13,7 +13,6 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Getting started as an admin in {{site.data.keyword.apiconnect_short}} V10 Reserved
-
 {: #getting-started-admin}
 
 Set up {{site.data.keyword.apiconnect_short}} so your users can develop APIs, publish them to consumers, and manage usage and lifecycles.
@@ -25,7 +24,6 @@ If you're not an admin, see [Getting started as a user](/docs/apiconnect?topic=a
 {: note}
 
 ## Step 1. Open your administration console
-
 {: #start-service_getting-started}
 
 In {{site.data.keyword.cloud_notm}}, {{site.data.keyword.apiconnect_short}} V10 Reserved provides two components: the administration console and the API Manager. Use the administration console to configure the Reserved instance for your users, who work with features in the API Manager.
@@ -55,7 +53,6 @@ Start the administration console by completing the following steps:
 As an {{site.data.keyword.apiconnect_short}} admin, you control the Reserved instance by configuring gateways for API access and managing users. Whenever you want to perform admin tasks, return to the "Services" page to open the administration console.
 
 ## Step 2. Configure user access
-
 {: #config-users_getting-started}
 
 In {{site.data.keyword.apiconnect_short}} V10 Reserved, user access is managed with the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) service. Create an {{site.data.keyword.apiconnect_short}} provider organization that will represent a set of users, and use the IAM service to define access groups with roles that grant permission for users to work with {{site.data.keyword.apiconnect_short}} features.

@@ -13,7 +13,6 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Adding a customer-managed remote gateway
-
 {: #ri-reg-gwy}
 
 {{site.data.keyword.apiconnect_short}} V10 Reserved deploys with the IBM DataPower API gateway by default. You can deploy additional DataPower API gateways, which you manage, for use with your Reserved instance.

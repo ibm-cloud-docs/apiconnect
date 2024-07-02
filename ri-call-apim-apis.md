@@ -13,7 +13,6 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Calling APIs provided by V10 Reserved
-
 {: #ri-call-apim-apis}
 
 The REST APIs provided by {{site.data.keyword.apiconnect_short}} V10 Reserved require authentication for use. To call an API interactively, you can log into the toolkit CLI with an option to generate the API key. To call an API programmatically, you can generate an API key and then exchange it for an IBM Cloud IAM Bearer token.
@@ -25,7 +24,6 @@ This topic applies only to the V10 Reserved edition of {{site.data.keyword.apico
 {: note}
 
 ## Calling an {{site.data.keyword.apiconnect_short}} API interactively in V10 Reserved
-
 {: #cli_ri-call-apim-apis}
 
 To call APIs interactively in the V10 Reserved CLI, log in to the {{site.data.keyword.apiconnect_short}} toolkit with the following command:
@@ -39,13 +37,11 @@ Follow the displayed instructions to generate an IBM Cloud API key, copy it from
 For more information on logging in to the toolkit, see [Setting up the toolkit for V10 Reserved](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/ri_toolkit.html#ri_tk_login) in the extended V10 Reserved documentation.
 
 ## Calling an {{site.data.keyword.apiconnect_short}} API programmatically in V10 Reserved
-
 {: #program_ri-call-apim-apis}
 
 To call an API programmatically, generate an API key and then use it to generate an IBM Cloud IAM access token. You can use the generated token for authentication in your API calls.
 
 ### Obtain an {{site.data.keyword.cloud_notm}} API key
-
 {: #apikey_ri-call-apim-apis}
 
 To obtain an {{site.data.keyword.cloud_notm}} API Key, complete the following steps.
@@ -61,7 +57,6 @@ To obtain an {{site.data.keyword.cloud_notm}} API Key, complete the following st
 The API key does not expire; however, after you close the message box, you cannot access the key. If you lose the key or failed to copy it, you must obtain a new API key.
 
 #### API key best practices
-
 {: #apikey-practices_ri-call-apim-apis}
 
 API keys are used as the method of authentication to your service, so they must be kept secure. The following best practices help you maintain a secure API key and reduce the chance of publicly exposing credentials that compromise your application.
@@ -84,7 +79,6 @@ API keys are used as the method of authentication to your service, so they must 
    When you migrate your application to the new credentials, don't forget to delete the old credentials.
 
 ### Exchange the API key for an IBM Cloud IAM access token
-
 {: #iam-token_ri-call-apim-apis}
 
 To exchange your API key for an IAM access token, use the following command:

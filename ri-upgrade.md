@@ -13,14 +13,12 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Upgrading your Reserved instance
-
 {: #ri-upgrade}
 
 You can perform an upgrade of your {{site.data.keyword.apiconnect_short}} Reserved instance on the {{site.data.keyword.apiconnect_short}} services page.
 {: shortdesc}
 
 ## Is an upgrade available?
-
 {: #avail_ri-upgrade}
 
 When an upgrade is available for your Reserved instance, the "(Upgrade available)" message displays on the {{site.data.keyword.apiconnect_short}} services page, next to the instance's status.
@@ -28,7 +26,6 @@ When an upgrade is available for your Reserved instance, the "(Upgrade available
 To learn more about the upgrade, click the overflow menu on the same row of the services table, and select **Apply upgrade**.
 
 ## Scheduling and running an upgrade
-
 {: #run_ri-upgrade}
 
 1. To start the upgrade, click the overflow menu on the same row of the services table, and select **Apply upgrade**.

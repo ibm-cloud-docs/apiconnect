@@ -13,7 +13,6 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Managing users
-
 {: #ri-mng-users}
 
 Create provider organizations to manage {{site.data.keyword.apiconnect_short}}, and map them to {{site.data.keyword.cloud_notm}} IAM access groups to specify user permissions to the Catalogs and Spaces contained in each provider organization.
@@ -36,19 +35,16 @@ At a minimum, each user must be assigned at least Reader role on the Reserved in
 Complete the following tasks to grant members of your {{site.data.keyword.cloud_notm}} account the appropriate access to resources in your Reserved instance.
 
 ## Creating provider organizations
-
 {: #porg_ri-mng-users}
 
 You can create a single provider organization (for example, in a small company) or create multiple provider organizations (for example, different departments in a large company). Some users might belong to multiple provider organizations, and might receive different levels of access with each.
 
 ### Decide how many provider organizations you need
-
 {: #porg-decide_ri-mng-users}
 
 In {{site.data.keyword.apiconnect_short}} Reserved, all of the members of a provider organization receive the same level of access to {{site.data.keyword.apiconnect_short}}. Review the members of your company's {{site.data.keyword.cloud_notm}} account and the descriptions of [who does what in {{site.data.keyword.apiconnect_short}}](/docs/apiconnect?topic=apiconnect-ri-user-over#whodoeswhat_ri-user-over), and determine how many provider organizations you need to create.
 
 ### Create your provider organizations in {{site.data.keyword.apiconnect_short}}
-
 {: #porg-create_ri-mng-users}
 
 Use the {{site.data.keyword.apiconnect_short}} administration console to create a provider organization and map it to the new IAM access group.
@@ -76,13 +72,11 @@ Use the {{site.data.keyword.apiconnect_short}} administration console to create 
 Repeat steps 3 and 4 for each additional provider organization. Then, create an IAM access group that will map to each provider organization and define user permissions.
 
 ## Creating IAM access groups
-
 {: #access_ri-mng-users}
 
 After you create a provider organization in {{site.data.keyword.apiconnect_short}}, use the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) service to set permissions for it. You can define IAM access groups with policies that determine permissions within each provider organization in {{site.data.keyword.apiconnect_short}}, and then you can add members of your company's {{site.data.keyword.cloud_notm}} account to the appropriate access groups, which map users to provider organizations.
 
 ### Determine access needs for users
-
 {: #access-needs_ri-mng-users}
 
 For each provider organization, you need to create an IAM access group and assign the appropriate permissions. To decide what type of permissions each access group (provider organization) requires, review Table 1 to see how suggested jobs in {{site.data.keyword.apiconnect_short}} map to access roles in IAM.
@@ -102,7 +96,6 @@ Table 1 suggests IAM roles for typical {{site.data.keyword.apiconnect_short}} jo
 The IAM service provides roles for both the "platform" (the Reserved instance itself) and the "service" (the product features provided in the Reserved instance). {{site.data.keyword.apiconnect_short}} administrators and API administrators perform tasks that use the platform roles; for example, provisioning a service instance and managing user access to it. Other users perform tasks that use the service roles; for example, creating an API or viewing event analytics.
 
 ### Create access groups in IAM
-
 {: #access-create-group_ri-mng-users}
 
 In IAM, an access group contains a set of users that are assigned to the same access roles for the same {{site.data.keyword.cloud_notm}} resource. For your purposes, each access group represents a provider organization and should be assigned to the appropriate access roles for that provider organization.
@@ -122,7 +115,6 @@ In IAM, an access group contains a set of users that are assigned to the same ac
 Repeat steps 4 and 5 for each access group.
 
 ### Assign access policies to the access groups
-
 {: #access-assign-policies_ri-mng-users}
 
 An IAM access policy assigns roles (each role represents a set of permissions) to an access group. You can add one or more roles to each access group in IAM, and you can map one or more access groups to each of your {{site.data.keyword.apiconnect_short}} provider organizations.
@@ -178,7 +170,6 @@ An IAM access policy assigns roles (each role represents a set of permissions) t
 Next, add users to the access group so that the permissions you just configured can be assigned to them.
 
 ### Add users to the access group
-
 {: #access-add-users_ri-mng-users}
 
 Adding users to an access group maps them to the provider organization that is associated with that access group, and determines their permissions in {{site.data.keyword.apiconnect_short}} when they log in with that provider organization.
@@ -196,7 +187,6 @@ Adding users to an access group maps them to the provider organization that is a
 4. At the beginning of the table, click **Add to group**.
 
 ## Notifying users that the provider organization is available
-
 {: #invite-porg_ri-mng-users}
 
 When you set up IAM access for your users, there is no automatic notification. After you finish configuring access for a provider organization, you should notify its members so they can start working with {{site.data.keyword.apiconnect_short}}. For example, you could send an email or post a message where your users will see it. You should tell users the following information:
@@ -209,25 +199,21 @@ Each user must log out from IBM Cloud and then log in again for the permission c
 ![IBM Cloud log out](images/cloud_logout.png "IBM Cloud log out")
 
 ## Managing provider organizations
-
 {: #mng-porg_ri-mng-users}
 
 Use IAM to add and remove users, and to manage their permissions.
 
 ### Assign ownership of a provider organization
-
 {: #mng-porg-owner_ri-mng-users}
 
 Instead of managing all provider organizations yourself, you can designate other users as owners and give them the appropriate access. To assign owner-level access to a provider organization, create an IAM access group that has administrative access to the provider organization, and add the user to that access group.
 
 ### Manage user permissions
-
 {: #mng-porg-user-perms_ri-mng-users}
 
 To change a user's permissions in {{site.data.keyword.apiconnect_short}}, either change the roles assigned to the IAM access group containing that user, or move the user to a different access group.
 
 ### Remove users from a provider organization
-
 {: #mng-porg-remove-user_ri-mng-users}
 
 To remove a user from a provider organization, delete that user from the corresponding access role in IAM. The next time that the user attempts to log in to the provider organization, the login will not be allowed.

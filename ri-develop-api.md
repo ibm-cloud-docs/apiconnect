@@ -13,14 +13,12 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Developing APIs
-
 {: #ri-develop-api}
 
 Developing APIs in {{site.data.keyword.apiconnect_full}} involves a series of tasks to define the API's configuration, implement security settings, test the API, and package it in a product.
 {: shortdesc}
 
 ## API development tasks in {{site.data.keyword.apiconnect_short}}
-
 {: #tasks-docs_ri-develop-api}
 
 An API developer creates new APIs and updates existing APIs as needed. The API developer can configure policies that define security restrictions, logging rules, and quotas that control access to your company’s resources. Developers should read the topics in the "Developing APIs and products" section of the extended V10 Reserved documentation.

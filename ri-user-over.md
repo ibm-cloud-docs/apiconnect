@@ -13,14 +13,12 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # What is {{site.data.keyword.apiconnect_short}} Reserved?
-
 {: #ri-user-over}
 
 {{site.data.keyword.apiconnect_short}} V10 Reserved lets you create and manage APIs directly in {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
 ## Managing the API lifecycle in {{site.data.keyword.apiconnect_short}}
-
 {: #lifecycle_ri-user-over}
 
 {{site.data.keyword.apiconnect_short}} enables you to manage the lifecyle of your APIs with a set of integrated features. Use the {{site.data.keyword.apiconnect_short}} Reserved plan to host your APIs in the cloud and easily complete the tasks needed for all phases of an API's life:
@@ -32,7 +30,6 @@ subcollection: apiconnect
 - Manage API products with a Developer Portal where you can make them available to application developers, and a robust set of analytics so you can monitor API usage and performance.
 
 ## Who does what in {{site.data.keyword.apiconnect_short}}?
-
 {: #whodoeswhat_ri-user-over}
 
 In {{site.data.keyword.apiconnect_short}}, users are grouped into provider organizations, and are assigned permissions that control access to resources based on the job that each person typically performs.

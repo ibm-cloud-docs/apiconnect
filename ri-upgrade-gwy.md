@@ -13,7 +13,6 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Upgrading a customer-managed remote gateway
-
 {: #ri-upgrade-gwy}
 
 If you deployed a customer-managed remote gateway for your {{site.data.keyword.apiconnect_short}} V10 Reserved instance, you must upgrade that gateway before upgrading the Reserved instance.

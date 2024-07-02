@@ -13,7 +13,6 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Developer Portal tutorials for {{site.data.keyword.apiconnect_short}} Reserved
-
 {: #ri-tutorials}
 
 Tutorials are included in the extended {{site.data.keyword.apiconnect_short}} V10 Reserved documentation.

@@ -13,7 +13,6 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Using the Support Center
-
 {: #get_help}
 
 Need help with your {{site.data.keyword.apiconnect_short}} service instance? Visit the {{site.data.keyword.cloud_notm}} [Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter) to file a case.

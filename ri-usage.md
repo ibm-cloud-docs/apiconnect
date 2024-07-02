@@ -13,7 +13,6 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Reviewing your plan and usage
-
 {: #ri-usage}
 
 You can review information about your {{site.data.keyword.apiconnect_short}} Reserved plan and API use. The information lets you track overall usage against your plan, and displays a graph showing your monthly usage rate.
