@@ -25,7 +25,7 @@ Custom roles are not supported by the IAM service, so if you create custom roles
 
 You must assign a predefined role to each user to ensure they can access your resources. In {{site.data.keyword.apiconnect_short}}, resources are managed in the following hierarchy:
 
-![Resource hierarchy](images/ri-resource-hierarchy.png "Resource hierarchy")
+![Resource hierarchy](images/ri-resource-hierarchy.png){: caption="Figure 1. Resource hierarchy" caption-side="bottom"}
 
 To grant users permissions to the {{site.data.keyword.apiconnect_short}} resources owned by a particular provider organization, add the users to that provider organization. The role that a user is assigned to for the provider organization is inherited by the catalogs within it, and by the spaces within each catalog. You can override this access at the lower levels by assigning the user to a different role. For example, if you only want the user to have Edit access in a particular space, assign the user to the Reader role for the provider organization, and then assign the user to a role with Edit access on the selected space. The user will still have only Reader access to the catalog owning the space, to all other spaces within the same catalog, and to alwildcard
 l other catalogs and spaces owned by the provider organization.
@@ -196,7 +196,8 @@ When you set up IAM access for your users, there is no automatic notification. A
 - Where to find documentation: [https://cloud.ibm.com/docs/apiconnect](https://cloud.ibm.com/docs/apiconnect)
 
 Each user must log out from IBM Cloud and then log in again for the permission changes to take effect.
-![IBM Cloud log out](images/cloud_logout.png "IBM Cloud log out")
+
+![IBM Cloud log out](images/cloud_logout.png){: caption="Figure 2. IBM Cloud log out" caption-side="bottom"}
 
 ## Managing provider organizations
 {: #mng-porg_ri-mng-users}
