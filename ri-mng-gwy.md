@@ -1,32 +1,26 @@
 ---
 
 copyright:
-   years: 2020, 2021
-lastupdated: "2020-10-15"
+   years: 2020, 2024
+lastupdated: "2024-07-02"
 
-keywords: IBM Cloud, API Connect, V10, Reserved instance, lifecycle, develop, create, manage, API, user, role, access, group
+keywords: IBM Cloud, API Connect, Reserved instance, lifecycle, develop, create, manage, API, user, role, access, group
 
 subcollection: apiconnect
 
 ---
 
-{:external: target="_blank" .external} 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # Managing gateways
+
 {: #ri-mng-gwy}
 
 Manage gateways in {{site.data.keyword.apiconnect_short}} Reserved by defining whether they are available to users, and whether they are included in new catalogs.
 {: shortdesc}
 
-
 ## Controlling a gateway's visibility
+
 {: #visible_ri-mng-gwy}
 
 A gateway's visibility setting determines which provider organizations can use the gateway. If you deploy multiple gateways, you might want to assign each gateway to a specific set of provider organizations.
@@ -42,16 +36,16 @@ A gateway's visibility setting determines which provider organizations can use t
    a. Locate a provider organization:
       - Click the **Search for provider organizations** field to display a list of provider organizations.
       - Type a string in the **Search for provider organizations** field to filter the list of provider organizations.
-   
+
    b. Click the name of the provider organization to select it.
 
 5. Click **Save** to save the visibility settings.
 
-
 ## Specifying default gateways for catalogs
+
 {: #default_ri-mng-gwy}
 
-Members of a provider organization publish APIs by adding them to a product and then publishing the product to a catalog. The catalog must be assigned at least one gateway so that the APIs can be called using the gateway endpoint. To ensure that new catalogs have access to gateways, you can assign _default gateways_ that are automatically added to every new catalog. 
+Members of a provider organization publish APIs by adding them to a product and then publishing the product to a catalog. The catalog must be assigned at least one gateway so that the APIs can be called using the gateway endpoint. To ensure that new catalogs have access to gateways, you can assign _default gateways_ that are automatically added to every new catalog.
 
 1. On the administration console's home page, click **Settings**.
 
@@ -61,4 +55,4 @@ Members of a provider organization publish APIs by adding them to a product and 
 
 4. Click **Save** to apply the new setting.
 
-Existing catalogs are not affected when you change this setting. You can update a catalog later in API Manager to remove unwanted gateways or add new gateways. For information on working with catalog settings, see [Creating and configuring catalogs](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/create_env.html){: external} in the extended V10 Reserved documentation.
+Existing catalogs are not affected when you change this setting. You can update a catalog later in API Manager to remove unwanted gateways or add new gateways. For information on working with catalog settings, see [Creating and configuring catalogs](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/create_env.html){: external} in the extended V10 Reserved documentation.

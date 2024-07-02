@@ -1,32 +1,28 @@
 ---
 
 copyright:
-   years: 2020, 2021
-lastupdated: "2020-10-15"
+   years: 2020, 2024
+lastupdated: "2024-07-02"
 
-keywords: API management, API, gateway, support, responsibility, responsible
+keywords: API management, API, gateway, support, responsibility, responsible, API Connect
 
 subcollection: apiconnect
 
 ---
 
-{:external: target="_blank" .external} 
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # Understanding your responsibilities when using {{site.data.keyword.apiconnect_short}}
+
 {: #responsibilities}
 
 Review the following tables to understand who is responsible for managing the different resources and features in {{site.data.keyword.apiconnect_short}}.
 {: shortdesc}
 
-
 For a general overview of IBM and customer responsibilities in {{site.data.keyword.Bluemix_notm}}, see [Shared responsibilities for IBM Cloud offerings](/docs/overview?topic=overview-shared-responsibilities).
 
 ## Responsibility for {{site.data.keyword.apiconnect_short}} resources
+
 {: #resources_responsibilities}
 
 While most of the {{site.data.keyword.apiconnect_short}} resources are managed by IBM, you are responsible for some resources that are typically managed by you. Table 1 lists the {{site.data.keyword.apiconnect_short}} resources and notes which party is responsible for managing different aspects of each resource.
@@ -46,8 +42,8 @@ While most of the {{site.data.keyword.apiconnect_short}} resources are managed b
 | Facilities and Data Centers  | IBM                   | IBM               | IBM                   | IBM      |
 {: caption="Table 1. Resource responsibility" caption-side="top"}
 
-
 ## Responsibility for {{site.data.keyword.apiconnect_short}} product features
+
 {: #features_responsibilities}
 
 Most of the responsibility for {{site.data.keyword.apiconnect_short}} features is shared between you and IBM. Table 2 specifies each party's responsibilities for features.

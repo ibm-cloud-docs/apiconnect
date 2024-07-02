@@ -1,23 +1,19 @@
 ---
 
 copyright:
-   years: 2020, 2021
-lastupdated: "2021-07-26"
+   years: 2020, 2024
+lastupdated: "2024-07-02"
 
-keywords: API management, HA, high availability, disaster recovery, downtime, down time, failure, catasrophe, region, multizone region, MZR
+keywords: API management, HA, high availability, disaster recovery, downtime, down time, failure, catasrophe, region, multizone region, MZR, API Connect
 
 subcollection: apiconnect
 
 ---
 
-{:external: target="_blank" .external} 
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # Understanding high availability and disaster recovery for {{site.data.keyword.apiconnect_short}}
+
 {: #ha-dr}
 
 {{site.data.keyword.cloud_notm}} provides high-availability and disaster-recovery solutions to ensure that your APIs remain accessible.

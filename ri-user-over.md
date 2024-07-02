@@ -1,32 +1,26 @@
 ---
 
 copyright:
-   years: 2020, 2021
-lastupdated: "2020-10-15"
+   years: 2020, 2024
+lastupdated: "2024-07-02"
 
-keywords: management, Reserved plan, develop, manage, use, publish, socialize, customer, consumer, lifecycle
+keywords: management, Reserved plan, develop, manage, use, publish, socialize, customer, consumer, lifecycle, API Connect
 
 subcollection: apiconnect
 
 ---
 
-{:external: target="_blank" .external} 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # What is {{site.data.keyword.apiconnect_short}} Reserved?
+
 {: #ri-user-over}
 
 {{site.data.keyword.apiconnect_short}} V10 Reserved lets you create and manage APIs directly in {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
-
 ## Managing the API lifecycle in {{site.data.keyword.apiconnect_short}}
+
 {: #lifecycle_ri-user-over}
 
 {{site.data.keyword.apiconnect_short}} enables you to manage the lifecyle of your APIs with a set of integrated features. Use the {{site.data.keyword.apiconnect_short}} Reserved plan to host your APIs in the cloud and easily complete the tasks needed for all phases of an API's life:
@@ -37,8 +31,8 @@ subcollection: apiconnect
 
 - Manage API products with a Developer Portal where you can make them available to application developers, and a robust set of analytics so you can monitor API usage and performance.
 
-
 ## Who does what in {{site.data.keyword.apiconnect_short}}?
+
 {: #whodoeswhat_ri-user-over}
 
 In {{site.data.keyword.apiconnect_short}}, users are grouped into provider organizations, and are assigned permissions that control access to resources based on the job that each person typically performs.
@@ -67,5 +61,5 @@ Jobs can be assigned to people based on their expertise; for example, administer
 - **Consumer**
 
    _Consumers_ are your customers, and are not members of your provider organization. When your organization publishes products that contain APIs, consumers subscribe to the products so they can use the APIs in their applications. A consumer can subscribe to use APIs and products that are developed by different provider organizations. Each provider organization assigns one or more Product Managers to manage the relationship with its consumers. The Product Manager creates _consumer organizations_ and adds customers to give them access to the developer portal.
-   
-For more information on working in {{site.data.keyword.apiconnect_short}}, see [Understanding {{site.data.keyword.apiconnect_short}}](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.overview.doc/capic_whatis.html){: external} in the V10 Reserved Knowledge Center.
+
+For more information on working in {{site.data.keyword.apiconnect_short}}, see [Understanding {{site.data.keyword.apiconnect_short}}](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.overview.doc/capic_whatis.html){: external} in the V10 Reserved Knowledge Center.

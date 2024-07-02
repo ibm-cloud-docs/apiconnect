@@ -1,25 +1,19 @@
 ---
 
 copyright:
-   years: 2020, 2021
-lastupdated: "2020-10-30"
+   years: 2020, 2024
+lastupdated: "2024-07-02"
 
-keywords: IBM Cloud, API Connect, V10, Reserved instance, lifecycle, develop, create, manage, API, user, role, access, group, administer
+keywords: IBM Cloud, API Connect, Reserved instance, lifecycle, develop, create, manage, API, user, role, access, group, administer
 
 subcollection: apiconnect
 
 ---
 
-{:external: target="_blank" .external} 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # Adding a customer-managed remote gateway
+
 {: #ri-reg-gwy}
 
 {{site.data.keyword.apiconnect_short}} V10 Reserved deploys with the IBM DataPower API gateway by default. You can deploy additional DataPower API gateways, which you manage, for use with your Reserved instance.
@@ -31,12 +25,12 @@ You might want to deploy additional API Gateways for your Reserved instance; for
 
 To register a remote API Gateway with your Reserved instance, click the **Download Gateway** tile on the administration Home page, and complete the following steps:
 
-Step 1: Download - Select your environment and download the package. 
+Step 1: Download - Select your environment and download the package.
 
-Step 2: Install - Select your environment to see the installation instructions for the gateway. 
+Step 2: Install - Select your environment to see the installation instructions for the gateway.
 
-Step 3: Configure - Follow the instructions in [Adding remote gateways in V10 Reserved](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.install.doc/ri_gwy_intro.html){: external} to set up certificates and configure the new gateway.
+Step 3: Configure - Follow the instructions in [Adding remote gateways in V10 Reserved](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.install.doc/ri_gwy_intro.html){: external} to set up certificates and configure the new gateway.
 
-Step 4: Register - Click the link to register the new gateway with your {{site.data.keyword.apiconnect_short}} Reserved instance. For instructions, see  [Registering a gateway with V10 Reserved](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.install.doc/ri_gwy_reg.html){: external}
+Step 4: Register - Click the link to register the new gateway with your {{site.data.keyword.apiconnect_short}} Reserved instance. For instructions, see  [Registering a gateway with V10 Reserved](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.install.doc/ri_gwy_reg.html){: external}
 
 After the gateway is registered, it is available for use in your Reserved service. You can manage the gateways availability to users as explained in [Managing gateways](/docs/apiconnect?topic=apiconnect-ri-mng-gwy).
