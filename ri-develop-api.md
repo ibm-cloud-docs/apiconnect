@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2024
-lastupdated: "2024-07-02"
+lastupdated: "2024-07-03"
 
 keywords: management, Reserved instance, API Connect
 
@@ -26,7 +26,7 @@ An API developer creates new APIs and updates existing APIs as needed. The API d
 In particular, API developers should review the following topics:
 
 - [Developer checklist](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/rapic_dev_checklist.html){: external}
-- [Setting up your toolkit](https://www.ibm.com/docs/SSMNED_v10cloud//com.ibm.apic.toolkit.doc/ri_toolkit.html){: external}
+- [Setting up your toolkit](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/ri_toolkit.html){: external}
 - [Creating an API](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/task_apionprem_composing_apis.html){: external}
 - [Using policies and logic constructs](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/capim_policies.html){: external}
 - [Securing an API](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/tapim_sec_api_config.html){: external}

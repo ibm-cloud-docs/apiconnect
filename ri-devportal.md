@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2024
-lastupdated: "2024-07-02"
+lastupdated: "2024-07-03"
 
 keywords: management, Reserved instance, API Connect
 
@@ -35,7 +35,6 @@ The portal administrator does not receive admin access to the {{site.data.keywor
 
 Communicate with your consumers, enable or disable their applications, and manage their subscriptions to your products.
 
-- [Send messages to your consumers](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/task_apionprem_send_message_consumer.html){: external}
 - [Manage consumer applications](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/manage_dev_app.html){: external}
 - [Manager consumer subscriptions](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/tapic_subscriptions_manage.html){: external}
 
