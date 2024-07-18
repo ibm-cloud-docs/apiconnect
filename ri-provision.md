@@ -43,15 +43,15 @@ For information, see [Assigning access to resources by using access groups](/doc
    
    - Configure your resource: 
    
-          - Service name: Accept the default or provide your own. It's a good idea to create a name that includes a reference to your organization so that IBM Support can easily  find your service instance if needed.
+     - Service name: Accept the default or provide your own. It's a good idea to create a name that includes a reference to your organization so that IBM Support can easily  find your service instance if needed.
    
-          - Select a resource group: The list of resource groups is based on your {{site.data.keyword.cloud}} account permissions. Select the resource group that you created for your service instance.
+     - Select a resource group: The list of resource groups is based on your {{site.data.keyword.cloud}} account permissions. Select the resource group that you created for your service instance.
      	
-          - Tags: Optional. Add some tags to help you with identifying specific team usage or cost allocation.
+     - Tags: Optional. Add some tags to help you with identifying specific team usage or cost allocation.
 		  
-		  - Access resources tags: Optional. Add some access tags to manage access to resources. 
+	 - Access resources tags: Optional. Add some access tags to manage access to resources. 
 		  
-		  - Activation code: Paste the activation code provided by IBM Sales. 
+	 - Activation code: Paste the activation code provided by IBM Sales. 
 
    c. Accept the license terms.
    
@@ -59,13 +59,13 @@ For information, see [Assigning access to resources by using access groups](/doc
 
 1. Switch to the "Resource list" page to track your provisioning status.
 
-    click ![Navigation menu](images/icon_cloud_menu.png "Navigation menu") in the page banner, and then click the ![Resource list](images/icon_cloud_resource_list.png "Resource list icon"). 
+    Click ![Navigation menu](images/icon_cloud_menu.png "Navigation menu icon") in the page banner, and then click ![Resource list](images/icon_cloud_resource_list.png "Resource list icon") to open the Resource list. 
 	
 	In the Resource list, expand the **Integration** section and look for the service name that you assigned when you provisioned the instance.
 
 Deploying a new service instance takes several hours. While your instance is being deployed, its status displays as "Provisioning". When provisioning is complete, the status changes to "Active".
 
-What to do next
+## What to do next
 {: #ri-provision-next}
 
 When your instance is provisioned, you're ready to start using it. For your next steps, see [Getting started as an admin in API Connect V10 Reserved](/docs/apiconnect?topic=apiconnect-getting-started-admin).
