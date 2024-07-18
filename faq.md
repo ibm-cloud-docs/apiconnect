@@ -60,7 +60,7 @@ For instructions on provisioning an instance of {{site.data.keyword.apiconnect_s
 
 The status of your service instance displays in the Integration section of the Resources list on your {{site.data.keyword.cloud}} Dashboard.
 
-To see the Resource list, click ![Navigation menu](images/icon_cloud_menu.png "Navigation menu") in the page banner, and then click the ![Resource list](images/icon_cloud_resource_list.png "Resource list icon"). In the Resource list, expand the **Integration** section and look for the service name that you assigned when you provisioned the instance.
+To see the Resource list, click ![Navigation menu](images/icon_cloud_menu.png "Navigation menu") in the page banner, and then click ![Resource list](images/icon_cloud_resource_list.png "Resource list icon") to see the Resource list. In the Resource list, expand the **Integration** section and look for the service name that you assigned when you provisioned the instance.
 
 Deploying a new service instance takes several hours. While your instance is being deployed, its status displays as "Provisioning". When provisioning is complete, the status changes to "Active".
 
