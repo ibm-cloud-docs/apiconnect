@@ -31,6 +31,7 @@ toc:
       - topicgroup:
           label: Administering API Connect Reserved
           topics:
+          - ri-provision.md
           - ri-admin-over.md
           - ri-usage.md
           - ri-mng-users.md
@@ -73,4 +74,5 @@ toc:
   - navgroup:
       id: help
       topics:
+      - faq.md
       - get_help.md

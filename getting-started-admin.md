@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2024
-lastupdated: "2024-07-02"
+lastupdated: "2024-07-18"
 
 keywords: IBM Cloud, API Connect, Reserved instance, lifecycle, develop, create, manage, API
 
@@ -29,6 +29,9 @@ If you're not an admin, see [Getting started as a user](/docs/apiconnect?topic=a
 In {{site.data.keyword.cloud_notm}}, {{site.data.keyword.apiconnect_short}} V10 Reserved provides two components: the administration console and the API Manager. Use the administration console to configure the Reserved instance for your users, who work with features in the API Manager.
 
 All admins in your IBM Cloud account automatically have admin access to {{site.data.keyword.apiconnect_short}} and can use the features in the administration console.
+
+If you did not provision your service instance yet, see [Provision an instance of {{site.data.keyword.apiconnect_short}} Reserved](/docs/apiconnect?topic=apiconnect-ri-provision).
+{: note}
 
 Start the administration console by completing the following steps:
 
