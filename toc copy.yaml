@@ -10,12 +10,14 @@ toc:
     product-page: https://www.ibm.com/products/api-connect
     path: apiconnect
     label: API Connect
+
   entries:
   - navgroup:
       id: learn
       topics:
       - getting-started.md
       - getting-started-admin.md
+
   - navgroup:
       id: howto
       topics:
@@ -42,10 +44,16 @@ toc:
           topics:
           - iam.md
       - topicgroup:
+          label: Observability
+          topics:
+          - logging.md
+          - at-events.md
+      - topicgroup:
           label: Logging and monitoring
           topics:
           - old-at-events.md
           - ri-logs.md
+
   - navgroup:
       id: reference
       topics:
@@ -66,6 +74,7 @@ toc:
           - link:
               label: Complete documentation for API Connect V10 Reserved
               href: https://www.ibm.com/docs/en/api-connect/10_reserved_instance
+
   - navgroup:
       id: help
       topics:
