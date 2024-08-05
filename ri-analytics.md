@@ -1,23 +1,16 @@
 ---
 
 copyright:
-   years: 2020, 2021
-lastupdated: "2020-10-15"
+   years: 2020, 2024
+lastupdated: "2024-07-03"
 
-keywords: management, Reserved instance
+keywords: management, Reserved instance, API Connect
 
 subcollection: apiconnect
 
 ---
 
-{:external: target="_blank" .external} 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # Viewing API event analytics
 {: #ri-analytics}
@@ -29,7 +22,6 @@ When you view analytics data in the API Manager, you see metrics about the APIs 
 
 To learn about using the Analytics feature in {{site.data.keyword.apiconnect_short}}, start with the following topics in the extended V10 Reserved documentation:
 
-- [Running searches to collect data](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/capim_analytics_discoverapps.html){: external}
-- [Building visualizations to report on data](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/capim_analytics_visualizationapps.html){: external}
-- [Creating dashboards to organize visualizations](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/capim_analytics_defaultdashboard.html){: external}
-- [Exporting analytics data](https://www.ibm.com/support/knowledgecenter/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/tapim_analytics_viewexportanalyticsdata.html){: external}
+- [Accessing analytics](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/tapim_analytics_accessinganalytics.html){: external}
+- [Analytics dashboards](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/rapim_analytics_dashboards.html){: external}
+- [Exporting API event data](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/tapim_analytics_viewexportanalyticsdata.html){: external}

@@ -1,23 +1,16 @@
 ---
 
 copyright:
-   years: 2020, 2021
-lastupdated: "2020-10-30"
+   years: 2020, 2024
+lastupdated: "2024-07-02"
 
-keywords: IBM Cloud, API Connect, V10, Reserved instance, remote gateway, upgrade
+keywords: IBM Cloud, API Connect, Reserved instance, remote gateway, upgrade
 
 subcollection: apiconnect
 
 ---
 
-{:external: target="_blank" .external} 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # Upgrading a customer-managed remote gateway
 {: #ri-upgrade-gwy}
@@ -25,10 +18,9 @@ subcollection: apiconnect
 If you deployed a customer-managed remote gateway for your {{site.data.keyword.apiconnect_short}} V10 Reserved instance, you must upgrade that gateway before upgrading the Reserved instance.
 {: shortdesc}
 
-
 To upgrade a remote API Gateway, complete the following steps:
 
-1. In {{site.data.keyword.apiconnect_short}} V10 Reserved, click the **Download Gateway** tile on the administration Home page and download the gateway installation package for your environment. 
+1. In {{site.data.keyword.apiconnect_short}} V10 Reserved, click the **Download Gateway** tile on the administration Home page and download the gateway installation package for your environment.
 
 2. Proceed to the "Upgrade" section of the IBM DataPower Gateway [Installation Operations](https://www.ibm.com/support/knowledgecenter/SS9H2Y_10.0/com.ibm.dp.doc/installationoperations.html#upgradeoperation) documentation for instructions on upgrading your existing remote gateway with the newer package.
 

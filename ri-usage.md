@@ -1,23 +1,16 @@
 ---
 
 copyright:
-   years: 2022
-lastupdated: "2022-11-10"
+   years: 2022, 2024
+lastupdated: "2024-07-02"
 
-keywords: IBM Cloud, API Connect, V10, Reserved instance, lifecycle, develop, create, manage, API, user, role, access, group, usage, plan, API calls
+keywords: IBM Cloud, API Connect, Reserved instance, lifecycle, develop, create, manage, API, user, role, access, group, usage, plan, API calls
 
 subcollection: apiconnect
 
 ---
 
-{:external: target="_blank" .external} 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # Reviewing your plan and usage
 {: #ri-usage}
@@ -27,7 +20,7 @@ You can review information about your {{site.data.keyword.apiconnect_short}} Res
 
 Reviewing your subscription start and end dates helps you plan renewal cycles and subscription extensions.
 
-Reviewing your API usage, help you determine whether your current plan provides for a sufficient number of API calls. If your usage looks like it will exceed your allowed number of calls, you can contact IBM Sales to upgrade the plan before you exceed the limit and sustain overage charges. You can also view your historical API usage data on a monthly basis, so that you can see trends and usage spikes when planning future subscription volumes. 
+Reviewing your API usage, help you determine whether your current plan provides for a sufficient number of API calls. If your usage looks like it will exceed your allowed number of calls, you can contact IBM Sales to upgrade the plan before you exceed the limit and sustain overage charges. You can also view your historical API usage data on a monthly basis, so that you can see trends and usage spikes when planning future subscription volumes.
 
 On the administration console's home page, click **Plan and usage** in the navigation list.
 

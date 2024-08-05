@@ -1,21 +1,16 @@
 ---
 
 copyright:
-   years: 2020, 2021
-lastupdated: "2021-07-26"
+   years: 2020, 2024
+lastupdated: "2024-07-02"
 
-keywords: API management, HA, high availability, disaster recovery, downtime, down time, failure, catasrophe, region, multizone region, MZR
+keywords: API management, HA, high availability, disaster recovery, downtime, down time, failure, catasrophe, region, multizone region, MZR, API Connect
 
 subcollection: apiconnect
 
 ---
 
-{:external: target="_blank" .external} 
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # Understanding high availability and disaster recovery for {{site.data.keyword.apiconnect_short}}
 {: #ha-dr}
@@ -34,6 +29,6 @@ In addition to the high-availability configuration, your data is snapshotted and
 
 In the case of a complete region failure, the instance servers and APIS in the region may not be accessible, but the backup data will remain available. IBM will initiate internal disaster recovery procedures to restore your instance into the next nearest available region with enough capacity. IBM will also re-route managed DNS configuration to the recovered instance. This is typically completed within 24 hours of failure. When the original region is restored, IBM will migrate the instance back to the primary region.
 
-For critical API traffic, IBM recommends that you deploy an API in at least two regions and globally load balance the regions. You can configure global load balancing with a technology such as {{site.data.keyword.cis_full}} ({{site.data.keyword.cis_short}}). {{site.data.keyword.cis_short}} provides health checking and routing rules to ensure that API traffic is automatically routed to the nearest healthy region. For more information about global load balancing, see the [Global Load Balancer (GLB) documentation](/docs/infrastructure/cis?topic=cis-global-load-balancer-glb-concepts).
+For critical API traffic, IBM recommends that you deploy an API in at least two regions and globally load balance the regions. You can configure global load balancing with a technology such as {{site.data.keyword.cis_full}} ({{site.data.keyword.cis_short}}). {{site.data.keyword.cis_short}} provides health checking and routing rules to ensure that API traffic is automatically routed to the nearest healthy region. For more information about global load balancing, see the [Global Load Balancer (GLB) documentation](/docs/cis?topic=cis-global-load-balancer-glb-concepts).
 
-For information about high availability and disaster recovery standards in {{site.data.keyword.Bluemix_notm}}, see [How IBM Cloud ensures high availability and disaster recovery](/docs/overview?topic=overview-zero-downtime#zero-downtime). You can also find information about [Service Level Agreements](/docs/overview?topic=overview-zero-downtime#SLAs).  
+For information about high availability and disaster recovery standards in {{site.data.keyword.Bluemix_notm}}, see [How IBM Cloud ensures high availability and disaster recovery](/docs/overview?topic=overview-zero-downtime#zero-downtime).

@@ -4,7 +4,7 @@ copyright:
   years: 2020, 2024
 lastupdated: "2024-07-02"
 
-keywords: activity tracker, event, security, audit logs, viewing events, management, API Connect
+keywords: activity tracker, event, security, audit logs, viewing events, management
 
 subcollection: apiconnect
 
@@ -12,10 +12,11 @@ subcollection: apiconnect
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Activity tracking events for {{site.data.keyword.apiconnect_short}} Reserved
+# Activity tracking events for {{site.data.keyword.apiconnect_short}} V10 Reserved
 {: #at_events}
 
-{{site.data.keyword.cloud_notm}} services, such as {{site.data.keyword.apiconnect_short}} Reserved, generate activity tracking events.
+
+{{site.data.keyword.cloud_notm}} services, such as {{site.data.keyword.apiconnect_short}} V10 Reserved, generate activity tracking events.
 {: shortdesc}
 
 Activity tracking events report on activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use the events to investigate abnormal activity and critical actions and to comply with regulatory audit requirements.
@@ -32,28 +33,29 @@ As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecate
 ## Locations where activity tracking events are generated
 {: #at-locations}
 
-{{site.data.keyword.apiconnect_short}} Reserved generates activity tracking events in all regions where the {{site.data.keyword.apiconnect_short}} Reserved service is available.
+{{site.data.keyword.apiconnect_short}} V10 Reserved generates activity tracking events in all regions where the {{site.data.keyword.apiconnect_short}} V10 Reserved service is available.
+
 
 ## Locations where activity tracking events are sent to {{site.data.keyword.at_full_notm}} hosted event search
 {: #at-legacy-locations}
 
 
 
-{{site.data.keyword.apiconnect_short}} Reserved sends activity tracking events to {{site.data.keyword.at_full_notm}} hosted event search in all regions where the {{site.data.keyword.apiconnect_short}} Reserved service is available.
+{{site.data.keyword.apiconnect_short}} V10 Reserved sends activity tracking events to {{site.data.keyword.at_full_notm}} hosted event search in all regions where the {{site.data.keyword.apiconnect_short}} V10 Reserved service is available.
 
 ## Locations where activity tracking events are sent by {{site.data.keyword.atracker_full_notm}}
 {: #atracker-locations}
 
 
 
-{{site.data.keyword.apiconnect_short}} Reserved sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in all regions where the {{site.data.keyword.apiconnect_short}} Reserved service is available.
+{{site.data.keyword.apiconnect_short}} V10 Reserved sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in all regions where the {{site.data.keyword.apiconnect_short}} V10 Reserved service is available.
 
-## Enabling activity tracking events for{{site.data.keyword.apiconnect_short}} Reserved
+## Enabling activity tracking events for{{site.data.keyword.apiconnect_short}} V10 Reserved
 {: #at-enable}
 
-Activity tracking is automatically enabled in your {{site.data.keyword.apiconnect_short}} Reserved service instance.
+Activity tracking is automatically enabled in your {{site.data.keyword.apiconnect_short}} V10 Reserved service instance.
 
-## Viewing activity tracking events for {{site.data.keyword.apiconnect_short}} Reserved
+## Viewing activity tracking events for {{site.data.keyword.apiconnect_short}} V10 Reserved
 {: #at-viewing}
 
 
@@ -67,12 +69,13 @@ You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on event
 
 For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [Launching the UI in the {{site.data.keyword.logs_full_notm}} documentation.](/docs/cloud-logs?topic=cloud-logs-instance-launch)
 
+
 ## List of events
 {: #at_actions_events}
 
-The following table describes the actions that generate activity tracking events in {{site.data.keyword.apiconnect_short}} Reserved service for APIs, subscriptions, and domains.
+The following table describes the actions that generate activity tracking events in {{site.data.keyword.apiconnect_short}} V10 Reserved service for APIs, subscriptions, and domains. 
 
-| Action                          | Description     |
+| Action                          | Description     | 
 |---------------------------------|-----------------|
 | apiconnect.user_registry_create.create | Create a User Registry object |
 | apiconnect.user_registry_clear.delete | Clear the User Registry objects |
@@ -480,4 +483,4 @@ The following table describes the actions that generate activity tracking events
 | apiconnect.me_resetPassword.create | Reset password |
 | apiconnect.me_signOut.create | Sign out |
 | apiconnect.webhook_updateCatalogScope.update | Update the Webhook object by name or ID |
-{: caption="Actions that generate events" caption-side="top"}
+{: caption="Table 1. Actions that generate events" caption-side="top"}
