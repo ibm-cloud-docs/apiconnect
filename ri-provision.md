@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2024
-lastupdated: "2024-07-18"
+lastupdated: "2024-08-05"
 
 keywords: IBM Cloud, API Connect, Reserved instance, deploy, provision
 
@@ -22,13 +22,13 @@ To provision a new service instance of {{site.data.keyword.apiconnect_short}} Re
 
 1. Contact IBM Sales to purchase your Reserved instance.
 
-When the purchase is complete, IBM generates an activation code for you. An activation code is an entitlement key that authorizes you to provision an instance of {{site.data.keyword.apiconnect_short}} Reserved in {{site.data.keyword.cloud}}.
+   When the purchase is complete, IBM generates an activation code for you. An activation code is an entitlement key that authorizes you to provision an instance of {{site.data.keyword.apiconnect_short}} Reserved in {{site.data.keyword.cloud}}.
 
-You cannot provision your instance without an activation code.
+   You cannot provision your instance without an activation code.
 
-1. Use {{site.data.keyword.iamlong}} to create a resource group that will be used for assigning permissions for users to access the service instance that you will provision.
+1. Use {{site.data.keyword.iamlong}} to create a resource group that will be used for assigning permissions for users to access the service instance that you will   provision.
 
-For information, see [Assigning access to resources by using access groups](/docs/account?topic=account-access-getstarted).
+   For information, see [Assigning access to resources by using access groups](/docs/account?topic=account-access-getstarted).
 
 1. Provision your service instance:
 
