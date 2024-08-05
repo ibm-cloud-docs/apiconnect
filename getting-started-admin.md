@@ -15,7 +15,7 @@ subcollection: apiconnect
 # Getting started as an admin in {{site.data.keyword.apiconnect_short}} V10 Reserved
 {: #getting-started-admin}
 
-Set up {{site.data.keyword.apiconnect_short}} so your users can develop APIs, publish them to consumers, and manage usage and lifecycles. test test
+Set up {{site.data.keyword.apiconnect_short}} so your users can develop APIs, publish them to consumers, and manage usage and lifecycles. test
 {: shortdesc}
 
 When you provision your Reserved instance, API Connect is configured with your administrator account and a default gateway service for controlling access to APIs. Just add users!
