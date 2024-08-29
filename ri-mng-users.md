@@ -204,6 +204,9 @@ Each user must log out from IBM Cloud and then log in again for the permission c
 
 Use IAM to add and remove users, and to manage their permissions.
 
+If you need to recreate the provider organization immediately after deletion, you can speed up the process by forcing the early reclamation of the deleted provider organization as explained in [Using resource reclamations](/docs/account?topic=account-resource-reclamation&interface=cli).
+{: note}
+
 ### Assign ownership of a provider organization
 {: #mng-porg-owner_ri-mng-users}
 
@@ -220,7 +223,4 @@ To change a user's permissions in {{site.data.keyword.apiconnect_short}}, either
 To remove a user from a provider organization, delete that user from the corresponding access role in IAM. The next time that the user attempts to log in to the provider organization, the login will not be allowed.
 
 A user who is already logged in to {{site.data.keyword.apiconnect_short}} when you remove them from the access group remains logged in and still has access to the provider organization's assets. To stop the user from working with assets immediately, remove them from all catalog and space memberships within the Reserved instance.
-{: note}
-
-If you need to recreate the provider organization immediately after deletion, you can speed up the process by forcing the early reclamation of the deleted provider organization as explained in [Using resource reclamations](/docs/account?topic=account-resource-reclamation&interface=cli).
 {: note}
