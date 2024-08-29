@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2024
-lastupdated: "2024-07-02"
+lastupdated: "2024-08-29"
 
 keywords: IBM Cloud, API Connect, Reserved instance, lifecycle, develop, create, manage, API, user, role, access, group, catalog, space, provider organization, resource, permission
 
@@ -220,4 +220,7 @@ To change a user's permissions in {{site.data.keyword.apiconnect_short}}, either
 To remove a user from a provider organization, delete that user from the corresponding access role in IAM. The next time that the user attempts to log in to the provider organization, the login will not be allowed.
 
 A user who is already logged in to {{site.data.keyword.apiconnect_short}} when you remove them from the access group remains logged in and still has access to the provider organization's assets. To stop the user from working with assets immediately, remove them from all catalog and space memberships within the Reserved instance.
+{: note}
+
+If you need to recreate the provider organization immediately after deletion, you can speed up the process by forcing the early reclamation of the deleted provider organization as explained in [Using resource reclamations](/docs/account?topic=account-resource-reclamation&interface=cli).
 {: note}
