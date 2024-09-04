@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2024
-lastupdated: "2024-08-05"
+lastupdated: "2024-09-04"
 
 keywords: IBM Cloud, API Connect, Reserved instance, deploy, provision
 
@@ -32,7 +32,7 @@ To provision a new service instance of {{site.data.keyword.apiconnect_short}} Re
 
 1. Provision your service instance:
 
-   a. Navigate to the [{{site.data.keyword.cloud}} Catalog](https://test.cloud.ibm.com/catalog) and search for "API Connect".
+   a. Navigate to the [{{site.data.keyword.cloud}} Catalog](https://cloud.ibm.com/catalog) and search for "API Connect".
 
    b. On the API Connect page, select the **Create** tab and complete the provisioning settings:
 

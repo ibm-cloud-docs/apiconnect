@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2024
-lastupdated: "2024-07-02"
+lastupdated: "2024-08-30"
 
 keywords: IBM Cloud, API Connect, Reserved instance, lifecycle, develop, create, manage, API, user, role, access, group, catalog, space, provider organization, resource, permission
 
@@ -203,6 +203,11 @@ Each user must log out from IBM Cloud and then log in again for the permission c
 {: #mng-porg_ri-mng-users}
 
 Use IAM to add and remove users, and to manage their permissions.
+
+When you request the deletion of a provider organization in API Connect V10 Reserved, the provider organization is not immediately removed from the system. This delay is part of the resource reclamation process and might prevent you from recreating the provider organization immediately.
+If you need to recreate the provider organization immediately after deletion, you can speed up the process by forcing the early reclamation of the deleted provider organization as explained in [Using resource reclamations](/docs/account?topic=account-resource-reclamation&interface=cli).
+Additionally, if you decide to restore the deleted provider organization, the resource reclamation process allows for the restoration of resources within a limited time frame.
+{: note}
 
 ### Assign ownership of a provider organization
 {: #mng-porg-owner_ri-mng-users}
