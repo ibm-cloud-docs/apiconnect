@@ -42,6 +42,11 @@ toc:
           topics:
           - iam.md
       - topicgroup:
+          label: Observability
+          topics:
+          - logging.md
+          - at-events.md
+      - topicgroup:
           label: Logging and monitoring
           topics:
           - old-at-events.md
