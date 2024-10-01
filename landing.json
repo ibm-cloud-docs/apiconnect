@@ -44,7 +44,7 @@
       "type": "Blogs"
     }
   ]
-},
+,
   "section_devtools": {
     "terraform": "https://www.ibm.com/links?url=https%3A%2F%2Fapic-api.apiconnect.ibmcloud.com%2Fv10%2F"
   },
