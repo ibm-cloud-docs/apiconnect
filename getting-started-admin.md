@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2024
-lastupdated: "2024-08-05"
+lastupdated: "2024-10-09"
 
 keywords: IBM Cloud, API Connect, Reserved instance, lifecycle, develop, create, manage, API
 
@@ -39,11 +39,11 @@ Start the administration console by completing the following steps:
   
 2. On the Dashboard, click ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") and select **API Management**.
 
-   ![Select API Management](images/select_api_mgt.png){: caption="Figure 1. Select API Management" caption-side="bottom"}
+   ![Select API Management](images/select_api_mgt.png){: caption="Select API Management" caption-side="bottom"}
 
 3. In the navigation list, expand **API Connect** and click **Services**.
 
-   ![Services page](images/ri_select_service.png){: caption="Figure 2. Services page" caption-side="bottom"}
+   ![Services page](images/ri_select_service.png){: caption="Services page" caption-side="bottom"}
 
    The "Services" page lists all of your {{site.data.keyword.apiconnect_short}} services.
 
@@ -51,7 +51,7 @@ Start the administration console by completing the following steps:
 
    {{site.data.keyword.apiconnect_short}} opens to the administration console.
 
-   ![Administration console](images/ri_admin_home.png){: caption="Figure 3. Administration console" caption-side="bottom"}
+   ![Administration console](images/ri_admin_home.png){: caption="Administration console" caption-side="bottom"}
 
 As an {{site.data.keyword.apiconnect_short}} admin, you control the Reserved instance by configuring gateways for API access and managing users. Whenever you want to perform admin tasks, return to the "Services" page to open the administration console.
 
