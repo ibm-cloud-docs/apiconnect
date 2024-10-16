@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2024
-lastupdated: "2024-07-03"
+lastupdated: "2024-10-09"
 
 keywords: activity tracker, event, security, audit logs, viewing events, management, API Connect
 
@@ -436,7 +436,7 @@ Table 1 describes the actions that the {{site.data.keyword.apiconnect_short}} V1
 | apiconnect.me_resetPassword.create | Reset password |
 | apiconnect.me_signOut.create | Sign out |
 | apiconnect.webhook_updateCatalogScope.update | Update the Webhook object by name or ID |
-{: caption="Table 1. Actions that generate events" caption-side="top"}
+{: caption="Actions that generate events" caption-side="top"}
 
 ## Viewing events
 {: #at_events-ui}

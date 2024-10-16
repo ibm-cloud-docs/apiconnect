@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2024
-lastupdated: "2024-08-30"
+lastupdated: "2024-10-09"
 
 keywords: IBM Cloud, API Connect, Reserved instance, lifecycle, develop, create, manage, API, user, role, access, group, catalog, space, provider organization, resource, permission
 
@@ -25,7 +25,7 @@ Custom roles are not supported by the IAM service, so if you create custom roles
 
 You must assign a predefined role to each user to ensure they can access your resources. In {{site.data.keyword.apiconnect_short}}, resources are managed in the following hierarchy:
 
-![Resource hierarchy](images/ri-resource-hierarchy.png){: caption="Figure 1. Resource hierarchy" caption-side="bottom"}
+![Resource hierarchy](images/ri-resource-hierarchy.png){: caption="Resource hierarchy" caption-side="bottom"}
 
 To grant users permissions to the {{site.data.keyword.apiconnect_short}} resources owned by a particular provider organization, add the users to that provider organization. The role that a user is assigned to for the provider organization is inherited by the catalogs within it, and by the spaces within each catalog. You can override this access at the lower levels by assigning the user to a different role. For example, if you only want the user to have Edit access in a particular space, assign the user to the Reader role for the provider organization, and then assign the user to a role with Edit access on the selected space. The user will still have only Reader access to the catalog owning the space, to all other spaces within the same catalog, and to alwildcard
 l other catalogs and spaces owned by the provider organization.
@@ -91,7 +91,7 @@ Table 1 suggests IAM roles for typical {{site.data.keyword.apiconnect_short}} jo
 | API Administrator | Service: Manager, Platform: Editor | Create, edit, and publish APIs; Full control over data within the service; Modify the service instance |
 | Product Manager   | Platform: Operator                 | Create, edit, and publish APIs                                                                         |
 | Administrator     | Platform: Administrator            | Full control of the service instance                                                                   |
-{: caption="Table 1. Mapping {{site.data.keyword.apiconnect_short}} jobs to IAM roles" caption-side="top"}
+{: caption="Mapping {{site.data.keyword.apiconnect_short}} jobs to IAM roles" caption-side="top"}
 
 The IAM service provides roles for both the "platform" (the Reserved instance itself) and the "service" (the product features provided in the Reserved instance). {{site.data.keyword.apiconnect_short}} administrators and API administrators perform tasks that use the platform roles; for example, provisioning a service instance and managing user access to it. Other users perform tasks that use the service roles; for example, creating an API or viewing event analytics.
 
@@ -197,7 +197,7 @@ When you set up IAM access for your users, there is no automatic notification. A
 
 Each user must log out from IBM Cloud and then log in again for the permission changes to take effect.
 
-![IBM Cloud log out](images/cloud_logout.png){: caption="Figure 2. IBM Cloud log out" caption-side="bottom"}
+![IBM Cloud log out](images/cloud_logout.png){: caption="IBM Cloud log out" caption-side="bottom"}
 
 ## Managing provider organizations
 {: #mng-porg_ri-mng-users}

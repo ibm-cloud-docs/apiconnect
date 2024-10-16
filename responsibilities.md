@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2024
-lastupdated: "2024-07-02"
+lastupdated: "2024-10-09"
 
 keywords: API management, API, gateway, support, responsibility, responsible, API Connect
 
@@ -38,7 +38,7 @@ While most of the {{site.data.keyword.apiconnect_short}} resources are managed b
 | Physical storage             | IBM                   | IBM               | IBM                   | IBM      |
 | Physical network and devices | IBM                   | IBM               | IBM                   | IBM      |
 | Facilities and Data Centers  | IBM                   | IBM               | IBM                   | IBM      |
-{: caption="Table 1. Resource responsibility" caption-side="top"}
+{: caption="Resource responsibility" caption-side="top"}
 
 ## Responsibility for {{site.data.keyword.apiconnect_short}} product features
 {: #features_responsibilities}
@@ -56,4 +56,4 @@ Most of the responsibility for {{site.data.keyword.apiconnect_short}} features i
 | Rate limiting       | Define appropriate rate limiting rules via the {{site.data.keyword.apiconnect_short}} Product and API YAML specifications | Enforce rate limits |
 | API management | Configure {{site.data.keyword.apiconnect_short}} using the provided interfaces and supported design specifications. | Host, provision, integrate, and implement your APIs using your {{site.data.keyword.apiconnect_short}}-compatible specifications |
 | Developer Portal |Configure authentication, manage Drupal modules, and administer Portal sites |Apply scheduled upgrades and fixes, and ensure the general availability of the Portal subsystem |
-{: caption="Table 2. Feature responsibility" caption-side="top"}
+{: caption="Feature responsibility" caption-side="top"}

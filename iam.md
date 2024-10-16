@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2024
-lastupdated: "2024-07-02"
+lastupdated: "2024-10-09"
 
 keywords: IBM Cloud, API Connect, API management, Reserved instance, authentication, IAM, access management, service ID, API key, user roles, user actions
 
@@ -40,7 +40,7 @@ Table 1 details actions that are mapped to platform management roles, and which 
 | Operator                     | Community Manager        | View data and settings. Edit Products and APIs. Manage Consumer organizations, apps, subscriptions, and analytics. |
 | Editor                       | API Administrator        | View data and settings. Edit Products and APIs. Manage Consumer organizations, apps, subscriptions, and analytics. |
 | Administrator                | Administrator            | View data and settings. Manage members, settings, and Provider organizations. Edit Products and APIs. Manage Consumer organizations, apps, subscriptions, and analytics. Manage the service instance and plan. Manage provider organizations. Manage users in the cloud account. |
-{: caption="Table 1. IAM user roles and actions" caption-side="top"}
+{: caption="IAM user roles and actions" caption-side="top"}
 
 Table 2 details actions that are mapped to service access roles, and which {{site.data.keyword.apiconnect_short}} role corresponds to each service role. Service access roles enable users to access {{site.data.keyword.apiconnect_short}} as well as call the {{site.data.keyword.apiconnect_short}} API.
 
@@ -52,6 +52,6 @@ Table 2 details actions that are mapped to service access roles, and which {{sit
 | API Administrator | API Administrator        | View data and settings. Edit Products and APIs. Manage Consumer organizations, apps, subscriptions, and analytics. |
 | Community Manager | Community Manager        | View data and settings. Edit Products and APIs. Manage Consumer organizations, apps, subscriptions, and analytics. |
 | API Developer | Developer                | Create and edit Products and APIs. Stage and publish Products. |
-{: caption="Table 2. IAM service access roles and actions" caption-side="top"}
+{: caption="IAM service access roles and actions" caption-side="top"}
 
 For more information about assigning user roles in the IAM service, see [Giving access to resources in resource groups](/docs/account?topic=account-rgs_manage_access).
