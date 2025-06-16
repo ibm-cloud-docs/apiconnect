@@ -1,8 +1,8 @@
 ---
 
 copyright:
-   years: 2020, 2024
-lastupdated: "2024-07-03"
+   years: 2020, 2025
+lastupdated: "2025-06-16"
 
 keywords: management, Reserved instance, API Connect
 
@@ -24,4 +24,4 @@ To learn about using the Analytics feature in {{site.data.keyword.apiconnect_sho
 
 - [Accessing analytics](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/tapim_analytics_accessinganalytics.html){: external}
 - [Analytics dashboards](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/rapim_analytics_dashboards.html){: external}
-- [Exporting API event data](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/tapim_analytics_viewexportanalyticsdata.html){: external}
+- [Understand your API usage](https://www.ibm.com/docs/en/api-connect/10.0.0_reserved_instance?topic=analytics-understand-your-api-usage){: external}
