@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2025
-lastupdated: "2025-06-16"
+lastupdated: "2025-06-17"
 
 keywords: management, Reserved instance, API Connect
 
@@ -22,6 +22,7 @@ When you view analytics data in the API Manager, you see metrics about the APIs 
 
 To learn about using the Analytics feature in {{site.data.keyword.apiconnect_short}}, start with the following topics in the extended V10 Reserved documentation:
 
+- [Key concepts of API Connect analytics](https://www.ibm.com/docs/en/api-connect/10.0.0_reserved_instance?topic=usage-key-concepts-api-connect-analytics){: external}
 - [Accessing analytics](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/tapim_analytics_accessinganalytics.html){: external}
 - [Analytics dashboards](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.apionprem.doc/rapim_analytics_dashboards.html){: external}
 - [Understand your API usage](https://www.ibm.com/docs/en/api-connect/10.0.0_reserved_instance?topic=analytics-understand-your-api-usage){: external}
