@@ -8,19 +8,19 @@
     "links": [
       {
         "title": "What is API Connect Reserved?",
-        "href": "https://cloud.ibm.com/docs/apiconnect?topic=apiconnect-ri-user-over"
+        "href": "/docs/apiconnect?topic=apiconnect-ri-user-over"
       },
       {
         "title": "Getting started as a user",
-        "href": "https://cloud.ibm.com/docs/apiconnect?topic=apiconnect-getting-started"
+        "href": "/docs/apiconnect?topic=apiconnect-getting-started"
       },
       {
         "title": "Getting started as an admin",
-        "href": "https://cloud.ibm.com/docs/apiconnect?topic=apiconnect-getting-started-admin"
+        "href": "/docs/apiconnect?topic=apiconnect-getting-started-admin"
       },
       {
         "title": "FAQs",
-        "href": "https://cloud.ibm.com/docs/apiconnect?topic=apiconnect-apiconnect-faqs"
+        "href": "/docs/apiconnect?topic=apiconnect-apiconnect-faqs"
       }
     ]
   },
@@ -29,19 +29,13 @@
       "title": "IBM Integration Community Discussions",
       "description": "The Discussion forum is the ideal place to ask questions of your peers and the IBM subject matter experts.",
       "href": "https://community.ibm.com/community/user/integration/communities/community-home/digestviewer?communitykey=2106cca0-a9f9-45c6-9b28-01a28f4ce947",
-      "type": "Discussion"
+      "type": "blog"
     },
     {
       "title": "IBM Integration Community Library",
       "description": "The Library is the place to find attachments from the group's discussions posts as well as file uploads and other resources that will help you learn and develop your skills.",
       "href": "https://community.ibm.com/community/user/integration/communities/community-home/all-news?communitykey=2106cca0-a9f9-45c6-9b28-01a28f4ce947&LibraryFolderKey=&DefaultView=",
-      "type": "Library"
-    },
-    {
-      "title": "IBM Integration Community Blogs",
-      "description": "Read about the latest and greatest, how-tos, best practices, and use cases from our experts and experienced product users.",
-      "href": "https://community.ibm.com/community/user/integration/communities/community-home/all-news?communitykey=2106cca0-a9f9-45c6-9b28-01a28f4ce947&LibraryFolderKey=&DefaultView=",
-      "type": "Blogs"
+      "type": "blog"
     }
   ]
 ,
@@ -49,7 +43,7 @@
     "terraform": "https://www.ibm.com/links?url=https%3A%2F%2Fapic-api.apiconnect.ibmcloud.com%2Fv10%2F"
   },
   "section_updates": {
-    "view_more": "https://cloud.ibm.com/docs/apiconnect?topic=apiconnect-logging",
+    "view_more": "/docs/apiconnect?topic=apiconnect-logging",
     "tiles": [
       {
         "date": "Sep 2024",
