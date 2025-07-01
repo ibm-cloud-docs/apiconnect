@@ -142,6 +142,7 @@ An IAM access policy assigns roles (each role represents a set of permissions) t
       - In the second (service instances) list, select the name of the provider organization where you want to apply the access policy.
 
       The new access policy applies only to the specified provider organization. Mapping the policy directly to a provider organization ensures that you don't accidentally grant users a wider range of permissions to the Reserved instance.
+   c. Click **Next**.
 
 6. Optionally select one or more catalogs owned by the provider organization.
 
@@ -149,7 +150,7 @@ An IAM access policy assigns roles (each role represents a set of permissions) t
 
    - In the first list, select **Resource**.
 
-   - In the second list, select **string equals** or **string matches**. If you use wildcards for strings (*) and numbers (?), select string matches. Otherwise, select string equals.
+   - In the second list, select **string equals** or **string matches**. If you use wildcards for strings (*) and numbers (?), select **string matches**. Otherwise, select **string equals**.
 
    - In the third list, select or type the name of the catalog where you want to apply the access policy. You can use wildcards for strings (\*) and numbers (?). For example, to apply the access to all catalogs beginning with "catalog-1" followed by any character (as in catalog-1a, catalog-1b), type "catalog-1*".
 
