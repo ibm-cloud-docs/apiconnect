@@ -142,6 +142,7 @@ An IAM access policy assigns roles (each role represents a set of permissions) t
       - In the second (service instances) list, select the name of the provider organization where you want to apply the access policy.
 
       The new access policy applies only to the specified provider organization. Mapping the policy directly to a provider organization ensures that you don't accidentally grant users a wider range of permissions to the Reserved instance.
+
    c. Click **Next**.
 
 6. Optionally select one or more catalogs owned by the provider organization.
