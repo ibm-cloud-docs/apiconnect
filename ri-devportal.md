@@ -1,8 +1,8 @@
 ---
 
 copyright:
-   years: 2020, 2024
-lastupdated: "2024-07-03"
+   years: 2020, 2025
+lastupdated: "2025-08-13"
 
 keywords: management, Reserved instance, API Connect
 
@@ -25,7 +25,7 @@ For a quick start in setting up your developer portal, see the [Developer Portal
 ## Setting up a developer portal
 {: #config_ri-portal}
 
-The person who enables a developer portal for their provider organization automatically receives administrator access to that portal. The portal admin (typically a Product Manager for the provider organization) can manage the portal by adding users, customizing the portal's appearance, setting up forums, and viewing reports on portal performance. For information on setting up a developer portal, see [Configuring your developer portal](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.devportal.doc/capim_devportal_admin.htm){: external}
+The person who enables a developer portal for their provider organization automatically receives administrator access to that portal. The portal admin (typically a Product Manager for the provider organization) can manage the portal by adding users, customizing the portal's appearance, setting up forums, and viewing reports on portal performance. For information on setting up a developer portal, see [Configuring your developer portal](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.devportal.doc/capim_devportal_admin.html){: external}
 
 The portal administrator does not receive admin access to the {{site.data.keyword.apiconnect_short}} Reserved instance.
 {: note}
