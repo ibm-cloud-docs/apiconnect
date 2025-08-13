@@ -1,8 +1,8 @@
 ---
 
 copyright:
-   years: 2020, 2024
-lastupdated: "2024-10-09"
+   years: 2020, 2025
+lastupdated: "2025-07-01"
 
 keywords: IBM Cloud, API Connect, Reserved instance, lifecycle, develop, create, manage, API, user, role, access, group, catalog, space, provider organization, resource, permission
 
@@ -119,23 +119,23 @@ Repeat steps 4 and 5 for each access group.
 
 An IAM access policy assigns roles (each role represents a set of permissions) to an access group. You can add one or more roles to each access group in IAM, and you can map one or more access groups to each of your {{site.data.keyword.apiconnect_short}} provider organizations.
 
-1. On the page for your access group, click the **Access policies** tab.
+1. On the page for your access group, click the **Access** tab.
 
-2. On the **Access policies** tab, click **Assign access**.
+2. On the **Access** tab, click **Assign access**.
   
 3. On the **Assign access** page, select **IAM services**.
 
       You are only defining access to {{site.data.keyword.apiconnect_short}}, which is an IAM-enabled service.  
 
-4. For **What type of access do you want to assign?** select **API Connect** from the list.
+4. For **Which service do you want to assign to?** select **API Connect** from the list and click **Next**.
 
       Your provider organizations only apply to {{site.data.keyword.apiconnect_short}} Reserved.
 
 5. Select a provider organization:
 
-   a. For **Which services do you want to assign access to?**, select **Services based on attributes**.
+   a. For **Which services do you want to assign access to?**, select **Specific resources**.
 
-   b. For **Add attributes** select **Service Instance**, plus:
+   b. For **Specific resources** select **Service Instance**, plus:
 
       - In the first list, select **string equals**.  
 
@@ -143,13 +143,17 @@ An IAM access policy assigns roles (each role represents a set of permissions) t
 
       The new access policy applies only to the specified provider organization. Mapping the policy directly to a provider organization ensures that you don't accidentally grant users a wider range of permissions to the Reserved instance.
 
+   c. Click **Next**.
+
 6. Optionally select one or more catalogs owned by the provider organization.
 
-   If you want to assign access only to particular catalogs (instead of all catalogs within that provider organization), select **Resource**, plus:
+   If you want to assign access only to particular catalogs (instead of all catalogs within that provider organization), click **Add a condition**, plus:
 
-   - In the first list, select **string equals**.  
+   - In the first list, select **Resource**.
 
-   - In the second (resources) list, select or type the name of the catalog where you want to apply the access policy. You can use wildcards for strings (\*) and numbers (?). For example, to apply the access to all catalogs beginning with "catalog-1" followed by any character (as in catalog-1a, catalog-1b), type "catalog-1*".
+   - In the second list, select **string equals** or **string matches**. If you use wildcards for strings (*) and numbers (?), select **string matches**. Otherwise, select **string equals**.
+
+   - In the third list, select or type the name of the catalog where you want to apply the access policy. You can use wildcards for strings (\*) and numbers (?). For example, to apply the access to all catalogs beginning with "catalog-1" followed by any character (as in catalog-1a, catalog-1b), type "catalog-1*".
 
    Specify catalog names rather than display titles.
 
