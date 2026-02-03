@@ -1,8 +1,8 @@
 ---
 
 copyright:
-   years: 2020, 2024
-lastupdated: "2024-07-03"
+   years: 2020, 2026
+lastupdated: "2026-02-03"
 
 keywords: management, Reserved instance, API Connect
 
@@ -26,9 +26,13 @@ An API developer creates new APIs and updates existing APIs as needed. The API d
 In particular, API developers should review the following topics:
 
 - [Developer checklist](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/rapic_dev_checklist.html){: external}
+- [Discover the APIs in your organization](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/api_discovery_config_apim.html){: external}
 - [Setting up your toolkit](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/ri_toolkit.html){: external}
+- [Managing platform REST API keys](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/capim_mng_apikeys.html){: external}
+- [Complete configuration for an API](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/task_editor_using_editor.html){: external}
 - [Creating an API](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/task_apionprem_composing_apis.html){: external}
 - [Using policies and logic constructs](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/capim_policies.html){: external}
 - [Securing an API](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/tapim_sec_api_config.html){: external}
 - [Testing an API](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/test_api_overview.html){: external}
 - [Developing products](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/capim_products.html){: external}
+- [Creating and validating API and Product definitions by using the CLI](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.toolkit.doc/capim_cli_definition.html){: external}
