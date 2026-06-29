@@ -20,37 +20,74 @@ toc:
       id: howto
       topics:
       - topicgroup:
-          label: Using API Connect Reserved
+          label: V10 Reserved Instance
           topics:
-          - ri-user-over.md
-          - ri-develop-api.md
-          - ri-mng-prod-cat.md
-          - ri-analytics.md
-          - ri-devportal.md
-          - ri-call-apim-apis.md
+          - topicgroup:
+              label: Using API Connect V10 Reserved
+              topics:
+              - ri-user-over.md
+              - ri-develop-api.md
+              - ri-mng-prod-cat.md
+              - ri-analytics.md
+              - ri-devportal.md
+              - ri-call-apim-apis.md
+          - topicgroup:
+              label: Administering API Connect V10 Reserved
+              topics:
+              - ri-provision.md
+              - ri-admin-over.md
+              - ri-usage.md
+              - ri-mng-users.md
+              - ri-reg-gwy.md
+              - ri-mng-gwy.md
+          - topicgroup:
+              label: Enhancing security
+              topics:
+              - iam.md
+          - topicgroup:
+              label: Observability
+              topics:
+              - logging.md
+              - at-events.md
+          - topicgroup:
+              label: Logging and monitoring
+              topics:
+              - old-at-events.md
+              - ri-logs.md
       - topicgroup:
-          label: Administering API Connect Reserved
+          label: V12 Reserved Instance
           topics:
-          - ri-provision.md
-          - ri-admin-over.md
-          - ri-usage.md
-          - ri-mng-users.md
-          - ri-reg-gwy.md
-          - ri-mng-gwy.md
-      - topicgroup:
-          label: Enhancing security
-          topics:
-          - iam.md
-      - topicgroup:
-          label: Observability
-          topics:
-          - logging.md
-          - at-events.md
-      - topicgroup:
-          label: Logging and monitoring
-          topics:
-          - old-at-events.md
-          - ri-logs.md
+          - topicgroup:
+              label: Overview
+              topics:
+              - v12ri-overview.md
+              - v12ri-getting-started.md
+          - topicgroup:
+              label: Using API Connect V12 Reserved
+              topics:
+              - v12ri-develop-api.md
+              - v12ri-analytics.md
+              - v12ri-devportal.md
+              - v12ri-ai-gateway.md
+              - v12ri-fed-api-mgmt.md
+          - topicgroup:
+              label: Administering API Connect V12 Reserved
+              topics:
+              - v12ri-provision.md
+              - v12ri-admin-over.md
+              - v12ri-mng-users.md
+              - v12ri-gateways.md
+              - v12ri-offload-analytics.md
+          - topicgroup:
+              label: Enhancing security
+              topics:
+              - iam.md
+          - topicgroup:
+              label: Observability
+              topics:
+              - logging.md
+              - at-events.md
+              - v12ri-logs.md
   - navgroup:
       id: reference
       topics:
@@ -71,6 +108,9 @@ toc:
           - link:
               label: Complete documentation for API Connect V10 Reserved
               href: https://www.ibm.com/docs/en/api-connect/10_reserved_instance
+          - link:
+              label: Complete documentation for API Connect V12 Reserved
+              href: https://www.ibm.com/docs/en/api-connect/saas
   - navgroup:
       id: help
       topics:

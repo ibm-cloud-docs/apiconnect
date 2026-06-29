@@ -37,8 +37,7 @@
       "href": "https://community.ibm.com/community/user/integration/communities/community-home/all-news?communitykey=2106cca0-a9f9-45c6-9b28-01a28f4ce947&LibraryFolderKey=&DefaultView=",
       "type": "blog"
     }
-  ]
-,
+  ],
   "section_devtools": {
     "terraform": "https://www.ibm.com/links?url=https%3A%2F%2Fapic-api.apiconnect.ibmcloud.com%2Fv10%2F"
   },
