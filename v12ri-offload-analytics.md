@@ -68,9 +68,9 @@ For more information about Kafka, see the [Apache Kafka documentation](https://k
 Before configuring HTTP offload, gather the following information about your HTTP endpoint:
 - HTTP endpoint URL
 - Authentication credentials, depending on your authentication method:
-  - **Client certificates**: `SSL_CERTIFICATE`, `SSL_CERTIFICATE_AUTHORITIES`, `SSL_KEY`
-  - **Keystore/Truststore**: `SSL_KEYSTORE_PATH`, `SSL_TRUSTSTORE_PATH`
-  - **Username/Password**: HTTP endpoint username and password
+    - **Client certificates**: `SSL_CERTIFICATE`, `SSL_CERTIFICATE_AUTHORITIES`, `SSL_KEY`
+    - **Keystore/Truststore**: `SSL_KEYSTORE_PATH`, `SSL_TRUSTSTORE_PATH`
+    - **Username/Password**: HTTP endpoint username and password
 
 ### Configuring HTTP endpoint offload
 {: #http_config_v12ri-offload-analytics}
