@@ -39,9 +39,6 @@ toc:
           - at-events.md
           - old-at-events.md
           - ri-logs.md
-  - navgroup:
-      id: tutorial
-      topics:
       - topicgroup:
           label: Using API Connect V12 Reserved
           topics:
