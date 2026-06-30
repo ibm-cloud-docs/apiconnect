@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-06-29"
+lastupdated: "2026-06-30"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, logging, monitoring, logs
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Logging for {{site.data.keyword.apiconnect_short}} V12 Reserved
-{: #v12ri-logs}
+{: #v12rilogs}
 
 Monitor the operational logs for your {{site.data.keyword.apiconnect_short}} V12 Reserved instance using {{site.data.keyword.la_full_notm}}.
 {: shortdesc}

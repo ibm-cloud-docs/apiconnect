@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-06-29"
+lastupdated: "2026-06-30"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, overview, what's new
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # What is {{site.data.keyword.apiconnect_short}} V12 Reserved?
-{: #v12ri-overview}
+{: #v12rioverview}
 
 {{site.data.keyword.apiconnect_short}} V12 Reserved is a single-tenant API management environment hosted on IBM-managed infrastructure, offering expanded capabilities including Federated API Management, a new IBM Developer Portal, AI Gateway, and webMethods API Gateway integration.
 {: shortdesc}

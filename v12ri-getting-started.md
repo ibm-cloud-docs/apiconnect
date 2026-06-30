@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-06-29"
+lastupdated: "2026-06-30"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, getting started, provision
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Getting started with {{site.data.keyword.apiconnect_short}} V12 Reserved
-{: #v12ri-getting-started}
+{: #v12rigetting-started}
 
 Set up your {{site.data.keyword.apiconnect_short}} V12 Reserved instance and begin developing, publishing, and managing APIs in {{site.data.keyword.cloud_notm}}.
 {: shortdesc}

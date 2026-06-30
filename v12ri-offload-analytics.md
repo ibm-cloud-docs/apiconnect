@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-06-29"
+lastupdated: "2026-06-30"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, analytics offload, Kafka, HTTP, offloading
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Offloading analytics data in {{site.data.keyword.apiconnect_short}} V12 Reserved
-{: #v12ri-offload-analytics}
+{: #v12rioffload-analytics}
 
 Configure {{site.data.keyword.apiconnect_short}} V12 Reserved to offload analytics data to external systems so that you can view and manage the data using other analytics solutions.
 {: shortdesc}

@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-06-29"
+lastupdated: "2026-06-30"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, users, provider organizations, access
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Managing users in {{site.data.keyword.apiconnect_short}} V12 Reserved
-{: #v12ri-mng-users}
+{: #v12rimng-users}
 
 Manage users and provider organizations in your {{site.data.keyword.apiconnect_short}} V12 Reserved instance.
 {: shortdesc}

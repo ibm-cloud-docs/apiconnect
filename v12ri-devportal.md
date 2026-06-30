@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-06-29"
+lastupdated: "2026-06-30"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, Developer Portal, IBM Developer Portal
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Using the IBM Developer Portal in {{site.data.keyword.apiconnect_short}} V12 Reserved
-{: #v12ri-devportal}
+{: #v12ridevportal}
 
 The IBM Developer Portal is a web-based, self-service portal that enables your organization to securely expose APIs to external developers, partners, and other consumers. V12 Reserved includes the new IBM Developer Portal (in addition to the classic API Connect Developer Portal).
 {: shortdesc}

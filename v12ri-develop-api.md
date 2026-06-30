@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-06-29"
+lastupdated: "2026-06-30"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, develop API, API Studio, toolkit
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Developing APIs in {{site.data.keyword.apiconnect_short}} V12 Reserved
-{: #v12ri-develop-api}
+{: #v12ridevelop-api}
 
 Use IBM API Studio and the API Connect toolkit to develop, test, and publish APIs in your {{site.data.keyword.apiconnect_short}} V12 Reserved instance.
 {: shortdesc}

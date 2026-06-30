@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-06-29"
+lastupdated: "2026-06-30"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, analytics
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Viewing API event analytics in {{site.data.keyword.apiconnect_short}} V12 Reserved
-{: #v12ri-analytics}
+{: #v12rianalytics}
 
 Use the Analytics feature to track API usage and performance, which helps you determine when APIs should be updated or retired.
 {: shortdesc}

@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-06-29"
+lastupdated: "2026-06-30"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, AI Gateway, LLM, MCP, Watsonx
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # IBM AI Gateway in {{site.data.keyword.apiconnect_short}} V12 Reserved
-{: #v12ri-ai-gateway}
+{: #v12riai-gateway}
 
 IBM AI Gateway enables you to manage AI services, including large language model (LLM) providers, through a governed, policy-driven gateway. You can register LLM providers, create MCP tools and servers from existing APIs, and monitor AI service usage.
 {: shortdesc}
