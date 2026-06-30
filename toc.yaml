@@ -40,7 +40,7 @@ toc:
           - old-at-events.md
           - ri-logs.md
   - navgroup:
-      id: overview
+      id: tutorial
       topics:
       - topicgroup:
           label: Using API Connect V12 Reserved
