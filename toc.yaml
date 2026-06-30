@@ -54,9 +54,9 @@ toc:
           - v12ri-mng-users.md
           - v12ri-gateways.md
           - v12ri-offload-analytics.md
-          - iam.md
-          - logging.md
-          - at-events.md
+          - v12ri-iam.md
+          - v12ri-logging.md
+          - v12ri-at-events.md
           - v12ri-logs.md
   - navgroup:
       id: reference
