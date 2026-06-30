@@ -42,22 +42,22 @@ toc:
       - topicgroup:
           label: Using API Connect V12 Reserved
           topics:
-          - v12ri-overview.md
-          - v12ri-getting-started.md
-          - v12ri-develop-api.md
-          - v12ri-analytics.md
-          - v12ri-devportal.md
-          - v12ri-ai-gateway.md
-          - v12ri-fed-api-mgmt.md
-          - v12ri-provision.md
-          - v12ri-admin-over.md
-          - v12ri-mng-users.md
-          - v12ri-gateways.md
-          - v12ri-offload-analytics.md
-          - v12ri-iam.md
-          - v12ri-logging.md
-          - v12ri-at-events.md
-          - v12ri-logs.md
+          - overview.md
+          - v-getting-started.md
+          - develop-api.md
+          - analytics.md
+          - devportal.md
+          - ai-gateway.md
+          - fed-api-mgmt.md
+          - provision.md
+          - admin-over.md
+          - mng-users.md
+          - gateways.md
+          - offload-analytics.md
+          - vri-iam.md
+          - vri-logging.md
+          - vri-at-events.md
+          - logs.md
   - navgroup:
       id: reference
       topics:
