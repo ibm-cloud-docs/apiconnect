@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-06-29"
+lastupdated: "2026-06-30"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, administer, overview
 
@@ -15,7 +15,7 @@ subcollection: apiconnect
 # Administering your {{site.data.keyword.apiconnect_short}} V12 Reserved instance
 {: #v12ri-admin-over}
 
-Use the administration console to manage users, configure gateways, and administer your {{site.data.keyword.apiconnect_short}} V12 Reserved instance.
+Use the administration console to manage users, configure gateways, and administer your {{site.data.keyword.apiconnect_short}} V12 Reserved instance
 {: shortdesc}
 
 ## Managing users
