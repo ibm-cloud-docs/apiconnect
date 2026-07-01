@@ -1,8 +1,8 @@
 ---
 
 copyright:
-   years: 2020, 2024
-lastupdated: "2024-10-09"
+   years: 2020, 2026
+lastupdated: "2026-07-01"
 
 keywords: IBM Cloud, API Connect, Reserved instance, lifecycle, develop, create, manage, API
 
@@ -12,7 +12,7 @@ subcollection: apiconnect
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting started as an admin in {{site.data.keyword.apiconnect_short}} V10 Reserved
+# Getting started as an admin in {{site.data.keyword.apiconnect_short}} Reserved
 {: #getting-started-admin}
 
 Set up {{site.data.keyword.apiconnect_short}} so your users can develop APIs, publish them to consumers, and manage usage and lifecycles.
@@ -26,7 +26,7 @@ If you're not an admin, see [Getting started as a user](/docs/apiconnect?topic=a
 ## Step 1. Open your administration console
 {: #start-service_getting-started}
 
-In {{site.data.keyword.cloud_notm}}, {{site.data.keyword.apiconnect_short}} V10 Reserved provides two components: the administration console and the API Manager. Use the administration console to configure the Reserved instance for your users, who work with features in the API Manager.
+In {{site.data.keyword.cloud_notm}}, {{site.data.keyword.apiconnect_short}} Reserved provides two components: the administration console and the API Manager. Use the administration console to configure the Reserved instance for your users, who work with features in the API Manager.
 
 All admins in your IBM Cloud account automatically have admin access to {{site.data.keyword.apiconnect_short}} and can use the features in the administration console.
 
@@ -58,6 +58,6 @@ As an {{site.data.keyword.apiconnect_short}} admin, you control the Reserved ins
 ## Step 2. Configure user access
 {: #config-users_getting-started}
 
-In {{site.data.keyword.apiconnect_short}} V10 Reserved, user access is managed with the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) service. Create an {{site.data.keyword.apiconnect_short}} provider organization that will represent a set of users, and use the IAM service to define access groups with roles that grant permission for users to work with {{site.data.keyword.apiconnect_short}} features.
+In {{site.data.keyword.apiconnect_short}} Reserved, user access is managed with the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) service. Create an {{site.data.keyword.apiconnect_short}} provider organization that will represent a set of users, and use the IAM service to define access groups with roles that grant permission for users to work with {{site.data.keyword.apiconnect_short}} features.
 
 For details on configuring user access for {{site.data.keyword.apiconnect_short}}, see [Managing users](/docs/apiconnect?topic=apiconnect-ri-mng-users).

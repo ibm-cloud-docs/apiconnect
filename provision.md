@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-06-30"
+lastupdated: "2026-07-01"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, provision, activate
 
@@ -56,4 +56,4 @@ To provision a new service instance of {{site.data.keyword.apiconnect_short}} V1
 
 1. When you receive notification that your instance is ready, log in to the [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com/resources) and navigate to your {{site.data.keyword.apiconnect_short}} V12 Reserved instance.
 
-1. Follow the instructions in [Administering your V12 Reserved instance](/docs/apiconnect?topic=apiconnect-v12ri-admin-over) to configure your instance for use.
+1. Follow the instructions in [Administering your V12 Reserved instance](/docs/apiconnect?topic=apiconnect-admin-over) to configure your instance for use.

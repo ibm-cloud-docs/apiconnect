@@ -45,7 +45,9 @@ toc:
           - overview.md
           - v-getting-started.md
           - develop-api.md
+          - v-mng-prod-cat.md
           - analytics.md
+          - v-cmsportal.md
           - devportal.md
           - ai-gateway.md
           - fed-api-mgmt.md

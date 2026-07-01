@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-06-30"
+lastupdated: "2026-07-01"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, users, provider organizations, access
 
@@ -49,7 +49,7 @@ In V12 Reserved, user access is managed through {{site.data.keyword.iamlong}} (I
 2. Create an access group with the appropriate API Connect service policies for the provider organization.
 3. Invite the user to your {{site.data.keyword.cloud_notm}} account and add them to the access group.
 
-For detailed instructions on configuring IAM access for {{site.data.keyword.apiconnect_short}}, see [Managing access with IAM](/docs/apiconnect?topic=apiconnect-iam).
+For detailed instructions on configuring IAM access for {{site.data.keyword.apiconnect_short}}, see [Managing access with IAM](/docs/apiconnect?topic=apiconnect-vri-iam).
 
 ## Managing user roles within a provider organization
 {: #manage_roles_v12ri-mng-users}

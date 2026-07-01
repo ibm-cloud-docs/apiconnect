@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-06-30"
+lastupdated: "2026-07-01"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, analytics
 
@@ -46,12 +46,12 @@ You can customize dashboards by filtering by time range, API, product, catalog, 
 
 For the complete analytics documentation including advanced configuration, see the following topics in the extended V12 Reserved documentation:
 
-- [Key concepts of API Connect analytics](https://www.ibm.com/docs/en/api-connect/saas){: external}
-- [Accessing analytics](https://www.ibm.com/docs/en/api-connect/saas){: external}
-- [Analytics dashboards](https://www.ibm.com/docs/en/api-connect/saas){: external}
-- [Understanding your API usage](https://www.ibm.com/docs/en/api-connect/saas){: external}
+- [Key concepts of API Connect analytics](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.analytics.doc/key_concepts.html){: external}
+- [Accessing analytics](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.apionprem.doc/tapim_analytics_accessinganalytics.html){: external}
+- [Analytics dashboards](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.apionprem.doc/rapim_analytics_dashboards.html){: external}
+- [Understanding your API usage](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.analytics.doc/api_connect_analytics_overview.html){: external}
 
 ## Offloading analytics data
 {: #offload_v12ri-analytics}
 
-You can configure V12 Reserved to offload analytics event data to external systems such as Kafka or HTTP endpoints for use with other analytics platforms. For instructions, see [Offloading analytics data](/docs/apiconnect?topic=apiconnect-v12ri-offload-analytics).
+You can configure V12 Reserved to offload analytics event data to external systems such as Kafka or HTTP endpoints for use with other analytics platforms. For instructions, see [Offloading analytics data](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.analytics.doc/offloading_analytics_data_ri.html){: external}.
