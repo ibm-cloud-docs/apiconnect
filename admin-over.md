@@ -12,7 +12,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Administering your {{site.data.keyword.apiconnect_short}} V12 Reserved instance
-{: #v12ri-admin}
+{: #admin-over}
 
 Use the administration console to manage users, configure gateways, and administer your {{site.data.keyword.apiconnect_short}} V12 Reserved instance
 {: shortdesc}

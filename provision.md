@@ -28,7 +28,7 @@ To provision a new service instance of {{site.data.keyword.apiconnect_short}} V1
 
 1. Use {{site.data.keyword.iamlong}} to create a resource group for your service instance.
 
-   Assign appropriate access policies to control who can access the service instance. For information, see [Assigning access to resources by using access groups](/docs/account?topic=account-access-getstarted).
+   Assign appropriate access policies to control who can access the service instance. For information, see [Controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
 
 1. Provision your service instance:
 

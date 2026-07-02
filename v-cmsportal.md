@@ -22,7 +22,7 @@ In addition to helping application developers find and use your APIs, the CMS Po
 
 To learn more about configuring and managing a CMS Portal in {{site.data.keyword.apiconnect_short}}, start with the following topics in the extended V12 Reserved documentation:
 
-## Setting up a developer portal
+## Setting up a CMS portal
 {: #config_ri-portal}
 
 The person who enables a CMS portal for their provider organization automatically receives administrator access to that portal. The portal admin (typically a Product Manager for the provider organization) can manage the portal by adding users, customizing the portal's appearance, setting up forums, and viewing reports on portal performance. For information on setting up a CMS portal, see [Configuring your CMS portal](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.devportal.doc/capim_devportal_admin.html){: external}
@@ -46,12 +46,12 @@ Create and manage consumer organizations to control customer access to your CMS 
 - [Create consumer org](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.apionprem.doc/apionprem_manage_consumerorgs.html){: external}
 - [Create consumer org groups](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.apionprem.doc/tapic_consumer_org_groups.html){: external}
 
-## Using the Developer Portal
+## Using the CMS Portal
 {: #using_ri-portal}
 
 Understand what consumers can do when they visit your CMS portal.
 
 - [What can consumers can do?](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.devportal.doc/con_cmsportal_storefront.html){: external}
-- [Exploring the developer portal](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.devportal.doc/capim_portal_APIs.html){: external}
+- [Exploring the CMS portal](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.devportal.doc/capim_portal_APIs.html){: external}
 - [Registering an application](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.devportal.doc/task_cmsportal_registerapps.html){: external}
 - [Viewing analytics about apps and APIs](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.devportal.doc/capim_portal_analyticsparent.html){: external}

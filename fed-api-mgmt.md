@@ -36,4 +36,4 @@ Federated API Management provides the following key benefits:
 - **Centralized runtime management** — Add, configure, and monitor gateway and portal runtimes from one place without switching between different administrative interfaces.
 - **Distributed API operations** — Manage API runtimes across different regions, cloud platforms, or vendors as a single unified system.
 
-For more information, see [Using Federated API Management](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.wmcontrolplane.doc/co-intent.html){: external}
+For more information, see [Using Federated API Management](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.wmcontrolplane.doc/co-intent.html){: external}
