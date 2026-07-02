@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2026
-lastupdated: "2026-07-01"
+lastupdated: "2026-07-02"
 
 keywords: management, Reserved instance, API Connect
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Managing APIs, products, and catalogs
-{: #ri-manage-assets}
+{: #v-mng-prod-cat}
 
 Managing APIs, catalogs, and products in {{site.data.keyword.apiconnect_full}} involves a series of tasks to maintain catalogs where developers can create and test APIs, and to manage the lifecycle of the products containing APIs that are published for customer use.
 {: shortdesc}

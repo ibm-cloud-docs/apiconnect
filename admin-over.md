@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-07-01"
+lastupdated: "2026-07-02"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, administer, overview
 subcollection: apiconnect
@@ -18,7 +18,7 @@ Use the administration console to manage users, configure gateways, and administ
 {: shortdesc}
 
 ## Managing users
-{: #users_v12ri-admin-over}
+{: #admin-over}
 
 In {{site.data.keyword.apiconnect_short}}, users are grouped into _provider organizations_. Each provider organization owns a set of assets including APIs, products, catalogs, and developer portals. You can create a single provider organization or multiple provider organizations for different departments or teams.
 

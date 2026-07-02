@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2026
-lastupdated: "2026-06-30"
+lastupdated: "2026-07-02"
 
 keywords: platform logs, log analysis, log routing, API Connect
 subcollection: apiconnect
@@ -12,7 +12,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Logging for {{site.data.keyword.apiconnect_short}} Reserved
-{: #logging}
+{: #vri-logging}
 
 {{site.data.keyword.cloud_notm}} services, such as {{site.data.keyword.apiconnect_short}} Reserved, generate platform logs that you can use to investigate abnormal activity and critical actions in your account, and to troubleshoot problems.
 {: shortdesc}

@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-06-30"
+lastupdated: "2026-07-02"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, gateways, DataPower, EEM, webMethods
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Managing gateways in {{site.data.keyword.apiconnect_short}} V12 Reserved
-{: #v12rigateways}
+{: #gateways}
 
 {{site.data.keyword.apiconnect_short}} V12 Reserved supports multiple gateway types. The default IBM DataPower API Gateway is managed by IBM. You can deploy additional self-managed DataPower gateways and integrate with IBM Event Endpoint Management and webMethods API Gateway.
 {: shortdesc}

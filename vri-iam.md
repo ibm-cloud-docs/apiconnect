@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2026
-lastupdated: "2026-06-30"
+lastupdated: "2026-07-02"
 
 keywords: IBM Cloud, API Connect, API management, Reserved instance, authentication, IAM, access management, service ID, API key, user roles, user actions
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Managing access
-{: #iam}
+{: #vri-iam}
 
 {{site.data.keyword.apiconnect_short}} V10 Reserved uses {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) to securely authenticate users and control access to service instances on the {{site.data.keyword.cloud_notm}} platform.
 

@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-07-01"
+lastupdated: "2026-07-02"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, Federated API Management, webMethods, distributed
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Federated API Management in {{site.data.keyword.apiconnect_short}} V12 Reserved
-{: #v12rifed-api-mgmt}
+{: #fed-api-mgmt}
 
 Federated API Management provides a unified way to manage, govern, and monitor multiple distributed API runtimes and data planes from a single interface, regardless of where they are deployed.
 {: shortdesc}

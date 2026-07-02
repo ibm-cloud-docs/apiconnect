@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2026
-lastupdated: "2026-07-01"
+lastupdated: "2026-07-02"
 
 keywords: management, Reserved instance, API Connect
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Socializing your APIs with the CMS Portal
-{: #ri-portal}
+{: #v-cmsportal}
 
 In each provider organization, a Product Manager sets up a customized CMS Portal where APIs and products can be shared with consumers.
 {: shortdesc}

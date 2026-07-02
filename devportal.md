@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-07-01"
+lastupdated: "2026-07-02"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, Developer Portal, IBM Developer Portal
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Using the IBM Developer Portal in {{site.data.keyword.apiconnect_short}} V12 Reserved
-{: #v12ridevportal}
+{: #devportal}
 
 Developer Portal is designed to support two key user groups: API Providers and API Consumers, along with Administrators who manage the portal environment.
 

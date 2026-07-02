@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-07-01"
+lastupdated: "2026-07-02"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, getting started, provision
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Getting started with {{site.data.keyword.apiconnect_short}} V12 Reserved
-{: #v12rigetting-started}
+{: #v-getting-started}
 
 Set up your {{site.data.keyword.apiconnect_short}} V12 Reserved instance and begin developing, publishing, and managing APIs in {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
@@ -38,7 +38,7 @@ For provisioning instructions, see [Provisioning a V12 Reserved instance](/docs/
 
 Use {{site.data.keyword.iamlong}} (IAM) to create resource groups and access policies for your V12 Reserved instance. Assign administrator and user roles to control who can access the service and what they can do.
 
-For information on configuring access, see [Managing access with IAM](/docs/apiconnect?topic=apiconnect-iam).
+For information on configuring access, see [Managing access with IAM](/docs/apiconnect?topic=apiconnect-vri-iam).
 
 ## Step 3: Set up users and provider organizations
 {: #step3_v12ri-getting-started}
@@ -59,12 +59,12 @@ For information on developing APIs in V12 Reserved, see [Developing APIs in V12 
 
 After you develop your APIs, publish them to catalogs and manage their lifecycle using the API Manager. Share them with consumers through the IBM Developer Portal.
 
-For information on managing products and catalogs, see [Managing products and catalogs in V12 Reserved](/docs/apiconnect?topic=apiconnect-v12ri-mng-prod-cat).
+For information on managing products and catalogs, see [Managing products and catalogs in V12 Reserved](/docs/apiconnect?topic=apiconnect-v-mng-prod-cat).
 
 ## Next steps
 {: #next_v12ri-getting-started}
 
-- Explore [Federated API Management](/docs/apiconnect?topic=apiconnect-v12ri-fed-api-mgmt) to manage distributed API runtimes from one place.
-- Configure [analytics offloading](/docs/apiconnect?topic=apiconnect-v12ri-offload-analytics) to route API event data to external systems.
-- Set up [IBM AI Gateway](/docs/apiconnect?topic=apiconnect-v12ri-ai-gateway) to govern AI services and LLM providers.
-- Read the [complete V12 Reserved documentation](https://www.ibm.com/docs/en/api-connect/saas){: external} for advanced topics.
+- Explore [Federated API Management](/docs/apiconnect?topic=apiconnect-fed-api-mgmt) to manage distributed API runtimes from one place.
+- Configure [analytics offloading](/docs/apiconnect?topic=apiconnect-v12rioffload-analytics) to route API event data to external systems.
+- Set up [IBM AI Gateway](/docs/apiconnect?topic=apiconnect-ai-gateway) to govern AI services and LLM providers.
+- Read the [complete V12 Reserved documentation](https://www.ibm.com/docs/en/SSCL05_12.1.x){: external} for advanced topics.
