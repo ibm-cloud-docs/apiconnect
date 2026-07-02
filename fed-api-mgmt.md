@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Federated API Management in {{site.data.keyword.apiconnect_short}} V12 Reserved
-{: #fed-api-mgmt}
+{:#fed-api-mgmt}
 
 Federated API Management provides a unified way to manage, govern, and monitor multiple distributed API runtimes and data planes from a single interface, regardless of where they are deployed.
 {: shortdesc}

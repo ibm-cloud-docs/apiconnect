@@ -45,7 +45,7 @@ For information on configuring access, see [Managing access with IAM](/docs/apic
 
 In {{site.data.keyword.apiconnect_short}}, users are grouped into _provider organizations_. Each provider organization owns a set of assets including APIs, products, catalogs, and developer portals. As an administrator, you create provider organizations and assign users to them.
 
-For information on managing users, see [Managing users in V12 Reserved](/docs/apiconnect?topic=apiconnect-mng-users).
+For information on managing users, see [Managing users in V12 Reserved](/docs/apiconnect?topic=apiconnect-ri-mng-users).
 
 ## Step 4: Start developing APIs
 {: #step4_v12ri-getting-started}
@@ -65,6 +65,6 @@ For information on managing products and catalogs, see [Managing products and ca
 {: #next_v12ri-getting-started}
 
 - Explore [Federated API Management](/docs/apiconnect?topic=apiconnect-fed-api-mgmt) to manage distributed API runtimes from one place.
-- Configure [analytics offloading](/docs/apiconnect?topic=apiconnect-v12rioffload-analytics) to route API event data to external systems.
+- Configure [analytics offloading](/docs/apiconnect?topic=apiconnect-offload-analytics) to route API event data to external systems.
 - Set up [IBM AI Gateway](/docs/apiconnect?topic=apiconnect-ai-gateway) to govern AI services and LLM providers.
 - Read the [complete V12 Reserved documentation](https://www.ibm.com/docs/en/SSCL05_12.1.x){: external} for advanced topics.
