@@ -20,5 +20,4 @@ Developer Portal is designed to support two key user groups: API Providers and A
 API Providers use the portal to publish and monetize their APIs. Providers can also organize hackathon programs and track performance and usage trends via built-in analytics dashboards. API Consumers benefit from the portal by discovering and testing available APIs. Administrators act as super users with elevated privileges. So, they can configuring portal settings and features.
 
 For information, see [Using Developer Portal](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.wmDevPortal.doc/dpo_intro.html){: external}
-
 {: shortdesc}
