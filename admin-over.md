@@ -47,7 +47,7 @@ For information on setting up the toolkit, see [Developing APIs in V12 Reserved]
 
 V12 Reserved includes Federated API Management, which lets you centrally manage distributed API runtimes and data planes from a single interface. You can connect and monitor runtimes across different regions and platforms.
 
-For more information, see [Federated API Management](/docs/apiconnect?topic=apiconnect-fed-api-mgmt).
+For more information, see [Federated API Management](/docs/apiconnect?topic=apiconnect-fam-api-mgmt).
 
 ## Enhancing security
 {: #security_v12ri-admin-over}

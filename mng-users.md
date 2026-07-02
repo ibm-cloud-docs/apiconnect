@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-07-01"
+lastupdated: "2026-07-02"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, users, provider organizations, access
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Managing users in {{site.data.keyword.apiconnect_short}} V12 Reserved
-{: #v12rimng-users}
+{: #mng-users}
 
 Manage users and provider organizations in your {{site.data.keyword.apiconnect_short}} V12 Reserved instance.
 {: shortdesc}
@@ -70,4 +70,4 @@ To transfer ownership of a provider organization to another user, contact your {
 ## Extended user management documentation
 {: #extended_docs_v12ri-mng-users}
 
-For complete user management documentation including advanced scenarios, see [Managing users](https://www.ibm.com/docs/en/api-connect/saas){: external} in the complete V12 Reserved documentation.
+For complete user management documentation including advanced scenarios, see [Managing users](https://www.ibm.com/docs/en/SSCL05_12.1.x){: external} in the complete V12 Reserved documentation.

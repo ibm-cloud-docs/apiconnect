@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-06-30"
+lastupdated: "2026-07-02"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, logging, monitoring, logs
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Logging for {{site.data.keyword.apiconnect_short}} V12 Reserved
-{: #v12rilogs}
+{: #logs}
 
 Monitor the operational logs for your {{site.data.keyword.apiconnect_short}} V12 Reserved instance using {{site.data.keyword.la_full_notm}}.
 {: shortdesc}
@@ -29,7 +29,7 @@ Monitor the operational logs for your {{site.data.keyword.apiconnect_short}} V12
 
 1. Configure your V12 Reserved instance to send logs to your {{site.data.keyword.la_short}} instance.
 
-   For instructions on connecting the services, see the [Logging documentation](/docs/apiconnect?topic=apiconnect-logging).
+   For instructions on connecting the services, see the [Logging documentation](/docs/apiconnect?topic=apiconnect-vri-logging).
 
 1. Use the {{site.data.keyword.la_short}} dashboard to view and filter logs for your V12 Reserved instance.
 
@@ -52,4 +52,4 @@ Use the {{site.data.keyword.la_short}} search and filtering capabilities to find
 ## Activity Tracker events
 {: #at_events_v12ri-logs}
 
-In addition to operational logs, V12 Reserved generates Activity Tracker events that record administrative actions. For the complete list of tracked events, see [Activity Tracker events](/docs/apiconnect?topic=apiconnect-at_events).
+In addition to operational logs, V12 Reserved generates Activity Tracker events that record administrative actions. For the complete list of tracked events, see [Activity Tracker events](/docs/apiconnect?topic=apiconnect-vri-at_events).
