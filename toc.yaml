@@ -55,7 +55,6 @@ toc:
           - admin-over.md
           - mng-users.md
           - gateways.md
-          - offload-analytics.md
           - vri-iam.md
           - vri-logging.md
           - vri-at-events.md

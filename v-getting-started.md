@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-07-02"
+lastupdated: "2026-07-07"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, getting started, provision
 
@@ -64,7 +64,9 @@ For information on managing products and catalogs, see [Managing products and ca
 ## Next steps
 {: #next_v12ri-getting-started}
 
-- Explore [Federated API Management](/docs/apiconnect?topic=apiconnect-fed-api-mgmt) to manage distributed API runtimes from one place.
-- Configure [analytics offloading](/docs/apiconnect?topic=apiconnect-offload-analytics) to route API event data to external systems.
+- Explore [Analytics](/docs/apiconnect?topic=apiconnect-fam-api-mgmt) to track API usage and performance.
+- Explore [Federated API Management](/docs/apiconnect?topic=apiconnect-fam-api-mgmt) to manage distributed API runtimes from one place.
+- Explore [CMS Portal](/docs/apiconnect?topic=apiconnect-fam-api-mgmt) to to publish and monetize their APIs using CMS portal.
+- Explore [Developer Portal](/docs/apiconnect?topic=apiconnect-fam-api-mgmt) to publish and monetize their APIs using Developer Portal.
 - Set up [IBM AI Gateway](/docs/apiconnect?topic=apiconnect-ai-gateway) to govern AI services and LLM providers.
 - Read the [complete V12 Reserved documentation](https://www.ibm.com/docs/en/SSCL05_12.1.x){: external} for advanced topics.
