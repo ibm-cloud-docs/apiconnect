@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-07-02"
+lastupdated: "2026-07-10"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, provision, activate
 
@@ -12,7 +12,7 @@ subcollection: apiconnect
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Provisioning an instance of {{site.data.keyword.apiconnect_short}} V12 Reserved
+# Provisioning an instance of {{site.data.keyword.apiconnect_short}} Reserved
 {: #provision}
 
 Create your {{site.data.keyword.apiconnect_short}} V12 Reserved instance so your users can develop APIs, publish them to consumers, and manage usage and lifecycles.

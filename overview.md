@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-07-01"
+lastupdated: "2026-07-10"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, overview, what's new
 
@@ -27,7 +27,7 @@ V12 Reserved includes all the core capabilities of V10 Reserved and adds the fol
 
 - **Federated API Management** — Centrally manage, govern, and monitor distributed API runtimes and data planes from a single interface, regardless of where they are deployed.
 - **IBM Developer Portal** — A new web-based portal that supports API providers and API consumers, with hackathon support and built-in analytics.
-- **IBM AI Gateway** — Manage AI services and LLM providers through a governed, policy-driven gateway.
+- **DataPower Nano Gateway** - A cloud-native gateway that uses a componentized architecture with a small footprint (low memory and CPU requirements).
 - **webMethods API Gateway** — A secure, policy-driven runtime for managing and exposing APIs to external consumers (available on demand).
 - **IBM API Studio** — An AI-powered tool for API design and management that replaces API Designer.
 
@@ -67,3 +67,5 @@ For more information, see the [Using Developer Portal](https://www.ibm.com/docs/
 {: #wm_gateway_v12ri-overview}
 
 webMethods API Gateway provides a secure, policy-driven runtime for managing and exposing APIs to external consumers. It enforces authentication, authorization, traffic management, and mediation policies. This capability is available on demand.
+
+For more information, [What's new in API Connect V12 Reserved](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.overview.doc/overview_whatsnew_cloud_2026.html){: external}

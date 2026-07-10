@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-07-02"
+lastupdated: "2026-07-10"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, gateways, DataPower, EEM, webMethods
 
@@ -36,15 +36,15 @@ To add a self-managed DataPower gateway:
 4. Install the gateway by following the instructions for your environment.
 5. Generate certificates and configure the gateway, then register it with your V12 Reserved instance.
 
-For detailed instructions, see [Adding self-managed gateways in V10 Reserved](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.ri_admin.doc/ri_gwy_intro.html){: external} (the gateway registration steps are the same for V12 Reserved).
+For detailed instructions, see [Adding self-managed gateways in V12 Reserved](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.ri_admin.doc/ri_gwy_intro.html){: external} (the gateway registration steps are the same for V12 Reserved).
 
 ### Generating certificates for a self-managed gateway
 {: #gwy_certs_v12ri-gateways}
 
 Before registering a gateway, generate the required certificates:
 
-1. Generate certificates for the gateway using the instructions at [Generating certificates for a gateway](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.ri_admin.doc/ri_gwy_certs.html){: external}.
-2. Set up authorizations for the certificates. For instructions, see [Setting up authorizations for certificates](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.ri_admin.doc/ri_gwy_certs_auth_svc.html){: external}.
+1. Generate certificates for the gateway using the instructions at [Generating certificates for a gateway](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.ri_admin.doc/ri_gwy_certs.html){: external}.
+2. Set up authorizations for the certificates. For instructions, see [Setting up authorizations for certificates](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.ri_admin.doc/ri_gwy_certs_auth_svc.html){: external}.
 
 ### Generating an image pull secret (Kubernetes / OpenShift)
 {: #pull_secret_v12ri-gateways}
@@ -63,7 +63,7 @@ To deploy a self-managed gateway on Kubernetes or OpenShift using the DataPower 
 ### Migrating certificates to Secrets Manager
 {: #migrate_certs_v12ri-gateways}
 
-If you need to migrate existing gateway certificates to IBM Secrets Manager, see [Migrating certificates to Secrets Manager](https://www.ibm.com/docs/SSMNED_v10cloud/com.ibm.apic.ri_admin.doc/ri_gwy_migrate_certs.html){: external}.
+If you need to migrate existing gateway certificates to IBM Secrets Manager, see [Migrating certificates to Secrets Manager](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.ri_admin.doc/ri_gwy_migrate_certs.html){: external}.
 
 ## Registering an Event Gateway Service (IBM Event Endpoint Management)
 {: #eem_v12ri-gateways}
@@ -97,11 +97,10 @@ Before registering the Event Gateway Service:
 
 For complete instructions, see [Configure an Event Endpoint Management Manager as an Event Gateway Service](https://ibm.biz/eem-apic-config){: external}.
 
-## Using webMethods API Gateway (on demand)
-{: #wm_gateway_v12ri-gateways}
+API Connect supports the following API gateways:
 
-webMethods API Gateway is a secure, policy-driven runtime for managing and exposing APIs to external consumers. It enforces authentication, authorization, traffic management, and mediation policies, and provides a web-based administrative interface with built-in analytics.
+1. DataPower API Gateway
+2. DataPower Nano Gateway (on demand)
+3. webMethods API Gateway (on demand)
 
-webMethods API Gateway is available on demand. To enable it, contact IBM Support. Once enabled, it appears as an available gateway in your V12 Reserved administration console.
-
-For usage and administration instructions, see the [webMethods API Gateway documentation](https://www.ibm.com/docs/en/api-connect/saas){: external}.
+For more information, see [Gateway types](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.overview.doc/rapic_gateway_types.html){: external}.

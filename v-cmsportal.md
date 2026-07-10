@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020, 2026
-lastupdated: "2026-07-02"
+lastupdated: "2026-07-10"
 
 keywords: management, Reserved instance, API Connect
 
@@ -17,6 +17,9 @@ subcollection: apiconnect
 
 In each provider organization, a Product Manager sets up a customized CMS Portal where APIs and products can be shared with consumers.
 {: shortdesc}
+
+CMS Portal is not enabled by default. It is available on request. Customers who upgrade from an earlier version to the latest version can access the CMS portal.
+{: note}
 
 In addition to helping application developers find and use your APIs, the CMS Portal provides features such as API analytics, forums, blogs, and rating facilities.
 

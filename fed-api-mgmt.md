@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-07-02"
+lastupdated: "2026-07-10"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, Federated API Management, webMethods, distributed
 
@@ -27,7 +27,6 @@ Federated API Management enables organizations to centrally monitor and manage v
 - DataPower Nano Gateway
 - IBM Developer Portal
 - IBM API Connect CMS portal
-- External runtimes such as AWS API Gateway, Azure API Management Service, and third-party gateways via SDK integration
 
 Federated API Management provides the following key benefits:
 
