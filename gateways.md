@@ -99,8 +99,8 @@ For complete instructions, see [Configure an Event Endpoint Management Manager a
 
 API Connect supports the following API gateways:
 
-1. DataPower API Gateway
-2. DataPower Nano Gateway (on demand)
-3. webMethods API Gateway (on demand)
+- DataPower API Gateway
+- DataPower Nano Gateway (on demand)
+- webMethods API Gateway (on demand)
 
 For more information, see [Gateway types](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.overview.doc/rapic_gateway_types.html){: external}.
