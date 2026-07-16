@@ -1,0 +1,60 @@
+---
+
+copyright:
+   years: 2020, 2026
+lastupdated: "2026-07-10"
+
+keywords: management, Reserved instance, API Connect
+
+subcollection: apiconnect
+
+---
+
+{{site.data.keyword.attribute-definition-list}}
+
+# Socializing your APIs with the CMS Portal
+{: #v-cmsportal}
+
+In each provider organization, a Product Manager sets up a customized CMS Portal where APIs and products can be shared with consumers.
+{: shortdesc}
+
+CMS Portal is not enabled by default. It is available on request. Customers who upgrade from an earlier version to the latest version can access the CMS portal.
+{: note}
+
+In addition to helping application developers find and use your APIs, the CMS Portal provides features such as API analytics, forums, blogs, and rating facilities.
+
+To learn more about configuring and managing a CMS Portal in {{site.data.keyword.apiconnect_short}}, start with the following topics in the extended V12 Reserved documentation:
+
+## Setting up a CMS portal
+{: #config_ri-portal}
+
+The person who enables a CMS portal for their provider organization automatically receives administrator access to that portal. The portal admin (typically a Product Manager for the provider organization) can manage the portal by adding users, customizing the portal's appearance, setting up forums, and viewing reports on portal performance. For information on setting up a CMS portal, see [Configuring your CMS portal](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.devportal.doc/capim_devportal_admin.html){: external}
+
+The portal administrator does not receive admin access to the {{site.data.keyword.apiconnect_short}} Reserved instance.
+{: note}
+
+## Managing consumer apps and subscriptions
+{: #mng-apps_ri-portal}
+
+Communicate with your consumers, enable or disable their applications, and manage their subscriptions to your products.
+
+- [Manage consumer applications](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.apionprem.doc/manage_dev_app.html){: external}
+- [Manager consumer subscriptions](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.apionprem.doc/tapic_subscriptions_manage.html){: external}
+
+## Managing consumer accounts and access
+{: #mng-accounts_ri-portal}
+
+Create and manage consumer organizations to control customer access to your CMS portal and its contents.
+
+- [Create consumer org](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.apionprem.doc/apionprem_manage_consumerorgs.html){: external}
+- [Create consumer org groups](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.apionprem.doc/tapic_consumer_org_groups.html){: external}
+
+## Using the CMS Portal
+{: #using_ri-portal}
+
+Understand what consumers can do when they visit your CMS portal.
+
+- [What can consumers can do?](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.devportal.doc/con_cmsportal_storefront.html){: external}
+- [Exploring the CMS portal](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.devportal.doc/capim_portal_APIs.html){: external}
+- [Registering an application](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.devportal.doc/task_cmsportal_registerapps.html){: external}
+- [Viewing analytics about apps and APIs](https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.devportal.doc/capim_portal_analyticsparent.html){: external}

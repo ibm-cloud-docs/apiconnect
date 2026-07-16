@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2025
-lastupdated: "2025-08-13"
+  years: 2020, 2026
+lastupdated: "2026-07-02"
 
 keywords: activity tracker, event, security, audit logs, viewing events, management, API Connect
 
@@ -13,7 +13,7 @@ subcollection: apiconnect
 {{site.data.keyword.attribute-definition-list}}
 
 # Activity tracking events for {{site.data.keyword.apiconnect_short}} Reserved
-{: #at_events}
+{: #vri-at-events}
 
 {{site.data.keyword.cloud_notm}} services, such as {{site.data.keyword.apiconnect_short}} Reserved, generate activity tracking events.
 {: shortdesc}
