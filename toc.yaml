@@ -36,9 +36,7 @@ toc:
           - ri-mng-gwy.md
           - iam.md
           - logging.md
-          - at-events.md
-          - old-at-events.md
-          - ri-logs.md
+          - ri-at-events.md
       - topicgroup:
           label: Using API Connect V12 Reserved
           topics:
