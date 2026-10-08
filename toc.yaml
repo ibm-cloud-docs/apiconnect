@@ -55,6 +55,7 @@ toc:
           - vri-iam.md
           - vri-logging.md
           - vri-at-events.md
+          - offload-analytics.md
   - navgroup:
       id: reference
       topics:

@@ -2,7 +2,7 @@
 
 copyright:
    years: 2024, 2026
-lastupdated: "2026-07-02"
+lastupdated: "2026-10-08"
 
 keywords: IBM Cloud, API Connect, V12 Reserved instance, administer, overview
 subcollection: apiconnect
@@ -62,6 +62,7 @@ Monitor your V12 Reserved instance using the following tools:
 - **Activity Tracker**: Track administrative events in your instance. See [Activity Tracker events](/docs/apiconnect?topic=apiconnect-vri-at_events) for the list of tracked events.
 - **Logging**: Monitor operational logs. See [Logging for V12 Reserved](/docs/apiconnect?topic=apiconnect-logs).
 - **Analytics offloading**: Route API event analytics to external systems. See [Offloading analytics data](/docs/apiconnect?topic=apiconnect-offload-analytics).
+- **Logging and monitoring**: Monitor the health and behavior of your V12 Reserved. See [https://www.ibm.com/docs/en/SSCL05_12.1.x/com.ibm.apic.ri_admin.doc/logging_monitoring.html]
 
 ## Reference
 {: #reference_v12ri-admin-over}
